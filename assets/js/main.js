@@ -290,7 +290,8 @@ const exerciseDatabase = {
    CONFIGURACIÓN DE ACCESOS
 =========================== */
 // Contraseña de administrador (acceso a todas las carpetas y base)
-const ADMIN_PASSWORD = 'nutricionfitust429015';
+const ADMIN_PASSWORD_HASH =
+  "russia-quarzo-amore-limoncello-siberia-tundra-siberia-urali-russia-tiramisu-siberia-amore-quarzo-espresso-amore-hermitage-octavo-samovar-zarina-firenze-batata";
 
 /* ===========================
    CARPETAS / PLANES
@@ -460,14 +461,16 @@ const userRoutineMapping = {
 // Mapea contraseñas únicas a la clave de usuario definida en `userRoutineMapping`.
 // Edita estos valores para asignar contraseñas reales por persona.
 // Nota: En un sitio estático, estas contraseñas quedan visibles en el código fuente.
-//       Para máxima seguridad, usa un backend. Esto es un control básico.
+//       Para máxima seguridad, usa un BACKEND. Esto es un control básico.
+
 const userPasswords = {
-  // ejemplo: 'claveUnicaDeAgustina': 'agustina'
-  'agustina2025': 'agustina',
-  'camila2025': 'camila',
-  'sofia2025': 'sofia',
-  'francisco2025': 'francisco',
+  // CLAVES ÚINCAS DE USUARIOS
+  'vesuvio-kremlin-quarzo-espresso-amore-siberia-russia-vesuvio-octavo-zarina-octavo-batata': 'agustina',
+  'tundra-vesuvio-balalaika-siberia-yogurt-vesuvio-octavo-zarina-octavo-batata': 'camila',
+  'espresso-urali-tiramisu-siberia-vesuvio-octavo-zarina-octavo-batata': 'sofia',
+  'tiramisu-limoncello-vesuvio-russia-tundra-siberia-espresso-tundra-urali-octavo-zarina-octavo-batata': 'francisco',
 };
+
 
 /* ===========================
    MODALES – OPEN/CLOSE
@@ -497,25 +500,34 @@ function closeUserTraining() {
 /* ===========================
    LOGIN / RENDER PLANES
 =========================== */
-function checkUserPassword() {
-  const raw = document.getElementById('userPasswordInput').value;
-  const password = (raw || '').trim();
-  const pwLower = password.toLowerCase();
 
-  if (pwLower === ADMIN_PASSWORD) {
+function checkUserPassword() {
+  const input = document.getElementById('userPasswordInput');
+  const raw = (input?.value || '').trim().toLowerCase();
+  if (!raw) return;
+
+  const codificada = codificar(raw);
+
+  // 1) Admin por hash
+  if (codificada === ADMIN_PASSWORD_HASH /* || raw === ADMIN_PASSWORD */) {
     closeUserAccessModal();
     showAdminTrainingFolders();
-  } else {
-    const userKey = userPasswords[pwLower];
-    if (userKey && userRoutineMapping[userKey]) {
-      closeUserAccessModal();
-      showUserSpecificTraining(userKey);
-    } else {
-      alert('Contraseña incorrecta. Por favor, verifica tu contraseña.');
-      document.getElementById('userPasswordInput').value = '';
-    }
+    return;
   }
+
+  // 2) Usuarios: buscar por clave codificada; (opcional) fallback por clave en claro
+  const userKey = userPasswords[codificada] ?? userPasswords[raw];
+  if (!userKey) {
+    alert('Contraseña incorrecta. Por favor, verifica tu contraseña.');
+    input.value = '';
+    return;
+  }
+
+  closeUserAccessModal();
+  showUserSpecificTraining(userKey);
 }
+window.checkUserPassword = checkUserPassword;
+
 
 function showAdminTrainingFolders() {
   const modal = document.getElementById('userTrainingModal');
@@ -818,6 +830,88 @@ function openVideo(videoId) {
   window.open(url, '_blank');
 }
 
+// AUSAZKO HIZTEGIA ALEATORIO IT + RU
+// Parte A (AUSAZKO HIZTEGIA ALEATORIO IT + RU)
+const diccionarioParteA = {
+  f: "tiramisu",
+  7: "napoli",
+  x: "casanova",
+  b: "napolitana",
+  3: "laguna",
+  q: "matrioska",
+  z: "spaghetti",
+  0: "zarina",
+};
+
+// Parte B (AUSAZKO HIZTEGIA ALEATORIO IT + RU)
+const diccionarioParteB = {
+  n: "russia",
+  9: "samovar",
+  c: "tundra",
+  l: "yogurt",
+  5: "batata",
+  h: "opera",
+  v: "gelato",
+  2: "octavo",
+};
+
+// Parte C (AUSAZKO HIZTEGIA ALEATORIO IT + RU)
+const diccionarioParteC = {
+  j: "piazza",
+  y: "borschino",
+  1: "firenze",
+  d: "gondola",
+  m: "balalaika",
+  u: "quarzo",
+  4: "hermitage",
+  g: "kremlin",
+};
+
+// Parte D (AUSAZKO HIZTEGIA ALEATORIO IT + RU)
+const diccionarioParteD = {
+  e: "dolcevita",
+  6: "lagosta",
+  o: "urali",
+  a: "vesuvio",
+  k: "islandia",
+  p: "borscht",
+  r: "limoncello",
+  s: "espresso",
+  t: "amore",
+  w: "dolce",
+  i: "siberia",
+  8: "roma"
+};
+
+// === AUSAZKO HIZTEGIA ALEATORIO IT + RU FINAL (unione di tutto) ===
+const diccionario = {
+  ...diccionarioParteA,
+  ...diccionarioParteB,
+  ...diccionarioParteC,
+  ...diccionarioParteD
+};
+
+
+// === Helpers de codificación/decodificación ===
+function codificar(texto) {
+  return texto
+    .toLowerCase()
+    .split("")
+    .map(c => diccionario.hasOwnProperty(c) ? diccionario[c] : c)
+    .join("-");
+}
+
+function decodificar(textoCodificado) {
+  const reverseDic = Object.fromEntries(
+    Object.entries(diccionario).map(([k, v]) => [v, k])
+  );
+  return textoCodificado
+    .split("-")
+    .map(p => reverseDic[p] ?? p)
+    .join("");
+}
+
+
 // ---------------------------
 // Rutina helpers: matching + botón + descripción
 // ---------------------------
@@ -978,3 +1072,4 @@ document.addEventListener('keydown', function(e) {
     checkBasePassword();
   }
 });
+
