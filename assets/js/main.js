@@ -11,7 +11,7 @@ const exerciseDatabase = {
     { name: "Sentadilla Búlgara con Barra", videoId: "https://drive.google.com/file/d/1bcNRv0NWafCWN4fOvb0hzJLBpMw4qwwf/view?usp=drivesdk", description: "Unilateral avanzado para desarrollar fuerza, masa y corregir desbalances. Carga directa en cuádriceps y glúteos, con isquiotibiales como soporte. Al ser con barra, permite progresar en pesos altos y llevar cada pierna a un esfuerzo total." },
     { name: "Sentadilla Búlgara con Mancuernas", videoId: "https://drive.google.com/file/d/1VkcnF9SA-YNYQazHOPzGiGZGWPawJ6Od/view?usp=drivesdk", description: "Variante accesible que mantiene el mismo estímulo unilateral. Enfocada en cuádriceps y glúteos, permite mayor control del movimiento y es excelente para trabajar al fallo con seguridad." },
     { name: "Sentadilla Búlgara en Smith", videoId: "https://drive.google.com/file/d/1GKxgnnkTyBZoxVCy4ynY1VgpomFN0Xfu/view?usp=drivesdk", description: "Opción guiada que suma estabilidad y control, sin perder el estímulo intenso sobre cuádriceps y glúteos. Permite bajar profundo, cargar más y enfocarse en la contracción sin preocuparse por el equilibrio." },
-    { name: "Sentadillas", videoId: "https://drive.google.com/file/d/1JJjXOHws6I_5XXMLgyTenU_tdDynfhiY/view?usp=drivesdk", description: "El rey de los ejercicios de pierna. Trabaja todo: cuádriceps, glúteos, femorales y core. La clave está en bajar profundo, priorizando el estiramiento muscular y subir explosivo. Es el ejercicio más completo para construir masa y fuerza." },
+    { name: "Sentadillas con Barra", videoId: "https://drive.google.com/file/d/1JJjXOHws6I_5XXMLgyTenU_tdDynfhiY/view?usp=drivesdk", description: "El rey de los ejercicios de pierna. Trabaja todo: cuádriceps, glúteos, femorales y core. La clave está en bajar profundo, priorizando el estiramiento muscular y subir explosivo. Es el ejercicio más completo para construir masa y fuerza." },
     { name: "Tracción con Barra en Rack", videoId: "https://drive.google.com/file/d/1c0rJzJ3VDuIqTh1rJLIEHUkSovgeLBfn/view?usp=drivesdk", description: "Ejercicio de tirón que fortalece la parte alta de la cadena posterior. Estimula principalmente dorsales y trapecios, con soporte de core y erectores. Perfecto para sumar grosor y mejorar la postura general." }
   ],
   cuadriceps: [
@@ -23,7 +23,6 @@ const exerciseDatabase = {
     { name: "Extensión de Cuádriceps Sentado", videoId: "1T8t9ijRwlMtma4bOkoJh3aOiy5nxEzoJ", description: "Ejercicio de aislamiento para cuádriceps en máquina. Ideal para definición muscular." },
     { name: "Sentadillas en Hack", videoId: "1hSkUvjYajDfj8H2aMbIjHEef8v7nP6DP", description: "Sentadillas en máquina hack que permite cargar más peso con mayor seguridad." },
     { name: "Sentadillas en Smith", videoId: "1WQPQoAHSwoyHccV5u-OP1e1p7MhEX5_E", description: "Sentadillas en máquina Smith para principiantes o entrenamiento con mayor control." },
-    { name: "Sentadillas con Barra", videoId: "", description: "El ejercicio rey para piernas. Trabaja cuádriceps, glúteos y core de forma integral." },
     { name: "Sentadillas Frontales", videoId: "", description: "Variante con barra al frente que enfatiza más el cuádriceps y mejora la postura." },
     { name: "Sentadillas Búlgaras", videoId: "", description: "Sentadillas unilaterales con pie trasero elevado. Excelente para equilibrio y fuerza." },
     { name: "Prensa de Piernas", videoId: "", description: "Ejercicio en máquina que permite trabajar con cargas altas de forma segura." },
@@ -34,10 +33,6 @@ const exerciseDatabase = {
     { name: "Hip Thrust en Smith", videoId: "1mcMH-_YV4T6eGWYM9UNNF5p7_7a7odeX", description: "Hip thrust en máquina Smith para mayor estabilidad y control del peso." },
     { name: "Hiperextensión 45 Grados Glúteos", videoId: "1fcOHHb6YXseRaX915WdGt63f_hCpNd9F", description: "Hiperextensiones enfocadas en glúteos con técnica específica para máxima activación." },
     { name: "Sentadillas Sumo con Barra", videoId: "1gKxoZqdESY6vpSnIvvZKjN1a1agdJAci", description: "Sentadillas con stance amplio que enfatiza glúteos y aductores." },
-    { name: "Puentes de Glúteo", videoId: "", description: "Ejercicio básico de activación de glúteos. Perfecto para principiantes." },
-    { name: "Patadas de Glúteo en Polea", videoId: "", description: "Ejercicio de aislamiento para glúteos usando polea baja." },
-    { name: "Caminata Lateral con Banda", videoId: "", description: "Ejercicio de activación con banda elástica para glúteo medio." },
-    { name: "Peso Muerto Sumo", videoId: "", description: "Variante de peso muerto con stance amplio que enfatiza glúteos." }
   ],
   isquiotibiales: [
     { name: "Isquiotibiales Acostado", videoId: "1odYrViuAw6cmLfBHLcdmXf9ZCwFArVn5", description: "Curl de isquiotibiales en máquina acostado. Ejercicio de aislamiento efectivo." },
@@ -48,8 +43,6 @@ const exerciseDatabase = {
     { name: "Peso Muerto Rumano con Barra", videoId: "1-js5MRBFdvc0_ndj-JcGQvvshafVfkML", description: "Peso muerto rumano clásico. Excelente para isquiotibiales y glúteos." },
     { name: "Peso Muerto Sumo", videoId: "1VwAWOXxQ8yKTP1pH3F_4Lz0wA7DqxxVR", description: "Variante sumo que permite levantar más peso y enfatiza glúteos." },
     { name: "Peso Muerto Unilateral con Mancuerna", videoId: "1GIX9pgMkaB2dJ4m_kxutVxeZ8U5aHl25", description: "Peso muerto a una pierna que mejora equilibrio y trabaja isquios unilateralmente." },
-    { name: "Buenos Días", videoId: "", description: "Ejercicio de bisagra de cadera que fortalece isquiotibiales y espalda baja." },
-    { name: "Hiperextensiones", videoId: "", description: "Ejercicio para fortalecer la cadena posterior y mejorar la postura." }
   ],
   pantorrillas: [
     { name: "Gemelos de Pie en Máquina", videoId: "1aQETMdpISa2jkX-xavke3vrNxDkLNWsS", description: "Ejercicio clásico para gemelos en máquina específica. Permite cargas altas." },
@@ -58,8 +51,6 @@ const exerciseDatabase = {
     { name: "Sóleo Sentado con Mancuerna Unilateral", videoId: "1XV-CutHJNkqvY7fSJaMLfKvlHUe2EMqY", description: "Trabajo unilateral del sóleo con mancuerna. Permite corregir desequilibrios." },
     { name: "Sóleo Sentado en Máquina", videoId: "1J7hUeQvPKwawBx0jLgWB5hfuM8DJKK21", description: "Ejercicio específico para el músculo sóleo en máquina sentado." },
     { name: "Sóleo Sentado con Mancuernas", videoId: "1qNB7Mbho6e87D3JqxBXzrjIKM8RgcfTQ", description: "Trabajo del sóleo con mancuernas en posición sentada." },
-    { name: "Elevaciones de Talones de Pie", videoId: "", description: "Ejercicio básico para gemelos que se puede hacer en cualquier lugar." },
-    { name: "Elevaciones de Talones Sentado", videoId: "", description: "Variante sentada que enfatiza el músculo sóleo." }
   ],
   pectorales: [
     { name: "Aperturas de Pie con Poleas", videoId: "1fLxLI_G-HX7ycMpe_UxqZAbP-_zukIYd", description: "Aperturas de pie en polea que permiten trabajar el pecho desde un ángulo único con resistencia constante." },
@@ -116,7 +107,6 @@ const exerciseDatabase = {
     { name: "Dominadas Agarre Supino", videoId: "1REN0E_arkYRaRmUbe-ERu4M28NPv6DrS", description: "Dominadas con agarre supino que enfatizan el trabajo de bíceps y la porción inferior del dorsal." },
     { name: "Dominadas Agarre Prono", videoId: "1avpp8w_3ezj1jgvDN1sMlOz6K0zRYQj2", description: "Dominadas clásicas con agarre prono. El ejercicio rey para desarrollar fuerza y anchura en la espalda." },
     { name: "Dominadas Agarre Prono a los Hombros", videoId: "1-u7-bzaIqkWk0mfuu8o_9RZzuCi8czj5", description: "Dominadas con agarre prono llevando la barra hasta los hombros para mayor activación muscular." },
-    { name: "Dominadas Agarre Cerrado", videoId: "", description: "Dominadas con agarre cerrado que cambian el ángulo de trabajo y enfatizan diferentes músculos de la espalda." }
   ],
   hombros: [
     { name: "Flexiones BB para Hombros", videoId: "1K3oB3zyC1Y2BTgTWwM6DdOajZVWL9e5i", description: "Flexiones específicas para hombros con peso corporal. Desarrolla fuerza funcional y estabilidad en los deltoides." },
@@ -133,16 +123,6 @@ const exerciseDatabase = {
     { name: "Vuelos Posteriores con Mancuerna con Apoyo", videoId: "1b9QzfTJC-qbzhwTA02g035Z4SaCIhExZ", description: "Vuelos posteriores con apoyo que estabilizan el cuerpo y permiten mayor concentración en el deltoides posterior." },
     { name: "Vuelos Posteriores con Mancuerna Sentado", videoId: "1LjkpajVcbNaEvsvjSZwRYshzAlUAKXSH", description: "Vuelos posteriores sentado que eliminan la compensación del cuerpo y aíslan el deltoides posterior." },
     { name: "Vuelos Posteriores con Mancuerna", videoId: "1UdUrrwoTBloHrbyGAQgLEs4QeGizsPJ7", description: "Vuelos posteriores clásicos que fortalecen el deltoides posterior y mejoran la postura corporal." }
-  ],
-  brazos: [
-    { name: "Curl de Bíceps con Barra", videoId: "", description: "Ejercicio clásico para bíceps. Permite cargas altas." },
-    { name: "Curl con Mancuernas", videoId: "", description: "Variante con mancuernas que permite trabajo unilateral." },
-    { name: "Extensiones de Tríceps", videoId: "", description: "Ejercicio de aislamiento para la cabeza larga del tríceps." },
-    { name: "Fondos para Tríceps", videoId: "", description: "Ejercicio con peso corporal excelente para tríceps." },
-    { name: "Curl Martillo", videoId: "", description: "Variante de curl que trabaja bíceps y braquial anterior." },
-    { name: "Press Francés", videoId: "", description: "Ejercicio acostado que aísla efectivamente los tríceps." },
-    { name: "Curl en Predicador", videoId: "", description: "Curl en banco predicador que elimina el impulso." },
-    { name: "Patadas de Tríceps", videoId: "", description: "Ejercicio unilateral que aísla cada tríceps independientemente." }
   ],
   biceps: [
     { name: "Bíceps Predicador en Máquina", videoId: "1ro6qejym5YmFlK1Nx-SmOKNFT-xC8PMk", description: "Curl de bíceps en máquina predicador. Aislamiento perfecto que elimina el impulso y enfatiza el pico de contracción." },
@@ -228,8 +208,8 @@ const exerciseDatabase = {
     { name: "Cargadas con Barra", videoId: "1UF730gkwbQaJekMeuihAWIidqf3LlIWm", description: "Ejercicio olímpico que desarrolla potencia explosiva. Trabaja desde piernas hasta hombros de forma coordinada." },
     { name: "Cargadas con Mancuernas con Press de Hombros", videoId: "1pZ8bNH2kJKEbkI-Xs2VqueCBRuf27tx_", description: "Combinación de cargada y press que trabaja todo el cuerpo. Desarrolla potencia, fuerza y estabilidad." },
     { name: "Máquina de Remo", videoId: "1VMKULMWUsUTrsnOvVC0En9biBtZjzDp4", description: "Ejercicio cardiovascular completo que trabaja 85% de los músculos del cuerpo. Excelente para resistencia y fuerza." },
-    { name: "Power Jerk con Barra", videoId: "1K7_DN9OOZZ20BUqYjh8eb444GROVaKm3", description: "Envión de potencia que desarrolla fuerza explosiva de hombros y estabilidad del core." },
-    { name: "Power Jerk Dividido con Barra", videoId: "", description: "Variante del power jerk con recepción en posición dividida. Mejora la estabilidad unilateral y coordinación." }
+    { name: "Power Jerk con Barra", videoId: "https://drive.google.com/file/d/1VMKULMWUsUTrsnOvVC0En9biBtZjzDp4/view?usp=drivesdk", description: "Envión de potencia que desarrolla fuerza explosiva de hombros y estabilidad del core." },
+    { name: "Power Jerk Dividido con Barra", videoId: "https://drive.google.com/file/d/1K7_DN9OOZZ20BUqYjh8eb444GROVaKm3/view?usp=drivesdk", description: "Variante del power jerk con recepción en posición dividida. Mejora la estabilidad unilateral y coordinación." }
   ],
   cardio: [
     { name: "Bicicleta Elíptica", videoId: "1v384vGz5bUtEjJL3Cjmvaxei0JHXaUeh", description: "Ejercicio cardiovascular de bajo impacto que trabaja todo el cuerpo. Ideal para quemar calorías sin impacto en articulaciones." },
@@ -256,8 +236,8 @@ const exerciseDatabase = {
     { name: "Power Jerk con Barra", videoId: "15rnVdSZsKC-uE3M0CX8KBBzhC0t8xq2H", description: "Envión de potencia olímpico que desarrolla fuerza explosiva de todo el cuerpo. Ejercicio técnico de alta complejidad." },
     { name: "Cargadas con Mancuernas con Press de Hombros", videoId: "1h-Mw94WygExr29fGCSBK6gtHDVrsbI-Z", description: "Combinación de cargada y press que trabaja todo el cuerpo. Desarrolla potencia, fuerza y coordinación de forma integral." },
     { name: "Cargadas con Barra", videoId: "13GzVdQFHeX04akzdNUPLXs2XylASgvac", description: "Ejercicio olímpico fundamental que desarrolla potencia explosiva desde piernas hasta hombros de forma coordinada." },
-    { name: "Balanceo con Rusa a Una Mano", videoId: "1xR-6Ouitr4K4CbGnh04byr7k6p2VFgxn", description: "Swing unilateral con kettlebell que añade trabajo de estabilización del core y corrección de desequilibrios." },
-    { name: "Balanceo con Rusa a Dos Manos", videoId: "", description: "Swing con kettlebell a dos manos. Ejercicio fundamental que desarrolla potencia de cadera y resistencia cardiovascular." },
+    { name: "Balanceo con Rusa a Una Mano", videoId: "https://drive.google.com/file/d/1TNoSwyg-LdZGu6SvxiwaJoZ0KkaYOJSB/view?usp=drivesdk", description: "Swing unilateral con kettlebell que añade trabajo de estabilización del core y corrección de desequilibrios." },
+    { name: "Balanceo con Rusa a Dos Manos", videoId: "https://drive.google.com/file/d/1xR-6Ouitr4K4CbGnh04byr7k6p2VFgxn/view?usp=drivesdk", description: "Swing con kettlebell a dos manos. Ejercicio fundamental que desarrolla potencia de cadera y resistencia cardiovascular." },
     { name: "Arranque Muscular con Barra", videoId: "1TNoSwyg-LdZGu6SvxiwaJoZ0KkaYOJSB", description: "Arranque sin flexión de piernas que enfatiza la fuerza de tracción y potencia de brazos y espalda de forma pura." },
     { name: "Arranque Dividido con Barra", videoId: "1s72KRoNfHjWHId9mhu2RzgzYDD8EPgmL", description: "Arranque con recepción en posición dividida. Mejora la estabilidad unilateral y la coordinación técnica avanzada." },
     { name: "Arranque de Potencia con Sentadilla con Barra", videoId: "1DVr_5ntzpy0tQNbRjKIcsB2jBXueMNhf", description: "Variante del arranque que incluye sentadilla completa. Desarrolla fuerza, potencia y movilidad de forma integral." },
@@ -275,15 +255,8 @@ const exerciseDatabase = {
     { name: "Círculos de Brazos Hacia Atrás", videoId: "", description: "Movimiento de calentamiento que prepara los hombros en dirección opuesta y equilibra la movilidad articular." },
     { name: "Estiramiento de Cuádriceps", videoId: "", description: "Ejercicio de flexibilidad que alarga los músculos del cuádriceps y mejora la movilidad de la cadera." },
     { name: "Estiramiento de Isquiotibiales", videoId: "", description: "Estiramiento que mejora la flexibilidad de la cadena posterior y reduce la tensión en la espalda baja." },
-    { name: "Estiramiento de Pantorrillas", videoId: "", description: "Ejercicio de flexibilidad que alarga los músculos de la pantorrilla y mejora la movilidad del tobillo." },
     { name: "Estiramiento de Hombros", videoId: "", description: "Movimiento que mejora la flexibilidad del hombro y reduce la tensión en el tren superior." },
-    { name: "Estiramiento de Espalda", videoId: "", description: "Ejercicio que alarga los músculos de la espalda y mejora la postura corporal." },
-    { name: "Movilidad de Columna", videoId: "", description: "Ejercicio que mejora la flexibilidad y movilidad de toda la columna vertebral." },
-    { name: "Activación de Glúteos", videoId: "", description: "Ejercicio de preparación que activa los músculos glúteos antes del entrenamiento principal." },
-    { name: "Marcha en el Lugar", videoId: "", description: "Ejercicio de calentamiento cardiovascular suave que prepara el cuerpo para la actividad física." },
-    { name: "Talones al Glúteo", videoId: "", description: "Ejercicio dinámico que calienta los isquiotibiales y mejora la coordinación neuromuscular." },
-    { name: "Rodillas al Pecho", videoId: "", description: "Movimiento de calentamiento que mejora la movilidad de cadera y activa el core." }
-  ]
+  ],
 };
 
 /* ===========================
