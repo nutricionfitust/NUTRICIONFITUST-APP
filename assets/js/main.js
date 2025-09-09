@@ -3,7 +3,7 @@
 =========================== */
 const exerciseDatabase = {
   piernas_general: [
-    { name: "Aductores Sentado", videoId: "1Xfs-vaGua4Nn0mW--xZh8y5dgd6cD_rb", description: "Ejercicio de aislamiento para los músculos aductores. Fortalece la parte interna de los muslos." },
+    { name: "Aductores Sentado", videoId: "https://drive.google.com/file/d/1Xfs-vaGua4Nn0mW--xZh8y5dgd6cD_rb/view?usp=drivesdk", description: "Ejercicio de aislamiento para los músculos aductores. Fortalece la parte interna de los muslos." },
     { name: "Buenos Días en Smith", videoId: "1NrKBja118-ToX05Ocs6VkAn8z8UKG73J", description: "Ejercicio de bisagra de cadera en máquina Smith. Trabaja isquiotibiales, glúteos y espalda baja con mayor estabilidad." },
     { name: "Buenos Días", videoId: "1VAWnHjTmp-EW7v_37kv8G_v4oDMueuZ2", description: "Ejercicio fundamental de bisagra de cadera. Fortalece toda la cadena posterior y mejora la flexibilidad." },
     { name: "Escalera Mecánica", videoId: "1-KDVoR0MztijwMCgCJ1qfbcK_NjNvnWj", description: "Ejercicio cardiovascular que simula subir escaleras. Excelente para resistencia y tonificación de piernas." },
@@ -298,7 +298,10 @@ const ADMIN_PASSWORD_HASH =
 =========================== */
 const trainingFolders = {
   "2 MUSCULACIÓN + 2 HIIT": { routines: {} },
-  "2 MUSCULACIÓN + 2 LISS": {
+
+
+
+  "2 MUSCULACIÓN + (2 LISS)": {
     routines: {
       "agustina": {
         name: "Agustina",
@@ -323,6 +326,9 @@ const trainingFolders = {
       }
     }
   },
+
+
+
   "3 MUSCULACIÓN + 1 HIIT + (1 LISS)": {
     routines: {
       "camila": {
@@ -356,8 +362,17 @@ const trainingFolders = {
       }
     }
   },
+
+
+
   "3 MUSCULACIÓN + 2 HIIT": { routines: {} },
+
+
+
   "3 MUSCULACIÓN + 2 HIIT + (1 LISS)": { routines: {} },
+
+
+
   "4 MUSCULACIÓN (1 FB HIIT) + (1 LISS)": {
     routines: {
       "sofia": {
@@ -398,7 +413,10 @@ const trainingFolders = {
       }
     }
   },
-"4 MUSCULACIÓN + 1 HIIT + (1 LISS)": {
+
+
+
+  "4 MUSCULACIÓN + 1 HIIT + (1 LISS)": {
   routines: {
     "francisco": {
       name: "Francisco",
@@ -435,13 +453,75 @@ const trainingFolders = {
     }
   }
 },
+
+
+
   "4 MUSCULACIÓN + 2 HIIT": { routines: {} },
-  "5 MUSCULACIÓN + 1 HIIT + (1 LISS)": { routines: {} },
+
+
+
+  "5 MUSCULACIÓN + 1 HIIT + (1 LISS)": {
+  routines: {
+    "francisco": {
+      name: "Francisco",
+      plan: {
+        "Día 1 - Pecho y Tríceps": [
+          "Press de banca 4 x 8-8-8-8",
+          "Press inclinado con mancuernas 4 x 10-10-10-10",
+          "Fondos para tríceps 3 x 12-12-12",
+          "Aperturas en banca 3 x 12-12-12",
+          "Extensiones de tríceps 3 x 12-12-12"
+        ],
+        "Día 2 - Espalda y Bíceps": [
+          "Dominadas 4 x 8-8-8-8",
+          "Remo con barra 4 x 10-10-10-10",
+          "Curl de bíceps 3 x 12-12-12",
+          "Remo con mancuerna 3 x 12-12-12",
+          "Curl martillo 3 x 12-12-12"
+        ],
+        "Día 3 - Piernas": [
+          "Sentadillas 4 x 10-10-10-10",
+          "Prensa de piernas 4 x 12-12-12-12",
+          "Peso muerto rumano 3 x 12-12-12",
+          "Elevaciones de talones 3 x 15-15-15",
+          "Plancha 3 x 30-30-30 seg"
+        ],
+        "Día 4 - Hombros y Core": [
+          "Press militar 4 x 10-10-10-10",
+          "Elevaciones laterales 3 x 12-12-12",
+          "Vuelos posteriores 3 x 12-12-12",
+          "Crunch abdominal 3 x 20-20-20",
+          "Plancha lateral 3 x 30-30-30 seg"
+        ]
+      }
+    }
+  }
+},
+
+
+
   "5 MUSCULACIÓN + (1 LISS)": { routines: {} },
+
+
+
   "5 MUSCULACIÓN + 2 HIIT": { routines: {} },
+
+
+
   "5 MUSCULACIÓN + 3 HIIT": { routines: {} },
+
+
+
   "6 MUSCULACIÓN + 2 HIIT + (1 LISS)": { routines: {} },
+
+
+
   "6 MUSCULACIÓN + 2 HIIT": { routines: {} }
+
+
+
+
+
 };
 
 /* (Eliminado bloque de overrides por rutina para volver al comportamiento anterior) */
@@ -756,14 +836,21 @@ function showUserRoutineDay(userKey, day) {
    BASE FILTROS / VIDEOS
 =========================== */
 function checkBasePassword() {
-  const password = document.getElementById('basePasswordInput').value.trim();
-  if (password === ADMIN_PASSWORD) {
+  const input = document.getElementById('basePasswordInput');
+  const raw = (input?.value || '').trim().toLowerCase();
+  if (!raw) return;
+
+  const code = codificar(raw);
+  if (code === ADMIN_PASSWORD_HASH) {
     document.getElementById('basePasswordSection').style.display = 'none';
+    if (typeof renderFilterButtons === 'function') renderFilterButtons();
+    if (typeof renderExerciseList === 'function') renderExerciseList('all');
     document.getElementById('baseContent').style.display = 'block';
-    loadExercises('all');
+    input.value = '';
   } else {
     alert('Contraseña incorrecta para acceder a la base de entrenamientos.');
-    document.getElementById('basePasswordInput').value = '';
+    input.value = '';
+    input.focus();
   }
 }
 
