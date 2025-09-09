@@ -297,7 +297,8 @@ const ADMIN_PASSWORD_HASH =
    CARPETAS / PLANES
 =========================== */
 const trainingFolders = {
-  "2 días de musculación + 2 días LISS": {
+  "2 MUSCULACIÓN + 2 HIIT": { routines: {} },
+  "2 MUSCULACIÓN + 2 LISS": {
     routines: {
       "agustina": {
         name: "Agustina",
@@ -322,7 +323,7 @@ const trainingFolders = {
       }
     }
   },
-  "3 días musculación + 1 HIIT + 1 LISS": {
+  "3 MUSCULACIÓN + 1 HIIT + (1 LISS)": {
     routines: {
       "camila": {
         name: "Camila",
@@ -355,9 +356,9 @@ const trainingFolders = {
       }
     }
   },
-  "3 días musculación + 2 HIIT": { routines: {} },
-  "3 días musculación + 2 HIIT + 1 LISS": { routines: {} },
-  "4 días musculación (1 día full body tipo HIIT) + 1 LISS": {
+  "3 MUSCULACIÓN + 2 HIIT": { routines: {} },
+  "3 MUSCULACIÓN + 2 HIIT + (1 LISS)": { routines: {} },
+  "4 MUSCULACIÓN (1 FB HIIT) + (1 LISS)": {
     routines: {
       "sofia": {
         name: "Sofía",
@@ -397,7 +398,7 @@ const trainingFolders = {
       }
     }
   },
-"4 días musculación + 1 día HIIT + 1 LISS": {
+"4 MUSCULACIÓN + 1 HIIT + (1 LISS)": {
   routines: {
     "francisco": {
       name: "Francisco",
@@ -434,13 +435,13 @@ const trainingFolders = {
     }
   }
 },
-  "4 días musculación + 2 días HIIT": { routines: {} },
-  "5 días musculación + 1 HIIT + 1 día LISS": { routines: {} },
-  "5 días musculación + 1 LISS": { routines: {} },
-  "5 días musculación + 2 días HIIT": { routines: {} },
-  "5 días musculación + 3 días HIIT": { routines: {} },
-  "6 días musculación + 2 días HIIT + 1 LISS": { routines: {} },
-  "6 días musculación + 2 HIIT": { routines: {} }
+  "4 MUSCULACIÓN + 2 HIIT": { routines: {} },
+  "5 MUSCULACIÓN + 1 HIIT + (1 LISS)": { routines: {} },
+  "5 MUSCULACIÓN + (1 LISS)": { routines: {} },
+  "5 MUSCULACIÓN + 2 HIIT": { routines: {} },
+  "5 MUSCULACIÓN + 3 HIIT": { routines: {} },
+  "6 MUSCULACIÓN + 2 HIIT + (1 LISS)": { routines: {} },
+  "6 MUSCULACIÓN + 2 HIIT": { routines: {} }
 };
 
 /* (Eliminado bloque de overrides por rutina para volver al comportamiento anterior) */
@@ -449,10 +450,10 @@ const trainingFolders = {
    MAPEO USUARIOS → RUTINAS
 =========================== */
 const userRoutineMapping = {
-  agustina: { folder: "2 días de musculación + 2 días LISS", routine: "agustina" },
-  camila:   { folder: "3 días musculación + 1 HIIT + 1 LISS", routine: "camila" },
-  sofia:    { folder: "4 días musculación (1 día full body tipo HIIT) + 1 LISS", routine: "sofia" },
-  francisco: { folder: "4 días musculación + 1 día HIIT + 1 LISS", routine: "francisco" },
+  agustina: { folder: "2 MUSCULACIÓN + (2 LISS)", routine: "agustina" },
+  camila:   { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "camila" },
+  sofia:    { folder: "4 MUSCULACIÓN (1 FB HIIT) + (1 LISS)", routine: "sofia" },
+  francisco: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "francisco" },
 };
 
 /* ===========================
@@ -890,7 +891,6 @@ const diccionario = {
   ...diccionarioParteC,
   ...diccionarioParteD
 };
-
 
 // === Helpers de codificación/decodificación ===
 function codificar(texto) {
