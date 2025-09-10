@@ -152,3 +152,9 @@ body {
   .modal .rounded-lg { border-radius: 16px; }
 }
 /* ======= MOBILE FRIENDLY FINAL (≤480px) ======= */
+
+.icon-centered svg {
+  display: block;
+  margin: 0 auto;
+  transform: translateY(8px); /* ajustá el valor hasta que se vea centrado */
+}
