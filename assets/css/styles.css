@@ -149,3 +149,18 @@ body {
   margin: 0 auto;
   transform: translateY(2px); /* ajustá el valor hasta que se vea centrado */
 }
+
+.section-header {
+  background: #ecfdf5;              /* verde muy clarito */
+  border: 1px solid #a7f3d0;        /* borde verde suave */
+  border-radius: 0.5rem;            /* esquinas redondeadas */
+  padding: 0.5rem 0.75rem;          /* espacio interno */
+  margin: 1.5rem 0 0.75rem 0;       /* margen arriba/abajo */
+}
+
+.section-header h5 {
+  font-size: 0.95rem;               /* un poco más chico que el título principal */
+  font-weight: 600;
+  color: #047857;                   /* verde más fuerte */
+  margin: 0;
+}

@@ -1292,10 +1292,12 @@ function renderSectionInline(sectionTitle, items, day) {
 
   const daySlug = slugifyForId(`${day}-${sectionTitle}`);
   return `
-    <!-- Subtítulo dentro del mismo container del día -->
-    <h5 class="text-base font-semibold text-gray-700 mt-4 mb-2">${sectionTitle}</h5>
+    <!-- Encabezado de sección verde -->
+    <div class="section-header">
+      <h5>${sectionTitle}</h5>
+    </div>
 
-    <!-- Lista de ejercicios (mismos ítems que ya usás) -->
+    <!-- Lista de ejercicios -->
     <ul class="space-y-3">
       ${items.map((ex, i) =>
         (typeof ex === 'object' && ex && ex.superset)
