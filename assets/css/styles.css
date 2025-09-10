@@ -48,3 +48,30 @@ body {
   outline: none;
   border-color: #4169E1;
 }
+
+/* Badge de descanso */
+.badge-rest {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #4338ca;           /* purple-700 */
+  background: #ede9fe;      /* purple-100 */
+  border: 1px solid #c4b5fd;/* purple-300 */
+}
+
+/* Contenedor de biserie */
+.superset-card {
+  border-radius: 14px;
+  background: linear-gradient(145deg, #f6f3ff, #efeaff); /* violeta muy suave */
+  border: 1px solid rgba(139,92,246,0.25);               /* purple-500 opacidad baja */
+  box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+  padding: 14px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.superset-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.08);
+}
+

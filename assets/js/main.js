@@ -394,12 +394,17 @@ const trainingFolders = {
     "francisco": {
       name: "Francisco",
       plan: {
-        "Día 1 - Pecho y Tríceps": [
-          "Press de banca 4 x 8-8-8-8",
+          "Día 1 - Pecho y Tríceps": [
+          "Press de banca 4 x 8-8-8-8 rest=2min",
+  {
+  superset: [
           "Press inclinado con mancuernas 4 x 10-10-10-10",
-          "Fondos para tríceps 3 x 12-12-12",
-          "Aperturas en banca 3 x 12-12-12",
-          "Extensiones de tríceps 3 x 12-12-12"
+          "Fondos para tríceps 3 x 12-12-12"
+      ],
+  restAfter: "2min"
+  },
+          "Aperturas en banca 3 x 12-12-12 rest=60s",
+          "Extensiones de tríceps 3 x 12-12-12 descanso=2-3min"
         ],
         "Día 2 - Espalda y Bíceps": [
           "Dominadas 4 x 8-8-8-8",
@@ -420,7 +425,7 @@ const trainingFolders = {
           "Elevaciones laterales 3 x 12-12-12",
           "Vuelos posteriores 3 x 12-12-12",
           "Crunch abdominal 3 x 20-20-20",
-          "Plancha lateral 3 x 30-30-30 seg"
+          "Plancha lateral 3 x 30-30-30 rest=60s",
         ]
       }
     }
@@ -433,43 +438,7 @@ const trainingFolders = {
 
 
 
-  "5 MUSCULACIÓN + 1 HIIT + (1 LISS)": {
-  routines: {
-    "francisco": {
-      name: "Francisco",
-      plan: {
-        "Día 1 - Pecho y Tríceps": [
-          "Press de banca 4 x 8-8-8-8",
-          "Press inclinado con mancuernas 4 x 10-10-10-10",
-          "Fondos para tríceps 3 x 12-12-12",
-          "Aperturas en banca 3 x 12-12-12",
-          "Extensiones de tríceps 3 x 12-12-12"
-        ],
-        "Día 2 - Espalda y Bíceps": [
-          "Dominadas 4 x 8-8-8-8",
-          "Remo con barra 4 x 10-10-10-10",
-          "Curl de bíceps 3 x 12-12-12",
-          "Remo con mancuerna 3 x 12-12-12",
-          "Curl martillo 3 x 12-12-12"
-        ],
-        "Día 3 - Piernas": [
-          "Sentadillas 4 x 10-10-10-10",
-          "Prensa de piernas 4 x 12-12-12-12",
-          "Peso muerto rumano 3 x 12-12-12",
-          "Elevaciones de talones 3 x 15-15-15",
-          "Plancha 3 x 30-30-30 seg"
-        ],
-        "Día 4 - Hombros y Core": [
-          "Press militar 4 x 10-10-10-10",
-          "Elevaciones laterales 3 x 12-12-12",
-          "Vuelos posteriores 3 x 12-12-12",
-          "Crunch abdominal 3 x 20-20-20",
-          "Plancha lateral 3 x 30-30-30 seg"
-        ]
-      }
-    }
-  }
-},
+  "5 MUSCULACIÓN + 1 HIIT + (1 LISS)": { routines: {} },
 
 
 
@@ -693,7 +662,10 @@ function showSpecificRoutine(folderName, routineKey) {
         <div class="flex justify-between items-center">
           <div>
             <h4 class="text-lg font-bold text-blue-800 mb-2">${day}</h4>
-            <p class="text-blue-600 text-sm">${exercises.length} ejercicio${exercises.length !== 1 ? 's' : ''}</p>
+            ${(() => {
+  const count = countExercisesDisplay(exercises);
+  return `<p class="text-blue-600 text-sm">${count} ejercicio${count !== 1 ? 's' : ''}</p>`;
+})()}
           </div>
           <div class="text-blue-600">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -727,7 +699,10 @@ function showAdminRoutineDay(folderName, routineKey, day) {
     <div class="bg-white rounded-lg p-6 border border-gray-200 shadow-sm">
       <h4 class="text-xl font-bold text-gray-800 mb-4">${day}</h4>
       <ul class="space-y-3">
-        ${exercises.map((ex, i) => generateRoutineItemHTML(ex, slugifyForId(day), i)).join('')}
+      ${exercises.map((ex, i) => (typeof ex === 'object' && ex && ex.superset)
+      ? generateSupersetItemHTML(ex, slugifyForId(day), i)
+      : generateRoutineItemHTML(ex, slugifyForId(day), i)
+      ).join('')}
       </ul>
     </div>
   `;
@@ -762,7 +737,10 @@ function showUserSpecificTraining(userKey) {
         <div class="flex justify-between items-center">
           <div>
             <h4 class="text-lg font-bold text-blue-800 mb-2">${day}</h4>
-            <p class="text-blue-600 text-sm">${exercises.length} ejercicio${exercises.length !== 1 ? 's' : ''}</p>
+            ${(() => {
+  const count = countExercisesDisplay(exercises);
+  return `<p class="text-blue-600 text-sm">${count} ejercicio${count !== 1 ? 's' : ''}</p>`;
+})()}
           </div>
           <div class="text-blue-600">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -798,7 +776,10 @@ function showUserRoutineDay(userKey, day) {
     <div class="bg-white rounded-lg p-6 border border-gray-200 shadow-sm">
       <h4 class="text-xl font-bold text-gray-800 mb-4">${day}</h4>
       <ul class="space-y-3">
-        ${exercises.map((ex, i) => generateRoutineItemHTML(ex, slugifyForId(day), i)).join('')}
+        ${exercises.map((ex, i) => (typeof ex === 'object' && ex && ex.superset)
+  ? generateSupersetItemHTML(ex, slugifyForId(day), i)
+  : generateRoutineItemHTML(ex, slugifyForId(day), i)
+).join('')}
       </ul>
     </div>
   `;
@@ -1072,20 +1053,141 @@ function findExerciseByNameFragment(fragment) {
   return best;
 }
 
+function countExercisesDisplay(exercises) {
+  let total = 0;
+  for (const ex of exercises) {
+    if (ex && typeof ex === 'object' && Array.isArray(ex.superset)) {
+      total += ex.superset.length; // cada ítem de la biserie cuenta
+    } else {
+      total += 1; // ejercicio individual
+    }
+  }
+  return total;
+}
+
+
+// --- Helpers de descanso y parseo (no rompen lo existente) ---
+function extractRestFromTail(tail) {
+  // soporta seg y min, incluyendo rangos: "2-3min", "2 a 3 min"
+  const t = (tail || '').toString();
+  const m = t.match(
+    /(?:\||;|\(|\s)(?:descanso|rest)\s*[:=]?\s*([0-9]+(?:\s*(?:-|a)\s*[0-9]+)?\s*(?:s|seg|min))/i
+  );
+  if (!m) return '';
+
+  let clean = m[1].replace(/\s+/g, ''); // quita espacios: "2a3min" o "90s"
+
+  // Normalizamos "a" → "-"
+  clean = clean.replace(/a/gi, '-');
+
+  return `Descanso ${clean}`;
+}
+
+function stripRestFromTail(tail) {
+  return (tail || '')
+    .toString()
+    .replace(
+      /(?:\||;|\(|\s)(?:descanso|rest)\s*[:=]?\s*[0-9]+(?:\s*(?:-|a)\s*[0-9]+)?\s*(?:s|seg|min)\)?/ig,
+      ''
+    )
+    .trim();
+}
+
+// Devuelve { namePart, detailsPart, rest }
+function splitExerciseLineWithRest(line) {
+  const { namePart, detailsPart } = splitExerciseLine(line);
+  const rest = extractRestFromTail(detailsPart);
+  const cleanDetails = stripRestFromTail(detailsPart);
+  return { namePart, detailsPart: cleanDetails, rest };
+}
+
+
 function generateRoutineItemHTML(exLine, daySlug, index) {
-  const { namePart, detailsPart } = splitExerciseLine(exLine);
+  // Si viene un objeto (p.ej. parte de una biserie), derivamos a single renderer interno
+  if (typeof exLine === 'object' && exLine && exLine.__singleObj) {
+    const { namePart, detailsPart, rest } = exLine.__singleObj;
+    const match = findExerciseByNameFragment(namePart);
+    const safeName = escapeForAttr(namePart);
+    const inlineDetails = formatDetailsInline(detailsPart);
+    const desc = (match && match.description) ? match.description : 'Sin descripción disponible.';
+    return `
+      <li class="text-gray-700">
+        <div class="w-full bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 rounded-lg p-3 hover:from-blue-100 hover:to-blue-200 transition-colors">
+          <button class="w-full text-left flex items-center justify-between" onclick="onRoutineExerciseClick('${safeName}')">
+            <div class="font-semibold text-blue-900">${namePart}${inlineDetails ? ` <span class='font-normal text-blue-800'>${inlineDetails}</span>` : ''}</div>
+            ${rest ? `<span class="badge-rest">${rest}</span>` : ''}
+          </button>
+        </div>
+        <div class="mt-2">
+          <div class="text-gray-700 text-xs bg-white border border-blue-100 rounded-lg p-3">${desc}</div>
+        </div>
+      </li>
+    `;
+  }
+
+  // Soporta string legacy con descanso opcional al final: " ... 4 x 10-10-10-10 | descanso=90s"
+  const { namePart, detailsPart, rest } = splitExerciseLineWithRest(exLine);
   const match = findExerciseByNameFragment(namePart);
   const safeName = escapeForAttr(namePart);
   const inlineDetails = formatDetailsInline(detailsPart);
   const desc = (match && match.description) ? match.description : 'Sin descripción disponible.';
+
   return `
-    <li class=\"text-gray-700\">\n      <button class=\"w-full text-left bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 rounded-lg p-3 hover:from-blue-100 hover:to-blue-200 transition-colors\"\n              onclick=\"onRoutineExerciseClick('${safeName}')\">\n        <div class=\"font-semibold text-blue-900\">${namePart}${inlineDetails ? ` <span class=\\\"font-normal text-blue-800\\\">${inlineDetails}</span>` : ''}</div>
-      </button>
-      <div class=\"mt-2\">\n        <div class=\"text-gray-700 text-xs bg-white border border-blue-100 rounded-lg p-3\">${desc}</div>
+    <li class="text-gray-700">
+      <div class="w-full bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 rounded-lg p-3 hover:from-blue-100 hover:to-blue-200 transition-colors">
+        <button class="w-full text-left flex items-center justify-between" onclick="onRoutineExerciseClick('${safeName}')">
+          <div class="font-semibold text-blue-900">${namePart}${inlineDetails ? ` <span class='font-normal text-blue-800'>${inlineDetails}</span>` : ''}</div>
+          ${rest ? `<span class="badge-rest">${rest}</span>` : ''}
+        </button>
+      </div>
+      <div class="mt-2">
+        <div class="text-gray-700 text-xs bg-white border border-blue-100 rounded-lg p-3">${desc}</div>
       </div>
     </li>
   `;
 }
+
+// group = { superset: [string, string, ...], restAfter: "120s" }
+function generateSupersetItemHTML(group, daySlug, index) {
+  const items = (group.superset || []).map((line) => {
+    const { namePart, detailsPart, rest } = splitExerciseLineWithRest(line);
+    return {
+      __singleObj: { namePart, detailsPart, rest }
+    };
+  });
+
+  const inner = items.map((obj, idx) => generateRoutineItemHTML(obj, daySlug, index + '-' + idx)).join('');
+
+  // 👇 Normalizamos el texto de descanso
+  let restText = '';
+  if (group.restAfter) {
+    let clean = group.restAfter.toString().trim();
+
+    // si no empieza con "descanso", lo añadimos
+    if (!/^descanso/i.test(clean)) {
+      clean = `Descanso ${clean}`;
+    }
+
+    restText = `<div class="mt-3 flex justify-end"><span class="badge-rest">${clean}</span></div>`;
+  }
+
+  return `
+    <li class="text-gray-700">
+      <div class="superset-card">
+        <div class="flex items-center justify-between mb-2">
+          <div class="font-semibold text-purple-800">Biserie</div>
+          <div class="text-xs text-purple-700">Sin descanso entre ejercicios</div>
+        </div>
+        <ul class="space-y-3">
+          ${inner}
+        </ul>
+        ${restText}
+      </div>
+    </li>
+  `;
+}
+
+
 
 function formatDetailsInline(details) {
   const raw = (details || '').toString().trim();
