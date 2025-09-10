@@ -172,3 +172,31 @@ body {
   margin: 0;
 }
 
+/* Barra vertical por sección */
+.section-group {
+  position: relative;
+  /* deja un pequeño margen para que la barra no pegue al borde del card del día */
+  margin-left: 2px;
+  padding-left: 18px; /* espacio para que la lista no choque con la barra */
+}
+
+.section-group::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  /* Que arranque después del header (ejemplo: 50px más abajo del top) */
+  top: 3.2rem;              /* ajustá este valor según la altura del header */
+  bottom: 0;
+  width: 6px;
+  background: #ecfdf5;      /* verde clarito */
+  border: 1px solid #a7f3d0;
+  border-radius: 9999px;
+  z-index: 0;
+}
+
+/* Asegura que el contenido quede por encima de la barra si hay superposición */
+.section-group > .section-header,
+.section-group > ul {
+  position: relative;
+  z-index: 1;
+}

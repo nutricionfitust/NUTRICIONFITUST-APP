@@ -1264,19 +1264,21 @@ function renderSectionInline(sectionTitle, items, day) {
 
   const daySlug = slugifyForId(`${day}-${sectionTitle}`);
   return `
-    <!-- Encabezado de sección verde -->
-    <div class="section-header">
-      <h5>${sectionTitle}</h5>
-    </div>
+    <div class="section-group">
+      <!-- Encabezado de sección verde -->
+      <div class="section-header">
+        <h5>${sectionTitle}</h5>
+      </div>
 
-    <!-- Lista de ejercicios -->
-    <ul class="space-y-3">
-      ${items.map((ex, i) =>
-        (typeof ex === 'object' && ex && ex.superset)
-          ? generateSupersetItemHTML(ex, daySlug, i)
-          : generateRoutineItemHTML(ex, daySlug, i)
-      ).join('')}
-    </ul>
+      <!-- Lista de ejercicios -->
+      <ul class="space-y-3">
+        ${items.map((ex, i) =>
+          (typeof ex === 'object' && ex && ex.superset)
+            ? generateSupersetItemHTML(ex, daySlug, i)
+            : generateRoutineItemHTML(ex, daySlug, i)
+        ).join('')}
+      </ul>
+    </div>
   `;
 }
 
