@@ -1130,28 +1130,27 @@ function generateRoutineItemHTML(exLine, daySlug, index) {
         </button>
       </div>
 
-      <!-- CONTENEDOR BLANCO: 3 puntitos + descripción colapsable -->
-      <div class="desc-card mt-2" onclick="onDescCardClick(event, '${descId}')">
-        <button
-          type="button"
-          class="dots-btn"
-          aria-controls="${descId}"
-          aria-expanded="false"
-          data-target="${descId}"
-          onclick="toggleDescription(event, '${descId}')"
-        >
-          <span class="dot" aria-hidden="true"></span>
-          <span class="dot" aria-hidden="true"></span>
-          <span class="dot" aria-hidden="true"></span>
-        </button>
+<!-- CONTENEDOR BLANCO: 3 puntitos + descripción colapsable -->
+<div class="desc-card mt-2" onclick="toggleDescription(event, '${descId}')">
+  <button
+    type="button"
+    class="dots-btn"
+    aria-controls="${descId}"
+    aria-expanded="false"
+    data-target="${descId}"
+  >
+    <span class="dot" aria-hidden="true"></span>
+    <span class="dot" aria-hidden="true"></span>
+    <span class="dot" aria-hidden="true"></span>
+  </button>
 
-        <!-- Panel (colapsable) -->
-        <div id="${descId}" class="desc-panel mt-2">
-          <div class="text-gray-700 text-xs leading-relaxed">
-            ${desc}
-          </div>
-        </div>
-      </div>
+  <!-- Panel (colapsable) -->
+  <div id="${descId}" class="desc-panel mt-2">
+    <div class="text-gray-700 text-xs leading-relaxed">
+      ${desc}
+    </div>
+  </div>
+</div>
     </li>
   `;
 }
@@ -1164,12 +1163,11 @@ function toggleDescription(evt, id) {
   const isOpen = panel.classList.contains('open');
   panel.classList.toggle('open', !isOpen);
 
-  // Botón correspondiente
   const btn = document.querySelector(`[data-target='${id}']`);
   if (btn) {
     btn.setAttribute('aria-expanded', String(!isOpen));
-    // Ocultar si se abrió, mostrar si se cerró
-    btn.style.display = !isOpen ? "none" : "inline-flex";
+    // ⚡ el botón siempre visible, para que los puntos cambien de color
+    btn.style.display = "inline-flex";
   }
 }
 
