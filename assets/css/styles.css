@@ -121,40 +121,12 @@ body {
 
 
 /* ======= MOBILE FRIENDLY DESDE AQUÍ (≤480px) ======= */
-@media (max-width: 480px) {
-  /* Separación general y lectura */
-  body { padding: 14px; line-height: 1.5; }
 
-  /* Tarjetas/listas más respiradas */
-  .card-hover { border-radius: 14px; }
-  .space-y-4 > * + * { margin-top: 14px !important; }   /* secciones */
-  .exercise-item { padding: 14px; margin-top: 10px; }    /* items de ejercicios */
-  .desc-card { padding: 12px; }                          /* contenedor blanco de descripción */
-  .superset-card { padding: 12px; }
 
-  /* Títulos y textos */
-  h4, .text-lg { font-size: 1.05rem; }
-  .text-sm { font-size: 0.95rem; }
-  .text-xs { font-size: 0.9rem; }
-
-  /* Botón de video y toques */
-  button, .dots-btn { min-height: 44px; }                /* target cómodo para dedo */
-  .dots-btn { padding: .5rem .6rem; gap: .5rem; }
-  .dots-btn .dot { width: 6px; height: 6px; }
-
-  /* Badges y chips */
-  .badge-rest { font-size: 11px; padding: 2px 6px; }
-
-  /* Modales: que el contenido no “pegue” a los bordes */
-  .modal { padding: 16px; }
-  .modal .card-hover,
-  .modal .bg-white,
-  .modal .rounded-lg { border-radius: 16px; }
-}
 /* ======= MOBILE FRIENDLY FINAL (≤480px) ======= */
 
 .icon-centered svg {
   display: block;
   margin: 0 auto;
-  transform: translateY(8px); /* ajustá el valor hasta que se vea centrado */
+  transform: translateY(2px); /* ajustá el valor hasta que se vea centrado */
 }
