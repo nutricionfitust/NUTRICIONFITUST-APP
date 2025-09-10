@@ -397,10 +397,10 @@ const trainingFolders = {
         "Día 1 - Pecho y Tríceps": {
   "Acondicionamiento & Calentamiento": [
     "Rotaciones de hombros 2 x 15-15",
-    "Skipping 3 x 30 seg"
+    "Skipping 3 x 30seg rest=1min"
   ],
   "Entrenamiento de Fuerza": [
-    "Press de banca 4 x 8-8-8-8 rest=2min",
+    "Press de banca 4 x 12-10-8-8 rest=2min",
     {
       superset: [
         "Press inclinado con mancuernas 4 x 10-10-10-10",
