@@ -151,16 +151,24 @@ body {
 }
 
 .section-header {
-  background: #ecfdf5;              /* verde muy clarito */
-  border: 1px solid #a7f3d0;        /* borde verde suave */
-  border-radius: 0.5rem;            /* esquinas redondeadas */
-  padding: 0.5rem 0.75rem;          /* espacio interno */
-  margin: 1.5rem 0 0.75rem 0;       /* margen arriba/abajo */
+  background: #ecfdf5;          /* verde clarito */
+  border: 1px solid #a7f3d0;    /* borde verde suave */
+  border-radius: 0.5rem;
+  padding: 0.6rem 0.8rem;
+  margin: 1rem 0 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .75rem;
+  /* importante: que NO parezca botón */
+  cursor: default;
+  user-select: none;
 }
 
 .section-header h5 {
-  font-size: 0.95rem;               /* un poco más chico que el título principal */
+  font-size: 0.95rem;           /* más chico que el H4 del día */
   font-weight: 600;
-  color: #047857;                   /* verde más fuerte */
+  color: #047857;               /* texto verde */
   margin: 0;
 }
+

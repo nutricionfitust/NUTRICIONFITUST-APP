@@ -394,33 +394,27 @@ const trainingFolders = {
     "francisco": {
       name: "Francisco",
       plan: {  
-        "Dia 1 - Pecho y Tríceps": {
+        "Día 1 - Pecho y Tríceps": {
   "Acondicionamiento & Calentamiento": [
-    "Caminata en cinta 1 x 8-8 min rest=30-60s",
-    "Rotaciones de hombros 2 x 20-20 rest=30s",
-    { superset: [
-        "Plancha 3 x 30-30-30s rest=30s",
-        "Escaladas 3 x 20-20"
-      ],
-      restAfter: "60-90s"
-    }
+    "Rotaciones de hombros 2 x 15-15",
+    "Skipping 3 x 30 seg"
   ],
   "Entrenamiento de Fuerza": [
-    "Press de banca 4 x 6-6-6-6 rest=2-3min",
-    "Press inclinado con mancuernas 4 x 8-8-8-8 rest=120s",
-    { superset: [
-        "Aperturas en banca 3 x 12-12-12 rest=60s",
-        "Fondos para tríceps 3 x 10-10-10"
+    "Press de banca 4 x 8-8-8-8 rest=2min",
+    {
+      superset: [
+        "Press inclinado con mancuernas 4 x 10-10-10-10",
+        "Fondos para tríceps 3 x 12-12-12"
       ],
-      restAfter: "90s"
+      restAfter: "2min"
     },
+    "Aperturas en banca 3 x 12-12-12 rest=60s"
   ],
   "Entrenamiento HIIT": [
-    "Burpees con mancuernas 4 x 45-45-45-45 seg rest=30s",
-    "Sentadillas con salto 4 x 45-45-45-45 seg rest=30s"
+    "Burpees 3 x 45 seg",
+    "Sentadillas con salto 3 x 45 seg"
   ],
 },
-
         "Día 2 - Espalda y Bíceps": [
           "Dominadas 4 x 8-8-8-8",
           "Remo con barra 4 x 10-10-10-10",
@@ -1263,28 +1257,6 @@ function formatDetailsInline(details) {
     repsOut = repsSpec;
   }
   return `${sets} x ${repsOut}${tail}`;
-}
-
-function renderSection(sectionTitle, items, day) {
-  // No renderizar si no hay ejercicios
-  if (!Array.isArray(items) || items.length === 0) return '';
-
-  const daySlug = slugifyForId(`${day}-${sectionTitle}`);
-  return `
-    <!-- Título de sección (FUERA del container blanco) -->
-    <h5 class="text-base font-semibold text-gray-700 mb-2">${sectionTitle}</h5>
-
-    <!-- Contenedor blanco con la lista -->
-    <div class="bg-white rounded-lg p-6 border border-gray-200 shadow-sm mb-6">
-      <ul class="space-y-3">
-        ${items.map((ex, i) =>
-          (typeof ex === 'object' && ex && ex.superset)
-            ? generateSupersetItemHTML(ex, daySlug, i)
-            : generateRoutineItemHTML(ex, daySlug, i)
-        ).join('')}
-      </ul>
-    </div>
-  `;
 }
 
 function renderSectionInline(sectionTitle, items, day) {
