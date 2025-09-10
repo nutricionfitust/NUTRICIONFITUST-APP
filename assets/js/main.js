@@ -1103,48 +1103,90 @@ function splitExerciseLineWithRest(line) {
 
 
 function generateRoutineItemHTML(exLine, daySlug, index) {
-  // Si viene un objeto (p.ej. parte de una biserie), derivamos a single renderer interno
-  if (typeof exLine === 'object' && exLine && exLine.__singleObj) {
-    const { namePart, detailsPart, rest } = exLine.__singleObj;
-    const match = findExerciseByNameFragment(namePart);
-    const safeName = escapeForAttr(namePart);
-    const inlineDetails = formatDetailsInline(detailsPart);
-    const desc = (match && match.description) ? match.description : 'Sin descripción disponible.';
-    return `
-      <li class="text-gray-700">
-        <div class="w-full bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 rounded-lg p-3 hover:from-blue-100 hover:to-blue-200 transition-colors">
-          <button class="w-full text-left flex items-center justify-between" onclick="onRoutineExerciseClick('${safeName}')">
-            <div class="font-semibold text-blue-900">${namePart}${inlineDetails ? ` <span class='font-normal text-blue-800'>${inlineDetails}</span>` : ''}</div>
-            ${rest ? `<span class="badge-rest">${rest}</span>` : ''}
-          </button>
-        </div>
-        <div class="mt-2">
-          <div class="text-gray-700 text-xs bg-white border border-blue-100 rounded-lg p-3">${desc}</div>
-        </div>
-      </li>
-    `;
-  }
+  // Soporte para objetos internos (biserie)
+  const toParts = (line) => {
+    if (typeof line === 'object' && line && line.__singleObj) {
+      return line.__singleObj;
+    }
+    return splitExerciseLineWithRest(line);
+  };
 
-  // Soporta string legacy con descanso opcional al final: " ... 4 x 10-10-10-10 | descanso=90s"
-  const { namePart, detailsPart, rest } = splitExerciseLineWithRest(exLine);
+  const { namePart, detailsPart, rest } = toParts(exLine);
   const match = findExerciseByNameFragment(namePart);
   const safeName = escapeForAttr(namePart);
   const inlineDetails = formatDetailsInline(detailsPart);
   const desc = (match && match.description) ? match.description : 'Sin descripción disponible.';
+  const descId = `desc-${daySlug}-${index}`;
 
   return `
     <li class="text-gray-700">
+      <!-- TARJETA AZUL -->
       <div class="w-full bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 rounded-lg p-3 hover:from-blue-100 hover:to-blue-200 transition-colors">
         <button class="w-full text-left flex items-center justify-between" onclick="onRoutineExerciseClick('${safeName}')">
-          <div class="font-semibold text-blue-900">${namePart}${inlineDetails ? ` <span class='font-normal text-blue-800'>${inlineDetails}</span>` : ''}</div>
+          <div class="font-semibold text-blue-900">
+            ${namePart}${inlineDetails ? ` <span class='font-normal text-blue-800'>${inlineDetails}</span>` : ''}
+          </div>
           ${rest ? `<span class="badge-rest">${rest}</span>` : ''}
         </button>
       </div>
-      <div class="mt-2">
-        <div class="text-gray-700 text-xs bg-white border border-blue-100 rounded-lg p-3">${desc}</div>
+
+      <!-- CONTENEDOR BLANCO: 3 puntitos + descripción colapsable -->
+      <div class="desc-card mt-2" onclick="onDescCardClick(event, '${descId}')">
+        <button
+          type="button"
+          class="dots-btn"
+          aria-controls="${descId}"
+          aria-expanded="false"
+          data-target="${descId}"
+          onclick="toggleDescription(event, '${descId}')"
+        >
+          <span class="dot" aria-hidden="true"></span>
+          <span class="dot" aria-hidden="true"></span>
+          <span class="dot" aria-hidden="true"></span>
+        </button>
+
+        <!-- Panel (colapsable) -->
+        <div id="${descId}" class="desc-panel mt-2">
+          <div class="text-gray-700 text-xs leading-relaxed">
+            ${desc}
+          </div>
+        </div>
       </div>
     </li>
   `;
+}
+
+function toggleDescription(evt, id) {
+  if (evt) evt.stopPropagation();
+  const panel = document.getElementById(id);
+  if (!panel) return;
+
+  const isOpen = panel.classList.contains('open');
+  panel.classList.toggle('open', !isOpen);
+
+  // Botón correspondiente
+  const btn = document.querySelector(`[data-target='${id}']`);
+  if (btn) {
+    btn.setAttribute('aria-expanded', String(!isOpen));
+    // Ocultar si se abrió, mostrar si se cerró
+    btn.style.display = !isOpen ? "none" : "inline-flex";
+  }
+}
+
+function onDescCardClick(evt, id) {
+  // si el panel está abierto, cerramos y mostramos el botón de 3 puntitos
+  const panel = document.getElementById(id);
+  if (!panel) return;
+
+  const isOpen = panel.classList.contains('open');
+  if (isOpen) {
+    panel.classList.remove('open');
+    const btn = document.querySelector(`[data-target='${id}']`);
+    if (btn) {
+      btn.setAttribute('aria-expanded', 'false');
+      btn.style.display = 'inline-flex'; // vuelve a aparecer el botón
+    }
+  }
 }
 
 // group = { superset: [string, string, ...], restAfter: "120s" }

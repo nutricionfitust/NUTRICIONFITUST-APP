@@ -75,3 +75,46 @@ body {
   box-shadow: 0 14px 30px rgba(0,0,0,0.08);
 }
 
+/* Contenedor blanco bajo cada ejercicio */
+.desc-card {
+  background: #fff;
+  border: 1px solid #dbeafe;      /* azul clarito */
+  border-radius: .5rem;
+  padding: .5rem .75rem;
+}
+
+/* Botón de 3 puntitos gorditos */
+.dots-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .4rem .5rem;
+  border-radius: .5rem;
+  transition: background-color 120ms ease, transform 80ms ease;
+}
+.dots-btn:hover { background: #f3f4f6; }
+.dots-btn:active { transform: scale(0.98); }
+
+.dots-btn .dot {
+  width: 5px;           /* gorditos */
+  height: 5px;
+  border-radius: 9999px;
+  background: #6b7280;   /* gris 500 */
+}
+.dots-btn[aria-expanded="true"] .dot { background: #374151; }
+
+/* Panel colapsable */
+.hidden { display: none; }
+.block  { display: block; }
+
+/* (opcional) animación suave */
+.desc-panel {
+  overflow: hidden;
+  transition: grid-template-rows 200ms ease;
+  display: grid;
+  grid-template-rows: 0fr;   /* cerrado */
+}
+.desc-panel.open {
+  grid-template-rows: 1fr;   /* abierto */
+}
+.desc-panel > div { min-height: 0; } /* para el truco de grid */
