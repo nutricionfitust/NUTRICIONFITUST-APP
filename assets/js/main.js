@@ -304,7 +304,7 @@ const trainingFolders = {
 
   "3 MUSCULACIÓN + 1 HIIT + (1 LISS)": {
     routines: {
-      "camila": {
+      "camilafrancoblonda": {
         name: "Camila",
         plan: {
           "Día 1 - Piernas y Glúteos": [
@@ -348,7 +348,7 @@ const trainingFolders = {
 
   "4 MUSCULACIÓN (1 FB HIIT) + (1 LISS)": {
     routines: {
-      "sofia": {
+      "sofiaustarroz": {
         name: "Sofía",
         plan: {
           "Día 1 - Push (Empuje)": [
@@ -482,8 +482,8 @@ const trainingFolders = {
 =========================== */
 const userRoutineMapping = {
   agustina: { folder: "2 MUSCULACIÓN + (2 LISS)", routine: "agustina" },
-  camila:   { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "camila" },
-  sofia:    { folder: "4 MUSCULACIÓN (1 FB HIIT) + (1 LISS)", routine: "sofia" },
+  camilafrancoblonda:   { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "camilafrancoblonda" },
+  sofiaustarroz:    { folder: "4 MUSCULACIÓN (1 FB HIIT) + (1 LISS)", routine: "sofiaustarroz" },
   franciscoustarroz: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "franciscoustarroz" },
 };
 
@@ -498,8 +498,8 @@ const userRoutineMapping = {
 const userPasswords = {
   // CLAVES ÚINCAS DE USUARIOS
   'vesuvio-kremlin-quarzo-espresso-amore-siberia-russia-vesuvio-octavo-zarina-octavo-batata': 'agustina',
-  'tundra-vesuvio-balalaika-siberia-yogurt-vesuvio-octavo-zarina-octavo-batata': 'camila',
-  'espresso-urali-tiramisu-siberia-vesuvio-octavo-zarina-octavo-batata': 'sofia',
+  'tundra-vesuvio-balalaika-siberia-yogurt-vesuvio-octavo-zarina-octavo-batata': 'camilafrancoblonda',
+  'espresso-urali-tiramisu-siberia-vesuvio-octavo-zarina-octavo-batata': 'sofiaustarroz',
   'tiramisu-limoncello-vesuvio-russia-tundra-siberia-espresso-tundra-urali-octavo-zarina-octavo-batata': 'franciscoustarroz',
 };
 
