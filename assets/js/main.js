@@ -391,7 +391,7 @@ const trainingFolders = {
 
   "4 MUSCULACIÓN + 1 HIIT + (1 LISS)": {
   routines: {
-    "francisco": {
+    "franciscoustarroz": {
       name: "Francisco",
       plan: {  
         "Día 1 - Pecho y Tríceps": {
@@ -484,7 +484,7 @@ const userRoutineMapping = {
   agustina: { folder: "2 MUSCULACIÓN + (2 LISS)", routine: "agustina" },
   camila:   { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "camila" },
   sofia:    { folder: "4 MUSCULACIÓN (1 FB HIIT) + (1 LISS)", routine: "sofia" },
-  francisco: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "francisco" },
+  franciscoustarroz: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "franciscoustarroz" },
 };
 
 /* ===========================
@@ -500,7 +500,7 @@ const userPasswords = {
   'vesuvio-kremlin-quarzo-espresso-amore-siberia-russia-vesuvio-octavo-zarina-octavo-batata': 'agustina',
   'tundra-vesuvio-balalaika-siberia-yogurt-vesuvio-octavo-zarina-octavo-batata': 'camila',
   'espresso-urali-tiramisu-siberia-vesuvio-octavo-zarina-octavo-batata': 'sofia',
-  'tiramisu-limoncello-vesuvio-russia-tundra-siberia-espresso-tundra-urali-octavo-zarina-octavo-batata': 'francisco',
+  'tiramisu-limoncello-vesuvio-russia-tundra-siberia-espresso-tundra-urali-octavo-zarina-octavo-batata': 'franciscoustarroz',
 };
 
 
