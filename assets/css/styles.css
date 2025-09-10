@@ -200,3 +200,91 @@ body {
   position: relative;
   z-index: 1;
 }
+
+/* ====== CONTENEDOR DE SECCIÓN + BARRA ====== */
+.section-group {
+  position: relative;
+  padding-left: 16px;             /* espacio para la barra */
+  margin-top: 16px;
+}
+
+/* La barra arranca desde el inicio del grupo (incluye el título) */
+.section-group::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;                         /* comienza en el header */
+  bottom: 0;                      /* termina al final de la sección */
+  width: 6px;                     /* finita y redondeada */
+  border-radius: 9999px;
+}
+
+/* ====== HEADERS DE SECCIÓN ====== */
+.section-header {
+  border-radius: 12px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+/* ACONDICIONAMIENTO (VERDE) */
+.section-header.green {
+  background: #ecfdf5;
+  border: 1px solid #34d399;    /* verde esmeralda más intenso que #a7f3d0 */
+  color: #065f46 !important;    /* texto verde oscuro legible */
+}
+.section-group.green::before {
+  background: #d1fae5;          /* verde clarito */
+  border: 1px solid #34d399;    /* borde verde más fuerte */
+}
+
+/* ====== FUERZA (ROJO TRANSPARENTE) ====== */
+.section-header.red {
+  background: rgba(254, 202, 202, 0.6);
+  border: 1px solid #fca5a5;
+  color: #7f1d1d;                 /* texto rojizo legible */
+}
+.section-group.red::before {
+  background: rgba(254, 202, 202, 0.9); /* barra roja clarita */
+}
+
+/* ====== HIIT (AMARILLO CLARITO) ====== */
+.section-header.yellow {
+  background: #fef9c3;
+  border: 1px solid #facc15;
+  color: #854d0e;                 /* texto amarillo/anaranjado legible */
+}
+.section-group.yellow::before {
+  background: #fef9c3;           /* barra amarilla clarita */
+}
+/* Texto del header (título de la sección) */
+.section-header.green,
+.section-header.green h5 { color: #065f46 !important; }     /* verde legible */
+.section-header.red,
+.section-header.red h5   { color: #7f1d1d !important; }     /* rojo legible */
+.section-header.yellow,
+.section-header.yellow h5{ color: #854d0e !important; }     /* amarillo/anaranjado legible */
+
+/* FUERZA (rojo) */
+.section-header.red {
+  background: rgba(254, 202, 202, 0.6);
+  border: 1px solid #f87171;    /* rojo más intenso */
+  color: #7f1d1d !important;
+}
+.section-group.red::before {
+  background: rgba(254, 202, 202, 0.9); 
+  border: 1px solid #f87171;    /* borde rojizo más fuerte */
+}
+
+/* HIIT (amarillo) */
+.section-header.yellow {
+  background: #fef9c3;
+  border: 1px solid #eab308;    /* amarillo más fuerte */
+  color: #854d0e !important;
+}
+.section-group.yellow::before {
+  background: #fef9c3;
+  border: 1px solid #eab308;    /* borde amarillo más intenso */
+}

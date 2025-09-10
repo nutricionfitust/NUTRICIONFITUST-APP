@@ -1263,14 +1263,17 @@ function renderSectionInline(sectionTitle, items, day) {
   if (!Array.isArray(items) || items.length === 0) return '';
 
   const daySlug = slugifyForId(`${day}-${sectionTitle}`);
+
+  // Selección de color por título
+  let colorClass = 'green';
+  if (/fuerza/i.test(sectionTitle)) colorClass = 'red';
+  if (/hiit/i.test(sectionTitle)) colorClass = 'yellow';
+
   return `
-    <div class="section-group">
-      <!-- Encabezado de sección verde -->
-      <div class="section-header">
+    <div class="section-group ${colorClass}">
+      <div class="section-header ${colorClass}">
         <h5>${sectionTitle}</h5>
       </div>
-
-      <!-- Lista de ejercicios -->
       <ul class="space-y-3">
         ${items.map((ex, i) =>
           (typeof ex === 'object' && ex && ex.superset)
@@ -1281,6 +1284,7 @@ function renderSectionInline(sectionTitle, items, day) {
     </div>
   `;
 }
+
 
 function isSectionedDay(exercises) {
   return exercises && typeof exercises === 'object' && !Array.isArray(exercises);
