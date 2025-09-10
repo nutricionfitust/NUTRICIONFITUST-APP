@@ -121,7 +121,27 @@ body {
 
 
 /* ======= MOBILE FRIENDLY DESDE AQUÍ (≤480px) ======= */
+@media (max-width: 768px) {
+  /* Tarjeta azul de cada ejercicio:
+     - Alinea los dos lados arriba
+     - Muestra las series/reps (span) debajo del nombre */
+  .bg-gradient-to-r .flex.items-center.justify-between {
+    align-items: flex-start !important;
+  }
+  .bg-gradient-to-r .font-semibold.text-blue-900 span {
+    display: block !important;       /* series/reps en renglón nuevo */
+    margin-top: 2px !important;
+    line-height: 1.25 !important;
+  }
 
+  /* Encabezado de BISERIE:
+     - El subtítulo (“sin descanso…”) pasa debajo del título */
+  .superset-card > .flex.items-center.justify-between {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.25rem !important;
+  }
+}
 /* ======= MOBILE FRIENDLY FINAL (≤480px) ======= */
 
 .icon-centered svg {

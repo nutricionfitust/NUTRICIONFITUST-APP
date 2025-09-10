@@ -393,19 +393,34 @@ const trainingFolders = {
   routines: {
     "francisco": {
       name: "Francisco",
-      plan: {
-          "Día 1 - Pecho y Tríceps": [
-          "Press de banca 4 x 8-8-8-8 rest=2min",
-  {
-  superset: [
-          "Press inclinado con mancuernas 4 x 10-10-10-10",
-          "Fondos para tríceps 3 x 12-12-12"
+      plan: {  
+        "Dia 1 - Pecho y Tríceps": {
+  "Acondicionamiento & Calentamiento": [
+    "Caminata en cinta 1 x 8-8 min rest=30-60s",
+    "Rotaciones de hombros 2 x 20-20 rest=30s",
+    { superset: [
+        "Plancha 3 x 30-30-30s rest=30s",
+        "Escaladas 3 x 20-20"
       ],
-  restAfter: "2min"
-  },
-          "Aperturas en banca 3 x 12-12-12 rest=60s",
-          "Extensiones de tríceps 3 x 12-12-12 descanso=2-3min"
-        ],
+      restAfter: "60-90s"
+    }
+  ],
+  "Entrenamiento de Fuerza": [
+    "Press de banca 4 x 6-6-6-6 rest=2-3min",
+    "Press inclinado con mancuernas 4 x 8-8-8-8 rest=120s",
+    { superset: [
+        "Aperturas en banca 3 x 12-12-12 rest=60s",
+        "Fondos para tríceps 3 x 10-10-10"
+      ],
+      restAfter: "90s"
+    },
+  ],
+  "Entrenamiento HIIT": [
+    "Burpees con mancuernas 4 x 45-45-45-45 seg rest=30s",
+    "Sentadillas con salto 4 x 45-45-45-45 seg rest=30s"
+  ],
+},
+
         "Día 2 - Espalda y Bíceps": [
           "Dominadas 4 x 8-8-8-8",
           "Remo con barra 4 x 10-10-10-10",
@@ -680,6 +695,7 @@ function showSpecificRoutine(folderName, routineKey) {
   html += '</div>';
   content.innerHTML = html;
 }
+
 function showAdminRoutineDay(folderName, routineKey, day) {
   const routineData = trainingFolders[folderName].routines[routineKey];
   const exercises = routineData.plan[day];
@@ -689,25 +705,20 @@ function showAdminRoutineDay(folderName, routineKey, day) {
 
   title.textContent = `${routineData.name} - ${day}`;
 
-  let html = `
-      <div class="flex justify-between items-center mb-4">
-    <button onclick="showSpecificRoutine('${folderName}', '${routineKey}')" class="bg-gray-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-gray-600 transition-colors mb-4">← Volver a días</button>
+  const body = renderDayBody(day, exercises);
+
+  const html = `
+    <div class="flex justify-between items-center mb-4">
+      <button onclick="showSpecificRoutine('${folderName}', '${routineKey}')" class="bg-gray-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-gray-600 transition-colors">← Volver a días</button>
       <div class="bg-gradient-to-r from-blue-50 to-green-50 border border-blue-200 rounded-lg px-4 py-2 ml-4 text-blue-700 text-sm font-semibold">
         Tip: toca el nombre del ejercicio para ver el video.
       </div>
     </div>
-    <div class="bg-white rounded-lg p-6 border border-gray-200 shadow-sm">
-      <h4 class="text-xl font-bold text-gray-800 mb-4">${day}</h4>
-      <ul class="space-y-3">
-      ${exercises.map((ex, i) => (typeof ex === 'object' && ex && ex.superset)
-      ? generateSupersetItemHTML(ex, slugifyForId(day), i)
-      : generateRoutineItemHTML(ex, slugifyForId(day), i)
-      ).join('')}
-      </ul>
-    </div>
+    ${body}
   `;
   content.innerHTML = html;
 }
+
 
 function showUserSpecificTraining(userKey) {
   const { folder, routine } = userRoutineMapping[userKey];
@@ -756,6 +767,7 @@ function showUserSpecificTraining(userKey) {
   content.innerHTML = html;
   modal.classList.add('show');
 }
+
 function showUserRoutineDay(userKey, day) {
   const { folder, routine } = userRoutineMapping[userKey];
   const routineData = trainingFolders[folder].routines[routine];
@@ -766,25 +778,20 @@ function showUserRoutineDay(userKey, day) {
 
   title.textContent = `${routineData.name} - ${day}`;
 
-  let html = `
+  const body = renderDayBody(day, exercises);
+
+  const html = `
     <div class="flex justify-between items-center mb-4">
       <button onclick="showUserSpecificTraining('${userKey}')" class="bg-gray-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-gray-600 transition-colors">← Volver a días</button>
       <div class="bg-gradient-to-r from-blue-50 to-green-50 border border-blue-200 rounded-lg px-4 py-2 ml-4 text-blue-700 text-sm font-semibold">
         Tip: toca el nombre del ejercicio para ver el video.
       </div>
     </div>
-    <div class="bg-white rounded-lg p-6 border border-gray-200 shadow-sm">
-      <h4 class="text-xl font-bold text-gray-800 mb-4">${day}</h4>
-      <ul class="space-y-3">
-        ${exercises.map((ex, i) => (typeof ex === 'object' && ex && ex.superset)
-  ? generateSupersetItemHTML(ex, slugifyForId(day), i)
-  : generateRoutineItemHTML(ex, slugifyForId(day), i)
-).join('')}
-      </ul>
-    </div>
+    ${body}
   `;
   content.innerHTML = html;
 }
+
 
 /* ===========================
    BASE FILTROS / VIDEOS
@@ -952,6 +959,10 @@ function decodificar(textoCodificado) {
     .join("");
 }
 
+// === Detectar si el día viene seccionado ===
+function isSectionedDay(exercises) {
+  return exercises && typeof exercises === 'object' && !Array.isArray(exercises);
+}
 
 // ---------------------------
 // Rutina helpers: matching + botón + descripción
@@ -1054,17 +1065,22 @@ function findExerciseByNameFragment(fragment) {
 }
 
 function countExercisesDisplay(exercises) {
-  let total = 0;
-  for (const ex of exercises) {
+  const countArray = (arr) => arr.reduce((acc, ex) => {
     if (ex && typeof ex === 'object' && Array.isArray(ex.superset)) {
-      total += ex.superset.length; // cada ítem de la biserie cuenta
-    } else {
-      total += 1; // ejercicio individual
+      return acc + ex.superset.length; // cada ejercicio dentro de la biserie cuenta
     }
-  }
-  return total;
-}
+    return acc + 1;
+  }, 0);
 
+  if (Array.isArray(exercises)) {
+    return countArray(exercises);
+  }
+  if (exercises && typeof exercises === 'object') {
+    // sumar todas las secciones
+    return Object.values(exercises).reduce((acc, arr) => acc + countArray(arr || []), 0);
+  }
+  return 0;
+}
 
 // --- Helpers de descanso y parseo (no rompen lo existente) ---
 function extractRestFromTail(tail) {
@@ -1247,6 +1263,104 @@ function formatDetailsInline(details) {
     repsOut = repsSpec;
   }
   return `${sets} x ${repsOut}${tail}`;
+}
+
+function renderSection(sectionTitle, items, day) {
+  // No renderizar si no hay ejercicios
+  if (!Array.isArray(items) || items.length === 0) return '';
+
+  const daySlug = slugifyForId(`${day}-${sectionTitle}`);
+  return `
+    <!-- Título de sección (FUERA del container blanco) -->
+    <h5 class="text-base font-semibold text-gray-700 mb-2">${sectionTitle}</h5>
+
+    <!-- Contenedor blanco con la lista -->
+    <div class="bg-white rounded-lg p-6 border border-gray-200 shadow-sm mb-6">
+      <ul class="space-y-3">
+        ${items.map((ex, i) =>
+          (typeof ex === 'object' && ex && ex.superset)
+            ? generateSupersetItemHTML(ex, daySlug, i)
+            : generateRoutineItemHTML(ex, daySlug, i)
+        ).join('')}
+      </ul>
+    </div>
+  `;
+}
+
+function renderSectionInline(sectionTitle, items, day) {
+  if (!Array.isArray(items) || items.length === 0) return '';
+
+  const daySlug = slugifyForId(`${day}-${sectionTitle}`);
+  return `
+    <!-- Subtítulo dentro del mismo container del día -->
+    <h5 class="text-base font-semibold text-gray-700 mt-4 mb-2">${sectionTitle}</h5>
+
+    <!-- Lista de ejercicios (mismos ítems que ya usás) -->
+    <ul class="space-y-3">
+      ${items.map((ex, i) =>
+        (typeof ex === 'object' && ex && ex.superset)
+          ? generateSupersetItemHTML(ex, daySlug, i)
+          : generateRoutineItemHTML(ex, daySlug, i)
+      ).join('')}
+    </ul>
+  `;
+}
+
+function isSectionedDay(exercises) {
+  return exercises && typeof exercises === 'object' && !Array.isArray(exercises);
+}
+
+function renderDayBody(day, exercises) {
+  // Caso clásico: array plano (como tenías)
+  if (Array.isArray(exercises)) {
+    const daySlug = slugifyForId(day);
+    return `
+      <div class="bg-white rounded-lg p-6 border border-gray-200 shadow-sm">
+        <h4 class="text-xl font-bold text-gray-800 mb-4">${day}</h4>
+        <ul class="space-y-3">
+          ${exercises.map((ex, i) =>
+            (typeof ex === 'object' && ex && ex.superset)
+              ? generateSupersetItemHTML(ex, daySlug, i)
+              : generateRoutineItemHTML(ex, daySlug, i)
+          ).join('')}
+        </ul>
+      </div>
+    `;
+  }
+
+  // Nuevo: día con secciones (todo dentro del MISMO container blanco)
+  if (isSectionedDay(exercises)) {
+    const ORDER = [
+      "Acondicionamiento & Calentamiento",
+      "Entrenamiento de Fuerza",
+      "Entrenamiento HIIT",
+    ];
+    const entries = Object.entries(exercises);
+    const ordered = [
+      ...ORDER.filter(t => exercises.hasOwnProperty(t)).map(t => [t, exercises[t]]),
+      ...entries.filter(([t]) => !ORDER.includes(t)),
+    ];
+
+    // armamos un solo container
+    let inner = `<h4 class="text-xl font-bold text-gray-800 mb-2">${day}</h4>`;
+    for (const [sectionTitle, items] of ordered) {
+      inner += renderSectionInline(sectionTitle, items, day);
+    }
+
+    return `
+      <div class="bg-white rounded-lg p-6 border border-gray-200 shadow-sm">
+        ${inner}
+      </div>
+    `;
+  }
+
+  // Fallback
+  return `
+    <div class="bg-white rounded-lg p-6 border border-gray-200 shadow-sm">
+      <h4 class="text-xl font-bold text-gray-800">${day}</h4>
+      <p class="text-gray-600">Sin ejercicios.</p>
+    </div>
+  `;
 }
 
 function onRoutineExerciseClick(nameFragment) {
