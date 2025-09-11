@@ -457,6 +457,23 @@ const trainingFolders = {
   routines: {
     "franciscoustarroz": {
       name: "Francisco",
+         // 👇 OPCIONAL y 100% personalizable por usuario
+      infoSections: [
+        {
+          title: "Notas específicas para Francisco",
+          html: `
+            <p>Esta semana mantené RIR ~1 en los básicos y RIR 0 en la última serie de pecho.</p>
+            <p>Si el hombro molesta, cambiá Press banco por máquina convergente.</p>
+          `
+        },
+        {
+          title: "HIIT (ajuste personal)",
+          html: `
+            <p>Hacé los 40'' a velocidad 16 km/h (no 17) por ahora, y el minuto de trote en 8–8.5.</p>
+          `
+        }
+      ],
+         // PLAN DE ENTRENAMIENTO SEMANAL !      
       plan: {  
         "Día 1 - Pecho y Tríceps": {
           "Acondicionamiento & Calentamiento": [
@@ -1577,6 +1594,51 @@ const userPasswords = {
 };
 
 
+
+// ===========================
+// DEFAULT "MÁS INFORMACIÓN"
+// (fallback si un usuario no tiene notas propias)
+// ===========================
+const DEFAULT_INFO_SECTIONS = [
+  {
+    title: "Guía rápida (RIR)",
+    html: `
+      <p>La idea principal es que siempre trates de llegar al número de repeticiones que te marqué.</p>
+      <p><strong>RIR 1, RIR 2, RIR 0</strong> y sus explicaciones:</p>
+      <ul class="list-disc pl-6">
+        <li>Si te puse 10 y llegás a 10 y no podés hacer ni una más → perfecto.</li>
+        <li>Si llegás a 10 y sentís que podrías hacer una más (11), pero no llegarías a 12 → también está perfecto.</li>
+        <li>Si te puse 10, llegás hasta 9 bien y fallás la última, también cuenta.</li>
+      </ul>
+      <p>Buscamos la intensidad justa para el rango de reps, maximizando el reclutamiento de fibras sin acumular tanta fatiga (sobre todo en 6–12 reps).</p>
+    `
+  },
+  {
+    title: "HIIT en caminadora",
+    html: `
+      <p><strong>12 minutos totales</strong></p>
+      <p>1) 2 minutos de trote suave para entrar en calor.</p>
+      <p>2) Repetir 5 veces sin descanso:</p>
+      <ul class="list-disc pl-6">
+        <li><strong>40 segundos</strong> ~3/4 de tu velocidad máx (ej: ~17 km/h).</li>
+        <li><strong>1 minuto</strong> trote suave (ej: ~8 km/h).</li>
+      </ul>
+      <p>3) Recuperar caminando 1 minuto y listo, a mimir.</p>
+    `
+  },
+  {
+    title: "Recomendaciones generales",
+    html: `
+      <p><strong>LISS:</strong> ideal al día siguiente del 1er día de Piernas para no interferir con la progresión.</p>
+      <p>En <strong>Inclinado en Smith, Aperturas sentado, Isquiotibiales, Peso muerto, Gemelos en prensa</strong>, priorizá el estiramiento y luego contracción explosiva.</p>
+      <p>Si recién arrancás con carrera continua, <strong>máximo ~ 4 km</strong> para no sobreexigir.</p>
+    `
+  }
+];
+
+
+
+
 /* ===========================
    MODALES – OPEN/CLOSE
 =========================== */
@@ -1667,25 +1729,6 @@ function showAdminTrainingFolders() {
       </div>
     `;
   }
-
-  // --- Tarjeta "Más información" (violeta) al final de la lista de días ---
-  html += `
-    <div class="bg-gradient-to-r from-purple-50 to-purple-100 rounded-lg p-6 card-hover cursor-pointer border border-purple-200"
-         onclick="showUserMoreInfo('${userKey}')">
-      <div class="flex justify-between items-center">
-        <div>
-          <h4 class="text-lg font-bold text-purple-800 mb-2">Más información</h4>
-          <p class="text-purple-700 text-sm">RIR, HIIT, LISS y recomendaciones generales</p>
-        </div>
-        <div class="text-purple-600">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-          </svg>
-        </div>
-      </div>
-    </div>
-  `;
-
 
   html += '</div>';
   content.innerHTML = html;
@@ -1821,12 +1864,11 @@ function showUserSpecificTraining(userKey) {
       <h3 class="text-lg font-bold text-blue-800 mb-2">¡Hola ${routineData.name}! 👋</h3>
       <p class="text-blue-700">Este es tu plan de entrenamiento personalizado. Selecciona el día para ver los ejercicios.</p>
       <p class="text-blue-600 text-sm mt-2">💪 ¡Vamos por esos objetivos!</p>
-
     </div>
     <div class="space-y-4">
   `;
 
-  // Mostrar cada día como "carpeta"
+  // Tarjetas de cada día
   for (const [day, exercises] of Object.entries(routineData.plan)) {
     html += `
       <div class="bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg p-6 card-hover cursor-pointer border border-blue-200"
@@ -1835,9 +1877,9 @@ function showUserSpecificTraining(userKey) {
           <div>
             <h4 class="text-lg font-bold text-blue-800 mb-2">${day}</h4>
             ${(() => {
-  const count = countExercisesDisplay(exercises);
-  return `<p class="text-blue-600 text-sm">${count} ejercicio${count !== 1 ? 's' : ''}</p>`;
-})()}
+              const count = countExercisesDisplay(exercises);
+              return `<p class="text-blue-600 text-sm">${count} ejercicio${count !== 1 ? 's' : ''}</p>`;
+            })()}
           </div>
           <div class="text-blue-600">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1849,10 +1891,29 @@ function showUserSpecificTraining(userKey) {
     `;
   }
 
+  // === Carpeta extra: "Más información" (color violeta, como biseries) ===
+  html += `
+    <div class="bg-gradient-to-r from-purple-50 to-purple-100 rounded-lg p-6 card-hover cursor-pointer border border-purple-200"
+         onclick="showUserInfoPage('${userKey}')">
+      <div class="flex justify-between items-center">
+        <div>
+          <h4 class="text-lg font-bold text-purple-800 mb-1">Más información</h4>
+          <p class="text-purple-700 text-sm">Notas útiles, explicaciones de RIR, HIIT y recomendaciones generales</p>
+        </div>
+        <div class="text-purple-700">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+  `;
+
   html += '</div>';
   content.innerHTML = html;
   modal.classList.add('show');
 }
+
 
 function showUserRoutineDay(userKey, day) {
   const { folder, routine } = userRoutineMapping[userKey];
@@ -1878,7 +1939,7 @@ function showUserRoutineDay(userKey, day) {
   content.innerHTML = html;
 }
 
-function showUserMoreInfo(userKey) {
+function showUserInfoPage(userKey) {
   const { folder, routine } = userRoutineMapping[userKey];
   const routineData = trainingFolders[folder].routines[routine];
 
@@ -1887,82 +1948,36 @@ function showUserMoreInfo(userKey) {
 
   title.textContent = `${routineData.name} - Más información`;
 
-  const body = renderMoreInfoBody(); // texto editable abajo
+  // Usa lo personalizado si existe; si no, el default
+  const sections = Array.isArray(routineData.infoSections) && routineData.infoSections.length > 0
+    ? routineData.infoSections
+    : DEFAULT_INFO_SECTIONS;
+
+  const sectionsHtml = sections.map(sec => `
+    <div class="space-y-2">
+      <h5 class="text-lg font-semibold text-purple-800">${sec.title || ''}</h5>
+      <div class="text-gray-700 leading-relaxed">${sec.html || ''}</div>
+    </div>
+  `).join(`<hr class="border-gray-200 my-4">`);
 
   const html = `
     <div class="flex justify-between items-center mb-4">
-      <button onclick="showUserSpecificTraining('${userKey}')" class="bg-gray-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-gray-600 transition-colors">← Volver</button>
+      <button onclick="showUserSpecificTraining('${userKey}')"
+              class="bg-gray-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-gray-600 transition-colors">
+        ← Volver a días
+      </button>
       <div class="bg-gradient-to-r from-purple-50 to-purple-100 border border-purple-200 rounded-lg px-4 py-2 ml-4 text-purple-800 text-sm font-semibold">
-        Guía de uso, RIR, HIIT y más.
+        Notas y recomendaciones
       </div>
     </div>
-    ${body}
+
+    <div class="bg-white rounded-lg p-6 border border-gray-200 shadow-sm space-y-6">
+      <h4 class="text-xl font-bold text-purple-800">Más información</h4>
+      ${sectionsHtml}
+    </div>
   `;
+
   content.innerHTML = html;
-}
-
-function renderMoreInfoBody() {
-  return `
-    <div class="bg-white rounded-lg p-6 border border-purple-200 shadow-sm">
-      <h4 class="text-xl font-bold text-purple-800 mb-4">Más información</h4>
-
-      <div class="space-y-6 text-gray-700">
-        <section>
-          <h5 class="text-lg font-semibold text-purple-800 mb-2">Idea principal (RIR y repeticiones)</h5>
-          <p class="mb-2">
-            La idea principal, aunque ya está en la planilla, es que siempre trates de llegar al número de repeticiones que te marqué.
-            Usamos RIR (Reps In Reserve): ese “margen” de ±1 repetición.
-          </p>
-          <ul class="list-disc pl-5 space-y-1">
-            <li>Si te puse 10 reps y llegás a 10 y no podés hacer ni una más → perfecto.</li>
-            <li>Si llegás a 10 y sentís que podrías hacer 1 más (11), pero no 12 → también está perfecto.</li>
-            <li>Si te puse 10 y llegás bien hasta 9 y fallás en la última → también cuenta.</li>
-          </ul>
-          <p class="mt-2">
-            Lo importante es trabajar con la intensidad justa y el peso correcto para el rango que buscamos.
-            Así reclutás más fibras musculares sin acumular tanta fatiga (sobre todo en rangos de 6–12 reps).
-          </p>
-          <p class="mt-2">
-            Por ahora, acostumbrate a este estilo con las repeticiones de la planilla. Más adelante,
-            con más nivel, seguramente bajemos un poco reps/series para trabajar más la fuerza,
-            pero el objetivo principal sigue siendo la hipertrofia (máximo reclutamiento de fibras).
-          </p>
-        </section>
-
-        <section>
-          <h5 class="text-lg font-semibold text-purple-800 mb-2">HIIT en caminadora</h5>
-          <p class="mb-2"><strong>12 minutos totales</strong></p>
-          <ul class="list-disc pl-5 space-y-1">
-            <li>2’ de trote suave para entrar en calor.</li>
-            <li>Luego, 5 repeticiones de:
-              <ul class="list-disc pl-5 mt-1">
-                <li>40” intenso (≈ 3/4 de tu velocidad máxima, ej. ~17 km/h).</li>
-                <li>1’ trote suave (ej. ~8 km/h).</li>
-              </ul>
-            </li>
-            <li>Al finalizar, recuperar 1’ caminando. ¡Listo!</li>
-          </ul>
-        </section>
-
-        <section>
-          <h5 class="text-lg font-semibold text-purple-800 mb-2">Cardio LISS (opcional)</h5>
-          <p>
-            Si querés hacer LISS (salir a correr/trotar), lo ideal es <strong>al día siguiente del 1er día de piernas</strong>,
-            para llegar descansado al próximo día de piernas y no interferir con las ganancias. Máximo ~4 km para no sobreexigir.
-          </p>
-        </section>
-
-        <section>
-          <h5 class="text-lg font-semibold text-purple-800 mb-2">Técnica y foco en estiramiento</h5>
-          <p>
-            En ejercicios como <em>Inclinado en Smith</em>, <em>Aperturas sentado</em>, <em>Isquiotibiales</em>,
-            <em>Peso muerto</em> y <em>Gemelos en prensa</em>, priorizá la fase de <strong>estiramiento</strong> del músculo,
-            y luego una contracción explosiva. Pectorales, cuádriceps, isquios y gemelos responden muy bien a esto.
-          </p>
-        </section>
-      </div>
-    </div>
-  `;
 }
 
 
@@ -2550,7 +2565,4 @@ document.addEventListener('keydown', function(e) {
     checkBasePassword();
   }
 });
-
-window.showUserMoreInfo = showUserMoreInfo;
-
 
