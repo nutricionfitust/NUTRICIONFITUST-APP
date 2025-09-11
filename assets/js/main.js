@@ -627,10 +627,6 @@ const trainingFolders = {
           },
             "Aperturas en banca 3 x 12-12-12 rest=60s"
             ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-            ],
           },
         "Día 4 - Hombros y Core":  {
           "Acondicionamiento & Calentamiento": [
@@ -1643,6 +1639,42 @@ const DEFAULT_INFO_SECTIONS = [
   }
 ];
 
+/* ===========================
+   HIIT – NOTAS POR DÍA (OPCIONAL)
+=========================== */
+
+// Si querés que aparezca una tarjeta con texto por defecto en TODOS los días que tengan HIIT
+// poné true. Si querés que solo aparezca cuando vos agregues notas personalizadas para ese día/usuario,
+// poné false.
+const SHOW_DEFAULT_HIIT_CARD = true;
+
+const DEFAULT_HIIT_DAY_NOTES = [
+  {
+    title: "HIIT en caminadora (cinta) – 12 minutos",
+    body: `12 MINUTOS TOTALES
+
+• 2 minutos: trote suave para entrar en calor.
+• Luego, intervalos (HIIT):
+  – 40 segundos a ~3/4 de tu velocidad máxima (ej: ~17 km/h)
+  – 1 minuto de trote suave (ej: ~8 km/h)
+  Repetir 5 veces seguidas (40" + 1') x 5 sin descanso.
+• Recuperación: 1 minuto caminando.
+
+A mimir. 😴`
+  }
+];
+
+// Personalizaciones por USUARIO y por DÍA.
+// Clave de primer nivel: userKey/routineKey (ej: "francisco").
+// Clave de segundo nivel: título exacto del día (ej: "Día 1 - Pecho y Tríceps").
+// Valor: array de secciones [{title, body}, ...]
+const USER_HIIT_DAY_NOTES = {
+  // "francisco": {
+  //   "Día 1 - Pecho y Tríceps": [
+  //     { title: "HIIT cinta personalizado", body: "…" }
+  //   ]
+  // }
+};
 
 
 
@@ -1841,7 +1873,7 @@ function showAdminRoutineDay(folderName, routineKey, day) {
 
   title.textContent = `${routineData.name} - ${day}`;
 
-  const body = renderDayBody(day, exercises);
+  const body = renderDayBody(day, exercises, routineKey);
 
   const html = `
     <div class="flex justify-between items-center mb-4">
@@ -1932,7 +1964,7 @@ function showUserRoutineDay(userKey, day) {
 
   title.textContent = `${routineData.name} - ${day}`;
 
-  const body = renderDayBody(day, exercises);
+  const body = renderDayBody(day, exercises, userKey);
 
   const html = `
     <div class="flex justify-between items-center mb-4">
@@ -2294,6 +2326,53 @@ function extractRestFromTail(tail) {
   return `Descanso ${clean}`;
 }
 
+/* ===========================
+   HIIT – HELPERS
+=========================== */
+function nl2br(s) {
+  return (s || "").toString().replace(/\n/g, "<br>");
+}
+
+function getHiitNotesForUserDay(userKey, dayTitle) {
+  const userMap = USER_HIIT_DAY_NOTES[userKey];
+  if (userMap && Array.isArray(userMap[dayTitle]) && userMap[dayTitle].length) {
+    return userMap[dayTitle];
+  }
+  return SHOW_DEFAULT_HIIT_CARD ? DEFAULT_HIIT_DAY_NOTES : [];
+}
+
+function renderHiitMoreInfoCardForDay(userKey, dayTitle) {
+  const sections = getHiitNotesForUserDay(userKey, dayTitle);
+  if (!sections || sections.length === 0) return '';
+
+  const id = `hiit-info-${slugifyForId(userKey || 'any')}-${slugifyForId(dayTitle)}`;
+  return `
+    <div class="bg-gradient-to-r from-yellow-50 to-yellow-100 rounded-lg p-4 border border-yellow-200 mt-6">
+      <button class="w-full text-left flex items-center justify-between"
+              onclick="toggleDescription(event, '${id}')">
+        <h5 class="text-base font-semibold text-yellow-800 m-0">Más información de HIIT</h5>
+        <svg class="w-5 h-5 text-yellow-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 5l7 7-7 7"></path>
+        </svg>
+      </button>
+
+      <!-- Panel colapsable -->
+      <div id="${id}" class="desc-panel mt-3">
+        <div class="space-y-3">
+          ${sections.map(sec => `
+            <div class="bg-white border border-yellow-200 rounded-lg p-3">
+  <div class="text-black font-semibold mb-1">${sec.title}</div>
+  <div class="text-black text-sm leading-relaxed">${nl2br(sec.body)}</div>
+</div>
+          `).join('')}
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+
 function stripRestFromTail(tail) {
   return (tail || '')
     .toString()
@@ -2494,8 +2573,8 @@ function isSectionedDay(exercises) {
   return exercises && typeof exercises === 'object' && !Array.isArray(exercises);
 }
 
-function renderDayBody(day, exercises) {
-  // Caso clásico: array plano (como tenías)
+function renderDayBody(day, exercises, userKey) {
+  // Caso clásico: array plano
   if (Array.isArray(exercises)) {
     const daySlug = slugifyForId(day);
     return `
@@ -2512,7 +2591,7 @@ function renderDayBody(day, exercises) {
     `;
   }
 
-  // Nuevo: día con secciones (todo dentro del MISMO container blanco)
+  // Día seccionado (Acondicionamiento, Fuerza, HIIT)
   if (isSectionedDay(exercises)) {
     const ORDER = [
       "Acondicionamiento & Calentamiento",
@@ -2525,10 +2604,15 @@ function renderDayBody(day, exercises) {
       ...entries.filter(([t]) => !ORDER.includes(t)),
     ];
 
-    // armamos un solo container
     let inner = `<h4 class="text-xl font-bold text-gray-800 mb-2">${day}</h4>`;
+
     for (const [sectionTitle, items] of ordered) {
       inner += renderSectionInline(sectionTitle, items, day);
+
+      // 👇 SOLO si existe la sección HIIT, agregamos la "carpeta" amarilla al final
+      if (sectionTitle === "Entrenamiento HIIT" && Array.isArray(items) && items.length) {
+        inner += renderHiitMoreInfoCardForDay(userKey, day);
+      }
     }
 
     return `
@@ -2546,6 +2630,7 @@ function renderDayBody(day, exercises) {
     </div>
   `;
 }
+
 
 function onRoutineExerciseClick(nameFragment) {
   const ex = findExerciseByNameFragment(nameFragment);
