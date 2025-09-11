@@ -251,9 +251,7 @@ const exerciseDatabase = {
     { name: "Burpees con Flexiones de Brazos", videoId: "", description: "Burpees completos incluyendo flexión de brazos y marcando bien la sentadilla. Ejercicio de cuerpo completo de alta intensidad." },
     { name: "Bíceps más Press Arnold con Mancuernas", videoId: "", description: "Combinación de curl de bíceps seguido de press Arnold. Trabaja bíceps y hombros de forma continua y eficiente." },
     { name: "Rotaciones de Cadera", videoId: "", description: "Ejercicio de movilidad que mejora la flexibilidad de cadera y prepara las articulaciones para el entrenamiento." },
-    { name: "Rotaciones de Brazos", videoId: "", description: "Movimiento de calentamiento que prepara los hombros y mejora la movilidad articular del tren superior." },
-    { name: "Círculos de Brazos Hacia Adelante", videoId: "", description: "Movimiento de calentamiento que prepara los hombros, mejora la movilidad articular y la circulación en el tren superior." },
-    { name: "Círculos de Brazos Hacia Atrás", videoId: "", description: "Movimiento de calentamiento que prepara los hombros, mejora la movilidad articular y la circulación en el tren superior." },
+    { name: "Rotaciones de Hombros", videoId: "", description: "Movimiento de calentamiento que prepara los hombros y mejora la movilidad articular del tren superior." },
     { name: "Estiramiento de Cuádriceps", videoId: "", description: "Ejercicio de flexibilidad que alarga los músculos del cuádriceps y mejora la movilidad de la cadera." },
     { name: "Estiramiento de Isquiotibiales", videoId: "", description: "Estiramiento que mejora la flexibilidad de la cadena posterior y reduce la tensión en la espalda baja." },
     { name: "Estiramiento de Hombros", videoId: "", description: "Movimiento que mejora la flexibilidad del hombro y reduce la tensión en el tren superior." },
@@ -1670,6 +1668,25 @@ function showAdminTrainingFolders() {
     `;
   }
 
+  // --- Tarjeta "Más información" (violeta) al final de la lista de días ---
+  html += `
+    <div class="bg-gradient-to-r from-purple-50 to-purple-100 rounded-lg p-6 card-hover cursor-pointer border border-purple-200"
+         onclick="showUserMoreInfo('${userKey}')">
+      <div class="flex justify-between items-center">
+        <div>
+          <h4 class="text-lg font-bold text-purple-800 mb-2">Más información</h4>
+          <p class="text-purple-700 text-sm">RIR, HIIT, LISS y recomendaciones generales</p>
+        </div>
+        <div class="text-purple-600">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+  `;
+
+
   html += '</div>';
   content.innerHTML = html;
   modal.classList.add('show');
@@ -1859,6 +1876,93 @@ function showUserRoutineDay(userKey, day) {
     ${body}
   `;
   content.innerHTML = html;
+}
+
+function showUserMoreInfo(userKey) {
+  const { folder, routine } = userRoutineMapping[userKey];
+  const routineData = trainingFolders[folder].routines[routine];
+
+  const title = document.getElementById('userTrainingTitle');
+  const content = document.getElementById('userTrainingContent');
+
+  title.textContent = `${routineData.name} - Más información`;
+
+  const body = renderMoreInfoBody(); // texto editable abajo
+
+  const html = `
+    <div class="flex justify-between items-center mb-4">
+      <button onclick="showUserSpecificTraining('${userKey}')" class="bg-gray-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-gray-600 transition-colors">← Volver</button>
+      <div class="bg-gradient-to-r from-purple-50 to-purple-100 border border-purple-200 rounded-lg px-4 py-2 ml-4 text-purple-800 text-sm font-semibold">
+        Guía de uso, RIR, HIIT y más.
+      </div>
+    </div>
+    ${body}
+  `;
+  content.innerHTML = html;
+}
+
+function renderMoreInfoBody() {
+  return `
+    <div class="bg-white rounded-lg p-6 border border-purple-200 shadow-sm">
+      <h4 class="text-xl font-bold text-purple-800 mb-4">Más información</h4>
+
+      <div class="space-y-6 text-gray-700">
+        <section>
+          <h5 class="text-lg font-semibold text-purple-800 mb-2">Idea principal (RIR y repeticiones)</h5>
+          <p class="mb-2">
+            La idea principal, aunque ya está en la planilla, es que siempre trates de llegar al número de repeticiones que te marqué.
+            Usamos RIR (Reps In Reserve): ese “margen” de ±1 repetición.
+          </p>
+          <ul class="list-disc pl-5 space-y-1">
+            <li>Si te puse 10 reps y llegás a 10 y no podés hacer ni una más → perfecto.</li>
+            <li>Si llegás a 10 y sentís que podrías hacer 1 más (11), pero no 12 → también está perfecto.</li>
+            <li>Si te puse 10 y llegás bien hasta 9 y fallás en la última → también cuenta.</li>
+          </ul>
+          <p class="mt-2">
+            Lo importante es trabajar con la intensidad justa y el peso correcto para el rango que buscamos.
+            Así reclutás más fibras musculares sin acumular tanta fatiga (sobre todo en rangos de 6–12 reps).
+          </p>
+          <p class="mt-2">
+            Por ahora, acostumbrate a este estilo con las repeticiones de la planilla. Más adelante,
+            con más nivel, seguramente bajemos un poco reps/series para trabajar más la fuerza,
+            pero el objetivo principal sigue siendo la hipertrofia (máximo reclutamiento de fibras).
+          </p>
+        </section>
+
+        <section>
+          <h5 class="text-lg font-semibold text-purple-800 mb-2">HIIT en caminadora</h5>
+          <p class="mb-2"><strong>12 minutos totales</strong></p>
+          <ul class="list-disc pl-5 space-y-1">
+            <li>2’ de trote suave para entrar en calor.</li>
+            <li>Luego, 5 repeticiones de:
+              <ul class="list-disc pl-5 mt-1">
+                <li>40” intenso (≈ 3/4 de tu velocidad máxima, ej. ~17 km/h).</li>
+                <li>1’ trote suave (ej. ~8 km/h).</li>
+              </ul>
+            </li>
+            <li>Al finalizar, recuperar 1’ caminando. ¡Listo!</li>
+          </ul>
+        </section>
+
+        <section>
+          <h5 class="text-lg font-semibold text-purple-800 mb-2">Cardio LISS (opcional)</h5>
+          <p>
+            Si querés hacer LISS (salir a correr/trotar), lo ideal es <strong>al día siguiente del 1er día de piernas</strong>,
+            para llegar descansado al próximo día de piernas y no interferir con las ganancias. Máximo ~4 km para no sobreexigir.
+          </p>
+        </section>
+
+        <section>
+          <h5 class="text-lg font-semibold text-purple-800 mb-2">Técnica y foco en estiramiento</h5>
+          <p>
+            En ejercicios como <em>Inclinado en Smith</em>, <em>Aperturas sentado</em>, <em>Isquiotibiales</em>,
+            <em>Peso muerto</em> y <em>Gemelos en prensa</em>, priorizá la fase de <strong>estiramiento</strong> del músculo,
+            y luego una contracción explosiva. Pectorales, cuádriceps, isquios y gemelos responden muy bien a esto.
+          </p>
+        </section>
+      </div>
+    </div>
+  `;
 }
 
 
@@ -2446,4 +2550,7 @@ document.addEventListener('keydown', function(e) {
     checkBasePassword();
   }
 });
+
+window.showUserMoreInfo = showUserMoreInfo;
+
 
