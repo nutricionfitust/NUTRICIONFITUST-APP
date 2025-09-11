@@ -511,7 +511,8 @@ const trainingFolders = {
           {
             superset: [
             "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
+            "Fondos para tríceps 3 x 12-12-12",
+            "Press inclinado con mancuernas 4 x 10-10-10-10",
           ],
             restAfter: "2min"
           },
@@ -2272,25 +2273,29 @@ function onDescCardClick(evt, id) {
 
 // group = { superset: [string, string, ...], restAfter: "120s" }
 function generateSupersetItemHTML(group, daySlug, index) {
-  const items = (group.superset || []).map((line) => {
+  const lines = Array.isArray(group.superset) ? group.superset : [];
+  const items = lines.map((line) => {
     const { namePart, detailsPart, rest } = splitExerciseLineWithRest(line);
-    return {
-      __singleObj: { namePart, detailsPart, rest }
-    };
+    return { __singleObj: { namePart, detailsPart, rest } };
   });
 
-  const inner = items.map((obj, idx) => generateRoutineItemHTML(obj, daySlug, index + '-' + idx)).join('');
+  // Etiqueta dinámica según cantidad
+  const n = lines.length;
+  const label =
+    n === 2 ? 'Biserie' :
+    n === 3 ? 'Triserie' :
+    n > 3  ? 'Multiserie' :
+             'Serie compuesta';
 
-  // 👇 Normalizamos el texto de descanso
+  const inner = items
+    .map((obj, idx) => generateRoutineItemHTML(obj, daySlug, index + '-' + idx))
+    .join('');
+
+  // Normaliza descanso post-grupo
   let restText = '';
   if (group.restAfter) {
     let clean = group.restAfter.toString().trim();
-
-    // si no empieza con "descanso", lo añadimos
-    if (!/^descanso/i.test(clean)) {
-      clean = `Descanso ${clean}`;
-    }
-
+    if (!/^descanso/i.test(clean)) clean = `Descanso ${clean}`;
     restText = `<div class="mt-3 flex justify-end"><span class="badge-rest">${clean}</span></div>`;
   }
 
@@ -2298,7 +2303,7 @@ function generateSupersetItemHTML(group, daySlug, index) {
     <li class="text-gray-700">
       <div class="superset-card">
         <div class="flex items-center justify-between mb-2">
-          <div class="font-semibold text-purple-800">Biserie</div>
+          <div class="font-semibold text-purple-800">${label}</div>
           <div class="text-xs text-purple-700">Sin descanso entre ejercicios</div>
         </div>
         <ul class="space-y-3">
@@ -2309,7 +2314,6 @@ function generateSupersetItemHTML(group, daySlug, index) {
     </li>
   `;
 }
-
 
 
 function formatDetailsInline(details) {
