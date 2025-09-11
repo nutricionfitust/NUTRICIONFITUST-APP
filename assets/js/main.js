@@ -294,14 +294,18 @@ const trainingFolders = {
             "Hip thrust 3 x 12-12-12",
             "Elevaciones de talones 3 x 15-15-15",
             "Plancha 3 x 30-30-30 seg"
-          ]
-        }
-      }
-    }
+          ],
+        },
+    },
+
+
+
+
+
+
+    
   },
-
-
-
+},
   "3 MUSCULACIÓN + 1 HIIT + (1 LISS)": {
     routines: {
       "camilafrancoblonda": {
@@ -330,14 +334,18 @@ const trainingFolders = {
             "Peso muerto unilateral 3 x 10-10-10 c/lado",
             "Russian twists 3 x 20-20-20",
             "Plancha con elevación de pierna 3 x 10-10-10 c/lado"
-          ]
-        }
-      }
-    }
+          ],
+        },
+    },
+
+
+
+
+
+
+    
   },
-
-
-
+},
   "3 MUSCULACIÓN + 2 HIIT": { routines: {} },
 
 
@@ -435,13 +443,17 @@ const trainingFolders = {
             "Sentadillas con salto 3 x 45 seg"
             ],
           },
-      }
-    }
-  }
+      },
+    },
+
+
+
+
+
+
+    
+  },
 },
-
-
-
   "4 MUSCULACIÓN + 1 HIIT + (1 LISS)": {
   routines: {
     "franciscoustarroz": {
@@ -529,15 +541,109 @@ const trainingFolders = {
           "Entrenamiento HIIT": [
             "Burpees 3 x 45 seg",
             "Sentadillas con salto 3 x 45 seg"
+           ],
+          },
+      },
+    },
+
+
+
+
+"facundoustarroz": {
+      name: "Facundo",
+      plan: {  
+        "Día 1 - Pecho y Tríceps": {
+          "Acondicionamiento & Calentamiento": [
+            "Rotaciones de hombros 2 x 15-15",
+            "Skipping 3 x 30seg rest=1min"
+            ],
+          "Entrenamiento de Fuerza": [
+            "Press de banca 4 x 12-10-8-8 rest=2min",
+          {
+            superset: [
+            "Press inclinado con mancuernas 4 x 10-10-10-10",
+            "Fondos para tríceps 3 x 12-12-12"
+          ],
+            restAfter: "2min"
+          },
+            "Aperturas en banca 3 x 12-12-12 rest=60s"
+            ],
+          "Entrenamiento HIIT": [
+            "Burpees 3 x 45 seg",
+            "Sentadillas con salto 3 x 45 seg"
             ],
           },
-      }
-    }
-  }
+        "Día 2 - Espalda y Bíceps":  {
+          "Acondicionamiento & Calentamiento": [
+            "Rotaciones de hombros 2 x 15-15",
+            "Skipping 3 x 30seg rest=1min"
+            ],
+          "Entrenamiento de Fuerza": [
+            "Press de banca 4 x 12-10-8-8 rest=2min",
+          {
+            superset: [
+            "Press inclinado con mancuernas 4 x 10-10-10-10",
+            "Fondos para tríceps 3 x 12-12-12"
+          ],
+            restAfter: "2min"
+          },
+            "Aperturas en banca 3 x 12-12-12 rest=60s"
+            ],
+          "Entrenamiento HIIT": [
+            "Burpees 3 x 45 seg",
+            "Sentadillas con salto 3 x 45 seg"
+            ],
+          },
+        "Día 3 - Piernas":  {
+          "Acondicionamiento & Calentamiento": [
+            "Rotaciones de hombros 2 x 15-15",
+            "Skipping 3 x 30seg rest=1min"
+            ],
+          "Entrenamiento de Fuerza": [
+            "Press de banca 4 x 12-10-8-8 rest=2min",
+          {
+            superset: [
+            "Press inclinado con mancuernas 4 x 10-10-10-10",
+            "Fondos para tríceps 3 x 12-12-12"
+          ],
+            restAfter: "2min"
+          },
+            "Aperturas en banca 3 x 12-12-12 rest=60s"
+            ],
+          "Entrenamiento HIIT": [
+            "Burpees 3 x 45 seg",
+            "Sentadillas con salto 3 x 45 seg"
+            ],
+          },
+        "Día 4 - Hombros y Core":  {
+          "Acondicionamiento & Calentamiento": [
+            "Rotaciones de hombros 2 x 15-15",
+            "Skipping 3 x 30seg rest=1min"
+            ],
+          "Entrenamiento de Fuerza": [
+            "Press de banca 4 x 12-10-8-8 rest=2min",
+          {
+            superset: [
+            "Press inclinado con mancuernas 4 x 10-10-10-10",
+            "Fondos para tríceps 3 x 12-12-12"
+          ],
+            restAfter: "2min"
+          },
+            "Aperturas en banca 3 x 12-12-12 rest=60s"
+            ],
+          "Entrenamiento HIIT": [
+            "Burpees 3 x 45 seg",
+            "Sentadillas con salto 3 x 45 seg"
+            ],
+          },
+      },
+    },
+
+
+
+
+  },
 },
-
-
-
   "4 MUSCULACIÓN + 2 HIIT": {
   routines: {
     "NOMBRE DE USUARIO": {
@@ -627,14 +733,17 @@ const trainingFolders = {
             "Sentadillas con salto 3 x 45 seg"
             ],
           },
-      }
-    }
-  }
+      },
+    },
+
+
+
+
+
+
+
+  },
 },
-
-
-
-
   "5 MUSCULACIÓN + 1 HIIT + (1 LISS)": {
   routines: {
     "NOMBRE DE USUARIO": {
@@ -750,14 +859,17 @@ const trainingFolders = {
             "Sentadillas con salto 3 x 45 seg"
             ],
           },
-      }
-    }
-  }
+      },
+    },
+
+
+
+
+
+
+    
+  },
 },
-
-
-
-
   "5 MUSCULACIÓN + (1 LISS)": {
   routines: {
     "NOMBRE DE USUARIO": {
@@ -873,13 +985,17 @@ const trainingFolders = {
             "Sentadillas con salto 3 x 45 seg"
             ],
           },
-      }
-    }
-  }
+      },
+    },
+
+
+
+
+
+
+    
+  },
 },
-
-
-
   "5 MUSCULACIÓN + 2 HIIT": {
   routines: {
     "NOMBRE DE USUARIO": {
@@ -995,13 +1111,17 @@ const trainingFolders = {
             "Sentadillas con salto 3 x 45 seg"
             ],
           },
-      }
-    }
-  }
+      },
+    },
+
+
+
+
+
+
+    
+  },
 },
-
-
-
   "5 MUSCULACIÓN + 3 HIIT": {
   routines: {
     "NOMBRE DE USUARIO": {
@@ -1117,13 +1237,17 @@ const trainingFolders = {
             "Sentadillas con salto 3 x 45 seg"
             ],
           },
-      }
-    }
-  }
+      },
+    },
+
+
+
+
+
+
+    
+  },
 },
-
-
-
   "6 MUSCULACIÓN + 2 HIIT + (1 LISS)": {
   routines: {
     "NOMBRE DE USUARIO": {
@@ -1261,13 +1385,17 @@ const trainingFolders = {
             "Sentadillas con salto 3 x 45 seg"
             ],
           },
-      }
-    }
-  }
+      },
+    },
+
+
+
+
+
+
+    
+  },
 },
-
-
-
   "6 MUSCULACIÓN + 2 HIIT": {
   routines: {
     "NOMBRE DE USUARIO": {
@@ -1405,15 +1533,17 @@ const trainingFolders = {
             "Sentadillas con salto 3 x 45 seg"
             ],
           },
-      }
-    }
-  }
+      },
+    },
+
+
+
+
+
+
+    
+  },
 },
-
-
-
-
-
 };
 
 /* (Eliminado bloque de overrides por rutina para volver al comportamiento anterior) */
@@ -1426,6 +1556,7 @@ const userRoutineMapping = {
   camilafrancoblonda:   { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "camilafrancoblonda" },
   sofiaustarroz:    { folder: "4 MUSCULACIÓN (1 FB HIIT) + (1 LISS)", routine: "sofiaustarroz" },
   franciscoustarroz: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "franciscoustarroz" },
+  facundoustarroz: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "facundoustarroz" },
 };
 
 /* ===========================
@@ -1442,6 +1573,7 @@ const userPasswords = {
   'tundra-vesuvio-balalaika-siberia-yogurt-vesuvio-octavo-zarina-octavo-batata': 'camilafrancoblonda',
   'espresso-urali-tiramisu-siberia-vesuvio-octavo-zarina-octavo-batata': 'sofiaustarroz',
   'tiramisu-limoncello-vesuvio-russia-tundra-siberia-espresso-tundra-urali-octavo-zarina-octavo-batata': 'franciscoustarroz',
+  'tiramisu-vesuvio-tundra-quarzo-russia-gondola-urali-octavo-zarina-octavo-batata': 'facundoustarroz',
 };
 
 
