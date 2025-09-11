@@ -460,17 +460,33 @@ const trainingFolders = {
          // 👇 OPCIONAL y 100% personalizable por usuario
       infoSections: [
         {
-          title: "Notas específicas para Francisco",
+          title: "Guía rápida (RIR)",
           html: `
-            <p>Esta semana mantené RIR ~1 en los básicos y RIR 0 en la última serie de pecho.</p>
-            <p>Si el hombro molesta, cambiá Press banco por máquina convergente.</p>
-          `
+            <p>¿Qué signifíca <b>RIR</b>?: <b>Repeticiones En Reserva</b></p>
+    <p><b>RIR 1: </b>significa que al terminar la serie sientes que <b>podrías haber hecho 1 repetición más</b> antes de llegar al fallo.</p>
+    <p><b>RIR 2: </b>significa que al terminar la serie sientes que <b>podrías haber hecho 2 repeticiones más</b> antes de llegar al fallo.</p>  
+        <p><b>RIR 0 = fallo muscular, PERO pudiendo completar la serie... No podría hacer ninguna otra repetición.</b></p>
+        <br><br>
+    <p>La idea principal es que siempre trates de llegar al número de repeticiones que tenés marcadas.</p>
+      <ul class="list-disc pl-6">
+        <li>Si te puse 10 y llegás a 10 y no podés hacer ni una más → perfecto. Esto es <b>RIR 0</b>.</li>
+        <li>Si llegás a 10 y sentís que podrías hacer una más (11), pero no llegarías a 12 → también está perfecto. Esto es <b>RIR 1</b>.</li>
+        <li>Si te puse 10, llegás hasta 9 bien y fallás la última, también cuenta. Esto es <b>RIR -1</B>, y vale.</li>
+      </ul>
+      <br><br>
+      <p>En todos estos casos, lo que importa es que estás trabajando con la intensidad justa y el peso correcto para el rango de repeticiones que buscamos.</p>
+      <p>Esto, básicamente sirve para que aproveches al máximo el trabajo de cada serie, reclutando la mayor cantidad de fibras musculares posible.</p>
+      <p>Así, vas a estimular más el músculo pero sin acumular tanta fatiga, sobre todo cuando trabajamos en rangos de 6 a 12 repeticiones.</p>
+    `
         },
         {
-          title: "HIIT (ajuste personal)",
-          html: `
-            <p>Hacé los 40'' a velocidad 16 km/h (no 17) por ahora, y el minuto de trote en 8–8.5.</p>
-          `
+          title: "Recomendaciones generales",
+    html: `
+      <p><strong>LISS:</strong> ideal al día siguiente del 1er día de Piernas para no interferir con la progresión.</p>
+      <br><br>
+      <p>En <strong>Inclinado en Smith, Aperturas sentado, Isquiotibiales, Peso muerto, Gemelos en prensa</strong>, priorizá el estiramiento y luego contracción explosiva.</p>
+      <p>Si recién arrancás con carrera continua, <strong>máximo ~ 4 km</strong> para no sobreexigir.</p>
+    `
         }
       ],
          // PLAN DE ENTRENAMIENTO SEMANAL !      
@@ -1617,22 +1633,10 @@ const DEFAULT_INFO_SECTIONS = [
     `
   },
   {
-    title: "HIIT en caminadora",
-    html: `
-      <p><strong>12 minutos totales</strong></p>
-      <p>1) 2 minutos de trote suave para entrar en calor.</p>
-      <p>2) Repetir 5 veces sin descanso:</p>
-      <ul class="list-disc pl-6">
-        <li><strong>40 segundos</strong> ~3/4 de tu velocidad máx (ej: ~17 km/h).</li>
-        <li><strong>1 minuto</strong> trote suave (ej: ~8 km/h).</li>
-      </ul>
-      <p>3) Recuperar caminando 1 minuto y listo, a mimir.</p>
-    `
-  },
-  {
     title: "Recomendaciones generales",
     html: `
       <p><strong>LISS:</strong> ideal al día siguiente del 1er día de Piernas para no interferir con la progresión.</p>
+      <br><br>
       <p>En <strong>Inclinado en Smith, Aperturas sentado, Isquiotibiales, Peso muerto, Gemelos en prensa</strong>, priorizá el estiramiento y luego contracción explosiva.</p>
       <p>Si recién arrancás con carrera continua, <strong>máximo ~ 4 km</strong> para no sobreexigir.</p>
     `
