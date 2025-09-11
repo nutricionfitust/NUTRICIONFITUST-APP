@@ -246,7 +246,7 @@ const exerciseDatabase = {
   ],
   acondicionamiento: [
     { name: "Patadas Atrás", videoId: "https://drive.google.com/open?id=1N5USpUu0xuH1k9XnSZY7NWQ3kXBPAo_I&usp=drive_copy", description: "Ejercicio de acondicionamiento que trabaja glúteos y isquiotibiales de forma dinámica. Mejora la coordinación y activa la cadena posterior." },
-    { name: "Skipping Rodillas Arriba", videoId: "https://drive.google.com/open?id=1YP2tRw0VbRR3CWOMmeDGoGXNkAouoQyo&usp=drive_copy", description: "Ejercicio cardiovascular de alta intensidad que mejora la coordinación, eleva la frecuencia cardíaca y fortalece el core." },
+    { name: "Skipping Rodillas Arriba", videoId: "https://drive.google.com/open?id=1YP2tRw0VbRR3CWOMmeDGoGXNkAouoQyo&usp=drive_copy", description: "Ejercicio cardiovascular que mejora la coordinación, eleva la frecuencia cardíaca y fortalece el core." },
     { name: "Sentadillas más Estocadas con Peso (Bolsa)", videoId: "", description: "Combinación de sentadillas y estocadas usando una bolsa como peso. Ejercicio funcional que desarrolla fuerza y resistencia en piernas." },
     { name: "Burpees con Flexiones de Brazos", videoId: "", description: "Burpees completos incluyendo flexión de brazos y marcando bien la sentadilla. Ejercicio de cuerpo completo de alta intensidad." },
     { name: "Bíceps más Press Arnold con Mancuernas", videoId: "", description: "Combinación de curl de bíceps seguido de press Arnold. Trabaja bíceps y hombros de forma continua y eficiente." },
