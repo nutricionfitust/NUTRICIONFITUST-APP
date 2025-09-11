@@ -1603,14 +1603,21 @@ const DEFAULT_INFO_SECTIONS = [
   {
     title: "Guía rápida (RIR)",
     html: `
-      <p>La idea principal es que siempre trates de llegar al número de repeticiones que te marqué.</p>
-      <p><strong>RIR 1, RIR 2, RIR 0</strong> y sus explicaciones:</p>
+    <p>¿Qué signifíca <b>RIR</b>?: <b>Repeticiones En Reserva</b></p>
+    <p><b>RIR 1: </b>significa que al terminar la serie sientes que <b>podrías haber hecho 1 repetición más</b> antes de llegar al fallo.</p>
+    <p><b>RIR 2: </b>significa que al terminar la serie sientes que <b>podrías haber hecho 2 repeticiones más</b> antes de llegar al fallo.</p>  
+        <p><b>RIR 0 = fallo muscular, PERO pudiendo completar la serie... No podría hacer ninguna otra repetición.</b></p>
+        <br><br>
+    <p>La idea principal es que siempre trates de llegar al número de repeticiones que tenés marcadas.</p>
       <ul class="list-disc pl-6">
-        <li>Si te puse 10 y llegás a 10 y no podés hacer ni una más → perfecto.</li>
-        <li>Si llegás a 10 y sentís que podrías hacer una más (11), pero no llegarías a 12 → también está perfecto.</li>
-        <li>Si te puse 10, llegás hasta 9 bien y fallás la última, también cuenta.</li>
+        <li>Si te puse 10 y llegás a 10 y no podés hacer ni una más → perfecto. Esto es <b>RIR 0</b>.</li>
+        <li>Si llegás a 10 y sentís que podrías hacer una más (11), pero no llegarías a 12 → también está perfecto. Esto es <b>RIR 1</b>.</li>
+        <li>Si te puse 10, llegás hasta 9 bien y fallás la última, también cuenta. Esto es <b>RIR -1</B>, y vale.</li>
       </ul>
-      <p>Buscamos la intensidad justa para el rango de reps, maximizando el reclutamiento de fibras sin acumular tanta fatiga (sobre todo en 6–12 reps).</p>
+      <br><br>
+      <p>En todos estos casos, lo que importa es que estás trabajando con la intensidad justa y el peso correcto para el rango de repeticiones que buscamos.</p>
+      <p>Esto, básicamente sirve para que aproveches al máximo el trabajo de cada serie, reclutando la mayor cantidad de fibras musculares posible.</p>
+      <p>Así, vas a estimular más el músculo pero sin acumular tanta fatiga, sobre todo cuando trabajamos en rangos de 6 a 12 repeticiones.</p>
     `
   },
   {
