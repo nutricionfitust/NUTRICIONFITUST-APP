@@ -495,7 +495,7 @@ const trainingFolders = {
       <p>Además, cuando se indican, por ejemplo: <b>aproximaciones</b>-12-12-10-8, significa que antes de esas series efectivas (las que están numeradas) tenés que hacer una o dos series de aproximación (calentamiento con carga progresiva), según cómo sientas tus músculos.</p>
       <p>No son al fallo, ni tampoco cuentan como series principales. La idea es ir preparando al músculo y al sistema nervioso para el peso de trabajo.</p>
       <p>Hacer entre 12 a 16 repeticiones usando pesos moderados, subiendo hasta acercarte a tu carga real de trabajo.</p>
-      <p><b>Ejemplo práctico:</b> si tu peso de trabajo es 100 kg, podés hacer una serie de 16 repes con 60 kg, otra de 12 con 80 kg (te van a quedar repes de sobra) y después ya arrancás con tus series efectivas (12-12-10-8).
+      <p><b>Ejemplo práctico:</b> si tu peso de trabajo es 100 kg, podés hacer una serie de 16 repes con 60 kg, otra de 12 con 80 kg (te van a quedar repes de sobra) y después ya arrancás con tus series efectivas (12-12-10-8).</p>
       <p>De esa manera calentás la articulación, lubricás, activás fibras musculares y llegás mucho más preparado a tus repeticiones efectivas.</p>
     `
         },
@@ -1685,7 +1685,7 @@ const DEFAULT_INFO_SECTIONS = [
       <p>Además, cuando se indican, por ejemplo: <b>aproximaciones</b>-12-12-10-8, significa que antes de esas series efectivas (las que están numeradas) tenés que hacer una o dos series de aproximación (calentamiento con carga progresiva), según cómo sientas tus músculos.</p>
       <p>No son al fallo, ni tampoco cuentan como series principales. La idea es ir preparando al músculo y al sistema nervioso para el peso de trabajo.</p>
       <p>Hacer entre 12 a 16 repeticiones usando pesos moderados, subiendo hasta acercarte a tu carga real de trabajo.</p>
-      <p><b>Ejemplo práctico:<b/> si tu peso de trabajo es 100 kg, podés hacer una serie de 16 repes con 60 kg, otra de 12 con 80 kg (te van a quedar repes de sobra) y después ya arrancás con tus series efectivas (12-12-10-8).
+      <p><b>Ejemplo práctico:</b> si tu peso de trabajo es 100 kg, podés hacer una serie de 16 repes con 60 kg, otra de 12 con 80 kg (te van a quedar repes de sobra) y después ya arrancás con tus series efectivas (12-12-10-8).</p>
       <p>De esa manera calentás la articulación, lubricás, activás fibras musculares y llegás mucho más preparado a tus repeticiones efectivas.</p>
     `
         },
