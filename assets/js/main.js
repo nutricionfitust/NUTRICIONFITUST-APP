@@ -457,75 +457,6 @@ const trainingFolders = {
   routines: {
     "franciscoustarroz": {
       name: "Francisco",
-         // 👇 OPCIONAL y 100% personalizable por usuario
-      infoSections: [
-        {
-          title: "Guía rápida (RIR)",
-          html: `
-            <p>¿Qué signifíca <b>RIR</b>?: <b>Repeticiones En Reserva.</b></p>
-    <p><b>RIR 1: </b>significa que al terminar la serie sientes que <b>podrías haber hecho 1 repetición más</b> antes de llegar al fallo.</p>
-    <p><b>RIR 2: </b>significa que al terminar la serie sientes que <b>podrías haber hecho 2 repeticiones más</b> antes de llegar al fallo.</p>  
-        <p><b>RIR 0 = fallo muscular, PERO pudiendo completar la serie... No podría hacer ninguna otra repetición.</b></p>
-        <br><br>
-    <p>La idea principal es que siempre trates de llegar al número de repeticiones que tenés marcadas.</p>
-      <ul class="list-disc pl-6">
-        <li>Si te puse 10 y llegás a 10 y no podés hacer ni una más → perfecto. Esto es <b>RIR 0</b>.</li>
-        <li>Si llegás a 10 y sentís que podrías hacer una más (11), pero no llegarías a 12 → también está perfecto. Esto es <b>RIR 1</b>.</li>
-        <li>Si te puse 10, llegás hasta 9 bien y fallás la última, también cuenta. Esto es <b>RIR -1</B>, y vale.</li>
-      </ul>
-      <br><br>
-      <p>En todos estos casos, lo que importa es que estás trabajando con la intensidad justa y el peso correcto para el rango de repeticiones que buscamos.</p>
-      <p>Esto, básicamente sirve para que aproveches al máximo el trabajo de cada serie, reclutando la mayor cantidad de fibras musculares posible.</p>
-      <p>Así, vas a estimular más el músculo pero sin acumular tanta fatiga, sobre todo cuando trabajamos en rangos de 6 a 12 repeticiones.</p>
-    `
-        },
-        {
-          title: "Recomendaciones generales",
-    html: `
-      <p><strong>LISS:</strong> (caminar, bici suave, cinta inclinada) en días posteriores a entrenamientos de piernas, para mejorar circulación y favorecer recuperación, evitando sobreexigir los músculos.</p>
-      <br><br>
-      <p>En <strong>Inclinado en Smith, Aperturas sentado, Isquiotibiales, Peso muerto, Gemelos en prensa</strong>, priorizá el estiramiento y luego contracción explosiva.</p>
-      <p>Si recién arrancás con carrera continua, <strong>máximo ~ 4 km</strong> para no sobreexigir.</p>
-    `
-        },
-        {
-          title: "Calentamiento previo",
-    html: `
-      <p>Antes de cada entrenamiento, hacé <b>5-10 minutos de movilidad articular junto con los ejercicios de Calentamiento y Acondicionamiento.</b></p>
-      <p>Además, cuando se indican, por ejemplo: <b>aproximaciones</b>-12-12-10-8, significa que antes de esas series efectivas (las que están numeradas) tenés que hacer una o dos series de aproximación (calentamiento con carga progresiva), según cómo sientas tus músculos.</p>
-      <p>No son al fallo, ni tampoco cuentan como series principales. La idea es ir preparando al músculo y al sistema nervioso para el peso de trabajo.</p>
-      <p>Hacer entre 12 a 16 repeticiones usando pesos moderados, subiendo hasta acercarte a tu carga real de trabajo.</p>
-      <p><b>Ejemplo práctico:</b> si tu peso de trabajo es 100 kg, podés hacer una serie de 16 repes con 60 kg, otra de 12 con 80 kg (te van a quedar repes de sobra) y después ya arrancás con tus series efectivas (12-12-10-8).</p>
-      <p>De esa manera calentás la articulación, lubricás, activás fibras musculares y llegás mucho más preparado a tus repeticiones efectivas.</p>
-    `
-        },
-        {
-          title: "Movimiento diario y NEAT (gasto calórico no ejercicio)",
-    html: `
-        <p>Mantener un <b>mínimo de 7.000</b> a 10.000 <b>pasos diarios</b>. No es solo salir a caminar, también subir escaleras, hacer mandados caminando o moverse más durante el día.</p>
-        <p>Incorporar pausas activas si tienen un trabajo sedentario: levantarse cada hora, estirar, caminar un poco.</p>
-        <p>El NEAT es fundamental para mantener un buen gasto calórico diario, mejorar la circulación y la salud en general.</p>
-        `
-        },
-        {
-          title: "Hidratación y Recuperación",
-    html: `
-        <ul class="list-disc pl-6">
-        <li><b>Agua: 35 a 40 ml por kilo de peso corporal, más si entrenan fuerte o consumen creatina.</b></li>
-        <li>Evitar exceso de alcohol y bebidas azucaradas, ya que afectan la recuperación muscular y la composición corporal.</li>
-        <li>Priorizar un buen descanso: mínimo 7-8 horas de sueño. El músculo crece y se recupera durmiendo.</li>
-      </ul>
-        `
-        },
-          {
-          title: "Alimentación diaria",
-    html: `
-        <p>Mantener una ingesta adecuada y distribuida en el día.</p>
-        `
-        },
-      ],
-
-
          // PLAN DE ENTRENAMIENTO SEMANAL !      
       plan: {  
         "Día 1 - Pecho y Tríceps": {
@@ -1673,9 +1604,10 @@ const DEFAULT_INFO_SECTIONS = [
           title: "Recomendaciones generales",
     html: `
       <p><strong>LISS:</strong> (caminar, bici suave, cinta inclinada) en días posteriores a entrenamientos de piernas, para mejorar circulación y favorecer recuperación, evitando sobreexigir los músculos.</p>
-      <br><br>
-      <p>En <strong>Inclinado en Smith, Aperturas sentado, Isquiotibiales, Peso muerto, Gemelos en prensa</strong>, priorizá el estiramiento y luego contracción explosiva.</p>
+      <p>Si no podés, hacelo después de entrenar piernas, nunca antes.</p>
       <p>Si recién arrancás con carrera continua, <strong>máximo ~ 4 km</strong> para no sobreexigir.</p>
+      <br><br>
+      <p><b>Gemelos, isquiotibiales, cuadriceps</b> y <b>pectorales</b> crecen muy bien si uno prioriza su estiramiento. Enfatizá en la fase de estiramiento y luego realizá una contracción explosiva.</p>
     `
         },
         {
@@ -1726,7 +1658,7 @@ const SHOW_DEFAULT_HIIT_CARD = true;
 
 const DEFAULT_HIIT_DAY_NOTES = [
   {
-    title: "HIIT en caminadora (cinta) – 12 minutos",
+    title: "HIIT en caminadora (cinta)",
     body: `12 MINUTOS TOTALES
 
 • 2 minutos: trote suave para entrar en calor.
