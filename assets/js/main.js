@@ -570,8 +570,7 @@ const trainingFolders = {
             "Aperturas en banca 3 x 12-12-12 rest=60s"
             ],
           "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
+            "Correr en cinta"
             ],
           },
         "Día 2 - Espalda y Bíceps":  {
@@ -591,8 +590,7 @@ const trainingFolders = {
             "Aperturas en banca 3 x 12-12-12 rest=60s"
             ],
           "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
+            "Correr en cinta"
             ],
           },
         "Día 3 - Piernas":  {
@@ -1633,7 +1631,7 @@ const DEFAULT_INFO_SECTIONS = [
           title: "Hidratación y Recuperación",
     html: `
         <ul class="list-disc pl-6">
-        <li><b>Agua: 35 a 40 ml por kilo de peso corporal, más si entrenan fuerte o consumen creatina.</b></li>
+        <li><b>Agua: 35 a 40 ml por kilo de peso corporal, más si entrenás fuerte e intenso, o consumís creatina.</b></li>
         <li>Evitar exceso de alcohol y bebidas azucaradas, ya que afectan la recuperación muscular y la composición corporal.</li>
         <li>Priorizar un buen descanso: mínimo 7-8 horas de sueño. El músculo crece y se recupera durmiendo.</li>
       </ul>
@@ -1654,36 +1652,87 @@ const DEFAULT_INFO_SECTIONS = [
 // Si querés que aparezca una tarjeta con texto por defecto en TODOS los días que tengan HIIT
 // poné true. Si querés que solo aparezca cuando vos agregues notas personalizadas para ese día/usuario,
 // poné false.
-const SHOW_DEFAULT_HIIT_CARD = true;
+const SHOW_DEFAULT_HIIT_CARD = false;
 
 const DEFAULT_HIIT_DAY_NOTES = [
-  {
-    title: "HIIT en caminadora (cinta)",
-    body: `12 MINUTOS TOTALES
-
-• 2 minutos: trote suave para entrar en calor.
-• Luego, intervalos (HIIT):
-  – 40 segundos a ~3/4 de tu velocidad máxima (ej: ~17 km/h)
-  – 1 minuto de trote suave (ej: ~8 km/h)
-  Repetir 5 veces seguidas (40" + 1') x 5 sin descanso.
-• Recuperación: 1 minuto caminando.
-
-A mimir. 😴`
-  }
+        {
+          title: "Entrenamiento Interválico de Alta Intensidad",
+        },
 ];
 
 // Personalizaciones por USUARIO y por DÍA.
 // Clave de primer nivel: userKey/routineKey (ej: "francisco").
 // Clave de segundo nivel: título exacto del día (ej: "Día 1 - Pecho y Tríceps").
 // Valor: array de secciones [{title, body}, ...]
+// Ejemplos: agregalo donde está USER_HIIT_DAY_NOTES
 const USER_HIIT_DAY_NOTES = {
-  // "francisco": {
-  //   "Día 1 - Pecho y Tríceps": [
-  //     { title: "HIIT cinta personalizado", body: "…" }
-  //   ]
-  // }
-};
+  "franciscoustarroz": {
+    "Día 1 - Pecho y Tríceps": [
+      { title: "HIIT en cinta (caminadora)",
+      body: `<p><strong>12 MINUTOS TOTALES.</strong></p>
+            <p><b>2 minutos:</b> trote suave para entrar en calor.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>40 segundos a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
+            <li>1 minuto de trote suave (ej: ~8 km/h).</li>
+            </ul>
+            <p><b>Repetir 5 veces seguidas (40seg + 1min) x 5 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 1 minuto caminando.</p>
+            <p>A mimir. 😴</p>`
+    },
+    ],
+    "Día 2 - Espalda y Bíceps": [
+      { title: "HIIT en cinta (caminadora)",
+      body: `<p><strong>12 MINUTOS TOTALES.</strong></p>
+            <p><b>2 minutos:</b> trote suave para entrar en calor.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>40 segundos a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
+            <li>1 minuto de trote suave (ej: ~8 km/h).</li>
+            </ul>
+            <p><b>Repetir 5 veces seguidas (40seg + 1min) x 5 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 1 minuto caminando.</p>
+            <p>A mimir. 😴</p>`
+    },
+    ],
+  },
+  "facundoustarroz": {
+    "Día 1 - Pecho y Tríceps": [
+      { title: "HIIT en cinta (caminadora)",
+      body: `<p><strong>12 MINUTOS TOTALES.</strong></p>
+            <p><b>2 minutos:</b> trote suave para entrar en calor.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>40 segundos a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
+            <li>1 minuto de trote suave (ej: ~8 km/h).</li>
+            </ul>
+            <p><b>Repetir 5 veces seguidas (40seg + 1min) x 5 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 1 minuto caminando.</p>
+            <p>A mimir. 😴</p>`
+    },
+    ],
+  },
 
+
+
+  // camila, sofia, etc…
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
 
 
 /* ===========================
@@ -2351,8 +2400,7 @@ function getHiitNotesForUserDay(userKey, dayTitle) {
 
 function renderHiitMoreInfoCardForDay(userKey, dayTitle) {
   const sections = getHiitNotesForUserDay(userKey, dayTitle);
-  if (!sections || sections.length === 0) return '';
-
+  // 💡 sin return temprano: siempre dibuja la tarjeta, aunque sections esté vacío
   const id = `hiit-info-${slugifyForId(userKey || 'any')}-${slugifyForId(dayTitle)}`;
   return `
     <div class="bg-gradient-to-r from-yellow-50 to-yellow-100 rounded-lg p-4 border border-yellow-200 mt-6">
@@ -2360,25 +2408,23 @@ function renderHiitMoreInfoCardForDay(userKey, dayTitle) {
               onclick="toggleDescription(event, '${id}')">
         <h5 class="text-base font-semibold text-yellow-800 m-0">Más información de HIIT</h5>
         <svg class="w-5 h-5 text-yellow-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M9 5l7 7-7 7"></path>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
         </svg>
       </button>
-
-      <!-- Panel colapsable -->
       <div id="${id}" class="desc-panel mt-3">
         <div class="space-y-3">
-          ${sections.map(sec => `
+          ${Array.isArray(sections) ? sections.map(sec => `
             <div class="bg-white border border-yellow-200 rounded-lg p-3">
-  <div class="text-black font-semibold mb-1">${sec.title}</div>
-  <div class="text-black text-sm leading-relaxed">${nl2br(sec.body)}</div>
-</div>
-          `).join('')}
+              <div class="text-black font-semibold mb-1">${sec.title || ""}</div>
+              <div class="text-black text-sm leading-relaxed">${nl2br(sec.body || "")}</div>
+            </div>
+          `).join('') : ''}
         </div>
       </div>
     </div>
   `;
 }
+
 
 
 function stripRestFromTail(tail) {
@@ -2623,7 +2669,7 @@ function renderDayBody(day, exercises, userKey) {
     let inner = `<h4 class="text-xl font-bold text-gray-800 mb-2">${day}</h4>`;
 
     for (const [sectionTitle, items] of ordered) {
-      inner += renderSectionInline(sectionTitle, items, day);
+inner += renderSectionInline(sectionTitle, items, day, userKey);
     }
 
     return `
