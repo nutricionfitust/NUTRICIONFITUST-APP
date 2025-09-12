@@ -462,7 +462,7 @@ const trainingFolders = {
         {
           title: "Guía rápida (RIR)",
           html: `
-            <p>¿Qué signifíca <b>RIR</b>?: <b>Repeticiones En Reserva</b></p>
+            <p>¿Qué signifíca <b>RIR</b>?: <b>Repeticiones En Reserva.</b></p>
     <p><b>RIR 1: </b>significa que al terminar la serie sientes que <b>podrías haber hecho 1 repetición más</b> antes de llegar al fallo.</p>
     <p><b>RIR 2: </b>significa que al terminar la serie sientes que <b>podrías haber hecho 2 repeticiones más</b> antes de llegar al fallo.</p>  
         <p><b>RIR 0 = fallo muscular, PERO pudiendo completar la serie... No podría hacer ninguna otra repetición.</b></p>
@@ -1652,7 +1652,7 @@ const DEFAULT_INFO_SECTIONS = [
         {
           title: "Guía rápida (RIR)",
           html: `
-            <p>¿Qué signifíca <b>RIR</b>?: <b>Repeticiones En Reserva</b></p>
+            <p>¿Qué signifíca <b>RIR</b>?: <b>Repeticiones En Reserva.</b></p>
     <p><b>RIR 1: </b>significa que al terminar la serie sientes que <b>podrías haber hecho 1 repetición más</b> antes de llegar al fallo.</p>
     <p><b>RIR 2: </b>significa que al terminar la serie sientes que <b>podrías haber hecho 2 repeticiones más</b> antes de llegar al fallo.</p>  
         <p><b>RIR 0 = fallo muscular, PERO pudiendo completar la serie... No podría hacer ninguna otra repetición.</b></p>
@@ -2013,7 +2013,7 @@ function showUserSpecificTraining(userKey) {
       <div class="flex justify-between items-center">
         <div>
           <h4 class="text-lg font-bold text-purple-800 mb-1">Más información</h4>
-          <p class="text-purple-700 text-sm">Notas útiles, explicaciones de RIR, HIIT y recomendaciones generales</p>
+          <p class="text-purple-700 text-sm">Notas útiles, explicaciones de RIR, aproximaciones y recomendaciones generales</p>
         </div>
         <div class="text-purple-700">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -2618,7 +2618,7 @@ function formatDetailsInline(details) {
   return `${sets} x ${repsOut}${tail}`;
 }
 
-function renderSectionInline(sectionTitle, items, day) {
+function renderSectionInline(sectionTitle, items, day, userKey) {
   if (!Array.isArray(items) || items.length === 0) return '';
 
   const daySlug = slugifyForId(`${day}-${sectionTitle}`);
@@ -2628,7 +2628,8 @@ function renderSectionInline(sectionTitle, items, day) {
   if (/fuerza/i.test(sectionTitle)) colorClass = 'red';
   if (/hiit/i.test(sectionTitle)) colorClass = 'yellow';
 
-  return `
+  // Contenido base de la sección
+  let html = `
     <div class="section-group ${colorClass}">
       <div class="section-header ${colorClass}">
         <h5>${sectionTitle}</h5>
@@ -2640,8 +2641,15 @@ function renderSectionInline(sectionTitle, items, day) {
             : generateRoutineItemHTML(ex, daySlug, i)
         ).join('')}
       </ul>
-    </div>
   `;
+
+  // 👉 Si es HIIT, metemos aquí la “carpeta” de Más información (queda dentro del mismo .section-group)
+  if (/hiit/i.test(sectionTitle) && Array.isArray(items) && items.length) {
+    html += renderHiitMoreInfoCardForDay(userKey, day);
+  }
+
+  html += `</div>`; // cierra .section-group
+  return html;
 }
 
 
@@ -2684,11 +2692,6 @@ function renderDayBody(day, exercises, userKey) {
 
     for (const [sectionTitle, items] of ordered) {
       inner += renderSectionInline(sectionTitle, items, day);
-
-      // 👇 SOLO si existe la sección HIIT, agregamos la "carpeta" amarilla al final
-      if (sectionTitle === "Entrenamiento HIIT" && Array.isArray(items) && items.length) {
-        inner += renderHiitMoreInfoCardForDay(userKey, day);
-      }
     }
 
     return `
