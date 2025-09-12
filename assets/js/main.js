@@ -1917,6 +1917,24 @@ function showSpecificRoutine(folderName, routineKey) {
     `;
   }
 
+    // === Carpeta extra: "Más información" (violeta) también en ADMIN ===
+  html += `
+    <div class="bg-gradient-to-r from-purple-50 to-purple-100 rounded-lg p-6 card-hover cursor-pointer border border-purple-200"
+         onclick="showUserInfoPage('${routineKey}')">
+      <div class="flex justify-between items-center">
+        <div>
+          <h4 class="text-lg font-bold text-purple-800 mb-1">Más información</h4>
+          <p class="text-purple-700 text-sm">Notas útiles, explicaciones de RIR, aproximaciones y recomendaciones generales</p>
+        </div>
+        <div class="text-purple-700">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+  `;
+
   html += '</div>';
   content.innerHTML = html;
 }
