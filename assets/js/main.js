@@ -357,6 +357,7 @@ const trainingFolders = {
   routines: {
     "sofiaustarroz": {
       name: "Sofía",
+         // PLAN DE ENTRENAMIENTO SEMANAL !      
       plan: {  
         "Día 1 - Pecho y Tríceps": {
           "Acondicionamiento & Calentamiento": [
@@ -410,7 +411,8 @@ const trainingFolders = {
           {
             superset: [
             "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
+            "Fondos para tríceps 3 x 12-12-12",
+            "Press inclinado con mancuernas 4 x 10-10-10-10",
           ],
             restAfter: "2min"
           },
@@ -440,7 +442,7 @@ const trainingFolders = {
           "Entrenamiento HIIT": [
             "Burpees 3 x 45 seg",
             "Sentadillas con salto 3 x 45 seg"
-            ],
+           ],
           },
       },
     },
@@ -1717,6 +1719,25 @@ const USER_HIIT_DAY_NOTES = {
     },
     ],
   },
+  "sofiaustarroz": {
+    "Día 1 - Pecho y Tríceps": [
+      { title: "HIIT en cinta (caminadora)",
+      body: `<p><strong>12 MINUTOS TOTALES.</strong></p>
+            <p><b>2 minutos:</b> trote suave para entrar en calor.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>40 segundos a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
+            <li>1 minuto de trote suave (ej: ~8 km/h).</li>
+            </ul>
+            <p><b>Repetir 5 veces seguidas (40seg + 1min) x 5 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 1 minuto caminando.</p>
+            <p>A mimir. 😴</p>`
+    },
+    ],
+  },
+
+
+
 
 
 
