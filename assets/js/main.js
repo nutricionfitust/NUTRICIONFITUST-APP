@@ -2255,6 +2255,13 @@ function codificar(texto) {
     .map(c => diccionario.hasOwnProperty(c) ? diccionario[c] : c)
     .join("-");
 }
+// Toggle genérico para contenedores plegables
+function toggleSectionById(id) {
+  const panel = document.getElementById(id);
+  if (!panel) return;
+  const isHidden = panel.classList.contains('hidden');
+  panel.classList.toggle('hidden', !isHidden);
+}
 
 function decodificar(textoCodificado) {
   const reverseDic = Object.fromEntries(
