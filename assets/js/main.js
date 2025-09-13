@@ -1622,8 +1622,8 @@ const DEFAULT_INFO_SECTIONS = [
         {
           title: "Movimiento diario y NEAT (gasto calórico no ejercicio)",
     html: `
-        <p>Mantener un <b>mínimo de 7.000</b> a 10.000 <b>pasos diarios</b>. No es solo salir a caminar, también subir escaleras, hacer mandados caminando o moverse más durante el día.</p>
-        <p>Incorpora pausas activas si tenés un trabajo sedentario: levantate cada hora, estira, camina un poco.</p>
+        <p>Mantené un <b>mínimo de 7.000</b> a 10.000 <b>pasos diarios</b>. No es solo salir a caminar, también subir escaleras, hacer mandados caminando o moverse más durante el día.</p>
+        <p>Incorporá pausas activas si tenés un trabajo sedentario: levantate cada hora, estira, camina un poco.</p>
         <p>El NEAT es fundamental para mantener un buen gasto calórico diario, mejorar la circulación y la salud en general.</p>
         `
         },
@@ -1633,17 +1633,17 @@ const DEFAULT_INFO_SECTIONS = [
         <ul class="list-disc pl-6">
         <li><b>Agua: 35 a 40 ml por kilo de peso corporal, más si entrenás fuerte e intenso, o consumís creatina.</b></li>
         <li>Evitá el exceso de alcohol y bebidas azucaradas, ya que afectan tu recuperación muscular y la composición corporal.</li>
-        <li>Prioriza un <b>buen descanso: mínimo 7-8 horas de sueño.</b> El músculo crece y se recupera durmiendo.</li>
+        <li>Priorizá un <b>buen descanso: mínimo 7-8 horas de sueño.</b> El músculo crece y se recupera durmiendo.</li>
       </ul>
         `
         },
           {
           title: "Alimentación diaria",
     html: `
-        <p>Mantener una ingesta adecuada y distribuida en el día.</p>
+        <p>Mantené una ingesta adecuada y distribuida en el día.</p>
         <p>Si querés un <b>plan nutricional para maximizar tus ganancias</b>, enviame un 
             <a href="https://wa.me/5491138803401?text=Hola%20Fran%2C%20quiero%20mi%20plan%20nutricional" target="_blank" class="text-green-600 font-semibold">
-            mensaje directo
+            👉🏻 mensaje directo
             </a>.
         </p>
         `
