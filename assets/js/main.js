@@ -2816,26 +2816,25 @@ function formatDetailsInline(details) {
   const raw = (details || '').toString().trim();
   if (!raw) return '';
 
-  // 1) Caso "<SETS> x <LO_QUE_SEA>" → [Series: n] [Reps: ...]
-  //    Acepta cualquier cosa después de la 'x' (números, texto, paréntesis, +, etc.)
+  // 1) "<SETS> x <LO_QUE_SEA>" → [Series: n] [Reps: ...]
   const mx = raw.match(/^(\d+)\s*[xX]\s*(.+)$/);
   if (mx) {
     const sets = mx[1];
-    const repsSpec = mx[2]; // ← se muestra tal cual lo escribiste
+    const repsSpec = mx[2]; // se muestra tal cual lo escribiste
     return [
-      `<span class="inline-block text-[11px] bg-blue-50 text-blue-800 px-2 py-0.5 rounded-md border border-blue-100 ml-2">Series: ${sets}</span>`,
-      `<span class="inline-block text-[11px] bg-blue-50 text-blue-800 px-2 py-0.5 rounded-md border border-blue-100 ml-1">Reps: ${repsSpec}</span>`
+      `<span class="inline-block text-[11px] bg-blue-50 text-blue-800 px-2 py-0.5 rounded-md border border-blue-100 mr-2">Series: ${sets}</span>`,
+      `<span class="inline-block text-[11px] bg-blue-50 text-blue-800 px-2 py-0.5 rounded-md border border-blue-100">Reps: ${repsSpec}</span>`
     ].join('');
   }
 
-  // 2) Caso "REPOS: ..." / "REPS: ..." → [Reps: ...]
+  // 2) "REPOS:" / "REPS:" → [Reps: ...]
   const mReps = raw.match(/^rep(?:os)?\s*:\s*(.+)$/i);
   if (mReps) {
-    return `<span class="inline-block text-[11px] bg-blue-50 text-blue-800 px-2 py-0.5 rounded-md border border-blue-100 ml-2">Reps: ${mReps[1]}</span>`;
+    return `<span class="inline-block text-[11px] bg-blue-50 text-blue-800 px-2 py-0.5 rounded-md border border-blue-100">Reps: ${mReps[1]}</span>`;
   }
 
-  // 3) Cualquier otro texto → una sola “píldora” (útil para RIR, indicaciones, etc.)
-  return `<span class="inline-block text-[11px] bg-blue-50 text-blue-800 px-2 py-0.5 rounded-md border border-blue-100 ml-2">${raw}</span>`;
+  // 3) Otro texto → una sola “píldora” (RIR, indicaciones, etc.)
+  return `<span class="inline-block text-[11px] bg-blue-50 text-blue-800 px-2 py-0.5 rounded-md border border-blue-100">${raw}</span>`;
 }
 
 
