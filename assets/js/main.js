@@ -354,7 +354,7 @@ const trainingFolders = {
           },
             ],
           "Entrenamiento de Fuerza": [
-            "Sentadillas con Barra 5 x aproximación-12-10-8-8 rest=2-3min",
+            "Sentadillas con Barra 6 x (2 aproximaciones)-12-10-8-8 rest=2-3min",
             "Sentadilla Búlgara con Mancuernas 4 x 12-10-10-8 rest=2min",
             "Isquiotibiales Acostada 4 x 12-(10+8)-(10+6)-8 rest=1-2min",
             "Aductores Sentada 3 x 12-(fallo+fallo)-(fallo+fallo) rest=1-2min",
