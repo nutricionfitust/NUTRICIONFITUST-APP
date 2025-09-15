@@ -11,7 +11,7 @@ const exerciseDatabase = {
     { name: "Sentadilla Búlgara con Barra", videoId: "https://drive.google.com/file/d/1bcNRv0NWafCWN4fOvb0hzJLBpMw4qwwf/view?usp=drivesdk", description: "Unilateral avanzado para desarrollar fuerza, masa y corregir desbalances. Carga directa en cuádriceps y glúteos, con isquiotibiales como soporte. Al ser con barra, permite progresar en pesos altos y llevar cada pierna a un esfuerzo total." },
     { name: "Sentadilla Búlgara con Mancuernas", videoId: "https://drive.google.com/file/d/1VkcnF9SA-YNYQazHOPzGiGZGWPawJ6Od/view?usp=drivesdk", description: "Variante accesible que mantiene el mismo estímulo unilateral. Enfocada en cuádriceps y glúteos, permite mayor control del movimiento y es excelente para trabajar al fallo con seguridad." },
     { name: "Sentadilla Búlgara en Smith", videoId: "https://drive.google.com/file/d/1GKxgnnkTyBZoxVCy4ynY1VgpomFN0Xfu/view?usp=drivesdk", description: "Opción guiada que suma estabilidad y control, sin perder el estímulo intenso sobre cuádriceps y glúteos. Permite bajar profundo, cargar más y enfocarse en la contracción sin preocuparse por el equilibrio." },
-    { name: "Sentadillas con Barra", videoId: "https://drive.google.com/file/d/1JJjXOHws6I_5XXMLgyTenU_tdDynfhiY/view?usp=drivesdk", description: "El rey de los ejercicios de pierna. Trabaja todo: cuádriceps, glúteos, femorales y core. La clave está en bajar profundo, priorizando el estiramiento muscular y subir explosivo. Es el ejercicio más completo para construir masa y fuerza." },
+    { name: "Sentadillas con Barra", videoId: "https://drive.google.com/file/d/1JJjXOHws6I_5XXMLgyTenU_tdDynfhiY/view?usp=drivesdk", description: "Trabaja todo: cuádriceps, glúteos, femorales y core. La clave está en bajar profundo, priorizando el estiramiento muscular y subir explosivo. Es el ejercicio más completo para construir masa y fuerza." },
     { name: "Tracción con Barra en Rack", videoId: "https://drive.google.com/file/d/1c0rJzJ3VDuIqTh1rJLIEHUkSovgeLBfn/view?usp=drivesdk", description: "Ejercicio de tirón que fortalece la parte alta de la cadena posterior. Estimula principalmente dorsales y trapecios, con soporte de core y erectores. Perfecto para sumar grosor y mejorar la postura general." }
   ],
   cuadriceps: [
@@ -106,7 +106,7 @@ const exerciseDatabase = {
     { name: "Encogimientos con Mancuernas (Trapecios) 25° hacia Adelante", videoId: "https://drive.google.com/open?id=1VF3vmqB2a77neHRa5LzeK2QsCiIUSOZK&usp=drive_copy", description: "Con inclinación hacia adelante, maximizás el estímulo en trapecios. Subí hasta la contracción y bajá controlado." },
     { name: "Encogimientos con Barra (Trapecios) 25° hacia Adelante", videoId: "https://drive.google.com/open?id=1UyFUZjKcd0uQTY7ClyLW0WJwFfFrDnAe&usp=drive_copy", description: "Lo mismo con barra, con posibilidad de cargar más. Subí hasta apretar fuerte los trapecios y bajá despacio." },
     { name: "Dominadas Agarre Supino", videoId: "https://drive.google.com/file/d/1iv4uVOVyUJnv4S1TbVX4bXxL_Z0FcpI-/view?usp=drivesdk", description: "Además del dorsal, cargan mucho los bíceps. Colgate, estirá completo y subí hasta llevar el pecho a la barra." },
-    { name: "Dominadas Agarre Prono", videoId: "https://drive.google.com/file/d/1REN0E_arkYRaRmUbe-ERu4M28NPv6DrS/view?usp=drivesdk", description:"El rey para anchura. Colgate, bajá bien hasta el estiramiento y subí hasta que la barbilla supere la barra." },
+    { name: "Dominadas Agarre Prono", videoId: "https://drive.google.com/file/d/1REN0E_arkYRaRmUbe-ERu4M28NPv6DrS/view?usp=drivesdk", description:"Colgate, bajá bien hasta el estiramiento y subí hasta que la barbilla supere la barra." },
     { name: "Dominadas Agarre Prono a los Hombros", videoId: "https://drive.google.com/file/d/1avpp8w_3ezj1jgvDN1sMlOz6K0zRYQj2/view?usp=drivesdk", description: "Variante que lleva la barra hacia los hombros. El dorsal trabaja en un rango más amplio, del estiramiento al cierre total." },
   ],
   hombros: [
@@ -356,7 +356,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
             "Sentadillas con Barra 5 x aproximación-12-10-8-8 rest=2-3min",
             "Sentadilla Búlgara con Mancuernas 4 x 12-10-10-8 rest=2min",
-            "Isquiotibiales Acostada 4 x 12-(10+8)-(10+6)-8",
+            "Isquiotibiales Acostada 4 x 12-(10+8)-(10+6)-8 rest=1-2min",
             "Aductores Sentada 3 x 12-(fallo+fallo)-(fallo+fallo) rest=1-2min",
             "Crunch en Máquina 3 x 16-16-12 rest=1min"
             ],
@@ -1662,7 +1662,7 @@ const userPasswords = {
 // ===========================
 const DEFAULT_INFO_SECTIONS = [
         {
-          title: "Guía rápida (RIR)",
+          title: "Guía rápida: RIR, fallo, dropsets",
           html: `
             <p>¿Qué signifíca <b>RIR</b>?: <b>Repeticiones En Reserva.</b></p>
     <p><b>RIR 1: </b>significa que al terminar la serie sientes que <b>podrías haber hecho 1 repetición más</b> antes de llegar al fallo.</p>
@@ -1695,6 +1695,7 @@ const DEFAULT_INFO_SECTIONS = [
           title: "Calentamiento previo",
     html: `
       <p>Antes de cada entrenamiento, hacé <b>5-10 minutos de movilidad articular junto con los ejercicios de Calentamiento y Acondicionamiento.</b></p>
+      <br><br>
       <p>Además, cuando se indican, por ejemplo: <b>aproximaciones</b>-12-12-10-8, significa que antes de esas series efectivas (las que están numeradas) tenés que hacer una o dos series de aproximación (calentamiento con carga progresiva), según cómo sientas tus músculos.</p>
       <p>No son al fallo, ni tampoco cuentan como series principales. La idea es ir preparando al músculo y al sistema nervioso para el peso de trabajo.</p>
       <p>Hacer entre 12 a 16 repeticiones usando pesos moderados, subiendo hasta acercarte a tu carga real de trabajo.</p>
@@ -2696,7 +2697,7 @@ function generateRoutineItemHTML(exLine, daySlug, index) {
     <li class="text-gray-700">
       <!-- TARJETA AZUL -->
       <div class="w-full bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 rounded-lg p-3 hover:from-blue-100 hover:to-blue-200 transition-colors">
-        <button class="w-full text-left flex items-center justify-between" onclick="onRoutineExerciseClick('${safeName}')">
+        <button class="w-full text-left flex items-center justify-between" exercise-card-btn" onclick="onRoutineExerciseClick('${safeName}')">
           <div class="font-semibold text-blue-900">
             ${namePart}${inlineDetails ? ` <span class='font-normal text-blue-800'>${inlineDetails}</span>` : ''}
           </div>

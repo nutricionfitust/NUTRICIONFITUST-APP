@@ -291,3 +291,27 @@ body {
 
 /* Asegurar que el modal de video quede arriba de todo */
 #videoModal { z-index: 99999 !important; }
+
+/* Vista móvil: apilar nombre + (series/reps) y poner Descanso abajo a la derecha */
+@media (max-width: 640px) {
+  /* El botón (tarjeta azul) pasa a columna en mobile */
+  .exercise-card-btn {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  /* El bloque de series/reps (tu inlineDetails) ya viene dentro de este span
+     con clases de texto azul; lo hacemos "debajo del nombre" */
+  .exercise-card-btn .font-semibold .text-blue-800 {
+    display: block;         /* va a la línea de abajo */
+    margin-top: 4px;        /* un poquito de aire */
+    font-weight: 600;       /* se ve consistente */
+  }
+
+  /* El badge de Descanso queda abajo a la derecha
+     (como en bi/tri-series que te gusta) */
+  .exercise-card-btn .badge-rest {
+    align-self: flex-end;   /* se va a la derecha */
+    margin-top: 6px;        /* baja una línea respecto del nombre */
+  }
+}
