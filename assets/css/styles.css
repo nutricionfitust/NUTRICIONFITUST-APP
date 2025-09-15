@@ -300,25 +300,22 @@ body {
 /* ===== SOLO smartphone ===== */
 @media (max-width: 640px) {
   .exercise-card-btn {
-    position: relative !important;
-    display: block !important;
-    padding-bottom: 0 !important;     /* quitamos espacio artificial */
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important; /* que ocupen todo el ancho */
   }
 
   .exercise-card-btn .font-semibold > .text-blue-800 {
     display: block !important;
     margin-top: 6px !important;
-    margin-bottom: 6px !important;    /* mismo espacio que usan en biseries/triseries */
-    font-weight: 600 !important;
-    line-height: 1.25 !important;
+    margin-bottom: 6px !important;
   }
 
   .exercise-card-btn .badge-rest {
-    position: static !important;      /* volvemos a flujo normal */
-    display: inline-flex !important;  /* respeta estilo base */
-    margin-top: 8px !important;   
-     margin-right: 0 !important;   /* igual que en bi/tri */
-  margin-bottom: 0 !important;  /* igual que en bi/tri */    /* mismo margin-top que en bi/tri-series */
-    align-self: flex-start !important;
+    align-self: flex-end !important;  /* lo manda a la derecha */
+    margin-top: 8px !important;
+    margin-right: 0 !important;      /* mismo que bi/tri */
+    margin-bottom: 0 !important;     /* mismo que bi/tri */
   }
 }
+
