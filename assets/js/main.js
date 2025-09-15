@@ -1665,21 +1665,26 @@ const DEFAULT_INFO_SECTIONS = [
           title: "Guía rápida: RIR, fallo, dropsets",
           html: `
             <p>¿Qué signifíca <b>RIR</b>?: <b>Repeticiones En Reserva.</b></p>
-    <p><b>RIR 1: </b>significa que al terminar la serie sientes que <b>podrías haber hecho 1 repetición más</b> antes de llegar al fallo.</p>
-    <p><b>RIR 2: </b>significa que al terminar la serie sientes que <b>podrías haber hecho 2 repeticiones más</b> antes de llegar al fallo.</p>  
+        <p><b>RIR 1: </b>significa que al terminar la serie sientes que <b>podrías haber hecho 1 repetición más</b> antes de llegar al fallo.</p>
+        <p><b>RIR 2: </b>significa que al terminar la serie sientes que <b>podrías haber hecho 2 repeticiones más</b> antes de llegar al fallo.</p>  
         <p><b>RIR 0 = fallo muscular, PERO pudiendo completar la serie... No podría hacer ninguna otra repetición.</b></p>
         <br><br>
-    <p>La idea principal es que siempre trates de llegar al número de repeticiones que tenés marcadas.</p>
+        <p><b>¿Qué es el fallo?</b>> Llegar al fallo significa no poder completar <b>ni una repetición más</b> aunque lo intentes.</p>
+        <br><br>
+        <p>La idea principal es que siempre trates de llegar al número de repeticiones que tenés marcadas.</p>
       <ul class="list-disc pl-6">
         <li>Si te puse 10 y llegás a 10 y no podés hacer ni una más → perfecto. Esto es <b>RIR 0</b>.</li>
         <li>Si llegás a 10 y sentís que podrías hacer una más (11), pero no llegarías a 12 → también está perfecto. Esto es <b>RIR 1</b>.</li>
         <li>Si te puse 10, llegás hasta 9 bien y fallás la última, también cuenta. Esto es <b>RIR -1</B>, y vale.</li>
       </ul>
-      <br><br>
-      <p>En todos estos casos, lo que importa es que estás trabajando con la intensidad justa y el peso correcto para el rango de repeticiones que buscamos.</p>
-      <p>Esto, básicamente sirve para que aproveches al máximo el trabajo de cada serie, reclutando la mayor cantidad de fibras musculares posible.</p>
-      <p>Así, vas a estimular más el músculo pero sin acumular tanta fatiga, sobre todo cuando trabajamos en rangos de 6 a 12 repeticiones.</p>
-    `
+        <br><br>
+        <p>En todos estos casos, lo que importa es que estás trabajando con la intensidad justa y el peso correcto para el rango de repeticiones que buscamos.</p>
+        <p>Esto, básicamente sirve para que aproveches al máximo el trabajo de cada serie, reclutando la mayor cantidad de fibras musculares posible.</p>
+        <p>Así, vas a estimular más el músculo pero sin acumular tanta fatiga, sobre todo cuando trabajamos en rangos de 6 a 12 repeticiones.</p>
+        <br><br>
+        <p><b>¿Qué son las Dropsets?</b>: Son una técnica donde al llegar al fallo con un peso, <b>bajás la carga inmediatamente</b> y seguís haciendo repeticiones hasta llegar de nuevo al fallo.</p>
+         <p>Ejemplo: si ves en la rutina (10+8), significa que haces 10 repeticiones al fallo (RIR 0), bajás un poco el peso y hacés 8 repeticiones más, también al fallo (RIR 0). A matar 🔥.</p>
+      `
         },
         {
           title: "Recomendaciones generales",
