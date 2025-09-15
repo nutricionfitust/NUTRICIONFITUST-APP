@@ -50,15 +50,19 @@ body {
 }
 
 /* Badge de descanso */
+/* --- Estilo base unificado para TODOS los 'Descanso' --- */
 .badge-rest {
-  display: inline-block;
-  padding: 2px 8px;
-  border-radius: 999px;
-  font-size: 12px;
-  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;               /* mismo tamaño que biseries/triseries */
+  line-height: 1;
+  padding: 2px 8px;               /* mismo padding */
+  border-radius: 9999px;          /* pill */
   color: #4338ca;           /* purple-700 */
   background: #ede9fe;      /* purple-100 */
   border: 1px solid #c4b5fd;/* purple-300 */
+  white-space: nowrap;
 }
 
 /* Contenedor de biserie */
@@ -292,38 +296,32 @@ body {
 /* Asegurar que el modal de video quede arriba de todo */
 #videoModal { z-index: 99999 !important; }
 
-/* ===== SOLO en smartphone ===== */
+/* ===== SOLO smartphone ===== */
 @media (max-width: 640px) {
-  /* El botón actúa como contenedor relativo del badge */
+  /* El botón contenedor del item hace de ancla */
   .exercise-card-btn {
     position: relative !important;
-    display: block !important;        /* anulamos el flex del botón en móvil */
-    padding-bottom: 30px !important;  /* espacio para el badge abajo */
+    display: block !important;          /* anulamos flex para controlar el flujo */
+    padding-bottom: 42px !important;    /* MÁS espacio para despegar 'Descanso' de las reps */
   }
 
-  /* Nombre + (series/reps) se apilan naturalmente */
-  .exercise-card-btn .font-semibold {
-    display: block !important;
-  }
-
-  /* Forzamos series/reps a ir debajo del nombre */
+  /* Series/Reps (tu inlineDetails) van debajo del nombre */
   .exercise-card-btn .font-semibold > .text-blue-800 {
     display: block !important;
-    margin-top: 4px !important;
+    margin-top: 6px !important;         /* respirito respecto al nombre */
+    margin-bottom: 10px !important;     /* MÁS separación antes del Descanso */
     font-weight: 600 !important;
     line-height: 1.25 !important;
   }
 
-  /* DESCANSO: pegado a la esquina inferior derecha del botón */
+  /* DESCANSO: esquina inferior derecha, por debajo de las Reps */
   .exercise-card-btn .badge-rest {
     position: absolute !important;
-    right: 8px !important;
-    bottom: 6px !important;
+    right: 10px !important;
+    bottom: 8px !important;
     margin: 0 !important;
     transform: none !important;
     align-self: auto !important;
-    font-size: 12px !important;
-    padding: 2px 6px !important;
     z-index: 1;
   }
 }
