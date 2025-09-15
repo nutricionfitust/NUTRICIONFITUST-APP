@@ -137,6 +137,9 @@ body {
     display: block !important;       /* series/reps en renglón nuevo */
     margin-top: 2px !important;
     line-height: 1.25 !important;
+    margin-right: 0 !important;      /* mismo que bi/tri */
+    margin-left: 0 !important;      /* mismo que bi/tri */
+
   }
 
   /* Encabezado de BISERIE:
