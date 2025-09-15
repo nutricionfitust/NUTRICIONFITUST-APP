@@ -1664,12 +1664,12 @@ const DEFAULT_INFO_SECTIONS = [
         {
           title: "Guía rápida: RIR, fallo, dropsets",
           html: `
-            <p>¿Qué signifíca <b>RIR</b>?: <b>Repeticiones En Reserva.</b></p>
+            <p>¿Qué signifíca <b>RIR</b>? <b>Repeticiones En Reserva.</b></p>
         <p><b>RIR 1: </b>significa que al terminar la serie sientes que <b>podrías haber hecho 1 repetición más</b> antes de llegar al fallo.</p>
         <p><b>RIR 2: </b>significa que al terminar la serie sientes que <b>podrías haber hecho 2 repeticiones más</b> antes de llegar al fallo.</p>  
         <p><b>RIR 0 = fallo muscular, PERO pudiendo completar la serie... No podría hacer ninguna otra repetición.</b></p>
         <br><br>
-        <p><b>¿Qué es el fallo?</b>> Llegar al fallo significa no poder completar <b>ni una repetición más</b> aunque lo intentes.</p>
+        <p><b>¿Qué es el fallo?</b> Llegar al fallo significa no poder completar <b>ni una repetición más</b> aunque lo intentes.</p>
         <br><br>
         <p>La idea principal es que siempre trates de llegar al número de repeticiones que tenés marcadas.</p>
       <ul class="list-disc pl-6">
@@ -1682,8 +1682,8 @@ const DEFAULT_INFO_SECTIONS = [
         <p>Esto, básicamente sirve para que aproveches al máximo el trabajo de cada serie, reclutando la mayor cantidad de fibras musculares posible.</p>
         <p>Así, vas a estimular más el músculo pero sin acumular tanta fatiga, sobre todo cuando trabajamos en rangos de 6 a 12 repeticiones.</p>
         <br><br>
-        <p><b>¿Qué son las Dropsets?</b>: Son una técnica donde al llegar al fallo con un peso, <b>bajás la carga inmediatamente</b> y seguís haciendo repeticiones hasta llegar de nuevo al fallo.</p>
-         <p>Ejemplo: si ves en la rutina (10+8), significa que haces 10 repeticiones al fallo (RIR 0), bajás un poco el peso y hacés 8 repeticiones más, también al fallo (RIR 0). A matar 🔥.</p>
+        <p><b>¿Qué son las Dropsets?</b> Son una técnica donde al llegar al fallo con un peso, <b>bajás la carga inmediatamente</b> y seguís haciendo repeticiones hasta llegar de nuevo al fallo.</p>
+        <p>Ejemplo: si ves en la rutina (10+8), significa que haces 10 repeticiones al fallo, bajás un poco el peso y hacés 8 repeticiones más, también al fallo. A matar 🔥.</p>
       `
         },
         {
