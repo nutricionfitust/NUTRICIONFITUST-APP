@@ -8,10 +8,10 @@
   <link rel="icon" type="image/png" href="assets/img/favicon.png" />
 
   <!-- Open Graph / Vista previa en redes sociales -->
-  <meta property="og:image" content="https://nutricionfitust.github.io/NUTRICIONFITUST-APP/assets/img/logo.png" />
+  <meta property="og:image" content="images/LOGO NFU fondo blanco.png" />
 
   <!-- Twitter -->
-  <meta name="twitter:image" content="https://nutricionfitust.github.io/NUTRICIONFITUST-APP/assets/img/logo.png" />
+  <meta name="twitter:image" content="images/LOGO NFU fondo blanco.png" />
 
 <!-- FAVICON -->
     <link href="images/LOGO NFU fondo blanco.png" rel="shortcut icon">
@@ -176,7 +176,27 @@
     </div>
   </div>
 
+
+<!-- Modal de Video -->
+<div id="videoModal" class="fixed inset-0 z-[99999] hidden">
+  <!-- Fondo -->
+  <div class="absolute inset-0 bg-black/70 z-0" onclick="closeVideoModal()"></div>
+
+  <!-- Contenedor -->
+  <div class="relative z-10 mx-auto mt-10 w-[92vw] max-w-4xl bg-black rounded-xl shadow-2xl overflow-hidden">
+    <div class="flex justify-end p-2 bg-neutral-900">
+      <button onclick="closeVideoModal()" class="text-white/80 hover:text-white text-lg px-3 py-1">✕</button>
+    </div>
+    <div class="aspect-video w-full bg-black">
+      <iframe id="videoFrame" class="w-full h-full" src=""
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              allowfullscreen referrerpolicy="no-referrer"></iframe>
+    </div>
+  </div>
+</div>
+
+
   <!-- JS propio -->
-  <script src="assets/js/main.js?v=20250908-2"></script>
+  <script src="assets/js/main.js?v=20250908-2"></script>  
 </body>
 </html>

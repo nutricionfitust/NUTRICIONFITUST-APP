@@ -2191,8 +2191,8 @@ function createExerciseItem(exercise) {
       <div class="flex justify-between items-start mb-2">
         <h5 class="font-medium text-gray-800 text-lg">${exercise.name}</h5>
         ${hasVideo
-          ? `<button onclick="openVideo('${exercise.videoId}')" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700 transition-colors ml-4 flex-shrink-0">Ver Video</button>`
-          : `<span class="text-gray-400 text-sm ml-4 flex-shrink-0">Video próximamente</span>`
+        ? `<button onclick="openVideoModal('${exercise.videoId}')" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700 transition-colors ml-4 flex-shrink-0">Ver Video</button>`
+        : `<span class="text-gray-400 text-sm ml-4 flex-shrink-0">Video próximamente</span>`
         }
       </div>
       <p class="text-gray-600 text-sm leading-relaxed">${exercise.description}</p>
@@ -2477,7 +2477,7 @@ function renderHiitMoreInfoCardForDay(userKey, dayTitle) {
 }
 
 
-
+// Helpers para DESNCANSO de cada ejercicio
 function stripRestFromTail(tail) {
   return (tail || '')
     .toString()
@@ -2494,6 +2494,78 @@ function splitExerciseLineWithRest(line) {
   const rest = extractRestFromTail(detailsPart);
   const cleanDetails = stripRestFromTail(detailsPart);
   return { namePart, detailsPart: cleanDetails, rest };
+}
+
+// --- Helpers de embed ---
+function toDrivePreviewUrl(url) {
+  try {
+    // formatos comunes:
+    // https://drive.google.com/file/d/FILE_ID/view?usp=sharing  -> .../file/d/FILE_ID/preview
+    // https://drive.google.com/open?id=FILE_ID                   -> .../file/d/FILE_ID/preview
+    // https://drive.google.com/uc?id=FILE_ID&export=download     -> .../file/d/FILE_ID/preview
+    const d1 = url.match(/drive\.google\.com\/file\/d\/([^/]+)/);
+    if (d1) return `https://drive.google.com/file/d/${d1[1]}/preview`;
+    const d2 = url.match(/[?&]id=([^&]+)/);
+    if (d2) return `https://drive.google.com/file/d/${d2[1]}/preview`;
+    const d3 = url.match(/uc\?id=([^&]+)/);
+    if (d3) return `https://drive.google.com/file/d/${d3[1]}/preview`;
+    return url; // si no es drive reconocible, devolvemos tal cual
+  } catch { return url; }
+}
+
+function toYouTubeEmbed(url) {
+  // watch?v= -> embed/, youtu.be/ -> embed/
+  try {
+    const watch = url.match(/youtube\.com\/watch\?v=([^&]+)/);
+    if (watch) return `https://www.youtube.com/embed/${watch[1]}`;
+    const short = url.match(/youtu\.be\/([^?]+)/);
+    if (short) return `https://www.youtube.com/embed/${short[1]}`;
+    return url;
+  } catch { return url; }
+}
+
+function computeEmbedUrl(rawUrl) {
+  if (/drive\.google\.com/.test(rawUrl)) return toDrivePreviewUrl(rawUrl);
+  if (/youtube\.com|youtu\.be/.test(rawUrl)) return toYouTubeEmbed(rawUrl);
+  // Si es .mp4 directo, lo metemos en <video> fallback (abajo)
+  return rawUrl;
+}
+
+// --- Modal open/close ---
+function openVideoModal(rawUrl) {
+  const modal = document.getElementById('videoModal');
+  const frame = document.getElementById('videoFrame');
+
+  const url = computeEmbedUrl(rawUrl);
+
+  // Si es un .mp4 directo, lo envolvemos con un reproductor HTML5 dentro del iframe usando data URL mínima
+  if (/\.(mp4|webm|ogg)(\?|$)/i.test(url)) {
+    const html = `
+      <!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+      <style>html,body{margin:0;background:#000;height:100%}video{width:100%;height:100%}</style></head>
+      <body><video src="${url}" controls autoplay playsinline></video></body></html>`;
+    frame.src = 'data:text/html;charset=utf-8,' + encodeURIComponent(html);
+  } else {
+    frame.src = url; // Drive preview / YouTube embed / otros que soporten iframe
+  }
+
+  modal.classList.remove('hidden');
+  document.documentElement.classList.add('overflow-y-hidden');
+}
+
+function closeVideoModal() {
+  const modal = document.getElementById('videoModal');
+  const frame = document.getElementById('videoFrame');
+  frame.src = ''; // limpiar para cortar el audio
+  modal.classList.add('hidden');
+  document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    closeUserAccessModal();
+    closeExerciseBase();
+    closeUserTraining();
+    closeVideoModal(); // ← añade esto
+  };
+});
 }
 
 
@@ -2743,7 +2815,7 @@ inner += renderSectionInline(sectionTitle, items, day, userKey);
 function onRoutineExerciseClick(nameFragment) {
   const ex = findExerciseByNameFragment(nameFragment);
   if (ex && ex.videoId && ex.videoId.toString().trim() !== '') {
-    openVideo(ex.videoId);
+    openVideoModal(ex.videoId); // ← usa el modal
     return;
   }
   alert('Aún no encontré ese ejercicio en la base.');

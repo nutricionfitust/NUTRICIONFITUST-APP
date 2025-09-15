@@ -288,3 +288,6 @@ body {
   background: #fef9c3;
   border: 1px solid #eab308;    /* borde amarillo más intenso */
 }
+
+/* Asegurar que el modal de video quede arriba de todo */
+#videoModal { z-index: 99999 !important; }
