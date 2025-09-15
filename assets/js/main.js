@@ -363,45 +363,12 @@ const trainingFolders = {
           },
         "Día 2 - Superior":  {
           "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
+            
             ],
           },
         "Día 3 - Inferior":  {
           "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12",
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
+            
             ],
           },
       },
@@ -1683,7 +1650,7 @@ const DEFAULT_INFO_SECTIONS = [
         <p>Así, vas a estimular más el músculo pero sin acumular tanta fatiga, sobre todo cuando trabajamos en rangos de 6 a 12 repeticiones.</p>
         <br><br>
         <p><b>¿Qué son las Dropsets?</b> Son una técnica donde al llegar al fallo con un peso, <b>bajás la carga inmediatamente</b> y seguís haciendo repeticiones hasta llegar de nuevo al fallo.</p>
-        <p>Ejemplo: si ves en la rutina (10+8), significa que haces 10 repeticiones al fallo, bajás un poco el peso y hacés 8 repeticiones más, también al fallo. A matar 🔥.</p>
+        <p>Ejemplo: si ves en la rutina (10+8), significa que haces 10 repeticiones al fallo, bajás un poco el peso y hacés 8 repeticiones más, también al fallo. Si ves (fallo+fallo) tratá de hacer un rango de repeticiones de (16+12). A matar 🔥.</p>
       `
         },
         {
@@ -1829,7 +1796,7 @@ const USER_HIIT_DAY_NOTES = {
 
 
   "azulcherubini": {
-    "Día 1 - Pecho y Tríceps": [
+    "Día 2 - Superior": [
       { title: "HIIT en cinta (caminadora)",
       body: `<p><strong>12 MINUTOS TOTALES.</strong></p>
             <p><b>2 minutos:</b> trote suave para entrar en calor.</p>
