@@ -261,7 +261,7 @@ const exerciseDatabase = {
 /* ===========================
    CONFIGURACIÓN DE ACCESOS
 =========================== */
-// Contraseña de administrador (acceso a todas las carpetas y base)
+// Pasahitza de administrador (acceso a todas las carpetas y base)
 const ADMIN_PASSWORD_HASH =
   "russia-quarzo-amore-limoncello-siberia-tundra-siberia-urali-russia-tiramisu-siberia-amore-quarzo-espresso-amore-hermitage-octavo-samovar-zarina-firenze-batata";
 
@@ -1557,11 +1557,10 @@ const userRoutineMapping = {
 };
 
 /* ===========================
-   CONTRASEÑAS POR USUARIO
+   PASAHITSAK POR USUARIO
 =========================== */
-// Mapea contraseñas únicas a la clave de usuario definida en `userRoutineMapping`.
-// Edita estos valores para asignar contraseñas reales por persona.
-// Nota: En un sitio estático, estas contraseñas quedan visibles en el código fuente.
+// Mapea pasahitzak únicas a la clave de usuario definida en `userRoutineMapping`.
+// Edita estos valores para asignar pasahitzak reales por persona.
 //       Para máxima seguridad, usa un BACKEND. Esto es un control básico.
 
 const userPasswords = {
@@ -1667,11 +1666,7 @@ const DEFAULT_HIIT_DAY_NOTES = [
         },
 ];
 
-// Personalizaciones por USUARIO y por DÍA.
-// Clave de primer nivel: userKey/routineKey (ej: "francisco").
-// Clave de segundo nivel: título exacto del día (ej: "Día 1 - Pecho y Tríceps").
-// Valor: array de secciones [{title, body}, ...]
-// Ejemplos: agregalo donde está USER_HIIT_DAY_NOTES
+// Personalizaciones de Entrenamientos HIIT por USUARIO y por DÍA.
 const USER_HIIT_DAY_NOTES = {
   "franciscoustarroz": {
     "Día 1 - Pecho y Tríceps": [
@@ -1804,7 +1799,6 @@ function checkUserPassword() {
     return;
   }
 
-  // 2) Usuarios: buscar por clave codificada; (opcional) fallback por clave en claro
   const userKey = userPasswords[codificada] ?? userPasswords[raw];
   if (!userKey) {
     alert('Contraseña incorrecta. Por favor, verifica tu contraseña.');
