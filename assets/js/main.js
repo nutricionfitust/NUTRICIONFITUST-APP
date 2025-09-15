@@ -2513,6 +2513,47 @@ function toDrivePreviewUrl(url) {
   } catch { return url; }
 }
 
+// Detectar móvil (simple y efectivo)
+function isMobileUA() {
+  return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+}
+
+// Extraer ID de Google Drive
+function getDriveId(url) {
+  // /file/d/FILE_ID/view...
+  const d1 = url.match(/drive\.google\.com\/file\/d\/([^/]+)/);
+  if (d1) return d1[1];
+  // ...open?id=FILE_ID
+  const d2 = url.match(/[?&]id=([^&]+)/);
+  if (d2) return d2[1];
+  // ...uc?id=FILE_ID
+  const d3 = url.match(/uc\?id=([^&]+)/);
+  if (d3) return d3[1];
+  return null;
+}
+
+// URL de preview embebible de Drive (la típica para desktop)
+function toDrivePreviewUrl(url) {
+  const id = getDriveId(url);
+  return id ? `https://drive.google.com/file/d/${id}/preview` : url;
+}
+
+// URL “directa” de Drive (para <video> HTML5)
+function toDriveDirectUrl(url) {
+  const id = getDriveId(url);
+  // uc?export=download sirve para darle un stream reproducible al <video>
+  return id ? `https://drive.google.com/uc?export=download&id=${id}` : url;
+}
+
+// YouTube → embed
+function toYouTubeEmbed(url) {
+  const watch = url.match(/youtube\.com\/watch\?v=([^&]+)/);
+  if (watch) return `https://www.youtube.com/embed/${watch[1]}`;
+  const short = url.match(/youtu\.be\/([^?]+)/);
+  if (short) return `https://www.youtube.com/embed/${short[1]}`;
+  return url;
+}
+
 function toYouTubeEmbed(url) {
   // watch?v= -> embed/, youtu.be/ -> embed/
   try {
@@ -2536,22 +2577,58 @@ function openVideoModal(rawUrl) {
   const modal = document.getElementById('videoModal');
   const frame = document.getElementById('videoFrame');
 
-  const url = computeEmbedUrl(rawUrl);
+  // Caso YouTube (anda bien en móvil)
+  if (/youtube\.com|youtu\.be/.test(rawUrl)) {
+    frame.src = toYouTubeEmbed(rawUrl);
+    modal.classList.remove('hidden');
+    document.documentElement.classList.add('overflow-y-hidden');
+    return;
+  }
 
-  // Si es un .mp4 directo, lo envolvemos con un reproductor HTML5 dentro del iframe usando data URL mínima
-  if (/\.(mp4|webm|ogg)(\?|$)/i.test(url)) {
+  // Caso Google Drive
+  if (/drive\.google\.com/.test(rawUrl)) {
+    if (isMobileUA()) {
+      // 🔁 Fallback móvil: reproducir con <video> HTML5 (link directo)
+      const direct = toDriveDirectUrl(rawUrl);
+      const html = `
+        <!doctype html><html><head><meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style>html,body{margin:0;background:#000;height:100%}video{width:100%;height:100%;object-fit:contain}</style>
+        </head><body>
+          <video src="${direct}" controls playsinline autoplay></video>
+        </body></html>`;
+      frame.src = 'data:text/html;charset=utf-8,' + encodeURIComponent(html);
+    } else {
+      // Desktop/tablet que soporta preview embebido
+      frame.src = toDrivePreviewUrl(rawUrl);
+    }
+  } else if (/\.(mp4|webm|ogg)(\?|$)/i.test(rawUrl)) {
+    // Link directo a video → también usamos HTML5
     const html = `
-      <!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-      <style>html,body{margin:0;background:#000;height:100%}video{width:100%;height:100%}</style></head>
-      <body><video src="${url}" controls autoplay playsinline></video></body></html>`;
+      <!doctype html><html><head><meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <style>html,body{margin:0;background:#000;height:100%}video{width:100%;height:100%;object-fit:contain}</style>
+      </head><body>
+        <video src="${rawUrl}" controls playsinline autoplay></video>
+      </body></html>`;
     frame.src = 'data:text/html;charset=utf-8,' + encodeURIComponent(html);
   } else {
-    frame.src = url; // Drive preview / YouTube embed / otros que soporten iframe
+    // Cualquier otro proveedor que permita iframe
+    frame.src = rawUrl;
   }
 
   modal.classList.remove('hidden');
   document.documentElement.classList.add('overflow-y-hidden');
 }
+
+function closeVideoModal() {
+  const modal = document.getElementById('videoModal');
+  const frame = document.getElementById('videoFrame');
+  frame.src = '';
+  modal.classList.add('hidden');
+  document.documentElement.classList.remove('overflow-y-hidden');
+}
+
 
 function closeVideoModal() {
   const modal = document.getElementById('videoModal');
