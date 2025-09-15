@@ -299,30 +299,26 @@ body {
 
 /* ===== SOLO smartphone ===== */
 @media (max-width: 640px) {
-  /* El botón contenedor del item hace de ancla */
   .exercise-card-btn {
     position: relative !important;
-    display: block !important;          /* anulamos flex para controlar el flujo */
-    padding-bottom: 26px !important;    /* menos espacio debajo */
+    display: block !important;
+    padding-bottom: 0 !important;     /* quitamos espacio artificial */
   }
 
-  /* Series/Reps (tu inlineDetails) van debajo del nombre */
   .exercise-card-btn .font-semibold > .text-blue-800 {
     display: block !important;
-    margin-top: 6px !important;         /* respirito respecto al nombre */
-    margin-bottom: 6px !important;      /* menos separación antes del descanso */
+    margin-top: 6px !important;
+    margin-bottom: 6px !important;    /* mismo espacio que usan en biseries/triseries */
     font-weight: 600 !important;
     line-height: 1.25 !important;
   }
 
-  /* DESCANSO: esquina inferior derecha, por debajo de las Reps */
   .exercise-card-btn .badge-rest {
-    position: absolute !important;
-    right: 12px !important;             /* alinear con padding del card (p-3 = ~12px) */
-    bottom: 6px !important;             /* menos hueco abajo */
-    margin: 0 !important;
-    transform: none !important;
-    align-self: auto !important;
-    z-index: 1;
+    position: static !important;      /* volvemos a flujo normal */
+    display: inline-flex !important;  /* respeta estilo base */
+    margin-top: 8px !important;   
+     margin-right: 0 !important;   /* igual que en bi/tri */
+  margin-bottom: 0 !important;  /* igual que en bi/tri */    /* mismo margin-top que en bi/tri-series */
+    align-self: flex-start !important;
   }
 }
