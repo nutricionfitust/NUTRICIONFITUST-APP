@@ -338,6 +338,75 @@ const trainingFolders = {
     },
 
 
+        "azulcherubini": {
+      name: "Azul",
+         // PLAN DE ENTRENAMIENTO SEMANAL !      
+      plan: {  
+        "Día 1 - Inferior": {
+          "Acondicionamiento & Calentamiento": [
+            {
+            superset: [
+            "Skipping Rodillas Arriba 2 x 30seg",
+            "Patadas Atrás 2 x 30seg",
+            "Sentadillas más Estocadas con Peso (Bolsa) 2 x 16-16",
+          ],
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento de Fuerza": [
+            "Sentadillas con Barra 5 x aproximación-12-10-8-8 rest=2-3min",
+            "Sentadilla Búlgara con Mancuernas 4 x 12-10-10-8 rest=2min",
+            "Isquiotibiales Acostada 4 x 12-(10+8)-(10+6)-8",
+            "Aductores Sentada 3 x 12-(fallo+fallo)-(fallo+fallo) rest=1-2min",
+            "Crunch en Máquina 3 x 16-16-12 rest=1min"
+            ],
+          },
+        "Día 2 - Superior":  {
+          "Acondicionamiento & Calentamiento": [
+            "Rotaciones de hombros 2 x 15-15",
+            "Skipping 3 x 30seg rest=1min"
+            ],
+          "Entrenamiento de Fuerza": [
+            "Press de banca 4 x 12-10-8-8 rest=2min",
+          {
+            superset: [
+            "Press inclinado con mancuernas 4 x 10-10-10-10",
+            "Fondos para tríceps 3 x 12-12-12"
+          ],
+            restAfter: "2min"
+          },
+            "Aperturas en banca 3 x 12-12-12 rest=60s"
+            ],
+          "Entrenamiento HIIT": [
+            "Burpees 3 x 45 seg",
+            "Sentadillas con salto 3 x 45 seg"
+            ],
+          },
+        "Día 3 - Inferior":  {
+          "Acondicionamiento & Calentamiento": [
+            "Rotaciones de hombros 2 x 15-15",
+            "Skipping 3 x 30seg rest=1min"
+            ],
+          "Entrenamiento de Fuerza": [
+            "Press de banca 4 x 12-10-8-8 rest=2min",
+          {
+            superset: [
+            "Press inclinado con mancuernas 4 x 10-10-10-10",
+            "Fondos para tríceps 3 x 12-12-12",
+            "Press inclinado con mancuernas 4 x 10-10-10-10",
+          ],
+            restAfter: "2min"
+          },
+            "Aperturas en banca 3 x 12-12-12 rest=60s"
+            ],
+          "Entrenamiento HIIT": [
+            "Burpees 3 x 45 seg",
+            "Sentadillas con salto 3 x 45 seg"
+            ],
+          },
+      },
+    },
+
 
 
 
@@ -1554,6 +1623,8 @@ const userRoutineMapping = {
   sofiaustarroz:    { folder: "4 MUSCULACIÓN (1 FB HIIT) + (1 LISS)", routine: "sofiaustarroz" },
   franciscoustarroz: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "franciscoustarroz" },
   facundoustarroz: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "facundoustarroz" },
+  azulcherubini: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "azulcherubini" },
+
 };
 
 /* ===========================
@@ -1570,6 +1641,17 @@ const userPasswords = {
   'espresso-urali-tiramisu-siberia-vesuvio-octavo-zarina-octavo-batata': 'sofiaustarroz',
   'tiramisu-limoncello-vesuvio-russia-tundra-siberia-espresso-tundra-urali-octavo-zarina-octavo-batata': 'franciscoustarroz',
   'tiramisu-vesuvio-tundra-quarzo-russia-gondola-urali-octavo-zarina-octavo-batata': 'facundoustarroz',
+  'vesuvio-spaghetti-quarzo-yogurt-tundra-opera-dolcevita-limoncello-quarzo-firenze': 'azulcherubini',
+
+
+
+
+
+
+
+
+
+
 };
 
 
@@ -1698,6 +1780,9 @@ const USER_HIIT_DAY_NOTES = {
     },
     ],
   },
+
+
+
   "facundoustarroz": {
     "Día 1 - Pecho y Tríceps": [
       { title: "HIIT en cinta (caminadora)",
@@ -1714,6 +1799,9 @@ const USER_HIIT_DAY_NOTES = {
     },
     ],
   },
+
+
+
   "sofiaustarroz": {
     "Día 1 - Pecho y Tríceps": [
       { title: "HIIT en cinta (caminadora)",
@@ -1730,6 +1818,29 @@ const USER_HIIT_DAY_NOTES = {
     },
     ],
   },
+
+
+
+
+  "azulcherubini": {
+    "Día 1 - Pecho y Tríceps": [
+      { title: "HIIT en cinta (caminadora)",
+      body: `<p><strong>12 MINUTOS TOTALES.</strong></p>
+            <p><b>2 minutos:</b> trote suave para entrar en calor.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>40 segundos a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
+            <li>1 minuto de trote suave (ej: ~8 km/h).</li>
+            </ul>
+            <p><b>Repetir 5 veces seguidas (40seg + 1min) x 5 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 1 minuto caminando.</p>
+            <p>A mimir. 😴</p>`
+    },
+    ],
+  },
+
+
+
 
 
 
@@ -2348,6 +2459,8 @@ function canonicalizeFragment(s) {
   x = x.replace(/estocadas bulgaras/g, 'sentadilla bulgara');
   x = x.replace(/sentadillas bulgaras/g, 'sentadilla bulgara');
   x = x.replace(/sentadillas sumo/g, 'sentadillas sumo'); // no-op pero deja explícito
+  x = x.replace(/acostada/g, 'acostado');
+    x = x.replace(/sentada/g, 'sentado');
   return x;
 }
 
@@ -2696,22 +2809,29 @@ function generateSupersetItemHTML(group, daySlug, index) {
 function formatDetailsInline(details) {
   const raw = (details || '').toString().trim();
   if (!raw) return '';
-  const m = raw.match(/^(\d+)\s*x\s*([0-9]+(?:-[0-9]+)*)\s*(.*)$/i);
-  if (!m) return raw ? raw : '';
-  const sets = parseInt(m[1], 10);
-  const repsSpec = m[2];
-  const tail = m[3] ? ' ' + m[3].trim() : '';
-  const nums = repsSpec.split('-').filter(Boolean);
-  let repsOut = '';
-  if (nums.length === 1) {
-    repsOut = Array.from({ length: Math.max(1, sets) }, () => nums[0]).join('-');
-  } else if (nums.length === 2) {
-    repsOut = Array.from({ length: Math.max(1, sets) }, () => nums[0]).join('-');
-  } else {
-    repsOut = repsSpec;
+
+  // 1) Caso "<SETS> x <LO_QUE_SEA>" → [Series: n] [Reps: ...]
+  //    Acepta cualquier cosa después de la 'x' (números, texto, paréntesis, +, etc.)
+  const mx = raw.match(/^(\d+)\s*[xX]\s*(.+)$/);
+  if (mx) {
+    const sets = mx[1];
+    const repsSpec = mx[2]; // ← se muestra tal cual lo escribiste
+    return [
+      `<span class="inline-block text-[11px] bg-blue-50 text-blue-800 px-2 py-0.5 rounded-md border border-blue-100 ml-2">Series: ${sets}</span>`,
+      `<span class="inline-block text-[11px] bg-blue-50 text-blue-800 px-2 py-0.5 rounded-md border border-blue-100 ml-1">Reps: ${repsSpec}</span>`
+    ].join('');
   }
-  return `${sets} x ${repsOut}${tail}`;
+
+  // 2) Caso "REPOS: ..." / "REPS: ..." → [Reps: ...]
+  const mReps = raw.match(/^rep(?:os)?\s*:\s*(.+)$/i);
+  if (mReps) {
+    return `<span class="inline-block text-[11px] bg-blue-50 text-blue-800 px-2 py-0.5 rounded-md border border-blue-100 ml-2">Reps: ${mReps[1]}</span>`;
+  }
+
+  // 3) Cualquier otro texto → una sola “píldora” (útil para RIR, indicaciones, etc.)
+  return `<span class="inline-block text-[11px] bg-blue-50 text-blue-800 px-2 py-0.5 rounded-md border border-blue-100 ml-2">${raw}</span>`;
 }
+
 
 function renderSectionInline(sectionTitle, items, day, userKey) {
   if (!Array.isArray(items) || items.length === 0) return '';
