@@ -1653,7 +1653,7 @@ const DEFAULT_INFO_SECTIONS = [
 ];
 
 /* ===========================
-   HIIT – NOTAS POR DÍA (OPCIONAL)
+  ENTRENAMIENTO HIIT – NOTAS POR DÍA (OPCIONAL)
 =========================== */
 
 // Si querés que aparezca una tarjeta con texto por defecto en TODOS los días que tengan HIIT
@@ -2207,9 +2207,9 @@ function openVideo(videoId) {
   window.open(url, '_blank');
 }
 
-// AUSAZKO HIZTEGIA ALEATORIO IT + RU
-// Parte A (AUSAZKO HIZTEGIA ALEATORIO IT + RU)
-const diccionarioParteA = {
+// AUSAZKO HIZTEGIA IT + RU
+// Parte A (AUSAZKO HIZTEGIA IT + RU)
+const hiztegiaParteA = {
   f: "tiramisu",
   7: "napoli",
   x: "casanova",
@@ -2220,8 +2220,8 @@ const diccionarioParteA = {
   0: "zarina",
 };
 
-// Parte B (AUSAZKO HIZTEGIA ALEATORIO IT + RU)
-const diccionarioParteB = {
+// Parte B (AUSAZKO HIZTEGIA IT + RU)
+const hiztegiaParteB = {
   n: "russia",
   9: "samovar",
   c: "tundra",
@@ -2232,8 +2232,8 @@ const diccionarioParteB = {
   2: "octavo",
 };
 
-// Parte C (AUSAZKO HIZTEGIA ALEATORIO IT + RU)
-const diccionarioParteC = {
+// Parte C (AUSAZKO HIZTEGIA IT + RU)
+const hiztegiaParteC = {
   j: "piazza",
   y: "borschino",
   1: "firenze",
@@ -2244,8 +2244,8 @@ const diccionarioParteC = {
   g: "kremlin",
 };
 
-// Parte D (AUSAZKO HIZTEGIA ALEATORIO IT + RU)
-const diccionarioParteD = {
+// Parte D (AUSAZKO HIZTEGIA IT + RU)
+const hiztegiaParteD = {
   e: "dolcevita",
   6: "lagosta",
   o: "urali",
@@ -2260,12 +2260,12 @@ const diccionarioParteD = {
   8: "roma"
 };
 
-// === AUSAZKO HIZTEGIA ALEATORIO IT + RU FINAL (unione di tutto) ===
-const diccionario = {
-  ...diccionarioParteA,
-  ...diccionarioParteB,
-  ...diccionarioParteC,
-  ...diccionarioParteD
+// === AUSAZKO HIZTEGIA IT + RU FINAL (unione di tutto) ===
+const hiztegia = {
+  ...hiztegiaParteA,
+  ...hiztegiaParteB,
+  ...hiztegiaParteC,
+  ...hiztegiaParteD
 };
 
 // === Helpers de codificación/decodificación ===
@@ -2273,7 +2273,7 @@ function codificar(texto) {
   return texto
     .toLowerCase()
     .split("")
-    .map(c => diccionario.hasOwnProperty(c) ? diccionario[c] : c)
+    .map(c => hiztegia.hasOwnProperty(c) ? hiztegia[c] : c)
     .join("-");
 }
 // Toggle genérico para contenedores plegables
@@ -2286,7 +2286,7 @@ function toggleSectionById(id) {
 
 function decodificar(textoCodificado) {
   const reverseDic = Object.fromEntries(
-    Object.entries(diccionario).map(([k, v]) => [v, k])
+    Object.entries(hiztegia).map(([k, v]) => [v, k])
   );
   return textoCodificado
     .split("-")
