@@ -292,21 +292,21 @@ body {
 /* Asegurar que el modal de video quede arriba de todo */
 #videoModal { z-index: 99999 !important; }
 
-/* ===== Vista móvil para tarjetas de ejercicio ===== */
+/* ===== SOLO en smartphone ===== */
 @media (max-width: 640px) {
-  
+  /* El botón actúa como contenedor relativo del badge */
   .exercise-card-btn {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    gap: 0 !important;
+    position: relative !important;
+    display: block !important;        /* anulamos el flex del botón en móvil */
+    padding-bottom: 30px !important;  /* espacio para el badge abajo */
   }
 
+  /* Nombre + (series/reps) se apilan naturalmente */
   .exercise-card-btn .font-semibold {
-    width: 100% !important;
-    order: 1 !important;
+    display: block !important;
   }
 
+  /* Forzamos series/reps a ir debajo del nombre */
   .exercise-card-btn .font-semibold > .text-blue-800 {
     display: block !important;
     margin-top: 4px !important;
@@ -314,11 +314,16 @@ body {
     line-height: 1.25 !important;
   }
 
+  /* DESCANSO: pegado a la esquina inferior derecha del botón */
   .exercise-card-btn .badge-rest {
-    order: 2 !important;
-    align-self: flex-end !important;
-    margin-top: 6px !important;
+    position: absolute !important;
+    right: 8px !important;
+    bottom: 6px !important;
+    margin: 0 !important;
+    transform: none !important;
+    align-self: auto !important;
     font-size: 12px !important;
     padding: 2px 6px !important;
+    z-index: 1;
   }
 }
