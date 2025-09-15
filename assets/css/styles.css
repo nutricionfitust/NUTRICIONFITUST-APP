@@ -294,7 +294,7 @@ body {
 
 /* ===== Vista móvil para tarjetas de ejercicio ===== */
 @media (max-width: 640px) {
-  /* El botón pasa a columna (nombre+series/reps arriba, descanso abajo-derecha) */
+  
   .exercise-card-btn {
     display: flex !important;
     flex-direction: column !important;
@@ -302,27 +302,23 @@ body {
     gap: 0 !important;
   }
 
-  /* Bloque del nombre ocupa la fila de arriba */
   .exercise-card-btn .font-semibold {
     width: 100% !important;
     order: 1 !important;
   }
 
-  /* Las series/reps están dentro de .font-semibold en ese <span class="text-blue-800">.
-     Las forzamos a ir ABAJO del nombre, en su propia línea. */
   .exercise-card-btn .font-semibold > .text-blue-800 {
     display: block !important;
     margin-top: 4px !important;
-    font-weight: 600 !important;   /* se ven consistentes */
+    font-weight: 600 !important;
     line-height: 1.25 !important;
   }
 
-  /* El descanso se va a la fila de abajo a la DERECHA */
   .exercise-card-btn .badge-rest {
     order: 2 !important;
-    align-self: flex-end !important; /* empuja a la derecha */
-    margin-top: 6px !important;      /* queda debajo de series/reps */
+    align-self: flex-end !important;
+    margin-top: 6px !important;
+    font-size: 12px !important;
+    padding: 2px 6px !important;
   }
 }
-
-.exercise-card-btn .badge-rest { font-size: 12px; padding: 2px 6px; }

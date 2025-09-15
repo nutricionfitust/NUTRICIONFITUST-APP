@@ -2702,7 +2702,7 @@ function generateRoutineItemHTML(exLine, daySlug, index) {
     <li class="text-gray-700">
       <!-- TARJETA AZUL -->
       <div class="w-full bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 rounded-lg p-3 hover:from-blue-100 hover:to-blue-200 transition-colors">
-        <button class="w-full text-left flex items-center justify-between" exercise-card-btn" onclick="onRoutineExerciseClick('${safeName}')">
+        <button class="w-full text-left flex items-center justify-between exercise-card-btn" onclick="onRoutineExerciseClick('${safeName}')">
           <div class="font-semibold text-blue-900">
             ${namePart}${inlineDetails ? ` <span class='font-normal text-blue-800'>${inlineDetails}</span>` : ''}
           </div>
