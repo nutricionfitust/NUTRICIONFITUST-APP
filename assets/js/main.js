@@ -250,6 +250,7 @@ const exerciseDatabase = {
     { name: "Sentadillas más Estocadas con Peso (Bolsa)", videoId: "", description: "Combinación de sentadillas y estocadas usando una bolsa como peso. Ejercicio funcional que desarrolla fuerza y resistencia en piernas." },
     { name: "Burpees con Flexiones de Brazos", videoId: "", description: "Burpees completos incluyendo flexión de brazos y marcando bien la sentadilla. Ejercicio de cuerpo completo de alta intensidad." },
     { name: "Bíceps más Press Arnold con Mancuernas", videoId: "", description: "Combinación de curl de bíceps seguido de press Arnold. Trabaja bíceps y hombros de forma continua y eficiente." },
+    { name: "Rotaciones con Bolsa", videoId: "", description: "Movés en círculos por detrás de la cabeza, primero hacia un lado y luego al otro. Trabaja brazos, antebrazos, hombros y core, mejorando la estabilidad. El cambio de dirección exige frenar el peso y volver a impulsarlo, lo que activa aún más la fuerza y el control del tronco.”" },
     { name: "Rotaciones de Cadera", videoId: "", description: "Ejercicio de movilidad que mejora la flexibilidad de cadera y prepara las articulaciones para el entrenamiento." },
     { name: "Rotaciones de Hombros", videoId: "", description: "Movimiento de calentamiento que prepara los hombros y mejora la movilidad articular del tren superior." },
     { name: "Estiramiento de Cuádriceps", videoId: "", description: "Ejercicio de flexibilidad que alarga los músculos del cuádriceps y mejora la movilidad de la cadera." },
@@ -363,12 +364,47 @@ const trainingFolders = {
           },
         "Día 2 - Superior":  {
           "Acondicionamiento & Calentamiento": [
-            
+            {
+            superset: [
+            "Rotaciones con Bolsa 2 x 20-20",
+            "Biceps más Press Arnold con Mancuernas 2 x 16-12",
+          ],
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento de Fuerza": [
+            "Polea al Pecho Prono 4 x 16-12-10-10 rest=2min",
+            "Vuelos Posteriores con Mancuernas 3 x 12-10-10 rest=1-2min",
+            "Press de Pecho en Maquina 4 x 16-12-10-10 rest=2min",
+            "Biceps Martillo Alternado con Mancuernas 3 x 12-10-8 rest=1-2min",
+            "Extensión de Triceps con Polea con Barra  3 x (12+8)-(10+6)-10 rest=1min"
+            ],
+          "Entrenamiento HIIT": [
+            "Correr en Cinta Inclinada"
             ],
           },
         "Día 3 - Inferior":  {
           "Acondicionamiento & Calentamiento": [
-            
+            {
+            superset: [
+            "Sentadillas más Estocadas con Peso (Bolsa) 2 x 16-16",
+            "Burpees con Flexiones de Brazos 2 x 10-10",
+          ],
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento de Fuerza": [
+            "Isquitibiales Acostada 4 x 20-(12+8)-(12+8)-10 rest=2min",
+            {
+            superset: [
+            "Prensa 4 x 16-12-10-10",
+            "Gemelos en Prensa 4 x 16-12-10-10",
+          ],
+            restAfter: "2-3min"
+          },
+            "Peso Muerto Rumano con Mancuernas 3 x 12-12-12 rest=2min",
+            "Extensión de Cuadriceps Sentada 3 x (12+8)-(12+8)-(10+6) rest=1-2min",
+            "Plancha Frontal 2 x 40seg a 1min rest=1min"
             ],
           },
       },
@@ -1797,15 +1833,16 @@ const USER_HIIT_DAY_NOTES = {
 
   "azulcherubini": {
     "Día 2 - Superior": [
-      { title: "HIIT en cinta (caminadora)",
+      { title: "HIIT en Cinta Inclinada (caminadora)",
       body: `<p><strong>12 MINUTOS TOTALES.</strong></p>
             <p><b>2 minutos:</b> trote suave para entrar en calor.</p>
+            <p>Inclinar la Cinta unos 6 grados.</p>
             <p>Luego, <b>intervalos (HIIT):</b></p> 
             <ul class="list-disc pl-6">
-            <li>40 segundos a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
+            <li>30 segundos a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
             <li>1 minuto de trote suave (ej: ~8 km/h).</li>
             </ul>
-            <p><b>Repetir 5 veces seguidas (40seg + 1min) x 5 sin descanso.</b></p>
+            <p><b>Repetir 6 veces seguidas (30seg + 1min) x 6 sin descanso.</b></p>
             <p><b>Recuperación:</b> 1 minuto caminando.</p>
             <p>A mimir. 😴</p>`
     },
