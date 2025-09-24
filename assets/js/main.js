@@ -373,7 +373,7 @@ const trainingFolders = {
           },
             ],
           "Entrenamiento de Fuerza": [
-            "Polea al Pecho Prono 4 x 16-12-10-10 rest=2min",
+            "Polea al Pecho Prono Cerrado 4 x 16-12-10-10 rest=2min",
             "Vuelos Posteriores con Mancuernas 3 x 12-10-10 rest=1-2min",
             "Press de Pecho en Maquina 4 x 16-12-10-10 rest=2min",
             "Biceps Martillo Alternado con Mancuernas 3 x 12-10-8 rest=1-2min",
@@ -1697,7 +1697,13 @@ const DEFAULT_INFO_SECTIONS = [
       <p>Si recién arrancás con carrera continua, <strong>máximo ~ 4 km</strong> para no sobreexigir.</p>
       <br><br>
       <p><b>Gemelos, isquiotibiales, cuadriceps</b> y <b>pectorales</b> crecen muy bien si uno prioriza su estiramiento. Enfatizá en la fase de estiramiento y luego realizá una contracción explosiva.</p>
-    `
+      <br><br>
+      <p><b>Calzado:</b> En el <b>día de piernas</b> usá <b>calzado plano</b>. Esto te da más seguridad y estabilidad, porque es como estar apoyando tu propio pie descalzo en el piso. Es más natural y protege mejor tus articulaciones. 
+      En cambio, entrenar con zapatillas de running (ejemplo, haciendo sentadillas o peso muerto) genera inestabilidad, ya que tienen una curvatura y una amortiguación pensadas para correr, no para levantar peso. Esa curvatura ayuda al desplazamiento hacia adelante en la carrera, pero en los ejercicios de fuerza puede hacer que el pie se mueva, disminuyendo la estabilidad y aumentando el riesgo de lesiones. 
+      Para pierna, siempre lo mejor es calzado plano 👉🏻 <b>lográs mejor estabilidad, más agarre, mejor posición, una aplicación de fuerza más eficiente</b> y, en consecuencia, <b>mejores resultados.</b></p>
+      
+
+      `
         },
         {
           title: "Calentamiento previo",
