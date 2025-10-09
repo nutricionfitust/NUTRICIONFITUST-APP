@@ -1137,7 +1137,6 @@ const trainingFolders = {
             {
               superset: [
             "Burpees 2 x 10",
-            "Skipping Rodillas Arriba 2 x 30seg",
             "Sentadillas + Estocadas con Mancuernas (o bolsa) 2 x 12-12",
             ],
             restAfter: "1min"
@@ -1153,9 +1152,9 @@ const trainingFolders = {
           },
             "Isquiotibiales Sentado 4 x 20-12-12-10 rest=1-2min",
             "Sentadillas en Smith 4 x 12-10-10-8 rest=2-4min",
-            "Hip Thrust en Smith 4 x 12-10-10-8 rest=2-4min",
-            "Peso muerto Unilateral con Mancuernas 4 x 12-12-10-10 rest=2min",
-            "Sentadilla Búlgara con Mancuernas 3 x (8+6)-(8+6)-(6+6) rest=2"
+            "Hip Thrust en Smith 3 x 12-10-10 rest=2-3min",
+            "Peso muerto Unilateral con Mancuernas 3 x 12-12-10 rest=2min",
+            "Sentadilla Búlgara con Mancuernas 2 x (8+6)-(8+6) rest=2"
             ],
           },
 
