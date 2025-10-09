@@ -394,7 +394,7 @@ const trainingFolders = {
           },
             ],
           "Entrenamiento de Fuerza": [
-            "Isquitibiales Acostada 4 x 20-(12+8)-(12+8)-10 rest=2min",
+            "Isquiotibiales Acostada 4 x 20-(12+8)-(12+8)-10 rest=2min",
             {
             superset: [
             "Prensa 4 x 16-12-10-10",
@@ -410,6 +410,98 @@ const trainingFolders = {
       },
     },
 
+            "alansanchez": {
+      name: "Alan",
+         // PLAN DE ENTRENAMIENTO SEMANAL !      
+      plan: {  
+        "Día 1 - Inferior": {
+          "Acondicionamiento & Calentamiento": [
+          "Rotaciones de Caderas 2 x 10 a cada lado rest=30s",
+            {
+              superset: [
+            "Burpees 2 x 10",
+            "Skipping Rodillas Arriba 2 x 30seg",
+            "Sentadillas + Estocadas con Mancuernas (o bolsa) 2 x 12-12",
+            ],
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento de Fuerza": [
+            "Isquiotibiales Sentado 4 x 20-(12+10)-(12+8)-10 rest=1-2min",
+            "Aductores Sentado 3 x fallo+fallo+fallo rest=1-2min",
+          {
+            superset: [
+            "Prensa 4 x 12-10-10-8",
+            "Gemelos en Prensa 4 x 8 a 16 reps al fallo"
+          ],
+            restAfter: "2-4min"
+          },
+            "Estocadas con barra 3 x 10-10-8 rest=2min",
+            "Extensión de Cuádriceps Sentado 3 x (12+8)-(10+6)-(10+6) rest=1-2min",
+            "Crunch en Máquina 3 x 16-12-12 rest=1-2min"
+            ],
+          },
+
+        "Día 2 - Superior":  {
+          "Acondicionamiento & Calentamiento": [
+            {
+            superset: [
+            "Rotaciones con Bolsa 2 x 20-20",
+            "Biceps más Press Arnold con Mancuernas 2 x 16-12",
+          ],
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento de Fuerza": [
+            "Polea al Pecho Prono Cerrado 4 x 16-12-10-10 rest=2min",
+            "Vuelos Posteriores con Mancuernas 3 x 12-10-10 rest=1-2min",
+            "Press de Pecho en Maquina 4 x 16-12-10-10 rest=2min",
+            "Press Inclinado con Mancuernas 3 x 12-10-10 rest=1-2min",
+            {
+            superset: [
+            "Biceps Martillo Alternado con Mancuernas 4 x 12-10-8-8",
+            "Extensión de Triceps con Polea con Barra  4 x (12+8)-(12+8)-(10+6)-10",
+          ],
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento HIIT": [
+            "Correr en Cinta"
+            ],
+          },
+
+        "Día 3 - Full de Exploción":  {
+          "Acondicionamiento & Calentamiento": [
+            {
+            superset: [
+            "Sentadillas con Salto con Mancuernas 2 x 12-12",
+            "Sentadillas más Estocadas con Peso (Bolsa) 2 x 16-16",
+            "Plancha Frontal 2 x 1min",
+          ],
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento de Fuerza": [
+            "Isquiotibiales Sentado 3 x 20-(12+8)-(12+8) rest=1-2min",
+            "Extensión de Cuadriceps Senado 3 x 16-(12+8)-(10+6) rest=1-2min",
+            {
+            superset: [
+            "Burpees con Mancuernas 3 x 10-10-10-10",
+            "Arranque con Mancuerna + Press de Hombro Alternado 3 x 10-10-10-10",
+          ],
+            restAfter: "2min"
+          },
+            {
+            superset: [
+            "Vuelos Laterales con Mancuernas 3 x 12-10-10",
+            "Biceps Martillo Alternado con Mancuernas 3 x 12-8-8",
+          ],
+            restAfter: "1-2min"
+          },
+            ],
+          },
+      },
+    },
 
 
 
@@ -1705,7 +1797,7 @@ const userRoutineMapping = {
   azulcherubini: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "azulcherubini" },
   damianportillo2: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "damianportillo2" },
   ivangoic2: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "ivangoic2" },
-
+  alansanchez: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "alansanchez" },
 };
 
 /* ===========================
@@ -1725,6 +1817,7 @@ const userPasswords = {
   'vesuvio-spaghetti-quarzo-yogurt-tundra-opera-dolcevita-limoncello-quarzo-firenze': 'azulcherubini',
   'gondola-vesuvio-balalaika-siberia-borscht-urali-limoncello-octavo': 'damianportillo2',
   'siberia-gelato-vesuvio-russia-kremlin-octavo': 'ivangoic2',
+  'vesuvio-yogurt-vesuvio-russia-espresso-spaghetti': 'alansanchez',
 
 
 
@@ -1932,6 +2025,25 @@ const USER_HIIT_DAY_NOTES = {
             <p>A mimir. 😴</p>`
     },
     ],
+  },
+
+
+
+  "alansanchez": {
+    "Día 2 - Superior": [
+      { title: "HIIT en Cinta (caminadora)",
+      body: `<p><strong>14 MINUTOS TOTALES.</strong></p>
+            <p><b>2 minutos:</b> trote suave para entrar en calor.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>40 segundos a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
+            <li>1 minuto de trote suave (ej: ~8 km/h).</li>
+            </ul>
+            <p><b>Repetir 6 veces seguidas:</b> o sea <b>(40seg + 1min) x 6 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 1 minuto caminando.</p>
+            <p>A mimir. 😴</p>`
+    },
+   ],
   },
 
 
