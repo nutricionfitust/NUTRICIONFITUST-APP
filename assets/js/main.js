@@ -1154,7 +1154,7 @@ const trainingFolders = {
             "Sentadillas en Smith 4 x 12-10-10-8 rest=2-4min",
             "Hip Thrust en Smith 3 x 12-10-10 rest=2-3min",
             "Peso muerto Unilateral con Mancuernas 3 x 12-12-10 rest=2min",
-            "Sentadilla Búlgara con Mancuernas 2 x (8+6)-(8+6) rest=2"
+            "Sentadilla Búlgara con Mancuernas 2 x (8+6)-(8+6) rest=2min",
             ],
           },
 
