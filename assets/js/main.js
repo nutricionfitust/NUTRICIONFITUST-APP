@@ -410,6 +410,7 @@ const trainingFolders = {
       },
     },
 
+
             "alansanchez": {
       name: "Alan",
          // PLAN DE ENTRENAMIENTO SEMANAL !      
@@ -427,7 +428,7 @@ const trainingFolders = {
           },
             ],
           "Entrenamiento de Fuerza": [
-            "Isquiotibiales Sentado 4 x 20-(12+10)-(12+8)-10 rest=1-2min",
+            "Isquiotibiales Acostado 4 x 20-(12+10)-(12+8)-10 rest=1-2min",
             "Aductores Sentado 3 x fallo+fallo+fallo rest=1-2min",
           {
             superset: [
@@ -482,7 +483,7 @@ const trainingFolders = {
           },
             ],
           "Entrenamiento de Fuerza": [
-            "Isquiotibiales Sentado 3 x 20-(12+8)-(12+8) rest=1-2min",
+            "Isquiotibiales Acostado 3 x 20-(12+8)-(12+8) rest=1-2min",
             "Extensión de Cuadriceps Senado 3 x 16-(12+8)-(10+6) rest=1-2min",
             {
             superset: [
@@ -502,6 +503,135 @@ const trainingFolders = {
           },
       },
     },
+
+
+
+            "nicolasrivera": {
+      name: "Nico",
+         // PLAN DE ENTRENAMIENTO SEMANAL !      
+      plan: {  
+        "Día 1 - Full": {
+          "Acondicionamiento & Calentamiento": [
+            {
+            superset: [
+            "Skipping Rodillas Arriba 2 x 30seg",
+            "Patadas Atrás 2 x 30seg",
+            "Sentadillas más Estocadas con Peso 2 x 16-16",
+          ],
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento de Fuerza": [
+            {
+            superset: [
+            "Burpees 4 x 8-8-8-8",
+            "Remo Sentado en Máquina (Dorsal Alto) 4 x 8-8-8-8",
+          ],
+            restAfter: "1min"
+          },
+          {
+            superset: [
+            "Biceps más Press Arnold con Mancuernas 4 x 10-10-10-10",
+            "Fondos en Apoyo 4 x 10-10-10-10",
+          ],
+            restAfter: "1min"
+          },
+          {
+            superset: [
+            "Vuelos Laterales con Mancuernas 4 x 12-12-10-10",
+            "Press Martillo Acostado con Mancuernas 4 x fallo+fallo+fallo+fallo",
+          ],
+            restAfter: "1min"
+          },
+            {
+            superset: [
+            "Escaladas 4 x 30seg",
+            "Plancha Frontal 3 x 1min",
+          ],
+            restAfter: "1min"
+          },
+            ],
+          },
+
+        "Día 2 - Enfoque en Inferior":  {
+          "Acondicionamiento & Calentamiento": [
+            {
+            superset: [
+            "Skipping Rodillas Arriba 2 x 30seg",
+            "Patadas Atrás 2 x 30seg",
+            "Sentadillas con Doble Salto 2 x 16-16",
+          ],
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento de Fuerza": [
+            {
+            superset: [
+            "Estocadas con Salto 4 x 20-20-20-20",
+            "Sentadillas más Estocadas con Peso 4 x 20-20-20-20",
+          ],
+            restAfter: "1-2min"
+          },
+            {
+            superset: [
+            "Extensión de Cuadriceps Sentado 4 x 16-16-12-12",
+            "Cargadas con Mancuernas con Press de Hombros 4 x 20-20-16-16",
+          ],
+            restAfter: "1-2min"
+          },            
+            {
+            superset: [
+            "Burpees 4 x 10-10-8-8",
+            "Plancha Lateral 4 x 30seg (cada lado)",
+          ],
+            restAfter: "1min"
+          },
+            ],
+          },
+
+        "Día 3 - Full":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Flexiones BB Cerradas 3 x 10-10",
+            "Biceps + Press Arnold con Mancuernas 3 x 12-12",
+          ],
+            restAfter: "1-2min"
+          },
+            ],
+          "Entrenamiento de Fuerza": [
+            {
+            superset: [
+            "Press de Pecho en Máquina 4 x 16-12-12-12",
+            "Bíceps con Cable con Barra 4 x 16-12-12-12",
+          ],
+            restAfter: "2min"
+          },
+            {
+            superset: [
+            "Vuelos Posteriores con Mancuernas 4 x 16-16-12-12",
+            "Vuelos Laterales con Mancuernas 4 x 12-12-10-10",
+          ],
+            restAfter: "2min"
+          },
+            {
+            superset: [
+            "Biceps Martillo con Mancuernas 4 x fallo+fallo+fallo+fallo",
+            "Flexiones BB Inclinado 4 x fallo+fallo+fallo+fallo",
+          ],
+            restAfter: "2min"
+          },
+            ],
+          "Entrenamiento HIIT": [
+            "Bicicleta"
+            ],
+          },
+      },
+    },
+
+
+
+
 
 
 
@@ -1797,6 +1927,7 @@ const userRoutineMapping = {
   damianportillo2: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "damianportillo2" },
   ivangoic2: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "ivangoic2" },
   alansanchez: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "alansanchez" },
+  nicolasrivera: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "nicolasrivera" },
 };
 
 /* ===========================
@@ -1817,7 +1948,7 @@ const userPasswords = {
   'gondola-vesuvio-balalaika-siberia-borscht-urali-limoncello-octavo': 'damianportillo2',
   'siberia-gelato-vesuvio-russia-kremlin-octavo': 'ivangoic2',
   'vesuvio-yogurt-vesuvio-russia-espresso-spaghetti': 'alansanchez',
-
+  'tundra-vesuvio-limoncello-vesuvio-gondola-dolcevita-urali-gelato-dolcevita-piazza-vesuvio': 'nicolasrivera',
 
 
 
@@ -1970,19 +2101,10 @@ const USER_HIIT_DAY_NOTES = {
 
 
 
-  "facundoustarroz": {
-    "Día 1 - Pecho y Tríceps": [
-      { title: "HIIT en cinta (caminadora)",
-      body: `<p><strong>12 MINUTOS TOTALES.</strong></p>
-            <p><b>2 minutos:</b> trote suave para entrar en calor.</p>
-            <p>Luego, <b>intervalos (HIIT):</b></p> 
-            <ul class="list-disc pl-6">
-            <li>40 segundos a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
-            <li>1 minuto de trote suave (ej: ~8 km/h).</li>
-            </ul>
-            <p><b>Repetir 5 veces seguidas:</b> o sea <b>(40seg + 1min) x 5 sin descanso.</b></p>
-            <p><b>Recuperación:</b> 1 minuto caminando.</p>
-            <p>A mimir. 😴</p>`
+  "nicolasrivera": {
+    "Día 3 - Full": [
+      { title: "HIIT en Bicicleta",
+      body: `<p><strong>AVISAME SI FUNCIONA y te subo el ejercicio</strong></p>`
     },
     ],
   },
