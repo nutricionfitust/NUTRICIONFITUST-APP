@@ -2869,7 +2869,7 @@ const USER_HIIT_DAY_NOTES = {
     ],
     "Día 5 - Brazos + Hombros": [
       { title: "HIIT en Cinta (caminadora)",
-      body: `<p><strong>20 MINUTOS TOTALES.</strong></p>
+      body: `<p><strong>15 a 20 MINUTOS TOTALES.</strong></p>
             <p>Inclinar la Cinta unos 9 grados.</p>
             <p><b>2 minutos:</b> caminar.</p>
             <p>Desinclinar la Cinta a 0 grados (llano).</p>
@@ -2940,7 +2940,7 @@ const USER_HIIT_DAY_NOTES = {
     ],
     "Día 5 - Brazos + Hombros": [
       { title: "HIIT en Cinta (caminadora)",
-      body: `<p><strong>20 MINUTOS TOTALES.</strong></p>
+      body: `<p><strong>15 a 20 MINUTOS TOTALES.</strong></p>
             <p>Inclinar la Cinta unos 9 grados.</p>
             <p><b>2 minutos:</b> caminar.</p>
             <p>Desinclinar la Cinta a 0 grados (llano).</p>
