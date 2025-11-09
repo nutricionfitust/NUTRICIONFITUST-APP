@@ -2822,7 +2822,7 @@ const userRoutineMapping = {
   azulcherubini: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "azulcherubini" },
   damianportillo2: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "damianportillo2" },
   damianportillo3: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "damianportillo3" },
-  rein3: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "isaacmolinares3" },
+  isaacmolinares3: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "isaacmolinares3" },
   rein3: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "rein3" },  
   camiloduranm2: { folder: "5 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "camiloduranm2" },
   luisgonzalez2: { folder: "5 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "luisgonzalez2" },  
