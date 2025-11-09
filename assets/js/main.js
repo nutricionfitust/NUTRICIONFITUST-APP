@@ -1482,23 +1482,21 @@ const trainingFolders = {
       plan: {  
 
         "Día 1 - Piernas": {
-          "Acondicionamiento & Calentamiento": [
-          "Rotaciones de Caderas 2 x 10 a cada lado rest=30s",
+          "Acondicionamiento & Calentamiento": [            
             {
               superset: [
-            "Burpees 2 x 10",
-            "Skipping Rodillas Arriba 2 x 30seg",
-            "Sentadillas + Estocadas con Mancuernas (o bolsa) 2 x 12-12",
+            "Rotaciones con Bolsa 3 x 10-10-8 a cada lado rest=30s",
+            "Sentadillas + Estocadas con Mancuernas (o bolsa) 2 x 16-12-12",
             ],
             restAfter: "1min"
           },
             ],
           "Entrenamiento de Fuerza": [
-            "Isquiotibiales Sentado 4 x 20-(12+10)-(12+8)-10 rest=1-2min",
+            "Isquiotibiales Sentado 3 x 12-(12+8)-(10+8) rest=1-2min",
             "Aductores Sentado 3 x fallo+fallo+fallo rest=1-2min",
           {
             superset: [
-            "Prensa 4 x 12-10-10-8",
+            "Sentadillas en Smith 5 x 16-↑12-↑10-↑8-8↓",
             "Gemelos en Prensa 4 x 8 a 16 reps al fallo"
           ],
             restAfter: "2-4min"
