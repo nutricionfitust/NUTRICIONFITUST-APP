@@ -2927,7 +2927,7 @@ const DEFAULT_INFO_SECTIONS = [
         <p>A diferencia de las series ascendentes —donde se aumenta el peso y se reduce el número de repeticiones—, en las descendentes el objetivo es <b>mantener la calidad del movimiento y la tensión muscular</b> cuando la fatiga ya limita el rendimiento.</p>
         <p>En cada nueva serie se disminuye la carga un 5–15 % (aproximadamente), pudiendo <b>mantener, aumentar o reducir el número de repeticiones</b> según el estado de fatiga. Esto permite continuar estimulando las fibras musculares sin comprometer la técnica ni la recuperación.</p>
         <p><b>¿Para qué sirven?</b><br>
-        Este tipo de progresión descendente favorece la <b>resistencia muscular</b>, mejora la <b>tolerancia a la fatiga</b> y mantiene un alto nivel de activación incluso en las últimas series, siendo ideal en fases de volumen o de desarrollo muscular controlado.</p>
+        Este tipo de progresión descendente favorece la <b>resistencia muscular</b>, mejora la <b>tolerancia a la fatiga</b> y mantiene un alto nivel de activación incluso en las últimas series, siendo ideal en fases de volumen o de desarrollo muscular.</p>
         `
         },
         {
@@ -3706,8 +3706,8 @@ html += `
       onclick="generateTrainingPDF('${userKey}', '${routineData.name.replace(/'/g, "\\'")}')">
     <div class="flex justify-between items-center">
       <div>
-        <h4 class="text-lg font-bold text-purple-800 mb-1">⬇️ Descargar Entrenamiento</h4>
-        <p class="text-purple-700 text-sm">Tené tu plan en el celular! (Aún no disponible)</p>
+        <h4 class="text-lg font-bold text-purple-800 mb-1">Descargar Entrenamiento</h4>
+        <p class="text-purple-700 text-sm">Tené tu plan en el celular! ⬇️ (Aún no disponible)</p>
       </div>
       <div class="text-purple-700">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"></svg>
