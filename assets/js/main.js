@@ -3061,7 +3061,7 @@ const USER_HIIT_DAY_NOTES = {
             </ul>
             <p><b>Repetir 5 veces seguidas:</b> o sea <b>(100 m fast + 50 m slow) x 5 sin descanso.</b></p>
             <p><b>Recuperación:</b> 2 minuto caminando.</p>
-            <p><b>Repetir HIIT 2 o 3 veces más:</b> o sea <b>(100 m fast + 50 m slow) x 2 o 3 (si llegás) sin descanso.</b></p>
+            <p><b>Repetir HIIT 2 o 3 veces más:</b> o sea <b>(100 m fast + 50 m slow) x 2</b>, o 3 (si llegás),<b> sin descanso.</b></p>
             <p><b>Recuperación:</b> 2 minuto caminando.</p>
             <p>A mimir. 😴</p>`
     },
@@ -3189,7 +3189,7 @@ const USER_HIIT_DAY_NOTES = {
             <p>Luego, <b>intervalos (HIIT):</b></p> 
             <ul class="list-disc pl-6">
             <li>350 metros a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
-            <li>150 metros caminando (5.5 km/h). Los primeros 100 m y trote suave (8 km/h) los últimos 50 m.</li>
+            <li>150 metros tranqui (slow). Los primeros 100 m caminando (5.5 km/h), y trote suave (8 km/h) los últimos 50 m.</li>
             </ul>
             <p><b>Repetir 4 veces seguidas:</b> o sea <b>(300 m fast + 150 m slow) x 4 sin descanso.</b></p>
             <p><b>Recuperación:</b> 1 minuto caminando.</p>
@@ -3261,7 +3261,7 @@ const USER_HIIT_DAY_NOTES = {
             <p>Luego, <b>intervalos (HIIT):</b></p> 
             <ul class="list-disc pl-6">
             <li>350 metros a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
-            <li>150 metros caminando (5.5 km/h). Los primeros 100 m y trote suave (8 km/h) los últimos 50 m.</li>
+            <li>150 metros tranqui (slow). Los primeros 100 m caminando (5.5 km/h), y trote suave (8 km/h) los últimos 50 m.</li>
             </ul>
             <p><b>Repetir 4 veces seguidas:</b> o sea <b>(300 m fast + 150 m slow) x 4 sin descanso.</b></p>
             <p><b>Recuperación:</b> 1 minuto caminando.</p>
