@@ -3651,23 +3651,6 @@ function showUserSpecificTraining(userKey) {
     <div class="space-y-4">
   `;
 
-  // Barra de acciones con botón de descarga
-const actionsBar = document.createElement('div');
-actionsBar.className = "flex items-center justify-between mb-4";
-actionsBar.innerHTML = `
-  <div class="text-sm text-blue-700 font-semibold">📦 Carpeta del usuario</div>
-  <button id="downloadUserFolderBtn"
-    class="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-    Descargar esta carpeta
-  </button>
-`;
-content.prepend(actionsBar);
-
-document.getElementById('downloadUserFolderBtn')
-  .addEventListener('click', async () => {
-    await downloadUserFolderAsHTML(userKey);
-  });
-
   // Tarjetas de cada día
   for (const [day, exercises] of Object.entries(routineData.plan)) {
     html += `
@@ -3709,11 +3692,29 @@ document.getElementById('downloadUserFolderBtn')
     </div>
   `;
 
+    // === Carpeta extra: "Descargar Carpeta" (color violeta, como biseries) ===
+  html += `
+      <div id="downloadUserFolderCard"
+       class="bg-gradient-to-r from-purple-50 to-purple-100 rounded-lg p-6 card-hover cursor-pointer border border-purple-200"
+       onclick="downloadUserFolderAsHTML('${userKey}')">
+      <div class="flex justify-between items-center">
+        <div>
+          <h4 class="text-lg font-bold text-purple-800 mb-1">⬇️ Descargar Entrenamiento</h4>
+          <p class="text-purple-700 text-sm">Tené tu plan en el celular! (Aún no disponible)</p>
+        </div>
+        <div class="text-purple-700">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          </svg>
+        </div>
+      </div>
+    </div>
+  `;
+  
+
   html += '</div>';
   content.innerHTML = html;
   modal.classList.add('show');
 }
-
 
 function showUserRoutineDay(userKey, day) {
   const { folder, routine } = userRoutineMapping[userKey];
@@ -4505,275 +4506,4 @@ document.addEventListener('keydown', function(e) {
     checkBasePassword();
   }
 });
-
-async function downloadUserFolderAsHTML(userKey) {
-  try {
-    // 1) Obtener datos de la rutina del usuario
-    const { folder, routine } = userRoutineMapping[userKey];
-    const routineData = trainingFolders[folder]?.routines?.[routine];
-    if (!routineData) {
-      alert("No encontré la rutina del usuario.");
-      return;
-    }
-
-    // 2) Leer e incrustar tu CSS principal (para mantener colores/estilos)
-    const cssHref = (() => {
-      const links = Array.from(document.querySelectorAll('link[rel="stylesheet"]'));
-      // elegimos el que contenga styles.css (ajusta si usas otro nombre/ruta)
-      const hit = links.find(l => (l.href || '').includes('styles.css')) || links[0];
-      return hit ? hit.href : null;
-    })();
-
-    let styles = "";
-    if (cssHref) {
-      try {
-        const res = await fetch(cssHref, { cache: "no-cache" });
-        styles = await res.text();
-      } catch (e) {
-        // si falla, seguimos con estilos mínimos
-      }
-    }
-
-    // 3) Generar el cuerpo exportado (acordeones offline) para todos los días + "Más información"
-    const exportInnerHTML = buildOfflineFolderHTML(routineData);
-
-    // 4) Armar documento HTML autosuficiente
-    const title = `Carpeta - ${routineData.name}`;
-    const now = new Date().toISOString().slice(0,10);
-
-    const fullHTML = `
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>${title}</title>
-<style>
-/* Contenedor base */
-body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans'; margin:0; background:#f4f7ff; }
-.container { max-width: 960px; margin: 0 auto; padding: 16px; }
-.header { background: #eaf2ff; border-bottom: 1px solid #cfe0ff; padding: 12px 16px; }
-.header h1 { margin:0; color:#133e87; font-size: 18px; }
-.badge-offline { font-size:12px; color:#0b6b3a; background:#d1fae5; border:1px solid #34d399; padding:2px 8px; border-radius:999px; }
-.section { background:#fff; border:1px solid #e5e7eb; border-radius:12px; margin-bottom:12px; overflow:hidden; }
-.section-header { padding:14px 16px; font-weight:700; color:#1f2937; display:flex; justify-content:space-between; align-items:center; cursor:pointer; background:linear-gradient(90deg,#eff6ff,#e0f2fe); }
-.section-body { padding:14px 16px; display:none; }
-.section.open .section-body { display:block; }
-.chev { transition: transform .2s ease; }
-.section.open .chev { transform: rotate(90deg); }
-
-/* Ajuste de tarjetas simples */
-.item { background:linear-gradient(90deg,#eff6ff,#dbeafe); border:1px solid #bfdbfe; border-radius:10px; padding:10px; margin-bottom:8px; }
-.item-title { color:#1e3a8a; font-weight:700; }
-.item-sub { color:#1d4ed8; font-size:13px; }
-
-/* Incrustamos tu CSS */
-${styles}
-
-/* Fallbacks mínimos */
-.hidden{display:none;}
-</style>
-</head>
-<body>
-  <div class="header">
-    <h1>${title}</h1>
-    <div class="badge-offline">Funciona offline • Exportado el ${now}</div>
-  </div>
-
-  <main class="container">
-    ${exportInnerHTML}
-  </main>
-
-<script>
-// ====== Interacciones locales (sin depender de main.js) ======
-(function(){
-  // Acordeones: abrir/cerrar
-  document.querySelectorAll('.section-header').forEach(btn=>{
-    btn.addEventListener('click',()=>{
-      const parent = btn.closest('.section');
-      if (parent) parent.classList.toggle('open');
-    });
-  });
-
-  // Enlaces de video (si existen) → abrir en nueva pestaña
-  document.querySelectorAll('[data-video]').forEach(el=>{
-    el.addEventListener('click', ()=>{
-      const url = el.getAttribute('data-video');
-      if (url) window.open(url, '_blank', 'noopener');
-    });
-  });
-})();
-</script>
-</body>
-</html>
-    `.trim();
-
-    // 5) Disparar descarga
-    const blob = new Blob([fullHTML], { type: "text/html;charset=utf-8" });
-    const a = document.createElement('a');
-    const safeName = routineData.name.toLowerCase().replace(/[^a-z0-9_-]+/g,'-');
-    a.download = `${safeName}-carpeta-entrenamiento.html`;
-    a.href = URL.createObjectURL(blob);
-    document.body.appendChild(a);
-    a.click();
-    setTimeout(()=> {
-      URL.revokeObjectURL(a.href);
-      a.remove();
-    }, 500);
-  } catch (err) {
-    console.error(err);
-    alert("No se pudo exportar la carpeta. Probá de nuevo.");
-  }
-}
-
-// Construye todo el HTML de la carpeta (días + más info) sin depender luego de main.js
-function buildOfflineFolderHTML(routineData) {
-  const parts = [];
-
-  // Presentación
-  parts.push(`
-    <div class="section open">
-      <div class="section-header">
-        <div>📘 ${routineData.name} — Tu plan</div>
-        <div class="chev">▶</div>
-      </div>
-      <div class="section-body">
-        <p class="text-blue-700">Este archivo refleja tu carpeta tal como la ves en la web, pero listo para abrirse offline.</p>
-      </div>
-    </div>
-  `);
-
-  // DÍAS
-  const plan = routineData.plan || {};
-  Object.keys(plan).forEach(dayName => {
-    const block = renderOfflineDay(dayName, plan[dayName]);
-    parts.push(block);
-  });
-
-  // MÁS INFORMACIÓN
-  const sections = Array.isArray(routineData.infoSections) && routineData.infoSections.length > 0
-    ? routineData.infoSections
-    : (typeof DEFAULT_INFO_SECTIONS !== 'undefined' ? DEFAULT_INFO_SECTIONS : []);
-
-  if (sections.length > 0) {
-    parts.push(`
-      <div class="section">
-        <div class="section-header">
-          <div>ℹ️ Más información</div>
-          <div class="chev">▶</div>
-        </div>
-        <div class="section-body">
-          ${sections.map(sec => `
-            <div class="item">
-              <div class="item-title">${sec.title || ''}</div>
-              <div class="item-sub">${sec.html || ''}</div>
-            </div>
-          `).join('')}
-        </div>
-      </div>
-    `);
-  }
-
-  return parts.join('\n');
-}
-
-// Renderiza un día (soporta array plano o secciones por bloques)
-function renderOfflineDay(dayName, exercises) {
-  if (Array.isArray(exercises)) {
-    const items = exercises.map(renderOfflineExerciseLine).join('');
-    return `
-      <div class="section">
-        <div class="section-header">
-          <div>🏋️ ${dayName}</div>
-          <div class="chev">▶</div>
-        </div>
-        <div class="section-body">
-          ${items}
-        </div>
-      </div>
-    `;
-  } else if (exercises && typeof exercises === 'object') {
-    // Estructura por bloques: { Calentamiento: [...], Fuerza: [...], ... }
-    const blocks = Object.entries(exercises).map(([section, arr]) => `
-      <div class="item">
-        <div class="item-title">${section}</div>
-        ${arr.map(renderOfflineExerciseLine).join('')}
-      </div>
-    `).join('');
-
-    return `
-      <div class="section">
-        <div class="section-header">
-          <div>🏋️ ${dayName}</div>
-          <div class="chev">▶</div>
-        </div>
-        <div class="section-body">
-          ${blocks}
-        </div>
-      </div>
-    `;
-  }
-  return '';
-}
-
-// Renderiza cada ejercicio (línea suelta o superset)
-function renderOfflineExerciseLine(line) {
-  // Si es superset: { superset: ["Sentadilla 4x10", "Prensa 3x12", ...] }
-  if (line && typeof line === 'object' && Array.isArray(line.superset)) {
-    const inner = line.superset.map(txt => renderSingleExercise(txt)).join('');
-    const label =
-      line.superset.length === 2 ? 'Biserie' :
-      line.superset.length === 3 ? 'Triserie' :
-      line.superset.length > 3  ? 'Multiserie' : 'Serie compuesta';
-
-    return `
-      <div class="item">
-        <div class="item-title">${label}</div>
-        ${inner}
-      </div>
-    `;
-  }
-  // Caso ejercicio simple (string)
-  return renderSingleExercise(line);
-}
-
-// Dibuja un ejercicio simple. Intenta detectar nombre y detalles "Nombre — x series x reps".
-// Si encuentra video en tu base, agrega botón clickable (requiere internet para reproducir).
-function renderSingleExercise(text) {
-  const t = (text || '').toString();
-  const { namePart, detailsPart } = splitNameAndDetails(t);
-  const ex = findExerciseByNameFragmentLoose(namePart);
-  const videoBtn = ex && ex.videoId ? `<button class="ml-2 underline" data-video="${ex.videoId}">Video</button>` : '';
-  const detailsHtml = detailsPart ? ` <span class="item-sub">— ${detailsPart}</span>` : '';
-  return `
-    <div class="item">
-      <div class="item-title">${escapeHTML(namePart)}${detailsHtml} ${videoBtn}</div>
-    </div>
-  `;
-}
-
-// ===== Helpers locales (no dependen de tu main.js al abrir offline) =====
-function escapeHTML(s){return (s||'').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));}
-
-// Intenta separar "Nombre - detalles" o "Nombre — detalles"
-function splitNameAndDetails(line) {
-  const parts = (line || '').split(/[—-]+/);
-  const namePart = parts[0]?.trim() || line;
-  const detailsPart = parts.slice(1).join(' - ').trim();
-  return { namePart, detailsPart };
-}
-
-// Búsqueda laxa en tu base para enlazar video si se encuentra
-function findExerciseByNameFragmentLoose(fragment) {
-  if (!fragment || !window.exerciseDatabase) return null;
-  const f = fragment.toLowerCase();
-  for (const arr of Object.values(window.exerciseDatabase)) {
-     if (!Array.isArray(arr)) continue;
-     for (const ex of arr) {
-       const name = (ex?.name || '').toLowerCase();
-       if (name.includes(f) || f.includes(name)) return ex;
-     }
-  }
-  return null;
-}
 
