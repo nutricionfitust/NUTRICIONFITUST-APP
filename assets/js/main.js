@@ -3905,8 +3905,8 @@ function renderExerciseCard_plain(entry){
   const parsed = parseDetails(detailsPart);
 
   const chips = `
-    <span class="chip">Series: ${parsed.series || '—'}</span>
-    <span class="chip">Reps: ${parsed.reps || '—'}</span>
+    <span class="chip">Series: ${parsed.seriesCount || '—'}</span>
+    <span class="chip">Reps: ${parsed.repsText || '—'}</span>
   `;
   const rest = parsed.rest ? `<span class="rest">Descanso ${parsed.rest}</span>` : '';
   const desc = parsed.desc ? `<div class="desc">${escapeHTML(parsed.desc)}</div>` : '';
@@ -3931,22 +3931,63 @@ function splitNameAndDetails(line){
 }
 // detecta series x reps y descanso, deja el resto como descripción
 function parseDetails(s){
-  if (!s) return { desc: '' };
-  let rest = '', series = '', reps = '', desc = s;
+  if (!s) return { seriesCount:'', repsText:'', rest:'', desc:'' };
 
-  const restMatch = s.match(/(\b\d+\s?(?:-\s?\d+)?\s?(?:s|min|’|\'|m)\b)/i);
-  if (restMatch){ rest = restMatch[1].replace(/\s+/g,'').replace('min','m'); desc = desc.replace(restMatch[1],'').trim(); }
+  let txt = ' ' + s + ' '; // acolchonamos
+  let rest = '';
+  let seriesCount = '';
+  let repsText = '';
+  let desc = '';
 
-  const srMatch = s.match(/(\d+)\s*[x×]\s*(\d+(?:\s?-\s?\d+)?)/i);
-  if (srMatch){
-    series = srMatch[1]; reps = srMatch[2].replace(/\s+/g,''); desc = desc.replace(srMatch[0],'').trim();
+  // 1) Capturar descanso (rest=...) o formatos sueltos tipo "1-2min", "90s", "2m"
+  // - rest=2, rest=2m, rest=2min, rest=90s
+  const restEq = txt.match(/rest\s*=\s*([0-9]+(?:\s*-\s*[0-9]+)?\s*(?:min|m|s)?)/i);
+  if (restEq) {
+    rest = restEq[1].replace(/\s+/g,'').replace(/min/i,'m');
+    txt = txt.replace(restEq[0], ' ');
   } else {
-    const srAlt = s.match(/(\d+)\s*series?.*?(\d+(?:\s?-\s?\d+)?)/i);
-    if (srAlt){ series = srAlt[1]; reps = srAlt[2].replace(/\s+/g,''); desc = desc.replace(srAlt[0],'').trim(); }
+    // - 1-2min, 90s, 2m, 2min
+    const restFree = txt.match(/(^|\s)([0-9]+(?:\s*-\s*[0-9]+)?\s*(?:min|m|s))(\s|$)/i);
+    if (restFree){
+      rest = restFree[2].replace(/\s+/g,'').replace(/min/i,'m');
+      txt = txt.replace(restFree[0], ' ');
+    }
   }
-  desc = desc.replace(/^[-–—]\s*/,'').trim();
-  return { series, reps, rest, desc };
+
+  // 2) Series: capturar número antes de x/× o texto "3 x", "3x", "3 ×"
+  const seriesMatch = txt.match(/(^|\s)(\d+)\s*[x×]/i);
+  if (seriesMatch){
+    seriesCount = seriesMatch[2];
+    // reps = todo lo que sigue después de x/× hasta el final (limpiando el descanso ya removido)
+    const idx = txt.indexOf(seriesMatch[0]) + seriesMatch[0].length;
+    repsText = txt.slice(idx).trim();
+  } else {
+    // Alternativa: "3 series de 12• 10• 8", etc.
+    const seriesAlt = txt.match(/(^|\s)(\d+)\s*series?/i);
+    if (seriesAlt){
+      seriesCount = seriesAlt[2];
+      const idx = txt.indexOf(seriesAlt[0]) + seriesAlt[0].length;
+      // buscar "de ..." si existe
+      const deIdx = txt.slice(idx).toLowerCase().indexOf('de');
+      repsText = (deIdx >= 0 ? txt.slice(idx + deIdx + 2) : txt.slice(idx)).trim();
+    }
+  }
+
+  // Limpiar reps: eliminar duplicados de espacios, mantener •, (), +, flechas ↑ ↓, guiones
+  repsText = repsText
+    .replace(/\s+/g,' ')
+    .replace(/\s*•\s*/g,' • ')
+    .replace(/\s*-\s*/g,'-')
+    .trim();
+
+  // Lo que quede fuera de series/reps/rest lo tratamos como descripción (pocas veces necesario)
+  // Para este flujo usamos desc vacío (mostrás descripciones aparte en tus textos), pero
+  // si querés conservar algo, podrías asignar desc = txt limpiado.
+  desc = '';
+
+  return { seriesCount, repsText, rest, desc };
 }
+
 function escapeHTML(s){ return (s||'').replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); }
 
 
