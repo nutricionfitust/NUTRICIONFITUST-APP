@@ -3692,28 +3692,423 @@ function showUserSpecificTraining(userKey) {
     </div>
   `;
 
-    // === Carpeta extra: "Descargar Carpeta" (color violeta, como biseries) ===
-  html += `
-      <div id="downloadUserFolderCard"
-       class="bg-gradient-to-r from-purple-50 to-purple-100 rounded-lg p-6 card-hover cursor-pointer border border-purple-200"
-       onclick="downloadUserFolderAsHTML('${userKey}')">
-      <div class="flex justify-between items-center">
-        <div>
-          <h4 class="text-lg font-bold text-purple-800 mb-1">⬇️ Descargar Entrenamiento</h4>
-          <p class="text-purple-700 text-sm">Tené tu plan en el celular! (Aún no disponible)</p>
-        </div>
-        <div class="text-purple-700">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          </svg>
-        </div>
+// === Carpeta extra: "Descargar Carpeta" (PDF estático) ===
+html += `
+  <div id="downloadUserFolderCard"
+      class="bg-gradient-to-r from-purple-50 to-purple-100 rounded-lg p-6 card-hover cursor-pointer border border-purple-200"
+      onclick="generateTrainingPDF('${userKey}', '${routineData.name.replace(/'/g, "\\'")}')">
+    <div class="flex justify-between items-center">
+      <div>
+        <h4 class="text-lg font-bold text-purple-800 mb-1">⬇️ Descargar Entrenamiento</h4>
+        <p class="text-purple-700 text-sm">Tené tu plan en el celular!</p>
+      </div>
+      <div class="text-purple-700">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"></svg>
       </div>
     </div>
-  `;
-  
+  </div>
+`;
+
 
   html += '</div>';
   content.innerHTML = html;
   modal.classList.add('show');
+}
+
+// ================== PDF ESTÁTICO: UNA HOJA POR SECCIÓN ==================
+
+function generateTrainingPDF(userKey, fallbackName){
+  // 1) Datos de usuario y rutina
+  // Preferir window.* si está, o caer al scope local si existe
+  const mappingRoot = (typeof window !== 'undefined' && window.userRoutineMapping)
+                   || (typeof userRoutineMapping !== 'undefined' ? userRoutineMapping : null);
+
+  if (!mappingRoot) {
+    alert('No encontré la carpeta del usuario (mapping no disponible).');
+    return;
+  }
+
+  const map = mappingRoot[userKey];
+  if(!map){
+    alert('No encontré la carpeta del usuario (userKey no coincide).');
+    console.warn('[PDF] userKey:', userKey, 'claves mapping:', Object.keys(mappingRoot));
+    return;
+  }
+
+  const foldersRoot = (typeof window !== 'undefined' && window.trainingFolders)
+                   || (typeof trainingFolders !== 'undefined' ? trainingFolders : null);
+
+  if (!foldersRoot) {
+    alert('No encontré las rutinas (trainingFolders no disponible).');
+    return;
+  }
+
+  const { folder, routine, displayName, userName } = map;
+  const data = foldersRoot?.[folder]?.routines?.[routine];
+  if(!data){
+    alert('No encontré la rutina del usuario (folder/routine inválidos).');
+    console.warn('[PDF] folder/routine:', { folder, routine }, 'carpetas:', Object.keys(foldersRoot));
+    return;
+  }
+
+  const name = (displayName || userName || fallbackName || (data && data.name) || 'Usuario');
+
+
+  // 2) Documento completo (con <html>...<head><style>...</style>...<body>...</body>)
+  const fullHTML = buildPrintableDocumentHTML({ userName: name, routineData: data });
+
+  // 3) Crear un iframe oculto para que el <head><style> APLIQUE
+  let iframe = document.getElementById('pdf-iframe');
+  if (!iframe) {
+    iframe = document.createElement('iframe');
+    iframe.id = 'pdf-iframe';
+    iframe.style.position = 'fixed';
+    iframe.style.left = '-99999px';
+    iframe.style.top = '0';
+    iframe.style.width = '0';
+    iframe.style.height = '0';
+    document.body.appendChild(iframe);
+  }
+
+  const doc = iframe.contentWindow.document;
+  doc.open();
+  doc.write(fullHTML);
+  doc.close();
+
+  // 4) Esperar a que el iframe pinte estilos y luego generar PDF
+  const run = () => {
+    try {
+      const printable = iframe.contentWindow.document.body;
+const opt = {
+  margin: [16,14,16,14],
+  filename: 'Mi Plan de Entrenamiento.pdf',
+  image: { type: 'jpeg', quality: 0.98 },
+  html2canvas: { scale: 3, useCORS: true, letterRendering: true, backgroundColor: '#ffffff' },
+  jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+  pagebreak: { mode: ['css', 'legacy'] }
+};
+
+      html2pdf().set(opt).from(printable).save().then(() => {
+        // opcional: limpiar
+        // iframe.remove(); // si querés removerlo
+      });
+    } catch (e) {
+      console.error(e);
+      alert('No pude generar el PDF. Intentá nuevamente.');
+    }
+  };
+
+  // Si el iframe ya está listo, ejecutamos. Si no, esperamos un tick.
+  if (iframe.contentWindow.document.readyState === 'complete') {
+    setTimeout(run, 50);
+  } else {
+    iframe.onload = () => setTimeout(run, 50);
+  }
+}
+
+
+// ================== Construcción del documento imprimible ==================
+
+function buildPrintableDocumentHTML({ userName, routineData }){
+  const today = new Date().toLocaleDateString();
+
+  // CSS de impresión (A4), colores y tablas
+const CSS = `
+  <style>
+    @page { size: A4; margin: 16mm 14mm; }
+    * { box-sizing: border-box; }
+
+    :root{
+      --text: #0f172a;
+      --muted:#475569;
+      --blue:#1e3a8a;
+      --blue-soft:#e6eeff;
+      --blue-soft-2:#dbeafe;
+      --green:#065f46;
+      --green-soft:#dcfce7;
+      --red:#991b1b;
+      --red-soft:#fee2e2;
+      --yellow:#854d0e;
+      --yellow-soft:#fef9c3;
+      --violet:#5b21b6;
+      --violet-soft:#ede9fe;
+      --line:#e2e8f0;
+      --card:#ffffff;
+    }
+
+    html, body { background:#fff; }
+    body {
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial;
+      color: var(--text); margin: 0; line-height: 1.35;
+    }
+
+    /* Contenedor de página */
+    .page { page-break-after: always; }
+    .page:last-child { page-break-after: auto; }
+
+    /* Títulos y textos */
+    h1 { font-size: 24px; color:#133e87; margin: 0 0 10px; }
+    h2 { font-size: 18px; color:#03346e; margin: 0 0 8px; }
+    h3 { font-size: 15px; margin: 12px 0 8px; }
+    p  { margin: 0 0 8px; }
+    .muted { color: var(--muted); }
+
+    /* Portada */
+    .cover-box {
+      border:1px solid #cfe0ff; background:#f7fbff; border-radius:12px; padding:14px; margin-top:10px;
+    }
+
+    /* Sección “Más información” */
+    .section-title {
+      font-weight:800; padding:6px 10px; border-radius:10px; display:inline-block;
+      border:1px solid #c7d2fe; background: var(--blue-soft-2); color: var(--blue);
+      page-break-after: avoid;
+    }
+    .moreinfo {
+      border:1px solid #c7d2fe; background: #faf8ff;
+      border-radius:12px; padding:12px; margin-top:10px;
+    }
+    .moreinfo b, .moreinfo strong { color:#111827; }
+
+    /* Cabecera de día */
+    .day-header {
+      display:flex; align-items:baseline; justify-content:space-between; margin-bottom:10px;
+      border-bottom:1px solid var(--line); padding-bottom:6px;
+    }
+    .date { font-size:12px; color:#64748b; }
+
+    /* Chips de sección (colores planos — nada de gradientes) */
+    .sec-green  { background: var(--green-soft);  color: var(--green);  border:1px solid #86efac; }
+    .sec-red    { background: var(--red-soft);    color: var(--red);    border:1px solid #fecaca; }
+    .sec-yellow { background: var(--yellow-soft); color: var(--yellow); border:1px solid #fde68a; }
+    .sec-blue   { background: var(--blue-soft-2); color: var(--blue);   border:1px solid #bfdbfe; }
+
+    /* Tabla de ejercicios: limpia, ancha y legible */
+    .table { width:100%; border-collapse: separate; border-spacing:0 8px; }
+    .thead { margin-bottom:4px; page-break-inside: avoid; }
+    .row { display:grid; grid-template-columns: 1.5fr 0.35fr 0.35fr 0.45fr; gap:8px; align-items:center; page-break-inside: avoid; }
+    .cell {
+      background: var(--card);
+      border:1px solid #cbd5e1;
+      border-radius:10px; padding:8px 10px; color:#0f172a; font-weight:700;
+    }
+    .thead .cell { background:#eef2ff; border-color:#c7d2fe; color:#1e40af; }
+
+    /* Descripción debajo: gris clara, 100% ancho */
+    .cell-muted {
+      background: #f8fafc; border:1px dashed #cbd5e1; color:#334155; font-weight:400;
+      grid-column: 1 / -1; margin-top:4px; border-radius:10px; padding:8px 10px;
+    }
+
+    /* Evitar cortes feos */
+    .row, .cell, .cell-muted, .moreinfo, .cover-box { page-break-inside: avoid; }
+  </style>
+`;
+
+
+  // Portada con “Más información”
+  const coverHTML = buildCoverHTML(userName, routineData);
+
+  // Páginas de días
+  const plan = routineData.plan || {};
+  const daysHTML = Object.keys(plan).map(dayName => buildDayPageHTML(dayName, plan[dayName])).join('');
+
+  // Documento completo
+  return `
+  <!DOCTYPE html>
+  <html lang="es">
+  <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">${CSS}</head>
+  <body>
+    ${coverHTML}
+    ${daysHTML}
+  </body>
+  </html>`;
+}
+
+// ----------------- Portada + "Más información" -----------------
+
+function buildCoverHTML(userName, routineData){
+  const today = new Date().toLocaleDateString();
+  const infoSections = Array.isArray(routineData.infoSections) ? routineData.infoSections : [];
+
+  const moreInfo = infoSections.length
+    ? `
+      <h3 class="section-title sec-blue">Más información</h3>
+      <div class="moreinfo">
+        ${infoSections.map(sec => `
+          ${sec.title ? `<p><b>${escapeHTML(sec.title)}</b></p>` : ''}
+          ${sec.html || '' }
+        `).join('<hr style="border:none;border-top:1px solid #e2e8f0;margin:10px 0">')}
+      </div>`
+    : '';
+
+  return `
+  <section class="page">
+    <h1 class="cover-title">Mi Plan de Entrenamiento – ${escapeHTML(userName)}</h1>
+    <div class="muted">${today}</div>
+
+    <div class="cover-box">
+      <p>Hola ${escapeHTML(userName)}! Este es tu plan de entrenamiento personalizado.</p>
+    </div>
+
+    ${moreInfo}
+  </section>`;
+}
+
+// ----------------- Una página por día -----------------
+
+function buildDayPageHTML(dayName, dayData){
+  // Orden de secciones deseado
+  const order = ["Acondicionamiento", "Movilidad", "Entrenamiento de fuerza", "Fuerza", "HIIT", "Cardio HIIT"];
+  const sections = normalizeDaySections(dayData, order);
+
+  return `
+  <section class="page">
+    <div class="day-header">
+      <h2 class="day-title">📅 ${escapeHTML(dayName)}</h2>
+      <div class="date">${new Date().toLocaleDateString()}</div>
+    </div>
+
+    ${sections.map(sec => renderSectionTable(sec)).join('')}
+  </section>`;
+}
+
+// ----------------- Helpers de secciones/colores -----------------
+
+function normalizeDaySections(dayData, preferredOrder){
+  // Soporta: array plano de ejercicios o objeto por bloques
+  if (Array.isArray(dayData)){
+    return [{
+      title: "Entrenamiento",
+      kind: "general",
+      list: dayData
+    }];
+  }
+  const blocks = Object.entries(dayData || {}).map(([title, list]) => ({
+    title, kind: detectKind(title), list: list || []
+  }));
+  // ordenar por preferencia
+  blocks.sort((a,b)=> preferredOrder.indexOf(a.title) - preferredOrder.indexOf(b.title));
+  return blocks;
+}
+
+function detectKind(title){
+  const t = (title||'').toLowerCase();
+  if (t.includes('acond') || t.includes('movil')) return 'green';
+  if (t.includes('fuerza')) return 'red';
+  if (t.includes('hiit')) return 'yellow';
+  return 'blue';
+}
+
+function renderSectionTable(section){
+  const cls = section.kind==='green' ? 'sec-green' :
+              section.kind==='red'   ? 'sec-red'   :
+              section.kind==='yellow'? 'sec-yellow': 'sec-blue';
+
+  // Cabecera de sección
+  const head = `<h3 class="section-title ${cls}">${escapeHTML(section.title)}</h3>`;
+
+  // Tabla
+  const thead = `
+    <div class="thead row">
+      <div class="cell">Ejercicio</div>
+      <div class="cell">Series</div>
+      <div class="cell">Reps</div>
+      <div class="cell">Descanso</div>
+    </div>`;
+
+  const rows = (section.list || []).map(renderExerciseRow).join('');
+
+  return `
+    ${head}
+    <div class="table">
+      ${thead}
+      ${rows || `<div class="row"><div class="cell-muted">Sin ejercicios cargados.</div></div>`}
+    </div>
+  `;
+}
+
+// ----------------- Render de cada ejercicio -----------------
+
+function renderExerciseRow(entry){
+  if (entry && typeof entry==='object' && Array.isArray(entry.superset)){
+    // Superserie: renderizar cada línea como fila
+    return entry.superset.map(t => renderExerciseRow(t)).join('');
+  }
+  const line = (entry || '').toString();
+
+  const { namePart, detailsPart } = splitNameAndDetails(line);
+  const parsed = parseDetails(detailsPart);
+
+  const nameCell = `<div class="cell">${escapeHTML(namePart)}</div>`;
+  const seriesCell = `<div class="cell">${parsed.series || '—'}</div>`;
+  const repsCell   = `<div class="cell">${parsed.reps   || '—'}</div>`;
+  const restCell   = `<div class="cell">${parsed.rest   || '—'}</div>`;
+
+  const descRow = parsed.desc
+    ? `<div class="cell-muted">${escapeHTML(parsed.desc)}</div>`
+    : '';
+
+  return `
+    <div class="row">${nameCell}${seriesCell}${repsCell}${restCell}</div>
+    ${descRow}
+  `;
+}
+
+// ----------------- Parseo de línea “Nombre — detalles” -----------------
+
+function splitNameAndDetails(line){
+  const parts = (line||'').split(/[—-]+/); // largo o corto
+  const name = (parts[0]||'').trim() || line;
+  const details = parts.slice(1).join(' - ').trim();
+  return { namePart: name, detailsPart: details };
+}
+
+/**
+ * Intenta detectar:
+ * - series x reps: "4x12", "5 x 5", "4×10-12"
+ * - descanso: "90s", "1-2’", "2min", "2' "
+ * - descripción textual antes o después (palabras, frases)
+ */
+function parseDetails(s){
+  if (!s) return { desc: '' };
+
+  let rest = '';
+  let series = '';
+  let reps = '';
+  let desc = s;
+
+  // 1) descanso
+  const restMatch = s.match(/(\b\d+\s?(?:-\s?\d+)?\s?(?:s|min|’|\'|m)\b)/i);
+  if (restMatch){
+    rest = restMatch[1].replace(/\s+/g,'').replace('min','m');
+    desc = desc.replace(restMatch[1],'').trim();
+  }
+
+  // 2) series x reps (ej. 4x12 o 4 x 10-12)
+  const srMatch = s.match(/(\d+)\s*[x×]\s*(\d+(?:\s?-\s?\d+)?)/i);
+  if (srMatch){
+    series = srMatch[1];
+    reps = srMatch[2].replace(/\s+/g,'');
+    desc = desc.replace(srMatch[0],'').trim();
+  } else {
+    // a veces viene “3 series de 12-15”
+    const srAlt = s.match(/(\d+)\s*series?.*?(\d+(?:\s?-\s?\d+)?)/i);
+    if (srAlt){
+      series = srAlt[1];
+      reps = srAlt[2].replace(/\s+/g,'');
+      desc = desc.replace(srAlt[0],'').trim();
+    }
+  }
+
+  // limpiar guiones sobrantes
+  desc = desc.replace(/^[-–—]\s*/,'').trim();
+
+  return { series, reps, rest, desc };
+}
+
+function escapeHTML(s){
+  return (s||'').replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 }
 
 function showUserRoutineDay(userKey, day) {

@@ -321,3 +321,6 @@ body {
     margin-bottom: 0 !important;     /* mismo que bi/tri */
   }
 }
+
+.row { page-break-inside: avoid; }
+.section-title { page-break-after: avoid; }
