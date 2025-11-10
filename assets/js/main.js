@@ -340,7 +340,7 @@ const trainingFolders = {
     },
 
 
-        "azulcherubini": {
+        "azulcherubini2": {
       name: "Azul",
          // PLAN DE ENTRENAMIENTO SEMANAL !      
       plan: {  
@@ -747,99 +747,84 @@ const trainingFolders = {
 
 
 
+
+    
+
+
+
+
     
   },
 },
   "4 MUSCULACIÓN + 1 HIIT + (1 LISS)": {
   routines: {
-    "franciscoustarroz": {
-      name: "Francisco",
+        "azulcherubini3": {
+      name: "Azul",
          // PLAN DE ENTRENAMIENTO SEMANAL !      
       plan: {  
-        "Día 1 - Pecho y Tríceps": {
+        "Día 1 - Inferior": {
           "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
+            {
+            superset: [
+            "Skipping Rodillas Arriba 2 x 30seg",
+            "Patadas Atrás 2 x 30seg",
+            "Sentadillas más Estocadas con Peso (Bolsa) 2 x 16-16",
+          ],
+            restAfter: "1min"
+          },
             ],
           "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
+            "Sentadillas con Barra 6 x (2 aproximaciones)-12-10-8-8 rest=2-3min",
+            "Sentadilla Búlgara con Mancuernas 4 x 12-10-10-8 rest=2min",
+            "Isquiotibiales Acostada 4 x 12-(10+8)-(10+6)-8 rest=1-2min",
+            "Aductores Sentada 3 x 12-(fallo+fallo)-(fallo+fallo) rest=1-2min",
+            "Crunch en Máquina 3 x 16-16-12 rest=1min"
             ],
           },
-        "Día 2 - Espalda y Bíceps":  {
+        "Día 2 - Superior":  {
           "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
+            {
+            superset: [
+            "Rotaciones con Bolsa 2 x 20-20",
+            "Biceps más Press Arnold con Mancuernas 2 x 16-12",
+          ],
+            restAfter: "1min"
+          },
             ],
           "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
+            "Polea al Pecho Prono Cerrado 4 x 16-12-10-10 rest=2min",
+            "Vuelos Posteriores con Mancuernas 3 x 12-10-10 rest=1-2min",
+            "Press de Pecho en Maquina 4 x 16-12-10-10 rest=2min",
+            "Biceps Martillo Alternado con Mancuernas 3 x 12-10-8 rest=1-2min",
+            "Extensión de Triceps con Polea con Barra  3 x (12+8)-(10+6)-10 rest=1min"
             ],
           "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
+            "Correr en Cinta Inclinada"
             ],
           },
-        "Día 3 - Piernas":  {
+        "Día 3 - Inferior":  {
           "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
+            {
+            superset: [
+            "Sentadillas más Estocadas con Peso (Bolsa) 2 x 16-16",
+            "Burpees con Flexiones de Brazos 2 x 10-10",
+          ],
+            restAfter: "1min"
+          },
             ],
           "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
+            "Isquiotibiales Acostada 4 x 20-(12+8)-(12+8)-10 rest=2min",
+            {
             superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12",
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
+            "Prensa 4 x 16-12-10-10",
+            "Gemelos en Prensa 4 x 16-12-10-10",
           ],
-            restAfter: "2min"
+            restAfter: "2-3min"
           },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
+            "Peso Muerto Rumano con Mancuernas 3 x 12-12-12 rest=2min",
+            "Extensión de Cuadriceps Sentada 3 x (12+8)-(12+8)-(10+6) rest=1-2min",
+            "Plancha Frontal 2 x 40seg a 1min rest=1min"
             ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-            ],
-          },
-        "Día 4 - Hombros y Core":  {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-           ],
           },
       },
     },
@@ -2817,9 +2802,9 @@ const userRoutineMapping = {
   agustina: { folder: "2 MUSCULACIÓN + (2 LISS)", routine: "agustina" },
   camilafrancoblonda:   { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "camilafrancoblonda" },
   sofiaustarroz:    { folder: "4 MUSCULACIÓN (1 FB HIIT) + (1 LISS)", routine: "sofiaustarroz" },
-  franciscoustarroz: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "franciscoustarroz" },
+  azulcherubini3: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "azulcherubini3" },
   facundoustarroz: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "facundoustarroz" },
-  azulcherubini: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "azulcherubini" },
+  azulcherubini2: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "azulcherubini2" },
   damianportillo2: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "damianportillo2" },
   damianportillo3: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "damianportillo3" },
   isaacmolinares3: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "isaacmolinares3" },
@@ -2844,9 +2829,9 @@ const userPasswords = {
   'vesuvio-kremlin-quarzo-espresso-amore-siberia-russia-vesuvio-octavo-zarina-octavo-batata': 'agustina',
   'tundra-vesuvio-balalaika-siberia-yogurt-vesuvio-octavo-zarina-octavo-batata': 'camilafrancoblonda',
   'espresso-urali-tiramisu-siberia-vesuvio-octavo-zarina-octavo-batata': 'sofiaustarroz',
-  'tiramisu-limoncello-vesuvio-russia-tundra-siberia-espresso-tundra-urali-octavo-zarina-octavo-batata': 'franciscoustarroz',
   'tiramisu-vesuvio-tundra-quarzo-russia-gondola-urali-octavo-zarina-octavo-batata': 'facundoustarroz',
-  'vesuvio-spaghetti-quarzo-yogurt-tundra-opera-dolcevita-limoncello-quarzo-firenze': 'azulcherubini',
+  'vesuvio-spaghetti-quarzo-yogurt-tundra-opera-dolcevita-limoncello-quarzo-firenze': 'azulcherubini2',
+  'vesuvio-spaghetti-quarzo-yogurt-tundra-opera-dolcevita-limoncello-quarzo-octavo': 'azulcherubini3',
   'gondola-vesuvio-balalaika-siberia-borscht-urali-limoncello-octavo': 'damianportillo2',
   'gondola-vesuvio-balalaika-siberia-borscht-urali-limoncello-laguna': 'damianportillo3',
   'siberia-espresso-vesuvio-balalaika-laguna': 'isaacmolinares3',
@@ -3042,7 +3027,7 @@ const USER_HIIT_DAY_NOTES = {
 
 
 
-  "azulcherubini": {
+  "azulcherubini2": {
     "Día 2 - Superior": [
       { title: "HIIT en Cinta Inclinada (caminadora)",
       body: `<p><strong>12 MINUTOS TOTALES.</strong></p>
@@ -3059,6 +3044,29 @@ const USER_HIIT_DAY_NOTES = {
     },
     ],
   },
+
+
+
+  "azulcherubini3": {
+    "Día 2 - Superior": [
+      { title: "HIIT en Cinta (caminadora)",
+      body: `<p><strong>15 a 20 MINUTOS TOTALES.</strong></p>
+            <p>Puede hacerse afuera!</p>
+            <p><b>5 minutos:</b> trote suave para entrar en calor.</p>
+            <p><b>1 minutos:</b> caminar.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>100 metros a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
+            <li>100 metros caminando (5.5 km/h). Los primeros 50 m y trote suave (8 km/h) los últimos 50 m.</li>
+            </ul>
+            <p><b>Repetir 5 veces seguidas:</b> o sea <b>(100 m fast + 50 m slow) x 5 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 2 minuto caminando.</p>
+            <p><b>Repetir HIIT 2 o 3 veces más:</b> o sea <b>(100 m fast + 50 m slow) x 2 o 3 (si llegás) sin descanso.</b></p>
+            <p><b>Recuperación:</b> 2 minuto caminando.</p>
+            <p>A mimir. 😴</p>`
+    },
+    ],
+  },  
 
 
 
