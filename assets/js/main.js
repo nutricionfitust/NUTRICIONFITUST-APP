@@ -3945,23 +3945,57 @@ function buildDayPageHTML_plain(dayName, dayData){
 }
 
 // ===== helpers de secciones/colores y tarjetas =====
-function normalizeDaySections(dayData, preferredOrder){
+function normalizeDaySections(dayData){
+  // Si vino como array plano, lo tratamos como bloque único “Entrenamiento” (peso 50)
   if (Array.isArray(dayData)){
-    return [{ title: "Entrenamiento", kind: "blue", list: dayData }];
+    return [{ title: "Entrenamiento", kind: "blue", weight: 50, list: dayData }];
   }
-  const blocks = Object.entries(dayData || {}).map(([title, list]) => ({
-    title, kind: detectKind(title), list: list || []
-  }));
-  // ordenar por preferencia si el título aparece en la lista
-  blocks.sort((a,b)=> preferredOrder.indexOf(a.title) - preferredOrder.indexOf(b.title));
-  return blocks;
+
+  // Mapeamos a {title, kind, weight, list}
+  const blocks = Object.entries(dayData || {}).map(([title, list]) => {
+    const kind = detectKind(title);
+    const weight = detectWeight(title); // 0 = Acond/Mov/Calent, 1 = Fuerza, 2 = HIIT, 50 = otros
+    return { title, kind, weight, list: list || [] };
+  });
+
+  // Ordenamos por weight (asc), y si empatan, preservamos el orden original
+  return blocks
+    .map((b, i) => ({ ...b, __i: i }))
+    .sort((a, b) => (a.weight - b.weight) || (a.__i - b.__i))
+    .map(({ __i, ...rest }) => rest);
+}
+
+function detectWeight(title){
+  const t = (title || '').toLowerCase();
+
+  // 0: Acondicionamiento / Movilidad / Calentamiento
+  if (
+    t.includes('acond') ||
+    t.includes('movil') ||
+    t.includes('calent')
+  ) return 0;
+
+  // 1: Fuerza
+  if (
+    t.includes('fuerza') ||
+    t.includes('entrenamiento de fuerza')
+  ) return 1;
+
+  // 2: HIIT / Cardio HIIT
+  if (
+    t.includes('hiit') ||
+    t.includes('cardio hiit')
+  ) return 2;
+
+  // Otros (por si agregás bloques nuevos) → al medio
+  return 50;
 }
 
 function detectKind(title){
-  const t = (title||'').toLowerCase();
+  const t = (title || '').toLowerCase();
   if (t.includes('acond') || t.includes('movil') || t.includes('calent')) return 'green';
-  if (t.includes('fuerza')) return 'red';
-  if (t.includes('hiit')) return 'yellow';
+  if (t.includes('fuerza') || t.includes('entrenamiento de fuerza'))      return 'red';
+  if (t.includes('hiit') || t.includes('cardio hiit'))                    return 'yellow';
   return 'blue';
 }
 
@@ -4102,34 +4136,6 @@ function parseDetails(s){
 
 
 function escapeHTML(s){ return (s||'').replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); }
-
-
-// ----------------- Helpers de secciones/colores -----------------
-
-function normalizeDaySections(dayData, preferredOrder){
-  // Soporta: array plano de ejercicios o objeto por bloques
-  if (Array.isArray(dayData)){
-    return [{
-      title: "Entrenamiento",
-      kind: "general",
-      list: dayData
-    }];
-  }
-  const blocks = Object.entries(dayData || {}).map(([title, list]) => ({
-    title, kind: detectKind(title), list: list || []
-  }));
-  // ordenar por preferencia
-  blocks.sort((a,b)=> preferredOrder.indexOf(a.title) - preferredOrder.indexOf(b.title));
-  return blocks;
-}
-
-function detectKind(title){
-  const t = (title||'').toLowerCase();
-  if (t.includes('acond') || t.includes('movil')) return 'green';
-  if (t.includes('fuerza')) return 'red';
-  if (t.includes('hiit')) return 'yellow';
-  return 'blue';
-}
 
 function renderSectionTable(section){
   const cls = section.kind==='green' ? 'sec-green' :
