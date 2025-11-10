@@ -430,7 +430,7 @@ const trainingFolders = {
             ],
           "Entrenamiento de Fuerza": [
             "Isquiotibiales Acostado 4 x 20-(12+10)-(12+8)-10 rest=1-2min",
-            "Aductores Sentado 3 x fallo+fallo+fallo rest=1-2min",
+            "Aductores Sentado 3 x fallo· fallo· fallo rest=1-2min",
           {
             superset: [
             "Prensa 4 x 12-10-10-8",
@@ -540,7 +540,7 @@ const trainingFolders = {
           {
             superset: [
             "Vuelos Laterales con Mancuernas 4 x 12-12-10-10",
-            "Press Martillo Acostado con Mancuernas 4 x fallo+fallo+fallo+fallo",
+            "Press Martillo Acostado con Mancuernas 4 x fallo· fallo· fallo· fallo",
           ],
             restAfter: "1min"
           },
@@ -617,8 +617,8 @@ const trainingFolders = {
           },
             {
             superset: [
-            "Biceps Martillo con Mancuernas 4 x fallo+fallo+fallo+fallo",
-            "Flexiones BB Inclinado 4 x fallo+fallo+fallo+fallo",
+            "Biceps Martillo con Mancuernas 4 x fallo· fallo· fallo· fallo",
+            "Flexiones BB Inclinado 4 x fallo· fallo· fallo· fallo",
           ],
             restAfter: "2min"
           },
@@ -775,7 +775,7 @@ const trainingFolders = {
             ],
           "Entrenamiento de Fuerza": [
             "Isquiotibiales Sentada 3 x 12· (12+8)· (10+8) rest=1-2min",
-            "Aductores Sentada 3 x fallo+fallo+fallo rest=1-2min",
+            "Aductores Sentada 3 x fallo· fallo· fallo rest=1-2min",
             "Sentadillas en Smith 5 x 16· ↑12· ↑10· ↑8· 8↓ rest=2-4min",
             "Hip Thrust en Smith 3 x 12· ↑10· ↑8· 8 rest=2-3min",
             "Peso Muerto Rumano con Mancuernas 3 x 12· 10· 10 rest=2min",
@@ -795,7 +795,7 @@ const trainingFolders = {
           },
           ],
           "Entrenamiento de Fuerza": [
-            "Vuelos Posteriores con Mancuernas 3 x ↑16 · ↓12 · 10 rest=1-2min",
+            "Vuelos Posteriores con Mancuernas 3 x ↑16· ↓12· 10 rest=1-2min",
             "Aperturas Sentada en Máquina 4 x ↑16· ↓(12+8)· 12· ↑10 rest=2-3min",
             "Press Inclinado con Mancuernas 3 x 12· 12· ↑10· ↑8 rest=2-3min",
             "Press de Pecho en Máquina 3 x 12· ↓12· ↓(10+6) rest=2-3min",
@@ -817,7 +817,7 @@ const trainingFolders = {
           {
             superset: [
             "Espalda con Plea 2 x 16· 12",
-            "Flexiones BB 2 x 10· 10",
+            "Flexiones BB 2 x 10• 10",
           ],
             restAfter: "1min"
           },           
@@ -1074,7 +1074,7 @@ const trainingFolders = {
             ],
           "Entrenamiento de Fuerza": [
             "Isquiotibiales Sentado 4 x 20-(12+10)-(12+8)-10 rest=1-2min",
-            "Aductores Sentado 3 x fallo+fallo+fallo rest=1-2min",
+            "Aductores Sentado 3 x fallo· fallo· fallo rest=1-2min",
           {
             superset: [
             "Prensa 4 x 12-10-10-8",
@@ -1518,7 +1518,7 @@ const trainingFolders = {
             ],
           "Entrenamiento de Fuerza": [
             "Isquiotibiales Sentado 4 x 20-(12+10)-(12+8)-10 rest=1-2min",
-            "Aductores Sentado 3 x fallo+fallo+fallo rest=1-2min",
+            "Aductores Sentado 3 x fallo· fallo· fallo rest=1-2min",
           {
             superset: [
             "Prensa 4 x 12-10-10-8",
@@ -1667,7 +1667,7 @@ const trainingFolders = {
             ],
           "Entrenamiento de Fuerza": [
             "Isquiotibiales Sentado 3 x 12· (12+8)· (10+8) rest=1-2min",
-            "Aductores Sentado 3 x fallo+fallo+fallo rest=1-2min",
+            "Aductores Sentado 3 x fallo· fallo· fallo rest=1-2min",
             "Sentadillas en Smith 5 x 16· ↑12· ↑10· ↑8· 8↓ rest=2-4min",
             "Hip Thrust en Smith 3 x 12· ↑10· ↑8· 8 rest=2-3min",
             "Peso Muerto Rumano con Mancuernas 3 x 12· 10· 10 rest=2min",
@@ -1687,7 +1687,7 @@ const trainingFolders = {
           },
           ],
           "Entrenamiento de Fuerza": [
-            "Vuelos Posteriores con Mancuernas 3 x ↑16 · ↓12 · 10 rest=1-2min",
+            "Vuelos Posteriores con Mancuernas 3 x ↑16· ↓12· 10 rest=1-2min",
             "Aperturas Sentado en Máquina 3 x ↑16· ↓(12+8)· ↑12 rest=3min",
             "Press Banca Inclinado en Smith 5 x 20(50% RM)· ↑10· ↓12· 10· ↓8 rest=2-3min",
             "Press de Pecho en Máquina 3 x 12· ↓12· ↓(10+6) rest=2-3min",
@@ -1790,7 +1790,7 @@ const trainingFolders = {
           },
           ],
           "Entrenamiento HIIT": [
-            "Correr en Cinta Inclinada",
+            "Correr en Cinta",
           ],
           },
       },
@@ -1817,7 +1817,7 @@ const trainingFolders = {
             ],
           "Entrenamiento de Fuerza": [
             "Isquiotibiales Sentado 4 x 20-(12+10)-(12+8)-10 rest=1-2min",
-            "Aductores Sentado 3 x fallo+fallo+fallo rest=1-2min",
+            "Aductores Sentado 3 x fallo· fallo· fallo rest=1-2min",
           {
             superset: [
             "Prensa 4 x 12-10-10-8",
@@ -1967,7 +1967,7 @@ const trainingFolders = {
             ],
           "Entrenamiento de Fuerza": [
             "Isquiotibiales Sentado 3 x 12· (12+8)· (10+8) rest=1-2min",
-            "Aductores Sentado 3 x fallo+fallo+fallo rest=1-2min",
+            "Aductores Sentado 3 x fallo· fallo· fallo rest=1-2min",
             "Sentadillas en Smith 5 x 16· ↑12· ↑10· ↑8· 8↓ rest=2-4min",
             "Hip Thrust en Smith 3 x 12· ↑10· ↑8· 8 rest=2-3min",
             "Peso Muerto Rumano con Mancuernas 3 x 12· 10· 10 rest=2min",
@@ -1987,7 +1987,7 @@ const trainingFolders = {
           },
           ],
           "Entrenamiento de Fuerza": [
-            "Vuelos Posteriores con Mancuernas 3 x ↑16 · ↓12 · 10 rest=1-2min",
+            "Vuelos Posteriores con Mancuernas 3 x ↑16· ↓12· 10 rest=1-2min",
             "Aperturas Sentado en Máquina 3 x ↑16· ↓(12+8)· ↑12 rest=3min",
             "Press Banca Inclinado en Smith 5 x 20(50% RM)· ↑10· ↓12· 10· ↓8 rest=2-3min",
             "Press de Pecho en Máquina 3 x 12· ↓12· ↓(10+6) rest=2-3min",
@@ -2090,7 +2090,7 @@ const trainingFolders = {
           },
           ],
           "Entrenamiento HIIT": [
-            "Correr en Cinta Inclinada",
+            "Correr en Cinta (caminadora)",
           ],
           },
       },
@@ -2114,7 +2114,7 @@ const trainingFolders = {
             ],
           "Entrenamiento de Fuerza": [
             "Isquiotibiales Sentado 3 x 12· (12+8)· (10+8) rest=1-2min",
-            "Aductores Sentado 3 x fallo+fallo+fallo rest=1-2min",
+            "Aductores Sentado 3 x fallo· fallo· fallo rest=1-2min",
             "Sentadillas en Smith 5 x 16· ↑12· ↑10· ↑8· 8↓ rest=2-4min",
             "Hip Thrust en Smith 3 x 12· ↑10· ↑8· 8 rest=2-3min",
             "Peso Muerto Rumano con Mancuernas 3 x 12· 10· 10 rest=2min",
@@ -2134,7 +2134,7 @@ const trainingFolders = {
           },
           ],
           "Entrenamiento de Fuerza": [
-            "Vuelos Posteriores con Mancuernas 3 x ↑16 · ↓12 · 10 rest=1-2min",
+            "Vuelos Posteriores con Mancuernas 3 x ↑16· ↓12· 10 rest=1-2min",
             "Aperturas Sentado en Máquina 3 x ↑16· ↓(12+8)· ↑12 rest=3min",
             "Press Banca Inclinado en Smith 5 x 20(50% RM)· ↑10· ↓12· 10· ↓8 rest=2-3min",
             "Press de Pecho en Máquina 3 x 12· ↓12· ↓(10+6) rest=2-3min",
@@ -2237,7 +2237,7 @@ const trainingFolders = {
           },
           ],
           "Entrenamiento HIIT": [
-            "Correr en Cinta Inclinada",
+            "Correr en Cinta (caminadora)",
           ],
           },
       },
@@ -2262,7 +2262,7 @@ const trainingFolders = {
             ],
           "Entrenamiento de Fuerza": [
             "Isquiotibiales Sentado 3 x 12· (12+8)· (10+8) rest=1-2min",
-            "Aductores Sentado 3 x fallo+fallo+fallo rest=1-2min",
+            "Aductores Sentado 3 x fallo· fallo· fallo rest=1-2min",
             "Sentadillas en Smith 5 x 16· ↑12· ↑10· ↑8· 8↓ rest=2-4min",
             "Hip Thrust en Smith 3 x 12· ↑10· ↑8· 8 rest=2-3min",
             "Peso Muerto Rumano con Mancuernas 3 x 12· 10· 10 rest=2min",
@@ -2282,7 +2282,7 @@ const trainingFolders = {
           },
           ],
           "Entrenamiento de Fuerza": [
-            "Vuelos Posteriores con Mancuernas 3 x ↑16 · ↓12 · 10 rest=1-2min",
+            "Vuelos Posteriores con Mancuernas 3 x ↑16· ↓12· 10 rest=1-2min",
             "Aperturas Sentado en Máquina 3 x ↑16· ↓(12+8)· ↑12 rest=3min",
             "Press Banca Inclinado en Smith 5 x 20(50% RM)· ↑10· ↓12· 10· ↓8 rest=2-3min",
             "Press de Pecho en Máquina 3 x 12· ↓12· ↓(10+6) rest=2-3min",
@@ -2385,7 +2385,7 @@ const trainingFolders = {
           },
           ],
           "Entrenamiento HIIT": [
-            "Correr en Cinta Inclinada",
+            "Correr en Cinta (caminadora)",
           ],
           },
       },
@@ -2919,8 +2919,8 @@ const DEFAULT_INFO_SECTIONS = [
         <p>Ejemplo: si ves en la rutina (10+8), significa que haces 10 repeticiones al fallo, bajás un poco el peso y hacés 8 repeticiones más, también al fallo. Si ves (fallo+fallo) tratá de hacer un rango de repeticiones de (16+12). A matar 🔥.</p>
         <br><br>
         <p><b>¿Qué son las Series Ondulantes?</b> Es una técnica avanzada donde arrancás con un <b>peso alto</b> para reclutar el máximo número de fibras musculares y generar una fuerte activación neuromuscular. Luego <b>bajás la carga</b> y continuás con más repeticiones, aprovechando esa activación previa para lograr un estímulo más profundo y completo sobre el músculo 🔥.</p>
-        </p> <p><b>Ejemplo:</b> si ves en la rutina ↑10· ↓12· 10· ↓8, significa que hacés 8 repeticiones pesadas con carga alta, luego, en la siguiente serie, bajás el peso y hacés 12 repeticiones más, aprovechando la activación previa. Posteriormente, la siguiente serie será de 10 repeticiones, con el mismo peso que la serie anterior (donde hiciste 12 reps). Y en la siguiente bajarás el peso y harás 8 reps.</p>
-        <p>En este ejemplo trabajás series ondulantes con series descendentes... (en las series descendentes vas bajando de peso porque la intensidad de tu entrenamiento es tan alta que a nivel muscular no te da para subir el peso).</p>
+        </p> <p><b>Ejemplo:</b> si ves en la rutina ↑10· ↓12· 10· ↓8, significa que hacés 10 repeticiones pesadas con carga alta, luego, en la siguiente serie, bajás el peso y hacés 12 repeticiones más, aprovechando la activación previa. Posteriormente, la siguiente serie será de 10 repeticiones, con el mismo peso que la serie anterior (donde hiciste 12 reps). Y en la siguiente bajarás el peso y harás 8 reps.</p>
+        <p>En este ejemplo trabajás series ondulantes con series descendentes... (en las series descendentes vas bajando de peso porque la intensidad de tu entrenamiento es tan alta que a nivel muscular no te da para subir el peso, ni para mantenerlo si tenés que hacer el mismo número de repeticiones).</p>
         `
         },
         {
