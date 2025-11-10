@@ -259,6 +259,7 @@ const exerciseDatabase = {
     { name: "Estiramiento de Hombros", videoId: "", description: "Movimiento que mejora la flexibilidad del hombro y reduce la tensión en el tren superior." },
   ],
 };
+window.exerciseDatabase = exerciseDatabase;
 
 /* ===========================
    CONFIGURACIÓN DE ACCESOS
@@ -4595,16 +4596,27 @@ function canonicalizeFragment(s) {
 }
 
 function flattenExerciseDatabase() {
+  const db = window.exerciseDatabase || {};
   const all = [];
-  for (const list of Object.values(exerciseDatabase)) {
+  for (const list of Object.values(db)) {
     for (const ex of list) all.push(ex);
   }
   return all;
 }
 
-const EXERCISE_INDEX = flattenExerciseDatabase();
+function getExerciseIndex(){
+  if (!window.__EX_INDEX) {
+    window.__EX_INDEX = flattenExerciseDatabase();
+  }
+  return window.__EX_INDEX;
+}
+
+
+const EXERCISE_INDEX = getExerciseIndex();  // dentro de la función que busca
+
 
 function findExerciseByNameFragment(fragment) {
+  const EXERCISE_INDEX = getExerciseIndex();
   const fCanon = canonicalizeFragment(fragment);
   const fNorm = normalizeStr(fCanon);
   if (!fNorm) return null;
