@@ -1,0 +1,110 @@
+@page { size: A4; margin: 16mm 14mm; }
+* { box-sizing: border-box; }
+html, body { background:#fff; }
+body {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial;
+  color:#0f172a; margin:0; line-height:1.35;
+}
+
+/* Paleta */
+:root{
+  --line:#e2e8f0; --muted:#475569;
+  --green:#065f46;   --green-soft:#e8f8ee;
+  --red:#991b1b;     --red-soft:#fde9e9;
+  --yellow:#854d0e;  --yellow-soft:#fff5cf;
+  --blue:#1e3a8a;    --blue-soft:#eaf1ff;
+  --violet:#5b21b6;  --violet-soft:#f3ebff;
+  --card:#ffffff;    --chip:#eef2ff;
+}
+
+/* Paginación */
+.page { page-break-after: always; }
+.page:last-child { page-break-after: auto; }
+
+/* Toolbar (solo en pantalla) */
+.toolbar { position: sticky; top:0; background:#fff; border-bottom:1px solid var(--line);
+  display:flex; gap:8px; padding:10px 0; z-index:10; }
+.toolbar .btn { background:#6b21b6; color:#fff; border:0; border-radius:10px; padding:8px 12px; font-weight:800; cursor:pointer; }
+@media print { .toolbar { display:none !important; } }
+
+/* Títulos */
+h1 { font-size: 24px; color:#133e87; margin:0 0 10px; }
+h2 { font-size: 20px; color:#111827; margin:0 0 8px; }
+h3 { font-size: 16px; color:#111827; margin:0 0 8px; }
+p  { margin: 0 0 8px; }
+.muted { color: var(--muted); }
+.date  { font-size:12px; color:#64748b; }
+
+/* Portada */
+.cover-box {
+  border:1px solid #cfe0ff; background:#f7fbff; border-radius:14px; padding:14px; margin-top:10px;
+}
+.section-title {
+  font-weight:800; padding:8px 12px; border-radius:12px; display:inline-block;
+  background:#eaf1ff; color:#133e87; border:1px solid #c7d2fe;
+  page-break-after: avoid;
+}
+.moreinfo {
+  border:1px solid #c7d2fe; background:#faf8ff;
+  border-radius:14px; padding:12px; margin-top:10px;
+}
+.moreinfo b, .moreinfo strong { color:#111827; }
+
+/* Cabecera de día */
+.day-header {
+  display:flex; align-items:baseline; justify-content:space-between; margin-bottom:12px;
+  border-bottom:1px solid var(--line); padding-bottom:6px;
+}
+
+/* Secciones: barra de color */
+.sec {
+  border:1px solid var(--line);
+  border-left-width: 6px;
+  border-radius:12px; padding:10px; margin:14px 0 10px;
+  background:#fff;
+}
+.sec-green  { border-left-color: var(--green);  background: var(--green-soft); }
+.sec-red    { border-left-color: var(--red);    background: var(--red-soft); }
+.sec-yellow { border-left-color: var(--yellow); background: var(--yellow-soft); }
+
+.sec-title { font-weight:800; margin-bottom:8px; }
+.sec-title.green  { color:var(--green); }
+.sec-title.red    { color:var(--red); }
+.sec-title.yellow { color:var(--yellow); }
+
+/* Panel violeta (bi/tri/multiserie) */
+.panel {
+  background: var(--violet-soft);
+  border:1px solid #d8c7ff;
+  border-radius:16px; padding:12px; margin:10px 4px;
+}
+.panel-head {
+  display:flex; align-items:center; justify-content:space-between;
+  color: var(--violet); font-weight:800; margin-bottom:8px;
+}
+.panel-foot {
+  text-align:right; margin-top:8px; font-weight:700; color: var(--violet);
+}
+
+/* Tarjeta de ejercicio */
+.ex {
+  background:#f3f7ff; border:1px solid #cfe0ff; border-radius:12px; padding:10px 12px; margin:8px 0;
+}
+.ex-top {
+  display:flex; align-items:center; justify-content:space-between; gap:10px;
+}
+.ex-name { color: var(--blue); font-weight:800; }
+.chips { display:flex; align-items:center; gap:6px; flex-wrap:wrap; }
+.chip {
+  background: var(--chip); color:#1e40af; border:1px solid #c7d2fe;
+  font-weight:800; font-size:12px; padding:3px 8px; border-radius:999px;
+}
+.rest {
+  background:#f0eaff; color: var(--violet); border:1px solid #d8b4fe;
+  font-weight:800; font-size:12px; padding:3px 8px; border-radius:999px;
+}
+.desc { background:#f8fafc; border:1px dashed #cbd5e1; color:#334155;
+  border-radius:12px; padding:8px 10px; margin-top:6px; }
+
+/* Evitar cortes feos */
+.row, .ex, .desc, .panel, .moreinfo, .cover-box { page-break-inside: avoid; }

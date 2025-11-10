@@ -3646,6 +3646,9 @@ function showUserSpecificTraining(userKey) {
   const modal = document.getElementById('userTrainingModal');
   const title = document.getElementById('userTrainingTitle');
   const content = document.getElementById('userTrainingContent');
+// === 🔧 Exponer los datos globalmente para otras funciones ===
+try { if (typeof userRoutineMapping !== 'undefined') window.userRoutineMapping = userRoutineMapping; } catch(e){}
+try { if (typeof trainingFolders !== 'undefined') window.trainingFolders = trainingFolders; } catch(e){}
 
   title.textContent = `Mi Plan de Entrenamiento - ${routineData.name}`;
 
@@ -3703,7 +3706,7 @@ function showUserSpecificTraining(userKey) {
 html += `
   <div id="downloadUserFolderCard"
       class="bg-gradient-to-r from-purple-50 to-purple-100 rounded-lg p-6 card-hover cursor-pointer border border-purple-200"
-      onclick="generateTrainingPDF('${userKey}', '${routineData.name.replace(/'/g, "\\'")}')">
+      onclick="openPrintableRoutine('${userKey}')"
     <div class="flex justify-between items-center">
       <div>
         <h4 class="text-lg font-bold text-purple-800 mb-1">Descargar Entrenamiento</h4>
@@ -3722,226 +3725,82 @@ html += `
   modal.classList.add('show');
 }
 
-// ================== PDF ESTÁTICO: UNA HOJA POR SECCIÓN ==================
-//--> falta agregarle la "g" en function gnerateTrainingPDF......., aquí en el rengón de abajo!
-
-function enerateTrainingPDF(userKey, fallbackName){
-  // 1) Datos de usuario y rutina
-  // Preferir window.* si está, o caer al scope local si existe
-  const mappingRoot = (typeof window !== 'undefined' && window.userRoutineMapping)
-                   || (typeof userRoutineMapping !== 'undefined' ? userRoutineMapping : null);
-
-  if (!mappingRoot) {
-    alert('No encontré la carpeta del usuario (mapping no disponible).');
-    return;
-  }
-
-  const map = mappingRoot[userKey];
-  if(!map){
-    alert('No encontré la carpeta del usuario (userKey no coincide).');
-    console.warn('[PDF] userKey:', userKey, 'claves mapping:', Object.keys(mappingRoot));
-    return;
-  }
-
-  const foldersRoot = (typeof window !== 'undefined' && window.trainingFolders)
-                   || (typeof trainingFolders !== 'undefined' ? trainingFolders : null);
-
-  if (!foldersRoot) {
-    alert('No encontré las rutinas (trainingFolders no disponible).');
-    return;
-  }
-
+//DESCARGAR CARPETA - PDF!
+// Abre una ventana con el "formato hoja" y permite descargar PDF tal cual se ve
+function openPrintableRoutine(userKey){
+  // 1) Datos
+  const map = (window.userRoutineMapping || {})[userKey];
+  if(!map){ alert('No encontré la carpeta del usuario.'); return; }
   const { folder, routine, displayName, userName } = map;
-  const data = foldersRoot?.[folder]?.routines?.[routine];
-  if(!data){
-    alert('No encontré la rutina del usuario (folder/routine inválidos).');
-    console.warn('[PDF] folder/routine:', { folder, routine }, 'carpetas:', Object.keys(foldersRoot));
-    return;
-  }
+  const data = (window.trainingFolders?.[folder]?.routines?.[routine]);
+  if(!data){ alert('No encontré la rutina del usuario.'); return; }
+  const name = (displayName || userName || data.name || 'Usuario');
 
-  const name = (displayName || userName || fallbackName || (data && data.name) || 'Usuario');
+  // 2) HTML del cuerpo (portada + días)
+  const bodyHTML = buildPrintableBodyHTML({ userName: name, routineData: data });
 
+  // 3) Abrir ventana con CSS de hoja + toolbar + html2pdf
+  const w = window.open('', '_blank');
+  if(!w){ alert('Habilitá pop-ups para ver/descargar la versión hoja.'); return; }
+  w.document.open();
+  w.document.write(`
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+      <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="assets/css/print-style.css">
+      <title>Mi Plan de Entrenamiento – ${escapeHTML(name)}</title>
+    </head>
+    <body>
+      <div class="toolbar">
+        <button id="btn-pdf" class="btn">⬇️ Descargar PDF</button>
+        <button id="btn-print" class="btn" style="background:#2563eb">🖨️ Imprimir</button>
+        <button id="btn-close" class="btn" style="background:#9ca3af">✖️ Cerrar</button>
+      </div>
+      <div id="print-root">
+        ${bodyHTML}
+      </div>
 
-  // 2) Documento completo (con <html>...<head><style>...</style>...<body>...</body>)
-  const fullHTML = buildPrintableDocumentHTML({ userName: name, routineData: data });
-
-  // 3) Crear un iframe oculto para que el <head><style> APLIQUE
-  let iframe = document.getElementById('pdf-iframe');
-  if (!iframe) {
-    iframe = document.createElement('iframe');
-    iframe.id = 'pdf-iframe';
-    iframe.style.position = 'fixed';
-    iframe.style.left = '-99999px';
-    iframe.style.top = '0';
-    iframe.style.width = '0';
-    iframe.style.height = '0';
-    document.body.appendChild(iframe);
-  }
-
-  const doc = iframe.contentWindow.document;
-  doc.open();
-  doc.write(fullHTML);
-  doc.close();
-
-  // 4) Esperar a que el iframe pinte estilos y luego generar PDF
-  const run = () => {
-    try {
-      const printable = iframe.contentWindow.document.body;
-const opt = {
-  margin: [16,14,16,14],
-  filename: 'Mi Plan de Entrenamiento.pdf',
-  image: { type: 'jpeg', quality: 0.98 },
-  html2canvas: { scale: 3, useCORS: true, letterRendering: true, backgroundColor: '#ffffff' },
-  jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-  pagebreak: { mode: ['css', 'legacy'] }
-};
-
-      html2pdf().set(opt).from(printable).save().then(() => {
-        // opcional: limpiar
-        // iframe.remove(); // si querés removerlo
-      });
-    } catch (e) {
-      console.error(e);
-      alert('No pude generar el PDF. Intentá nuevamente.');
-    }
-  };
-
-  // Si el iframe ya está listo, ejecutamos. Si no, esperamos un tick.
-  if (iframe.contentWindow.document.readyState === 'complete') {
-    setTimeout(run, 50);
-  } else {
-    iframe.onload = () => setTimeout(run, 50);
-  }
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" referrerpolicy="no-referrer"></script>
+      <script>
+        const root = document.getElementById('print-root');
+        document.getElementById('btn-pdf').onclick = () => {
+          const opt = {
+            margin: [16,14,16,14],
+            filename: 'Mi Plan de Entrenamiento - ${escapeHTML(name)}.pdf',
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { scale: 3, useCORS: true, backgroundColor: '#ffffff' },
+            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+            pagebreak: { mode: ['css','legacy'] }
+          };
+          html2pdf().set(opt).from(root).save();
+        };
+        document.getElementById('btn-print').onclick = () => window.print();
+        document.getElementById('btn-close').onclick = () => window.close();
+      </script>
+    </body>
+    </html>
+  `);
+  w.document.close();
 }
 
-
-// ================== Construcción del documento imprimible ==================
-
-function buildPrintableDocumentHTML({ userName, routineData }){
-  const today = new Date().toLocaleDateString();
-
-  // CSS de impresión (A4), colores y tablas
-const CSS = `
-  <style>
-    @page { size: A4; margin: 16mm 14mm; }
-    * { box-sizing: border-box; }
-
-    :root{
-      --text: #0f172a;
-      --muted:#475569;
-      --blue:#1e3a8a;
-      --blue-soft:#e6eeff;
-      --blue-soft-2:#dbeafe;
-      --green:#065f46;
-      --green-soft:#dcfce7;
-      --red:#991b1b;
-      --red-soft:#fee2e2;
-      --yellow:#854d0e;
-      --yellow-soft:#fef9c3;
-      --violet:#5b21b6;
-      --violet-soft:#ede9fe;
-      --line:#e2e8f0;
-      --card:#ffffff;
-    }
-
-    html, body { background:#fff; }
-    body {
-      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial;
-      color: var(--text); margin: 0; line-height: 1.35;
-    }
-
-    /* Contenedor de página */
-    .page { page-break-after: always; }
-    .page:last-child { page-break-after: auto; }
-
-    /* Títulos y textos */
-    h1 { font-size: 24px; color:#133e87; margin: 0 0 10px; }
-    h2 { font-size: 18px; color:#03346e; margin: 0 0 8px; }
-    h3 { font-size: 15px; margin: 12px 0 8px; }
-    p  { margin: 0 0 8px; }
-    .muted { color: var(--muted); }
-
-    /* Portada */
-    .cover-box {
-      border:1px solid #cfe0ff; background:#f7fbff; border-radius:12px; padding:14px; margin-top:10px;
-    }
-
-    /* Sección “Más información” */
-    .section-title {
-      font-weight:800; padding:6px 10px; border-radius:10px; display:inline-block;
-      border:1px solid #c7d2fe; background: var(--blue-soft-2); color: var(--blue);
-      page-break-after: avoid;
-    }
-    .moreinfo {
-      border:1px solid #c7d2fe; background: #faf8ff;
-      border-radius:12px; padding:12px; margin-top:10px;
-    }
-    .moreinfo b, .moreinfo strong { color:#111827; }
-
-    /* Cabecera de día */
-    .day-header {
-      display:flex; align-items:baseline; justify-content:space-between; margin-bottom:10px;
-      border-bottom:1px solid var(--line); padding-bottom:6px;
-    }
-    .date { font-size:12px; color:#64748b; }
-
-    /* Chips de sección (colores planos — nada de gradientes) */
-    .sec-green  { background: var(--green-soft);  color: var(--green);  border:1px solid #86efac; }
-    .sec-red    { background: var(--red-soft);    color: var(--red);    border:1px solid #fecaca; }
-    .sec-yellow { background: var(--yellow-soft); color: var(--yellow); border:1px solid #fde68a; }
-    .sec-blue   { background: var(--blue-soft-2); color: var(--blue);   border:1px solid #bfdbfe; }
-
-    /* Tabla de ejercicios: limpia, ancha y legible */
-    .table { width:100%; border-collapse: separate; border-spacing:0 8px; }
-    .thead { margin-bottom:4px; page-break-inside: avoid; }
-    .row { display:grid; grid-template-columns: 1.5fr 0.35fr 0.35fr 0.45fr; gap:8px; align-items:center; page-break-inside: avoid; }
-    .cell {
-      background: var(--card);
-      border:1px solid #cbd5e1;
-      border-radius:10px; padding:8px 10px; color:#0f172a; font-weight:700;
-    }
-    .thead .cell { background:#eef2ff; border-color:#c7d2fe; color:#1e40af; }
-
-    /* Descripción debajo: gris clara, 100% ancho */
-    .cell-muted {
-      background: #f8fafc; border:1px dashed #cbd5e1; color:#334155; font-weight:400;
-      grid-column: 1 / -1; margin-top:4px; border-radius:10px; padding:8px 10px;
-    }
-
-    /* Evitar cortes feos */
-    .row, .cell, .cell-muted, .moreinfo, .cover-box { page-break-inside: avoid; }
-  </style>
-`;
-
-
-  // Portada con “Más información”
-  const coverHTML = buildCoverHTML(userName, routineData);
-
-  // Páginas de días
+// Construye el cuerpo: Portada + un día por hoja
+function buildPrintableBodyHTML({ userName, routineData }){
+  const cover = buildCoverHTML_plain(userName, routineData);
   const plan = routineData.plan || {};
-  const daysHTML = Object.keys(plan).map(dayName => buildDayPageHTML(dayName, plan[dayName])).join('');
-
-  // Documento completo
-  return `
-  <!DOCTYPE html>
-  <html lang="es">
-  <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">${CSS}</head>
-  <body>
-    ${coverHTML}
-    ${daysHTML}
-  </body>
-  </html>`;
+  const days = Object.keys(plan).map(dayName => buildDayPageHTML_plain(dayName, plan[dayName])).join('');
+  return cover + days;
 }
 
-// ----------------- Portada + "Más información" -----------------
-
-function buildCoverHTML(userName, routineData){
+// Portada con "Más información" (sin CSS inline, usa print-style.css)
+function buildCoverHTML_plain(userName, routineData){
   const today = new Date().toLocaleDateString();
   const infoSections = Array.isArray(routineData.infoSections) ? routineData.infoSections : [];
-
   const moreInfo = infoSections.length
     ? `
-      <h3 class="section-title sec-blue">Más información</h3>
+      <h3 class="section-title">Más información</h3>
       <div class="moreinfo">
         ${infoSections.map(sec => `
           ${sec.title ? `<p><b>${escapeHTML(sec.title)}</b></p>` : ''}
@@ -3952,34 +3811,144 @@ function buildCoverHTML(userName, routineData){
 
   return `
   <section class="page">
-    <h1 class="cover-title">Mi Plan de Entrenamiento – ${escapeHTML(userName)}</h1>
+    <h1>Mi Plan de Entrenamiento – ${escapeHTML(userName)}</h1>
     <div class="muted">${today}</div>
 
     <div class="cover-box">
-      <p>Hola ${escapeHTML(userName)}! Este es tu plan de entrenamiento personalizado.</p>
+      <p>Hola ${escapeHTML(userName)}! Este es tu plan de entrenamiento personalizado. Guardá este PDF para verlo sin conexión.</p>
+      <p class="muted">Recordá calentar bien, controlar la técnica y respetar los descansos. 💪</p>
     </div>
 
     ${moreInfo}
   </section>`;
 }
 
-// ----------------- Una página por día -----------------
-
-function buildDayPageHTML(dayName, dayData){
-  // Orden de secciones deseado
-  const order = ["Acondicionamiento", "Movilidad", "Entrenamiento de fuerza", "Fuerza", "HIIT", "Cardio HIIT"];
+// Un día completo por hoja con secciones y tarjetas como en el mock
+function buildDayPageHTML_plain(dayName, dayData){
+  const order = ["Acondicionamiento", "Acondicionamiento & Calentamiento", "Movilidad", "Entrenamiento de Fuerza", "Entrenamiento de fuerza", "Fuerza", "HIIT", "Cardio HIIT"];
   const sections = normalizeDaySections(dayData, order);
 
   return `
   <section class="page">
     <div class="day-header">
-      <h2 class="day-title">📅 ${escapeHTML(dayName)}</h2>
+      <h2>📅 ${escapeHTML(dayName)}</h2>
       <div class="date">${new Date().toLocaleDateString()}</div>
     </div>
-
-    ${sections.map(sec => renderSectionTable(sec)).join('')}
+    ${sections.map(sec => renderSectionBlock_plain(sec)).join('')}
   </section>`;
 }
+
+// ===== helpers de secciones/colores y tarjetas =====
+function normalizeDaySections(dayData, preferredOrder){
+  if (Array.isArray(dayData)){
+    return [{ title: "Entrenamiento", kind: "blue", list: dayData }];
+  }
+  const blocks = Object.entries(dayData || {}).map(([title, list]) => ({
+    title, kind: detectKind(title), list: list || []
+  }));
+  // ordenar por preferencia si el título aparece en la lista
+  blocks.sort((a,b)=> preferredOrder.indexOf(a.title) - preferredOrder.indexOf(b.title));
+  return blocks;
+}
+
+function detectKind(title){
+  const t = (title||'').toLowerCase();
+  if (t.includes('acond') || t.includes('movil') || t.includes('calent')) return 'green';
+  if (t.includes('fuerza')) return 'red';
+  if (t.includes('hiit')) return 'yellow';
+  return 'blue';
+}
+
+function renderSectionBlock_plain(section){
+  const wrap = section.kind==='green' ? 'sec sec-green'
+            : section.kind==='red'   ? 'sec sec-red'
+            : section.kind==='yellow'? 'sec sec-yellow' : 'sec';
+  const title = section.kind==='green' ? 'sec-title green'
+             : section.kind==='red'   ? 'sec-title red'
+             : section.kind==='yellow'? 'sec-title yellow' : 'sec-title';
+
+  const body = (section.list || []).map(renderEntryCard_plain).join('');
+  return `
+    <div class="${wrap}">
+      <div class="${title}">${escapeHTML(section.title)}</div>
+      ${body || `<div class="desc">Sin ejercicios cargados.</div>`}
+    </div>
+  `;
+}
+
+function renderEntryCard_plain(entry){
+  // Superserie → panel violeta con ejercicios dentro
+  if (entry && typeof entry==='object' && Array.isArray(entry.superset)){
+    const label = entry.superset.length===2 ? 'Biserie'
+                : entry.superset.length===3 ? 'Triserie'
+                : entry.superset.length>3  ? 'Multiserie' : 'Serie compuesta';
+    const restText = entry.rest || ''; // si lo pasás en tu data
+    const items = entry.superset.map(t => renderExerciseCard_plain(t)).join('');
+    return `
+      <div class="panel">
+        <div class="panel-head">
+          <div>${label}</div>
+          <div style="font-weight:700; color:#7c3aed">Sin descanso entre ejercicios</div>
+        </div>
+        ${items}
+        ${restText ? `<div class="panel-foot">Descanso ${escapeHTML(restText)}</div>` : ''}
+      </div>
+    `;
+  }
+  // Ejercicio simple
+  return renderExerciseCard_plain(entry);
+}
+
+function renderExerciseCard_plain(entry){
+  const line = (entry || '').toString();
+  const { namePart, detailsPart } = splitNameAndDetails(line);
+  const parsed = parseDetails(detailsPart);
+
+  const chips = `
+    <span class="chip">Series: ${parsed.series || '—'}</span>
+    <span class="chip">Reps: ${parsed.reps || '—'}</span>
+  `;
+  const rest = parsed.rest ? `<span class="rest">Descanso ${parsed.rest}</span>` : '';
+  const desc = parsed.desc ? `<div class="desc">${escapeHTML(parsed.desc)}</div>` : '';
+
+  return `
+    <div class="ex">
+      <div class="ex-top">
+        <div class="ex-name">${escapeHTML(namePart)}</div>
+        <div class="chips">${chips}${rest ? `<span style="margin-left:6px">${rest}</span>` : ''}</div>
+      </div>
+      ${desc}
+    </div>
+  `;
+}
+
+// ===== parseo y util =====
+function splitNameAndDetails(line){
+  const parts = (line||'').split(/[—-]+/); // largo o corto
+  const name = (parts[0]||'').trim() || line;
+  const details = parts.slice(1).join(' - ').trim();
+  return { namePart: name, detailsPart: details };
+}
+// detecta series x reps y descanso, deja el resto como descripción
+function parseDetails(s){
+  if (!s) return { desc: '' };
+  let rest = '', series = '', reps = '', desc = s;
+
+  const restMatch = s.match(/(\b\d+\s?(?:-\s?\d+)?\s?(?:s|min|’|\'|m)\b)/i);
+  if (restMatch){ rest = restMatch[1].replace(/\s+/g,'').replace('min','m'); desc = desc.replace(restMatch[1],'').trim(); }
+
+  const srMatch = s.match(/(\d+)\s*[x×]\s*(\d+(?:\s?-\s?\d+)?)/i);
+  if (srMatch){
+    series = srMatch[1]; reps = srMatch[2].replace(/\s+/g,''); desc = desc.replace(srMatch[0],'').trim();
+  } else {
+    const srAlt = s.match(/(\d+)\s*series?.*?(\d+(?:\s?-\s?\d+)?)/i);
+    if (srAlt){ series = srAlt[1]; reps = srAlt[2].replace(/\s+/g,''); desc = desc.replace(srAlt[0],'').trim(); }
+  }
+  desc = desc.replace(/^[-–—]\s*/,'').trim();
+  return { series, reps, rest, desc };
+}
+function escapeHTML(s){ return (s||'').replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); }
+
 
 // ----------------- Helpers de secciones/colores -----------------
 
