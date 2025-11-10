@@ -3700,7 +3700,7 @@ html += `
     <div class="flex justify-between items-center">
       <div>
         <h4 class="text-lg font-bold text-purple-800 mb-1">⬇️ Descargar Entrenamiento</h4>
-        <p class="text-purple-700 text-sm">Tené tu plan en el celular! (Estoy en proceso... le falta pulir)</p>
+        <p class="text-purple-700 text-sm">Tené tu plan en el celular! (Aún no disponible)</p>
       </div>
       <div class="text-purple-700">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"></svg>
@@ -3717,7 +3717,7 @@ html += `
 
 // ================== PDF ESTÁTICO: UNA HOJA POR SECCIÓN ==================
 
-function generateTrainingPDF(userKey, fallbackName){
+function enerateTrainingPDF(userKey, fallbackName){
   // 1) Datos de usuario y rutina
   // Preferir window.* si está, o caer al scope local si existe
   const mappingRoot = (typeof window !== 'undefined' && window.userRoutineMapping)
