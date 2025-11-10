@@ -3411,7 +3411,6 @@ const USER_HIIT_DAY_NOTES = {
 
 };
 
-
 /* ===========================
    MODALES – OPEN/CLOSE
 =========================== */
@@ -3706,7 +3705,7 @@ try { if (typeof trainingFolders !== 'undefined') window.trainingFolders = train
 html += `
   <div id="downloadUserFolderCard"
       class="bg-gradient-to-r from-purple-50 to-purple-100 rounded-lg p-6 card-hover cursor-pointer border border-purple-200"
-      onclick="openPrintableRoutine('${userKey}')"
+      onclick="openPrintableRoutine('${userKey}')">
     <div class="flex justify-between items-center">
       <div>
         <h4 class="text-lg font-bold text-purple-800 mb-1">Descargar Entrenamiento</h4>
@@ -3724,6 +3723,113 @@ html += `
   content.innerHTML = html;
   modal.classList.add('show');
 }
+
+// === 🔧 Exponer los datos globalmente para funciones que se abren en otras ventanas ===
+try { if (typeof userRoutineMapping !== 'undefined') window.userRoutineMapping = userRoutineMapping; } catch(_){}
+try { if (typeof trainingFolders !== 'undefined') window.trainingFolders = trainingFolders; } catch(_){}
+try { if (typeof exerciseDatabase !== 'undefined') window.exerciseDatabase = exerciseDatabase; } catch(_){}
+
+
+// Normaliza: quita tildes, paréntesis y su contenido, signos, dobles espacios, minúsculas
+function normalizeName(s){
+  return (s || '')
+    .toString()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')   // sin acentos
+    .replace(/\([^)]*\)/g, ' ')                         // sin (paréntesis)
+    .replace(/[\.,;:!¡¿?\[\]{}|/\\]/g, ' ')             // sin signos
+    .replace(/\b(en|con|a|de|la|el|los|las|y|o)\b/gi,' ')// quitar partículas comunes
+    .replace(/\s+/g, ' ')
+    .trim()
+    .toLowerCase();
+}
+
+// genera variantes: "sentada"→"sentado", "maquina"→"", etc. para ampliar coincidencias
+function nameVariants(s){
+  const base = normalizeName(s);
+  const v = new Set([base]);
+
+  // quitar calificadores comunes de contexto
+  v.add(base.replace(/\b(en maquina|maquina|en banco|en smith|smith|con mancuernas|mancuernas|con barra|barra|en polea|polea)\b/g, ' ').replace(/\s+/g,' ').trim());
+
+  // fem/masc
+  v.add(base.replace(/\bsentada\b/,'sentado'));
+  v.add(base.replace(/\bsentado\b/,'sentada'));
+
+  // plural→singular básico
+  v.add(base.replace(/\bes\b$/,'').replace(/\bs\b/g,'').trim());
+
+  return Array.from(v).filter(Boolean);
+}
+
+/**
+ * exerciseDatabase puede ser:
+ *  - objeto { "isquiotibiales sentada": {description, aliases:[...]}, ... }
+ *  - array  [ { name:"...", description:"...", aliases:[...] }, ... ]
+ *  - claves con html en description/desc/texto
+ */
+function getExerciseDescriptionByName(name){
+  const db = (window.exerciseDatabase || {});
+  const variants = nameVariants(name);
+  const list = Array.isArray(db) ? db : Object.keys(db).map(k => ({ key:k, ...db[k] }));
+
+  // 1) exacto por clave normalizada
+  for (const item of list){
+    const keyName = normalizeName(item.name || item.key || '');
+    if (!keyName) continue;
+    for (const v of variants){
+      if (keyName === v) {
+        const desc = item.description || item.desc || item.texto || '';
+        return desc || '';
+      }
+    }
+  }
+
+  // 2) por alias exacto
+  for (const item of list){
+    const aliases = item.aliases || item.alias || [];
+    const arr = Array.isArray(aliases) ? aliases : [aliases];
+    for (const al of arr){
+      const alN = normalizeName(al);
+      for (const v of variants){
+        if (alN && alN === v){
+          const desc = item.description || item.desc || item.texto || '';
+          return desc || '';
+        }
+      }
+    }
+  }
+
+  // 3) fuzzy "incluye" (tokens contenidos en cualquier sentido)
+  for (const item of list){
+    const keyName = normalizeName(item.name || item.key || '');
+    if (!keyName) continue;
+    for (const v of variants){
+      if (keyName.includes(v) || v.includes(keyName)){
+        const desc = item.description || item.desc || item.texto || '';
+        if (desc) return desc;
+      }
+    }
+  }
+
+  // 4) por alias fuzzy
+  for (const item of list){
+    const aliases = item.aliases || item.alias || [];
+    const arr = Array.isArray(aliases) ? aliases : [aliases];
+    for (const al of arr){
+      const alN = normalizeName(al);
+      for (const v of variants){
+        if (alN && (alN.includes(v) || v.includes(alN))){
+          const desc = item.description || item.desc || item.texto || '';
+          if (desc) return desc;
+        }
+      }
+    }
+  }
+
+  return '';
+}
+
+
 
 //DESCARGAR CARPETA - PDF!
 // Abre una ventana con el "formato hoja" y permite descargar PDF tal cual se ve
@@ -3907,9 +4013,16 @@ function renderExerciseCard_plain(entry){
     <span class="chip">Series: ${parsed.seriesCount || '—'}</span>
     <span class="chip">Reps: ${parsed.repsText || '—'}</span>
   `;
-  const restVal = parsed.rest || restFromLine; // prioridad al que esté en detalles; si no, al que venía en el nombre
+  const restVal = parsed.rest || restFromLine;
   const rest = restVal ? `<span class="rest">Descanso ${restVal}</span>` : '';
-  const desc = ''; // tus descripciones vienen en el texto cuando corresponde; acá no forzamos nada
+
+  // 🔎 buscar en DB; si no hay, usar residual del parser
+  let description = getExerciseDescriptionByName(namePart) || parsed.desc || '';
+  if (description && !/[<>]/.test(description)) {
+    // es texto plano → respetar saltos
+    description = description.replace(/\r?\n/g, '<br>');
+  }
+  const descHtml = description ? `<div class="desc">${description}</div>` : '';
 
   return `
     <div class="ex">
@@ -3917,10 +4030,11 @@ function renderExerciseCard_plain(entry){
         <div class="ex-name">${escapeHTML(namePart)}</div>
         <div class="chips">${chips}${rest ? `<span style="margin-left:6px">${rest}</span>` : ''}</div>
       </div>
-      ${desc}
+      ${descHtml}
     </div>
   `;
 }
+
 
 // ===== parseo y util =====
 function splitNameAndDetails(line){
@@ -3933,60 +4047,58 @@ function splitNameAndDetails(line){
 function parseDetails(s){
   if (!s) return { seriesCount:'', repsText:'', rest:'', desc:'' };
 
-  let txt = ' ' + s + ' '; // acolchonamos
-  let rest = '';
+  let txt = ' ' + s + ' ';
   let seriesCount = '';
   let repsText = '';
-  let desc = '';
+  let rest = '';
+  let leftover = txt; // copia para luego extraer desc residual
 
-  // 1) Capturar descanso (rest=...) o formatos sueltos tipo "1-2min", "90s", "2m"
-  // - rest=2, rest=2m, rest=2min, rest=90s
-  const restEq = txt.match(/rest\s*=\s*([0-9]+(?:\s*-\s*[0-9]+)?\s*(?:min|m|s)?)/i);
-  if (restEq) {
-    rest = restEq[1].replace(/\s+/g,'').replace(/min/i,'m');
-    txt = txt.replace(restEq[0], ' ');
+  // descanso suelto tipo "1-2min", "90s", "2m", etc.
+  const restFree = txt.match(/(^|\s)([0-9]+(?:\s*-\s*[0-9]+)?\s*(?:min|m|s))(\s|$)/i);
+  if (restFree){
+    rest = restFree[2].replace(/\s+/g,'').replace(/min/i,'m');
+    txt = txt.replace(restFree[0], ' ');
+    leftover = leftover.replace(restFree[0], ' ');
+  }
+
+  // series: "3x", "3 x", "3×"
+  let m = txt.match(/(^|\s)(\d+)\s*[x×]/i);
+  if (m){
+    seriesCount = m[2];
+    const start = txt.indexOf(m[0]) + m[0].length;
+    repsText = txt.slice(start).trim();
+    leftover = leftover.replace(m[0], ' ');
   } else {
-    // - 1-2min, 90s, 2m, 2min
-    const restFree = txt.match(/(^|\s)([0-9]+(?:\s*-\s*[0-9]+)?\s*(?:min|m|s))(\s|$)/i);
-    if (restFree){
-      rest = restFree[2].replace(/\s+/g,'').replace(/min/i,'m');
-      txt = txt.replace(restFree[0], ' ');
+    // "3 series" / "3 serie"
+    const m2 = txt.match(/(^|\s)(\d+)\s*series?/i);
+    if (m2){
+      seriesCount = m2[2];
+      const start = txt.indexOf(m2[0]) + m2[0].length;
+      const restTxt = txt.slice(start).trim();
+      const deIdx = restTxt.toLowerCase().indexOf('de ');
+      repsText = (deIdx >= 0 ? restTxt.slice(deIdx + 3) : restTxt).trim();
+      leftover = leftover.replace(m2[0], ' ');
     }
   }
 
-  // 2) Series: capturar número antes de x/× o texto "3 x", "3x", "3 ×"
-  const seriesMatch = txt.match(/(^|\s)(\d+)\s*[x×]/i);
-  if (seriesMatch){
-    seriesCount = seriesMatch[2];
-    // reps = todo lo que sigue después de x/× hasta el final (limpiando el descanso ya removido)
-    const idx = txt.indexOf(seriesMatch[0]) + seriesMatch[0].length;
-    repsText = txt.slice(idx).trim();
-  } else {
-    // Alternativa: "3 series de 12• 10• 8", etc.
-    const seriesAlt = txt.match(/(^|\s)(\d+)\s*series?/i);
-    if (seriesAlt){
-      seriesCount = seriesAlt[2];
-      const idx = txt.indexOf(seriesAlt[0]) + seriesAlt[0].length;
-      // buscar "de ..." si existe
-      const deIdx = txt.slice(idx).toLowerCase().indexOf('de');
-      repsText = (deIdx >= 0 ? txt.slice(idx + deIdx + 2) : txt.slice(idx)).trim();
-    }
-  }
-
-  // Limpiar reps: eliminar duplicados de espacios, mantener •, (), +, flechas ↑ ↓, guiones
   repsText = repsText
     .replace(/\s+/g,' ')
     .replace(/\s*•\s*/g,' • ')
     .replace(/\s*-\s*/g,'-')
     .trim();
 
-  // Lo que quede fuera de series/reps/rest lo tratamos como descripción (pocas veces necesario)
-  // Para este flujo usamos desc vacío (mostrás descripciones aparte en tus textos), pero
-  // si querés conservar algo, podrías asignar desc = txt limpiado.
-  desc = '';
+  // "sobrante" como descripción básica (si existiera)
+  let desc = leftover
+    .replace(/\s+/g,' ')
+    .replace(/\s*•\s*/g,' • ')
+    .trim();
+
+  // Si desc es igual al texto original o está vacío/no aporta, lo limpiamos
+  if (!desc || desc.length < 4 || desc === s) desc = '';
 
   return { seriesCount, repsText, rest, desc };
 }
+
 
 function escapeHTML(s){ return (s||'').replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); }
 
@@ -4049,22 +4161,36 @@ function renderSectionTable(section){
 // ----------------- Render de cada ejercicio -----------------
 
 function renderExerciseRow(entry){
-  if (entry && typeof entry==='object' && Array.isArray(entry.superset)){
-    // Superserie: renderizar cada línea como fila
+  // Soporte de biseries/superseries
+  if (entry && typeof entry === 'object' && Array.isArray(entry.superset)){
     return entry.superset.map(t => renderExerciseRow(t)).join('');
   }
-  const line = (entry || '').toString();
 
+  const line = (entry || '').toString();
   const { namePart, detailsPart } = splitNameAndDetails(line);
   const parsed = parseDetails(detailsPart);
 
-  const nameCell = `<div class="cell">${escapeHTML(namePart)}</div>`;
-  const seriesCell = `<div class="cell">${parsed.series || '—'}</div>`;
-  const repsCell   = `<div class="cell">${parsed.reps   || '—'}</div>`;
-  const restCell   = `<div class="cell">${parsed.rest   || '—'}</div>`;
+  // Campos nuevos del parser:
+  const seriesVal = parsed.series ?? parsed.seriesCount ?? '—';
+  const repsVal   = parsed.reps   ?? parsed.repsText   ?? '—';
+  const restVal   = parsed.rest   || '—';
 
-  const descRow = parsed.desc
-    ? `<div class="cell-muted">${escapeHTML(parsed.desc)}</div>`
+  // 1) Descripción capturada en la línea (si existiese)
+  let desc = (parsed.desc || '').trim();
+
+  // 2) Si no hay descripción en la línea, intentamos buscar en la base de ejercicios
+  if (!desc && typeof getExerciseDescriptionByName === 'function') {
+    const fromDB = getExerciseDescriptionByName(namePart);
+    if (fromDB) desc = fromDB;
+  }
+
+  const nameCell   = `<div class="cell">${escapeHTML(namePart)}</div>`;
+  const seriesCell = `<div class="cell">${escapeHTML(seriesVal)}</div>`;
+  const repsCell   = `<div class="cell">${escapeHTML(repsVal)}</div>`;
+  const restCell   = `<div class="cell">${escapeHTML(restVal)}</div>`;
+
+  const descRow = desc
+    ? `<div class="cell-muted">${escapeHTML(desc)}</div>`
     : '';
 
   return `
@@ -4072,6 +4198,7 @@ function renderExerciseRow(entry){
     ${descRow}
   `;
 }
+
 
 // ----------------- Parseo de línea “Nombre — detalles” -----------------
 
