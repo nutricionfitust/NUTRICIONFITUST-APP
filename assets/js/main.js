@@ -824,7 +824,7 @@ const trainingFolders = {
           ],
           "Entrenamiento de Fuerza": [
             "Polea al Pecho Agarre Prono Cerrado 4 x 14• 12• ↓12• ↓(10+6) rest=2min",
-            "Remo Unilateral Sentada en Máquina 3 x 12• ↓10• ↓10• rest=2min",
+            "Remo Unilateral Sentada en Máquina 3 x 12• ↓10• ↓10 rest=2min",
           {
             superset: [
             "Vuelos Posteriores con Mancuernas 3 x 12• ↓10• 10",
@@ -3815,8 +3815,7 @@ function buildCoverHTML_plain(userName, routineData){
     <div class="muted">${today}</div>
 
     <div class="cover-box">
-      <p>Hola ${escapeHTML(userName)}! Este es tu plan de entrenamiento personalizado. Guardá este PDF para verlo sin conexión.</p>
-      <p class="muted">Recordá calentar bien, controlar la técnica y respetar los descansos. 💪</p>
+      <p>Hola ${escapeHTML(userName)}! Este es tu plan de entrenamiento personalizado.</p>
     </div>
 
     ${moreInfo}
@@ -3901,15 +3900,16 @@ function renderEntryCard_plain(entry){
 
 function renderExerciseCard_plain(entry){
   const line = (entry || '').toString();
-  const { namePart, detailsPart } = splitNameAndDetails(line);
+  const { namePart, detailsPart, restFromLine } = splitNameAndDetails(line);
   const parsed = parseDetails(detailsPart);
 
   const chips = `
     <span class="chip">Series: ${parsed.seriesCount || '—'}</span>
     <span class="chip">Reps: ${parsed.repsText || '—'}</span>
   `;
-  const rest = parsed.rest ? `<span class="rest">Descanso ${parsed.rest}</span>` : '';
-  const desc = parsed.desc ? `<div class="desc">${escapeHTML(parsed.desc)}</div>` : '';
+  const restVal = parsed.rest || restFromLine; // prioridad al que esté en detalles; si no, al que venía en el nombre
+  const rest = restVal ? `<span class="rest">Descanso ${restVal}</span>` : '';
+  const desc = ''; // tus descripciones vienen en el texto cuando corresponde; acá no forzamos nada
 
   return `
     <div class="ex">
@@ -4076,10 +4076,37 @@ function renderExerciseRow(entry){
 // ----------------- Parseo de línea “Nombre — detalles” -----------------
 
 function splitNameAndDetails(line){
-  const parts = (line||'').split(/[—-]+/); // largo o corto
-  const name = (parts[0]||'').trim() || line;
-  const details = parts.slice(1).join(' - ').trim();
-  return { namePart: name, detailsPart: details };
+  const original = (line || '').toString();
+
+  // 1) extraer y remover "rest=..." del texto completo (p.ej., rest=1, rest=1-2, rest=2min, rest=90s)
+  let rest = '';
+  let tmp = ' ' + original + ' ';
+  const restEq = tmp.match(/rest\s*=\s*([0-9]+(?:\s*-\s*[0-9]+)?\s*(?:min|m|s)?)/i);
+  if (restEq){
+    rest = restEq[1].replace(/\s+/g,'').replace(/min/i,'m');
+    tmp = tmp.replace(restEq[0], ' ');
+  }
+
+  // 2) localizar el inicio de los detalles por patrón de series
+  //    - "3x", "3 x", "3×"
+  //    - "3 series" / "3 serie"
+  const idxX = tmp.search(/\d+\s*[x×]/i);
+  const idxSerie = tmp.search(/\d+\s*series?/i);
+
+  let idx = -1;
+  if (idxX >= 0 && idxSerie >= 0) idx = Math.min(idxX, idxSerie);
+  else if (idxX >= 0) idx = idxX;
+  else if (idxSerie >= 0) idx = idxSerie;
+
+  if (idx === -1){
+    // no encontramos patrón: todo es nombre
+    return { namePart: original.trim(), detailsPart: '', restFromLine: rest };
+  }
+
+  const namePart = tmp.slice(0, idx).trim();
+  const detailsPart = tmp.slice(idx).trim();
+
+  return { namePart, detailsPart, restFromLine: rest };
 }
 
 /**
@@ -4089,40 +4116,47 @@ function splitNameAndDetails(line){
  * - descripción textual antes o después (palabras, frases)
  */
 function parseDetails(s){
-  if (!s) return { desc: '' };
+  if (!s) return { seriesCount:'', repsText:'', rest:'' };
 
+  let txt = ' ' + s + ' ';
+  let seriesCount = '';
+  let repsText = '';
   let rest = '';
-  let series = '';
-  let reps = '';
-  let desc = s;
 
-  // 1) descanso
-  const restMatch = s.match(/(\b\d+\s?(?:-\s?\d+)?\s?(?:s|min|’|\'|m)\b)/i);
-  if (restMatch){
-    rest = restMatch[1].replace(/\s+/g,'').replace('min','m');
-    desc = desc.replace(restMatch[1],'').trim();
+  // (por si quedara un descanso suelto en los detalles)
+  const restFree = txt.match(/(^|\s)([0-9]+(?:\s*-\s*[0-9]+)?\s*(?:min|m|s))(\s|$)/i);
+  if (restFree){
+    rest = restFree[2].replace(/\s+/g,'').replace(/min/i,'m');
+    txt = txt.replace(restFree[0], ' ');
   }
 
-  // 2) series x reps (ej. 4x12 o 4 x 10-12)
-  const srMatch = s.match(/(\d+)\s*[x×]\s*(\d+(?:\s?-\s?\d+)?)/i);
-  if (srMatch){
-    series = srMatch[1];
-    reps = srMatch[2].replace(/\s+/g,'');
-    desc = desc.replace(srMatch[0],'').trim();
+  // series: "3x", "3 x", "3×"  (prioridad)
+  let m = txt.match(/(^|\s)(\d+)\s*[x×]/i);
+  if (m){
+    seriesCount = m[2];
+    const start = txt.indexOf(m[0]) + m[0].length;
+    repsText = txt.slice(start).trim();
   } else {
-    // a veces viene “3 series de 12-15”
-    const srAlt = s.match(/(\d+)\s*series?.*?(\d+(?:\s?-\s?\d+)?)/i);
-    if (srAlt){
-      series = srAlt[1];
-      reps = srAlt[2].replace(/\s+/g,'');
-      desc = desc.replace(srAlt[0],'').trim();
+    // alternativa: "3 series" / "3 serie"
+    const m2 = txt.match(/(^|\s)(\d+)\s*series?/i);
+    if (m2){
+      seriesCount = m2[2];
+      const start = txt.indexOf(m2[0]) + m2[0].length;
+      // si viene "de ..." lo saltamos
+      const restTxt = txt.slice(start).trim();
+      const deIdx = restTxt.toLowerCase().indexOf('de ');
+      repsText = (deIdx >= 0 ? restTxt.slice(deIdx + 3) : restTxt).trim();
     }
   }
 
-  // limpiar guiones sobrantes
-  desc = desc.replace(/^[-–—]\s*/,'').trim();
+  // limpiar reps: mantener •, (), +, flechas ↑ ↓, guiones
+  repsText = repsText
+    .replace(/\s+/g,' ')
+    .replace(/\s*•\s*/g,' • ')
+    .replace(/\s*-\s*/g,'-')
+    .trim();
 
-  return { series, reps, rest, desc };
+  return { seriesCount, repsText, rest };
 }
 
 function escapeHTML(s){
