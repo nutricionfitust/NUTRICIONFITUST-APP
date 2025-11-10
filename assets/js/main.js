@@ -3755,8 +3755,8 @@ function openPrintableRoutine(userKey){
     </head>
     <body>
       <div class="toolbar">
-        <button id="btn-pdf" class="btn">⬇️ Descargar PDF</button>
-        <button id="btn-print" class="btn" style="background:#2563eb">🖨️ Imprimir</button>
+        <button id="btn-pdf" class="btn">⬇️ Descargar en PC</button>
+        <button id="btn-print" class="btn" style="background:#2563eb">⬇️ Descargar/ Imprimir</button>
         <button id="btn-close" class="btn" style="background:#9ca3af">✖️ Cerrar</button>
       </div>
       <div id="print-root">
