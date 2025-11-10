@@ -3700,7 +3700,7 @@ html += `
     <div class="flex justify-between items-center">
       <div>
         <h4 class="text-lg font-bold text-purple-800 mb-1">⬇️ Descargar Entrenamiento</h4>
-        <p class="text-purple-700 text-sm">Tené tu plan en el celular!</p>
+        <p class="text-purple-700 text-sm">Tené tu plan en el celular! (Estoy en proceso... le falta pulir)</p>
       </div>
       <div class="text-purple-700">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"></svg>
