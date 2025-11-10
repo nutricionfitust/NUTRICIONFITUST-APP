@@ -762,73 +762,107 @@ const trainingFolders = {
       name: "Azul",
          // PLAN DE ENTRENAMIENTO SEMANAL !      
       plan: {  
-        "Día 1 - Inferior": {
-          "Acondicionamiento & Calentamiento": [
+
+        "Día 1 - Piernas": {
+          "Acondicionamiento & Calentamiento": [            
             {
-            superset: [
-            "Skipping Rodillas Arriba 2 x 30seg",
-            "Patadas Atrás 2 x 30seg",
-            "Sentadillas más Estocadas con Peso (Bolsa) 2 x 16-16",
-          ],
+              superset: [
+            "Rotaciones con Bolsa 3 x 10· 10· 8 a cada lado",
+            "Sentadillas + Estocadas con Mancuernas (o bolsa) 3 x 16· 12· 12",
+            ],
             restAfter: "1min"
           },
             ],
           "Entrenamiento de Fuerza": [
-            "Sentadillas con Barra 6 x (2 aproximaciones)-12-10-8-8 rest=2-3min",
-            "Sentadilla Búlgara con Mancuernas 4 x 12-10-10-8 rest=2min",
-            "Isquiotibiales Acostada 4 x 12-(10+8)-(10+6)-8 rest=1-2min",
-            "Aductores Sentada 3 x 12-(fallo+fallo)-(fallo+fallo) rest=1-2min",
-            "Crunch en Máquina 3 x 16-16-12 rest=1min"
+            "Isquiotibiales Sentada 3 x 12· (12+8)· (10+8) rest=1-2min",
+            "Aductores Sentada 3 x fallo+fallo+fallo rest=1-2min",
+            "Sentadillas en Smith 5 x 16· ↑12· ↑10· ↑8· 8↓ rest=2-4min",
+            "Hip Thrust en Smith 3 x 12· ↑10· ↑8· 8 rest=2-3min",
+            "Peso Muerto Rumano con Mancuernas 3 x 12· 10· 10 rest=2min",
+            "Crunch en Máquina 3 x 16· 12· 12 rest=1-2min"
             ],
           },
-        "Día 2 - Superior":  {
+
+      "Día 2 - Pecho + Biceps + Hombros":  {
           "Acondicionamiento & Calentamiento": [
-            {
+          {
             superset: [
-            "Rotaciones con Bolsa 2 x 20-20",
-            "Biceps más Press Arnold con Mancuernas 2 x 16-12",
+            "Flexiones BB Cerradas 2 x 10· 10",
+            "Biceps + Press Arnold con Mancuernas 2 x 12· 12",
+            "Vuelos Laterales con Mancuernas 2 x 10· 10 (liviano)"
           ],
-            restAfter: "1min"
+            restAfter: "1-2min"
           },
-            ],
-          "Entrenamiento de Fuerza": [
-            "Polea al Pecho Prono Cerrado 4 x 16-12-10-10 rest=2min",
-            "Vuelos Posteriores con Mancuernas 3 x 12-10-10 rest=1-2min",
-            "Press de Pecho en Maquina 4 x 16-12-10-10 rest=2min",
-            "Biceps Martillo Alternado con Mancuernas 3 x 12-10-8 rest=1-2min",
-            "Extensión de Triceps con Polea con Barra  3 x (12+8)-(10+6)-10 rest=1min"
-            ],
-          "Entrenamiento HIIT": [
-            "Correr en Cinta Inclinada"
-            ],
-          },
-        "Día 3 - Inferior":  {
-          "Acondicionamiento & Calentamiento": [
-            {
-            superset: [
-            "Sentadillas más Estocadas con Peso (Bolsa) 2 x 16-16",
-            "Burpees con Flexiones de Brazos 2 x 10-10",
           ],
-            restAfter: "1min"
-          },
-            ],
           "Entrenamiento de Fuerza": [
-            "Isquiotibiales Acostada 4 x 20-(12+8)-(12+8)-10 rest=2min",
-            {
+            "Vuelos Posteriores con Mancuernas 3 x ↑16 · ↓12 · 10 rest=1-2min",
+            "Aperturas Sentada en Máquina 4 x ↑16· ↓(12+8)· 12· ↑10 rest=2-3min",
+            "Press Inclinado con Mancuernas 3 x 12· 12· ↑10· ↑8 rest=2-3min",
+            "Press de Pecho en Máquina 3 x 12· ↓12· ↓(10+6) rest=2-3min",
+          {
             superset: [
-            "Prensa 4 x 16-12-10-10",
-            "Gemelos en Prensa 4 x 16-12-10-10",
+            "Vuelos Laterales con Mancuernas 3 x 12· ↓10· 10",
+            "Biceps Martillo Alternado con Mancuernas 3 x 10· ↑8· 8"
           ],
             restAfter: "2-3min"
           },
-            "Peso Muerto Rumano con Mancuernas 3 x 12-12-12 rest=2min",
-            "Extensión de Cuadriceps Sentada 3 x (12+8)-(12+8)-(10+6) rest=1-2min",
-            "Plancha Frontal 2 x 40seg a 1min rest=1min"
+          ],
+          "Entrenamiento HIIT": [
+            "Correr en Cinta"
+            ],
+          },
+
+        "Día 3 - Espalda + Triceps":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Espalda con Plea 2 x 16· 12",
+            "Flexiones BB 2 x 10· 10",
+          ],
+            restAfter: "1min"
+          },           
+          ],
+          "Entrenamiento de Fuerza": [
+            "Polea al Pecho Agarre Prono Cerrado 4 x 14· 12· ↓12· ↓(10+6) rest=2min",
+            "Remo Unilateral Sentada en Máquina 3 x 12· ↓10· ↓10· rest=2min",
+          {
+            superset: [
+            "Vuelos Posteriores con Mancuernas 3 x 12· ↓10· 10",
+            "Press Francés con Mancuernas 3 x 12· ↓12· ↓10",          
+          ],
+            restAfter: "2min"
+          },           
+            "Extensión de Triceps con Polea con Barra 3 x 12· (12+8)· ↓(12+8)  resst=2min",
+            "Crunch con Polea 3 x 16· 12· 12 rest=1-2min"
+          ],
+          },
+
+        "Día 4 - Piernas":  {
+          "Acondicionamiento & Calentamiento": [
+        {
+              superset: [
+            "Rotaciones con Bolsa 3 x 10· 10· 8 a cada lado",
+            "Burpees 2 x 10· 10",
+            "Sentadillas + Estocadas con Mancuernas (o bolsa) 2 x 12· 12",
+            ],
+            restAfter: "1min"
+          },
+          "Plancha Frontal 1 x a lo que dés!"
+            ],
+          "Entrenamiento de Fuerza": [
+          {
+              superset: [
+            "Sentadillas en Hack 5 x 20· ↑12· ↑10(RIR 2)· ↑10· ↑8",
+            "Gemelos en Hack 5 x 10 a 16 reps al fallo",
+            ],
+            restAfter: "2-4min"
+          },
+            "Sentadillas Búlgara con Mancuernas 4 x 12· ↑10· ↑8· 8 rest=2-3min",
+            "Extensión de Cuádriceps Sentado 4 x 14· ↓(10+8)· ↓(10+8)· (10+8+6) rest=1-2min",
             ],
           },
       },
     },
-
 
 
 
@@ -1686,10 +1720,10 @@ const trainingFolders = {
             "Remo Unilateral Sentado en Máquina 3 x 12· ↓10· ↓10· rest=2min",
           {
             superset: [
-            "Vuelos Posteriores con Mancuernas 3 x 12· ↓10· 10 rest=2min",
-            "Press de Triceps en Máquina 3 x 12· ↓12· ↓(10+6) rest=2-3min",          
+            "Vuelos Posteriores con Mancuernas 3 x 12· ↓10· 10",
+            "Press de Triceps en Máquina 3 x 12· ↓12· ↓(10+6)",          
           ],
-            restAfter: "1min"
+            restAfter: "2min"
           },           
             "Extensión de Triceps con Polea con Barra 3 x 12· (12+8)· ↓(12+8)  resst=2min",
             "Crunch con Polea 3 x 16· 12· 12 rest=1-2min"
@@ -1986,11 +2020,11 @@ const trainingFolders = {
             "Remo Unilateral Sentado en Máquina 3 x 12· ↓10· ↓10· rest=2min",
           {
             superset: [
-            "Vuelos Posteriores con Mancuernas 3 x 12· ↓10· 10 rest=2min",
-            "Press de Triceps en Máquina 3 x 12· ↓12· ↓(10+6) rest=2-3min",          
+            "Vuelos Posteriores con Mancuernas 3 x 12· ↓10· 10",
+            "Press de Triceps en Máquina 3 x 12· ↓12· ↓(10+6)",          
           ],
-            restAfter: "1min"
-          },           
+            restAfter: "2min"
+          },             
             "Extensión de Triceps con Polea con Barra 3 x 12· (12+8)· ↓(12+8)  resst=2min",
             "Crunch con Polea 3 x 16· 12· 12 rest=1-2min"
           ],
@@ -3048,7 +3082,7 @@ const USER_HIIT_DAY_NOTES = {
 
 
   "azulcherubini3": {
-    "Día 2 - Superior": [
+    "Día 2 - Pecho + Biceps + Hombros": [
       { title: "HIIT en Cinta (caminadora)",
       body: `<p><strong>15 a 20 MINUTOS TOTALES.</strong></p>
             <p>Puede hacerse afuera!</p>
@@ -3061,7 +3095,7 @@ const USER_HIIT_DAY_NOTES = {
             </ul>
             <p><b>Repetir 5 veces seguidas:</b> o sea <b>(100 m fast + 50 m slow) x 5 sin descanso.</b></p>
             <p><b>Recuperación:</b> 2 minuto caminando.</p>
-            <p><b>Repetir HIIT 2 o 3 veces más:</b> o sea <b>(100 m fast + 50 m slow) x 2</b>, o 3 (si llegás),<b> sin descanso.</b></p>
+            <p><b>Repetir HIIT 2 o 3 veces más:</b> o sea <b>(100 m fast + 50 m slow) x 2</b> o 3 (si llegás),<b> sin descanso.</b></p>
             <p><b>Recuperación:</b> 2 minuto caminando.</p>
             <p>A mimir. 😴</p>`
     },
