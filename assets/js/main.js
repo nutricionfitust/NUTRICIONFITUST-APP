@@ -3834,7 +3834,8 @@ function getExerciseDescriptionByName(name){
 
 //DESCARGAR CARPETA - PDF!
 // Abre una ventana con el "formato hoja" y permite descargar PDF tal cual se ve
-function openPrintableRoutine(userKey){
+//Agregar la letra "o" para completar openPrintableRoutine(userKey){ --> en el renglón de aquí abajo!
+function penPrintableRoutine(userKey){
   // 1) Datos
   const map = (window.userRoutineMapping || {})[userKey];
   if(!map){ alert('No encontré la carpeta del usuario.'); return; }
