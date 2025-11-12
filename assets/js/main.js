@@ -3041,7 +3041,7 @@ const DEFAULT_INFO_SECTIONS = [
         </p> <p><b>Ejemplo:</b> si ves en la rutina ↑10• ↓12• 10• ↓8, significa que hacés 10 repeticiones pesadas con carga alta, luego, en la siguiente serie, bajás el peso y hacés 12 repeticiones más, aprovechando la activación previa. Posteriormente, la siguiente serie será de 10 repeticiones, con el mismo peso que la serie anterior (donde hiciste 12 reps). Y en la siguiente bajarás el peso y harás 8 reps.</p>
         <p>En este ejemplo trabajás series ondulantes con series descendentes... (en las series descendentes vas bajando de peso porque la intensidad de tu entrenamiento es tan alta que a nivel muscular no te da para subir el peso, ni para mantenerlo si tenés que hacer el mismo número de repeticiones).</p>
         <br><br>
-        <p><b>¿Qué son las series descendentes?</b></p>
+        <p><b>¿Qué son las series Descendentes?</b></p>
         <p>Las series descendentes son un método de entrenamiento en el que, a medida que avanzan las series de un mismo ejercicio, se <b>reduce progresivamente la carga</b> (el peso utilizado), respetando los descansos normales entre series.</p>
         <p>A diferencia de las series ascendentes —donde se aumenta el peso y se reduce el número de repeticiones—, en las descendentes el objetivo es <b>mantener la calidad del movimiento y la tensión muscular</b> cuando la fatiga ya limita el rendimiento.</p>
         <p>En cada nueva serie se disminuye la carga un 5–15 % (aproximadamente), pudiendo <b>mantener, aumentar o reducir el número de repeticiones</b> según el estado de fatiga. Esto permite continuar estimulando las fibras musculares sin comprometer la técnica ni la recuperación.</p>
