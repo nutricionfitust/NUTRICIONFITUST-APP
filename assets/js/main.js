@@ -278,6 +278,7 @@ const trainingFolders = {
 
   "2 MUSCULACIÓN + (2 LISS)": {
     routines: {
+//RUTINA AGUSTINA Nº 1 - 2 MUSCULACIÓN + (2 LISS) !
       "agustina": {
         name: "Agustina",
         plan: {
@@ -305,11 +306,35 @@ const trainingFolders = {
 
 
 
+
+    //RUTINA Nº 2 - 2 MUSCULACIÓN + (2 LISS) !
+
+
+
+
+
+
+
+
+
+
+
+
+    //RUTINA Nº 3 - 2 MUSCULACIÓN + (2 LISS) !
+
+
+
+
+
+
+
+
     
   },
 },
   "3 MUSCULACIÓN + 1 HIIT + (1 LISS)": {
     routines: {
+//RUTINA CAMILA Nº 2 - 3 MUSCULACIÓN + 1 HIIT + (1 LISS) !  
       "camilafrancoblonda": {
         name: "Camila",
         plan: {
@@ -341,9 +366,10 @@ const trainingFolders = {
     },
 
 
+//RUTINA AZUL Nº 2 - 3 MUSCULACIÓN + 1 HIIT + (1 LISS) !  
         "azulcherubini2": {
       name: "Azul",
-         // PLAN DE ENTRENAMIENTO SEMANAL !      
+// PLAN DE ENTRENAMIENTO SEMANAL !    
       plan: {  
         "Día 1 - Inferior": {
           "Acondicionamiento & Calentamiento": [
@@ -412,7 +438,7 @@ const trainingFolders = {
       },
     },
 
-
+//RUTINA ALAN Nº 1 - 3 MUSCULACIÓN + 1 HIIT + (1 LISS) !  
             "alansanchez": {
       name: "Alan",
          // PLAN DE ENTRENAMIENTO SEMANAL !      
@@ -506,8 +532,7 @@ const trainingFolders = {
       },
     },
 
-
-
+//RUTINA NICO Nº 1 - 3 MUSCULACIÓN + 1 HIIT + (1 LISS) !
             "nicolasrivera": {
       name: "Nico",
          // PLAN DE ENTRENAMIENTO SEMANAL !      
@@ -643,14 +668,26 @@ const trainingFolders = {
 },
   "3 MUSCULACIÓN + 2 HIIT": { routines: {} },
 
+//RUTINA Nº 1 - 3 MUSCULACIÓN + 2 HIIT !
+
+
+
+
+
 
 
   "3 MUSCULACIÓN + 2 HIIT + (1 LISS)": { routines: {} },
+
+//RUTINA Nº 1 - 3 MUSCULACIÓN + 2 HIIT + (1 LISS) !
+
+
+
 
 
 
   "4 MUSCULACIÓN (1 FB HIIT) + (1 LISS)":  {
   routines: {
+//RUTINA Nº 1 - 4 MUSCULACIÓN + 1 FB HIIT + (1 LISS) !
     "sofiaustarroz": {
       name: "Sofía",
          // PLAN DE ENTRENAMIENTO SEMANAL !      
@@ -759,6 +796,7 @@ const trainingFolders = {
 },
   "4 MUSCULACIÓN + 1 HIIT + (1 LISS)": {
   routines: {
+//RUTINA AZUL Nº 3 - 4 MUSCULACIÓN + 1 HIIT + (1 LISS) !
         "azulcherubini3": {
       name: "Azul",
          // PLAN DE ENTRENAMIENTO SEMANAL !      
@@ -867,7 +905,7 @@ const trainingFolders = {
 
 
 
-
+//RUTINA JULIAN Nº 1 - 4 MUSCULACIÓN + 1 HIIT + (1 LISS) !
     "julianmagallanes1": {
       name: "Juli",
          // PLAN DE ENTRENAMIENTO SEMANAL !      
@@ -982,7 +1020,7 @@ const trainingFolders = {
     },
 
 
-
+//RUTINA FACUNDO Nº 1 - 4 MUSCULACIÓN + 1 HIIT + (1 LISS) !
 "facundoustarroz": {
       name: "Facundo",
       plan: {  
@@ -1074,95 +1112,8 @@ const trainingFolders = {
 },
   "4 MUSCULACIÓN + 2 HIIT": {
   routines: {
-    "NOMBRE DE USUARIO": {
-      name: "NOMBRE EJ Jaun",
-      plan: {  
-        "Día 1 - Pecho y Tríceps": {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-            ],
-          },
-        "Día 2 - Espalda y Bíceps":  {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-            ],
-          },
-        "Día 3 - Piernas":  {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-            ],
-          },
-        "Día 4 - Hombros y Core":  {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-            ],
-          },
-      },
-    },
+//RUTINA Nº 1 - 4 MUSCULACIÓN + 2 HIIT !
+
 
 
 
@@ -1174,6 +1125,7 @@ const trainingFolders = {
 },
   "5 MUSCULACIÓN + 1 HIIT + (1 LISS)": {
   routines: {
+//RUTINA CAMILO Nº 2 - 5 MUSCULACIÓN + 1 HIIT + (1 LISS) !
     "camiloduranm2": {
       name: "Camilo",
       plan: {  
@@ -1320,7 +1272,7 @@ const trainingFolders = {
 
 
 
-
+//RUTINA LUIS Nº 2 - 5 MUSCULACIÓN + 1 HIIT + (1 LISS) !
     "luisgonzalez2": {
       name: "Luis",
       plan: {  
@@ -1488,121 +1440,7 @@ const trainingFolders = {
 },
   "5 MUSCULACIÓN + (1 LISS)": {
   routines: {
-    "NOMBRE DE USUARIO": {
-      name: "NOMBRE EJ Federico",
-      plan: {  
-
-        "Día 1 - Pecho y Tríceps": {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-            ],
-          },
-
-        "Día 2 - Espalda y Bíceps":  {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-            ],
-          },
-
-        "Día 3 - Piernas":  {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-            ],
-          },
-
-        "Día 4 - Hombros y Core":  {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-            ],
-          },
-
-        "Día 5 - Brazos y Hombros":  {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-            ],
-          },
-      },
-    },
+//RUTINA Nº 1 - 5 MUSCULACIÓN + (1 LISS) !
 
 
 
@@ -1617,6 +1455,7 @@ const trainingFolders = {
 },
   "5 MUSCULACIÓN + 2 HIIT": {
   routines: {
+//RUTINA DAMIÁN Nº 2 - 5 MUSCULACIÓN + 2 HIIT !
     "damianportillo2": {
       name: "Damián",
       plan: {  
@@ -1767,7 +1606,7 @@ const trainingFolders = {
 
 
 
-
+//RUTINA DAMIÁN Nº 3 - 5 MUSCULACIÓN + 2 HIIT !
     "damianportillo3": {
       name: "Damián",
       plan: {  
@@ -1915,7 +1754,7 @@ const trainingFolders = {
 
 
 
-
+//RUTINA IVÁN Nº 2 - 5 MUSCULACIÓN + 2 HIIT !
     "ivangoic2": {
       name: "Iván",
       plan: {  
@@ -2067,7 +1906,7 @@ const trainingFolders = {
 
 
 
-
+//RUTINA IVÁN Nº 3 - 5 MUSCULACIÓN + 2 HIIT !
     "ivangoic3": {
       name: "Iván",
       plan: {  
@@ -2214,7 +2053,7 @@ const trainingFolders = {
     },
 
 
-    
+//RUTINA ISAAC Nº 3 - 5 MUSCULACIÓN + 2 HIIT !    
     "isaacmolinares3": {
       name: "Teniente Isaac",
       plan: {  
@@ -2362,7 +2201,7 @@ const trainingFolders = {
 
 
 
-
+//RUTINA REIN Nº 3 - 5 MUSCULACIÓN + 2 HIIT !
     "rein3": {
       name: "Rein",
       plan: {  
@@ -2522,121 +2361,12 @@ const trainingFolders = {
 },
   "5 MUSCULACIÓN + 3 HIIT": {
   routines: {
-    "NOMBRE DE USUARIO": {
-      name: "NOMBRE EJ Santiago",
-      plan: {  
+//RUTINA Nº 1 - 5 MUSCULACIÓN + 3 HIIT !
 
-        "Día 1 - Pecho y Tríceps": {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-            ],
-          },
 
-        "Día 2 - Espalda y Bíceps":  {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-            ],
-          },
 
-        "Día 3 - Piernas":  {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-            ],
-          },
 
-        "Día 4 - Hombros y Core":  {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-            ],
-          },
 
-        "Día 5 - Brazos y Hombros":  {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-            ],
-          },
-      },
-    },
 
 
 
@@ -2648,143 +2378,9 @@ const trainingFolders = {
 },
   "6 MUSCULACIÓN + 2 HIIT + (1 LISS)": {
   routines: {
-    "NOMBRE DE USUARIO": {
-      name: "NOMBRE EJ Damian",
-      plan: {  
+//RUTINA Nº 1 - 5 MUSCULACIÓN + 2 HIIT + 1 LISS !
 
-        "Día 1 - Pecho y Tríceps": {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-            ],
-          },
 
-        "Día 2 - Espalda y Bíceps":  {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-            ],
-          },
-
-        "Día 3 - Piernas":  {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-            ],
-          },
-
-        "Día 4 - Hombros y Core":  {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-            ],
-          },
-
-        "Día 5 - Brazos y Hombros":  {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-            ],
-          },
-
-        "Día 6 - Pecho y Biceps":  {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-            ],
-          },
-      },
-    },
 
 
 
@@ -2796,143 +2392,12 @@ const trainingFolders = {
 },
   "6 MUSCULACIÓN + 2 HIIT": {
   routines: {
-    "NOMBRE DE USUARIO": {
-      name: "NOMBRE EJ Isaac",
-      plan: {  
+//RUTINA Nº 1 - 5 MUSCULACIÓN + 2 HIIT !
 
-        "Día 1 - Pecho y Tríceps": {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-            ],
-          },
 
-        "Día 2 - Espalda y Bíceps":  {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-            ],
-          },
 
-        "Día 3 - Piernas":  {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-            ],
-          },
 
-        "Día 4 - Hombros y Core":  {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-            ],
-          },
 
-        "Día 5 - Brazos y Hombros":  {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-            ],
-          },
-
-        "Día 6 - Pecho y Biceps":  {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-            ],
-          },
-      },
-    },
 
 
 
