@@ -1646,7 +1646,7 @@ const trainingFolders = {
             "Vuelos Posteriores con Mancuernas 3 x ↑16• ↓12• 10 rest=1-2min",
             "Aperturas Sentado en Máquina 3 x ↑16• ↓(12+8)• ↑12 rest=3min",
             "Press Banca Inclinado en Smith 5 x 20(50% RM)• ↑10• ↓12• 10• ↓8 rest=2-3min",
-            "Press de Pecho en Máquina 3 x 12• ↓12• ↓(10+6) rest=2-3min",
+            "Press Banca en Smith 3 x 12• ↓12• ↓(10+6) rest=2-3min",
           {
             superset: [
             "Vuelos Laterales con Mancuernas 3 x 12• ↓10• 10",
