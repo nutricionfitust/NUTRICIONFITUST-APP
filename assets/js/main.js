@@ -1782,7 +1782,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
-            "Flexiones BB Cerradas 2 x 20• 20",
+            "Flexiones BB Cerradas 2 x 30• 20",
             "Biceps + Press Arnold con Mancuernas 2 x 12• 12",
             "Vuelos Laterales con Mancuernas 2 x 10• 10 (liviano)"
           ],
