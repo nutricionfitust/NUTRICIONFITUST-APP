@@ -3090,7 +3090,7 @@ const USER_HIIT_DAY_NOTES = {
             <ul class="list-disc pl-6">
             <li>30 segundos a ~ 5/8 de tu velocidad máxima (ej: ~12 km/h).</li>
             <li>Inclinas la máquina y hacés 1 minuto caminando (ej: ~4 km/h).</li>
-            <li>Declinas la máquina, nuevamente a 6 grados y repetís los 30 segundos.</li>
+            <li>Declinas la máquina nuevamente a 6 grados, y repetís los 30 segundos.</li>
             <li>Inclinas y caminas 1 minuto.</li>
             <p><b>Esto lo hacés 5 veces:</b></p>
             <p>O sea <b>(30seg + 1min) x 5 sin descanso.</b></p>
