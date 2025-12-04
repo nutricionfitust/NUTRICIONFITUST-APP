@@ -1765,7 +1765,7 @@ const trainingFolders = {
 
         "Día 1 - Piernas": {
           "Acondicionamiento & Calentamiento": [
-          "Rotaciones de Caderas 2 x 10 a cada lado rest=30s",
+          "Rotaciones con Bolsa 2 x 10 a cada lado rest=30s",
             {
               superset: [
             "Burpees 2 x 8",
@@ -1841,7 +1841,7 @@ const trainingFolders = {
 
         "Día 4 - Piernas":  {
           "Acondicionamiento & Calentamiento": [
-          "Rotaciones de Caderas 2 x 10 a cada lado rest=30s",
+          "Rotaciones con Bolsa 2 x 10 a cada lado rest=30s",
             {
               superset: [
             "Burpees 2 x 8",
