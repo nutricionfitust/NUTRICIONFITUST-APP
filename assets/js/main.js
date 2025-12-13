@@ -871,7 +871,7 @@ const trainingFolders = {
           ],
             restAfter: "2min"
           },           
-            "Extensión de Triceps con Polea con Barra 3 x 12• (12+8)• ↓(12+8)  resst=2min",
+            "Extensión de Triceps con Polea con Barra 3 x 12• (12+8)• ↓(12+8)  rest=2min",
             "Crunch con Polea 3 x 16• 12• 12 rest=1-2min"
           ],
           },
@@ -982,7 +982,7 @@ const trainingFolders = {
           {
             superset: [
             "Vuelos Posteriores con Mancuernas 3 x 12• ↓10• 10", 
-            "Extensión de Triceps con Polea con Barra 3 x 12• (12+8)• ↓(12+8)  resst=2min",         
+            "Extensión de Triceps con Polea con Barra 3 x 12• (12+8)• ↓(12+8)  rest=2min",         
           ],
             restAfter: "2min"
           },           
@@ -1008,7 +1008,7 @@ const trainingFolders = {
           {
               superset: [
             "Prensa 5 x 20• ↑12• ↑10(RIR 2)• ↑10• ↑8",
-            "Prensa en Hack 5 x 10 a 14 reps al fallo",
+            "Gemelos en Prensa 5 x 10 a 14 reps al fallo",
             ],
             restAfter: "2-4min"
           },
@@ -1018,6 +1018,123 @@ const trainingFolders = {
           },
       },
     },
+
+
+
+//RUTINA JULIAN Nº 2 - 4 MUSCULACIÓN + 1 HIIT + (1 LISS) !
+    "julianmagallanes2": {
+      name: "Juli",
+         // PLAN DE ENTRENAMIENTO SEMANAL !      
+      plan: {  
+
+        "Día 1 - Piernas": {
+          "Acondicionamiento & Calentamiento": [            
+            {
+              superset: [
+            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Sentadillas + Estocadas con Bolsa (o Mancuernas) 3 x 16• 12• 12",
+            "Plancha Frontal 3 x 1min",
+            ],
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento de Fuerza": [
+            "Aductores Sentado 3 x fallo (aprox 16 reps c/serie) rest=1-2min",
+            "Isquiotibiales Sentado 4 x 14• 12• 12• (10+8) rest=1-2min",
+            "Extensión de Cuadriceps Sentado 4 x 12• (12+8)• (10+8)• 12 rest=2-4min",
+            "Sentadillas Búlgaras 3 x 12• ↑10• ↑8 rest=2-3min",
+            "Hiperextensión 45 Grados Glúteos 3 x 12• 10• 10 rest=2min",
+            ],
+          },
+
+      "Día 2 - Superior (Pecho + BB)":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Flexiones BB Cerradas 2 x 20• 16",
+            "Dominadas Agarre Prono a los Hombros 2 x 12• 12" ,
+            "Biceps + Press Arnold con Mancuernas 2 x 12• 12",
+          ],
+            restAfter: "1min 30seg"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+            "Aperturas Sentado en Máquina 4 x ↑16• ↓(12+8)• 12• ↑10 rest=2-3min",
+            "Press Banca con Agarre Cerrado 4 x 10• 10• 8• 8 rest=2-3min",
+            "Press Inclinado con Mancuernas 4 x 12• ↑10• 10• ↑8 rest=2-3min",
+          {
+            superset: [
+            "Vuelos Laterales con Mancuernas 4 x 12• 10• 10• 8",  
+            "Press Militar con Mancuernas Sentado 3 x 12• 10• 10",
+          ],
+            restAfter: "2-3min"
+          },
+            "Biceps Martillo Alternado con Mancuernas 3 x 10• ↑8• 8 rest=2min",
+            "Biceps Predicador con Mancuerna 3 x 10• 10• 8 rest=2min",
+          ],
+          },
+
+        "Día 3 - Superior (Espalda + TT)":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Biceps + Press Arnold con Mancuernas 2 x 16-12",
+            "Flexiones BB 2 x 20• 16",
+          ],
+            restAfter: "1min"
+          },           
+          ],
+          "Entrenamiento de Fuerza": [
+            "Polea al Pecho con Triángulo 4 x 14• 12• ↓12• ↓(10+6) rest=2min",
+            "Remo T 4 x 12• 10• ↓10• 8 rest=2min",
+            "Hombro Posterior en Máquina Sentado Unilateral 4 x 12• ↓10• 10• 8 rest=1-2min", 
+            "Encogimientos con Mancuernas 3 x 12• 10• 10 rest=2min",
+          {
+            superset: [
+            "Extensión de Triceps con Polea con Barra 3 x 12• 12• ↓(12+8) rest=2min",   
+            "Flexiones BB Cerradas 3 x fallo• fallo• fallo",      
+          ],
+            restAfter: "2-3min"
+          },           
+          ],
+            "Entrenamiento HIIT": [
+            "Correr en Cinta"
+            ],
+          },
+
+        "Día 4 - Piernas":  {
+          "Acondicionamiento & Calentamiento": [
+        {
+              superset: [
+            "Rotaciones con Bolsa 2 x 12• 10 a cada lado",
+            "Sentadillas + Estocadas con Bolsa (o mancuernas) 1 x 16",
+            ],
+            restAfter: "1min"
+          },
+                  {
+              superset: [
+          "Crunch con Polea 2 x 16• 12",
+          "Plancha Frontal 1 x 1min• 1min",
+            ],
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento de Fuerza": [
+          {
+              superset: [
+            "Hack 5 x (aproximación)• ↑12• ↑10• ↑10• ↑8",
+            "Gemelos en Hack 5 x 8 a 12 reps al fallo",
+            ],
+            restAfter: "2-4min"
+          },
+            "Peso Muerto Convencional 4 x 12• ↑10• ↑8• 8 rest=3-4min",
+            "Hip Thrust con Barra 4 x 12• ↑10• ↑8• 8 rest=3-4min",
+            "Aductores Sentado 3 x fallo (aprox 16 reps c/serie) rest=1-2min",
+            ],
+          },
+      },
+    },
+
 
 
 //RUTINA FACUNDO Nº 1 - 4 MUSCULACIÓN + 1 HIIT + (1 LISS) !
@@ -1198,7 +1315,7 @@ const trainingFolders = {
             "Polea al Pecho con Triangulo 4 x 12-10-10-8 rest=2min",
             "Remo con Mancuernas Unilateral 3 x 12-10-10 rest=2min",
             "Biceps Martillo Alternado con Mancuernas 4 x 12-10-8-8 rest=2-3min",
-            "Biceps con Barra W 3 x 10-10-8 resst=2min",
+            "Biceps con Barra W 3 x 10-10-8 rest=2min",
             "Crunch con Polea 3 x 16-12-12 rest=1-2min"
           ],
           },
@@ -1535,7 +1652,7 @@ const trainingFolders = {
             "Polea al Pecho con Triangulo 4 x 12-10-10-8 rest=2min",
             "Remo con Mancuernas Unilateral 3 x 12-10-10 rest=2min",
             "Biceps Martillo Alternado con Mancuernas 4 x 12-10-8-8 rest=2-3min",
-            "Biceps con Barra W 3 x 10-10-8 resst=2min",
+            "Biceps con Barra W 3 x 10-10-8 rest=2min",
             "Crunch con Polea 3 x 16-12-12 rest=1-2min"
           ],
           },
@@ -1684,7 +1801,7 @@ const trainingFolders = {
           ],
             restAfter: "2min"
           },           
-            "Extensión de Triceps con Polea con Barra 3 x 12• (12+8)• ↓(12+8)  resst=2min",
+            "Extensión de Triceps con Polea con Barra 3 x 12• (12+8)• ↓(12+8)  rest=2min",
             "Crunch con Polea 3 x 16• 12• 12 rest=1-2min"
           ],
           },
@@ -1833,7 +1950,7 @@ const trainingFolders = {
           ],
             restAfter: "2min"
           },           
-            "Extensión de Triceps con Polea con Barra 3 x 12• (12+8)• ↓(12+8)  resst=2min",
+            "Extensión de Triceps con Polea con Barra 3 x 12• (12+8)• ↓(12+8)  rest=2min",
             "Crunch con Polea 3 x 16• 12• 12 rest=1-2min"
           ],
           },
@@ -1983,7 +2100,7 @@ const trainingFolders = {
             "Remo con Mancuernas Unilateral 3 x 12• 12• 10 rest=1-2min",
             "Vuelos Posteriores con Mancuernas 3 x 12• 12• 10 rest=1-2min",
             "Biceps Martillo Alternado con Mancuernas 4 x 12• 10• 10• 8 rest=2min",
-            "Biceps con Barra W 2 x 12• 12 resst=2min",
+            "Biceps con Barra W 2 x 12• 12 rest=2min",
             "Crunch con Polea 3 x 16• 12• 12 rest=1-2min"
           ],
           },
@@ -2133,7 +2250,7 @@ const trainingFolders = {
           ],
             restAfter: "2min"
           },           
-            "Extensión de Triceps con Polea con Barra 3 x 12• (12+8)• ↓(12+8)  resst=2min",
+            "Extensión de Triceps con Polea con Barra 3 x 12• (12+8)• ↓(12+8)  rest=2min",
             "Crunch con Polea 3 x 16• 12• 12 rest=1-2min"
           ],
           },
@@ -2283,7 +2400,7 @@ const trainingFolders = {
             "Polea al Pecho con Triangulo 4 x 12-10-10-8 rest=2min",
             "Remo con Mancuernas Unilateral 3 x 12-10-10 rest=2min",
             "Biceps Martillo Alternado con Mancuernas 4 x 12-10-8-8 rest=2-3min",
-            "Biceps con Barra W 3 x 10-10-8 resst=2min",
+            "Biceps con Barra W 3 x 10-10-8 rest=2min",
             "Crunch con Polea 3 x 16-12-12 rest=1-2min"
           ],
           },
@@ -2433,7 +2550,7 @@ const trainingFolders = {
           ],
             restAfter: "2min"
           },             
-            "Extensión de Triceps con Polea con Barra 3 x 12• (12+8)• ↓(12+8)  resst=2min",
+            "Extensión de Triceps con Polea con Barra 3 x 12• (12+8)• ↓(12+8)  rest=2min",
             "Crunch con Polea 3 x 16• 12• 12 rest=1-2min"
           ],
           },
@@ -2580,7 +2697,7 @@ const trainingFolders = {
           ],
             restAfter: "1min"
           },           
-            "Extensión de Triceps con Polea con Barra 3 x 12• (12+8)• ↓(12+8)  resst=2min",
+            "Extensión de Triceps con Polea con Barra 3 x 12• (12+8)• ↓(12+8)  rest=2min",
             "Crunch con Polea 3 x 16• 12• 12 rest=1-2min"
           ],
           },
@@ -2728,7 +2845,7 @@ const trainingFolders = {
           ],
             restAfter: "1min"
           },           
-            "Extensión de Triceps con Polea con Barra 3 x 12• (12+8)• ↓(12+8)  resst=2min",
+            "Extensión de Triceps con Polea con Barra 3 x 12• (12+8)• ↓(12+8)  rest=2min",
             "Crunch con Polea 3 x 16• 12• 12 rest=1-2min"
           ],
           },
@@ -2872,6 +2989,7 @@ const userRoutineMapping = {
   sofiaustarroz:    { folder: "4 MUSCULACIÓN (1 FB HIIT) + (1 LISS)", routine: "sofiaustarroz" },
   azulcherubini3: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "azulcherubini3" },
   julianmagallanes1: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "julianmagallanes1" },
+  julianmagallanes2: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "julianmagallanes2" },
   facundoustarroz: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "facundoustarroz" },
   azulcherubini2: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "azulcherubini2" },
   damianportillo2: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "damianportillo2" },
@@ -2905,6 +3023,7 @@ const userPasswords = {
   'tiramisu-vesuvio-tundra-quarzo-russia-gondola-urali-octavo-zarina-octavo-batata': 'facundoustarroz',
   'vesuvio-spaghetti-quarzo-yogurt-tundra-opera-dolcevita-limoncello-quarzo-firenze': 'azulcherubini2',
   'piazza-quarzo-yogurt-siberia-balalaika-vesuvio-kremlin': 'julianmagallanes1', 
+  'piazza-quarzo-yogurt-siberia-balalaika-vesuvio-kremlin-octavo': 'julianmagallanes2', 
   'vesuvio-spaghetti-spaghetti-octavo': 'azulcherubini3',
   'gondola-vesuvio-balalaika-siberia-borscht-urali-limoncello-octavo': 'damianportillo2',
   'gondola-vesuvio-balalaika-siberia-borscht-urali-limoncello-laguna': 'damianportillo3',
@@ -3283,6 +3402,27 @@ const USER_HIIT_DAY_NOTES = {
     ],
   },  
 
+
+
+    "julianmagallanes2": {
+    "Día 3 - Superior (Espalda + TT)": [
+      { title: "HIIT en Cinta (caminadora)",
+      body: `<p><strong>15 a 20 MINUTOS TOTALES.</strong></p>
+            <p>Inclinar la Cinta unos 9 grados.</p>
+            <p><b>2 minutos:</b> caminar.</p>
+            <p>Desinclinar la Cinta a 0 grados (llano).</p>
+            <p><b>2 minutos:</b> trote suave para entrar en calor.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>350 metros a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
+            <li>150 metros tranqui (slow). Los primeros 100 m caminando (5.5 km/h), y trote suave (8 km/h) los últimos 50 m.</li>
+            </ul>
+            <p><b>Repetir 4 veces seguidas:</b> o sea <b>(300 m fast + 150 m slow) x 4 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 1 minuto caminando.</p>
+            <p>A mimir. 😴</p>`
+    },
+    ],
+  },  
 
 
 
