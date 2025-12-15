@@ -31,7 +31,7 @@ const exerciseDatabase = {
   gluteos: [
     { name: "Hip Thrust con Barra", videoId: "https://drive.google.com/file/d/1gKxoZqdESY6vpSnIvvZKjN1a1agdJAci/view?usp=drivesdk", description: "Ejercicio clave para activar y desarrollar los glúteos. El foco está en la extensión de cadera: bajá controlado hasta estirar bien y subí contrayendo fuerte arriba." },
     { name: "Hip Thrust en Smith", videoId: "https://drive.google.com/file/d/1fcOHHb6YXseRaX915WdGt63f_hCpNd9F/view?usp=drivesdk", description: "La máquina guía el recorrido y te da estabilidad, lo que permite cargar más y concentrarte en llevar los glúteos a la máxima contracción en cada repetición." },
-    { name: "Hiperextensión 45° Glúteos", videoId: "https://drive.google.com/file/d/1mcMH-_YV4T6eGWYM9UNNF5p7_7a7odeX/view?usp=drivesdk", description: "Al ajustar la técnica podés dirigir el esfuerzo hacia los glúteos. Enfocate en sentir cómo se estiran al bajar y cómo se activan con fuerza al subir." },
+    { name: "Hiperextensión para Glúteos", videoId: "https://drive.google.com/file/d/1mcMH-_YV4T6eGWYM9UNNF5p7_7a7odeX/view?usp=drivesdk", description: "Al ajustar la técnica podés dirigir el esfuerzo hacia los glúteos. Enfocate en sentir cómo se estiran al bajar y cómo se activan con fuerza al subir." },
     { name: "Sentadillas Sumo con Barra", videoId: "https://drive.google.com/file/d/1ijW2ft50ijZHSYpeHHucUNmt_f7WPz9I/view?usp=drivesdk", description: "Postura amplia (pies bien abiertos y las puntas hacia afuera), los glúteos se llevan gran parte del trabajo. Bajá profundo para aprovechar el estiramiento y subí de forma explosiva." },
     { name: "Sentadillas Sumo con Mancuerna", videoId: "https://drive.google.com/file/d/1gsNRrtMEClU8Ze2p16v7Iw9KP8_AAokY/view?usp=drivesdk", description: "Postura amplia (pies bien abiertos y las puntas hacia afuera), sosteniendo una mancuerna al frente. Excelente para trabajar glúteos y aductores con control, manteniendo la tensión durante todo el recorrido." },
   ],
@@ -103,7 +103,7 @@ const exerciseDatabase = {
     { name: "Polea al Pecho con Triángulo", videoId: "https://drive.google.com/open?id=1m8LAuVpQqtKJB9fTKZV1N9pxqb6hj5t3&usp=drive_copy", description: "El agarre neutro es cómodo y seguro. Tirás desde arriba abriendo dorsales y bajás controlado hasta el cierre." },
     { name: "Polea al Pecho Supino", videoId: "https://drive.google.com/open?id=1GFhUX_VLBPjeAsr8T-TbI1rLogGrO58u&usp=drive_copy", description: "Con agarre supino, además del dorsal trabajás bíceps. Estirá arriba y bajá tirando hasta el pecho." },
     { name: "Jalón al Pecho en Máquina", videoId: "https://drive.google.com/open?id=1k4qwHp5eBLKBmDEwvnp-Mj_vNlIotT1n&usp=drive_copy", description: "Con recorrido fijo, podés bajar despacio, sentir el estiramiento y cerrar sin preocuparte por la técnica." },
-    { name: "Hiperextensión de 45° (Lumbares)", videoId: "https://drive.google.com/open?id=1ZF9yr2BP0yphb1VyE31GFBiI4JZE4BlS&usp=drive_copy", description: "Se enfoca en la zona baja. Bajá controlado para estirar bien y subí contrayendo glúteos y lumbares." },
+    { name: "Hiperextensión para Lumbares", videoId: "https://drive.google.com/open?id=1ZF9yr2BP0yphb1VyE31GFBiI4JZE4BlS&usp=drive_copy", description: "Se enfoca en la zona baja. Bajá controlado para estirar bien y subí contrayendo glúteos y lumbares." },
     { name: "Espalda con Polea", videoId: "https://drive.google.com/open?id=19I2YycnYqdh3z13mHaiL0M1OrnzGke-E&usp=drive_copy", description: "Versátil y adaptable. Podés variar el agarre, pero lo importante es abrir en la subida y cerrar fuerte en la bajada." },
     { name: "Encogimientos con Mancuernas (Trapecios) 25° hacia Adelante", videoId: "https://drive.google.com/open?id=1VF3vmqB2a77neHRa5LzeK2QsCiIUSOZK&usp=drive_copy", description: "Con inclinación hacia adelante, maximizás el estímulo en trapecios. Subí hasta la contracción y bajá controlado." },
     { name: "Encogimientos con Barra (Trapecios) 25° hacia Adelante", videoId: "https://drive.google.com/open?id=1UyFUZjKcd0uQTY7ClyLW0WJwFfFrDnAe&usp=drive_copy", description: "Lo mismo con barra, con posibilidad de cargar más. Subí hasta apretar fuerte los trapecios y bajá despacio." },
@@ -190,7 +190,7 @@ const exerciseDatabase = {
     { name: "Escaladas", videoId: "https://drive.google.com/open?id=1EsStIT8dqVD2mYlUF0UeU78OuQnQwE3T&usp=drive_copy", description: "En posición de plancha, alterná rodillas al pecho a ritmo dinámico. Combiná cardio con trabajo constante de abdomen." },
     { name: "Flexión Abdominal Lateral Acostado", videoId: "https://drive.google.com/open?id=1nWclK4u5xXEM5uqJOAP5ktS0GDAkhQFe&usp=drive_copy", description: "Acostado de lado, llevá el torso hacia arriba. Trabajo directo sobre los oblicuos, con foco en la contracción lateral." },
     { name: "Flexión Abdominal Lateral con Mancuerna", videoId: "https://drive.google.com/open?id=15SkeoXeyX34VwRPVQXHEwa415lueyI4D&usp=drive_copy", description: "De pie, con mancuerna en una mano, incliná el torso lateralmente. El peso suma intensidad al trabajo de los oblicuos." },
-    { name: "Hiperextensión 45° Lumbares", videoId: "https://drive.google.com/open?id=1SHncVq_rZhZkUvp-UOusTVaDS1edWydJ&usp=drive_copy", description: "En banco a 45°, descendé despacio para estirar la zona lumbar y subí contrayendo. Fortalece lumbares, glúteos y mejora la postura." },
+    { name: "Hiperextensión para Lumbares", videoId: "https://drive.google.com/open?id=1SHncVq_rZhZkUvp-UOusTVaDS1edWydJ&usp=drive_copy", description: "En banco a 45°, descendé despacio para estirar la zona lumbar y subí contrayendo. Fortalece lumbares, glúteos y mejora la postura." },
     { name: "Oblicuos con Peso", videoId: "https://drive.google.com/open?id=1SkHQ9QQQnqYx3JCU-Z1Lgy5SS3TKZd8-&usp=drive_copy", description: "Con carga extra, girá el torso o incliná lateralmente. Es un estímulo fuerte para los oblicuos y la zona lateral del core." },
     { name: "Plancha Extensa", videoId: "https://drive.google.com/open?id=1Y2_msKNEkwS-sQLPdsmp6wftWsJPzIZ7&usp=drive_copy", description: "Con brazos bien extendidos, mantené la postura rígida. El abdomen debe resistir el estiramiento para mantener la estabilidad." },
     { name: "Plancha Frontal", videoId: "https://drive.google.com/open?id=1gDnvOMTqTkFRmNDMOoSdYOin05tIUS60&usp=drive_copy", description: "Apoyado en antebrazos, sostené el cuerpo recto. El abdomen trabaja de forma isométrica para estabilizar todo el cuerpo." },
@@ -357,7 +357,7 @@ const trainingFolders = {
             "Hip Thrust en Smith 4 x 12• 10• 10• 10 rest=2-3min",
             "Isquiotibiales Sentada 4 x 12• (10+8)• (10+6)• 8 rest=1-2min",
             "Aductores Sentada 3 x fallo• fallo• fallo rest=1-2min",
-            "Hiperextensión 45° Glúteos 3 x fallo• fallo• fallo rest=1min",
+            "Hiperextensión para Glúteos 3 x fallo• fallo• fallo rest=1min",
             "Crunch en Máquina 2 x 16• 16 rest=1min"
             ],
           },
@@ -412,7 +412,7 @@ const trainingFolders = {
           },
           {
             superset: [
-            "Vuelos Laterales con Mancuernas 4 x 12• 12• 10• 0",
+            "Vuelos Laterales con Mancuernas 4 x 12• 12• 10• 10",
             "Peso Muerto Rumano con Mancuernas 3 x 12• 12• 12",
             "Vuelos Posteriores con Mancuernas 3 x 12• 12• 12",
           ],
@@ -1110,7 +1110,7 @@ const trainingFolders = {
             "Isquiotibiales Sentado 4 x 14• 12• 12• (10+8) rest=1-2min",
             "Extensión de Cuadriceps Sentado 4 x 12• (12+8)• (10+8)• 12 rest=2-4min",
             "Sentadillas Búlgaras 3 x 12• ↑10• ↑8 rest=2-3min",
-            "Hiperextensión 45° Glúteos 3 x 12• 10• 10 rest=2min",
+            "Hiperextensión para Glúteos 3 x 12• 10• 10 rest=2min",
             ],
           },
 
