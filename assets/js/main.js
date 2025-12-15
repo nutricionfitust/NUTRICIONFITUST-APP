@@ -31,7 +31,7 @@ const exerciseDatabase = {
   gluteos: [
     { name: "Hip Thrust con Barra", videoId: "https://drive.google.com/file/d/1gKxoZqdESY6vpSnIvvZKjN1a1agdJAci/view?usp=drivesdk", description: "Ejercicio clave para activar y desarrollar los glúteos. El foco está en la extensión de cadera: bajá controlado hasta estirar bien y subí contrayendo fuerte arriba." },
     { name: "Hip Thrust en Smith", videoId: "https://drive.google.com/file/d/1fcOHHb6YXseRaX915WdGt63f_hCpNd9F/view?usp=drivesdk", description: "La máquina guía el recorrido y te da estabilidad, lo que permite cargar más y concentrarte en llevar los glúteos a la máxima contracción en cada repetición." },
-    { name: "Hiperextensión 45 Grados Glúteos", videoId: "https://drive.google.com/file/d/1mcMH-_YV4T6eGWYM9UNNF5p7_7a7odeX/view?usp=drivesdk", description: "Al ajustar la técnica podés dirigir el esfuerzo hacia los glúteos. Enfocate en sentir cómo se estiran al bajar y cómo se activan con fuerza al subir." },
+    { name: "Hiperextensión 45° Glúteos", videoId: "https://drive.google.com/file/d/1mcMH-_YV4T6eGWYM9UNNF5p7_7a7odeX/view?usp=drivesdk", description: "Al ajustar la técnica podés dirigir el esfuerzo hacia los glúteos. Enfocate en sentir cómo se estiran al bajar y cómo se activan con fuerza al subir." },
     { name: "Sentadillas Sumo con Barra", videoId: "https://drive.google.com/file/d/1ijW2ft50ijZHSYpeHHucUNmt_f7WPz9I/view?usp=drivesdk", description: "Postura amplia (pies bien abiertos y las puntas hacia afuera), los glúteos se llevan gran parte del trabajo. Bajá profundo para aprovechar el estiramiento y subí de forma explosiva." },
     { name: "Sentadillas Sumo con Mancuerna", videoId: "https://drive.google.com/file/d/1gsNRrtMEClU8Ze2p16v7Iw9KP8_AAokY/view?usp=drivesdk", description: "Postura amplia (pies bien abiertos y las puntas hacia afuera), sosteniendo una mancuerna al frente. Excelente para trabajar glúteos y aductores con control, manteniendo la tensión durante todo el recorrido." },
   ],
@@ -357,7 +357,7 @@ const trainingFolders = {
             "Hip Thrust en Smith 4 x 12• 10• 10• 10 rest=2-3min",
             "Isquiotibiales Sentada 4 x 12• (10+8)• (10+6)• 8 rest=1-2min",
             "Aductores Sentada 3 x fallo• fallo• fallo rest=1-2min",
-            "Hiperextensión 45 Grados Glúteos 3 x fallo• fallo• fallo rest=1min",
+            "Hiperextensión 45° Glúteos 3 x fallo• fallo• fallo rest=1min",
             "Crunch en Máquina 2 x 16• 16 rest=1min"
             ],
           },
@@ -1110,7 +1110,7 @@ const trainingFolders = {
             "Isquiotibiales Sentado 4 x 14• 12• 12• (10+8) rest=1-2min",
             "Extensión de Cuadriceps Sentado 4 x 12• (12+8)• (10+8)• 12 rest=2-4min",
             "Sentadillas Búlgaras 3 x 12• ↑10• ↑8 rest=2-3min",
-            "Hiperextensión 45 Grados Glúteos 3 x 12• 10• 10 rest=2min",
+            "Hiperextensión 45° Glúteos 3 x 12• 10• 10 rest=2min",
             ],
           },
 
@@ -1428,7 +1428,7 @@ const trainingFolders = {
           {
             superset: [
             "Biceps Martillo Alternado con Mancuernas 4 x 12-10-8-8",
-            "Press Francés Acostado 45 4 x 12-12-10-10"
+            "Press Francés Acostado 45° 4 x 12-12-10-10"
           ],
             restAfter: "2-3min"            
           },
@@ -1585,7 +1585,7 @@ const trainingFolders = {
           {
             superset: [
             "Biceps Martillo Alternado con Mancuernas 4 x 12• 10• 8• 8",
-            "Press Francés Acostado 45 4 x 12• 12• 10• 10"
+            "Press Francés Acostado 45° 4 x 12• 12• 10• 10"
           ],
             restAfter: "2-3min"            
           },
@@ -1765,7 +1765,7 @@ const trainingFolders = {
           {
             superset: [
             "Biceps Martillo Alternado con Mancuernas 4 x 12-10-8-8",
-            "Press Francés Acostado 45 4 x 12-12-10-10"
+            "Press Francés Acostado 45° 4 x 12-12-10-10"
           ],
             restAfter: "2-3min"            
           },
@@ -2213,7 +2213,7 @@ const trainingFolders = {
           {
             superset: [
             "Biceps Martillo Alternado con Mancuernas 4 x 12• 10• 10• 8",
-            "Press Francés Acostada 45 4 x 12• 12• 10• 10"
+            "Press Francés Acostada 45° 4 x 12• 12• 10• 10"
           ],
             restAfter: "2-3min"            
           },
@@ -2514,7 +2514,7 @@ const trainingFolders = {
           {
             superset: [
             "Biceps Martillo Alternado con Mancuernas 4 x 12-10-8-8",
-            "Press Francés Acostado 45 4 x 12-12-10-10"
+            "Press Francés Acostado 45° 4 x 12-12-10-10"
           ],
             restAfter: "2-3min"            
           },
@@ -4496,39 +4496,61 @@ function renderExerciseCard_plain(entry){
 
 // ===== parseo y util =====
 function splitNameAndDetails(line){
-  const text = (line || '').trim();
+  const original = (line || '').toString();
 
-  // SOLO separar si hay indicadores claros de trabajo (x, series, descanso)
-  const hasWorkInfo = /(\d+\s*[x×]\s*\d+|\bseries?\b|\bdescanso\b|\brest\b|\d+\s?(?:s|min|m|’|'))/i.test(text);
-
-  if (!hasWorkInfo) {
-    // Todo es nombre del ejercicio
-    return {
-      namePart: text,
-      detailsPart: ''
-    };
+  // 1) extraer y remover "rest=..." del texto completo
+  let rest = '';
+  let tmp = ' ' + original + ' ';
+  const restEq = tmp.match(/rest\s*=\s*([0-9]+(?:\s*-\s*[0-9]+)?\s*(?:min|m|s)?)/i);
+  if (restEq){
+    rest = restEq[1].replace(/\s+/g,'').replace(/min/i,'m');
+    tmp = tmp.replace(restEq[0], ' ');
   }
 
-  // Si hay info de trabajo, intentamos separar por guión largo o " - "
-  const parts = text.split(/\s+[—-]\s+/);
+  // 2) localizar el inicio de los detalles por patrón de series:
+  //    - "3x", "3 x", "3×"
+  //    pero IGNORANDO "45 x grados" (o similares) porque eso es parte del nombre.
+  let idxX = -1;
+  const reX = /(\d+)\s*[x×]\s*/ig;
+  let m;
+  while ((m = reX.exec(tmp)) !== null) {
+    const num = parseInt(m[1], 10);
+    const after = tmp.slice(reX.lastIndex).trimStart();
 
-  if (parts.length === 1) {
-    return {
-      namePart: text,
-      detailsPart: ''
-    };
+    // Si después viene "grados / grado / deg / ° / º" => NO es series, es el ángulo del ejercicio
+    const looksLikeDegrees =
+      /^((?:grados?|deg)\b|[°º])/i.test(after);
+
+    // Además, cubrir casos tipo "45 x (glúteos)" donde inmediatamente después
+    // aparece un paréntesis y más adelante dice grados (por si lo escriben raro)
+    const maybeParen = after.startsWith('(') && /grados?|deg|[°º]/i.test(after.slice(0, 25));
+
+    if (looksLikeDegrees || maybeParen) {
+      continue; // saltar este match
+    }
+
+    // Este sí parece "series x ..."
+    idxX = m.index;
+    break;
   }
 
-  return {
-    namePart: parts[0].trim(),
-    detailsPart: parts.slice(1).join(' - ').trim()
-  };
+  // alternativa: "3 series"
+  const idxSerie = tmp.search(/\d+\s*series?/i);
 
+  let idx = -1;
+  if (idxX >= 0 && idxSerie >= 0) idx = Math.min(idxX, idxSerie);
+  else if (idxX >= 0) idx = idxX;
+  else if (idxSerie >= 0) idx = idxSerie;
 
-  // Si desc es igual al texto original o está vacío/no aporta, lo limpiamos
-  if (!desc || desc.length < 4 || desc === s) desc = '';
+  if (idx === -1){
+    // no encontramos patrón: todo es nombre
+    return { namePart: original.trim(), detailsPart: '', restFromLine: rest };
+  }
 
-  return { seriesCount, repsText, rest, desc };
+  const namePart = tmp.slice(0, idx).trim();
+  const detailsPart = tmp.slice(idx).trim();
+
+  return { namePart, detailsPart, restFromLine: rest };
 }
 
 function escapeHTML(s){ return (s||'').replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); }
@@ -4646,21 +4668,6 @@ function splitNameAndDetails(line){
  * - descripción textual antes o después (palabras, frases)
  */
 function parseDetails(s){
-  if (!s) return { desc: '' };
-
-  // ⛔ Si NO hay x ni "series", no interpretar números como reps
-  const hasRepsInfo = /(\d+\s*[x×]\s*\d+|\bseries?\b)/i.test(s);
-  const hasRestInfo = /(\d+\s?(?:s|min|m|’|'))/i.test(s);
-
-  if (!hasRepsInfo && !hasRestInfo) {
-    return {
-      series: '',
-      reps: '',
-      rest: '',
-      desc: s.trim()
-    };
-  }
-
   if (!s) return { seriesCount:'', repsText:'', rest:'' };
 
   let txt = ' ' + s + ' ';
@@ -4673,27 +4680,36 @@ function parseDetails(s){
   if (restFree){
     rest = restFree[2].replace(/\s+/g,'').replace(/min/i,'m');
     txt = txt.replace(restFree[0], ' ');
-    const srMatch = s.match(/(\d+)\s*[x×]\s*(\d+(?:\s?-\s?\d+)?)/i);
   }
 
-  // series: "3x", "3 x", "3×"  (prioridad)
-  let m = txt.match(/(^|\s)(\d+)\s*[x×]/i);
-  if (m){
+// series: "3x", "3 x", "3×"  (prioridad)
+let m = txt.match(/(^|\s)(\d+)\s*[x×]\s*/i);
+if (m){
+  // Si esto fuera "45 x grados", NO es series, es parte del nombre (debería no llegar acá,
+  // pero lo blindamos igual).
+  const startAfter = txt.indexOf(m[0]) + m[0].length;
+  const after = txt.slice(startAfter).trimStart();
+  const looksLikeDegrees = /^((?:grados?|deg)\b|[°º])/i.test(after);
+
+  if (!looksLikeDegrees) {
     seriesCount = m[2];
-    const start = txt.indexOf(m[0]) + m[0].length;
-    repsText = txt.slice(start).trim();
+    repsText = txt.slice(startAfter).trim();
   } else {
-    // alternativa: "3 series" / "3 serie"
-    const m2 = txt.match(/(^|\s)(\d+)\s*series?/i);
-    if (m2){
-      seriesCount = m2[2];
-      const start = txt.indexOf(m2[0]) + m2[0].length;
-      // si viene "de ..." lo saltamos
-      const restTxt = txt.slice(start).trim();
-      const deIdx = restTxt.toLowerCase().indexOf('de ');
-      repsText = (deIdx >= 0 ? restTxt.slice(deIdx + 3) : restTxt).trim();
-    }
+    // No lo tratamos como series
+    seriesCount = '';
+    repsText = txt.trim();
   }
+} else {
+  // alternativa: "3 series" / "3 serie"
+  const m2 = txt.match(/(^|\s)(\d+)\s*series?/i);
+  if (m2){
+    seriesCount = m2[2];
+    const start = txt.indexOf(m2[0]) + m2[0].length;
+    const restTxt = txt.slice(start).trim();
+    const deIdx = restTxt.toLowerCase().indexOf('de ');
+    repsText = (deIdx >= 0 ? restTxt.slice(deIdx + 3) : restTxt).trim();
+  }
+}
 
   // limpiar reps: mantener •, (), +, flechas ↑ ↓, guiones
   repsText = repsText
