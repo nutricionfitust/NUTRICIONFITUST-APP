@@ -48,7 +48,8 @@ const exerciseDatabase = {
   pantorrillas: [
     { name: "Gemelos de Pie en Máquina", videoId: "https://drive.google.com/file/d/1aQETMdpISa2jkX-xavke3vrNxDkLNWsS/view?usp=drivesdk", description: "Elevaciones de talones en máquina específica. Permite trabajar con cargas altas, aprovechando el estiramiento profundo abajo y cerrando con una contracción fuerte arriba." },
     { name: "Gemelos de Pie en Smith", videoId: "https://drive.google.com/file/d/18cuDm9I82ayxF4hSlcQpaQr45T77M3gn/view?usp=drivesdk", description: "Con la barra en la máquina Smith realizás elevaciones de pie con control y seguridad. La clave está en bajar bien hasta el estiramiento y subir explosivo." },
-    { name: "Gemelos en Prensa", videoId: "https://drive.google.com/file/d/1RkueB6PvBvuPz_RGfh3Hl70qWxGvqi_L/view?usp=drivesdk", description: "Apoyando solo la punta de los pies en la prensa, empujás hacia arriba tras un estiramiento completo. Es cómodo, seguro y permite cargar mucho para fatigar al máximo el músculo." },
+    { name: "Gemelos en Prensa", videoId: "https://drive.google.com/file/d/1RkueB6PvBvuPz_RGfh3Hl70qWxGvqi_L/view?usp=drivesdk", description: "Apoyando solo la punta de los pies en la prensa, empujás hacia arriba tras un estiramiento completo. Es cómodo, seguro y permite cargar mucho para explotar al máximo el músculo." },
+    { name: "Gemelos en Hack", videoId: "https://drive.google.com/file/d/1RkueB6PvBvuPz_RGfh3Hl70qWxGvqi_L/view?usp=drivesdk", description: "Apoyando solo la punta de los pies en la hack, empujás tras un estiramiento completo. Es cómodo, seguro y permite cargar mucho para explotar al máximo el músculo." },
     { name: "Sóleo Sentado con Mancuerna Unilateral", videoId: "https://drive.google.com/file/d/1XV-CutHJNkqvY7fSJaMLfKvlHUe2EMqY/view?usp=drivesdk", description: "Con una mancuerna sobre el muslo, trabajás un pie por vez. El sóleo recibe todo el estímulo, especialmente si bajás lento hasta el estiramiento y subís potente." },
     { name: "Sóleo Sentado en Máquina", videoId: "https://drive.google.com/file/d/1J7hUeQvPKwawBx0jLgWB5hfuM8DJKK21/view?usp=drivesdk", description: "La máquina guía el recorrido y te permite trabajar el sóleo con carga alta. Enfatizá la bajada profunda para maximizar el estímulo de crecimiento." },
     { name: "Sóleo Sentado con Mancuernas", videoId: "https://drive.google.com/file/d/1qNB7Mbho6e87D3JqxBXzrjIKM8RgcfTQ/view?usp=drivesdk", description: "Apoyando mancuernas sobre los muslos, hacés elevaciones sentado. El foco está en el estiramiento al bajar y la contracción completa al subir." },
@@ -4495,67 +4496,40 @@ function renderExerciseCard_plain(entry){
 
 // ===== parseo y util =====
 function splitNameAndDetails(line){
-  const parts = (line||'').split(/[—-]+/); // largo o corto
-  const name = (parts[0]||'').trim() || line;
-  const details = parts.slice(1).join(' - ').trim();
-  return { namePart: name, detailsPart: details };
-}
-// detecta series x reps y descanso, deja el resto como descripción
-function parseDetails(s){
-  if (!s) return { seriesCount:'', repsText:'', rest:'', desc:'' };
+  const text = (line || '').trim();
 
-  let txt = ' ' + s + ' ';
-  let seriesCount = '';
-  let repsText = '';
-  let rest = '';
-  let leftover = txt; // copia para luego extraer desc residual
+  // SOLO separar si hay indicadores claros de trabajo (x, series, descanso)
+  const hasWorkInfo = /(\d+\s*[x×]\s*\d+|\bseries?\b|\bdescanso\b|\brest\b|\d+\s?(?:s|min|m|’|'))/i.test(text);
 
-  // descanso suelto tipo "1-2min", "90s", "2m", etc.
-  const restFree = txt.match(/(^|\s)([0-9]+(?:\s*-\s*[0-9]+)?\s*(?:min|m|s))(\s|$)/i);
-  if (restFree){
-    rest = restFree[2].replace(/\s+/g,'').replace(/min/i,'m');
-    txt = txt.replace(restFree[0], ' ');
-    leftover = leftover.replace(restFree[0], ' ');
+  if (!hasWorkInfo) {
+    // Todo es nombre del ejercicio
+    return {
+      namePart: text,
+      detailsPart: ''
+    };
   }
 
-  // series: "3x", "3 x", "3×"
-  let m = txt.match(/(^|\s)(\d+)\s*[x×]/i);
-  if (m){
-    seriesCount = m[2];
-    const start = txt.indexOf(m[0]) + m[0].length;
-    repsText = txt.slice(start).trim();
-    leftover = leftover.replace(m[0], ' ');
-  } else {
-    // "3 series" / "3 serie"
-    const m2 = txt.match(/(^|\s)(\d+)\s*series?/i);
-    if (m2){
-      seriesCount = m2[2];
-      const start = txt.indexOf(m2[0]) + m2[0].length;
-      const restTxt = txt.slice(start).trim();
-      const deIdx = restTxt.toLowerCase().indexOf('de ');
-      repsText = (deIdx >= 0 ? restTxt.slice(deIdx + 3) : restTxt).trim();
-      leftover = leftover.replace(m2[0], ' ');
-    }
+  // Si hay info de trabajo, intentamos separar por guión largo o " - "
+  const parts = text.split(/\s+[—-]\s+/);
+
+  if (parts.length === 1) {
+    return {
+      namePart: text,
+      detailsPart: ''
+    };
   }
 
-  repsText = repsText
-    .replace(/\s+/g,' ')
-    .replace(/\s*•\s*/g,' • ')
-    .replace(/\s*-\s*/g,'-')
-    .trim();
+  return {
+    namePart: parts[0].trim(),
+    detailsPart: parts.slice(1).join(' - ').trim()
+  };
 
-  // "sobrante" como descripción básica (si existiera)
-  let desc = leftover
-    .replace(/\s+/g,' ')
-    .replace(/\s*•\s*/g,' • ')
-    .trim();
 
   // Si desc es igual al texto original o está vacío/no aporta, lo limpiamos
   if (!desc || desc.length < 4 || desc === s) desc = '';
 
   return { seriesCount, repsText, rest, desc };
 }
-
 
 function escapeHTML(s){ return (s||'').replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); }
 
@@ -4672,6 +4646,21 @@ function splitNameAndDetails(line){
  * - descripción textual antes o después (palabras, frases)
  */
 function parseDetails(s){
+  if (!s) return { desc: '' };
+
+  // ⛔ Si NO hay x ni "series", no interpretar números como reps
+  const hasRepsInfo = /(\d+\s*[x×]\s*\d+|\bseries?\b)/i.test(s);
+  const hasRestInfo = /(\d+\s?(?:s|min|m|’|'))/i.test(s);
+
+  if (!hasRepsInfo && !hasRestInfo) {
+    return {
+      series: '',
+      reps: '',
+      rest: '',
+      desc: s.trim()
+    };
+  }
+
   if (!s) return { seriesCount:'', repsText:'', rest:'' };
 
   let txt = ' ' + s + ' ';
@@ -4684,6 +4673,7 @@ function parseDetails(s){
   if (restFree){
     rest = restFree[2].replace(/\s+/g,'').replace(/min/i,'m');
     txt = txt.replace(restFree[0], ' ');
+    const srMatch = s.match(/(\d+)\s*[x×]\s*(\d+(?:\s?-\s?\d+)?)/i);
   }
 
   // series: "3x", "3 x", "3×"  (prioridad)
