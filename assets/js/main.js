@@ -335,35 +335,101 @@ const trainingFolders = {
   "3 MUSCULACIÓN + 1 HIIT + (1 LISS)": {
     routines: {
 //RUTINA CAMILA Nº 2 - 3 MUSCULACIÓN + 1 HIIT + (1 LISS) !  
-      "camilafrancoblonda": {
-        name: "Camila",
-        plan: {
-          "Día 1 - Piernas y Glúteos": [
-            "Sentadillas sumo 4 x 12-12-12-12",
-            "Hip thrust con barra 4 x 10-10-10-10",
-            "Estocadas búlgaras 3 x 12-12-12 c/pierna",
-            "Peso muerto rumano 4 x 10-10-10-10",
-            "Puentes de glúteo 3 x 15-15-15",
-            "Caminata lateral con banda 3 x 15-15-15 c/lado"
+        "camilafrancoblonda": {
+      name: "Camilucha",
+// PLAN DE ENTRENAMIENTO SEMANAL !    
+      plan: {  
+        "Día 1 - Inferior": {
+          "Acondicionamiento & Calentamiento": [
+        {
+            superset: [
+            "Rotaciones con Bolsa 2 x 12• 10 a cada lado",
+            "Sentadillas + Estocadas con Mancuernas (o bolsa) 2 x 12• 12",
+            ],
+            restAfter: "1min"
+          },
+          "Burpees 1 x 10",
+          "Plancha Frontal 1 x a lo que dés!"
+            ],
+          "Entrenamiento de Fuerza": [
+            "Sentadillas en Smith 6 x (2 aproximaciones)• 12• 10• 8• 8 rest=2-3min",
+            "Hip Thrust en Smith 4 x 12• 10• 10• 10 rest=2-3min",
+            "Isquiotibiales Sentada 4 x 12• (10+8)• (10+6)• 8 rest=1-2min",
+            "Aductores Sentada 3 x fallo• fallo• fallo rest=1-2min",
+            "Hiperextensión 45 Grados Glúteos 3 x fallo• fallo• fallo rest=1min",
+            "Crunch en Máquina 2 x 16• 16 rest=1min"
+            ],
+          },
+
+        "Día 2 - Superior":  {
+          "Acondicionamiento & Calentamiento": [
+            {
+            superset: [
+            "Rotaciones con Bolsa 2 x 12• 10 a cada lado",
+            "Biceps más Press Arnold con Mancuernas 2 x 16-12",
           ],
-          "Día 2 - Tren Superior": [
-            "Press inclinado con mancuernas 4 x 8-8-8-8",
-            "Remo con barra 4 x 8-8-8-8",
-            "Press militar 3 x 10-10-10",
-            "Jalones al pecho 3 x 10-10-10",
-            "Curl martillo 3 x 12-12-12",
-            "Fondos para tríceps 3 x 10-10-10"
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento de Fuerza": [
+            "Polea al Pecho Prono Cerrado 4 x 16• 12• 10• (8+6) rest=1-2min",
+            "Polea al Pecho con Triángulo 3 x 10• 10• 8 rest=1-2min",
+            "Vuelos Posteriores con Mancuernas 3 x 12• 10• 10 rest=1-2min",
+            "Press de Pecho en Maquina 5 x 16• 12• 10• 10• 8 rest=2min",
+                        {
+            superset: [
+            "Biceps Martillo Alternado con Mancuernas 3 x 12• 10• 8",
+            "Extensión de Triceps con Polea con Barra  3 x (12+8)• (10+6)• 10",
           ],
-          "Día 3 - Glúteos y Core": [
-            "Hip thrust unilateral 3 x 12-12-12 c/lado",
-            "Sentadillas búlgaras 3 x 10-10-10 c/pierna",
-            "Patadas de glúteo en polea 3 x 15-15-15 c/lado",
-            "Peso muerto unilateral 3 x 10-10-10 c/lado",
-            "Russian twists 3 x 20-20-20",
-            "Plancha con elevación de pierna 3 x 10-10-10 c/lado"
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento HIIT": [
+            "Correr en Cinta"
+            ],
+          },
+
+        "Día 3 - Full Body":  {
+          "Acondicionamiento & Calentamiento": [
+            {
+            superset: [
+            "Sentadillas más Estocadas con Peso (Bolsa) 2 x 14• 12",
+            "Burpees 2 x 8• 8",
           ],
-        },
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento de Fuerza": [
+            "Isquiotibiales Sentada 4 x 16• (12+8)-(12+8)• 8 rest=2min",
+            "Extensión de Cuadriceps Sentada 4 x 16• 12• 10• (10+6) rest=2min",
+            {
+            superset: [
+            "Hack 4 x 16• 12• 10• 10",
+            "Gemelos en Hack 4 x 10 a 14 reps al fallo",
+          ],
+            restAfter: "2-3min"
+          },
+          {
+            superset: [
+            "Vuelos Laterales con Mancuernas 4 x 12• 12• 10• 0",
+            "Peso Muerto Rumano con Mancuernas 3 x 12• 12• 12",
+            "Vuelos Posteriores con Mancuernas 3 x 12• 12• 12",
+          ],
+            restAfter: "2min"
+          },
+          {
+            superset: [
+            "Biceps Martillo Alternado con Mancuernas 3 x 12• 10• 8",
+            "Extensión de Triceps con Polea con Barra  3 x (12+8)• (10+6)• 10",
+          ],
+            restAfter: "1min"
+          },                 
+            ],
+          },
+      },
     },
+
+
 
 
 //RUTINA AZUL Nº 2 - 3 MUSCULACIÓN + 1 HIIT + (1 LISS) !  
@@ -3018,7 +3084,7 @@ const userRoutineMapping = {
 const userPasswords = {
   // CLAVES ÚINCAS DE USUARIOS
   'vesuvio-kremlin-quarzo-espresso-amore-siberia-russia-vesuvio-octavo-zarina-octavo-batata': 'agustina',
-  'tundra-vesuvio-balalaika-siberia-yogurt-vesuvio-octavo-zarina-octavo-batata': 'camilafrancoblonda',
+  'tundra-vesuvio-balalaika-siberia-yogurt-vesuvio-yogurt-vesuvio': 'camilafrancoblonda',
   'espresso-urali-tiramisu-siberia-vesuvio-octavo-zarina-octavo-batata': 'sofiaustarroz',
   'tiramisu-vesuvio-tundra-quarzo-russia-gondola-urali-octavo-zarina-octavo-batata': 'facundoustarroz',
   'vesuvio-spaghetti-quarzo-yogurt-tundra-opera-dolcevita-limoncello-quarzo-firenze': 'azulcherubini2',
@@ -3222,6 +3288,27 @@ const USER_HIIT_DAY_NOTES = {
             <li>1 minuto de trote suave (ej: ~8 km/h).</li>
             </ul>
             <p><b>Repetir 5 veces seguidas:</b> o sea <b>(40seg + 1min) x 5 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 1 minuto caminando.</p>
+            <p>A mimir. 😴</p>`
+    },
+    ],
+  },
+
+
+
+    "camilafrancoblonda": {
+    "Día 2 - Superior": [
+      { title: "HIIT en Cinta Inclinada (caminadora)",
+      body: `<p><strong>10 MINUTOS TOTALES.</strong></p>
+            <p>Inclinar la Cinta unos 6 grados.</p>
+            <p><b>2 minutos:</b> trote suave para entrar en calor.</p>
+            <p>Desinclinar la Cinta a 0 (cero) grados.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>30 segundos a ~ 3/4 de tu velocidad máxima (ej: ~14 km/h).</li>
+            <li>1 minuto de trote suave (ej: ~7 km/h).</li>
+            </ul>
+            <p><b>Repetir 5 veces seguidas:</b> o sea <b>(30seg + 1min) x 5 sin descanso.</b></p>
             <p><b>Recuperación:</b> 1 minuto caminando.</p>
             <p>A mimir. 😴</p>`
     },
