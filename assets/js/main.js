@@ -372,8 +372,8 @@ const trainingFolders = {
           },
             ],
           "Entrenamiento de Fuerza": [
-            "Polea al Pecho Prono Cerrado 4 x 16• 12• 10• (8+6) rest=1-2min",
-            "Polea al Pecho con Triángulo 3 x 10• 10• 8 rest=1-2min",
+            "Polea al Pecho Prono Cerrado 4 x 16• 12• 10• 8 rest=1-2min",
+            "Polea al Pecho con Triángulo 3 x 10• 10• (8+6) rest=1-2min",
             "Vuelos Posteriores con Mancuernas 3 x 12• 10• 10 rest=1-2min",
             "Press de Pecho en Maquina 5 x 16• 12• 10• 10• 8 rest=2min",
                         {
