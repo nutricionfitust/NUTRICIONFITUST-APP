@@ -4236,85 +4236,67 @@ function nameVariants(s){
  *  - array  [ { name:"...", description:"...", aliases:[...] }, ... ]
  *  - claves con html en description/desc/texto
  */
-function flattenExerciseDatabase(){
-  const db = window.exerciseDatabase || {};
-  const all = [];
-  for (const val of Object.values(db)){
-    if (Array.isArray(val)) all.push(...val);
-  }
-  return all;
-}
-
 function getExerciseDescriptionByName(name){
-  const list = flattenExerciseDatabase();
+  const db = (window.exerciseDatabase || {});
   const variants = nameVariants(name);
+  const list = Array.isArray(db) ? db : Object.keys(db).map(k => ({ key:k, ...db[k] }));
 
-  for (const ex of list){
-    const exName = normalizeName(ex?.name || '');
-    if (!exName) continue;
-
-    // exacto por variantes
+  // 1) exacto por clave normalizada
+  for (const item of list){
+    const keyName = normalizeName(item.name || item.key || '');
+    if (!keyName) continue;
     for (const v of variants){
-      if (exName === v) return ex.description || '';
+      if (keyName === v) {
+        const desc = item.description || item.desc || item.texto || '';
+        return desc || '';
+      }
     }
   }
 
-  // fuzzy suave
-  for (const ex of list){
-    const exName = normalizeName(ex?.name || '');
-    if (!exName) continue;
+  // 2) por alias exacto
+  for (const item of list){
+    const aliases = item.aliases || item.alias || [];
+    const arr = Array.isArray(aliases) ? aliases : [aliases];
+    for (const al of arr){
+      const alN = normalizeName(al);
+      for (const v of variants){
+        if (alN && alN === v){
+          const desc = item.description || item.desc || item.texto || '';
+          return desc || '';
+        }
+      }
+    }
+  }
 
+  // 3) fuzzy "incluye" (tokens contenidos en cualquier sentido)
+  for (const item of list){
+    const keyName = normalizeName(item.name || item.key || '');
+    if (!keyName) continue;
     for (const v of variants){
-      if (exName.includes(v) || v.includes(exName)){
-        return ex.description || '';
+      if (keyName.includes(v) || v.includes(keyName)){
+        const desc = item.description || item.desc || item.texto || '';
+        if (desc) return desc;
+      }
+    }
+  }
+
+  // 4) por alias fuzzy
+  for (const item of list){
+    const aliases = item.aliases || item.alias || [];
+    const arr = Array.isArray(aliases) ? aliases : [aliases];
+    for (const al of arr){
+      const alN = normalizeName(al);
+      for (const v of variants){
+        if (alN && (alN.includes(v) || v.includes(alN))){
+          const desc = item.description || item.desc || item.texto || '';
+          if (desc) return desc;
+        }
       }
     }
   }
 
   return '';
 }
-
-function getExerciseVideoUrlByName(name){
-  const list = flattenExerciseDatabase();
-  const variants = nameVariants(name);
-
-  const findVideo = (ex) => {
-    const raw = (ex?.videoId || '').toString().trim();
-    if (!raw) return '';
-    return raw; // en tu DB ya viene URL completa
-  };
-
-  // exacto
-  for (const ex of list){
-    const exName = normalizeName(ex?.name || '');
-    if (!exName) continue;
-    for (const v of variants){
-      if (exName === v) return findVideo(ex);
-    }
-  }
-
-  // fuzzy suave
-  for (const ex of list){
-    const exName = normalizeName(ex?.name || '');
-    if (!exName) continue;
-    for (const v of variants){
-      if (exName.includes(v) || v.includes(exName)){
-        return findVideo(ex);
-      }
-    }
-  }
-
-  return '';
-}
-function escapeAttr(s){
-  return (s||'')
-    .toString()
-    .replace(/&/g,'&amp;')
-    .replace(/"/g,'&quot;')
-    .replace(/</g,'&lt;')
-    .replace(/>/g,'&gt;');
-}
-
 
 
 
@@ -4641,14 +4623,6 @@ const restVal = restValRaw
       ${descHtml}
     </div>
   `;
-
-  const videoUrl = getExerciseVideoUrlByName(namePart);
-
-const nameHtml = videoUrl
-  ? `<a class="ex-name-link" href="${escapeAttr(videoUrl)}" target="_blank" rel="noopener noreferrer">${escapeHTML(namePart)}</a>
-     <a class="ex-video-badge" href="${escapeAttr(videoUrl)}" target="_blank" rel="noopener noreferrer">🎥</a>`
-  : `${escapeHTML(namePart)}`;
-
 }
 
 // ===== parseo y util =====
