@@ -3436,6 +3436,24 @@ const USER_HIIT_DAY_NOTES = {
             <p><b>Recuperación:</b> 1 minuto caminando.</p>
             <p>A mimir. 😴</p>`
     },
+              { title: "Opción 2: HIIT Afuera (o Parque)",
+      body: `<p><strong>20 a 30 MINUTOS TOTALES.</strong></p>
+            <p>Para <b>entrar en calor:</b></p> 
+            <p><b>5 minutos:</b> trote suave (7~8 km/h).</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>100 metros a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
+            <li>50 metros tranqui (slow). Los primeros 30 m caminando (5.5 km/h), y trote suave (8 km/h) los últimos 20 m.</li>
+            </ul>
+            <p><b>Repetir 6 veces seguidas:</b> o sea <b>(150 m fast + 50 m slow) x 6 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 2 minuto caminando.</p>
+            <p><b>Segundo intervalo:</b></p> 
+            <ul class="list-disc pl-6">
+            <li>Mismos intervalos (150 m fast + 50 m slow)<b> x 4 veces sin descanso.</b></li>
+            </ul>
+            <p><b>Recuperación:</b> 2 minuto caminando.</p>
+            <p>A mimir. 😴</p>`
+    },
     ],
     "Día 5 - Brazos + Hombros": [
       { title: "HIIT en cinta",
@@ -3456,22 +3474,27 @@ const USER_HIIT_DAY_NOTES = {
             <p><b>Recuperación:</b> 1 minuto caminando.</p>
             <p>A mimir. 😴</p>`
     },
-          { title: "Opción 2 HIIT en Parque",
-      body: `<p><strong>12 MINUTOS TOTALES.</strong></p>
+          { title: "Opción 2: HIIT en Parque",
+      body: `<p><strong>20 a 30 MINUTOS TOTALES.</strong></p>
             <p>Para <b>entrar en calor:</b></p> 
             <p><b>5 minutos:</b> trote suave (7~8 km/h).</p>
             <p>Subida del Anfiteatro.</p>
             <p><b>intervalos (HIIT):</b></p> 
-            <ul class="list-disc pl-6">
             <p><b>Primer intervalo:</b></p> 
+                        <ul class="list-disc pl-6">
             <li>Subir y bajar 8 veces corriendo.</li>
             <p><b>2 minutos:</b> trote suave (7~8 km/h) por el camino.</p>
+            </ul>
             <p><b>Segundo intervalo:</b></p> 
+                        <ul class="list-disc pl-6">
             <li>Subir y bajar 8 veces corriendo.</li>
             <p><b>2 minutos:</b> trote suave (7~8 km/h) por el camino.</p>
+            </ul>
             <p><b>Tercer intervalo:</b></p> 
+                        <ul class="list-disc pl-6">
             <li>Subir y bajar 6 veces corriendo.</li>
             <p><b>2 minutos:</b> trote suave (7~8 km/h) por el camino.</p>
+            </ul>
             <p><b>Recuperación:</b> 1 minuto caminando.</p>
             <p>A mimir. 😴</p>`
     },
