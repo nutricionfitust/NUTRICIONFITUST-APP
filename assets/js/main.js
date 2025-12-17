@@ -4178,7 +4178,7 @@ html += `
     <div class="flex justify-between items-center">
       <div>
         <h4 class="text-lg font-bold text-purple-800 mb-1">Descargar Entrenamiento</h4>
-        <p class="text-purple-700 text-sm">Tené tu plan en el celular! ⬇️ (Aún no disponible)</p>
+        <p class="text-purple-700 text-sm">Tené tu plan en el celular! ⬇️ (Descargar/ Imprimir en formato tabloide). Sigo con mejoras para los próximos días!</p>
       </div>
       <div class="text-purple-700">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"></svg>
@@ -4363,29 +4363,23 @@ const bodyHTML = buildPrintableBodyHTML({ userKey, userName: name, routineData: 
 }
 
 // Construye el cuerpo: Portada + un día por hoja
+// Construye el cuerpo: Portada + días + “Más información” al final
 function buildPrintableBodyHTML({ userKey, userName, routineData }){
   const cover = buildCoverHTML_plain(userName, routineData);
+
   const plan = routineData.plan || {};
   const days = Object.keys(plan)
     .map(dayName => buildDayPageHTML_plain(userKey, dayName, plan[dayName]))
     .join('');
-  return cover + days;
+
+  // ✅ “Más información” SIEMPRE al final
+  const moreInfoPage = buildMoreInfoPage_plain(routineData);
+
+  return cover + days + moreInfoPage;
 }
 
-// Portada con "Más información" (sin CSS inline, usa print-style.css)
+// ✅ Portada SIN “Más información” y SIN fechas
 function buildCoverHTML_plain(userName, routineData){
-  const infoSections = Array.isArray(routineData.infoSections) ? routineData.infoSections : [];
-  const moreInfo = infoSections.length
-    ? `
-      <h3 class="section-title">Más información</h3>
-      <div class="moreinfo">
-        ${infoSections.map(sec => `
-          ${sec.title ? `<p><b>${escapeHTML(sec.title)}</b></p>` : ''}
-          ${sec.html || '' }
-        `).join('<hr style="border:none;border-top:1px solid #e2e8f0;margin:10px 0">')}
-      </div>`
-    : '';
-
   return `
   <section class="page">
     <h1>Mi Plan de Entrenamiento – ${escapeHTML(userName)}</h1>
@@ -4393,15 +4387,40 @@ function buildCoverHTML_plain(userName, routineData){
     <div class="cover-box">
       <p>Hola ${escapeHTML(userName)}! Este es tu plan de entrenamiento personalizado.</p>
     </div>
-
-    ${moreInfo}
   </section>`;
 }
 
+// ✅ Página final: “Más información” (tal cual HTML de la web)
+function buildMoreInfoPage_plain(routineData){
+  const infoSections = Array.isArray(routineData.infoSections) ? routineData.infoSections : [];
+  if (!infoSections.length) return '';
 
-// Un día completo por hoja con secciones y tarjetas como en el mock
+  return `
+  <section class="page">
+    <h2>Más información</h2>
+
+    <div class="moreinfo">
+      ${infoSections.map(sec => `
+        ${sec.title ? `<p><b>${escapeHTML(sec.title)}</b></p>` : ''}
+        ${sec.html || ''}
+      `).join('<hr style="border:none;border-top:1px solid #e2e8f0;margin:10px 0">')}
+    </div>
+  </section>`;
+}
+
+// ✅ Un día completo por hoja (SIN emoji calendario, SIN fecha)
 function buildDayPageHTML_plain(userKey, dayName, dayData){
-  const order = ["Acondicionamiento", "Acondicionamiento & Calentamiento", "Movilidad", "Entrenamiento de Fuerza", "Entrenamiento de fuerza", "Fuerza", "HIIT", "Cardio HIIT"];
+  const order = [
+    "Acondicionamiento",
+    "Acondicionamiento & Calentamiento",
+    "Movilidad",
+    "Entrenamiento de Fuerza",
+    "Entrenamiento de fuerza",
+    "Fuerza",
+    "HIIT",
+    "Cardio HIIT"
+  ];
+
   const sections = normalizeDaySections(dayData, order);
 
   return `
@@ -4409,9 +4428,11 @@ function buildDayPageHTML_plain(userKey, dayName, dayData){
     <div class="day-header">
       <h2>${escapeHTML(dayName)}</h2>
     </div>
+
     ${sections.map(sec => renderSectionBlock_plain(userKey, dayName, sec)).join('')}
   </section>`;
 }
+
 
 function getHiitNotesForDay(userKey, dayName){
   const notesByUser = (window.USER_HIIT_DAY_NOTES || {})[userKey] || {};
