@@ -405,8 +405,8 @@ const trainingFolders = {
             "Extensión de Cuadriceps Sentada 4 x 16• 12• 10• (10+6) rest=2min",
             {
             superset: [
-            "Hack 4 x 16• 12• 10• 10",
-            "Gemelos en Hack 4 x 10 a 14 reps al fallo",
+            "Prensa 4 x 16• 12• 10• 10",
+            "Gemelos en Prensa 4 x 10 a 14 reps al fallo",
           ],
             restAfter: "2-3min"
           },
@@ -3438,7 +3438,7 @@ const USER_HIIT_DAY_NOTES = {
     },
     ],
     "Día 5 - Brazos + Hombros": [
-      { title: "HIIT en cinta (caminadora)",
+      { title: "HIIT en cinta",
       body: `<p><strong>12 MINUTOS 30 SEG TOTALES.</strong></p>
             <p>Para <b>entrar en calor:</b></p> 
             <p><b>1 minuto:</b> caminata rápida (5~6 km/h).</p>
@@ -3453,6 +3453,25 @@ const USER_HIIT_DAY_NOTES = {
             <p><b>Esto lo hacés 5 veces:</b></p>
             <p>O sea <b>(30seg + 1min) x 5 sin descanso.</b></p>
             </ul>
+            <p><b>Recuperación:</b> 1 minuto caminando.</p>
+            <p>A mimir. 😴</p>`
+    },
+          { title: "Opción 2 HIIT en Parque",
+      body: `<p><strong>12 MINUTOS TOTALES.</strong></p>
+            <p>Para <b>entrar en calor:</b></p> 
+            <p><b>5 minutos:</b> trote suave (7~8 km/h).</p>
+            <p>Subida del Anfiteatro.</p>
+            <p><b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <p><b>Primer intervalo:</b></p> 
+            <li>Subir y bajar 8 veces corriendo.</li>
+            <p><b>2 minutos:</b> trote suave (7~8 km/h) por el camino.</p>
+            <p><b>Segundo intervalo:</b></p> 
+            <li>Subir y bajar 8 veces corriendo.</li>
+            <p><b>2 minutos:</b> trote suave (7~8 km/h) por el camino.</p>
+            <p><b>Tercer intervalo:</b></p> 
+            <li>Subir y bajar 6 veces corriendo.</li>
+            <p><b>2 minutos:</b> trote suave (7~8 km/h) por el camino.</p>
             <p><b>Recuperación:</b> 1 minuto caminando.</p>
             <p>A mimir. 😴</p>`
     },
