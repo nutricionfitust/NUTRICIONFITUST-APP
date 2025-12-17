@@ -4451,6 +4451,18 @@ function renderHiitBlockContent(userKey, dayName, section){
   }).join('');
 }
 
+function extractGroupRestFromSuperset(supersetArray){
+  // Busca "rest=1-2min" dentro de cualquiera de las líneas
+  for (const it of (supersetArray || [])) {
+    const line = (it || '').toString();
+    const m = line.match(/rest\s*=\s*([0-9]+(?:\s*-\s*[0-9]+)?\s*(?:min|m|s|’|')?)/i);
+    if (m) {
+      return m[1].replace(/\s+/g,'').replace(/min/i,'m');
+    }
+  }
+  return '';
+}
+
 // ===== helpers de secciones/colores y tarjetas =====
 function normalizeDaySections(dayData){
   // Si vino como array plano, lo tratamos como bloque único “Entrenamiento” (peso 50)
@@ -4537,29 +4549,42 @@ function renderSectionBlock_plain(userKey, dayName, section){
 }
 
 function renderEntryCard_plain(entry){
-  // Superserie → panel violeta con ejercicios dentro
+  // Superserie → panel violeta con ejercicios dentro + descanso al final del bloque
   if (entry && typeof entry==='object' && Array.isArray(entry.superset)){
-    const label = entry.superset.length===2 ? 'Biserie'
-                : entry.superset.length===3 ? 'Triserie'
-                : entry.superset.length>3  ? 'Multiserie' : 'Serie compuesta';
-    const restText = entry.rest || ''; // si lo pasás en tu data
-    const items = entry.superset.map(t => renderExerciseCard_plain(t)).join('');
+    const n = entry.superset.length;
+    const label = n===2 ? 'Biserie'
+                : n===3 ? 'Triserie'
+                : n>3  ? 'Multiserie'
+                : 'Serie compuesta';
+
+    // ✅ descanso del bloque (prioridad: entry.rest, si no, buscar rest=... en las líneas)
+    const groupRest = (entry.rest || entry.descanso || entry.restAfter || '').toString().trim()
+                   || extractGroupRestFromSuperset(entry.superset);
+
+    // ✅ Dentro del bloque NO mostramos descanso por ejercicio
+    const items = entry.superset.map(t => renderExerciseCard_plain(t, { hideRest: true })).join('');
+
     return `
       <div class="panel">
         <div class="panel-head">
-          <div>${label}</div>
-          <div style="font-weight:700; color:#7c3aed">Sin descanso entre ejercicios</div>
+          <div class="panel-label">${label}</div>
+          <div class="panel-note">Sin descanso entre ejercicios</div>
         </div>
+
         ${items}
-        ${restText ? `<div class="panel-foot">Descanso ${escapeHTML(restText)}</div>` : ''}
+
+        ${groupRest ? `<div class="panel-foot">Descanso ${escapeHTML(groupRest)}</div>` : ''}
       </div>
     `;
   }
+
   // Ejercicio simple
   return renderExerciseCard_plain(entry);
 }
 
-function renderExerciseCard_plain(entry){
+function renderExerciseCard_plain(entry, options = {}){
+  const { hideRest = false } = options;
+
   const line = (entry || '').toString();
   const { namePart, detailsPart, restFromLine } = splitNameAndDetails(line);
   const parsed = parseDetails(detailsPart);
@@ -4568,13 +4593,17 @@ function renderExerciseCard_plain(entry){
     <span class="chip">Series: ${parsed.seriesCount || '—'}</span>
     <span class="chip">Reps: ${parsed.repsText || '—'}</span>
   `;
-  const restVal = parsed.rest || restFromLine;
-  const rest = restVal ? `<span class="rest">Descanso ${restVal}</span>` : '';
 
-  // 🔎 buscar en DB; si no hay, usar residual del parser
+  // ✅ descanso: solo para ejercicios simples (no dentro de biseries/triseries)
+  let restHtml = '';
+  if (!hideRest) {
+    const restVal = parsed.rest || restFromLine;
+    if (restVal) restHtml = `<span class="rest">Descanso ${escapeHTML(restVal)}</span>`;
+  }
+
+  // 🔎 descripción DB (como ya venías haciendo)
   let description = getExerciseDescriptionByName(namePart) || parsed.desc || '';
   if (description && !/[<>]/.test(description)) {
-    // es texto plano → respetar saltos
     description = description.replace(/\r?\n/g, '<br>');
   }
   const descHtml = description ? `<div class="desc">${description}</div>` : '';
@@ -4583,13 +4612,12 @@ function renderExerciseCard_plain(entry){
     <div class="ex">
       <div class="ex-top">
         <div class="ex-name">${escapeHTML(namePart)}</div>
-        <div class="chips">${chips}${rest ? `<span style="margin-left:6px">${rest}</span>` : ''}</div>
+        <div class="chips">${chips}${restHtml ? `<span style="margin-left:6px">${restHtml}</span>` : ''}</div>
       </div>
       ${descHtml}
     </div>
   `;
 }
-
 
 // ===== parseo y util =====
 function splitNameAndDetails(line){
