@@ -124,11 +124,11 @@ p  { margin: 0 0 8px; }
 .chips { display:flex; align-items:center; gap:6px; flex-wrap:wrap; }
 .chip {
   background: var(--chip); color:#1e40af; border:1px solid #c7d2fe;
-  font-weight:800; font-size:12px; padding:3px 8px; border-radius:999px;
+  font-weight:400; font-size:12px; padding:3px 8px; border-radius:999px;
 }
 .rest {
   background:#f0eaff; color: var(--violet); border:1px solid #d8b4fe;
-  font-weight:800; font-size:12px; padding:3px 8px; border-radius:999px;
+  font-weight:600; font-size:12px; padding:3px 8px; border-radius:999px;
 }
 .desc { background:#f8fafc; border:1px dashed #cbd5e1; color:#334155;
   border-radius:12px; padding:8px 10px; margin-top:6px; }
@@ -138,3 +138,13 @@ p  { margin: 0 0 8px; }
 
 .panel-label { font-weight: 800; }  /* Biserie/Triserie en negrita */
 .panel-note  { font-weight: 400; }  /* Sin descanso... normal */
+
+.panel-note{
+  font-size:12px;
+  padding:3px 8px;
+  border-radius:999px;
+  border:1px solid #d8b4fe;
+  background:#f0eaff;
+  color:#5b21b6;
+  font-weight:400;
+}

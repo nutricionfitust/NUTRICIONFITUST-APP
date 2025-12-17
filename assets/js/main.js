@@ -4573,7 +4573,7 @@ function renderEntryCard_plain(entry){
 
         ${items}
 
-        ${groupRest ? `<div class="panel-foot">Descanso ${escapeHTML(groupRest)}</div>` : ''}
+        ${groupRest ? `<div class="panel-foot"><span class="rest">Descanso ${escapeHTML(groupRest)}</span></div>` : ''}
       </div>
     `;
   }
@@ -4597,7 +4597,13 @@ function renderExerciseCard_plain(entry, options = {}){
   // ✅ descanso: solo para ejercicios simples (no dentro de biseries/triseries)
   let restHtml = '';
   if (!hideRest) {
-    const restVal = parsed.rest || restFromLine;
+    const restValRaw = parsed.rest || restFromLine;
+const restVal = restValRaw
+  ? restValRaw.toString()
+      .replace(/\s+/g,'')
+      .replace(/(\d+(?:-\d+)?)m\b/i, '$1 min')
+      .replace(/(\d+(?:-\d+)?)s\b/i, '$1 seg')
+  : '';
     if (restVal) restHtml = `<span class="rest">Descanso ${escapeHTML(restVal)}</span>`;
   }
 
@@ -4795,46 +4801,61 @@ function splitNameAndDetails(line){
 function parseDetails(s){
   if (!s) return { seriesCount:'', repsText:'', rest:'' };
 
+  function formatRest(raw){
+    if (!raw) return '';
+    let r = raw.toString().trim().toLowerCase();
+    r = r.replace(/\s+/g,'');             // compacta
+
+    // 2min -> 2 min, 1m -> 1 min, 45-60s -> 45-60 seg
+    r = r.replace(/(\d)(min)\b/g, '$1 min');
+    r = r.replace(/(\d+(?:-\d+)?)m\b/g, '$1 min');
+    r = r.replace(/(\d)(seg)\b/g, '$1 seg');
+    r = r.replace(/(\d+(?:-\d+)?)s\b/g, '$1 seg');
+
+    return r;
+  }
+
   let txt = ' ' + s + ' ';
   let seriesCount = '';
   let repsText = '';
   let rest = '';
 
-  // (por si quedara un descanso suelto en los detalles)
-  const restFree = txt.match(/(^|\s)([0-9]+(?:\s*-\s*[0-9]+)?\s*(?:min|m|s))(\s|$)/i);
-  if (restFree){
-    rest = restFree[2].replace(/\s+/g,'').replace(/min/i,'m');
-    txt = txt.replace(restFree[0], ' ');
+  // ✅ SOLO extraer descanso si lo indican explícitamente
+  // Ej: "descanso 1-2m", "rest 60s", "descanso: 1min"
+  const restExplicit = txt.match(/\b(?:rest|descanso)\b\s*[:=]?\s*([0-9]+(?:\s*-\s*[0-9]+)?\s*(?:min|m|seg|s))\b/i);
+  if (restExplicit){
+    rest = formatRest(restExplicit[1]);
+    txt = txt.replace(restExplicit[0], ' ');
   }
 
-// series: "3x", "3 x", "3×"  (prioridad)
-let m = txt.match(/(^|\s)(\d+)\s*[x×]\s*/i);
-if (m){
-  // Si esto fuera "45 x grados", NO es series, es parte del nombre (debería no llegar acá,
-  // pero lo blindamos igual).
-  const startAfter = txt.indexOf(m[0]) + m[0].length;
-  const after = txt.slice(startAfter).trimStart();
-  const looksLikeDegrees = /^((?:grados?|deg)\b|[°º])/i.test(after);
+  // series: "3x", "3 x", "3×" (prioridad)
+  let m = txt.match(/(^|\s)(\d+)\s*[x×]\s*/i);
+  if (m){
+    const startAfter = txt.indexOf(m[0]) + m[0].length;
+    const after = txt.slice(startAfter).trimStart();
+    const looksLikeDegrees = /^((?:grados?|deg)\b|[°º])/i.test(after);
 
-  if (!looksLikeDegrees) {
-    seriesCount = m[2];
-    repsText = txt.slice(startAfter).trim();
+    if (!looksLikeDegrees) {
+      seriesCount = m[2];
+      repsText = txt.slice(startAfter).trim();
+    } else {
+      seriesCount = '';
+      repsText = txt.trim();
+    }
   } else {
-    // No lo tratamos como series
-    seriesCount = '';
-    repsText = txt.trim();
+    // alternativa: "3 series"
+    const m2 = txt.match(/(^|\s)(\d+)\s*series?/i);
+    if (m2){
+      seriesCount = m2[2];
+      const start = txt.indexOf(m2[0]) + m2[0].length;
+      const restTxt = txt.slice(start).trim();
+      const deIdx = restTxt.toLowerCase().indexOf('de ');
+      repsText = (deIdx >= 0 ? restTxt.slice(deIdx + 3) : restTxt).trim();
+    } else {
+      // ✅ si no hay series ni "series", lo que queda SON reps (incluye 30seg, 1min, etc)
+      repsText = txt.trim();
+    }
   }
-} else {
-  // alternativa: "3 series" / "3 serie"
-  const m2 = txt.match(/(^|\s)(\d+)\s*series?/i);
-  if (m2){
-    seriesCount = m2[2];
-    const start = txt.indexOf(m2[0]) + m2[0].length;
-    const restTxt = txt.slice(start).trim();
-    const deIdx = restTxt.toLowerCase().indexOf('de ');
-    repsText = (deIdx >= 0 ? restTxt.slice(deIdx + 3) : restTxt).trim();
-  }
-}
 
   // limpiar reps: mantener •, (), +, flechas ↑ ↓, guiones
   repsText = repsText
