@@ -4407,7 +4407,7 @@ function buildDayPageHTML_plain(userKey, dayName, dayData){
   return `
   <section class="page">
     <div class="day-header">
-      <h2>📅 ${escapeHTML(dayName)}</h2>
+      <h2>${escapeHTML(dayName)}</h2>
     </div>
     ${sections.map(sec => renderSectionBlock_plain(userKey, dayName, sec)).join('')}
   </section>`;
