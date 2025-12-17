@@ -4601,8 +4601,8 @@ function renderExerciseCard_plain(entry, options = {}){
 const restVal = restValRaw
   ? restValRaw.toString()
       .replace(/\s+/g,'')
-      .replace(/(\d+(?:-\d+)?)m\b/i, '$1 min')
-      .replace(/(\d+(?:-\d+)?)s\b/i, '$1 seg')
+      .replace(/(\d+(?:-\d+)?)m\b/i, '$1min')
+      .replace(/(\d+(?:-\d+)?)s\b/i, '$1seg')
   : '';
     if (restVal) restHtml = `<span class="rest">Descanso ${escapeHTML(restVal)}</span>`;
   }
