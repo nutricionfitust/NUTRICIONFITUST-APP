@@ -367,7 +367,7 @@ const trainingFolders = {
             {
             superset: [
             "Rotaciones con Bolsa 2 x 12• 10 a cada lado",
-            "Biceps más Press Arnold con Mancuernas 2 x 16-12",
+            "Biceps más Press Arnold con Mancuernas 2 x 16• 12",
           ],
             restAfter: "1min"
           },
@@ -401,7 +401,7 @@ const trainingFolders = {
           },
             ],
           "Entrenamiento de Fuerza": [
-            "Isquiotibiales Sentada 4 x 16• (12+8)-(12+8)• 8 rest=2min",
+            "Isquiotibiales Sentada 4 x 16• (12+8)• (12+8)• 8 rest=2min",
             "Extensión de Cuadriceps Sentada 4 x 16• 12• 10• (10+6) rest=2min",
             {
             superset: [
@@ -4113,6 +4113,10 @@ function showUserSpecificTraining(userKey) {
 // === 🔧 Exponer los datos globalmente para otras funciones ===
 try { if (typeof userRoutineMapping !== 'undefined') window.userRoutineMapping = userRoutineMapping; } catch(e){}
 try { if (typeof trainingFolders !== 'undefined') window.trainingFolders = trainingFolders; } catch(e){}
+try { window.USER_HIIT_DAY_NOTES = USER_HIIT_DAY_NOTES; } catch(_){}
+try { window.DEFAULT_HIIT_DAY_NOTES = DEFAULT_HIIT_DAY_NOTES; } catch(_){}
+try { window.SHOW_DEFAULT_HIIT_CARD = SHOW_DEFAULT_HIIT_CARD; } catch(_){}
+
 
   title.textContent = `Mi Plan de Entrenamiento - ${routineData.name}`;
 
@@ -4299,7 +4303,7 @@ function getExerciseDescriptionByName(name){
 //DESCARGAR CARPETA - PDF!
 // Abre una ventana con el "formato hoja" y permite descargar PDF tal cual se ve
 //Agregar la letra "o" para completar openPrintableRoutine(userKey){ --> en el renglón de aquí abajo!
-function penPrintableRoutine(userKey){
+function openPrintableRoutine(userKey){
   // 1) Datos
   const map = (window.userRoutineMapping || {})[userKey];
   if(!map){ alert('No encontré la carpeta del usuario.'); return; }
@@ -4309,7 +4313,7 @@ function penPrintableRoutine(userKey){
   const name = (displayName || userName || data.name || 'Usuario');
 
   // 2) HTML del cuerpo (portada + días)
-  const bodyHTML = buildPrintableBodyHTML({ userName: name, routineData: data });
+const bodyHTML = buildPrintableBodyHTML({ userKey, userName: name, routineData: data });
 
   // 3) Abrir ventana con CSS de hoja + toolbar + html2pdf
   const w = window.open('', '_blank');
@@ -4359,16 +4363,17 @@ function penPrintableRoutine(userKey){
 }
 
 // Construye el cuerpo: Portada + un día por hoja
-function buildPrintableBodyHTML({ userName, routineData }){
+function buildPrintableBodyHTML({ userKey, userName, routineData }){
   const cover = buildCoverHTML_plain(userName, routineData);
   const plan = routineData.plan || {};
-  const days = Object.keys(plan).map(dayName => buildDayPageHTML_plain(dayName, plan[dayName])).join('');
+  const days = Object.keys(plan)
+    .map(dayName => buildDayPageHTML_plain(userKey, dayName, plan[dayName]))
+    .join('');
   return cover + days;
 }
 
 // Portada con "Más información" (sin CSS inline, usa print-style.css)
 function buildCoverHTML_plain(userName, routineData){
-  const today = new Date().toLocaleDateString();
   const infoSections = Array.isArray(routineData.infoSections) ? routineData.infoSections : [];
   const moreInfo = infoSections.length
     ? `
@@ -4384,7 +4389,6 @@ function buildCoverHTML_plain(userName, routineData){
   return `
   <section class="page">
     <h1>Mi Plan de Entrenamiento – ${escapeHTML(userName)}</h1>
-    <div class="muted">${today}</div>
 
     <div class="cover-box">
       <p>Hola ${escapeHTML(userName)}! Este es tu plan de entrenamiento personalizado.</p>
@@ -4394,8 +4398,9 @@ function buildCoverHTML_plain(userName, routineData){
   </section>`;
 }
 
+
 // Un día completo por hoja con secciones y tarjetas como en el mock
-function buildDayPageHTML_plain(dayName, dayData){
+function buildDayPageHTML_plain(userKey, dayName, dayData){
   const order = ["Acondicionamiento", "Acondicionamiento & Calentamiento", "Movilidad", "Entrenamiento de Fuerza", "Entrenamiento de fuerza", "Fuerza", "HIIT", "Cardio HIIT"];
   const sections = normalizeDaySections(dayData, order);
 
@@ -4403,10 +4408,47 @@ function buildDayPageHTML_plain(dayName, dayData){
   <section class="page">
     <div class="day-header">
       <h2>📅 ${escapeHTML(dayName)}</h2>
-      <div class="date">${new Date().toLocaleDateString()}</div>
     </div>
-    ${sections.map(sec => renderSectionBlock_plain(sec)).join('')}
+    ${sections.map(sec => renderSectionBlock_plain(userKey, dayName, sec)).join('')}
   </section>`;
+}
+
+function getHiitNotesForDay(userKey, dayName){
+  const notesByUser = (window.USER_HIIT_DAY_NOTES || {})[userKey] || {};
+  const arr = notesByUser[dayName];
+
+  if (Array.isArray(arr) && arr.length) return arr;
+
+  if (window.SHOW_DEFAULT_HIIT_CARD && Array.isArray(window.DEFAULT_HIIT_DAY_NOTES)) {
+    return window.DEFAULT_HIIT_DAY_NOTES;
+  }
+  return [];
+}
+
+function renderHiitBlockContent(userKey, dayName, section){
+  const notes = getHiitNotesForDay(userKey, dayName);
+
+  // Si no hay notas, al menos mostramos lo que haya en la lista como texto
+  if (!notes.length) {
+    const fallback = (section.list || [])
+      .map(x => `<div class="ex"><div class="ex-top"><div class="ex-name">${escapeHTML(String(x))}</div></div></div>`)
+      .join('');
+    return fallback || `<div class="desc">Sin detalles HIIT cargados.</div>`;
+  }
+
+  // Render de notas: title + body (tu HTML completo)
+  return notes.map(n => {
+    const title = n.title ? `<div class="ex-name">${escapeHTML(n.title)}</div>` : '';
+    const body = n.body ? `<div class="desc">${n.body}</div>` : '';
+    return `
+      <div class="ex">
+        <div class="ex-top">
+          ${title}
+        </div>
+        ${body}
+      </div>
+    `;
+  }).join('');
 }
 
 // ===== helpers de secciones/colores y tarjetas =====
@@ -4464,18 +4506,31 @@ function detectKind(title){
   return 'blue';
 }
 
-function renderSectionBlock_plain(section){
+function renderSectionBlock_plain(userKey, dayName, section){
   const wrap = section.kind==='green' ? 'sec sec-green'
             : section.kind==='red'   ? 'sec sec-red'
             : section.kind==='yellow'? 'sec sec-yellow' : 'sec';
-  const title = section.kind==='green' ? 'sec-title green'
-             : section.kind==='red'   ? 'sec-title red'
-             : section.kind==='yellow'? 'sec-title yellow' : 'sec-title';
 
+  const titleCls = section.kind==='green' ? 'sec-title green'
+                : section.kind==='red'   ? 'sec-title red'
+                : section.kind==='yellow'? 'sec-title yellow' : 'sec-title';
+
+  // ✅ HIIT: NO chips Series/Reps. Mostramos el BODY completo de USER_HIIT_DAY_NOTES
+  if (section.kind === 'yellow') {
+    const hiitHTML = renderHiitBlockContent(userKey, dayName, section);
+    return `
+      <div class="${wrap}">
+        <div class="${titleCls}">${escapeHTML(section.title)}</div>
+        ${hiitHTML}
+      </div>
+    `;
+  }
+
+  // Fuerza / acondicionamiento / otros: normal
   const body = (section.list || []).map(renderEntryCard_plain).join('');
   return `
     <div class="${wrap}">
-      <div class="${title}">${escapeHTML(section.title)}</div>
+      <div class="${titleCls}">${escapeHTML(section.title)}</div>
       ${body || `<div class="desc">Sin ejercicios cargados.</div>`}
     </div>
   `;
