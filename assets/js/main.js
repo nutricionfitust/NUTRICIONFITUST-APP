@@ -1004,7 +1004,7 @@ const trainingFolders = {
             ],
           },
 
-      "Día 2 - Superior (énfasis Pecho)":  {
+      "Día 2 - Superior (Énfasis Pecho)":  {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
@@ -1033,7 +1033,7 @@ const trainingFolders = {
             ],
           },
 
-        "Día 3 - Superior (énfasis Espalda + Brazos)":  {
+        "Día 3 - Superior (Énfasis Espalda + Brazos)":  {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
@@ -1236,7 +1236,7 @@ const trainingFolders = {
             ],
           },
 
-      "Día 2 - Superior (énfasis Pecho)":  {
+      "Día 2 - Superior (Énfasis Pecho)":  {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
@@ -1265,7 +1265,7 @@ const trainingFolders = {
             ],
           },
 
-        "Día 3 - Superior (énfasis Espalda + Brazos)":  {
+        "Día 3 - Superior (Énfasis Espalda + Brazos)":  {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
