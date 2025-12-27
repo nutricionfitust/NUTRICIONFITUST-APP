@@ -157,11 +157,11 @@ const exerciseDatabase = {
     { name: "Patadas Tríceps con Mancuerna", videoId: "https://drive.google.com/open?id=1mzHDiEAjmglBPzczXHnh-ySuETM031tC&usp=drive_copy", description: "Con el torso inclinado, extendé el brazo hacia atrás hasta bloquear el codo. Apretá fuerte el tríceps arriba y controlá la bajada." },
     { name: "Press Banca con Agarre Cerrado en Smith", videoId: "https://drive.google.com/open?id=1bozxGYZDRlOInyasSbB5cxP1ISNMrQhO&usp=drive_copy", description: "Con manos al ancho de hombros, bajá la barra controlada y empujá explosivo. El foco está en los tríceps, con la ventaja de la máquina para mayor seguridad." },
     { name: "Press Banca con Agarre Cerrado", videoId: "https://drive.google.com/open?id=1EH6i0xBrb9COfLNrOD63grbmpnCgaXdv&usp=drive_copy", description: "Similar al press clásico, pero con manos juntas. Trabajás pecho y hombros, pero el esfuerzo principal va directo a los tríceps." },
-    { name: "Press Francés Acostado 45°", videoId: "https://drive.google.com/open?id=1IHXvDlZKipk6wOJ7cvl0DACI89Vnq56m&usp=drive_copy", description: "En banco inclinado, bajá la barra o mancuernas hacia la frente y extendé los brazos arriba. Movimiento que estira y contrae intensamente el tríceps." },
+    { name: "Press Francés Acostado 𝟰𝟱°", videoId: "https://drive.google.com/open?id=1IHXvDlZKipk6wOJ7cvl0DACI89Vnq56m&usp=drive_copy", description: "En banco inclinado, bajá la barra o mancuernas hacia la frente y extendé los brazos arriba. Movimiento que estira y contrae intensamente el tríceps." },
     { name: "Press Francés con Polea", videoId: "https://drive.google.com/open?id=13UL6YXteMgD8WOdzSvN8W25PFtUapcjs&usp=drive_copy", description: "Con la polea, el tríceps recibe tensión constante. Bajá controlado y extendé hasta arriba sin descanso." },
     { name: "Press Francés de Pie", videoId: "https://drive.google.com/open?id=19nZK1hdMyO7jsCp2A7N-5t4NgdfK91d-&usp=drive_copy", description: "De pie con barra o mancuerna, llevá el peso por detrás de la cabeza y extendé arriba. Exige fuerza y estabilidad del core." },
-    { name: "Press Francés Inclinado 45° con Mancuerna", videoId: "https://drive.google.com/open?id=1c6fAuw0oNnc93gfhmkP-90WuVSc3v8Cg&usp=drive_copy", description: "Unilateral, con banco inclinado. Bajá la mancuerna por detrás de la cabeza y extendé hasta arriba, corrigiendo desbalances entre brazos." },
-    { name: "Press Francés Sentado con Apoyo 45°", videoId: "https://drive.google.com/open?id=1wabSzp9GnEmqK9ZiUMuoB98lJsxtBvsd&usp=drive_copy", description: "Con respaldo inclinado, mantené firme la postura. Extendé los brazos desde atrás de la cabeza hasta bloquear codos, apretando fuerte el tríceps." },
+    { name: "Press Francés Inclinado 𝟰𝟱° con Mancuerna", videoId: "https://drive.google.com/open?id=1c6fAuw0oNnc93gfhmkP-90WuVSc3v8Cg&usp=drive_copy", description: "Unilateral, con banco inclinado. Bajá la mancuerna por detrás de la cabeza y extendé hasta arriba, corrigiendo desbalances entre brazos." },
+    { name: "Press Francés Sentado con Apoyo 𝟰𝟱°", videoId: "https://drive.google.com/open?id=1wabSzp9GnEmqK9ZiUMuoB98lJsxtBvsd&usp=drive_copy", description: "Con respaldo inclinado, mantené firme la postura. Extendé los brazos desde atrás de la cabeza hasta bloquear codos, apretando fuerte el tríceps." },
     { name: "Press Francés Sentado sin Apoyo", videoId: "https://drive.google.com/open?id=1dJs8JEwMewIIJRtiNHSdG9gZmkipIBzO&usp=drive_copy", description: "Mantené firme la postura (control y estabilidad del core). Extendé los brazos desde atrás de la cabeza hasta bloquear codos, apretando fuerte el tríceps." },
     { name: "Press Francés Unilateral con Apoyo", videoId: "https://drive.google.com/open?id=1-wVWtPeE2mSTuXPIAyaLY21sCGkvVb4B&usp=drive_copy", description: "Con mancuerna, trabajá un brazo a la vez. Estirá bien atrás y extendé hasta la contracción máxima para corregir diferencias de fuerza." },
     { name: "Tríceps con Polea Agarre Inverso", videoId: "https://drive.google.com/open?id=1pm42ieycQSk2NXWFpdjHW0W4cnFS-PQ_&usp=drive_copy", description: "Con las palmas hacia arriba, llevá la barra hacia abajo extendiendo codos. Este agarre cambia el estímulo y resalta fibras distintas del tríceps." },
@@ -934,7 +934,7 @@ const trainingFolders = {
           {
             superset: [
             "Vuelos Posteriores con Mancuernas 3 x 12• ↓10• 10",
-            "Press Francés con Mancuernas 3 x 12• ↓12• ↓10",          
+            "Press Francés 𝟰𝟱° con Mancuernas 3 x 12• ↓12• ↓10",          
           ],
             restAfter: "2min"
           },           
@@ -1544,7 +1544,7 @@ const trainingFolders = {
           {
             superset: [
             "Biceps Martillo Alternado con Mancuernas 4 x 12-10-8-8",
-            "Press Francés Acostado 45° 4 x 12-12-10-10"
+            "Press Francés Acostado 𝟰𝟱° 4 x 12-12-10-10"
           ],
             restAfter: "2-3min"            
           },
@@ -1701,7 +1701,7 @@ const trainingFolders = {
           {
             superset: [
             "Biceps Martillo Alternado con Mancuernas 4 x 12• 10• 8• 8",
-            "Press Francés Acostado 45° 4 x 12• 12• 10• 10"
+            "Press Francés Acostado 𝟰𝟱° 4 x 12• 12• 10• 10"
           ],
             restAfter: "2-3min"            
           },
@@ -1881,7 +1881,7 @@ const trainingFolders = {
           {
             superset: [
             "Biceps Martillo Alternado con Mancuernas 4 x 12-10-8-8",
-            "Press Francés Acostado 45° 4 x 12-12-10-10"
+            "Press Francés Acostado 𝟰𝟱° 4 x 12-12-10-10"
           ],
             restAfter: "2-3min"            
           },
@@ -2329,7 +2329,7 @@ const trainingFolders = {
           {
             superset: [
             "Biceps Martillo Alternado con Mancuernas 4 x 12• 10• 10• 8",
-            "Press Francés Acostada 45° 4 x 12• 12• 10• 10"
+            "Press Francés Acostada 𝟰𝟱° 4 x 12• 12• 10• 10"
           ],
             restAfter: "2-3min"            
           },
@@ -2630,7 +2630,7 @@ const trainingFolders = {
           {
             superset: [
             "Biceps Martillo Alternado con Mancuernas 4 x 12-10-8-8",
-            "Press Francés Acostado 45° 4 x 12-12-10-10"
+            "Press Francés Acostado 𝟰𝟱° 4 x 12-12-10-10"
           ],
             restAfter: "2-3min"            
           },
