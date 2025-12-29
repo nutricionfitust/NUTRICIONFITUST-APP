@@ -184,7 +184,7 @@ const exerciseDatabase = {
     { name: "Crunch Declinado", videoId: "https://drive.google.com/open?id=1a-UhAhEFjJDREUT-kms82kW_TBAsMbk5&usp=drive_copy", description: "En banco declinado, bajá lento para aprovechar el estiramiento y subí contrayendo. La inclinación aumenta la intensidad y el rango de movimiento." },
     { name: "Crunch en Máquina", videoId: "https://drive.google.com/open?id=1BjpgVl1GORdvQ4kD8phzxHLxfB-Yf-BD&usp=drive_copy", description: "Sentado en máquina específica, concentrá todo en apretar el abdomen mientras el movimiento guiado te permite ajustar la carga y controlar mejor el recorrido." },
     { name: "Elevación de Piernas Inclinado", videoId: "https://drive.google.com/open?id=1pf0AU8B_gW8-sWSNZfo1ElzNx_XmO9LW&usp=drive_copy", description: "En banco inclinado, levantá las piernas desde la cadera. El abdomen inferior se estira y se contrae intensamente en cada repetición." },
-    { name: "Elevación de Piernas Acostado", videoId: "https://drive.google.com/open?id=1ykjxBLXWX1mHyaGGOiFPP9JDBKuHdXmP&usp=drive_copy", description: "Acostado, subí y bajá las piernas sin perder el control. Ideal para trabajar el abdomen inferior y reforzar la estabilidad del core." },
+    { name: "Elevación de Piernas Acostado", videoId: "https://drive.google.com/open?id=1ykjxBLXWX1mHyaGGOiFPP9JDBKuHdXmP&usp=drive_copy", description: "Acostado, subí y bajá las piernas sin perder el control. Al subir las piernas elevá el glúteo dejando de apoyo solo la espalda alta (usá algún contrapeso o algo de qué agarrarte). Ideal para trabajar el abdomen inferior y reforzar la estabilidad del core." },
     { name: "Elevación de Piernas Vertical (Colgado)", videoId: "https://drive.google.com/open?id=1t65NC9uTEyDqHd4lwFhLmte5Y0xDrhWD&usp=drive_copy", description: "Colgado de barra, llevá las piernas hacia el pecho. El abdomen trabaja de forma brutal mientras también ganás fuerza de agarre." }, 
     { name: "Elevación de Piernas Vertical", videoId: "https://drive.google.com/open?id=1snEads61earyIHMcG2fc5EgrVFXD_wPq&usp=drive_copy", description: "De pie o en soporte vertical, subí las piernas controladas. El esfuerzo va directo al abdomen inferior y desafía la estabilidad del core." },
     { name: "Escaladas", videoId: "https://drive.google.com/open?id=1EsStIT8dqVD2mYlUF0UeU78OuQnQwE3T&usp=drive_copy", description: "En posición de plancha, alterná rodillas al pecho a ritmo dinámico. Combiná cardio con trabajo constante de abdomen." },
@@ -335,7 +335,7 @@ const trainingFolders = {
 },
   "3 MUSCULACIÓN + 1 HIIT + (1 LISS)": {
     routines: {
-//RUTINA CAMILA Nº 2 - 3 MUSCULACIÓN + 1 HIIT + (1 LISS) !  
+//RUTINA CAMILA Nº 1 - 3 MUSCULACIÓN + 1 HIIT + (1 LISS) !  
         "camilafrancoblonda": {
       name: "Camilucha",
 // PLAN DE ENTRENAMIENTO SEMANAL !    
@@ -430,6 +430,102 @@ const trainingFolders = {
       },
     },
 
+
+
+//RUTINA CAMILA Nº 1 - 3 MUSCULACIÓN + 1 HIIT + (1 LISS) !  
+        "tacianabavaud": {
+      name: "Taci Zanahoria",
+// PLAN DE ENTRENAMIENTO SEMANAL !    
+      plan: {  
+        "Día 1 - Inferior": {
+          "Acondicionamiento & Calentamiento": [
+        {
+            superset: [
+            "Rotaciones con Bolsa 2 x 12• 10 a cada lado",
+            "Sentadillas + Estocadas con Mancuernas (o bolsa) 2 x 12• 12",
+            ],
+            restAfter: "1min"
+          },
+          "Burpees 1 x 10",
+          "Plancha Frontal 1 x a lo que dés!"
+            ],
+          "Entrenamiento de Fuerza": [
+            "Sentadillas en Smith 6 x (2 aproximaciones)• 12• 10• 8• 8 rest=2-3min",
+            "Hip Thrust en Smith 4 x 12• 10• 10• 10 rest=2-3min",
+            "Isquiotibiales Sentada 4 x 12• (10+8)• (10+6)• 8 rest=1-2min",
+            "Aductores Sentada 3 x fallo• fallo• fallo rest=1-2min",
+            "Hiperextensión para Glúteos 3 x fallo• fallo• fallo rest=1min",
+            "Crunch en Máquina 2 x 16• 16 rest=1min"
+            ],
+          },
+
+        "Día 2 - Superior":  {
+          "Acondicionamiento & Calentamiento": [
+            {
+            superset: [
+            "Rotaciones con Bolsa 2 x 12• 10 a cada lado",
+            "Biceps más Press Arnold con Mancuernas 2 x 16• 12",
+          ],
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento de Fuerza": [
+            "Polea al Pecho Prono Cerrado 4 x 16• 12• 10• 8 rest=1-2min",
+            "Polea al Pecho con Triángulo 3 x 10• 10• (8+6) rest=1-2min",
+            "Vuelos Posteriores con Mancuernas 3 x 12• 10• 10 rest=1-2min",
+            "Press de Pecho en Maquina 5 x 16• 12• 10• 10• 8 rest=2min",
+                        {
+            superset: [
+            "Biceps Martillo Alternado con Mancuernas 3 x 12• 10• 8",
+            "Extensión de Triceps con Polea con Barra  3 x (12+8)• (10+6)• 10",
+          ],
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento HIIT": [
+            "Correr en Cinta"
+            ],
+          },
+
+        "Día 3 - Full Body":  {
+          "Acondicionamiento & Calentamiento": [
+            {
+            superset: [
+            "Sentadillas más Estocadas con Peso (Bolsa) 2 x 14• 12",
+            "Burpees 2 x 8• 8",
+          ],
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento de Fuerza": [
+            "Isquiotibiales Sentada 4 x 16• (12+8)• (12+8)• 8 rest=2min",
+            "Extensión de Cuadriceps Sentada 4 x 16• 12• 10• (10+6) rest=2min",
+            {
+            superset: [
+            "Prensa 4 x 16• 12• 10• 10",
+            "Gemelos en Prensa 4 x 10 a 14 reps al fallo",
+          ],
+            restAfter: "2-3min"
+          },
+          {
+            superset: [
+            "Vuelos Laterales con Mancuernas 4 x 12• 12• 10• 10",
+            "Peso Muerto Rumano con Mancuernas 3 x 12• 12• 12",
+            "Vuelos Posteriores con Mancuernas 3 x 12• 12• 12",
+          ],
+            restAfter: "2min"
+          },
+          {
+            superset: [
+            "Biceps Martillo Alternado con Mancuernas 3 x 12• 10• 8",
+            "Extensión de Triceps con Polea con Barra  3 x (12+8)• (10+6)• 10",
+          ],
+            restAfter: "1min"
+          },                 
+            ],
+          },
+      },
+    },
 
 
 
@@ -3169,6 +3265,7 @@ const trainingFolders = {
 const userRoutineMapping = {
   agustina: { folder: "2 MUSCULACIÓN + (2 LISS)", routine: "agustina" },
   camilafrancoblonda:   { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "camilafrancoblonda" },
+  tacianabavaud: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "tacianabavaud" },
   sofiaustarroz:    { folder: "4 MUSCULACIÓN (1 FB HIIT) + (1 LISS)", routine: "sofiaustarroz" },
   azulcherubini3: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "azulcherubini3" },
   julianmagallanes1: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "julianmagallanes1" },
@@ -3203,6 +3300,7 @@ const userPasswords = {
   // CLAVES ÚINCAS DE USUARIOS
   'vesuvio-kremlin-quarzo-espresso-amore-siberia-russia-vesuvio-octavo-zarina-octavo-batata': 'agustina',
   'tundra-vesuvio-balalaika-siberia-yogurt-vesuvio-yogurt-vesuvio': 'camilafrancoblonda',
+  'amore-vesuvio-tundra-siberia-spaghetti-vesuvio-russia-vesuvio': 'tacianabavaud',
   'espresso-urali-tiramisu-siberia-vesuvio-octavo-zarina-octavo-batata': 'sofiaustarroz',
   'tiramisu-vesuvio-tundra-quarzo-russia-gondola-urali-octavo-zarina-octavo-batata': 'facundoustarroz',
   'vesuvio-spaghetti-quarzo-yogurt-tundra-opera-dolcevita-limoncello-quarzo-firenze': 'azulcherubini2',
@@ -3416,6 +3514,27 @@ const USER_HIIT_DAY_NOTES = {
 
 
     "camilafrancoblonda": {
+    "Día 2 - Superior": [
+      { title: "HIIT en Cinta Inclinada (caminadora)",
+      body: `<p><strong>10 MINUTOS TOTALES.</strong></p>
+            <p>Inclinar la Cinta unos 6 grados.</p>
+            <p><b>2 minutos:</b> trote suave para entrar en calor.</p>
+            <p>Desinclinar la Cinta a 0 (cero) grados.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>30 segundos a ~ 3/4 de tu velocidad máxima (ej: ~14 km/h).</li>
+            <li>1 minuto de trote suave (ej: ~7 km/h).</li>
+            </ul>
+            <p><b>Repetir 5 veces seguidas:</b> o sea <b>(30seg + 1min) x 5 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 1 minuto caminando.</p>
+            <p>A mimir. 😴</p>`
+    },
+    ],
+  },
+
+
+
+    "tacianabavaud": {
     "Día 2 - Superior": [
       { title: "HIIT en Cinta Inclinada (caminadora)",
       body: `<p><strong>10 MINUTOS TOTALES.</strong></p>
