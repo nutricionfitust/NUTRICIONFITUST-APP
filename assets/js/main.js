@@ -157,11 +157,11 @@ const exerciseDatabase = {
     { name: "Patadas Tríceps con Mancuerna", videoId: "https://drive.google.com/open?id=1mzHDiEAjmglBPzczXHnh-ySuETM031tC&usp=drive_copy", description: "Con el torso inclinado, extendé el brazo hacia atrás hasta bloquear el codo. Apretá fuerte el tríceps arriba y controlá la bajada." },
     { name: "Press Banca con Agarre Cerrado en Smith", videoId: "https://drive.google.com/open?id=1bozxGYZDRlOInyasSbB5cxP1ISNMrQhO&usp=drive_copy", description: "Con manos al ancho de hombros, bajá la barra controlada y empujá explosivo. El foco está en los tríceps, con la ventaja de la máquina para mayor seguridad." },
     { name: "Press Banca con Agarre Cerrado", videoId: "https://drive.google.com/open?id=1EH6i0xBrb9COfLNrOD63grbmpnCgaXdv&usp=drive_copy", description: "Similar al press clásico, pero con manos juntas. Trabajás pecho y hombros, pero el esfuerzo principal va directo a los tríceps." },
-    { name: "Press Francés Acostado 𝟰𝟱°", videoId: "https://drive.google.com/open?id=1IHXvDlZKipk6wOJ7cvl0DACI89Vnq56m&usp=drive_copy", description: "En banco inclinado, bajá la barra o mancuernas hacia la frente y extendé los brazos arriba. Movimiento que estira y contrae intensamente el tríceps." },
+    { name: "Press Francés Acostado 𝟰𝟱° con Mancuerna", videoId: "https://drive.google.com/open?id=1IHXvDlZKipk6wOJ7cvl0DACI89Vnq56m&usp=drive_copy", description: "En banco plano, bajá la barra o mancuernas hacia la frente y extendé los brazos arriba. Movimiento que estira y contrae intensamente el tríceps. La porción desde el hombro hasta el codo debe mantenerse siempre a 45°." },
     { name: "Press Francés con Polea", videoId: "https://drive.google.com/open?id=13UL6YXteMgD8WOdzSvN8W25PFtUapcjs&usp=drive_copy", description: "Con la polea, el tríceps recibe tensión constante. Bajá controlado y extendé hasta arriba sin descanso." },
     { name: "Press Francés de Pie", videoId: "https://drive.google.com/open?id=19nZK1hdMyO7jsCp2A7N-5t4NgdfK91d-&usp=drive_copy", description: "De pie con barra o mancuerna, llevá el peso por detrás de la cabeza y extendé arriba. Exige fuerza y estabilidad del core." },
-    { name: "Press Francés Inclinado 𝟰𝟱° con Mancuerna", videoId: "https://drive.google.com/open?id=1c6fAuw0oNnc93gfhmkP-90WuVSc3v8Cg&usp=drive_copy", description: "Unilateral, con banco inclinado. Bajá la mancuerna por detrás de la cabeza y extendé hasta arriba, corrigiendo desbalances entre brazos." },
-    { name: "Press Francés Sentado con Apoyo 𝟰𝟱°", videoId: "https://drive.google.com/open?id=1wabSzp9GnEmqK9ZiUMuoB98lJsxtBvsd&usp=drive_copy", description: "Con respaldo inclinado, mantené firme la postura. Extendé los brazos desde atrás de la cabeza hasta bloquear codos, apretando fuerte el tríceps." },
+    { name: "Press Francés Inclinado 𝟰𝟱° con Barra", videoId: "https://drive.google.com/open?id=1c6fAuw0oNnc93gfhmkP-90WuVSc3v8Cg&usp=drive_copy", description: "Con banco inclinado. Bajá la barra por detrás de la cabeza y extendé hasta arriba. La porción desde el hombro hasta el codo debe mantenerse siempre a 45°." },
+    { name: "Press Francés Sentado con Apoyo 𝟰𝟱°", videoId: "https://drive.google.com/open?id=1wabSzp9GnEmqK9ZiUMuoB98lJsxtBvsd&usp=drive_copy", description: "Con respaldo inclinado (preferentemente a 45°), mantené firme la postura. Extendé los brazos desde atrás de la cabeza hasta bloquear codos, apretando fuerte el tríceps." },
     { name: "Press Francés Sentado sin Apoyo", videoId: "https://drive.google.com/open?id=1dJs8JEwMewIIJRtiNHSdG9gZmkipIBzO&usp=drive_copy", description: "Mantené firme la postura (control y estabilidad del core). Extendé los brazos desde atrás de la cabeza hasta bloquear codos, apretando fuerte el tríceps." },
     { name: "Press Francés Unilateral con Apoyo", videoId: "https://drive.google.com/open?id=1-wVWtPeE2mSTuXPIAyaLY21sCGkvVb4B&usp=drive_copy", description: "Con mancuerna, trabajá un brazo a la vez. Estirá bien atrás y extendé hasta la contracción máxima para corregir diferencias de fuerza." },
     { name: "Tríceps con Polea Agarre Inverso", videoId: "https://drive.google.com/open?id=1pm42ieycQSk2NXWFpdjHW0W4cnFS-PQ_&usp=drive_copy", description: "Con las palmas hacia arriba, llevá la barra hacia abajo extendiendo codos. Este agarre cambia el estímulo y resalta fibras distintas del tríceps." },
@@ -1365,7 +1365,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
-            "Dominadas Agarre Prono a los Hombros 2 x 12• 10",
+            "Vuelos Posteriores con Mancuernas 3 x 16• 12• 12", 
             "Flexiones BB 2 x 20• 16",
           ],
             restAfter: "1min"
@@ -1374,15 +1374,15 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
             "Polea al Pecho Agarre Prono Cerrado 4 x 14• 12• ↓12• ↓(10+6) rest=2min",
             "Remo Unilateral Sentado en Máquina 3 x 12• 10• ↓10 rest=2min",
-          {
-            superset: [
-            "Vuelos Posteriores con Mancuernas 3 x 12• ↓10• 10", 
-            "Extensión de Triceps con Polea con Barra 3 x 12• (12+8)• ↓(12+8)  rest=2min",         
-          ],
+            "Remo con Barra 3 x 12• ↑10• 10 rest=2min",
+            "Extensión de Triceps con Polea con Barra 3 x 12• (12+8)• ↓(12+8)  rest=2min",                
+            {
+              superset: [
+            "Press Francés Acostado 𝟰𝟱° con Mancuerna 3 x 12• ↓12• 10",
+            "Biceps Alternado con Mancuernas Sentado 3 x 12• ↑10• 8 rest=1-2min",
+            ],
             restAfter: "2min"
-          },           
-            "Press Francés con Mancuerna 3 x 12• ↓12• 10",
-            "Biceps Predicador con Mancuerna 3 x 12• ↑10• 8 rest=1-2min",
+          },
           ],
           },
 
@@ -1638,7 +1638,7 @@ const trainingFolders = {
           {
             superset: [
             "Biceps Martillo Alternado con Mancuernas 4 x 12• 10• 8• 8",
-            "Press Francés Acostado 𝟰𝟱° 4 x 12• 12• 10• 10"
+            "Press Francés Acostado 𝟰𝟱° con Mancuerna 4 x 12• 12• 10• 10"
           ],
             restAfter: "2-3min"            
           },
@@ -1783,7 +1783,7 @@ const trainingFolders = {
           {
             superset: [
             "Biceps Martillo Alternado con Mancuernas 4 x 12-10-8-8",
-            "Press Francés Acostado 𝟰𝟱° 4 x 12-12-10-10"
+            "Press Francés Acostado 𝟰𝟱° con Mancuerna 4 x 12-12-10-10"
           ],
             restAfter: "2-3min"            
           },
@@ -1940,7 +1940,7 @@ const trainingFolders = {
           {
             superset: [
             "Biceps Martillo Alternado con Mancuernas 4 x 12• 10• 8• 8",
-            "Press Francés Acostado 𝟰𝟱° 4 x 12• 12• 10• 10"
+            "Press Francés Acostado 𝟰𝟱° con Mancuerna 4 x 12• 12• 10• 10"
           ],
             restAfter: "2-3min"            
           },
@@ -2120,7 +2120,7 @@ const trainingFolders = {
           {
             superset: [
             "Biceps Martillo Alternado con Mancuernas 4 x 12-10-8-8",
-            "Press Francés Acostado 𝟰𝟱° 4 x 12-12-10-10"
+            "Press Francés Acostado 𝟰𝟱° con Mancuerna 4 x 12-12-10-10"
           ],
             restAfter: "2-3min"            
           },
@@ -2420,7 +2420,7 @@ const trainingFolders = {
           {
             superset: [
             "Biceps Martillo Alternado con Mancuernas 4 x 12• 10• 8• 8",
-            "Press Francés Acostado 𝟰𝟱° 4 x 12• 12• 10• 10",
+            "Press Francés Acostado 𝟰𝟱° con Mancuerna 4 x 12• 12• 10• 10",
           ],
             restAfter: "2-3min"            
           },
@@ -2753,105 +2753,102 @@ const trainingFolders = {
       plan: {  
 
         "Día 1 - Piernas": {
-          "Acondicionamiento & Calentamiento": [
-          "Rotaciones con Bolsa 2 x 10 a cada lado rest=30s",
+          "Acondicionamiento & Calentamiento": [            
             {
               superset: [
-            "Burpees 2 x 8",
-            "Skipping Rodillas Arriba 2 x 30seg",
-            "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
+            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 3 x 16• 12• 12",
             ],
             restAfter: "1min"
           },
             ],
           "Entrenamiento de Fuerza": [
-            "Isquiotibiales Sentada 4 x 16• (12+10)• (12+8)• 10 rest=1-2min",
+            "Isquiotibiales Sentada 3 x 12• (12+8)• (10+8) rest=1-2min",
             "Aductores Sentada 3 x fallo• fallo• fallo rest=1-2min",
-          {
-            superset: [
-            "Prensa 4 x 12• 10• 10• 8",
-            "Gemelos en Prensa 4 x 8 a 16 reps al fallo"
-          ],
-            restAfter: "2-4min"
-          },
-            "Estocadas con Mancuernas 3 x 10• 10• 8 rest=2min",
-            "Extensión de Cuádriceps Sentada 3 x (12+8)• (10+6)• (10+6) rest=1-2min",
-            "Crunch Declinado 3 x 16• 12• 12 rest=1-2min"
+            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• 8↓ rest=2-4min",
+            "Hip Thrust en Smith 3 x 12• ↑10• ↑8• 8 rest=2-3min",
+            "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
+            "Crunch en Máquina 3 x 16• 12• 12 rest=1-2min"
             ],
           },
 
-        "Día 2 - Pecho + Triceps + Hombros":  {
+      "Día 2 - Pecho + Biceps + Hombros":  {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
-            "Flexiones BB con Rodillas Apoyadas 2 x 10• 10",
+            "Flexiones BB con Rodillas Apoyadas 2 x 12• 10",
             "Biceps + Press Arnold con Mancuernas 2 x 12• 12",
+            "Rotaciones de Hombros 2 x 10 adelante 10 atrás"
           ],
             restAfter: "1-2min"
           },
           ],
           "Entrenamiento de Fuerza": [
-            "Polea al Pecho Prono Cerrado 3 x 16• 12• 10 rest=1-2min",
-            "Aperturas con Mancuernas en Banca 4 x 12• 12• 10• 10 rest=2-3min",            
-            "Press Inclinado con Mancuernas 4 x 14• 12• 10• 10 rest=3min",
+            "Vuelos Posteriores con Mancuernas 3 x 16• ↑12• 10 rest=1-2min",
+            "Aperturas Sentada en Máquina 3 x 16• ↑(12+8)• 12 rest=3min",
+            "Press Banca Inclinado con Mancuernas 4 x 12• 12• ↑10• 8 rest=2-3min",
+            "Press Banca con Mancuernas 3 x 12• 12• ↓(10+6) rest=2-3min",
           {
             superset: [
-            "Press Militar con Mancuernas Sentada 3 x 12• 12• 10",
-            "Vuelos Laterales con Mancuernas 3 x 12• 12• 10"
+            "Vuelos Laterales con Mancuernas 3 x 12• ↑10• 10",
+            "Biceps Martillo Alternado con Mancuernas 3 x 10• ↑8• 8"
           ],
             restAfter: "2-3min"
           },
-            "Extensión de Triceps con Barra 3 x (16+12)-(12+8)-10 rest=1-2min"
+            "Biceps Predicador con Mancuernas 3 x 10• ↓10• 8 rest=2min"
             ],
           "Entrenamiento HIIT": [
             "Correr en Cinta"
             ],
           },
 
-        "Día 3 - Espalda + Biceps":  {
+        "Día 3 - Espalda + Triceps":  {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
             "Espalda con Polea 3 x 16• 12• 12",
-            "Biceps + Press Arnold con Mancuernas 3 x 12-12-12"
+            "Flexiones BB con Rodillas Apoyadas 3 x 12• 10• 10",
           ],
-            restAfter: "1-2min"
+            restAfter: "1min"
           },           
           ],
           "Entrenamiento de Fuerza": [
-            "Polea al Pecho con Triangulo 4 x 12• 12• 10• 10 rest=2min",
-            "Remo con Mancuernas Unilateral 3 x 12• 12• 10 rest=1-2min",
-            "Vuelos Posteriores con Mancuernas 3 x 12• 12• 10 rest=1-2min",
-            "Biceps Martillo Alternado con Mancuernas 4 x 12• 10• 10• 8 rest=2min",
-            "Biceps con Barra W 2 x 12• 12 rest=2min",
-            "Crunch con Polea 3 x 16• 12• 12 rest=1-2min"
+            "Polea al Pecho Agarre Prono Cerrado 4 x 14• ↑12• 12• ↓(10+6) rest=2min",
+            "Remo Unilateral Sentada en Máquina 3 x 12• ↑10• 10• rest=2min",
+          {
+            superset: [
+            "Vuelos Posteriores con Mancuernas 3 x 12• ↑10• 10",
+            "Press de Triceps en Máquina 3 x 12• 12• ↑10",          
+          ],
+            restAfter: "2min"
+          },           
+            "Extensión de Triceps con Polea con Barra 3 x 12• 12• ↓(10+6) rest=2min",
+            "Crunch en Máquina 3 x 16• 12• 12 rest=1-2min"
           ],
           },
 
         "Día 4 - Piernas":  {
           "Acondicionamiento & Calentamiento": [
-          "Rotaciones con Bolsa 2 x 10 a cada lado rest=30s",
-            {
+        {
               superset: [
-            "Burpees 2 x 8",
+            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Burpees 2 x 8• 8",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
             restAfter: "1min"
           },
+          "Plancha Frontal 1 x a lo que dés!"
             ],
           "Entrenamiento de Fuerza": [
           {
-            superset: [
-            "Escaladas 2 x 1min",
-            "Oblicuos con Peso 2 x 30seg"
-          ],
-            restAfter: "1-2min"
+              superset: [
+            "Sentadillas en Hack 5 x 20• ↑12• ↑10(RIR 2)• ↑10• ↑8",
+            "Gemelos en Hack 5 x 10 a 16 reps al fallo",
+            ],
+            restAfter: "2-4min"
           },
-            "Isquiotibiales Sentada 4 x 20• 12• 12• 10 rest=1-2min",
-            "Sentadillas en Smith 4 x 12• 10• 10• 8 rest=2-4min",
-            "Hip Thrust en Smith 3 x 12• 10• 10 rest=2-3min",
-            "Peso Muerto Rumano con Mancuernas 3 x 12• 12• 10 rest=2min",
-            "Sentadilla Búlgara con Mancuernas 2 x (8+6)• (8+6) rest=2min",
+            "Sentadillas Búlgara con Mancuernas 4 x 12• ↑10• ↑8• 8 rest=2min",
+            "Extensión de Cuádriceps Sentada 4 x 14• ↓(10+8)• ↓(10+8)• (10+8+6) rest=1-2min",
             ],
           },
 
@@ -2859,7 +2856,8 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
-            "Flexiones BB con Rodillas Apoyadas 2 x 10• 10",
+            "Flexiones BB con Rodillas Apoyadas 2 x 12• 10",
+            "Plancha Frontal 2 x 40seg• 40seg",
             "Biceps + Press Arnold con Mancuernas 2 x 14• 14",
           ],
             restAfter: "1-2min"
@@ -2868,22 +2866,22 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
           {
             superset: [
-            "Biceps Martillo Alternado con Mancuernas 4 x 12• 10• 10• 8",
-            "Press Francés Acostada 𝟰𝟱° 4 x 12• 12• 10• 10"
+            "Biceps Martillo Alternado con Mancuernas 4 x 12• ↑10• ↑8• 8",
+            "Tríceps con Polea Agarre Inverso 4 x 16• ↑12• 12• ↑10"
           ],
             restAfter: "2-3min"            
           },
           {
             superset: [
-            "Biceps con Cable con Barra 4 x 12• 10• 8• 8",
-            "Extensión de Triceps con Barra 4 x 12• 12• 10• 10"
+            "Biceps Predicador con Mancuernas 4 x 12• ↑8• 8• ↓10",
+            "Press Francés Sentada con Apoyo 𝟰𝟱° 4 x 12• 12• 10• 10"
           ],
             restAfter: "2-3min"            
           },
           {
             superset: [
-            "Vuelos Posteriores con Mancuernas 4 x 12• 10• 10• 8",
-            "Vuelos Laterales con Mancuernas 4 x 12• 10• 10• 8"
+            "Vuelos Posteriores con Mancuernas 4 x 12• 12• ↑10• 8",
+            "Vuelos Laterales con Mancuernas 4 x 12• ↑10• 10• 8"
           ],
             restAfter: "2-3min"            
           },
@@ -2893,7 +2891,7 @@ const trainingFolders = {
           ],
           },
       },
-    },    
+    },
 
 
 
@@ -3169,7 +3167,7 @@ const trainingFolders = {
           {
             superset: [
             "Biceps Martillo Alternado con Mancuernas 4 x 12-10-8-8",
-            "Press Francés Acostado 𝟰𝟱° 4 x 12-12-10-10"
+            "Press Francés Acostado 𝟰𝟱° con Mancuerna 4 x 12-12-10-10"
           ],
             restAfter: "2-3min"            
           },
@@ -4189,7 +4187,7 @@ const USER_HIIT_DAY_NOTES = {
 
 
   "palomacarrera2": {
-    "Día 2 - Pecho + Triceps + Hombros": [
+    "Día 2 - Pecho + Biceps + Hombros": [
       { title: "HIIT en Cinta (caminadora)",
       body: `<p><strong>13 MINUTOS TOTALES.</strong></p>
             <p>Para <b>entrar en calor:</b></p> 
