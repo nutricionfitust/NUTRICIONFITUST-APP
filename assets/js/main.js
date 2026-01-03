@@ -152,7 +152,7 @@ const exerciseDatabase = {
     { name: "Extensión de Tríceps con Polea con Barra", videoId: "https://drive.google.com/open?id=165JH0I8sW0sXsqE11Z-RB1f9YSpMTlen&usp=drive_copy", description: "Con barra recta, mantené los codos pegados al cuerpo. Bajá controlado, extendé completamente y subí despacio sin perder tensión." },
     { name: "Extensión de Tríceps con Polea", videoId: "https://drive.google.com/open?id=1p6Ig9l-wj3Nk02khzEYE13XAMHJ1zQly&usp=drive_copy", description:  "Un básico de polea que mantiene el músculo trabajando todo el tiempo. Sentí la tensión continua, llevando el recorrido completo de estiramiento a contracción." },
     { name: "Flexiones BB Cerradas", videoId: "https://drive.google.com/open?id=1A8Ja7MrkGyfAuLu9rMm0Y-ygj_dGOeG-&usp=drive_copy", description: "Con las manos juntas bajo el pecho, bajá controlado y subí empujando fuerte. Esta variante traslada la carga directo al tríceps." },
-   { name: "Flexiones BB Cerradas + Carpa", videoId: "", description: "Con las manos juntas bajo el pecho, bajá controlado y subí empujando fuerte y terminando en forma de carpa (llevando tu glúteo hacia arriba, estirando tus brazos y contrayendo tus abdominales). Esta variante trabaja triceps, hombros y abdominales!." },
+    { name: "Flexiones BB Cerradas + Carpa", videoId: "", description: "Con las manos juntas bajo el pecho, bajá controlado y subí empujando fuerte y terminando en forma de carpa (llevando tu glúteo hacia arriba, estirando tus brazos y contrayendo tus abdominales). Esta variante trabaja triceps, hombros y abdominales!." },
     { name: "Flexiones BB para Tríceps", videoId: "https://drive.google.com/open?id=1r3bCDkNdD1se_RtMQ26_0FKRrXEkEZ6q&usp=drive_copy", description: "Flexiones adaptadas para que el esfuerzo recaiga en los tríceps. Bajá profundo y extendé con potencia en cada repetición." },
     { name: "Fondos con Peso", videoId: "https://drive.google.com/open?id=1MyfPewMxuxCD9HfgnydTxVaPOtCJDX_K&usp=drive_copy", description: "En paralelas, con carga adicional, bajá bien profundo y subí fuerte. Ideal para ganar masa y potencia en tríceps." },
     { name: "Fondos en Apoyo", videoId: "https://drive.google.com/open?id=1YiCsUvxQEPrFPAPfePpOFo9aRlUAmxWy&usp=drive_copy", description: "Con las manos en un banco y los pies apoyados, bajá el torso y extendé los brazos. Variante accesible que activa los tríceps de forma directa." },
@@ -1420,87 +1420,129 @@ const trainingFolders = {
 
 
 
-//RUTINA FACUNDO Nº 1 - 4 MUSCULACIÓN + 1 HIIT + (1 LISS) !
-"facundoustarroz": {
-      name: "Facundo",
+//RUTINA DANIEL Nº 1 - 4 MUSCULACIÓN + 1 HIIT + (1 LISS) !
+    "danielflores1": {
+      name: "Dany",
+         // PLAN DE ENTRENAMIENTO SEMANAL !      
       plan: {  
-        "Día 1 - Pecho y Tríceps": {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
+
+        "Día 1 - Piernas": {
+          "Acondicionamiento & Calentamiento": [            
+            {
+              superset: [
+            "Rotaciones con Bolsa 2 x 10• 10 a cada lado",
+            "Sentadillas + Estocadas con Bolsa (o Mancuernas) 2 x 16• 12",
+            ],
+            restAfter: "1min"
+          },
             ],
           "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
+            "Isquiotibiales Sentado 3 x 16• (12+8)• (10+8) rest=1-2min",
+            "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
+            "Sentadillas en Smith 4 x 16 (60% RM)• ↑12• ↑10• ↑10• rest=2-3min",
+            "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
+            {
+              superset: [
+            "Elevación de Piernas Acostado 3 x 1min",
+            "Plancha Frontal 3 x 1min",
+            ],
+            restAfter: "1min 30seg"
+          },
+            ],
+          },
+
+      "Día 2 - Superior (Énfasis Pecho)":  {
+          "Acondicionamiento & Calentamiento": [
           {
             superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
+            "Dominadas Agarre Prono a los Hombros 2 x 12• 12",
+            "Bíceps + Press Arnold con Mancuernas 2 x 16• 12",
+          ],
+            restAfter: "1min 30seg"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+            "Aperturas Sentado en Máquina 4 x 16• ↑(12+↓8)• ↑12• 10 rest=2-3min",
+            "Press Banca Inclinado con Mancuernas 4 x 12• ↑10• 10• 8 rest=2-3min",
+            "Press Banca con Mancuernas 3 x 12• 12• 10 rest=2-3min",
+          {
+            superset: [
+            "Vuelos Laterales con Mancuernas 3 x 12• ↑10• 10",
+            "Bíceps Martillo Alternado con Mancuernas 3 x 10• ↑8• 8"
+          ],
+            restAfter: "2-3min"
+          },
+          ],
+          },
+
+        "Día 3 - Superior (Énfasis Espalda + Brazos)":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Espalda con Polea 2 x 16• 12",
+            "Flexiones BB 2 x 15• 12",
+          ],
+            restAfter: "1min"
+          },           
+          ],
+          "Entrenamiento de Fuerza": [
+            "Polea al Pecho Agarre Prono Cerrado 4 x 14• ↑12• 12• ↓(10+6) rest=2min",
+            "Remo Unilateral con Mancuerna 3 x 12• ↑10• 10 rest=2min",
+          {
+            superset: [
+            "Vuelos Posteriores con Mancuernas 3 x 12• ↑10• 10", 
+            "Extensión de Tríceps con Polea con Barra 3 x 12• (12+8)• (10+8)  rest=2min",         
           ],
             restAfter: "2min"
+          },           
+            "Press Francés Sentado con Apoyo 𝟰𝟱° 3 x 12• 12• ↑10",
+            "Bíceps Predicador con Mancuerna 3 x 12• ↑10• 10 rest=1-2min",
+          ],
           },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
+
+        "Día 4 - Full Body":  {
+        "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Flexiones BB Cerradas + Carpa 2 x 15• 12",
+            "Plancha Frontal 2 x 1min• 1min",
+          ],
+            restAfter: "1-2min"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+          {
+            superset: [
+            "Arranque con Mancuerna + Press de Hombro 4 x 10• 10• ↑8• 8",
+            "Burpees x 10• 10• 8• 8"
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Press Banca con Agarre Cerrado 4 x 12• ↑10• ↑8• 8",
+            "Vuelos Posteriores con Mancuerna Sentado 4 x 12• 12• ↑10• 10"
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Remo Unilateral con Mancuerna 4 x 12• ↑10• 10• 8",
+            "Press Inclinado con Mancuernas 3 x 12• ↑10• 10",
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Biceps con Cable con Barra 3 x 12• 12• 10",
+            "Extensión de Tríceps con Polea con Barra 3 x 12• (12+8)• (10+8)",
+          ],
+            restAfter: "2-3min"            
+          },
+          ],
           "Entrenamiento HIIT": [
-            "Correr en cinta"
-            ],
-          },
-        "Día 2 - Espalda y Bíceps":  {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
+            "Correr en Cinta (caminadora)",
           ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Correr en cinta"
-            ],
-          },
-        "Día 3 - Piernas":  {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          },
-        "Día 4 - Hombros y Core":  {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-            ],
           },
       },
     },
@@ -3878,7 +3920,7 @@ const userRoutineMapping = {
   julianmagallanes1: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "julianmagallanes1" },
   julianmagallanes2: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "julianmagallanes2" },
   ignacioscagliotti1: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "ignacioscagliotti1" },
-  facundoustarroz: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "facundoustarroz" },
+  danielflores1: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "danielflores1" },
   azulcherubini2: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "azulcherubini2" },
   damianportillo2: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "damianportillo2" },
   damianportillo3: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "damianportillo3" },
@@ -3912,7 +3954,7 @@ const userPasswords = {
   'tundra-vesuvio-balalaika-siberia-yogurt-vesuvio-yogurt-vesuvio': 'camilafrancoblonda',
   'amore-vesuvio-tundra-siberia-spaghetti-vesuvio-russia-vesuvio': 'tacianabavaud',
   'espresso-urali-tiramisu-siberia-vesuvio-octavo-zarina-octavo-batata': 'sofiaustarroz',
-  'tiramisu-vesuvio-tundra-quarzo-russia-gondola-urali-octavo-zarina-octavo-batata': 'facundoustarroz',
+  'gondola-vesuvio-russia-borschino-tiramisu': 'danielflores1',
   'vesuvio-spaghetti-quarzo-yogurt-tundra-opera-dolcevita-limoncello-quarzo-firenze': 'azulcherubini2',
   'piazza-quarzo-yogurt-siberia-balalaika-vesuvio-kremlin': 'julianmagallanes1', 
   'piazza-quarzo-yogurt-siberia-balalaika-vesuvio-kremlin-octavo': 'julianmagallanes2', 
@@ -4296,11 +4338,11 @@ const USER_HIIT_DAY_NOTES = {
             <li>100 metros a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
             <li>50 metros tranqui (slow). Los primeros 30 m caminando (5.5 km/h), y trote suave (8 km/h) los últimos 20 m.</li>
             </ul>
-            <p><b>Repetir 6 veces seguidas:</b> o sea <b>(150 m fast + 50 m slow) x 6 sin descanso.</b></p>
+            <p><b>Repetir 6 veces seguidas:</b> o sea <b>(100 m fast + 50 m slow) x 6 sin descanso.</b></p>
             <p><b>Recuperación:</b> 2 minuto caminando.</p>
             <p><b>Segundo intervalo:</b></p> 
             <ul class="list-disc pl-6">
-            <li>Mismos intervalos (150 m fast + 50 m slow)<b> x 4 veces sin descanso.</b></li>
+            <li>Mismos intervalos (100 m fast + 50 m slow)<b> x 4 veces sin descanso.</b></li>
             </ul>
             <p><b>Recuperación:</b> 2 minuto caminando.</p>
             <p>A mimir. 😴</p>`
@@ -4379,11 +4421,11 @@ const USER_HIIT_DAY_NOTES = {
             <li>100 metros a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
             <li>50 metros tranqui (slow). Los primeros 30 m caminando (5.5 km/h), y trote suave (8 km/h) los últimos 20 m.</li>
             </ul>
-            <p><b>Repetir 6 veces seguidas:</b> o sea <b>(150 m fast + 50 m slow) x 6 sin descanso.</b></p>
+            <p><b>Repetir 6 veces seguidas:</b> o sea <b>(100 m fast + 50 m slow) x 6 sin descanso.</b></p>
             <p><b>Recuperación:</b> 2 minuto caminando.</p>
             <p><b>Segundo intervalo:</b></p> 
             <ul class="list-disc pl-6">
-            <li>Mismos intervalos (150 m fast + 50 m slow)<b> x 4 veces sin descanso.</b></li>
+            <li>Mismos intervalos (100 m fast + 50 m slow)<b> x 4 veces sin descanso.</b></li>
             </ul>
             <p><b>Recuperación:</b> 2 minuto caminando.</p>
             <p>A mimir. 😴</p>`
@@ -4818,6 +4860,48 @@ const USER_HIIT_DAY_NOTES = {
     ],
   },   
 
+
+
+
+   "danielflores1": {
+    "Día 5 - Full Body": [
+      { title: "HIIT en Cinta (caminadora)",
+      body: `<p><strong>15 a 20 MINUTOS TOTALES.</strong></p>
+            <p><b>Actividad Opcional para cuando tengas tiempo!</b> Si la podés hacer mejor!</p>
+            <p><b>Intenta exigirte más con la velocidad cada semana que lo realices!</b></p>
+            <p>Inclinar la Cinta unos 9 grados.</p>
+            <p><b>2 minutos:</b> caminar.</p>
+            <p>Desinclinar la Cinta a 0 grados (llano).</p>
+            <p><b>2 minutos:</b> trote suave para entrar en calor.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>350 metros a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
+            <li>150 metros tranqui (slow). Los primeros 100 m caminando (5.5 km/h), y trote suave (8 km/h) los últimos 50 m.</li>
+            </ul>
+            <p><b>Repetir 4 veces seguidas:</b> o sea <b>(300 m fast + 150 m slow) x 4 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 1 minuto caminando.</p>
+            <p>A mimir. 😴</p>`
+    },
+        { title: "Opción 2: HIIT Afuera (Parque/ Plaza/ Calle)",
+      body: `<p><strong>25 MINUTOS TOTALES.</strong></p>
+            <p>Para <b>entrar en calor:</b></p> 
+            <p><b>5 minutos:</b> trote suave (8 km/h).</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>100 metros a ~ 3/4 de tu velocidad máxima (ej: ~18 km/h).</li>
+            <li>50 metros tranqui (slow). Los primeros 30 m caminando (5.5 km/h), y trote suave (8 km/h) los últimos 20 m.</li>
+            </ul>
+            <p><b>Repetir 6 veces seguidas:</b> o sea <b>(100 m fast + 50 m slow) x 6 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 2 minuto caminando.</p>
+            <p><b>Segundo intervalo:</b></p> 
+            <ul class="list-disc pl-6">
+            <li>Mismos intervalos (100 m fast + 50 m slow)<b> x 4 veces sin descanso.</b></li>
+            </ul>
+            <p><b>Recuperación:</b> 2 minuto caminando.</p>
+            <p>A mimir. 😴</p>`
+    },
+    ],
+  },     
 
 
 
