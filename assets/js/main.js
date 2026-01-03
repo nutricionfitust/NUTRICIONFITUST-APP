@@ -1514,7 +1514,7 @@ const trainingFolders = {
           {
             superset: [
             "Arranque con Mancuerna + Press de Hombro 4 x 10• 10• ↑8• 8",
-            "Burpees x 10• 10• 8• 8"
+            "Burpees 4 x 10• 10• 8• 8"
           ],
             restAfter: "2-3min"            
           },
@@ -4864,7 +4864,7 @@ const USER_HIIT_DAY_NOTES = {
 
 
    "danielflores1": {
-    "Día 5 - Full Body": [
+    "Día 4 - Full Body": [
       { title: "HIIT en Cinta (caminadora)",
       body: `<p><strong>15 a 20 MINUTOS TOTALES.</strong></p>
             <p><b>Actividad Opcional para cuando tengas tiempo!</b> Si la podés hacer mejor!</p>
@@ -4884,6 +4884,7 @@ const USER_HIIT_DAY_NOTES = {
     },
         { title: "Opción 2: HIIT Afuera (Parque/ Plaza/ Calle)",
       body: `<p><strong>25 MINUTOS TOTALES.</strong></p>
+            <p><b>Actividad Opcional para cuando tengas tiempo!</b> Podés realizarlo un día aparte a los entrenamientos en el gimnasio. Un fin de semana, cuando tengas tiempo. No consume mucho. Si la podés hacer mejor!</p>
             <p>Para <b>entrar en calor:</b></p> 
             <p><b>5 minutos:</b> trote suave (8 km/h).</p>
             <p>Luego, <b>intervalos (HIIT):</b></p> 
