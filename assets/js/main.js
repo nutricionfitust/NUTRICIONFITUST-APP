@@ -3514,7 +3514,7 @@ const trainingFolders = {
           {
             superset: [
             "Arranque con Mancuerna + Press de Hombro 4 x 10• 10• ↑8• 8",
-            "Burpees x 12• 10• 8• 8"
+            "Burpees 4 x 12• 10• 8• 8"
           ],
             restAfter: "2-3min"            
           },
@@ -3882,10 +3882,10 @@ const trainingFolders = {
 
         "Día 1 - Piernas": {
           "Acondicionamiento & Calentamiento": [
-          "Rotaciones de Caderas 2 x 10 a cada lado rest=30s",
+          "Rotaciones con Bolsa (o Disco) 2 x 10• 10 una a cada lado rest=30s",
             {
               superset: [
-            "Burpees 2 x 10",
+            "Burpees 2 x 10• 10",
             "Skipping Rodillas Arriba 2 x 30seg",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
@@ -3959,7 +3959,7 @@ const trainingFolders = {
 
         "Día 4 - Piernas":  {
           "Acondicionamiento & Calentamiento": [
-          "Rotaciones de Caderas 2 x 10 a cada lado rest=30s",
+          "Rotaciones con Bolsa (o Disco) 2 x 10• 10 una a cada lado rest=30s",
             {
               superset: [
             "Burpees 2 x 10",
@@ -4036,7 +4036,7 @@ const trainingFolders = {
           {
             superset: [
             "Arranque con Mancuerna + Press de Hombro 4 x 10• 10• ↑8• 8",
-            "Burpees x 12• 10• 8• 8"
+            "Burpees 4 x 12• 10• 8• 8"
           ],
             restAfter: "2-3min"            
           },
