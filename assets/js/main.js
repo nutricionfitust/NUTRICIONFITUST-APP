@@ -4061,6 +4061,7 @@ const trainingFolders = {
           ],
             restAfter: "2-3min"            
           },
+          "Elevación de Piernas Inclinado 3 x 16• 12• 12 rest=1-2min",
           ],
           },
       },
