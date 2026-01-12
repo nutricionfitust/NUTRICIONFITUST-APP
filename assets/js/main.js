@@ -4431,7 +4431,7 @@ const userPasswords = {
   'islandia-vesuvio-tundra-opera-dolcevita-urali-borschino': 'kacheoyhamburu3',
   'islandia-dolcevita-gelato-siberia-russia-balalaika': 'kevinmoreno1',
   'siberia-espresso-vesuvio-balalaika-laguna': 'isaacmolinares3',
-  'vesuvio-limoncello-amore-quarzo-limoncello-urali-espresso-octavo': 'arturoservin2'
+  'vesuvio-limoncello-amore-quarzo-limoncello-urali-espresso-octavo': 'arturoservin2',
   'limoncello-dolcevita-siberia-russia-laguna': 'rein3',  
   'tundra-vesuvio-balalaika-siberia-gondola-octavo': 'camiloduranm2',
   'yogurt-quarzo-siberia-espresso-kremlin-octavo': 'luisgonzalez2',
@@ -5546,7 +5546,7 @@ const USER_HIIT_DAY_NOTES = {
 
 
 
-
+  
 
   // camila, sofia, etc…
 
