@@ -277,10 +277,124 @@ const ADMIN_PASSWORD_HASH =
    CARPETAS / PLANES
 =========================== */
 const trainingFolders = {
-  "2 MUSCULACIÓN + 2 HIIT": { routines: {} },
+  "1 MUSCULACIÓN": { 
+    routines: {
+// RUTINA PUBLICIDAD BRAZOS Nº 1 - 1 MUSCULACIÓN !
+"publicidadbrazos": {
+        name: "👉🏻 esta es tu rutina de HOMBROS Y BRAZOS 💪🏻🔥",
+        plan: {
+          "Día Hombros + Brazos":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Flexiones BB Cerradas 2 x 20• 16",
+            "Bíceps + Press Arnold con Mancuernas 2 x 14• 12",
+          ],
+            restAfter: "1-2min"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+          {
+            superset: [
+            "Vuelos Posteriores con Mancuernas 4 x 12• 10• 8• 8",
+            "Vuelos Laterales con Mancuernas 4 x 12• (12+8)• (10+8)• 8"
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Bíceps Martillo Alternado con Mancuernas 4 x 12• 10• 8• 8",
+            "Extensión de Tríceps con Barra 4 x 12• (12+6)• (10+6)• (8+6)",
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Bíceps Predicador con Mancuernas 3 x 10• 8• 8",
+            "Press Francés Acostado 𝟰𝟱° con Mancuerna 4 x 12• 12• 10",    
+          ],
+            restAfter: "2-3min"            
+          },
+          ],
+          },
+      },
+// INFORMACIÓN RUTINA PUBLICIDAD BRAZOS PARA QUIENES ENTREN!
+      infoSections: [
+  {
+          title: "Hidratación y Recuperación",
+          html: `
+          <ul class="list-disc pl-6">
+          <li><b>Agua: 35 a 40 ml por kilo de peso corporal, más si entrenás fuerte e intenso, o consumís creatina.</b></li>
+          <li>Evitá el exceso de alcohol y bebidas azucaradas, ya que afectan tu recuperación muscular y la composición corporal.</li>
+          <li>Priorizá un <b>buen descanso: mínimo 7-8 horas de sueño.</b> El músculo crece y se recupera durmiendo.</li>
+          </ul>
+          `
+          },
+          {
+          title: "Alimentación diaria",
+          html: `
+          <p>Mantené una ingesta adecuada y distribuida en el día.</p>
+          <p>Si querés un <b>plan nutricional para maximizar tus ganancias</b>, enviame un 
+            <a href="https://wa.me/5491138803401?text=Hola%20Fran%2C%20quiero%20mi%20plan%20nutricional" target="_blank" class="text-green-600 font-semibold">
+            👉🏻 mensaje directo
+          </a>.
+          </p>
+            `
+          },
+          ],
+    },
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    } 
+  },
+  "2 MUSCULACIÓN + 2 HIIT": {
+    routines: {
+//RUTINA NOMBREXXXXXX Nº 1 - 2 MUSCULACIÓN + 2 HIIT !
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  } 
+},
   "2 MUSCULACIÓN + (2 LISS)": {
     routines: {
 //RUTINA AGUSTINA Nº 1 - 2 MUSCULACIÓN + (2 LISS) !
@@ -1457,7 +1571,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
-            "Flexiones BB Cerradas 2 x 20• 16",
+            "Flexiones BB Cerradas 2 x 10• 10",
             "Bíceps + Press Arnold con Mancuernas 2 x 16• 12",
             "Vuelos Laterales con Mancuernas 2 x 12• 12 (liviano)"
           ],
@@ -1487,7 +1601,7 @@ const trainingFolders = {
           {
             superset: [
             "Vuelos Posteriores con Mancuernas 3 x 16• 12• 12", 
-            "Flexiones BB 2 x 20• 16",
+            "Flexiones BB 2 x 10• 8",
           ],
             restAfter: "1min"
           },           
@@ -1512,7 +1626,7 @@ const trainingFolders = {
         {
               superset: [
             "Rotaciones con Bolsa 2 x 12• 10 a cada lado",
-            "Burpees 2 x 10• 10",
+            "Burpees 2 x 10• 8",
             "Sentadillas + Estocadas con Bolsa (o mancuernas) 2 x 12• 12",
             ],
             restAfter: "1min"
@@ -4368,6 +4482,7 @@ const trainingFolders = {
    MAPEO USUARIOS → RUTINAS
 =========================== */
 const userRoutineMapping = {
+  publicidadbrazos: { folder: "1 MUSCULACIÓN", routine: "publicidadbrazos" },
   agustina: { folder: "2 MUSCULACIÓN + (2 LISS)", routine: "agustina" },
   camilafrancoblonda:   { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "camilafrancoblonda" },
   tacianabavaud: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "tacianabavaud" },
@@ -4411,6 +4526,7 @@ const userRoutineMapping = {
 
 const userPasswords = {
   // CLAVES ÚINCAS DE USUARIOS
+  'napolitana-limoncello-vesuvio-spaghetti-urali-espresso': 'publicidadbrazos',
   'vesuvio-kremlin-quarzo-espresso-amore-siberia-russia-vesuvio-octavo-zarina-octavo-batata': 'agustina',
   'tundra-vesuvio-balalaika-siberia-yogurt-vesuvio-yogurt-vesuvio': 'camilafrancoblonda',
   'amore-vesuvio-tundra-siberia-spaghetti-vesuvio-russia-vesuvio': 'tacianabavaud',
