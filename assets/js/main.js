@@ -311,7 +311,7 @@ const trainingFolders = {
           {
             superset: [
             "Bíceps Predicador con Mancuernas 3 x 10• 8• 8",
-            "Press Francés Acostado 𝟰𝟱° con Mancuerna 4 x 12• 12• 10",    
+            "Press Francés Sentado con Apoyo 𝟰𝟱° 4 x 12• 12• 10",    
           ],
             restAfter: "2-3min"            
           },
@@ -320,13 +320,23 @@ const trainingFolders = {
       },
 // INFORMACIÓN RUTINA PUBLICIDAD BRAZOS PARA QUIENES ENTREN!
       infoSections: [
-  {
+          {
           title: "Hidratación y Recuperación",
           html: `
           <ul class="list-disc pl-6">
           <li><b>Agua: 35 a 40 ml por kilo de peso corporal, más si entrenás fuerte e intenso, o consumís creatina.</b></li>
           </ul>
           `
+          },
+          {
+          title: "Entrenamiento 100% personalizado",
+          html: `
+          <p>Si querés un <b>plan de entrenamiento hecho a tu medida para maximizar tus ganancias</b>, enviame un 
+            <a href="https://api.whatsapp.com/message/WP44MHI4JKZRK1?autoload=1&app_absent=0" target="_blank" class="text-green-600 font-semibold">
+            👉🏻 mensaje directo
+          </a>.
+          </p>
+            `
           },
           {
           title: "Alimentación diaria",
