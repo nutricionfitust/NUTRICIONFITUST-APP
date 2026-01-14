@@ -325,8 +325,6 @@ const trainingFolders = {
           html: `
           <ul class="list-disc pl-6">
           <li><b>Agua: 35 a 40 ml por kilo de peso corporal, más si entrenás fuerte e intenso, o consumís creatina.</b></li>
-          <li>Evitá el exceso de alcohol y bebidas azucaradas, ya que afectan tu recuperación muscular y la composición corporal.</li>
-          <li>Priorizá un <b>buen descanso: mínimo 7-8 horas de sueño.</b> El músculo crece y se recupera durmiendo.</li>
           </ul>
           `
           },
