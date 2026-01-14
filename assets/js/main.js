@@ -332,7 +332,7 @@ const trainingFolders = {
           title: "Entrenamiento 100% personalizado",
           html: `
           <p>Si querés un <b>plan de entrenamiento hecho a tu medida para maximizar tus ganancias</b>, enviame un 
-            <a href="https://wa.link/or52dw" target="_blank" class="text-green-600 font-semibold">
+            <a href="https://wa.me/5491138803401?text=Hola%20Fran%2C%20quiero%20mi%20plan%20de%20entrenamiento" target="_blank" class="text-green-600 font-semibold">
             👉🏻 mensaje directo
           </a>.
           </p>
