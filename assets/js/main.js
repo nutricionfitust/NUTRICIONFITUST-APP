@@ -332,7 +332,7 @@ const trainingFolders = {
           title: "Entrenamiento 100% personalizado",
           html: `
           <p>Si querés un <b>plan de entrenamiento hecho a tu medida para maximizar tus ganancias</b>, enviame un 
-            <a href="https://wa.me/5491138803401?text=Hola%20Fran%2C%20quiero%20mi%20plan%20de%20entrenamiento" target="_blank" class="text-green-600 font-semibold">
+            <a href="https://wa.me/5491138803401?text=Hola%20Fran%2C%20quiero%20mi%20plan%20de%20entrenamiento!" target="_blank" class="text-green-600 font-semibold">
             👉🏻 mensaje directo
           </a>.
           </p>
@@ -343,7 +343,7 @@ const trainingFolders = {
           html: `
           <p>Mantené una ingesta adecuada y distribuida en el día.</p>
           <p>Si querés un <b>plan nutricional para maximizar tus ganancias</b>, enviame un 
-            <a href="https://wa.me/5491138803401?text=Hola%20Fran%2C%20quiero%20mi%20plan%20nutricional" target="_blank" class="text-green-600 font-semibold">
+            <a href="https://wa.me/5491138803401?text=Hola%20Fran%2C%20quiero%20mi%20plan%20nutricional!" target="_blank" class="text-green-600 font-semibold">
             👉🏻 mensaje directo
           </a>.
           </p>
@@ -3790,6 +3790,167 @@ const trainingFolders = {
 
 
 
+    //RUTINA LUCAS Nº 1 - 5 MUSCULACIÓN + 2 HIIT !
+    "lucascabrera1": {
+      name: "Lucas",
+      plan: {  
+
+        "Día 1 - Piernas": {
+          "Acondicionamiento & Calentamiento": [            
+            {
+              superset: [
+            "Rotaciones con Bolsa 3 x 10• 10 a cada lado",
+            "Burpees 2 x 10• 10",
+            ],
+            restAfter: "1min"
+          },
+          "Crunch Declinado 3 x 20• 12• 12 rest=1min"
+            ],
+          "Entrenamiento de Fuerza": [
+            "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
+            "Sentadillas Sumo con Barra 4 x 16• ↑12• ↑10• ↑8 rest=2-4min",
+            {
+              superset: [
+            "Estocadas en Prensa 4 x 12• ↑10• 8• 8",
+            "Gemelos en Prensa 4 x 10 a 16 reps al fallo"
+            ],
+            restAfter: "2-3min"
+          },
+            "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
+            "Hiperextensiones para Glúteos (con Peso) 3 x 16• 12• 12 rest=1-2min",
+            "Crunch en Máquina 3 x 16• 12• 12 rest=1-2min",
+            ],
+          },
+
+      "Día 2 - Pecho + Espalda":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Dominadas Agarre Prono 2 x 12• 12",
+            "Flexiones BB Cerradas + Carpa 2 x 20• 20",
+          ],
+            restAfter: "1-2min"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+            "Vuelos Posteriores Sentado en Máquina 4 x 12• ↑12• ↑10• 10 rest=1-2min",
+            "Polea al Pecho con Triángulo 4 x 12• ↑10• ↓(12+8)• ↑12 rest=2-3min",
+            "Remo con Barra 4 x 12• ↑10• ↑8• 8 rest=2-3min",
+            "Press Militar con Barra de Pie 4 x 12• ↑12• ↑10• 8 rest=2-3min",
+            "Press Banca Inclinado con Mancuernas 4 x 12• ↑12• ↑10• 8 rest=2-3min",
+            "Press de Pecho en Máquina 4 x 12• ↑10• (10+6)• ↓(8+6) rest=2-3min",
+            ],
+          "Entrenamiento HIIT": [
+            "Elíptica",
+            ],
+          },
+
+        "Día 3 - Brazos + Hombros + Abs":  {
+        "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Flexiones BB Cerradas 2 x 20• fallo",
+            "Plancha Lateral 2 x 40seg a cada lado",
+          ],
+            restAfter: "1-2min"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+          {
+            superset: [
+            "Crunch Declinado 3 x 20• 16• 12",
+            "Plancha Frontal 3 x 1min"
+          ],
+            restAfter: "1min"            
+          },
+            {
+            superset: [
+            "Bíceps con Cable con Barra 4 x 12• ↑10• ↑8• fallo",
+            "Tríceps con Polea Agarre Inverso 4 x 12• ↑12• (10+8)• fallo"
+          ],
+            restAfter: "2min"            
+          },
+          {
+            superset: [
+            "Bíceps Martillo Alternado con Mancuernas 3 x 10• ↑8• 8 (muy pesado!)",
+            "Press Francés Acostado 𝟰𝟱° con Mancuerna 3 x 12• 12• 10",
+          ],
+            restAfter: "2min"   
+          },
+            "Press Arnold con Mancuernas 3 x 8• 8• ↓16 (muy pesado, y la última liviano) rest=2min",
+          {
+            superset: [
+            "Vuelos Posteriores con Mancuernas 4 x 12• ↑12• ↑10• 8",
+            "Vuelos Laterales con Mancuernas 4 x 12• ↑10• 10• 8"
+          ],
+            restAfter: "2-3min"            
+          },
+          ],
+          },
+
+        "Día 4 - Piernas":  {
+          "Acondicionamiento & Calentamiento": [
+          "Escalera Mecánica 5 minutos velocidad aprox 10 - 12",
+          ],
+          "Entrenamiento de Fuerza": [
+            "Cargadas con Barra 3 x 10• 8• 8 rest=2min",
+            "Peso Muerto Convencional 4 x 12• ↑10• ↑8• 8 rest=3-4min",
+            "Hip Thrust con Barra 4 x 10• 10• ↑8• 8 rest=2-3min",
+            "Estocadas con Barra 4 x 12• ↑10• ↑8• 8 rest=2-3min",
+            "Extensión de Cuádriceps Sentado 4 x 14• ↓(10+8)• ↓(10+8)• 12 rest=1-2min",
+            ],
+          },
+
+        "Día 5 - Full Body":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Flexiones BB Cerradas + Carpa 2 x 20• 20",
+            "Plancha Frontal 2 x 1min• 1min",
+          ],
+            restAfter: "1-2min"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+          {
+            superset: [
+            "Arranque con Mancuerna + Press de Hombro 4 x 10• 10• ↑8• 8",
+            "Burpees 4 x 12• 10• 8• 8"
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Press Banca con Agarre Cerrado 4 x 12• ↑10• ↑8• 8",
+            "Vuelos Posteriores con Mancuerna Sentado 4 x 12• 12• ↑10• 10"
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Press Inclinado con Mancuernas 3 x 12• ↑10• 10",
+            "Biceps Martillo Alternado con Mancuernas 3 x 10• 10• 8"
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Remo Unilateral con Mancuerna 4 x 12• ↑10• 10• 8",
+            "Fondos para Triceps  4 x fallo• fallo• fallo• fallo"
+          ],
+            restAfter: "2-3min"            
+          },
+          ],
+          "Entrenamiento HIIT": [
+            "Correr en Cinta (caminadora)",
+          ],
+          },
+      },
+    },
+
+
+
+
 //RUTINA ISAAC Nº 3 - 5 MUSCULACIÓN + 2 HIIT !    
     "isaacmolinares3": {
       name: "Teniente Isaac",
@@ -4561,7 +4722,7 @@ const trainingFolders = {
             "Isquiotibiales Sentado 4 x 20• 12• 12• 10 rest=1-2min",
             "Sentadillas en Smith tipo Sumo 4 x 12• 10• 10• 8 rest=2-4min",
             "Hip Thrust en Smith 3 x 12• 10• 10 rest=2-3min",
-            "Peso muerto Unilateral con Mancuernas 3 x 12• 12• 10 rest=2min",
+            "Peso muerto Rumano con Mancuernas 3 x 12• 12• 10 rest=2min",
             "Sentadilla Búlgara con Mancuernas 2 x (8+6)• (8+6) rest=2min",
             ],
           },
@@ -4570,7 +4731,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
-            "Flexiones BB Cerradas 2 x 20• 20",
+            "Flexiones BB Cerradas 2 x 10• 10",
             "Bíceps + Press Arnold con Mancuernas 2 x 14• 14",
           ],
             restAfter: "1-2min"
@@ -4600,7 +4761,7 @@ const trainingFolders = {
           },
           ],
           "Entrenamiento HIIT": [
-            "Correr en Cinta Inclinada",
+            "Correr en Cinta",
           ],
           },
           
@@ -4608,8 +4769,8 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
-            "Flexiones BB Cerradas + Carpa 2 x 20• 20",
-            "Plancha Frontal 2 x 1min• 1min",
+            "Flexiones BB Cerradas + Carpa 2 x 10• 8",
+            "Plancha Frontal 2 x 40s a 1min",
           ],
             restAfter: "1-2min"
           },
@@ -4618,7 +4779,7 @@ const trainingFolders = {
           {
             superset: [
             "Arranque con Mancuerna + Press de Hombro 4 x 10• 10• ↑8• 8",
-            "Burpees 4 x 12• 10• 8• 8"
+            "Burpees 4 x 10• 10• 8• 8"
           ],
             restAfter: "2-3min"            
           },
@@ -4639,11 +4800,11 @@ const trainingFolders = {
           {
             superset: [
             "Remo Unilateral con Mancuerna 4 x 12• ↑10• 10• 8",
-            "Fondos para Triceps  4 x fallo• fallo• fallo• fallo"
+            "Fondos Sentado en Máquina  4 x fallo• fallo• fallo• fallo"
           ],
             restAfter: "2-3min"            
           },
-          "Elevación de Piernas Inclinado 3 x 16• 12• 12 rest=1-2min",
+          "Elevación de Piernas Acostado 3 x 16• 12• 12 rest=1-2min",
           ],
           },
       },
@@ -4714,6 +4875,7 @@ const userRoutineMapping = {
   ivangoic2: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "ivangoic2" },
   ivangoic3: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "ivangoic3" },
   ivangoic4: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "ivangoic4" },
+  lucascabrera1: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "lucascabrera1" },
   diegosantandrian1: { folder: "6 MUSCULACIÓN + 2 HIIT + (1 LISS)", routine: "diegosantandrian1" },
   mariomiranda1: { folder: "6 MUSCULACIÓN + 2 HIIT + (1 LISS)", routine: "mariomiranda1" },
   alansanchez: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "alansanchez" },
@@ -4759,6 +4921,7 @@ const userPasswords = {
   'siberia-gelato-vesuvio-russia-kremlin-octavo': 'ivangoic2',
   'siberia-gelato-vesuvio-russia-kremlin-laguna': 'ivangoic3',
   'siberia-gelato-vesuvio-russia-kremlin-hermitage': 'ivangoic4',
+  '':'lucascabrera1',
   'vesuvio-yogurt-vesuvio-russia-espresso-spaghetti': 'alansanchez',
   'tundra-vesuvio-limoncello-vesuvio-gondola-dolcevita-urali-gelato-dolcevita-piazza-vesuvio': 'nicolasrivera',
   'yogurt-siberia-espresso-vesuvio-yogurt-borschino': 'lisandroalyosha1',
@@ -4868,7 +5031,7 @@ const DEFAULT_INFO_SECTIONS = [
     html: `
         <p>Mantené una ingesta adecuada y distribuida en el día.</p>
         <p>Si querés un <b>plan nutricional para maximizar tus ganancias</b>, enviame un 
-            <a href="https://wa.me/5491138803401?text=Hola%20Fran%2C%20quiero%20mi%20plan%20nutricional" target="_blank" class="text-green-600 font-semibold">
+            <a href="https://wa.me/5491138803401?text=Hola%20Fran%2C%20quiero%20mi%20plan%20nutricional!" target="_blank" class="text-green-600 font-semibold">
             👉🏻 mensaje directo
             </a>.
         </p>
@@ -5498,16 +5661,15 @@ const USER_HIIT_DAY_NOTES = {
     },
     ],
     "Día 5 - Brazos + Hombros": [
-      { title: "HIIT en cinta (caminadora)",
-      body: `<p><strong>11 MINUTOS 30 SEG TOTALES.</strong></p>
-            <p><b>2 minutos:</b> trote suave para entrar en calor.</p>
-            <p>Inclinar la Cinta unos 6 grados.</p>
+      { title: "HIIT en Cinta (caminadora)",
+      body: `<p><strong>13-15 MINUTOS TOTALES.</strong></p>
+            <p><b>3 minutos:</b> trote suave (8 km/h) para entrar en calor.</p>
             <p>Luego, <b>intervalos (HIIT):</b></p> 
             <ul class="list-disc pl-6">
-            <li>30 segundos a ~ 5/8 de tu velocidad máxima (ej: ~14 km/h).</li>
-            <li>1 minuto caminando (ej: ~5 km/h). Inclinando más la máquina.</li>
+            <li>40 segundos a ~ 3/4 de tu velocidad máxima (ej: ~15 km/h).</li>
+            <li>1 minuto de trote suave (ej: ~8 km/h).</li>
             </ul>
-            <p><b>Repetir 5 veces seguidas:</b> o sea <b>(30seg + 1min) x 5 sin descanso.</b></p>
+            <p><b>Repetir 5 veces seguidas:</b> o sea <b>(40seg + 1min) x 5 sin descanso.</b></p>
             <p><b>Recuperación:</b> 1 minuto caminando.</p>
             <p>A mimir. 😴</p>`
     },
@@ -5739,7 +5901,47 @@ const USER_HIIT_DAY_NOTES = {
 
 
 
-   "danielflores1": {
+    "lucascabrera1": {
+    "Día 2 - Pecho + Espalda": [
+      { title: "HIIT en Cinta Inclinada (caminadora)",
+      body: `<p><strong>13 MINUTOS TOTALES.</strong></p>
+            <p>Inclinar la Cinta unos 9 grados.</p>
+            <p><b>4 minutos:</b> caminar.</p>
+            <p>Inclinar la Cinta unos 3 grados (bajamos 6 grados).</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>30 segundos a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
+            <li>1 minuto de trote suave (ej: ~8 km/h).</li>
+            </ul>
+            <p><b>Repetir 6 veces seguidas:</b> o sea <b>(30seg + 1min) x 6 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 1 minuto caminando.</p>
+            <p>A mimir. 😴</p>`   
+    },
+    ],
+    "Día 5 - Full Body": [
+      { title: "HIIT en Cinta (caminadora)",
+      body: `<p><strong>15 a 20 MINUTOS TOTALES.</strong></p>
+            <p><b>Intenta exigirte más con la velocidad!</b></p>
+            <p>Inclinar la Cinta unos 9 grados.</p>
+            <p><b>2 minutos:</b> caminar.</p>
+            <p>Desinclinar la Cinta a 0 grados (llano).</p>
+            <p><b>2 minutos:</b> trote suave para entrar en calor.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>350 metros a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
+            <li>150 metros tranqui (slow). Los primeros 100 m caminando (5.5 km/h), y trote suave (8 km/h) los últimos 50 m.</li>
+            </ul>
+            <p><b>Repetir 4 veces seguidas:</b> o sea <b>(300 m fast + 150 m slow) x 4 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 1 minuto caminando.</p>
+            <p>A mimir. 😴</p>`
+    },
+    ],
+  },   
+
+
+
+
+  "danielflores1": {
     "Día 4 - Full Body": [
       { title: "HIIT en Cinta (caminadora)",
       body: `<p><strong>15 a 20 MINUTOS TOTALES.</strong></p>
