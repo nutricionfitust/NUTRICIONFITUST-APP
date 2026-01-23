@@ -254,10 +254,10 @@ const exerciseDatabase = {
   acondicionamiento: [
     { name: "Patadas Atrás", videoId: "https://drive.google.com/open?id=1N5USpUu0xuH1k9XnSZY7NWQ3kXBPAo_I&usp=drive_copy", description: "Ejercicio de acondicionamiento que trabaja glúteos y isquiotibiales de forma dinámica. Mejora la coordinación y activa la cadena posterior." },
     { name: "Skipping Rodillas Arriba", videoId: "https://drive.google.com/open?id=1YP2tRw0VbRR3CWOMmeDGoGXNkAouoQyo&usp=drive_copy", description: "Ejercicio cardiovascular que mejora la coordinación, eleva la frecuencia cardíaca y fortalece el core." },
-    { name: "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas)", videoId: "", description: "Combinación de sentadillas y estocadas usando una bolsa como peso. Ejercicio funcional que desarrolla fuerza y resistencia en piernas." },
+    { name: "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas)", videoId: "https://drive.google.com/file/d/1LRRLTdIMLxI0En62HKU5zlTDaLQSxsUq/view?usp=drive_link", description: "Combinación de sentadillas y estocadas usando una bolsa como peso. Ejercicio funcional que desarrolla fuerza y resistencia en piernas." },
     {name:  "Burpees Completos", videoId: "https://drive.google.com/file/d/1iLg5S7C2AwVg_JVobEbUDaTy2rF0knNG/view?usp=sharing", description: "Variante avanzada del burpee que incluye una flexión completa y un salto explosivo, marcando bien la sentadilla al salir y al caer. Trabaja todo el cuerpo, mejorando fuerza, resistencia y coordinación."},
-    { name: "Bíceps + Press Arnold con Mancuernas", videoId: "", description: "Combinación de curl de bíceps seguido de press Arnold. Trabaja bíceps y hombros de forma continua y eficiente." },
-    { name: "Rotaciones con Bolsa (o disco)", videoId: "", description: "Movés en círculos por detrás de la cabeza, primero hacia un lado y luego al otro. Trabaja brazos, antebrazos, hombros y core, mejorando la estabilidad. El cambio de dirección exige frenar el peso y volver a impulsarlo, lo que activa aún más la fuerza y el control del tronco." },
+    { name: "Bíceps + Press Arnold con Mancuernas", videoId: "https://drive.google.com/file/d/1xskewRDPpxPgNtJUlisPDilETw6PbhxO/view?usp=sharing", description: "Combinación de curl de bíceps seguido de press Arnold. Trabaja bíceps y hombros de forma continua y eficiente." },
+    { name: "Rotaciones con Bolsa (o disco)", videoId: "https://drive.google.com/file/d/1sU101XZckH6tmyWWcHQLE9G_Nn_ONm4z/view?usp=sharing", description: "Movés en círculos por detrás de la cabeza, primero hacia un lado y luego al otro. Trabaja brazos, antebrazos, hombros y core, mejorando la estabilidad. El cambio de dirección exige frenar el peso y volver a impulsarlo, lo que activa aún más la fuerza y el control del tronco." },
     { name: "Rotaciones de Cadera", videoId: "", description: "Ejercicio de movilidad que mejora la flexibilidad de cadera y prepara las articulaciones para el entrenamiento." },
     { name: "Rotaciones de Hombros", videoId: "", description: "Movimiento de calentamiento que prepara los hombros y mejora la movilidad articular del tren superior." },
     { name: "Estiramiento de Cuádriceps", videoId: "", description: "Ejercicio de flexibilidad que alarga los músculos del cuádriceps y mejora la movilidad de la cadera." },
@@ -3882,7 +3882,7 @@ const trainingFolders = {
         {
               superset: [
             "Rotaciones con Bolsa 2 x 12• 10 a cada lado",
-            "Burpees 2 x 10• 8",
+            "Burpees Completos 2 x 10• 8",
             "Sentadillas + Estocadas con Bolsa (o mancuernas) 2 x 12• 12",
             ],
             restAfter: "1min"
