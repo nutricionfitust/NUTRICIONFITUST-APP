@@ -206,13 +206,14 @@ const exerciseDatabase = {
     { name: "Arranque de Potencia con Sentadilla con Barra", videoId: "https://drive.google.com/open?id=1ZJ7T1AXZPkoFY331D35burrNskUKw-62&usp=drive_copy", description: "Variante del arranque donde recibís la barra en sentadilla completa. Exige movilidad, fuerza y técnica, trabajando todo el cuerpo en un solo movimiento." },
     { name: "Arranque Dividido con Barra", videoId: "https://drive.google.com/open?id=1ffXS7Js17As1cbeDhgsSKCAq79nxZ_zv&usp=drive_copy", description: "Recibís la barra en posición de zancada, lo que mejora estabilidad unilateral y control. Excelente para fuerza, potencia y equilibrio." },
     { name: "Arranque Muscular con Barra", videoId: "https://drive.google.com/open?id=1Ja1zsEk3wVMcd9V2W-TR10J6cVaZ5Eqg&usp=drive_copy", description: "Se realiza sin flexionar mucho las piernas, tirando con potencia de brazos y espalda. Desarrolla fuerza de tracción y coordinación." },
-    { name: "Arranque con Mancuerna + Press de Hombro", videoId: "", description: "Mové la mancuerna desde el suelo en arranque, y al llevarla arriba agregá un press. Combina tracción, fuerza de piernas y trabajo de hombros con estabilidad del core." },
+    { name: "Arranque con Mancuerna + Press de Hombro", videoId: "https://drive.google.com/file/d/1opvMpKv4aH8YA29ONWizRMeEmAzCiPL7/view?usp=drivesdk", description: "Mové la mancuerna desde el suelo en arranque, y al llevarla arriba agregá un press. Combina tracción, fuerza de piernas y trabajo de hombros con estabilidad del core." },
     { name: "Balanceo con Rusa a Dos Manos", videoId: "https://drive.google.com/open?id=1-Nfjap3NVHkZQivb3pi-G4CUnt78pUVK&usp=drive_copy", description: "Clásico swing con kettlebell. Empujá con la cadera, dejá que suba el peso y controlá la bajada. Potencia brutal en glúteos y core." },
     { name: "Balanceo con Rusa a Una Mano", videoId: "https://drive.google.com/open?id=1bC1IfG52yMfbdYdNbEhMjKKXQW2jP_e5&usp=drive_copy", description: "Swing con kettlebell, con una mano. Empujá con la cadera, dejá que suba el peso y controlá la bajada. Aumenta la exigencia del core y mejora la estabilidad unilateral." },
     { name: "Balanceo con Rusas", videoId: "https://drive.google.com/open?id=1PpjubQyTaWYWFt6rW32j7-fb7YLO0pWb&usp=drive_copy", description: "Con dos kettlebells, el esfuerzo se duplica. Requiere fuerza, coordinación y potencia explosiva de cadera." },
     { name: "Bicicleta Elíptica", videoId: "https://drive.google.com/open?id=1UiF6uGIHPNjO1I0PLBK-QR03fx4ISdba&usp=drive_copy", description: "Ejercicio de bajo impacto. Mové brazos y piernas en coordinación para un trabajo suave, completo y seguro para las articulaciones." },
     { name: "Burpees con Mancuernas", videoId: "https://drive.google.com/open?id=16SW7fwFFYBPbRsSGO-oI2_KuhFcAZe28&usp=drive_copy", description: "Burpee tradicional, pero agregando el empuje de mancuernas. Mezcla cardio, fuerza y coordinación en un solo movimiento." },
     { name: "Burpees", videoId: "https://drive.google.com/open?id=1Smwm2nFs6TGkdgcC-m6pp5jBM-rojOJ9&usp=drive_copy", description: "Clásico ejercicio de cuerpo completo: sentadilla, plancha, flexión y salto. Intenso, rápido y efectivo para fuerza y cardio." },
+    {name:  "Burpees Completos", videoId: "https://drive.google.com/file/d/1iLg5S7C2AwVg_JVobEbUDaTy2rF0knNG/view?usp=sharing", description: "Variante avanzada del burpee que incluye una flexión completa y un salto explosivo, marcando bien la sentadilla al salir y al caer. Trabaja todo el cuerpo, mejorando fuerza, resistencia y coordinación."},
     { name: "Cargadas con Barra", videoId: "https://drive.google.com/open?id=1FYz1WNqWrqYbAVdRku4qipnYaeE7GQMo&usp=drive_copy", description: "Llevá la barra desde el suelo hasta los hombros en un movimiento explosivo. Trabaja desde piernas hasta trapecios y exige potencia total." },
     { name: "Cargadas con Mancuernas con Press de Hombros", videoId: "https://drive.google.com/open?id=1UF730gkwbQaJekMeuihAWIidqf3LlIWm&usp=drive_copy", description: "Combiná la cargada con un press overhead. Ejercicio integral para potencia, fuerza y estabilidad del core." },
     { name: "Máquina de Remo", videoId: "https://drive.google.com/open?id=1pZ8bNH2kJKEbkI-Xs2VqueCBRuf27tx_&usp=drive_copy", description: "Cada remada involucra piernas, espalda, brazos y core. Ejercicio completísimo que combina fuerza y cardio. Sentí cómo tu cuerpo entero trabaja en cada tirón." },
@@ -254,7 +255,7 @@ const exerciseDatabase = {
     { name: "Patadas Atrás", videoId: "https://drive.google.com/open?id=1N5USpUu0xuH1k9XnSZY7NWQ3kXBPAo_I&usp=drive_copy", description: "Ejercicio de acondicionamiento que trabaja glúteos y isquiotibiales de forma dinámica. Mejora la coordinación y activa la cadena posterior." },
     { name: "Skipping Rodillas Arriba", videoId: "https://drive.google.com/open?id=1YP2tRw0VbRR3CWOMmeDGoGXNkAouoQyo&usp=drive_copy", description: "Ejercicio cardiovascular que mejora la coordinación, eleva la frecuencia cardíaca y fortalece el core." },
     { name: "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas)", videoId: "", description: "Combinación de sentadillas y estocadas usando una bolsa como peso. Ejercicio funcional que desarrolla fuerza y resistencia en piernas." },
-    { name: "Burpees con Flexiones BB", videoId: "", description: "Burpees con Flexiones BB incluyendo flexión de brazos y marcando bien la sentadilla. Ejercicio de cuerpo completo de alta intensidad." },
+    {name:  "Burpees Completos", videoId: "https://drive.google.com/file/d/1iLg5S7C2AwVg_JVobEbUDaTy2rF0knNG/view?usp=sharing", description: "Variante avanzada del burpee que incluye una flexión completa y un salto explosivo, marcando bien la sentadilla al salir y al caer. Trabaja todo el cuerpo, mejorando fuerza, resistencia y coordinación."},
     { name: "Bíceps + Press Arnold con Mancuernas", videoId: "", description: "Combinación de curl de bíceps seguido de press Arnold. Trabaja bíceps y hombros de forma continua y eficiente." },
     { name: "Rotaciones con Bolsa (o disco)", videoId: "", description: "Movés en círculos por detrás de la cabeza, primero hacia un lado y luego al otro. Trabaja brazos, antebrazos, hombros y core, mejorando la estabilidad. El cambio de dirección exige frenar el peso y volver a impulsarlo, lo que activa aún más la fuerza y el control del tronco." },
     { name: "Rotaciones de Cadera", videoId: "", description: "Ejercicio de movilidad que mejora la flexibilidad de cadera y prepara las articulaciones para el entrenamiento." },
@@ -705,7 +706,7 @@ const trainingFolders = {
             {
             superset: [
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 16-16",
-            "Burpees con Flexiones BB 2 x 10-10",
+            "Burpees Completos 2 x 10-10",
           ],
             restAfter: "1min"
           },
@@ -2592,7 +2593,7 @@ const trainingFolders = {
           "Rotaciones de Caderas 2 x 10 a cada lado rest=30s",
             {
               superset: [
-            "Burpees con Flexiones BB 2 x 10",
+            "Burpees Completos 2 x 10",
             "Skipping Rodillas Arriba 2 x 30seg",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
@@ -2669,7 +2670,7 @@ const trainingFolders = {
         {
               superset: [
             "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
-            "Burpees con Flexiones BB 2 x 10• 10",
+            "Burpees Completos 2 x 10• 10",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
             restAfter: "1min"
@@ -5904,7 +5905,7 @@ const USER_HIIT_DAY_NOTES = {
 
 
     "lucascabrera1": {
-    "Superior (Énfasis Pecho)": [
+    "Día 2 - Superior (Énfasis Pecho)": [
       { title: "HIIT en Cinta Inclinada (caminadora)",
       body: `<p><strong>13 MINUTOS TOTALES.</strong></p>
             <p>Inclinar la Cinta unos 9 grados.</p>
