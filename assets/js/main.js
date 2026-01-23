@@ -4,6 +4,7 @@
 const exerciseDatabase = {
   piernas_general: [
     { name: "Aductores Sentado", videoId: "https://drive.google.com/file/d/1Xfs-vaGua4Nn0mW--xZh8y5dgd6cD_rb/view?usp=drivesdk", description: "Acá te vas a concentrar en la parte interna del muslo. Abrí bien las piernas y buscá un estiramiento grande antes de cerrar fuerte. Sentí cómo los aductores se cargan con cada repetición: densidad y fuerza en la zona media de las piernas." },
+    {name: "Aductores con Tobilleras", videoId: "", description: "Con las tobilleras podés trabajar los aductores de forma unilateral. Cruzá la pierna por delante de la otra para estirar bien y luego juntá con fuerza, sintiendo el trabajo en la parte interna del muslo." },
     { name: "Buenos Días en Smith", videoId: "https://drive.google.com/file/d/1NrKBja118-ToX05Ocs6VkAn8z8UKG73J/view?usp=drivesdk", description: "Movimiento de bisagra guiado que te da seguridad para cargar pesado. Dejá que los isquios y glúteos se estiren al máximo y después subí explosivo. La máquina te sostiene, así que podés enfocarte 100% en sentir el trabajo en los femorales." },
     { name: "Buenos Días", videoId: "https://drive.google.com/file/d/1VAWnHjTmp-EW7v_37kv8G_v4oDMueuZ2/view?usp=drivesdk", description: "Versión libre, más técnica y exigente. Bajá controlado, aprovechando al máximo el estiramiento de los femorales, y subí fuerte. Te va a dar un grosor increíble en la cadena posterior, desde glúteos hasta espalda baja." },
     { name: "Escalera Mecánica", videoId: "https://drive.google.com/file/d/1-KDVoR0MztijwMCgCJ1qfbcK_NjNvnWj/view?usp=drivesdk", description: "Trabajo continuo que combina cardio con hipertrofia. El estímulo recae en glúteos, cuádriceps y gemelos, manteniendo tensión constante y volumen extra sin impacto. No es solo cardio..." },
@@ -40,6 +41,7 @@ const exerciseDatabase = {
   isquiotibiales: [
     { name: "Isquiotibiales Acostado", videoId: "https://drive.google.com/file/d/1odYrViuAw6cmLfBHLcdmXf9ZCwFArVn5/view?usp=drivesdk", description: "Curl en máquina que aísla de forma directa a los femorales. Al flexionar la rodilla llevás todo el esfuerzo a los isquios, logrando una contracción intensa y controlada." },
     { name: "Isquiotibiales Sentado", videoId: "https://drive.google.com/file/d/1zAQmYSac4XFv5XI6Q8XT8PM62uAWCktk/view?usp=drivesdk", description: "Al estar en posición sentada, los isquios trabajan desde un mayor estiramiento. Esto permite un estímulo más completo, aprovechando tanto la fase excéntrica como la contracción." },
+    { name: "Isquiotibiales Nórdicos", videoId: "", description: "Ejercicio avanzado que exige fuerza y control. En aquellas repeticiones donde tengas el Nº seguido de una A, quiere decir que esas reps debés hacerlas con un leve empujón de manos; cuando no veas una A, quiere decir que todo los isquitibiales son puramente los protagonistas del ejercicio. Al bajar lentamente, los isquios se estiran al máximo, y al subir, se contraen intensamente. Ideal para desarrollar fuerza y resistencia en los femorales." },
     { name: "Peso Muerto Convencional", videoId: "https://drive.google.com/file/d/1aPLT_cpIJsnW3ECUt4SuMFcbmq_uf-Em/view?usp=drivesdk", description: "Básico para toda la cadena posterior. Los isquios, glúteos y espalda baja se activan en conjunto. La clave está en bajar con control, sintiendo el estiramiento, y subir con fuerza." },
     { name: "Peso Muerto en Smith", videoId: "https://drive.google.com/file/d/1c4Jo6YVM9U3fnX3h3Sd5XF0Khz5czfFg/view?usp=drivesdk", description: "La máquina guía el movimiento, dándote seguridad. Ideal para enfocarte en los femorales sin preocuparte por la estabilidad, manteniendo un trabajo intenso en cada repetición." },
     { name: "Peso Muerto Rumano con Mancuernas", videoId: "https://drive.google.com/file/d/1q6qQz9xBcp4flUc56_NFAAXLHT--QjJl/view?usp=drivesdk", description: "Con mancuernas tenés más libertad de recorrido. Esto te permite un estiramiento profundo de los isquios y una contracción fuerte en la subida." },
@@ -522,7 +524,7 @@ const trainingFolders = {
             {
             superset: [
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 14• 12",
-            "Burpees 2 x 8• 8",
+            "Burpees Completos 2 x 8• 8",
           ],
             restAfter: "1min"
           },
@@ -619,7 +621,7 @@ const trainingFolders = {
             {
             superset: [
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 14• 12",
-            "Burpees 2 x 8• 8",
+            "Burpees Completos 2 x 8• 8",
           ],
             restAfter: "1min"
           },
@@ -738,7 +740,7 @@ const trainingFolders = {
           "Rotaciones de Caderas 2 x 10 a cada lado rest=30s",
             {
               superset: [
-            "Burpees 2 x 10",
+            "Burpees Completos 2 x 10",
             "Skipping Rodillas Arriba 2 x 30seg",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12-12",
             ],
@@ -949,6 +951,12 @@ const trainingFolders = {
 
 
 
+//RUTINA XXXXXX Nº 1 - 3 MUSCULACIÓN + 1 HIIT + (1 LISS) !
+
+
+
+
+
 
 
 
@@ -956,119 +964,46 @@ const trainingFolders = {
     
   },
 },
-  "3 MUSCULACIÓN + 2 HIIT": { routines: {} },
-
-//RUTINA Nº 1 - 3 MUSCULACIÓN + 2 HIIT !
-
-
-
-
-
-
-
-  "3 MUSCULACIÓN + 2 HIIT + (1 LISS)": { routines: {} },
-
-//RUTINA Nº 1 - 3 MUSCULACIÓN + 2 HIIT + (1 LISS) !
+  "3 MUSCULACIÓN + 2 HIIT": { 
+    routines: {
+//RUTINA NOMBREXXXXXX Nº 1 - 3 MUSCULACIÓN + 2 HIIT !
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+    } },
+  "3 MUSCULACIÓN + 2 HIIT + (1 LISS)": { 
+    routines: {
+//RUTINA NOMBREXXXXXX Nº 1 - 3 MUSCULACIÓN + 2 HIIT + (1 LISS) !
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  } },
   "4 MUSCULACIÓN (1 FB HIIT) + (1 LISS)":  {
-  routines: {
-//RUTINA Nº 1 - 4 MUSCULACIÓN + 1 FB HIIT + (1 LISS) !
-    "sofiaustarroz": {
-      name: "Sofía",
-         // PLAN DE ENTRENAMIENTO SEMANAL !      
-      plan: {  
-        "Día 1 - Pecho y Tríceps": {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-            ],
-          },
-        "Día 2 - Espalda y Bíceps":  {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-            ],
-          },
-        "Día 3 - Piernas":  {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12",
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-            ],
-          },
-        "Día 4 - Hombros y Core":  {
-          "Acondicionamiento & Calentamiento": [
-            "Rotaciones de hombros 2 x 15-15",
-            "Skipping 3 x 30seg rest=1min"
-            ],
-          "Entrenamiento de Fuerza": [
-            "Press de banca 4 x 12-10-8-8 rest=2min",
-          {
-            superset: [
-            "Press inclinado con mancuernas 4 x 10-10-10-10",
-            "Fondos para tríceps 3 x 12-12-12"
-          ],
-            restAfter: "2min"
-          },
-            "Aperturas en banca 3 x 12-12-12 rest=60s"
-            ],
-          "Entrenamiento HIIT": [
-            "Burpees 3 x 45 seg",
-            "Sentadillas con salto 3 x 45 seg"
-           ],
-          },
-      },
-    },
+    routines: {
+//RUTINA NOMBREXXXXXX Nº 1 - 4 MUSCULACIÓN (1 FB HIIT) + (1 LISS) !
 
 
 
@@ -1076,7 +1011,18 @@ const trainingFolders = {
 
 
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1171,7 +1117,7 @@ const trainingFolders = {
         {
               superset: [
             "Rotaciones con Bolsa 2 x 12• 10 a cada lado",
-            "Burpees 2 x 10• 10",
+            "Burpees Completos 2 x 10• 10",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
             restAfter: "1min"
@@ -1286,7 +1232,7 @@ const trainingFolders = {
         {
               superset: [
             "Rotaciones con Bolsa 2 x 12• 10 a cada lado",
-            "Burpees 2 x 10• 10",
+            "Burpees Completos 2 x 10• 10",
             "Sentadillas + Estocadas con Bolsa (o mancuernas) 2 x 12• 12",
             ],
             restAfter: "1min"
@@ -1518,7 +1464,7 @@ const trainingFolders = {
         {
               superset: [
             "Rotaciones con Bolsa 2 x 12• 10 a cada lado",
-            "Burpees 2 x 10• 10",
+            "Burpees Completos 2 x 10• 10",
             "Sentadillas + Estocadas con Bolsa (o mancuernas) 2 x 12• 12",
             ],
             restAfter: "1min"
@@ -1635,7 +1581,7 @@ const trainingFolders = {
         {
               superset: [
             "Rotaciones con Bolsa 2 x 12• 10 a cada lado",
-            "Burpees 2 x 10• 8",
+            "Burpees Completos 2 x 10• 8",
             "Sentadillas + Estocadas con Bolsa (o mancuernas) 2 x 12• 12",
             ],
             restAfter: "1min"
@@ -1820,7 +1766,7 @@ const trainingFolders = {
             {
               superset: [
             "Sentadillas + Estocadas con Peso (bolsa) 2 x 12• 12",
-            "Burpees 2 x 10",
+            "Burpees Completos 2 x 10",
             ],
             restAfter: "1min"
           },
@@ -1960,7 +1906,7 @@ const trainingFolders = {
           "Rotaciones de Caderas 2 x 10 a cada lado rest=30s",
             {
               superset: [
-            "Burpees 2 x 10",
+            "Burpees Completos 2 x 10",
             "Skipping Rodillas Arriba 2 x 30seg",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12-12",
             ],
@@ -2034,7 +1980,7 @@ const trainingFolders = {
           "Rotaciones de Caderas 2 x 10 a cada lado rest=30s",
             {
               superset: [
-            "Burpees 2 x 10",
+            "Burpees Completos 2 x 10",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12-12",
             ],
             restAfter: "1min"
@@ -2107,7 +2053,7 @@ const trainingFolders = {
             {
               superset: [
             "Rotaciones con Bolsa 2 x 10 a cada lado",
-            "Burpees 2 x 10",
+            "Burpees Completos 2 x 10",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
             restAfter: "1min 30seg"
@@ -2294,7 +2240,7 @@ const trainingFolders = {
           "Rotaciones de Caderas 2 x 10 a cada lado rest=30s",
             {
               superset: [
-            "Burpees 2 x 10",
+            "Burpees Completos 2 x 10",
             "Skipping Rodillas Arriba 2 x 30seg",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12-12",
             ],
@@ -2371,7 +2317,7 @@ const trainingFolders = {
           "Rotaciones de Caderas 2 x 10 a cada lado rest=30s",
             {
               superset: [
-            "Burpees 2 x 10",
+            "Burpees Completos 2 x 10",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12-12",
             ],
             restAfter: "1min"
@@ -2520,7 +2466,7 @@ const trainingFolders = {
         {
               superset: [
             "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
-            "Burpees 2 x 10• 10",
+            "Burpees Completos 2 x 10• 10",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
             restAfter: "1min"
@@ -2820,7 +2766,7 @@ const trainingFolders = {
         {
               superset: [
             "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
-            "Burpees 2 x 10• 10",
+            "Burpees Completos 2 x 10• 10",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
             restAfter: "1min"
@@ -2894,7 +2840,7 @@ const trainingFolders = {
           "Rotaciones con Bolsa 2 x 10 a cada lado rest=30s",
             {
               superset: [
-            "Burpees 2 x 8",
+            "Burpees Completos 2 x 8",
             "Skipping Rodillas Arriba 2 x 30seg",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
@@ -2970,7 +2916,7 @@ const trainingFolders = {
           "Rotaciones con Bolsa 2 x 10 a cada lado rest=30s",
             {
               superset: [
-            "Burpees 2 x 8",
+            "Burpees Completos 2 x 8",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
             restAfter: "1min"
@@ -3119,7 +3065,7 @@ const trainingFolders = {
         {
               superset: [
             "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
-            "Burpees 2 x 8• 8",
+            "Burpees Completos 2 x 8• 8",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
             restAfter: "1min"
@@ -3267,7 +3213,7 @@ const trainingFolders = {
         {
               superset: [
             "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
-            "Burpees 2 x 10• 10",
+            "Burpees Completos 2 x 10• 10",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
             restAfter: "1min"
@@ -3340,7 +3286,7 @@ const trainingFolders = {
           "Rotaciones de Caderas 2 x 10 a cada lado rest=30s",
             {
               superset: [
-            "Burpees 2 x 10",
+            "Burpees Completos 2 x 10",
             "Skipping Rodillas Arriba 2 x 30seg",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12-12",
             ],
@@ -3417,7 +3363,7 @@ const trainingFolders = {
           "Rotaciones de Caderas 2 x 10 a cada lado rest=30s",
             {
               superset: [
-            "Burpees 2 x 10",
+            "Burpees Completos 2 x 10",
             "Skipping Rodillas Arriba 2 x 30seg",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12-12",
             ],
@@ -3567,7 +3513,7 @@ const trainingFolders = {
         {
               superset: [
             "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
-            "Burpees 2 x 10• 10",
+            "Burpees Completos 2 x 10• 10",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
             restAfter: "1min"
@@ -3640,7 +3586,7 @@ const trainingFolders = {
             {
               superset: [
             "Rotaciones con Bolsa 3 x 10• 10 a cada lado",
-            "Burpees 2 x 10• 10",
+            "Burpees Completos 2 x 10• 10",
             ],
             restAfter: "1min"
           },
@@ -3808,10 +3754,10 @@ const trainingFolders = {
           },
             ],
           "Entrenamiento de Fuerza": [
-            "Isquiotibiales Sentado 4 x 16• (12+8)• (10+8)• 10 rest=1-2min",
-            "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
-            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• 8↓ rest=2-4min",
-            "Hip Thrust en Smith 3 x 12• ↑10• ↑8 rest=2-3min",
+            "Isquiotibiales Nórdicos 4 x 16A• (10+8A)• (8+8A)• 8 rest=1-2min",
+            "Aductores con Tobilleras 3 x fallo• fallo• fallo rest=1-2min",
+            "Sentadillas con Barra 5 x 16• ↑12• ↑10• ↑8• 8↓ rest=2-4min",
+            "Hip Thrust con Barra 3 x 12• ↑10• ↑8 rest=2-3min",
             "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
             {
               superset: [
@@ -3890,7 +3836,7 @@ const trainingFolders = {
           "Plancha Frontal 1 x a lo que dés!"
             ],
           "Entrenamiento de Fuerza": [
-            "Isquiotibiales Sentado 3 x 16• 12• 10 rest=1-2min",
+            "Isquiotibiales Nórdicos 3 x 16A• (10+8A)• (8+8A) rest=1-2min",
           {
               superset: [
             "Prensa 5 x 20• ↑12• ↑10(RIR 2)• ↑10• ↑8",
@@ -3917,7 +3863,7 @@ const trainingFolders = {
           {
             superset: [
             "Arranque con Mancuerna + Press de Hombro 4 x 10• 10• ↑8• 8",
-            "Burpees 4 x 12• 10• 8• 8"
+            "Burpees Completos 4 x 12• 10• 8• 8"
           ],
             restAfter: "2-3min"            
           },
@@ -4039,7 +3985,7 @@ const trainingFolders = {
         {
               superset: [
             "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
-            "Burpees 2 x 10• 10",
+            "Burpees Completos 2 x 10• 10",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
             restAfter: "1min"
@@ -4187,7 +4133,7 @@ const trainingFolders = {
         {
               superset: [
             "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
-            "Burpees 2 x 10• 10",
+            "Burpees Completos 2 x 10• 10",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
             restAfter: "1min"
@@ -4336,7 +4282,7 @@ const trainingFolders = {
         {
               superset: [
             "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
-            "Burpees 2 x 10• 10",
+            "Burpees Completos 2 x 10• 10",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
             restAfter: "1min"
@@ -4437,7 +4383,7 @@ const trainingFolders = {
           "Rotaciones con Bolsa (o Disco) 2 x 10• 10 una a cada lado rest=30s",
             {
               superset: [
-            "Burpees 2 x 10• 10",
+            "Burpees Completos 2 x 10• 10",
             "Skipping Rodillas Arriba 2 x 30seg",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
@@ -4514,7 +4460,7 @@ const trainingFolders = {
           "Rotaciones con Bolsa (o Disco) 2 x 10• 10 una a cada lado rest=30s",
             {
               superset: [
-            "Burpees 2 x 10",
+            "Burpees Completos 2 x 10",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
             restAfter: "1min"
@@ -4631,7 +4577,7 @@ const trainingFolders = {
           "Rotaciones con Bolsa (o Disco) 2 x 10• 10 una a cada lado rest=30s",
             {
               superset: [
-            "Burpees 2 x 10• 8",
+            "Burpees Completos 2 x 10• 8",
             "Skipping Rodillas Arriba 2 x 30seg",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
@@ -4708,7 +4654,7 @@ const trainingFolders = {
           "Rotaciones con Bolsa (o Disco) 2 x 10• 10 una a cada lado rest=30s",
             {
               superset: [
-            "Burpees 2 x 10• 8",
+            "Burpees Completos 2 x 10• 8",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
             restAfter: "1min"
