@@ -3675,7 +3675,7 @@ const trainingFolders = {
             "Vuelos Posteriores Sentado en Máquina 4 x 12• ↑12• ↑10• 10 rest=1-2min",
             "Polea al Pecho con Triángulo 4 x 12• ↑10• ↓(12+8)• ↑12 rest=2-3min",
             "Remo con Barra 4 x 12• ↑10• ↑8• 8 rest=2-3min",
-            "Press Militar con Barra de Pie 4 x 12• ↑12• ↑10• 8 rest=2-3min",
+            "Press Militar con Mancuernas Sentado 4 x 12• ↑12• ↑10• 8 rest=2-3min",
             "Press Banca Inclinado con Mancuernas 4 x 12• ↑12• ↑10• 8 rest=2-3min",
             "Press de Pecho en Máquina 4 x 12• ↑10• (10+6)• ↓(8+6) rest=2-3min",
             ],
@@ -3793,111 +3793,112 @@ const trainingFolders = {
     //RUTINA LUCAS Nº 1 - 5 MUSCULACIÓN + 2 HIIT !
     "lucascabrera1": {
       name: "Lucas",
+         // PLAN DE ENTRENAMIENTO SEMANAL !      
       plan: {  
 
         "Día 1 - Piernas": {
           "Acondicionamiento & Calentamiento": [            
             {
               superset: [
-            "Rotaciones con Bolsa 3 x 10• 10 a cada lado",
-            "Burpees 2 x 10• 10",
+            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Sentadillas + Estocadas con Bolsa (o Mancuernas) 3 x 16• 12• 12",
             ],
             restAfter: "1min"
           },
-          "Crunch Declinado 3 x 20• 12• 12 rest=1min"
             ],
           "Entrenamiento de Fuerza": [
+            "Isquiotibiales Sentado 4 x 16• (12+8)• (10+8)• 10 rest=1-2min",
             "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
-            "Sentadillas Sumo con Barra 4 x 16• ↑12• ↑10• ↑8 rest=2-4min",
+            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• 8↓ rest=2-4min",
+            "Hip Thrust en Smith 3 x 12• ↑10• ↑8 rest=2-3min",
+            "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
             {
               superset: [
-            "Estocadas en Prensa 4 x 12• ↑10• 8• 8",
-            "Gemelos en Prensa 4 x 10 a 16 reps al fallo"
+            "Elevación de Piernas Acostado 3 x 1min",
+            "Plancha Frontal 3 x 1min",
             ],
-            restAfter: "2-3min"
+            restAfter: "1min 30seg"
           },
-            "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
-            "Hiperextensiones para Glúteos (con Peso) 3 x 16• 12• 12 rest=1-2min",
-            "Crunch en Máquina 3 x 16• 12• 12 rest=1-2min",
             ],
           },
 
-      "Día 2 - Pecho + Espalda":  {
+      "Día 2 - Superior (Énfasis Pecho)":  {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
-            "Dominadas Agarre Prono 2 x 12• 12",
-            "Flexiones BB Cerradas + Carpa 2 x 20• 20",
+            "Flexiones BB Cerradas 2 x 10• 10",
+            "Bíceps + Press Arnold con Mancuernas 2 x 16• 12",
+            "Vuelos Laterales con Mancuernas 2 x 12• 12 (liviano)"
           ],
-            restAfter: "1-2min"
+            restAfter: "1min 30seg"
           },
           ],
           "Entrenamiento de Fuerza": [
-            "Vuelos Posteriores Sentado en Máquina 4 x 12• ↑12• ↑10• 10 rest=1-2min",
-            "Polea al Pecho con Triángulo 4 x 12• ↑10• ↓(12+8)• ↑12 rest=2-3min",
-            "Remo con Barra 4 x 12• ↑10• ↑8• 8 rest=2-3min",
-            "Press Militar con Barra de Pie 4 x 12• ↑12• ↑10• 8 rest=2-3min",
-            "Press Banca Inclinado con Mancuernas 4 x 12• ↑12• ↑10• 8 rest=2-3min",
-            "Press de Pecho en Máquina 4 x 12• ↑10• (10+6)• ↓(8+6) rest=2-3min",
-            ],
+            "Polea al Pecho Agarre Prono Cerrado 4 x ↑16• 12• 10• ↓10 rest=1-2min",
+            "Aperturas Sentado en Máquina 4 x ↑16• ↓(12+8)• 12• 10 rest=2-3min",
+            "Press Banca Inclinado en Smith 4 x 12• 10• 10• 8 rest=2-3min",
+            "Press de Pecho en Máquina 3 x 12• ↓12• ↓(10+6) rest=2-3min",
+          {
+            superset: [
+            "Vuelos Laterales con Mancuernas 3 x 12• ↓10• 10",
+            "Bíceps Martillo Alternado con Mancuernas 3 x 10• ↑8• 8"
+          ],
+            restAfter: "2-3min"
+          },
+          ],
           "Entrenamiento HIIT": [
-            "Elíptica",
+            "Correr en Cinta"
             ],
           },
 
-        "Día 3 - Brazos + Hombros + Abs":  {
-        "Acondicionamiento & Calentamiento": [
+        "Día 3 - Superior (Énfasis Espalda + Brazos)":  {
+          "Acondicionamiento & Calentamiento": [
           {
             superset: [
-            "Flexiones BB Cerradas 2 x 20• fallo",
-            "Plancha Lateral 2 x 40seg a cada lado",
+            "Vuelos Posteriores con Mancuernas 3 x 16• 12• 12", 
+            "Flexiones BB 2 x 10• 8",
           ],
-            restAfter: "1-2min"
-          },
+            restAfter: "1min"
+          },           
           ],
           "Entrenamiento de Fuerza": [
-          {
-            superset: [
-            "Crunch Declinado 3 x 20• 16• 12",
-            "Plancha Frontal 3 x 1min"
-          ],
-            restAfter: "1min"            
-          },
+            "Polea al Pecho Agarre Prono Cerrado 4 x 14• 12• ↓12• ↓(10+6) rest=2min",
+            "Remo Unilateral Sentado en Máquina 3 x 12• 10• ↓10 rest=2min",
+            "Remo con Barra 3 x 12• ↑10• 10 rest=2min",
+            "Extensión de Tríceps con Polea con Barra 3 x 12• (12+8)• ↓(12+8)  rest=2min",                
             {
-            superset: [
-            "Bíceps con Cable con Barra 4 x 12• ↑10• ↑8• fallo",
-            "Tríceps con Polea Agarre Inverso 4 x 12• ↑12• (10+8)• fallo"
-          ],
-            restAfter: "2min"            
-          },
-          {
-            superset: [
-            "Bíceps Martillo Alternado con Mancuernas 3 x 10• ↑8• 8 (muy pesado!)",
-            "Press Francés Acostado 𝟰𝟱° con Mancuerna 3 x 12• 12• 10",
-          ],
-            restAfter: "2min"   
-          },
-            "Press Arnold con Mancuernas 3 x 8• 8• ↓16 (muy pesado, y la última liviano) rest=2min",
-          {
-            superset: [
-            "Vuelos Posteriores con Mancuernas 4 x 12• ↑12• ↑10• 8",
-            "Vuelos Laterales con Mancuernas 4 x 12• ↑10• 10• 8"
-          ],
-            restAfter: "2-3min"            
+              superset: [
+            "Press Francés Acostado 𝟰𝟱° con Mancuerna 3 x 12• ↓12• 10",
+            "Bíceps Alternado con Mancuernas Sentado 3 x 12• ↑10• 8 rest=1-2min",
+            ],
+            restAfter: "2min"
           },
           ],
           },
 
         "Día 4 - Piernas":  {
           "Acondicionamiento & Calentamiento": [
-          "Escalera Mecánica 5 minutos velocidad aprox 10 - 12",
-          ],
+        {
+              superset: [
+            "Rotaciones con Bolsa 2 x 12• 10 a cada lado",
+            "Burpees 2 x 10• 8",
+            "Sentadillas + Estocadas con Bolsa (o mancuernas) 2 x 12• 12",
+            ],
+            restAfter: "1min"
+          },
+          "Plancha Frontal 1 x a lo que dés!"
+            ],
           "Entrenamiento de Fuerza": [
-            "Cargadas con Barra 3 x 10• 8• 8 rest=2min",
-            "Peso Muerto Convencional 4 x 12• ↑10• ↑8• 8 rest=3-4min",
-            "Hip Thrust con Barra 4 x 10• 10• ↑8• 8 rest=2-3min",
-            "Estocadas con Barra 4 x 12• ↑10• ↑8• 8 rest=2-3min",
-            "Extensión de Cuádriceps Sentado 4 x 14• ↓(10+8)• ↓(10+8)• 12 rest=1-2min",
+            "Isquiotibiales Sentado 3 x 16• 12• 10 rest=1-2min",
+          {
+              superset: [
+            "Prensa 5 x 20• ↑12• ↑10(RIR 2)• ↑10• ↑8",
+            "Gemelos en Prensa 5 x 10 a 14 reps al fallo",
+            ],
+            restAfter: "2-4min"
+          },
+            "Sentadillas Búlgara con Mancuernas 4 x 12• ↑10• ↑8• 8 rest=2-3min",
+            "Extensión de Cuádriceps Sentado 4 x 14• ↓(10+8)• ↓(10+8)• (10+8+6) rest=1-2min",
             ],
           },
 
@@ -3947,7 +3948,8 @@ const trainingFolders = {
           },
       },
     },
-
+  
+ 
 
 
 
@@ -5902,7 +5904,7 @@ const USER_HIIT_DAY_NOTES = {
 
 
     "lucascabrera1": {
-    "Día 2 - Pecho + Espalda": [
+    "Superior (Énfasis Pecho)": [
       { title: "HIIT en Cinta Inclinada (caminadora)",
       body: `<p><strong>13 MINUTOS TOTALES.</strong></p>
             <p>Inclinar la Cinta unos 9 grados.</p>
