@@ -5387,10 +5387,9 @@ const userPasswords = {
   'tundra-vesuvio-limoncello-vesuvio-gondola-dolcevita-urali-gelato-dolcevita-piazza-vesuvio': 'nicolasrivera',
   'yogurt-siberia-espresso-vesuvio-yogurt-borschino': 'lisandroalyosha1',
   'balalaika-vesuvio-limoncello-siberia-urali-balalaika-siberia-firenze': 'mariomiranda1',
-  'espresso-vesuvio-russia-amore-siberia-borscht-vesuvio-firenze': 'santiagopanayotidis1', 
-  'espresso-vesuvio-russia-amore-siberia-borscht-vesuvio-octavo': 'santiagopanayotidis2', 
-  'borscht-vesuvio-russia-vesuvio-borschino-urali-amore-laguna': 'santiagopanayotidis3',
-
+  'espresso-vesuvio-russia-amore-siberia-borscht-vesuvio-russia-vesuvio-firenze': 'santiagopanayotidis1', //santipana1
+  'espresso-vesuvio-russia-amore-siberia-borscht-vesuvio-russia-octavo': 'santiagopanayotidis2', //santipan2
+  'borscht-vesuvio-russia-vesuvio-borschino-urali-amore-siberia-laguna': 'santiagopanayotidis3', //panayoti3
 
 
 
