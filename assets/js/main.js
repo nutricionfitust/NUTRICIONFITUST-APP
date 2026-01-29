@@ -4,7 +4,7 @@
 const exerciseDatabase = {
   piernas_general: [
     { name: "Aductores Sentado", videoId: "https://drive.google.com/file/d/1Xfs-vaGua4Nn0mW--xZh8y5dgd6cD_rb/view?usp=drivesdk", description: "Acá te vas a concentrar en la parte interna del muslo. Abrí bien las piernas y buscá un estiramiento grande antes de cerrar fuerte. Sentí cómo los aductores se cargan con cada repetición: densidad y fuerza en la zona media de las piernas." },
-    {name: "Aductores con Tobilleras", videoId: "", description: "Con las tobilleras podés trabajar los aductores de forma unilateral. Cruzá la pierna por delante de la otra para estirar bien y luego juntá con fuerza, sintiendo el trabajo en la parte interna del muslo." },
+    {name:  "Aductores con Tobilleras", videoId: "", description: "Con las tobilleras podés trabajar los aductores de forma unilateral. Cruzá la pierna por delante de la otra para estirar bien y luego juntá con fuerza, sintiendo el trabajo en la parte interna del muslo." },
     { name: "Buenos Días en Smith", videoId: "https://drive.google.com/file/d/1NrKBja118-ToX05Ocs6VkAn8z8UKG73J/view?usp=drivesdk", description: "Movimiento de bisagra guiado que te da seguridad para cargar pesado. Dejá que los isquios y glúteos se estiren al máximo y después subí explosivo. La máquina te sostiene, así que podés enfocarte 100% en sentir el trabajo en los femorales." },
     { name: "Buenos Días", videoId: "https://drive.google.com/file/d/1VAWnHjTmp-EW7v_37kv8G_v4oDMueuZ2/view?usp=drivesdk", description: "Versión libre, más técnica y exigente. Bajá controlado, aprovechando al máximo el estiramiento de los femorales, y subí fuerte. Te va a dar un grosor increíble en la cadena posterior, desde glúteos hasta espalda baja." },
     { name: "Escalera Mecánica", videoId: "https://drive.google.com/file/d/1-KDVoR0MztijwMCgCJ1qfbcK_NjNvnWj/view?usp=drivesdk", description: "Trabajo continuo que combina cardio con hipertrofia. El estímulo recae en glúteos, cuádriceps y gemelos, manteniendo tensión constante y volumen extra sin impacto. No es solo cardio..." },
@@ -13,7 +13,8 @@ const exerciseDatabase = {
     { name: "Sentadilla Búlgara con Mancuernas", videoId: "https://drive.google.com/file/d/1VkcnF9SA-YNYQazHOPzGiGZGWPawJ6Od/view?usp=drivesdk", description: "Variante accesible que mantiene el mismo estímulo unilateral. Enfocada en cuádriceps y glúteos, permite mayor control del movimiento y es excelente para trabajar al fallo con seguridad." },
     { name: "Sentadilla Búlgara en Smith", videoId: "https://drive.google.com/file/d/1GKxgnnkTyBZoxVCy4ynY1VgpomFN0Xfu/view?usp=drivesdk", description: "Opción guiada que suma estabilidad y control, sin perder el estímulo intenso sobre cuádriceps y glúteos. Permite bajar profundo, cargar más y enfocarse en la contracción sin preocuparse por el equilibrio." },
     { name: "Sentadillas con Barra", videoId: "https://drive.google.com/file/d/1JJjXOHws6I_5XXMLgyTenU_tdDynfhiY/view?usp=drivesdk", description: "Trabaja todo: cuádriceps, glúteos, femorales y core. La clave está en bajar profundo, priorizando el estiramiento muscular y subir explosivo. Es el ejercicio más completo para construir masa y fuerza." },
-    { name: "Tracción con Barra en Rack", videoId: "https://drive.google.com/file/d/1c0rJzJ3VDuIqTh1rJLIEHUkSovgeLBfn/view?usp=drivesdk", description: "Ejercicio de tirón que fortalece la parte alta de la cadena posterior. Estimula principalmente dorsales y trapecios, con soporte de core y erectores. Perfecto para sumar grosor y mejorar la postura general." }
+    { name: "Tracción con Barra en Rack", videoId: "https://drive.google.com/file/d/1c0rJzJ3VDuIqTh1rJLIEHUkSovgeLBfn/view?usp=drivesdk", description: "Ejercicio de tirón que fortalece la parte alta de la cadena posterior. Estimula principalmente dorsales y trapecios, con soporte de core y erectores. Perfecto para sumar grosor y mejorar la postura general." },
+    { name: "Press de Piernas Sentado", videoId: "https://drive.google.com/file/d/1hU-S0gDIgUnychVIupiYKBqv0Uqvyd30/view?usp=drive_link", description: "Variante de prensa en posición sentada. Ideal para mayor comodidad y soporte lumbar. Al igual que la prensa tradicional, podés ajustar la posición de los pies para enfocar el trabajo en diferentes músculos de las piernas." },
   ],
   cuadriceps: [
     { name: "Estocadas Caminando con Mancuernas", videoId: "https://drive.google.com/file/d/1lq4UD_oqMliGlhKZ9t660RVQS4C-pvYI/view?usp=drivesdk", description: "Ejercicio dinámico que trabaja principalmente cuádriceps y glúteos, además de mejorar estabilidad y coordinación. Al avanzar, generá un estiramiento profundo y una contracción intensa en la pierna de apoyo." },
@@ -2297,8 +2298,8 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
           {
               superset: [
-            "Sentadillas en Hack 5 x 20• ↑12• ↑10(RIR 2)• ↑10• ↑8",
-            "Gemelos en Hack 5 x 10 a 16 reps al fallo",
+            "Press de Piernas Sentado 5 x 20• ↑12• ↑10(RIR 2)• ↑10• ↑8",
+            "Gemelos Press de Piernas Sentado 5 x 10 a 16 reps al fallo",
             ],
             restAfter: "2-4min"
           },
