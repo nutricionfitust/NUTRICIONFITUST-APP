@@ -304,7 +304,7 @@ const trainingFolders = {
           ],
             restAfter: "2-3min"            
           },
-          "Vuelo Posterior Unilateral en Máquina Sentado 3 x 12• 10• 8", rest="1-2min",
+          "Vuelo Posterior Unilateral en Máquina Sentado 3 x 12• 10• 8 rest=1-2min",
           {
             superset: [
             "Bíceps Martillo Alternado con Mancuernas 4 x 12• 10• 8• 8",
