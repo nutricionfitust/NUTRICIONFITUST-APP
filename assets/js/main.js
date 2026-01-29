@@ -130,7 +130,7 @@ const exerciseDatabase = {
     { name: "Vuelos Posteriores con Mancuerna con Apoyo", videoId: "https://drive.google.com/open?id=13Xoe4OXLNYMm8ZRF1sVtgKf80of6fTep&usp=drive_copy", description: "Con el torso apoyado, elevá los brazos hacia atrás. Aislás el deltoide posterior y lo trabajás con máxima precisión." },
     { name: "Vuelos Posteriores con Mancuerna Sentado", videoId: "https://drive.google.com/open?id=1KjX4Xa17RVuHZG2pko3c5ODI1Ot75pWk&usp=drive_copy", description: "Inclinate hacia adelante y llevá los brazos abiertos hacia atrás. El movimiento corto pero controlado carga de lleno los posteriores." },
     { name: "Vuelos Posteriores con Mancuerna", videoId: "https://drive.google.com/open?id=1K3oB3zyC1Y2BTgTWwM6DdOajZVWL9e5i&usp=drive_copy", description: "De pie e inclinado, abrí los brazos hacia atrás con control. La clave está en mantener la tensión en deltoides posteriores y no balancear el torso." },
-    { name: "Vuelos Posteriores Sentado en Máquina", videoId: "", description: "Sentado en Máquina de Aperturas Sentado, mirando hacia el banco, vas a realizar vuelos posteriores. El banco bien arriba para generar un recorrido de los brazos en un ángulo menor a 90°, ya que las fibras de los deltoides posteriores caen oblicuas de medial a lateral." },
+    { name: "Vuelo Posterior Unilateral en Máquina Sentado", videoId: "https://drive.google.com/file/d/1ngHdR8TLzdbDC2DcFuQQZ4WD7mgs-gWo/view?usp=drivesdk", description: "Sentado en Máquina de Aperturas Sentado, apoyado de lateral, vas a realizar vuelos posteriores. El banco bien arriba para generar un recorrido de los brazos en un ángulo menor a 90°, ya que las fibras de los deltoides posteriores caen oblicuas de medial a lateral." },
   ],
   biceps: [
     { name: "Bíceps Predicador en Máquina", videoId: "https://drive.google.com/open?id=10A6Ibuc5YcUA6dFeth8LPTvfiKDuFPWE&usp=drive_copy", description: "Con los brazos apoyados en el banco predicador, hacés la flexión sin posibilidad de impulso. Esto te obliga a trabajar solo con el bíceps, estirando bien abajo y cerrando fuerte arriba." },
@@ -299,11 +299,12 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
           {
             superset: [
-            "Vuelos Posteriores con Mancuernas 4 x 12• 10• 8• 8",
-            "Vuelos Laterales con Mancuernas 4 x 12• (12+8)• (10+8)• 8"
+            "Press Militar con Mancuernas Sentado 4 x 12• 10• 8• 8",
+            "Vuelos Laterales con Mancuernas 4 x 12• 10• (10+8)• 8"
           ],
             restAfter: "2-3min"            
           },
+          "Vuelo Posterior Unilateral en Máquina Sentado 3 x 12• 10• 8",
           {
             superset: [
             "Bíceps Martillo Alternado con Mancuernas 4 x 12• 10• 8• 8",
