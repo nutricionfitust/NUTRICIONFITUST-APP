@@ -317,7 +317,7 @@ const trainingFolders = {
           {
             superset: [
             "Bíceps Predicador con Mancuernas 3 x 10• 8• 8",
-            "Press Francés Sentado con Apoyo 𝟰𝟱° 4 x 12• 12• 10",    
+            "Press Francés Sentado con Apoyo 𝟰𝟱° 3 x 12• 12• 10",    
           ],
             restAfter: "2-3min"            
           },
