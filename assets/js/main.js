@@ -2300,7 +2300,7 @@ const trainingFolders = {
           {
               superset: [
             "Press de Piernas Sentado 5 x 20• ↑12• ↑10(RIR 2)• ↑10• ↑8",
-            "Gemelos Press de Piernas Sentado 5 x 10 a 16 reps al fallo",
+            "Gemelos en Press de Piernas Sentado 5 x 10 a 16 reps al fallo",
             ],
             restAfter: "2-4min"
           },
