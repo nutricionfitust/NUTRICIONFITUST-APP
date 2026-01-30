@@ -359,7 +359,7 @@ const trainingFolders = {
           title: "Composición Corporal, Somatotipo y mucho más",
           html: `
           <p>
-          Con una <b>evaluación antropométrica ISAK</b> podés conocer tu <b>composición corporal real:</b> 
+          Con una <b>evaluación antropométrica ISAK</b> podés conocer tu <b>composición corporal real en el momento actual:</b> 
           estimación de <b>% de tejido muscular</b>, <b>% de tejido adiposo</b>, <b>distribución de grasa</b> (dónde se acumula),
           y tu <b>somatotipo</b> (perfil morfológico).
           </p>
@@ -368,8 +368,13 @@ const trainingFolders = {
           relaciona con tu desarrollo muscular. Con estos datos se pueden calcular índices como el <b>IMO</b> (índice músculo óseo), que ayudan a estimar
           tu <b>potencial de ganancia muscular natural</b> según la relación entre tu base estructural (hueso) y tu masa muscular.
           </p>
+          <br><br>
           <p>
-          Si te ubicas en CABA, Argentina, y querés una <b>evaluación completa y un informe claro</b>, enviame un
+          Sirve para <b>entender cómo está distribuido tu tejido corporal</b> y así poder tomar mejores decisiones en tu entrenamiento, 
+          tu alimentación y tu proceso en general.
+          </p>
+          <p>
+          Si te ubicas en <b>CABA, Argentina 🇦🇷</b>, y querés una <b>evaluación completa y un informe claro</b>, enviame un
           <a href="https://wa.link/ys1b21" target="_blank" class="text-green-600 font-semibold">
             👉🏻 mensaje directo
           </a>.
@@ -5678,7 +5683,7 @@ const DEFAULT_INFO_SECTIONS = [
           title: "Composición Corporal, Somatotipo y mucho más",
           html: `
           <p>
-          Con una <b>evaluación antropométrica ISAK</b> podés conocer tu <b>composición corporal real:</b> 
+          Con una <b>evaluación antropométrica ISAK</b> podés conocer tu <b>composición corporal real en el momento actual:</b> 
           estimación de <b>% de tejido muscular</b>, <b>% de tejido adiposo</b>, <b>distribución de grasa</b> (dónde se acumula),
           y tu <b>somatotipo</b> (perfil morfológico).
           </p>
@@ -5687,8 +5692,13 @@ const DEFAULT_INFO_SECTIONS = [
           relaciona con tu desarrollo muscular. Con estos datos se pueden calcular índices como el <b>IMO</b> (índice músculo óseo), que ayudan a estimar
           tu <b>potencial de ganancia muscular natural</b> según la relación entre tu base estructural (hueso) y tu masa muscular.
           </p>
+          <br><br>
           <p>
-          Si te ubicas en CABA, Argentina, y querés una <b>evaluación completa y un informe claro</b>, enviame un
+          Sirve para <b>entender cómo está distribuido tu tejido corporal</b> y así poder tomar mejores decisiones en tu entrenamiento, 
+          tu alimentación y tu proceso en general.
+          </p>
+          <p>
+          Si te ubicas en <b>CABA, Argentina 🇦🇷</b>, y querés una <b>evaluación completa y un informe claro</b>, enviame un
           <a href="https://wa.link/ys1b21" target="_blank" class="text-green-600 font-semibold">
             👉🏻 mensaje directo
           </a>.
