@@ -365,16 +365,16 @@ const trainingFolders = {
           </p>
           <p>
           También se evalúa tu <b>estructura ósea</b> (diámetros y proporciones) para interpretar tu “marco” corporal y cómo se
-          relaciona con tu desarrollo muscular. Con estos datos se pueden calcular índices como el <b>IMO</b>, que ayudan a estimar
+          relaciona con tu desarrollo muscular. Con estos datos se pueden calcular índices como el <b>IMO</b> (índice músculo óseo), que ayudan a estimar
           tu <b>potencial de ganancia muscular natural</b> según la relación entre tu base estructural (hueso) y tu masa muscular.
           </p>
           <p>
-          Si querés una <b>evaluación completa y un informe claro</b>, enviame un
+          Si te ubicas en CABA, Argentina, y querés una <b>evaluación completa y un informe claro</b>, enviame un
           <a href="https://wa.link/ys1b21" target="_blank" class="text-green-600 font-semibold">
             👉🏻 mensaje directo
           </a>.
           </p>
-            `
+            ` 
           },
           ],
     },
@@ -5674,6 +5674,27 @@ const DEFAULT_INFO_SECTIONS = [
         </p>
         `
         },
+          {
+          title: "Composición Corporal, Somatotipo y mucho más",
+          html: `
+          <p>
+          Con una <b>evaluación antropométrica ISAK</b> podés conocer tu <b>composición corporal real:</b> 
+          estimación de <b>% de tejido muscular</b>, <b>% de tejido adiposo</b>, <b>distribución de grasa</b> (dónde se acumula),
+          y tu <b>somatotipo</b> (perfil morfológico).
+          </p>
+          <p>
+          También se evalúa tu <b>estructura ósea</b> (diámetros y proporciones) para interpretar tu “marco” corporal y cómo se
+          relaciona con tu desarrollo muscular. Con estos datos se pueden calcular índices como el <b>IMO</b> (índice músculo óseo), que ayudan a estimar
+          tu <b>potencial de ganancia muscular natural</b> según la relación entre tu base estructural (hueso) y tu masa muscular.
+          </p>
+          <p>
+          Si te ubicas en CABA, Argentina, y querés una <b>evaluación completa y un informe claro</b>, enviame un
+          <a href="https://wa.link/ys1b21" target="_blank" class="text-green-600 font-semibold">
+            👉🏻 mensaje directo
+          </a>.
+          </p>
+            ` 
+          },
 ];
 
 /* ===========================
