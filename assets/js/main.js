@@ -209,7 +209,7 @@ const exerciseDatabase = {
     { name: "Arranque de Potencia con Sentadilla con Barra", videoId: "https://drive.google.com/open?id=1ZJ7T1AXZPkoFY331D35burrNskUKw-62&usp=drive_copy", description: "Variante del arranque donde recibís la barra en sentadilla completa. Exige movilidad, fuerza y técnica, trabajando todo el cuerpo en un solo movimiento." },
     { name: "Arranque Dividido con Barra", videoId: "https://drive.google.com/open?id=1ffXS7Js17As1cbeDhgsSKCAq79nxZ_zv&usp=drive_copy", description: "Recibís la barra en posición de zancada, lo que mejora estabilidad unilateral y control. Excelente para fuerza, potencia y equilibrio." },
     { name: "Arranque Muscular con Barra", videoId: "https://drive.google.com/open?id=1Ja1zsEk3wVMcd9V2W-TR10J6cVaZ5Eqg&usp=drive_copy", description: "Se realiza sin flexionar mucho las piernas, tirando con potencia de brazos y espalda. Desarrolla fuerza de tracción y coordinación." },
-    { name: "Arranque con Mancuerna + Press de Hombro", videoId: "https://drive.google.com/file/d/1opvMpKv4aH8YA29ONWizRMeEmAzCiPL7/view?usp=drivesdk", description: "Mové la mancuerna desde el suelo en arranque, y al llevarla arriba agregá un press. Combina tracción, fuerza de piernas y trabajo de hombros con estabilidad del core." },
+    { name: "Arranque con Mancuerna + Press de Hombro Alternado", videoId: "https://drive.google.com/file/d/1opvMpKv4aH8YA29ONWizRMeEmAzCiPL7/view?usp=drivesdk", description: "Mové la mancuerna desde el suelo en arranque, y al llevarla arriba agregá un press. Combina tracción, fuerza de piernas y trabajo de hombros con estabilidad del core." },
     { name: "Balanceo con Rusa a Dos Manos", videoId: "https://drive.google.com/open?id=1-Nfjap3NVHkZQivb3pi-G4CUnt78pUVK&usp=drive_copy", description: "Clásico swing con kettlebell. Empujá con la cadera, dejá que suba el peso y controlá la bajada. Potencia brutal en glúteos y core." },
     { name: "Balanceo con Rusa a Una Mano", videoId: "https://drive.google.com/open?id=1bC1IfG52yMfbdYdNbEhMjKKXQW2jP_e5&usp=drive_copy", description: "Swing con kettlebell, con una mano. Empujá con la cadera, dejá que suba el peso y controlá la bajada. Aumenta la exigencia del core y mejora la estabilidad unilateral." },
     { name: "Balanceo con Rusas", videoId: "https://drive.google.com/open?id=1PpjubQyTaWYWFt6rW32j7-fb7YLO0pWb&usp=drive_copy", description: "Con dos kettlebells, el esfuerzo se duplica. Requiere fuerza, coordinación y potencia explosiva de cadera." },
@@ -350,6 +350,27 @@ const trainingFolders = {
           <p>Mantené una ingesta adecuada y distribuida en el día.</p>
           <p>Si querés un <b>plan nutricional para maximizar tus ganancias</b>, enviame un 
             <a href="https://wa.me/5491138803401?text=Hola%20Fran%2C%20quiero%20mi%20plan%20nutricional!" target="_blank" class="text-green-600 font-semibold">
+            👉🏻 mensaje directo
+          </a>.
+          </p>
+            `
+          },
+          {
+          title: "Composición Corporal, Somatotipo y mucho más",
+          html: `
+          <p>
+          Con una <b>evaluación antropométrica ISAK</b> podés conocer tu <b>composición corporal real:</b> 
+          estimación de <b>% de tejido muscular</b>, <b>% de tejido adiposo</b>, <b>distribución de grasa</b> (dónde se acumula),
+          y tu <b>somatotipo</b> (perfil morfológico).
+          </p>
+          <p>
+          También se evalúa tu <b>estructura ósea</b> (diámetros y proporciones) para interpretar tu “marco” corporal y cómo se
+          relaciona con tu desarrollo muscular. Con estos datos se pueden calcular índices como el <b>IMO</b>, que ayudan a estimar
+          tu <b>potencial de ganancia muscular natural</b> según la relación entre tu base estructural (hueso) y tu masa muscular.
+          </p>
+          <p>
+          Si querés una <b>evaluación completa y un informe claro</b>, enviame un
+          <a href="https://wa.link/ys1b21" target="_blank" class="text-green-600 font-semibold">
             👉🏻 mensaje directo
           </a>.
           </p>
@@ -1703,7 +1724,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
           {
             superset: [
-            "Arranque con Mancuerna + Press de Hombro 4 x 10• 10• ↑8• 8",
+            "Arranque con Mancuerna + Press de Hombro Alternado 4 x 10• 10• ↑8• 8",
             "Burpees Completos4 x 10• 10• 8• 8"
           ],
             restAfter: "2-3min"            
@@ -3851,7 +3872,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
           {
             superset: [
-            "Arranque con Mancuerna + Press de Hombro 4 x 10• 10• ↑8• 8",
+            "Arranque con Mancuerna + Press de Hombro Alternado 4 x 10• 10• ↑8• 8",
             "Burpees Completos4 x 12• 10• 8• 8"
           ],
             restAfter: "2-3min"            
@@ -4163,7 +4184,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
           {
             superset: [
-            "Arranque con Mancuerna + Press de Hombro 4 x 10• 10• ↑8• 8",
+            "Arranque con Mancuerna + Press de Hombro Alternado 4 x 10• 10• ↑8• 8",
             "Burpees Completos4 x 12• 10• 8• 8"
           ],
             restAfter: "2-3min"            
@@ -4326,7 +4347,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
           {
             superset: [
-            "Arranque con Mancuerna + Press de Hombro 4 x 10• 10• ↑8• 8",
+            "Arranque con Mancuerna + Press de Hombro Alternado 4 x 10• 10• ↑8• 8",
             "Burpees Completos 4 x 12• 10• 8• 8"
           ],
             restAfter: "2-3min"            
@@ -4998,7 +5019,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
           {
             superset: [
-            "Arranque con Mancuerna + Press de Hombro 4 x 10• 10• ↑8• 8",
+            "Arranque con Mancuerna + Press de Hombro Alternado 4 x 10• 10• ↑8• 8",
             "Burpees Completos 4 x 12• 10• 8• 8"
           ],
             restAfter: "2-3min"            
@@ -5193,7 +5214,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
           {
             superset: [
-            "Arranque con Mancuerna + Press de Hombro 4 x 10• 10• ↑8• 8",
+            "Arranque con Mancuerna + Press de Hombro Alternado 4 x 10• 10• ↑8• 8",
             "Burpees Completos4 x 12• 10• 8• 8"
           ],
             restAfter: "2-3min"            
@@ -5387,7 +5408,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
           {
             superset: [
-            "Arranque con Mancuerna + Press de Hombro 4 x 10• 10• ↑8• 8",
+            "Arranque con Mancuerna + Press de Hombro Alternado 4 x 10• 10• ↑8• 8",
             "Burpees Completos4 x 10• 10• 8• 8"
           ],
             restAfter: "2-3min"            
