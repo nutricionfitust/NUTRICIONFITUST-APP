@@ -6844,6 +6844,39 @@ const USER_HIIT_DAY_NOTES = {
 
 
 
+  "ivantrujillo1": {
+    "Día 2 - Pecho + Tríceps + Hombros": [
+      { title: "HIIT en Cinta (caminadora)",
+      body: `<p><strong>14 MINUTOS TOTALES.</strong></p>
+            <p><b>2 minutos:</b> trote suave para entrar en calor.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>40 segundos a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
+            <li>1 minuto de trote suave (ej: ~8 km/h).</li>
+            </ul>
+            <p><b>Repetir 6 veces seguidas:</b> o sea <b>(40seg + 1min) x 6 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 1 minuto caminando.</p>
+            <p>A mimir. 😴</p>`
+    },
+    ],
+    "Día 5 - Brazos + Hombros": [
+      { title: "HIIT en cinta (caminadora)",
+      body: `<p><strong>11 MINUTOS 30 SEG TOTALES.</strong></p>
+            <p><b>2 minutos:</b> trote suave para entrar en calor.</p>
+            <p>Inclinar la Cinta unos 6 grados.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>30 segundos a ~ 5/8 de tu velocidad máxima (ej: ~14 km/h).</li>
+            <li>1 minuto caminando (ej: ~5 km/h). Inclinando más la máquina.</li>
+            </ul>
+            <p><b>Repetir 5 veces seguidas:</b> o sea <b>(30seg + 1min) x 5 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 1 minuto caminando.</p>
+            <p>A mimir. 😴</p>`
+    },
+    ],
+  },  
+
+
 
     "lisandroalyosha1": {
     "Día 2 - Pecho + Tríceps + Hombros": [
