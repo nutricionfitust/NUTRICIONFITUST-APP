@@ -507,7 +507,7 @@ const trainingFolders = {
             ],
             restAfter: "1min"
           },
-          "Burpees Completos1 x 10",
+          "Burpees Completos 1 x 10",
           "Plancha Frontal 1 x a lo que dés!"
             ],
           "Entrenamiento de Fuerza": [
@@ -604,7 +604,7 @@ const trainingFolders = {
             ],
             restAfter: "1min"
           },
-          "Burpees Completos1 x 10",
+          "Burpees Completos 1 x 10",
           "Plancha Frontal 1 x a lo que dés!"
             ],
           "Entrenamiento de Fuerza": [
@@ -872,7 +872,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
             {
             superset: [
-            "Burpees Completos4 x 8-8-8-8",
+            "Burpees Completos 4 x 8-8-8-8",
             "Remo Sentado en Máquina (Dorsal Alto) 4 x 8-8-8-8",
           ],
             restAfter: "1min"
@@ -929,7 +929,7 @@ const trainingFolders = {
           },            
             {
             superset: [
-            "Burpees Completos4 x 10-10-8-8",
+            "Burpees Completos 4 x 10-10-8-8",
             "Plancha Lateral 4 x 30seg (cada lado)",
           ],
             restAfter: "1min"
@@ -1730,7 +1730,7 @@ const trainingFolders = {
           {
             superset: [
             "Arranque con Mancuerna + Press de Hombro Alternado 4 x 10• 10• ↑8• 8",
-            "Burpees Completos4 x 10• 10• 8• 8"
+            "Burpees Completos 4 x 10• 10• 8• 8"
           ],
             restAfter: "2-3min"            
           },
@@ -1771,6 +1771,8 @@ const trainingFolders = {
   "4 MUSCULACIÓN + 2 HIIT": {
   routines: {
 //RUTINA Nº 1 - 4 MUSCULACIÓN + 2 HIIT !
+
+
 
 
 
@@ -2407,6 +2409,185 @@ const trainingFolders = {
 },
   "5 MUSCULACIÓN + 2 HIIT": {
   routines: {
+//RUTINA SANTIAGO CABRERA Nº 1 - 5 MUSCULACIÓN + 2 HIIT ! (4 DÍAS + 1 DÍA REPUESTO)
+    "santiagocabrera1": {
+      name: "Santiago",
+         // PLAN DE ENTRENAMIENTO SEMANAL !      
+      plan: {  
+
+        "Día 1 - Piernas": {
+          "Acondicionamiento & Calentamiento": [            
+            {
+              superset: [
+            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Sentadillas + Estocadas con Bolsa (o Mancuernas) 3 x 16• 12• 12",
+            ],
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento de Fuerza": [
+            "Isquiotibiales Acostado 4 x 16• (12+8)• (10+8)• 10 rest=1-2min",
+            "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
+            "Sentadillas con Barra 5 x 16• ↑12• ↑10• ↑8• 8↓ rest=2-4min",
+            "Hip Thrust con Barra 3 x 12• ↑10• ↑8 rest=2-3min",
+            "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
+            {
+              superset: [
+            "Elevación de Piernas Inclinado 2 x 12• 10• 10",
+            "Plancha Frontal 2 x 1min",
+            ],
+            restAfter: "1min 30seg"
+          },
+            ],
+          },
+
+      "Día 2 - Superior (Énfasis Pecho)":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Flexiones BB Cerradas 2 x 20• 16",
+            "Bíceps + Press Arnold con Mancuernas 2 x 16• 12",
+            "Vuelos Laterales con Mancuernas 2 x 12• 12 (liviano)"
+          ],
+            restAfter: "1min 30seg"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+            "Polea al Pecho Agarre Prono Cerrado 4 x ↑16• ↑12• 10• ↓10 rest=1-2min",
+            "Aperturas Sentado en Máquina 4 x ↑16• ↓(12+8)• 12• 10 rest=2-3min",
+            "Press Banca Inclinado en Smith 4 x 12• 10• 10• 8 rest=2-3min",
+            "Press de Pecho en Máquina 3 x 12• ↓12• ↓(10+6) rest=2-3min",
+          {
+            superset: [
+            "Vuelos Laterales con Mancuernas 3 x 12• ↓10• 10",
+            "Bíceps Martillo Alternado con Mancuernas 3 x 10• ↑8• 8"
+          ],
+            restAfter: "2-3min"
+          },
+          ],
+          "Entrenamiento HIIT": [
+            "HIIT en Bicicleta"
+            ],
+          },
+
+        "Día 3 - Superior (Énfasis Espalda + Brazos)":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Vuelos Posteriores con Mancuernas 3 x 16• 12• 12", 
+            "Flexiones BB Cerradas + Carpa 2 x 20• 16",
+          ],
+            restAfter: "1min"
+          },           
+          ],
+          "Entrenamiento de Fuerza": [
+            "Polea al Pecho con Triangulo 4 x 14• 12• ↓12• ↓(10+6) rest=2min",
+            "Remo Unilateral con Mancuerna 3 x 12• 10• ↓10 rest=2min",
+            "Remo con Barra 3 x 12• ↑10• 10 rest=2min",
+            "Extensión de Tríceps con Polea con Barra 3 x 12• (12+8)• ↓(12+8)  rest=2min",                
+            {
+              superset: [
+            "Press Francés Acostado 𝟰𝟱° con Mancuerna 3 x 12• ↓12• 10",
+            "Bíceps Alternado con Mancuernas Sentado 3 x 12• ↑10• 8 rest=1-2min",
+            ],
+            restAfter: "2min"
+          },
+          ],
+          },
+
+        "Día 4 - Piernas":  {
+          "Acondicionamiento & Calentamiento": [
+        {
+              superset: [
+            "Rotaciones con Bolsa 2 x 12• 10 a cada lado",
+            "Burpees Completos 2 x 10• 8",
+            "Sentadillas + Estocadas con Bolsa (o mancuernas) 2 x 12• 12",
+            ],
+            restAfter: "1min"
+          },
+          "Plancha Frontal 1 x a lo que dés!"
+            ],
+          "Entrenamiento de Fuerza": [
+            "Isquiotibiales Acostado 3 x 16• 12• 10 rest=1-2min",
+          {
+              superset: [
+            "Prensa 5 x 20• ↑12• ↑10(RIR 2)• ↑10• ↑8",
+            "Gemelos en Prensa 5 x 10 a 14 reps al fallo",
+            ],
+            restAfter: "2-4min"
+          },
+            "Sentadillas Búlgara con Mancuernas 4 x 12• ↑10• ↑8• 8 rest=2-3min",
+            "Extensión de Cuádriceps Sentado 3 x (12+8)• (12+6)• ↓(10+8)• rest=1-2min",
+            ],
+          "Entrenamiento HIIT": [
+            "HIIT en Máquina de Remo"
+            ],
+          },
+
+        "Día 5 - Full Body":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Flexiones BB Cerradas + Carpa 2 x 20• 16",
+            "Plancha Frontal 2 x 1min• 1min",
+          ],
+            restAfter: "1-2min"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+          {
+            superset: [
+            "Arranque con Mancuerna + Press de Hombro Alternado 4 x 10• 10• ↑8• 8",
+            "Burpees Completos 4 x 12• 10• 8• 8"
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Press Banca con Agarre Cerrado 4 x 12• ↑10• ↑8• 8",
+            "Vuelos Posteriores con Mancuerna Sentado 4 x 12• 12• ↑10• 10"
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Press Inclinado con Mancuernas 3 x 12• ↑10• 10",
+            "Biceps Martillo Alternado con Mancuernas 3 x 10• 10• 8"
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Remo Unilateral con Mancuerna 4 x 12• ↑10• 10• 8",
+            "Fondos para Triceps  4 x fallo• fallo• fallo• fallo"
+          ],
+            restAfter: "2-3min"            
+          },
+          ],
+          },
+      },
+    },
+
+
+
+//RUTINA SANTIAGO CABRERA Nº 2 - 5 MUSCULACIÓN + 2 HIIT ! (4 DÍAS + 1 DÍA REPUESTO)
+    "santiagocabrera2": {
+      name: "Santiago",
+         // PLAN DE ENTRENAMIENTO SEMANAL !      
+      plan: {  
+      },
+    },
+
+
+
+
+
+
+
+
+
+
+
 //RUTINA DAMIÁN Nº 2 - 5 MUSCULACIÓN + 2 HIIT !
     "damianportillo2": {
       name: "Damián",
@@ -3878,7 +4059,7 @@ const trainingFolders = {
           {
             superset: [
             "Arranque con Mancuerna + Press de Hombro Alternado 4 x 10• 10• ↑8• 8",
-            "Burpees Completos4 x 12• 10• 8• 8"
+            "Burpees Completos 4 x 12• 10• 8• 8"
           ],
             restAfter: "2-3min"            
           },
@@ -4190,7 +4371,7 @@ const trainingFolders = {
           {
             superset: [
             "Arranque con Mancuerna + Press de Hombro Alternado 4 x 10• 10• ↑8• 8",
-            "Burpees Completos4 x 12• 10• 8• 8"
+            "Burpees Completos 4 x 12• 10• 8• 8"
           ],
             restAfter: "2-3min"            
           },
@@ -5220,7 +5401,7 @@ const trainingFolders = {
           {
             superset: [
             "Arranque con Mancuerna + Press de Hombro Alternado 4 x 10• 10• ↑8• 8",
-            "Burpees Completos4 x 12• 10• 8• 8"
+            "Burpees Completos 4 x 12• 10• 8• 8"
           ],
             restAfter: "2-3min"            
           },
@@ -5414,7 +5595,7 @@ const trainingFolders = {
           {
             superset: [
             "Arranque con Mancuerna + Press de Hombro Alternado 4 x 10• 10• ↑8• 8",
-            "Burpees Completos4 x 10• 10• 8• 8"
+            "Burpees Completos 4 x 10• 10• 8• 8"
           ],
             restAfter: "2-3min"            
           },
@@ -5514,6 +5695,8 @@ const userRoutineMapping = {
   santiagopanayotidis2: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "santiagopanayotidis2" },
   santiagopanayotidis3: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "santiagopanayotidis3" },
   lucascabrera1: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "lucascabrera1" },
+  santiagocabrera1: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "santiagocabrera1" },
+  santiagocabrera2: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "santiagocabrera2" },
   diegosantandrian1: { folder: "6 MUSCULACIÓN + 2 HIIT + (1 LISS)", routine: "diegosantandrian1" },
   santiagopanayotidis1: { folder: "6 MUSCULACIÓN + 2 HIIT + (1 LISS)", routine: "santiagopanayotidis1" },
   mariomiranda1: { folder: "6 MUSCULACIÓN + 2 HIIT + (1 LISS)", routine: "mariomiranda1" },
@@ -5569,6 +5752,27 @@ const userPasswords = {
   'espresso-vesuvio-russia-amore-siberia-borscht-vesuvio-russia-vesuvio-firenze': 'santiagopanayotidis1', //santipana1
   'espresso-vesuvio-russia-amore-siberia-borscht-vesuvio-russia-octavo': 'santiagopanayotidis2', //santipan2
   'borscht-vesuvio-russia-vesuvio-borschino-urali-amore-siberia-laguna': 'santiagopanayotidis3', //panayoti3
+  'espresso-vesuvio-russia-amore-siberia-tundra-vesuvio-napolitana-limoncello-dolcevita-firenze': 'santiagocabrera1', //santicabre1
+  'espresso-vesuvio-russia-amore-siberia-vesuvio-kremlin-tundra-vesuvio-octavo': 'santiagocabrera2', //santiagoca2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -6214,6 +6418,38 @@ const USER_HIIT_DAY_NOTES = {
     ],
   },  
 
+
+
+
+  "santiagocabrera1": {
+    "Día 2 - Superior (Énfasis Pecho)": [
+      { title: "HIIT en Bicicleta",
+      body: `<p><strong>17 a 20 MINUTOS TOTALES.</strong></p>
+            <p><b>3-5 minuto:</b> calentamiento.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>30-40 segundos a máxima intensidad (alta resistencia/velocidad).</li>
+            <li>50-60 segundos de pedaleo suave (recuperación actica).</li>
+            </ul>
+            <p><b>Repetir 8-10 veces seguidas:</b> o sea <b>(30-40seg + 50-60seg) x 8-10 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 2 minutos de pedaleo suave para enfriar.</p>
+            <p>A mimir. 😴</p>`
+  },
+    ],
+    "Día 4 - Piernas": [
+      { title: "HIIT en Màquina de Remo",
+      body: `<p><strong>11 MINUTOS 30 SEG TOTALES.</strong></p>
+            <p><b>2 minutos:</b> ritmo cómodo para calentar.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>Rema durante 1 minuto a la intensidad más alta que puedas.</li>
+            <li>Descansa durante 1 minuto.</li>
+            </ul>
+            <p><b>Repetir el entrenamiento tantas veces como te sea posible!:</b> has un mínimo de 3 ciclos de <b>(1min full + 1min de descanso).</b></p>
+            <p>A mimir. 😴</p>`
+    },
+    ],
+  },
 
 
 
