@@ -6867,7 +6867,7 @@ const USER_HIIT_DAY_NOTES = {
             <p>Luego, <b>intervalos (HIIT):</b></p> 
             <ul class="list-disc pl-6">
             <li>30 segundos a ~ 5/8 de tu velocidad máxima (ej: ~14 km/h).</li>
-            <li>1 minuto caminando (ej: ~5 km/h). Inclinando más la máquina.</li>
+            <li>1 minuto caminando (ej: ~5 km/h).</li>
             </ul>
             <p><b>Repetir 5 veces seguidas:</b> o sea <b>(30seg + 1min) x 5 sin descanso.</b></p>
             <p><b>Recuperación:</b> 1 minuto caminando.</p>
