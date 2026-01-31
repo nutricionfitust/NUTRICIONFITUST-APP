@@ -5797,8 +5797,206 @@ const trainingFolders = {
 },
   "7 MUSCULACIÓN + 2 HIIT": {
   routines: {
-//RUTINA Nº 1 - 5 MUSCULACIÓN + 2 HIIT !
+//RUTINA IVAN TRUJILLO Nº 1 - 7 MUSCULACIÓN + 2 HIIT !
+    "ivantrujillo1": {
+      name: "Iván",
+      plan: {  
 
+        "Día 1 - Piernas": {
+          "Acondicionamiento & Calentamiento": [
+          "Rotaciones de Caderas 2 x 10 a cada lado rest=30s",
+            {
+              superset: [
+            "Burpees Completos 2 x 10",
+            "Skipping Rodillas Arriba 2 x 30seg",
+            "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12-12",
+            ],
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento de Fuerza": [
+            "Isquiotibiales Sentado 4 x 20-(12+10)-(12+8)-10 rest=1-2min",
+            "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
+          {
+            superset: [
+            "Prensa 4 x 12-10-10-8",
+            "Gemelos en Prensa 4 x 8 a 16 reps al fallo"
+          ],
+            restAfter: "2-4min"
+          },
+            "Estocadas con barra 3 x 10-10-8 rest=2min",
+            "Extensión de Cuádriceps Sentado 3 x (12+8)-(10+6)-(10+6) rest=1-2min",
+            "Crunch en Máquina 3 x 16-12-12 rest=1-2min"
+            ],
+          },
+
+        "Día 2 - Pecho + Tríceps + Hombros":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Flexiones BB Cerradas 2 x 20-20",
+            "Bíceps + Press Arnold con Mancuernas 2 x 12-12",
+          ],
+            restAfter: "1-2min"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+            "Polea al Pecho Prono Cerrado 3 x 16-12-10 rest=1-2min",
+            "Press Banca 5 x 20-12-10-8-8 rest=3min",
+            "Press Banca con Agarre Cerrado 3 x 12-10-10 rest=2-3min",
+            "Aperturas con Mancuernas en Banca 4 x 12-12-10-8 rest=2-3min",
+          {
+            superset: [
+            "Press Militar con Mancuernas Sentado 3 x 10-10-8",
+            "Vuelos Laterales con Mancuernas 3 x 12-0-10"
+          ],
+            restAfter: "2-3min"
+          },
+            "Extensión de Tríceps con Barra 3 x (16+12)-(12+8)-10 rest=1-2min"
+            ],
+          "Entrenamiento HIIT": [
+            "Correr en Cinta"
+            ],
+          },
+
+        "Día 3 - Espalda + Bíceps":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Dominadas Agarre Prono 3 x 8-8-8",
+            "Bíceps + Press Arnold con Mancuernas 3 x 12-12-12"
+          ],
+            restAfter: "1-2min"
+          },           
+          ],
+          "Entrenamiento de Fuerza": [
+            "Espalda con Polea 4 x 16-12-12-10 rest=2min",
+            "Polea al Pecho con Triangulo 4 x 12-10-10-8 rest=2min",
+            "Remo con Mancuernas Unilateral 3 x 12-10-10 rest=2min",
+            "Bíceps Martillo Alternado con Mancuernas 4 x 12-10-8-8 rest=2-3min",
+            "Bíceps con Barra W 3 x 10-10-8 rest=2min",
+            "Crunch con Polea 3 x 16-12-12 rest=1-2min"
+          ],
+          },
+
+        "Día 4 - Piernas":  {
+          "Acondicionamiento & Calentamiento": [
+          "Rotaciones de Caderas 2 x 10 a cada lado rest=30s",
+            {
+              superset: [
+            "Burpees Completos 2 x 10",
+            "Skipping Rodillas Arriba 2 x 30seg",
+            "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12-12",
+            ],
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento de Fuerza": [
+          {
+            superset: [
+            "Escaladas 2 x 1min",
+            "Oblicuos con Peso 2 x 30seg"
+          ],
+            restAfter: "1-2min"
+          },
+            "Isquiotibiales Sentado 4 x 20-12-12-10 rest=1-2min",
+            "Sentadillas en Smith 4 x 12-10-10-8 rest=2-4min",
+            "Hip Thrust en Smith 4 x 12-10-10-8 rest=2-4min",
+            "Peso muerto Unilateral con Mancuernas 4 x 12-12-10-10 rest=2min",
+            "Sentadilla Búlgara con Mancuernas 3 x (8+6)-(8+6)-(6+6) rest=2"
+            ],
+          },
+
+        "Día 5 - Brazos + Hombros":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Flexiones BB Cerradas 2 x 20-20",
+            "Bíceps + Press Arnold con Mancuernas 2 x 14-14",
+          ],
+            restAfter: "1-2min"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+          {
+            superset: [
+            "Bíceps Martillo Alternado con Mancuernas 4 x 12-10-8-8",
+            "Press Francés Acostado 𝟰𝟱° con Mancuerna 4 x 12-12-10-10"
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Bíceps Predicador con Mancuernas 4 x 10-10-8-8",
+            "Extensión de Tríceps con Barra 4 x 12-12-10-10"
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Vuelos Posteriores con Mancuernas 4 x 12-10-8-8",
+            "Vuelos Laterales con Mancuernas 4 x 12-(12+8)-(10+8)-8"
+          ],
+            restAfter: "2-3min"            
+          },
+          ],
+          "Entrenamiento HIIT": [
+            "Correr en Cinta Inclinada",
+          ],
+          },
+          
+
+        "Día 6 - ??????????":  {
+          "Acondicionamiento & Calentamiento": [
+          "Rotaciones de Caderas 2 x 10 a cada lado rest=30s",
+            {
+              superset: [
+            "Burpees Completos 2 x 10",
+            "Skipping Rodillas Arriba 2 x 30seg",
+            "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12-12",
+            ],
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento de Fuerza": [
+          {
+            superset: [
+            "Escaladas 2 x 1min",
+            "Oblicuos con Peso 2 x 30seg"
+          ],
+            restAfter: "1-2min"
+          },
+            "Sentadilla Búlgara con Mancuernas 3 x (8+6)-(8+6)-(6+6) rest=2"
+            ],
+          },
+
+        "Día 7 - ????????":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Flexiones BB Cerradas 2 x 20-20",
+            "Bíceps + Press Arnold con Mancuernas 2 x 14-14",
+          ],
+            restAfter: "1-2min"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+          {
+            superset: [
+            "Escaladas 2 x 1min",
+            "Oblicuos con Peso 2 x 30seg"
+          ],
+            restAfter: "1-2min"
+          },
+          "Press Francés Acostado 𝟰𝟱° con Mancuerna 4 x 12-12-10-10",
+          ],
+          "Entrenamiento HIIT": [
+            "Correr en Cinta Inclinada",
+          ],
+          },
+          
+      },
+    },     
 
 
 
@@ -5864,6 +6062,9 @@ const userRoutineMapping = {
   mariomiranda1: { folder: "6 MUSCULACIÓN + 2 HIIT + (1 LISS)", routine: "mariomiranda1" },
   alansanchez: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "alansanchez" },
   nicolasrivera: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "nicolasrivera" },
+  ivantrujillo1: { folder: "7 MUSCULACIÓN + 2 HIIT", routine: "ivantrujillo1" },
+  ivantrujillo2: { folder: "7 MUSCULACIÓN + 2 HIIT", routine: "ivantrujillo2" },
+  ivantrujillo3: { folder: "7 MUSCULACIÓN + 2 HIIT", routine: "ivantrujillo3" },
 };
 
 /* ===========================
@@ -5916,6 +6117,9 @@ const userPasswords = {
   'borscht-vesuvio-russia-vesuvio-borschino-urali-amore-siberia-laguna': 'santiagopanayotidis3', //panayoti3
   'espresso-vesuvio-russia-amore-siberia-tundra-vesuvio-napolitana-limoncello-dolcevita-firenze': 'santiagocabrera1', //santicabre1
   'espresso-vesuvio-russia-amore-siberia-vesuvio-kremlin-urali-tundra-vesuvio-octavo': 'santiagocabrera2', //santiagoca2
+  'siberia-gelato-vesuvio-russia-amore-napoli': 'ivantrujillo1', //ivant7
+  'siberia-gelato-vesuvio-russia-amore-limoncello-octavo': 'ivantrujillo2', //ivantr2
+  'siberia-gelato-vesuvio-russia-amore-limoncello-laguna': 'ivantrujillo3', //ivantr3
 
 
 
