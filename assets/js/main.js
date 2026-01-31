@@ -2447,7 +2447,7 @@ const trainingFolders = {
             superset: [
             "Flexiones BB Cerradas 2 x 20• 16",
             "Bíceps + Press Arnold con Mancuernas 2 x 16• 12",
-            "Vuelos Laterales con Mancuernas 2 x 12• 12 (liviano)"
+            "Vuelos Laterales con Mancuernas 2 x 10• 10 (liviano)"
           ],
             restAfter: "1min 30seg"
           },
@@ -2570,7 +2570,7 @@ const trainingFolders = {
 
 
 
-//RUTINA SANTIAGO CABRERA Nº 2 - 5 MUSCULACIÓN + 2 HIIT ! (4 DÍAS + 1 DÍA REPUESTO)
+//RUTINA SANTIAGO CABRERA Nº 2 - 5 MUSCULACIÓN + 2 HIIT ! (4 DÍAS + 1 DÍA REPUESTO) DIA 1 Y 2 OK; FALTA ACOMODAR DIA 3,4 Y 5
     "santiagocabrera2": {
       name: "Santiago",
          // PLAN DE ENTRENAMIENTO SEMANAL !      
@@ -2609,17 +2609,16 @@ const trainingFolders = {
           {
             superset: [
             "Flexiones BB Cerradas 2 x 20• 20",
-            "Bíceps + Press Arnold con Mancuernas 2 x 12• 12",
-            "Vuelos Laterales con Mancuernas 2 x 10• 10 (liviano)"
+            "Bíceps + Press Arnold con Mancuernas 2 x 16• 12",
           ],
             restAfter: "1-2min"
           },
           ],
           "Entrenamiento de Fuerza": [
             "Vuelos Posteriores con Mancuernas 3 x ↑16• ↓12• 10 rest=1-2min",
-            "Aperturas Sentado en Máquina 3 x ↑16• ↓(12+8)• ↑12 rest=3min",
-            "Press Banca Inclinado 5 x 20(50% RM)• ↑10• ↓12• 10• ↓8 rest=2-3min",
-            "Press Martillo Acostado con Mancuernas 3 x 12• ↓12• ↓(10+6) rest=2-3min",
+            "Aperturas Acostado con Mancuernas 3 x ↑16• (12+8)• ↑12 rest=2min",
+            "Press Banca 5 x 20(50% RM)• ↑10• ↓12• 10• ↓8 rest=2-4min",
+            "Press Inclinado con Mancuernas 3 x 12• ↓12• ↓(10+8) rest=2-3min",
           {
             superset: [
             "Vuelos Laterales con Mancuernas 3 x 12• ↓10• 10",
@@ -2638,8 +2637,8 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
-            "Dominadas Agarre Prono 2 x 12• 12",
-            "Flexiones BB 2 x 20• 20",
+            "Dominadas Agarre Prono Cerrado 2 x 12• 12",
+            "Flexiones BB Cerradas + Carpa 2 x 20• 20",
           ],
             restAfter: "1min"
           },           
@@ -2650,7 +2649,7 @@ const trainingFolders = {
           {
             superset: [
             "Vuelos Posteriores con Mancuernas 3 x 12• ↓10• 10",
-            "Press de Tríceps en Máquina 3 x 12• ↓12• ↓(10+6)",          
+            "Flexiones Diamantes 3 x 12• ↓12• ↓(10+6)",          
           ],
             restAfter: "2min"
           },             
@@ -6590,6 +6589,41 @@ const USER_HIIT_DAY_NOTES = {
     },
     ],
   },
+
+
+
+    "santiagocabrera2": {
+    "Día 2 - Pecho + Tríceps + Hombros": [
+      { title: "HIIT en Cinta (caminadora)",
+      body: `<p><strong>14 MINUTOS TOTALES.</strong></p>
+            <p><b>2 minutos:</b> trote suave para entrar en calor.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>40 segundos a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
+            <li>1 minuto de trote suave (ej: ~8 km/h).</li>
+            </ul>
+            <p><b>Repetir 6 veces seguidas:</b> o sea <b>(40seg + 1min) x 6 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 1 minuto caminando.</p>
+            <p>A mimir. 😴</p>`
+    },
+    ],
+    "Día 5 - Brazos + Hombros": [
+      { title: "HIIT en cinta (caminadora)",
+      body: `<p><strong>11 MINUTOS 30 SEG TOTALES.</strong></p>
+            <p><b>2 minutos:</b> trote suave para entrar en calor.</p>
+            <p>Inclinar la Cinta unos 6 grados.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>30 segundos a ~ 5/8 de tu velocidad máxima (ej: ~14 km/h).</li>
+            <li>1 minuto caminando (ej: ~5 km/h). Inclinando más la máquina.</li>
+            </ul>
+            <p><b>Repetir 5 veces seguidas:</b> o sea <b>(30seg + 1min) x 5 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 1 minuto caminando.</p>
+            <p>A mimir. 😴</p>`
+    },
+    ],
+  },  
+
 
 
 
