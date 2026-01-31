@@ -5789,6 +5789,29 @@ const trainingFolders = {
 
 
 
+
+
+
+    
+  },
+},
+  "7 MUSCULACIÓN + 2 HIIT": {
+  routines: {
+//RUTINA Nº 1 - 5 MUSCULACIÓN + 2 HIIT !
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
   },
 },
