@@ -5906,7 +5906,7 @@ const trainingFolders = {
             ],
           },
 
-        "Día 6 - Brazos + Hombros":  {
+        "Día 5 - Brazos + Hombros":  {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
