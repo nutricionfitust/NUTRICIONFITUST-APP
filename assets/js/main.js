@@ -6804,7 +6804,7 @@ const USER_HIIT_DAY_NOTES = {
     ],
     "Día 4 - Piernas": [
       { title: "HIIT en Máquina de Remo",
-      body: `<p><strong>11 MINUTOS 30 SEG TOTALES.</strong></p>
+      body: `<p><strong>10 a 15 MINUTOS TOTALES.</strong></p>
             <p><b>2 minutos:</b> ritmo cómodo para calentar.</p>
             <p>Luego, <b>intervalos (HIIT):</b></p> 
             <ul class="list-disc pl-6">
