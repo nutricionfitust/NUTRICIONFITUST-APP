@@ -502,7 +502,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
         {
             superset: [
-            "Rotaciones con Bolsa 2 x 12• 10 a cada lado",
+            "Rotaciones con Bolsa (o disco) 2 x 12• 10 a cada lado",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
             restAfter: "1min"
@@ -524,7 +524,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
             {
             superset: [
-            "Rotaciones con Bolsa 2 x 12• 10 a cada lado",
+            "Rotaciones con Bolsa (o disco) 2 x 12• 10 a cada lado",
             "Bíceps más Press Arnold con Mancuernas 2 x 16• 12",
           ],
             restAfter: "1min"
@@ -599,7 +599,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
         {
             superset: [
-            "Rotaciones con Bolsa 2 x 12• 10 a cada lado",
+            "Rotaciones con Bolsa (o disco) 2 x 12• 10 a cada lado",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
             restAfter: "1min"
@@ -621,7 +621,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
             {
             superset: [
-            "Rotaciones con Bolsa 2 x 12• 10 a cada lado",
+            "Rotaciones con Bolsa (o disco) 2 x 12• 10 a cada lado",
             "Bíceps más Press Arnold con Mancuernas 2 x 16• 12",
           ],
             restAfter: "1min"
@@ -715,7 +715,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
             {
             superset: [
-            "Rotaciones con Bolsa 2 x 20-20",
+            "Rotaciones con Bolsa (o disco) 2 x 20-20",
             "Bíceps más Press Arnold con Mancuernas 2 x 16-12",
           ],
             restAfter: "1min"
@@ -796,7 +796,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
             {
             superset: [
-            "Rotaciones con Bolsa 2 x 20-20",
+            "Rotaciones con Bolsa (o disco) 2 x 20-20",
             "Bíceps más Press Arnold con Mancuernas 2 x 16-12",
           ],
             restAfter: "1min"
@@ -1071,7 +1071,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [            
             {
               superset: [
-            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 3 x 16• 12• 12",
             ],
             restAfter: "1min"
@@ -1145,7 +1145,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
         {
               superset: [
-            "Rotaciones con Bolsa 2 x 12• 10 a cada lado",
+            "Rotaciones con Bolsa (o disco) 2 x 12• 10 a cada lado",
             "Burpees Completos 2 x 10• 10",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
@@ -1180,7 +1180,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [            
             {
               superset: [
-            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
             "Sentadillas + Estocadas con Bolsa (o Mancuernas) 3 x 16• 12• 12",
             ],
             restAfter: "1min"
@@ -1260,7 +1260,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
         {
               superset: [
-            "Rotaciones con Bolsa 2 x 12• 10 a cada lado",
+            "Rotaciones con Bolsa (o disco) 2 x 12• 10 a cada lado",
             "Burpees Completos 2 x 10• 10",
             "Sentadillas + Estocadas con Bolsa (o mancuernas) 2 x 12• 12",
             ],
@@ -1296,7 +1296,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [            
             {
               superset: [
-            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
             "Sentadillas + Estocadas con Bolsa (o Mancuernas) 3 x 16• 12• 12",
             "Plancha Frontal 3 x 1min",
             ],
@@ -1371,7 +1371,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
         {
               superset: [
-            "Rotaciones con Bolsa 2 x 12• 10 a cada lado",
+            "Rotaciones con Bolsa (o disco) 2 x 12• 10 a cada lado",
             "Sentadillas + Estocadas con Bolsa (o mancuernas) 1 x 16",
             ],
             restAfter: "1min"
@@ -1412,7 +1412,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [            
             {
               superset: [
-            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
             "Sentadillas + Estocadas con Bolsa (o Mancuernas) 3 x 16• 12• 12",
             ],
             restAfter: "1min"
@@ -1492,7 +1492,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
         {
               superset: [
-            "Rotaciones con Bolsa 2 x 12• 10 a cada lado",
+            "Rotaciones con Bolsa (o disco) 2 x 12• 10 a cada lado",
             "Burpees Completos 2 x 10• 10",
             "Sentadillas + Estocadas con Bolsa (o mancuernas) 2 x 12• 12",
             ],
@@ -1529,7 +1529,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [            
             {
               superset: [
-            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
             "Sentadillas + Estocadas con Bolsa (o Mancuernas) 3 x 16• 12• 12",
             ],
             restAfter: "1min"
@@ -1609,7 +1609,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
         {
               superset: [
-            "Rotaciones con Bolsa 2 x 12• 10 a cada lado",
+            "Rotaciones con Bolsa (o disco) 2 x 12• 10 a cada lado",
             "Burpees Completos 2 x 10• 8",
             "Sentadillas + Estocadas con Bolsa (o mancuernas) 2 x 12• 12",
             ],
@@ -1646,7 +1646,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [            
             {
               superset: [
-            "Rotaciones con Bolsa 2 x 10• 10 a cada lado",
+            "Rotaciones con Bolsa (o disco) 2 x 10• 10 a cada lado",
             "Sentadillas + Estocadas con Bolsa (o Mancuernas) 2 x 16• 12",
             ],
             restAfter: "1min"
@@ -2083,7 +2083,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
             {
               superset: [
-            "Rotaciones con Bolsa 2 x 10 a cada lado",
+            "Rotaciones con Bolsa (o disco) 2 x 10 a cada lado",
             "Burpees Completos 2 x 10",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
@@ -2168,7 +2168,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
             {
               superset: [
-            "Rotaciones con Bolsa 2 x 10 a cada lado",    
+            "Rotaciones con Bolsa (o disco) 2 x 10 a cada lado",    
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
             restAfter: "1min"
@@ -2241,7 +2241,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [            
             {
               superset: [
-            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 3 x 16• 12• 12",
             ],
             restAfter: "1min"
@@ -2316,7 +2316,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
         {
               superset: [
-            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
             "Burpees Completos 2 x 10• 10",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
@@ -2419,7 +2419,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [            
             {
               superset: [
-            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
             "Sentadillas + Estocadas con Bolsa (o Mancuernas) 3 x 16• 12• 12",
             ],
             restAfter: "1min"
@@ -2499,7 +2499,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
         {
               superset: [
-            "Rotaciones con Bolsa 2 x 12• 10 a cada lado",
+            "Rotaciones con Bolsa (o disco) 2 x 12• 10 a cada lado",
             "Burpees Completos 2 x 10• 8",
             "Sentadillas + Estocadas con Bolsa (o mancuernas) 2 x 12• 12",
             ],
@@ -2578,7 +2578,7 @@ const trainingFolders = {
 
         "Día 1 - Piernas": {
           "Acondicionamiento & Calentamiento": [
-          "Rotaciones con Bolsa 2 x 10 a cada lado rest=1min",
+          "Rotaciones con Bolsa (o disco) 2 x 10 a cada lado rest=1min",
             {
               superset: [
             "Burpees Completos 2 x 10",
@@ -2662,7 +2662,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
         {
               superset: [
-            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
             "Burpees Completos 2 x 10• 10",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
@@ -2887,7 +2887,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [            
             {
               superset: [
-            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 3 x 16• 12• 12",
             ],
             restAfter: "1min"
@@ -2962,7 +2962,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
         {
               superset: [
-            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
             "Burpees Completos 2 x 10• 10",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
@@ -3112,7 +3112,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
         {
               superset: [
-            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
             "Burpees Completos 2 x 10• 10",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
@@ -3187,7 +3187,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [            
             {
               superset: [
-            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 3 x 16• 12• 12",
             ],
             restAfter: "1min"
@@ -3262,7 +3262,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
         {
               superset: [
-            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
             "Burpees Completos 2 x 10• 10",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
@@ -3334,7 +3334,7 @@ const trainingFolders = {
 
         "Día 1 - Piernas": {
           "Acondicionamiento & Calentamiento": [
-          "Rotaciones con Bolsa 2 x 10 a cada lado rest=30s",
+          "Rotaciones con Bolsa (o disco) 2 x 10 a cada lado rest=30s",
             {
               superset: [
             "Burpees Completos 2 x 8",
@@ -3410,7 +3410,7 @@ const trainingFolders = {
 
         "Día 4 - Piernas":  {
           "Acondicionamiento & Calentamiento": [
-          "Rotaciones con Bolsa 2 x 10 a cada lado rest=30s",
+          "Rotaciones con Bolsa (o disco) 2 x 10 a cada lado rest=30s",
             {
               superset: [
             "Burpees Completos 2 x 8",
@@ -3486,7 +3486,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [            
             {
               superset: [
-            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 3 x 16• 12• 12",
             ],
             restAfter: "1min"
@@ -3561,7 +3561,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
         {
               superset: [
-            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
             "Burpees Completos 2 x 8• 8",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
@@ -3634,7 +3634,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [            
             {
               superset: [
-            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 3 x 16• 12• 12",
             ],
             restAfter: "1min"
@@ -3709,7 +3709,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
         {
               superset: [
-            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
             "Burpees Completos 2 x 10• 10",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
@@ -3934,7 +3934,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [            
             {
               superset: [
-            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 3 x 16• 12• 12",
             ],
             restAfter: "1min"
@@ -4009,7 +4009,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
         {
               superset: [
-            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
             "Burpees Completos 2 x 10• 10",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
@@ -4082,7 +4082,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [            
             {
               superset: [
-            "Rotaciones con Bolsa 3 x 10• 10 a cada lado",
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10 a cada lado",
             "Burpees Completos 2 x 10• 10",
             ],
             restAfter: "1min"
@@ -4243,7 +4243,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [            
             {
               superset: [
-            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 3 x 16• 12• 12",
             ],
             restAfter: "1min"
@@ -4318,7 +4318,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
         {
               superset: [
-            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
             "Burpees Completos 2 x 10• 10",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
@@ -4394,7 +4394,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [            
             {
               superset: [
-            "Rotaciones con Bolsa 3 x 10• 10 a cada lado",
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10 a cada lado",
             "Burpees Completos 2 x 10• 10",
             ],
             restAfter: "1min"
@@ -4557,7 +4557,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [            
             {
               superset: [
-            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
             "Sentadillas + Estocadas con Bolsa (o Mancuernas) 3 x 16• 12• 12",
             ],
             restAfter: "1min"
@@ -4637,7 +4637,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
         {
               superset: [
-            "Rotaciones con Bolsa 2 x 12• 10 a cada lado",
+            "Rotaciones con Bolsa (o disco) 2 x 12• 10 a cada lado",
             "Burpees Completos 2 x 10• 8",
             "Sentadillas + Estocadas con Bolsa (o mancuernas) 2 x 12• 12",
             ],
@@ -4719,7 +4719,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [            
             {
               superset: [
-            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 3 x 16• 12• 12",
             ],
             restAfter: "1min"
@@ -4794,7 +4794,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
         {
               superset: [
-            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
             "Burpees Completos 2 x 10• 10",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
@@ -4867,7 +4867,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [            
             {
               superset: [
-            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 3 x 16• 12• 12",
             ],
             restAfter: "1min"
@@ -4942,7 +4942,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
         {
               superset: [
-            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
             "Burpees Completos 2 x 10• 10",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
@@ -5016,7 +5016,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [            
             {
               superset: [
-            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 3 x 16• 12• 12",
             ],
             restAfter: "1min"
@@ -5091,7 +5091,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
         {
               superset: [
-            "Rotaciones con Bolsa 3 x 10• 10• 8 a cada lado",
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
             "Burpees Completos 2 x 10• 10",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
@@ -5386,7 +5386,7 @@ const trainingFolders = {
 
         "Día 1 - Piernas": {
           "Acondicionamiento & Calentamiento": [
-          "Rotaciones con Bolsa (o Disco) 2 x 10• 10 una a cada lado rest=30s",
+          "Rotaciones con Bolsa (o disco) 2 x 10• 10 una a cada lado rest=30s",
             {
               superset: [
             "Burpees Completos 2 x 10• 10",
@@ -5463,7 +5463,7 @@ const trainingFolders = {
 
         "Día 4 - Piernas":  {
           "Acondicionamiento & Calentamiento": [
-          "Rotaciones con Bolsa (o Disco) 2 x 10• 10 una a cada lado rest=30s",
+          "Rotaciones con Bolsa (o disco) 2 x 10• 10 una a cada lado rest=30s",
             {
               superset: [
             "Burpees Completos 2 x 10",
@@ -5580,7 +5580,7 @@ const trainingFolders = {
 
         "Día 1 - Piernas": {
           "Acondicionamiento & Calentamiento": [
-          "Rotaciones con Bolsa (o Disco) 2 x 10• 10 una a cada lado rest=30s",
+          "Rotaciones con Bolsa (o disco) 2 x 10• 10 una a cada lado rest=30s",
             {
               superset: [
             "Burpees Completos 2 x 10• 8",
@@ -5657,7 +5657,7 @@ const trainingFolders = {
 
         "Día 4 - Piernas":  {
           "Acondicionamiento & Calentamiento": [
-          "Rotaciones con Bolsa (o Disco) 2 x 10• 10 una a cada lado rest=30s",
+          "Rotaciones con Bolsa (o disco) 2 x 10• 10 una a cada lado rest=30s",
             {
               superset: [
             "Burpees Completos 2 x 10• 8",
@@ -5804,29 +5804,29 @@ const trainingFolders = {
 
         "Día 1 - Piernas": {
           "Acondicionamiento & Calentamiento": [
-          "Rotaciones de Caderas 2 x 10 a cada lado rest=30s",
+          "Rotaciones con Bolsa (o disco) 2 x 10 a cada lado rest=1min",
             {
               superset: [
             "Burpees Completos 2 x 10",
             "Skipping Rodillas Arriba 2 x 30seg",
-            "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12-12",
+            "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
             restAfter: "1min"
           },
             ],
           "Entrenamiento de Fuerza": [
-            "Isquiotibiales Sentado 4 x 20-(12+10)-(12+8)-10 rest=1-2min",
+            "Isquiotibiales Sentado 4 x 20• (12+10)• (12+8)• 10 rest=1-2min",
             "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
           {
             superset: [
-            "Prensa 4 x 12-10-10-8",
+            "Prensa 4 x 12• 10• 10• 8",
             "Gemelos en Prensa 4 x 8 a 16 reps al fallo"
           ],
             restAfter: "2-4min"
           },
-            "Estocadas con barra 3 x 10-10-8 rest=2min",
-            "Extensión de Cuádriceps Sentado 3 x (12+8)-(10+6)-(10+6) rest=1-2min",
-            "Crunch en Máquina 3 x 16-12-12 rest=1-2min"
+            "Estocadas con barra 3 x 10• 10• 8 rest=2min",
+            "Extensión de Cuádriceps Sentado 3 x (12+8)• (10+6)• (10+6) rest=1-2min",
+            "Crunch en Máquina 3 x 16• 12• 12 rest=1-2min"
             ],
           },
 
@@ -5834,25 +5834,25 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
-            "Flexiones BB Cerradas 2 x 20-20",
-            "Bíceps + Press Arnold con Mancuernas 2 x 12-12",
+            "Flexiones BB Cerradas 2 x 20• 20",
+            "Bíceps + Press Arnold con Mancuernas 2 x 14• 12",
           ],
             restAfter: "1-2min"
           },
           ],
           "Entrenamiento de Fuerza": [
-            "Polea al Pecho Prono Cerrado 3 x 16-12-10 rest=1-2min",
-            "Press Banca 5 x 20-12-10-8-8 rest=3min",
-            "Press Banca con Agarre Cerrado 3 x 12-10-10 rest=2-3min",
-            "Aperturas con Mancuernas en Banca 4 x 12-12-10-8 rest=2-3min",
+            "Polea al Pecho Prono Cerrado 3 x 16• 12• 10 rest=1-2min",
+            "Press Banca 5 x 20• 12• 10• 8• 8 rest=3min",
+            "Press Banca con Agarre Cerrado 3 x 12• 10• 10 rest=2-3min",
+            "Aperturas con Mancuernas en Banca 4 x 12• 12• 10• 8 rest=2-3min",
           {
             superset: [
-            "Press Militar con Mancuernas Sentado 3 x 10-10-8",
-            "Vuelos Laterales con Mancuernas 3 x 12-0-10"
+            "Press Militar con Mancuernas Sentado 3 x 10• 10• 8",
+            "Vuelos Laterales con Mancuernas 3 x 12• (0+8)• (8+6)"
           ],
             restAfter: "2-3min"
           },
-            "Extensión de Tríceps con Barra 3 x (16+12)-(12+8)-10 rest=1-2min"
+            "Extensión de Tríceps con Barra 3 x (16+12)• (12+8)• 10 rest=1-2min"
             ],
           "Entrenamiento HIIT": [
             "Correr en Cinta"
@@ -5863,30 +5863,29 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
-            "Dominadas Agarre Prono 3 x 8-8-8",
-            "Bíceps + Press Arnold con Mancuernas 3 x 12-12-12"
+            "Dominadas Agarre Prono 2 x 8• 8",
+            "Bíceps + Press Arnold con Mancuernas 3 x 12• 12"
           ],
             restAfter: "1-2min"
           },           
           ],
           "Entrenamiento de Fuerza": [
-            "Espalda con Polea 4 x 16-12-12-10 rest=2min",
-            "Polea al Pecho con Triangulo 4 x 12-10-10-8 rest=2min",
-            "Remo con Mancuernas Unilateral 3 x 12-10-10 rest=2min",
-            "Bíceps Martillo Alternado con Mancuernas 4 x 12-10-8-8 rest=2-3min",
-            "Bíceps con Barra W 3 x 10-10-8 rest=2min",
-            "Crunch con Polea 3 x 16-12-12 rest=1-2min"
+            "Espalda con Polea 4 x 16• 12• 12• 10 rest=2min",
+            "Polea al Pecho con Triangulo 4 x 12• 10• 10• 8 rest=2min",
+            "Remo con Mancuernas Unilateral 3 x 12• 10• 10 rest=2min",
+            "Bíceps Martillo Alternado con Mancuernas 4 x 12• 10• 8• 8 rest=2-3min",
+            "Bíceps con Barra W 3 x 10• 10• 8 rest=2min",
+            "Elevación de Piernas Inclinado 3 x 16• 12• 12 rest=1-2min"
           ],
           },
 
         "Día 4 - Piernas":  {
           "Acondicionamiento & Calentamiento": [
-          "Rotaciones de Caderas 2 x 10 a cada lado rest=30s",
+
             {
               superset: [
-            "Burpees Completos 2 x 10",
-            "Skipping Rodillas Arriba 2 x 30seg",
-            "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12-12",
+            "Rotaciones con Bolsa (o disco) 2 x 10 a cada lado",
+            "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
             restAfter: "1min"
           },
@@ -5899,20 +5898,20 @@ const trainingFolders = {
           ],
             restAfter: "1-2min"
           },
-            "Isquiotibiales Sentado 4 x 20-12-12-10 rest=1-2min",
-            "Sentadillas en Smith 4 x 12-10-10-8 rest=2-4min",
-            "Hip Thrust en Smith 4 x 12-10-10-8 rest=2-4min",
-            "Peso muerto Unilateral con Mancuernas 4 x 12-12-10-10 rest=2min",
+            "Isquiotibiales Sentado 4 x 20• 12• 12• 10 rest=1-2min",
+            "Sentadillas en Smith 4 x 12• 10• 10• 8 rest=2-4min",
+            "Hip Thrust en Smith 4 x 12• 10• 10• 8 rest=2-4min",
+            "Peso muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
             "Sentadilla Búlgara con Mancuernas 3 x (8+6)-(8+6)-(6+6) rest=2"
             ],
           },
 
-        "Día 5 - Brazos + Hombros":  {
+        "Día 6 - Brazos + Hombros":  {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
-            "Flexiones BB Cerradas 2 x 20-20",
-            "Bíceps + Press Arnold con Mancuernas 2 x 14-14",
+            "Flexiones BB Cerradas + Carpa 2 x 20• 16",
+            "Bíceps + Press Arnold con Mancuernas 2 x 14• 12",
           ],
             restAfter: "1-2min"
           },
@@ -5920,22 +5919,22 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
           {
             superset: [
-            "Bíceps Martillo Alternado con Mancuernas 4 x 12-10-8-8",
-            "Press Francés Acostado 𝟰𝟱° con Mancuerna 4 x 12-12-10-10"
+            "Bíceps Martillo Alternado con Mancuernas 4 x 12• 10• 8• 8",
+            "Extensión de Tríceps con Barra 4 x 12• 12• 10• (10+8)",
           ],
             restAfter: "2-3min"            
           },
           {
             superset: [
-            "Bíceps Predicador con Mancuernas 4 x 10-10-8-8",
-            "Extensión de Tríceps con Barra 4 x 12-12-10-10"
+            "Bíceps Predicador con Mancuernas 4 x 10• 10• 8• 8",
+            "Press Francés Acostado 𝟰𝟱° con Mancuerna 4 x 12• 12• 10• 10",
           ],
             restAfter: "2-3min"            
           },
           {
             superset: [
-            "Vuelos Posteriores con Mancuernas 4 x 12-10-8-8",
-            "Vuelos Laterales con Mancuernas 4 x 12-(12+8)-(10+8)-8"
+            "Vuelos Posteriores con Mancuernas 4 x 12• 10• 8• 8",
+            "Vuelos Laterales con Mancuernas 4 x 12• 12• 10• (8+6)"
           ],
             restAfter: "2-3min"            
           },
@@ -5944,57 +5943,49 @@ const trainingFolders = {
             "Correr en Cinta Inclinada",
           ],
           },
-          
-
-        "Día 6 - ??????????":  {
-          "Acondicionamiento & Calentamiento": [
-          "Rotaciones de Caderas 2 x 10 a cada lado rest=30s",
-            {
-              superset: [
-            "Burpees Completos 2 x 10",
-            "Skipping Rodillas Arriba 2 x 30seg",
-            "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12-12",
-            ],
-            restAfter: "1min"
-          },
-            ],
-          "Entrenamiento de Fuerza": [
+      
+        "Día 6 - Full Body":  {
+        "Acondicionamiento & Calentamiento": [
           {
             superset: [
-            "Escaladas 2 x 1min",
-            "Oblicuos con Peso 2 x 30seg"
-          ],
-            restAfter: "1-2min"
-          },
-            "Sentadilla Búlgara con Mancuernas 3 x (8+6)-(8+6)-(6+6) rest=2"
-            ],
-          },
-
-        "Día 7 - ????????":  {
-          "Acondicionamiento & Calentamiento": [
-          {
-            superset: [
-            "Flexiones BB Cerradas 2 x 20-20",
-            "Bíceps + Press Arnold con Mancuernas 2 x 14-14",
+            "Flexiones BB Cerradas + Carpa 2 x 20• 16",
+            "Plancha Frontal 2 x 1min• 1min",
           ],
             restAfter: "1-2min"
           },
           ],
           "Entrenamiento de Fuerza": [
+            "Crunch con Polea 3 x 16• 16• 12 pesado! rest=1-2min",
           {
             superset: [
-            "Escaladas 2 x 1min",
-            "Oblicuos con Peso 2 x 30seg"
+            "Arranque con Mancuerna + Press de Hombro Alternado 4 x 10• 10• ↑8• 8",
+            "Burpees Completos 4 x 10• 10• 8• 8"
           ],
-            restAfter: "1-2min"
+            restAfter: "2-3min"            
           },
-          "Press Francés Acostado 𝟰𝟱° con Mancuerna 4 x 12-12-10-10",
+          {
+            superset: [
+            "Press Banca con Agarre Cerrado 4 x 12• ↑10• ↑8• 8",
+            "Vuelos Posteriores con Mancuerna Sentado 4 x 12• 12• ↑10• 10"
           ],
-          "Entrenamiento HIIT": [
-            "Correr en Cinta Inclinada",
-          ],
+            restAfter: "2-3min"            
           },
-          
+          {
+            superset: [
+            "Remo Unilateral con Mancuerna 4 x 12• ↑10• 10• 8",
+            "Press Inclinado con Mancuernas 3 x 12• ↑10• 10",
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Biceps con Cable con Barra 3 x 12• 12• 10",
+            "Extensión de Tríceps con Polea con Barra 3 x 12• (12+8)• (10+8)",
+          ],
+            restAfter: "2-3min"            
+          },
+          ],
+          },  
       },
     },     
 
@@ -6804,7 +6795,7 @@ const USER_HIIT_DAY_NOTES = {
     ],
     "Día 4 - Piernas": [
       { title: "HIIT en Máquina de Remo",
-      body: `<p><strong>10 a 15 MINUTOS TOTALES.</strong></p>
+      body: `<p><strong>9 a 15 MINUTOS TOTALES.</strong></p>
             <p><b>2 minutos:</b> ritmo cómodo para calentar.</p>
             <p>Luego, <b>intervalos (HIIT):</b></p> 
             <ul class="list-disc pl-6">
