@@ -121,7 +121,7 @@ const exerciseDatabase = {
     { name: "Dominadas Agarre Prono", videoId: "https://drive.google.com/file/d/1REN0E_arkYRaRmUbe-ERu4M28NPv6DrS/view?usp=drivesdk", description:"Colgate, bajá bien hasta el estiramiento y subí hasta que la barbilla supere la barra." },
     { name: "Dominadas Agarre Prono a los Hombros", videoId: "https://drive.google.com/file/d/1avpp8w_3ezj1jgvDN1sMlOz6K0zRYQj2/view?usp=drivesdk", description: "Variante que lleva la barra hacia los hombros. El dorsal trabaja en un rango más amplio, del estiramiento al cierre total." },
   ],
-  deltoides: [
+  hombros: [
     { name: "Flexiones BB para Hombros", videoId: "https://drive.google.com/open?id=1UdUrrwoTBloHrbyGAQgLEs4QeGizsPJ7&usp=drive_copy", description: "Con el peso de tu cuerpo, bajás llevando la cabeza hacia el piso y subís empujando fuerte. Un trabajo exigente que fortalece los deltoides y mejora la estabilidad." },
     { name: "Flexiones para Hombros con Banco", videoId: "https://drive.google.com/open?id=1LjkpajVcbNaEvsvjSZwRYshzAlUAKXSH&usp=drive_copy", description: "Apoyá los pies en un banco para aumentar la inclinación. Bajá controlado hasta sentir la carga en hombros y empujá explosivo arriba." },
     { name: "Press Militar con Barra Sentado", videoId: "https://drive.google.com/open?id=1b9QzfTJC-qbzhwTA02g035Z4SaCIhExZ&usp=drive_copy", description: "Con la espalda firme en el banco, llevá la barra desde el pecho hasta extender los brazos. Mové lento hacia abajo y potente hacia arriba, cargando directo los deltoides." },
@@ -2470,7 +2470,7 @@ const trainingFolders = {
           },
           ],
           "Entrenamiento HIIT": [
-            "HIIT en Bicicleta"
+            "Bicicleta"
             ],
           },
 
@@ -2524,7 +2524,7 @@ const trainingFolders = {
             "Extensión de Cuádriceps Sentado 3 x (12+8)• (12+6)• ↓(10+8) rest=1-2min",
             ],
           "Entrenamiento HIIT": [
-            "HIIT en Máquina de Remo"
+            "Máquina de Remo"
             ],
           },
 
@@ -4905,15 +4905,13 @@ const trainingFolders = {
           },
           ],
           "Entrenamiento de Fuerza": [
-            "Vuelos Posteriores  4 x 12• ↑12• ↑10• 10 rest=1-2min",
+            "Vuelo Posterior Unilateral en Máquina Sentado 4 x 12• ↑12• ↑10• 10 rest=1-2min",
             "Polea al Pecho con Triángulo 4 x 12• ↑10• ↓(12+8)• ↑12 rest=2-3min",
             "Remo con Barra 4 x 12• ↑10• ↑8• 8 rest=2-3min",
             "Press Militar con Mancuernas Sentado 4 x 12• ↑12• ↑10• 8 rest=2-3min",
             "Press Banca Inclinado con Mancuernas 4 x 12• ↑12• ↑10• 8 rest=2-3min",
-            "Press de Pecho en Máquina 4 x 12• ↑10• (10+6)• ↓(8+6) rest=2-3min",
-            ],
-          "Entrenamiento HIIT": [
-            "Elíptica",
+            "Press banca 3 x 10• 8• 8 (a explotar🔥) rest=3-4min",
+            "Press de Pecho en Máquina 3 x 10• (10+6)• ↓(8+6) rest=2-3min",
             ],
           },
 
@@ -4962,15 +4960,18 @@ const trainingFolders = {
 
         "Día 4 - Piernas":  {
           "Acondicionamiento & Calentamiento": [
-          "Escalera Mecánica 5 minutos velocidad aprox 10 - 12",
+          "Rotaciones con Bolsa (o disco) 2 x 10• 10 a cada lado",
           ],
           "Entrenamiento de Fuerza": [
             "Cargadas con Barra 3 x 10• 8• 8 rest=2min",
             "Peso Muerto Convencional 4 x 12• ↑10• ↑8• 8 rest=3-4min",
             "Hip Thrust con Barra 4 x 10• 10• ↑8• 8 rest=2-3min",
-            "Estocadas con Barra 4 x 12• ↑10• ↑8• 8 rest=2-3min",
+            "Estocadas con Mancuernas 4 x 12• ↑10• ↑8• 8 rest=2-3min",
             "Extensión de Cuádriceps Sentado 4 x 14• ↓(10+8)• ↓(10+8)• 12 rest=1-2min",
             ],
+            "Entrenamiento HIIT": [
+            "Máquina de Remo",
+          ],
           },
 
         "Día 5 - Full Body":  {
@@ -5014,7 +5015,7 @@ const trainingFolders = {
           },
           ],
           "Entrenamiento HIIT": [
-            "Correr en Cinta (caminadora)",
+            "Elíptica",
           ],
           },
       },
@@ -7670,6 +7671,39 @@ const USER_HIIT_DAY_NOTES = {
   },
   
   
+
+  "isaacmolinares4": {
+    "Día 4 - Piernas": [
+      { title: "HIIT en Máquina de Remo",
+      body: `<p><strong>9 a 15 MINUTOS TOTALES.</strong></p>
+            <p><b>2 minutos:</b> ritmo cómodo para calentar.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>Rema durante 1 minuto a la intensidad más alta que puedas.</li>
+            <li>Descansa durante 1 minuto.</li>
+            </ul>
+            <p><b>Repetir el entrenamiento tantas veces como te sea posible!:</b> has un mínimo de 3 ciclos de <b>(1min full + 1min de descanso).</b></p>
+            <p>A mimir. 😴</p>`
+  },
+    ],
+    "Día 5 - Full Body": [
+      { title: "HIIT en Elíptica",
+      body: `<p><strong>12 MINUTOS TOTALES.</strong></p>
+            <p>Comienzo con <b>2 minutos</b> a resistencia suave-moderada para entrar en calor el cuerpo.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li><b>30 segundos:</b> resistencia <b>suave.</b></li>
+            <li><b>30 segundos:</b> resistencia <b>fuerte</b> (máxima posible) <b>con ayuda de brazos.</b></li>
+            <li><b>30 segundos:</b> resistencia <b>fuerte</b> (máxima posible) <b>sin ayuda de brazos.</b></li>
+            </ul>
+            <p><b>Repetir 4 veces seguidas:</b> o sea <b>(30 seg suaves + 30 seg fuertes c/b + 30 seg fuertes s/b) x 4 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 1 minuto suave.</p>
+            <p>A mimir. 😴</p>`   
+    },
+    ],
+  },
+
+
 
   "rein3": {
     "Día 2 - Pecho + Bíceps + Hombros": [
