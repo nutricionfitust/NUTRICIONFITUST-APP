@@ -20,7 +20,7 @@ const exerciseDatabase = {
   cuadriceps: [
     { name: "Estocadas Caminando con Mancuernas", videoId: "https://drive.google.com/file/d/1lq4UD_oqMliGlhKZ9t660RVQS4C-pvYI/view?usp=drivesdk", description: "Ejercicio dinámico que trabaja principalmente cuádriceps y glúteos, además de mejorar estabilidad y coordinación. Al avanzar, generá un estiramiento profundo y una contracción intensa en la pierna de apoyo." },
     { name: "Estocadas con Barra", videoId: "https://drive.google.com/file/d/1dLEdj1RnS4MjDJPkeNe-JWIBsmB6yeS2/view?usp=drivesdk", description: "Trabajo estático de fuerza. La barra sobre la espalda te permite cargar más peso mientras el cuádriceps de la pierna adelantada soporta la mayor parte del esfuerzo en cada bajada." },
-    { name: "Estocadas en Prensa", videoId: "https://drive.google.com/file/d/1RkueB6PvBvuPz_RGfh3Hl70qWxGvqi_L/view?usp=drivesdk", description: "En Prensa, unilateral, para mayor estabilidad y control del movimiento. Podés concentrarte en bajar profundo y mantener tensión continua en los cuádriceps sin preocuparte del equilibrio." },
+    { name: "Estocadas en Prensa", videoId: "https://drive.google.com/file/d/12dIkGTD1tm70al-CFZTdWawTJa8KnIVA/view?usp=drive_link", description: "En Prensa, unilateral, para mayor estabilidad y control del movimiento. Podés concentrarte en bajar profundo y mantener tensión continua en los cuádriceps sin preocuparte del equilibrio." },
     { name: "Estocadas en Cajón con Barra", videoId: "https://drive.google.com/file/d/1EY6HibAVLeP8YjrghGgMpJvRwp-gZFo2/view?usp=drivesdk", description: "Variante elevada que aumenta el rango de movimiento y la activación del cuádriceps. Esto lleva al cuádriceps a un estiramiento más amplio y lo fuerza a contraer fuerte para impulsarte de regreso." },
     { name: "Estocadas en Smith", videoId: "https://drive.google.com/file/d/1dlBtABwW52_JcOt0U_H-308HrKYT85PD/view?usp=drivesdk", description: "Estocadas en máquina Smith para mayor estabilidad y control del movimiento. Podés concentrarte en bajar profundo y mantener tensión continua en los cuádriceps sin preocuparte del equilibrio." },
     { name: "Estocadas en Prensa", videoId: "https://drive.google.com/file/d/12dIkGTD1tm70al-CFZTdWawTJa8KnIVA/view?usp=drive_link", description: "En Prensa, unilateral, para mayor estabilidad y control del movimiento. Podés concentrarte en bajar profundo y mantener tensión continua en los cuádriceps sin preocuparte del equilibrio." },
@@ -121,7 +121,7 @@ const exerciseDatabase = {
     { name: "Dominadas Agarre Prono", videoId: "https://drive.google.com/file/d/1REN0E_arkYRaRmUbe-ERu4M28NPv6DrS/view?usp=drivesdk", description:"Colgate, bajá bien hasta el estiramiento y subí hasta que la barbilla supere la barra." },
     { name: "Dominadas Agarre Prono a los Hombros", videoId: "https://drive.google.com/file/d/1avpp8w_3ezj1jgvDN1sMlOz6K0zRYQj2/view?usp=drivesdk", description: "Variante que lleva la barra hacia los hombros. El dorsal trabaja en un rango más amplio, del estiramiento al cierre total." },
   ],
-  hombros: [
+  deltoides: [
     { name: "Flexiones BB para Hombros", videoId: "https://drive.google.com/open?id=1UdUrrwoTBloHrbyGAQgLEs4QeGizsPJ7&usp=drive_copy", description: "Con el peso de tu cuerpo, bajás llevando la cabeza hacia el piso y subís empujando fuerte. Un trabajo exigente que fortalece los deltoides y mejora la estabilidad." },
     { name: "Flexiones para Hombros con Banco", videoId: "https://drive.google.com/open?id=1LjkpajVcbNaEvsvjSZwRYshzAlUAKXSH&usp=drive_copy", description: "Apoyá los pies en un banco para aumentar la inclinación. Bajá controlado hasta sentir la carga en hombros y empujá explosivo arriba." },
     { name: "Press Militar con Barra Sentado", videoId: "https://drive.google.com/open?id=1b9QzfTJC-qbzhwTA02g035Z4SaCIhExZ&usp=drive_copy", description: "Con la espalda firme en el banco, llevá la barra desde el pecho hasta extender los brazos. Mové lento hacia abajo y potente hacia arriba, cargando directo los deltoides." },
@@ -4086,7 +4086,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [            
             {
               superset: [
-            "Rotaciones con Bolsa (o disco) 3 x 10• 10 a cada lado",
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 10 a cada lado",
             "Burpees Completos 2 x 10• 10",
             ],
             restAfter: "1min"
@@ -4859,6 +4859,175 @@ const trainingFolders = {
           },
       },
     },    
+
+
+
+//RUTINA ISAAC Nº 4 - 5 MUSCULACIÓN + 2 HIIT !    
+    "isaacmolinares4": {
+      name: "Teniente Isaac",
+      plan: {
+// PLAN DE ENTRENAMIENTO SEMANAL !
+        "Día 1 - Piernas": {
+          "Acondicionamiento & Calentamiento": [            
+            {
+              superset: [
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 10 a cada lado",
+            "Burpees Completos 2 x 10• 10",
+            ],
+            restAfter: "1min"
+          },
+          "Elevación de Piernas Inclinado 3 x 20• 12• 12 rest=1min"
+            ],
+          "Entrenamiento de Fuerza": [
+            "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
+            "Sentadillas Sumo con Barra 4 x 16• ↑12• ↑10• ↑8 rest=2-4min",
+            {
+              superset: [
+            "Estocadas en Prensa 4 x 12• ↑10• 8• 8",
+            "Gemelos en Prensa 4 x 10 a 16 reps al fallo"
+            ],
+            restAfter: "2-3min"
+          },
+            "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
+            "Hiperextensiones para Glúteos (con Peso) 3 x 16• 12• 12 rest=1-2min",
+            "Crunch en Máquina 3 x 16• 12• 12 rest=1-2min",
+            ],
+          },
+
+      "Día 2 - Pecho + Espalda":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Dominadas Agarre Prono 2 x 12• 12",
+            "Flexiones BB Cerradas + Carpa 2 x 20• 20",
+          ],
+            restAfter: "1-2min"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+            "Vuelos Posteriores  4 x 12• ↑12• ↑10• 10 rest=1-2min",
+            "Polea al Pecho con Triángulo 4 x 12• ↑10• ↓(12+8)• ↑12 rest=2-3min",
+            "Remo con Barra 4 x 12• ↑10• ↑8• 8 rest=2-3min",
+            "Press Militar con Mancuernas Sentado 4 x 12• ↑12• ↑10• 8 rest=2-3min",
+            "Press Banca Inclinado con Mancuernas 4 x 12• ↑12• ↑10• 8 rest=2-3min",
+            "Press de Pecho en Máquina 4 x 12• ↑10• (10+6)• ↓(8+6) rest=2-3min",
+            ],
+          "Entrenamiento HIIT": [
+            "Elíptica",
+            ],
+          },
+
+        "Día 3 - Brazos + Hombros + Abs":  {
+        "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Flexiones BB Cerradas 2 x 20• fallo",
+            "Plancha Lateral 2 x 40seg a cada lado",
+          ],
+            restAfter: "1-2min"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+          {
+            superset: [
+            "Crunch Declinado 3 x 20• 16• 12",
+            "Plancha Frontal 3 x 1min"
+          ],
+            restAfter: "1min"            
+          },
+            {
+            superset: [
+            "Bíceps con Cable con Barra 4 x 12• ↑10• ↑8• fallo",
+            "Tríceps con Polea Agarre Inverso 4 x 12• ↑12• (10+8)• fallo"
+          ],
+            restAfter: "2min"            
+          },
+          {
+            superset: [
+            "Bíceps Martillo Alternado con Mancuernas 3 x 10• ↑8• 8 (muy pesado!)",
+            "Press Francés Acostado 𝟰𝟱° con Mancuerna 3 x 12• 12• 10",
+          ],
+            restAfter: "2min"   
+          },
+            "Press Arnold con Mancuernas 3 x 8• 8• ↓16 (muy pesado, y la última liviano) rest=2min",
+          {
+            superset: [
+            "Vuelos Posteriores con Mancuernas 4 x 12• ↑12• ↑10• 8",
+            "Vuelos Laterales con Mancuernas 4 x 12• ↑10• 10• 8"
+          ],
+            restAfter: "2-3min"            
+          },
+          ],
+          },
+
+        "Día 4 - Piernas":  {
+          "Acondicionamiento & Calentamiento": [
+          "Escalera Mecánica 5 minutos velocidad aprox 10 - 12",
+          ],
+          "Entrenamiento de Fuerza": [
+            "Cargadas con Barra 3 x 10• 8• 8 rest=2min",
+            "Peso Muerto Convencional 4 x 12• ↑10• ↑8• 8 rest=3-4min",
+            "Hip Thrust con Barra 4 x 10• 10• ↑8• 8 rest=2-3min",
+            "Estocadas con Barra 4 x 12• ↑10• ↑8• 8 rest=2-3min",
+            "Extensión de Cuádriceps Sentado 4 x 14• ↓(10+8)• ↓(10+8)• 12 rest=1-2min",
+            ],
+          },
+
+        "Día 5 - Full Body":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Flexiones BB Cerradas + Carpa 2 x 20• 20",
+            "Plancha Frontal 2 x 1min• 1min",
+          ],
+            restAfter: "1-2min"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+          {
+            superset: [
+            "Arranque con Mancuerna + Press de Hombro Alternado 4 x 10• 10• ↑8• 8",
+            "Burpees Completos 4 x 12• 10• 8• 8"
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Press Banca con Agarre Cerrado 4 x 12• ↑10• ↑8• 8",
+            "Vuelos Posteriores con Mancuerna Sentado 4 x 12• 12• ↑10• 10"
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Press Inclinado con Mancuernas 3 x 12• ↑10• 10",
+            "Biceps Martillo Alternado con Mancuernas 3 x 10• 10• 8"
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Remo Unilateral con Mancuerna 4 x 12• ↑10• 10• 8",
+            "Fondos para Triceps  4 x fallo• fallo• fallo• fallo"
+          ],
+            restAfter: "2-3min"            
+          },
+          ],
+          "Entrenamiento HIIT": [
+            "Correr en Cinta (caminadora)",
+          ],
+          },
+      },
+    },
+
+
+
+
+
+
+
+
+
 
 
 
@@ -6036,6 +6205,7 @@ const userRoutineMapping = {
   kacheoyhamburu3: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "kacheoyhamburu3" },
   kevinmoreno1: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "kevinmoreno1" },
   isaacmolinares3: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "isaacmolinares3" },
+  isaacmolinares4: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "isaacmolinares4" },
   arturoservin2: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "arturoservin2" },
   palomacarrera1: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "palomacarrera1" },
   palomacarrera2: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "palomacarrera2" },
@@ -6091,7 +6261,8 @@ const userPasswords = {
   'napolitana-limoncello-quarzo-espresso-dolcevita-limoncello-dolcevita-limoncello': 'brunoserer1',
   'islandia-vesuvio-tundra-opera-dolcevita-urali-borschino': 'kacheoyhamburu3',
   'islandia-dolcevita-gelato-siberia-russia-balalaika': 'kevinmoreno1',
-  'siberia-espresso-vesuvio-balalaika-laguna': 'isaacmolinares3',
+  'siberia-espresso-vesuvio-balalaika-laguna': 'isaacmolinares3', //isam3
+  'siberia-espresso-vesuvio-vesuvio-tundra-balalaika-hermitage': 'isaacmolinares4', //isaacm4
   'vesuvio-limoncello-amore-quarzo-limoncello-urali-espresso-octavo': 'arturoservin2',
   'limoncello-dolcevita-siberia-russia-laguna': 'rein3',  
   'tundra-vesuvio-balalaika-siberia-gondola-octavo': 'camiloduranm2',
