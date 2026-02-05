@@ -710,7 +710,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
             "Isquiotibiales Sentado 3 x 12• (12+8)• (10+8) rest=1-2min",
             "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
-            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• 8↓ rest=2-4min",
+            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• ↓8 rest=2-4min",
             "Hip Thrust en Smith 3 x 12• ↑10• ↑8• 8 rest=2-3min",
             "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
             "Crunch en Máquina 2 x 16• 12 rest=1-2min"
@@ -1181,7 +1181,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
             "Isquiotibiales Sentada 3 x 12• (12+8)• (10+8) rest=1-2min",
             "Aductores Sentada 3 x fallo• fallo• fallo rest=1-2min",
-            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• 8↓ rest=2-4min",
+            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• ↓8 rest=2-4min",
             "Hip Thrust en Smith 3 x 12• ↑10• ↑8 rest=2-3min",
             "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
             "Crunch en Máquina 3 x 16• 12• 12 rest=1-2min"
@@ -1290,7 +1290,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
             "Isquiotibiales Sentado 4 x 16• (12+8)• (10+8)• 10 rest=1-2min",
             "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
-            "Sentadillas en Smith 5 x 16 (60% RM)• ↑12• ↑10• ↑8• 8↓ rest=2-4min",
+            "Sentadillas en Smith 5 x 16 (60% RM)• ↑12• ↑10• ↑8• ↓8 rest=2-4min",
             "Hip Thrust en Smith 3 x 12• ↑10• ↑8 rest=2-3min",
             "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
             {
@@ -1522,7 +1522,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
             "Isquiotibiales Sentado 4 x 16• (12+8)• (10+8)• 10 rest=1-2min",
             "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
-            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• 8↓ rest=2-4min",
+            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• ↓8 rest=2-4min",
             "Hip Thrust en Smith 3 x 12• ↑10• ↑8 rest=2-3min",
             "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
             {
@@ -1639,7 +1639,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
             "Isquiotibiales Sentado 4 x 16• (12+8)• (10+8)• 10 rest=1-2min",
             "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
-            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• 8↓ rest=2-4min",
+            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• ↓8 rest=2-4min",
             "Hip Thrust en Smith 3 x 12• ↑10• ↑8 rest=2-3min",
             "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
             {
@@ -2351,7 +2351,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
             "Isquiotibiales Sentado 3 x 12• (12+8)• (10+8) rest=1-2min",
             "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
-            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• 8↓ rest=2-4min",
+            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• ↓8 rest=2-4min",
             "Hip Thrust en Smith 3 x 12• ↑10• ↑8• 8 rest=2-3min",
             "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
             "Crunch en Máquina 3 x 16• 12• 12 rest=1-2min"
@@ -2529,7 +2529,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
             "Isquiotibiales Acostado 4 x 16• (12+8)• (10+8)• 10 rest=1-2min",
             "Aductores con Tobillera 3 x fallo• fallo• fallo rest=1-2min",
-            "Sentadillas con Barra 5 x 16• ↑12• ↑10• ↑8• 8↓ rest=2-4min",
+            "Sentadillas con Barra 5 x 16• ↑12• ↑10• ↑8• ↓8 rest=2-4min",
             "Hip Thrust con Barra 3 x 12• ↑10• ↑8 rest=2-3min",
             "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
             {
@@ -2997,7 +2997,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
             "Isquiotibiales Sentado 3 x 12• (12+8)• (10+8) rest=1-2min",
             "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
-            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• 8↓ rest=2-4min",
+            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• ↓8 rest=2-4min",
             "Hip Thrust en Smith 3 x 12• ↑10• ↑8• 8 rest=2-3min",
             "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
             "Crunch en Máquina 3 x 16• 12• 12 rest=1-2min"
@@ -3297,7 +3297,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
             "Isquiotibiales Sentado 3 x 12• (12+8)• (10+8) rest=1-2min",
             "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
-            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• 8↓ rest=2-4min",
+            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• ↓8 rest=2-4min",
             "Hip Thrust en Smith 3 x 12• ↑10• ↑8• 8 rest=2-3min",
             "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
             "Crunch en Máquina 3 x 16• 12• 12 rest=1-2min"
@@ -3596,7 +3596,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
             "Isquiotibiales Sentada 3 x 12• (12+8)• (10+8) rest=1-2min",
             "Aductores Sentada 3 x fallo• fallo• fallo rest=1-2min",
-            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• 8↓ rest=2-4min",
+            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• ↓8 rest=2-4min",
             "Hip Thrust en Smith 3 x 12• ↑10• ↑8• 8 rest=2-3min",
             "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
             "Crunch en Máquina 3 x 16• 12• 12 rest=1-2min"
@@ -3744,7 +3744,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
             "Isquiotibiales Sentado 3 x 12• (12+8)• (10+8) rest=1-2min",
             "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
-            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• 8↓ rest=2-4min",
+            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• ↓8 rest=2-4min",
             "Hip Thrust en Smith 3 x 12• ↑10• ↑8• 8 rest=2-3min",
             "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
             "Crunch en Máquina 3 x 16• 12• 12 rest=1-2min"
@@ -4044,7 +4044,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
             "Isquiotibiales Sentado 3 x 12• (12+8)• (10+8) rest=1-2min",
             "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
-            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• 8↓ rest=2-4min",
+            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• ↓8 rest=2-4min",
             "Hip Thrust en Smith 3 x 12• ↑10• ↑8• 8 rest=2-3min",
             "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
             "Crunch en Máquina 3 x 16• 12• 12 rest=1-2min"
@@ -4502,7 +4502,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
             "Isquiotibiales Sentado 3 x 12• (12+8)• (10+8) rest=1-2min",
             "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
-            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• 8↓ rest=2-4min",
+            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• ↓8 rest=2-4min",
             "Hip Thrust en Smith 3 x 12• ↑10• ↑8• 8 rest=2-3min",
             "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
             "Crunch en Máquina 3 x 16• 12• 12 rest=1-2min"
@@ -4812,7 +4812,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
             "Isquiotibiales Sentado 3 x 12• (12+8)• (10+8) rest=1-2min",
             "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
-            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• 8↓ rest=2-4min",
+            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• ↓8 rest=2-4min",
             "Hip Thrust en Smith 3 x 12• ↑10• ↑8• 8 rest=2-3min",
             "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
             "Crunch en Máquina 3 x 16• 12• 12 rest=1-2min"
@@ -5126,7 +5126,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
             "Isquiotibiales Nórdicos 4 x 16A• (10+8A)• (8+8A)• 8 rest=1-2min",
             "Aductores con Tobilleras 3 x fallo• fallo• fallo rest=1-2min",
-            "Sentadillas con Barra 5 x 16• ↑12• ↑10• ↑8• 8↓ rest=2-4min",
+            "Sentadillas con Barra 5 x 16• ↑12• ↑10• ↑8• ↓8 rest=2-4min",
             "Hip Thrust con Barra 3 x 12• ↑10• ↑8 rest=2-3min",
             "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
             {
@@ -5288,7 +5288,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
             "Isquiotibiales Sentado 3 x 12• (12+8)• (10+8) rest=1-2min",
             "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
-            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• 8↓ rest=2-4min",
+            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• ↓8 rest=2-4min",
             "Hip Thrust en Smith 3 x 12• ↑10• ↑8• 8 rest=2-3min",
             "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
             "Crunch en Máquina 3 x 16• 12• 12 rest=1-2min"
@@ -5606,7 +5606,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
             "Isquiotibiales Sentado 3 x 12• (12+8)• (10+8) rest=1-2min",
             "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
-            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• 8↓ rest=2-4min",
+            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• ↓8 rest=2-4min",
             "Hip Thrust en Smith 3 x 12• ↑10• ↑8• 8 rest=2-3min",
             "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
             "Crunch en Máquina 3 x 16• 12• 12 rest=1-2min"
@@ -5755,7 +5755,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
             "Isquiotibiales Sentado 3 x 12• (12+8)• (10+8) rest=1-2min",
             "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
-            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• 8↓ rest=2-4min",
+            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• ↓8 rest=2-4min",
             "Hip Thrust en Smith 3 x 12• ↑10• ↑8• 8 rest=2-3min",
             "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
             "Crunch en Máquina 3 x 16• 12• 12 rest=1-2min"
