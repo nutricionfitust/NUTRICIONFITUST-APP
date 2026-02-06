@@ -1736,6 +1736,137 @@ const trainingFolders = {
 
 
 
+//RUTINA RODRIGO Nº 2 - 4 MUSCULACIÓN + 1 HIIT + (1 LISS) !
+    "rodrigotejadacortez2": {
+      name: "Rodrigo",
+         // PLAN DE ENTRENAMIENTO SEMANAL !      
+      plan: {  
+
+        "Día 1 - Piernas": {
+          "Acondicionamiento & Calentamiento": [            
+         {
+              superset: [
+            "Rotaciones con Bolsa (o disco) 2 x 12• 10 a cada lado",
+            "Burpees Completos 2 x 10• 8",
+            "Sentadillas + Estocadas con Bolsa (o mancuernas) 2 x 12• 12",
+            ],
+            restAfter: "1min"
+          },
+          "Plancha Frontal 1 x a lo que dés!"
+            ],
+          "Entrenamiento de Fuerza": [
+            "Isquiotibiales Sentado 3 x fallo• falloo• fallo rest=1-2min",
+          {
+              superset: [
+            "Prensa 5 x 20• ↑12• ↑10(RIR 2)• ↑10• ↑8",
+            "Gemelos en Prensa 5 x 10 a 14 reps al fallo",
+            ],
+            restAfter: "2-4min"
+          },
+            "Sentadillas Búlgara con Mancuernas 4 x 12• ↑10• ↑8• 8 rest=2-3min",
+            "Extensión de Cuádriceps Sentado 4 x 14• ↓(10+8)• ↓(10+8)• (10+8+6) rest=1-2min",
+            ],
+          },
+
+      "Día 2 - Superior (Énfasis Pecho)":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Flexiones BB Cerradas + Carpa 2 x 10• 10",
+            "Bíceps + Press Arnold con Mancuernas 2 x 16• 12",
+          ],
+            restAfter: "1min 30seg"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+            "Elevación de Piernas Inclinado 2 x 12• 10",
+            "Polea al Pecho con Triángulo 4 x ↑16• 12• 10• ↓10 rest=1-2min",
+            "Fondos para Pecho 4 x 12• 12• 10• 10 rest=2min",
+            "Press Banca 4 x 12• 10• 10• 8 rest=2-3min",
+            "Press Banca Inclinado con Mancuernas 3 x 12• 10• 10 rest=2-3min",
+          {
+            superset: [
+            "Vuelos Laterales con Mancuernas 3 x 12• ↓10• 10",
+            "Bíceps Martillo Alternado con Mancuernas 3 x 10• ↑8• 8"
+          ],
+            restAfter: "2-3min"
+          },
+          ],
+          "Entrenamiento HIIT": [
+            "Máquina de Remo"
+            ],
+          },
+
+        "Día 3 - Superior (Énfasis Espalda + Brazos)":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Flexiones BB 2 x 10• 8",
+            "Bíceps + Press Arnold con Mancuernas 2 x 16• 12",
+          ],
+            restAfter: "1min"
+          },           
+          ],
+          "Entrenamiento de Fuerza": [
+            "Remo con Mancuerna Unilateral 4 x 12• 10• 10• 10 rest=1-2min",
+            "Vuelo Posterior Unilateral en Máquina Sentado 3 x 12• 10• ↓10 rest=1-2min",
+            "Polea al Pecho con Triángulo 4 x 12• ↑10• 10• 10 rest=2min",
+            "Press Francés Acostado 𝟰𝟱° con Mancuerna 3 x 12• 12• 10  rest=1-2min",                
+            {
+              superset: [
+            "Triceps con Polea Agarre Inverso 3 x 12• ↓12• 10",
+            "Bíceps con Cable con Barra 3 x 12• ↑10• 8 rest=1-2min",
+            ],
+            restAfter: "2min"
+          },
+          ],
+          },
+
+        "Día 4 - Full Body":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Flexiones BB Cerradas + Carpa 2 x 20• 20",
+            "Plancha Frontal 2 x 1min• 1min",
+          ],
+            restAfter: "1-2min"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+          {
+            superset: [
+            "Arranque con Mancuerna + Press de Hombro Alternado 4 x 10• 10• ↑8• 8",
+            "Burpees Completos 4 x 12• 10• 8• 8"
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Press Banca con Agarre Cerrado 4 x 12• ↑10• ↑8• 8",
+            "Vuelos Posteriores con Mancuerna Sentado 4 x 12• 12• ↑10• 10"
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Press Inclinado con Mancuernas 3 x 12• ↑10• 10",
+            "Biceps Martillo Alternado con Mancuernas 3 x 10• 10• 8"
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Remo Unilateral con Mancuerna 4 x 12• ↑10• 10• 8",
+            "Fondos para Triceps 4 x fallo• fallo• fallo• fallo"
+          ],
+            restAfter: "2-3min"            
+          },
+          ],
+          },
+      },
+    },
+
+
 
 //RUTINA DANIEL Nº 1 - 4 MUSCULACIÓN + 1 HIIT + (1 LISS) !
     "danielflores1": {
@@ -1864,6 +1995,134 @@ const trainingFolders = {
       },
     },
 
+
+
+//RUTINA DANIEL Nº 2 - 4 MUSCULACIÓN + 1 HIIT + (1 LISS) !
+    "danielflores2": {
+      name: "Daniel",
+         // PLAN DE ENTRENAMIENTO SEMANAL !      
+      plan: {
+
+        "Día 1 - Piernas": {
+          "Acondicionamiento & Calentamiento": [            
+            {
+              superset: [
+            "Rotaciones con Bolsa (o disco) 2 x 10• 10 a cada lado",
+            "Burpees Completos 2 x 10• 10",
+            "Sentadillas + Estocadas con Bolsa (o Mancuernas) 2 x 16• 12",
+            ],
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento de Fuerza": [
+            "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
+            {
+              superset: [
+            "Prensa 4 x 12• 10• 10• 8",
+            "Gemelos en Prensa 4 x 8 a 16 reps al fallo",
+            ],
+            restAfter: "1min"
+          },                 
+            "Isquiotibiales Acostado 4 x 12• 12• 10• 10 rest=2min",
+            {
+              superset: [
+            "Elevación de Piernas Inclinado 2 x 16• 12",
+            "Plancha Frontal 3 x 1min",
+            ],
+            restAfter: "1min 30seg"
+          },
+            ],
+          },
+
+      "Día 2 - Superior (Énfasis Pecho)":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Flexiones BB Cerradas + Carpa 2 x 10• 10",
+            "Bíceps + Press Arnold con Mancuernas 2 x 16• 12",
+          ],
+            restAfter: "1min 30seg"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+            "Polea al Pecho con Triángulo 4 x ↑16• 12• ↑10• ↓10 rest=1-2min",
+            "Press Banca 5 x 20(50% RM)• ↑12• ↑10• 10• ↑8 rest=2-3min",
+            "Press Banca Inclinado con Mancuernas 3 x 12• 10• 10 rest=2-3min",
+          {
+            superset: [
+            "Vuelos Laterales con Mancuernas 3 x 12• ↓10• 10",
+            "Bíceps Martillo Alternado con Mancuernas 3 x 10• ↑8• 8"
+          ],
+            restAfter: "2-3min"
+          },
+          ],
+          },
+
+        "Día 3 - Superior (Énfasis Espalda + Brazos)":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Flexiones BB Cerradas + Carpa 2 x 10• 10",
+            "Bíceps + Press Arnold con Mancuernas 2 x 16• 12",
+          ],
+            restAfter: "1min 30seg"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+            "Polea al Pecho con Triángulo 4 x 14• ↑12• 12• ↓(10+6) rest=2min",
+            "Remo con Barra 4 x 12• ↑10• 10• 8 rest=2min",
+            "Vuelos Posteriores con Mancuernas 3 x 12• ↑10• 10", 
+          {
+            superset: [
+            "Tríceps con Polea Agarre Inverso 3 x 12• 12• (10+8)  rest=2min",         
+          ],
+            restAfter: "2min"
+          },           
+            "Press Francés Sentado con Apoyo 𝟰𝟱° 3 x 12• 12• ↑10",
+            "Bíceps Predicador con Mancuerna 3 x 12• ↑10• 10 rest=1-2min",
+          ],
+          },
+
+        "Día 4 - Full Body":  {
+        "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Burpees Completos 2 x 10• 10",
+            "Rotaciones con Bolsa (o disco) 2 x 10• 10 a cada lado",
+            "Sentadillas + Estocadas con Bolsa (o mancuernas) 2 x 12• 12",
+          ],
+            restAfter: "1-2min"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+          {
+            superset: [
+            "Arranque con Mancuerna + Press de Hombro Alternado 3 x 10• 10• ↑8",
+            "Flexiones BB cerradas 3 x fallo• fallo• fallo• fallo",
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Remo Unilateral con Mancuerna 4 x 12• ↑10• 10• 8",
+            "Press Inclinado con Mancuernas 4 x 12• ↑10• 10• 8",
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Bíceps Martillo Alternado con Mancuernas 3 x 12• 12• 10",
+            "Patadas de Tríceps con Mancuerna 3 x 12• 12• 10",
+          ],
+            restAfter: "2-3min"            
+          },
+          ],
+          "Entrenamiento HIIT": [
+          "Elíptica",
+          ],
+          },
+      },
+    },
 
 
 
@@ -6808,14 +7067,14 @@ const userPasswords = {
   'amore-vesuvio-tundra-siberia-spaghetti-vesuvio-russia-vesuvio': 'tacianabavaud',
   'napolitana-dolcevita-russia-yogurt-vesuvio-quarzo-gondola-vesuvio-firenze': 'benjaminlauda1', //benlauda1
   'espresso-urali-tiramisu-siberia-vesuvio-octavo-zarina-octavo-batata': 'sofiaustarroz',
-  'gondola-vesuvio-russia-borschino-tiramisu': 'danielflores1',
-  '': 'danielflores2',
+  'gondola-vesuvio-russia-borschino-tiramisu': 'danielflores1', //danyf
+  'gondola-vesuvio-russia-borschino-tiramisu-octavo': 'danielflores2', //danyf2
   'vesuvio-spaghetti-quarzo-yogurt-tundra-opera-dolcevita-limoncello-quarzo-firenze': 'azulcherubini2',
   'piazza-quarzo-yogurt-siberia-balalaika-vesuvio-kremlin': 'julianmagallanes1', 
   'piazza-quarzo-yogurt-siberia-balalaika-vesuvio-kremlin-octavo': 'julianmagallanes2', 
   'siberia-kremlin-russia-vesuvio-espresso-tundra-vesuvio': 'ignacioscagliotti1',
-  'limoncello-urali-tundra-urali-limoncello-amore-dolcevita-spaghetti':'rodrigotejadacortez1',
-  'limoncello-urali-tundra-urali-limoncello-amore-dolcevita-spaghetti-octavo': 'rodrigotejadacortez2',
+  'limoncello-urali-tundra-urali-limoncello-amore-dolcevita-spaghetti':'rodrigotejadacortez1', //rocortez
+  'limoncello-urali-tundra-urali-limoncello-amore-dolcevita-spaghetti-octavo': 'rodrigotejadacortez2', //rocortez2
   'vesuvio-spaghetti-spaghetti-octavo': 'azulcherubini3',
   'gondola-vesuvio-balalaika-siberia-borscht-urali-limoncello-octavo': 'damianportillo2',
   'gondola-vesuvio-balalaika-siberia-borscht-urali-limoncello-laguna': 'damianportillo3',
@@ -7516,6 +7775,22 @@ const USER_HIIT_DAY_NOTES = {
   },  
 
 
+
+ "rodrigotejadacortez2": {
+    "Día 2 - Superior (Énfasis Pecho)": [
+      { title: "HIIT en Máquina de Remo",
+      body: `<p><strong>9 a 15 MINUTOS TOTALES.</strong></p>
+            <p><b>2 minutos:</b> ritmo cómodo para calentar.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>Rema durante 1 minuto a la intensidad más alta que puedas.</li>
+            <li>Descansa durante 1 minuto.</li>
+            </ul>
+            <p><b>Repetir el entrenamiento tantas veces como te sea posible!:</b> has un mínimo de 3 ciclos de <b>(1min full + 1min de descanso).</b></p>
+            <p>A mimir. 😴</p>`
+  },
+  ],
+  },   
 
 
   "santiagocabrera1": {
@@ -8319,6 +8594,24 @@ const USER_HIIT_DAY_NOTES = {
     ],
   },     
 
+
+  "danielflores2": {
+    "Día 4 - Full Body": [
+      { title: "HIIT en Elíptica",
+      body: `<p><strong>12 MINUTOS TOTALES.</strong></p>
+            <p>Comienzo con <b>2 minutos</b> a resistencia suave-moderada para entrar en calor el cuerpo.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li><b>30 segundos:</b> resistencia <b>suave.</b></li>
+            <li><b>30 segundos:</b> resistencia <b>fuerte</b> (máxima posible) <b>con ayuda de brazos.</b></li>
+            <li><b>30 segundos:</b> resistencia <b>fuerte</b> (máxima posible) <b>sin ayuda de brazos.</b></li>
+            </ul>
+            <p><b>Repetir 4 veces seguidas:</b> o sea <b>(30 seg suaves + 30 seg fuertes c/b + 30 seg fuertes s/b) x 4 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 1 minuto suave.</p>
+            <p>A mimir. 😴</p>`   
+    },
+    ],
+  },  
 
 
   "isaacmolinares3": {
