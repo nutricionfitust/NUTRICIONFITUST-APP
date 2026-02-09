@@ -1181,8 +1181,8 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
             "Isquiotibiales Acostado 4 x 16• (12+8)• (10+8)• 10 rest=1-2min",
             "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
-            "Sentadillas con Barra 5 x 16• ↑12• ↑10• ↑8• ↓8 rest=2-4min",
-            "Hip Thrust con Barra 3 x 12• ↑10• ↑8 rest=2-3min",
+            "Sentadillas en Smith 5 x 16 (60% RM)• ↑12• ↑10• ↑8• ↓8 rest=2-4min",
+            "Hip Thrust en Smith 3 x 12• ↑10• ↑8 rest=2-3min",
             "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
             {
               superset: [
@@ -1208,7 +1208,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
             "Polea al Pecho Agarre Prono Cerrado 4 x ↑16• 12• 10• ↓10 rest=1-2min",
             "Aperturas en Banca Inclinado con Mancuernas 4 x ↑16• ↓(12+8)• 12• 10 rest=2-3min",
-            "Press Banca Inclinado 4 x 12• 10• 10• 8 rest=2-3min",
+            "Press Banca Inclinado en Smith 4 x 12• 10• 10• 8 rest=2-3min",
             "Fondos para Pecho 3 x fallo• fallo• fallo rest=2-3min",
           {
             superset: [
@@ -1267,9 +1267,9 @@ const trainingFolders = {
             "Isquiotibiales Acostado 4 x 12• 12• 10• 10 rest=1-2min",
           {
               superset: [
-            "Sentadillas con Barra 5 x 16• ↑12• ↑10(RIR 2)• ↑10• ↑8",
-            "Sóleo Sentado con Mancuernas 5 x 10 a 14 reps al fallo",
-            ],
+            "Prensa 5 x 16• ↑12• ↑10(RIR 2)• ↑10• ↑8",
+            "Gemelos en Prensa 5 x 10 a 14 reps al fallo",
+                      ],
             restAfter: "2-4min"
           },
             "Sentadillas Búlgara con Mancuernas 4 x 12• ↑10• ↑8• 8 rest=2-3min",
