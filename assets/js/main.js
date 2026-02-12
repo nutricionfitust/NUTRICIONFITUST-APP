@@ -1162,6 +1162,125 @@ const trainingFolders = {
 },
   "4 MUSCULACIÓN + 1 HIIT + (1 LISS)": {
   routines: {
+// RUTINA FRANCO Nº 1 - 4 MUSCULACIÓN + 1 HIIT + (1 LISS) !
+        "francobarbero1": {
+      name: "Franco",
+         // PLAN DE ENTRENAMIENTO SEMANAL !     
+      plan: {  
+        "Día 1 - Piernas": {
+          "Acondicionamiento & Calentamiento": [
+        {              
+          superset: [
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
+            "Sentadillas + Estocadas con Bolsa (o Mancuernas) 3 x 16• 12• 12",
+            ],
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento de Fuerza": [
+            "Isquiotibiales Acostado 4 x 16• (12+8)• (10+8)• 10 rest=1-2min",
+            "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
+            "Sentadillas con Barra 5 x 16 (60% RM)• ↑12• ↑10• ↑8• ↓8 rest=2-4min",
+            "Hip Thrust con Barra 3 x 12• ↑10• ↑8 rest=2-3min",
+            "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
+            {
+              superset: [
+            "Elevación de Piernas Inclinado 3 x 16• 12• 12",
+            "Plancha Frontal 3 x 1min",
+            ],
+            restAfter: "1min 30seg"
+          },
+            ],
+          },
+
+      "Día 2 - Superior (Énfasis Pecho)":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Flexiones BB Cerradas 2 x 10• 10",
+            "Bíceps + Press Arnold con Mancuernas 2 x 16• 12",
+            "Vuelos Laterales con Mancuernas 2 x 12• 12 (liviano)"
+          ],
+            restAfter: "1min 30seg"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+            "Polea al Pecho Agarre Prono Cerrado 4 x ↑16• 12• 10• ↓10 rest=1-2min",
+            "Aperturas en Banca Inclinado con Mancuernas 4 x ↑16• ↓(12+8)• 12• 10 rest=2-3min",
+            "Press Banca Inclinado 4 x 12• 10• 10• 8 rest=2-3min",
+            "Fondos para Pecho 3 x fallo• fallo• fallo rest=2-3min",
+          {
+            superset: [
+            "Vuelos Laterales con Mancuernas 3 x 12• ↓10• 10",
+            "Bíceps Martillo Alternado con Mancuernas 3 x 10• ↑8• 8"
+          ],
+            restAfter: "2-3min"
+          },
+          ],
+          "Entrenamiento HIIT": [
+            "Bicicleta"
+            ],
+          },
+
+        "Día 3 - Superior (Énfasis Espalda + Brazos)":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Bíceps + Press Arnold con Mancuernas 2 x 12• 12", 
+            "Flexiones BB Cerradas + Carpa 2 x 10• 10",
+          ],
+            restAfter: "1min"
+          },           
+          ],
+          "Entrenamiento de Fuerza": [
+            "Elevación de Piernas Vertical (Colgado) 3 x fallo• fallo• fallo rest=1-2min",
+            "Polea al Pecho con Triángulo 4 x 14• 12• ↓12• ↓(10+6) rest=2min",
+            "Remo Unilateral Scon Mancuernas 4 x 12• 10• ↓10 rest=2min",
+            "Remo con Barra 3 x 12• ↑10• 10 rest=2min",
+            "Extensión de Tríceps con Polea con Barra 3 x 12• (12+8)• ↓(12+8)  rest=2min",                
+            {
+              superset: [
+            "Press Francés Acostado 𝟰𝟱° con Mancuerna 3 x 12• ↓12• 10",
+            "Bíceps Predicador con Mancuerna 3 x 12• ↑10• 8 rest=1-2min",
+            ],
+            restAfter: "2min"
+          },
+          "Arranque con Mancuerna + Press de Hombro Alternado 3 x 10• 10• 8 rest=2-3min",
+          "Burpees Completos 3 x 10• 10• 8 rest=2-3min",
+          ],
+          },
+
+        "Día 4 - Piernas":  {
+          "Acondicionamiento & Calentamiento": [
+        {
+              superset: [
+            "Rotaciones con Bolsa (o disco) 2 x 12• 10 a cada lado",
+            "Burpees Completos 2 x 10• 10",
+            "Sentadillas + Estocadas con Bolsa (o mancuernas) 2 x 12• 12",
+            ],
+            restAfter: "1min"
+          },
+          "Plancha Frontal 1 x a lo que dés!"
+            ],
+          "Entrenamiento de Fuerza": [
+            "Crunch con Polea 4 x 16• 12• 12• 10 rest=1-2min",
+            "Isquiotibiales Acostado 4 x 12• 12• 10• 10 rest=1-2min",
+          {
+              superset: [
+            "Prensa 5 x 16• ↑12• ↑10(RIR 2)• ↑10• ↑8",
+            "Gemelos en Prensa 5 x 10 a 14 reps al fallo",
+                      ],
+            restAfter: "2-4min"
+          },
+            "Sentadillas Búlgara con Mancuernas 4 x 12• ↑10• ↑8• 8 rest=2-3min",
+            "Extensión de Cuádriceps Sentado 4 x 12• ↓(10+8)• ↓(10+8)• (10+6) rest=1-2min",
+            ],
+          },
+      },
+    },
+
+
+
 //RUTINA MATTIA Nº 1 - 4 MUSCULACIÓN + 1 HIIT + (1 LISS) !
         "mattiamorabito1": {
       name: "Mattia",
@@ -7130,6 +7249,7 @@ const userRoutineMapping = {
   azulcherubini3: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "azulcherubini3" },
   julianmagallanes1: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "julianmagallanes1" },
   julianmagallanes2: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "julianmagallanes2" },
+  francobarbero1 : { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "francobarbero1" },
   mattiamorabito1: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "mattiamorabito1" },
   ignacioscagliotti1: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "ignacioscagliotti1" },
   rodrigotejadacortez1: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "rodrigotejadacortez1" },
@@ -7184,6 +7304,7 @@ const userPasswords = {
   // CLAVES ÚINCAS DE USUARIOS
   'napolitana-limoncello-vesuvio-spaghetti-urali-espresso': 'publicidadbrazos',
   'vesuvio-kremlin-quarzo-espresso-amore-siberia-russia-vesuvio-octavo-zarina-octavo-batata': 'agustina',
+  'tiramisu-limoncello-vesuvio-russia-napolitana-vesuvio-limoncello-firenze-hermitage': francobarbero1, //franbar14
   'tundra-vesuvio-balalaika-siberia-yogurt-vesuvio-yogurt-vesuvio': 'camilafrancoblonda',
   'amore-vesuvio-tundra-siberia-spaghetti-vesuvio-russia-vesuvio': 'tacianabavaud',
   'napolitana-dolcevita-russia-yogurt-vesuvio-quarzo-gondola-vesuvio-firenze': 'benjaminlauda1', //benlauda1
@@ -7874,6 +7995,24 @@ const USER_HIIT_DAY_NOTES = {
     ],
   },  
 
+
+
+        "francobarbero1": {
+    "Día 2 - Superior (Énfasis Pecho)": [
+      { title: "HIIT en Bicicleta",
+      body: `<p><strong>17 a 20 MINUTOS TOTALES.</strong></p>
+            <p><b>3-5 minuto:</b> calentamiento.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>30-40 segundos a máxima intensidad (alta resistencia/velocidad).</li>
+            <li>50-60 segundos de pedaleo suave (recuperación actica).</li>
+            </ul>
+            <p><b>Repetir 8-10 veces seguidas:</b> o sea <b>(30-40seg + 50-60seg) x 8-10 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 2 minutos de pedaleo suave para enfriar.</p>
+            <p>A mimir. 😴</p>`
+    },
+    ],
+  },  
 
 
 
