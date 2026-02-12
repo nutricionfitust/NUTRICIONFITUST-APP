@@ -1219,7 +1219,7 @@ const trainingFolders = {
           },
           ],
           "Entrenamiento HIIT": [
-            "Correr en Cinta"
+            "Bicicleta"
             ],
           },
 
@@ -7859,17 +7859,16 @@ const USER_HIIT_DAY_NOTES = {
 
       "mattiamorabito1": {
     "Día 2 - Superior (Énfasis Pecho)": [
-      { title: "HIIT en Cinta (caminadora)",
-      body: `<p><strong>15 MINUTOS TOTALES.</strong></p>
-            <p><b>1 minuto:</b> caminar (5.5km/h).</p>
-            <p><b>2 minutos:</b> trote suave para entrar en calor (8km/h).</p>
+      { title: "HIIT en Bicicleta",
+      body: `<p><strong>17 a 20 MINUTOS TOTALES.</strong></p>
+            <p><b>3-5 minuto:</b> calentamiento.</p>
             <p>Luego, <b>intervalos (HIIT):</b></p> 
             <ul class="list-disc pl-6">
-            <li>40 segundos a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
-            <li>1 minuto de trote suave (ej: ~8 km/h).</li>
+            <li>30-40 segundos a máxima intensidad (alta resistencia/velocidad).</li>
+            <li>50-60 segundos de pedaleo suave (recuperación actica).</li>
             </ul>
-            <p><b>Repetir 6 veces seguidas:</b> o sea <b>(40seg + 1min) x 6 sin descanso.</b></p>
-            <p><b>Recuperación:</b> 1 minuto caminando.</p>
+            <p><b>Repetir 8-10 veces seguidas:</b> o sea <b>(30-40seg + 50-60seg) x 8-10 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 2 minutos de pedaleo suave para enfriar.</p>
             <p>A mimir. 😴</p>`
     },
     ],
