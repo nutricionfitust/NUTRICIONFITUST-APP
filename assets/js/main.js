@@ -9088,15 +9088,8 @@ function openExerciseBase() {
 function closeExerciseBase() {
   document.getElementById('exerciseBaseModal').classList.remove('show');
 }
-
-function openUserTrainingModal(){
-  const modal = document.getElementById('userTrainingModal');
-  modal.classList.add('show');
-}
-
-function closeUserTraining(){
-  const modal = document.getElementById('userTrainingModal');
-  modal.classList.remove('show');
+function closeUserTraining() {
+  document.getElementById('userTrainingModal').classList.remove('show');
 }
 
 /* ===========================
@@ -9680,37 +9673,6 @@ function extractGroupRestFromSuperset(supersetArray){
     }
   }
   return '';
-}
-
-//HELPERS TRANSICIONES
-function animateSwap(containerEl, nextHTML, dir = 'left'){
-  // dir: 'left' (entra desde derecha), 'right' (entra desde izquierda)
-  const outClass = dir === 'left' ? 'swap-out-left' : 'swap-out-right';
-  const inClass  = dir === 'left' ? 'swap-in-left'  : 'swap-in-right';
-
-  containerEl.classList.remove('swap-in-left','swap-in-right','swap-out-left','swap-out-right');
-
-  // 1) sale lo actual
-  containerEl.classList.add(outClass);
-
-  const onOutEnd = () => {
-    containerEl.removeEventListener('animationend', onOutEnd);
-
-    // 2) cambiamos HTML
-    containerEl.innerHTML = nextHTML;
-
-    // 3) entra lo nuevo
-    containerEl.classList.remove(outClass);
-    containerEl.classList.add(inClass);
-
-    const onInEnd = () => {
-      containerEl.removeEventListener('animationend', onInEnd);
-      containerEl.classList.remove(inClass);
-    };
-    containerEl.addEventListener('animationend', onInEnd);
-  };
-
-  containerEl.addEventListener('animationend', onOutEnd);
 }
 
 // ===== helpers de secciones/colores y tarjetas =====
