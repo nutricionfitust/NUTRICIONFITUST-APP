@@ -3326,7 +3326,7 @@ const trainingFolders = {
 
 
 //RUTINA LUCAS MARTIN GOMEZ RIOS Nº 1 - 5 MUSCULACIÓN + 2 HIIT ! (4 DÍAS + 1 DÍA REPUESTO)
-    "lucasmartingomez1": {
+    "lucasgomezrios1": {
       name: "Lucas",
          // PLAN DE ENTRENAMIENTO SEMANAL !      
       plan: {  
@@ -3372,7 +3372,7 @@ const trainingFolders = {
             "Polea al Pecho Agarre Prono Cerrado 4 x ↑16• ↑12• 10• ↓10 rest=1-2min",
             "Aperturas Acostado con Mancuernas 4 x ↑16• ↓(12+8)• 12• 10 rest=2-3min",
             "Press Banca Inclinado 4 x 12• 10• 10• 8 rest=2-3min",
-            "Press Martillo Acostado con Mancuernas 3 x 12• ↓12• ↓(10+6) rest=2-3min",
+            "Press Militar Sentado con Mancuernas 3 x 12• ↓12• ↓(10+6) rest=2-3min",
           {
             superset: [
             "Vuelos Laterales con Mancuernas 3 x 12• ↓10• 10",
@@ -7835,7 +7835,7 @@ const userRoutineMapping = {
   lucascabrera1: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "lucascabrera1" },
   santiagocabrera1: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "santiagocabrera1" },
   santiagocabrera2: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "santiagocabrera2" },
-  lucasmartingomez1: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "lucasmartingomez1" },
+  lucasgomezrios1: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "lucasgomezrios1" },
   diegosantandrian1: { folder: "6 MUSCULACIÓN + 2 HIIT + (1 LISS)", routine: "diegosantandrian1" },
   santiagopanayotidis1: { folder: "6 MUSCULACIÓN + 2 HIIT + (1 LISS)", routine: "santiagopanayotidis1" },
   joserebolledo1: { folder: "6 MUSCULACIÓN + 2 HIIT + (1 LISS)", routine: "joserebolledo1" },
@@ -7906,7 +7906,7 @@ const userPasswords = {
   'borscht-vesuvio-russia-vesuvio-borschino-urali-amore-siberia-laguna': 'santiagopanayotidis3', //panayoti3
   'espresso-vesuvio-russia-amore-siberia-tundra-vesuvio-napolitana-limoncello-dolcevita-firenze': 'santiagocabrera1', //santicabre1
   'espresso-vesuvio-russia-amore-siberia-vesuvio-kremlin-urali-tundra-vesuvio-octavo': 'santiagocabrera2', //santiagoca2
-  'yogurt-quarzo-tundra-vesuvio-espresso-balalaika-firenze': 'lucasmartingomez1', //lucasm1
+  'yogurt-quarzo-tundra-vesuvio-espresso-balalaika-firenze': 'lucasgomezrios1', //lucasm1
   'siberia-gelato-vesuvio-russia-amore-napoli': 'ivantrujillo1', //ivant7
   'siberia-gelato-vesuvio-russia-amore-limoncello-octavo': 'ivantrujillo2', //ivantr2
   'siberia-gelato-vesuvio-russia-amore-limoncello-laguna': 'ivantrujillo3', //ivantr3
@@ -8698,7 +8698,7 @@ const USER_HIIT_DAY_NOTES = {
 
 
 
-    "lucasmartingomez1": {
+    "lucasgomezrios1": {
     "Día 2 - Superior (Énfasis Pecho)": [
       { title: "HIIT en Cinta (caminadora)",
         body: `<p><strong>14 MINUTOS TOTALES.</strong></p>
