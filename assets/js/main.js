@@ -5597,7 +5597,7 @@ const trainingFolders = {
           ],
           },
             
-          "Día 6 - Espalda":  {
+          "Día 6 - Espalda + pequeño HIIT":  {
           "Acondicionamiento & Calentamiento": [
             "Crunch en Máquina 3 x 16• 12• 12",
                  {
