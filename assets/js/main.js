@@ -5238,7 +5238,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
           {
               superset: [
-            "Sentadillas en Hack 5 x 20• ↑12• ↑10(RIR 2)• ↑10• ↑8",
+            "Sentadillas en Hack 5 x 16• ↑12• ↑10(RIR 2)• ↑10• ↑8",
             "Gemelos en Hack 5 x 10 a 16 reps al fallo",
             ],
             restAfter: "2-4min"
@@ -5252,7 +5252,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
-            "Flexiones BB Cerradas 2 x 20• 20",
+            "Flexiones BB Cerradas + Carpa 2 x 20• 16",
             "Plancha Frontal 2 x 1min• 1min",
             "Bíceps + Press Arnold con Mancuernas 2 x 14• 14",
           ],
@@ -5263,7 +5263,7 @@ const trainingFolders = {
           {
             superset: [
             "Bíceps Martillo Alternado con Mancuernas 4 x 12• ↑10• ↑8• 8",
-            "Extensión de Tríceps con Barra x 16• ↑12• 12• ↑10"
+            "Extensión de Tríceps con Barra 4 x 16• ↑12• 12• ↑10"
           ],
             restAfter: "2-3min"            
           },
