@@ -6004,6 +6004,9 @@ const trainingFolders = {
             "Press banca 3 x 10• 8• 8 (a explotar🔥) rest=3-4min",
             "Press de Pecho en Máquina 3 x 10• (10+6)• ↓(8+6) rest=2-3min",
             ],
+          "Entrenamiento HIIT": [
+            "Correr en Cinta (caminadora)",
+          ],
           },
 
         "Día 3 - Brazos + Hombros":  {
