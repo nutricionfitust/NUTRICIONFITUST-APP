@@ -6054,16 +6054,10 @@ const trainingFolders = {
             ],
             restAfter: "1min"
           },
-          {
-            superset: [
-            "Escaladas 2 x 1min",
-            "Oblicuos con Peso 2 x 30seg",
-            ],
-            restAfter: "1min"
-          },
           ],
           "Entrenamiento de Fuerza": [
             "Isquiotibiales Nórdicos 3 x 16A• (10+8A)• (8+8A) rest=1-2min",
+            "Aductores con Tobilleras 3 x fallo• fallo• fallo rest=1-2min",
           {
               superset: [
             "Prensa 5 x 20• ↑12• ↑10(RIR 2)• ↑10• ↑8",
@@ -6072,8 +6066,15 @@ const trainingFolders = {
             restAfter: "2-4min"
           },
             "Estocadas en Prensa 3 x 10• ↑10• 8 rest=2-3min",
-            "Sentadillas Búlgara con Mancuernas 4 x 12• ↑10• ↑8• 8 rest=2-3min",
-            "Extensión de Cuádriceps Sentado 4 x 14• ↓(10+8)• ↓(10+8)• (10+8+6) rest=1-2min",
+            "Hip Thrust con Barra 4 x 10• 10• ↑8• 8 rest=2-3min",
+            "Extensión de Cuádriceps Sentado 4 x 14• ↓(10+8)• ↑12• (10+8) rest=1-2min",
+                    {
+            superset: [
+            "Escaladas 2 x 1min",
+            "Oblicuos con Peso 2 x 30seg",
+            ],
+            restAfter: "1min"
+          },
             ],
           },
 
@@ -6091,34 +6092,34 @@ const trainingFolders = {
           {
             superset: [
             "Arranque con Mancuerna + Press de Hombro Alternado 4 x 10• 10• ↑8• 8",
-            "Burpees Completos 4 x 12• 10• 8• 8"
+            "Flexiones BB 4 x 10• 10• fallo• fallo",
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Cargadas con Barra 3 x 12• ↑8• 8",
+            "Burpees Completos 3 x 10• 10• 8"
           ],
             restAfter: "2-3min"            
           },
           {
             superset: [
             "Press Banca con Agarre Cerrado 4 x 12• ↑10• ↑8• 8",
-            "Vuelos Posteriores con Mancuerna Sentado 4 x 12• 12• ↑10• 10"
-          ],
-            restAfter: "2-3min"            
-          },
-          {
-            superset: [
-            "Press Inclinado con Mancuernas 3 x 12• ↑10• 10",
-            "Biceps Martillo Alternado con Mancuernas 3 x 10• 10• 8"
-          ],
-            restAfter: "2-3min"            
-          },
-          {
-            superset: [
             "Remo Unilateral con Mancuerna 4 x 12• ↑10• 10• 8",
-            "Fondos para Triceps 4 x fallo• fallo• fallo• fallo"
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Press Militar Sentado con Mancuernas 3 x 12• ↑10• 10",
+            "Biceps con Barra W 3 x 10• 10• 8",
           ],
             restAfter: "2-3min"            
           },
           ],
           "Entrenamiento HIIT": [
-            "Correr en Cinta (caminadora)",
+          "Bicicleta"
           ],
           },
       },
@@ -9685,26 +9686,11 @@ const USER_HIIT_DAY_NOTES = {
 
 
       "lucascabrera2": {
-    "Día 2 - Superior (Énfasis Pecho)": [
-      { title: "HIIT en Cinta Inclinada (caminadora)",
-      body: `<p><strong>13 MINUTOS TOTALES.</strong></p>
-            <p>Inclinar la Cinta unos 9 grados.</p>
-            <p><b>4 minutos:</b> caminar.</p>
-            <p>Inclinar la Cinta unos 3 grados (bajamos 6 grados).</p>
-            <p>Luego, <b>intervalos (HIIT):</b></p> 
-            <ul class="list-disc pl-6">
-            <li>30 segundos a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
-            <li>1 minuto de trote suave (ej: ~8 km/h).</li>
-            </ul>
-            <p><b>Repetir 6 veces seguidas:</b> o sea <b>(30seg + 1min) x 6 sin descanso.</b></p>
-            <p><b>Recuperación:</b> 1 minuto caminando.</p>
-            <p>A mimir. 😴</p>`   
-    },
-    ],
-    "Día 5 - Full Body": [
+    "Día 2 - Superior (Antagonistas)": [
       { title: "HIIT en Cinta (caminadora)",
       body: `<p><strong>15 a 20 MINUTOS TOTALES.</strong></p>
-            <p><b>Intenta exigirte más con la velocidad!</b></p>
+            <p><b>Actividad Opcional para cuando tengas tiempo!</b> Si la podés hacer mejor!</p>
+            <p><b>Intenta exigirte más con la velocidad cada semana que lo realices!</b></p>
             <p>Inclinar la Cinta unos 9 grados.</p>
             <p><b>2 minutos:</b> caminar.</p>
             <p>Desinclinar la Cinta a 0 grados (llano).</p>
@@ -9716,6 +9702,20 @@ const USER_HIIT_DAY_NOTES = {
             </ul>
             <p><b>Repetir 4 veces seguidas:</b> o sea <b>(300 m fast + 150 m slow) x 4 sin descanso.</b></p>
             <p><b>Recuperación:</b> 1 minuto caminando.</p>
+            <p>A mimir. 😴</p>`
+    },
+    ],
+    "Día 5 - Full Body": [
+     { title: "HIIT en Bicicleta",
+      body: `<p><strong>17 a 20 MINUTOS TOTALES.</strong></p>
+            <p><b>3-5 minuto:</b> calentamiento.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>30-40 segundos a máxima intensidad (alta resistencia/velocidad).</li>
+            <li>50-60 segundos de pedaleo suave (recuperación actica).</li>
+            </ul>
+            <p><b>Repetir 8-10 veces seguidas:</b> o sea <b>(30-40seg + 50-60seg) x 8-10 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 2 minutos de pedaleo suave para enfriar.</p>
             <p>A mimir. 😴</p>`
     },
     ],
