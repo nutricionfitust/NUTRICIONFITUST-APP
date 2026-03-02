@@ -6043,9 +6043,6 @@ const trainingFolders = {
             restAfter: "2-3min"            
           },
           ],
-          "Entrenamiento HIIT": [
-            "Correr en Cinta (caminadora)",
-          ],
           },
 
         "Día 4 - Piernas":  {
