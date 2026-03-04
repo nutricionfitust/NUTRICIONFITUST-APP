@@ -8538,9 +8538,9 @@ const userPasswords = {
   'vesuvio-spaghetti-spaghetti-octavo': 'azulcherubini3',
   'gondola-vesuvio-balalaika-siberia-borscht-urali-limoncello-octavo': 'damianportillo2',
   'gondola-vesuvio-balalaika-siberia-borscht-urali-limoncello-laguna': 'damianportillo3',
-  'piazza-opera-vesuvio-russia-firenze-roma': 'jhoancastaño1', //jhoan1
-  '‘matrioska-espresso-laguna-amore-russia’': 'jhoancastaño2', //jcasta2
-  '‘piazza-opera-urali-vesuvio-russia-tundra-vesuvio-laguna’': 'jhoancastaño3', //jhoanca3
+  'piazza-opera-urali-vesuvio-russia-firenze': 'jhoancastaño1', //jhoan1
+  'piazza-tundra-vesuvio-espresso-amore-vesuvio-octavo': 'jhoancastaño2', //jcasta2
+  'piazza-opera-urali-vesuvio-russia-tundra-vesuvio-laguna': 'jhoancastaño3', //jhoanca3
   'gondola-siberia-dolcevita-kremlin-urali-espresso-vesuvio-russia':'diegosantandrian1',
   'napolitana-limoncello-quarzo-espresso-dolcevita-limoncello-dolcevita-limoncello': 'brunoserer1',
   'islandia-vesuvio-tundra-opera-dolcevita-urali-borschino': 'kacheoyhamburu3',
