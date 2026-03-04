@@ -3349,7 +3349,7 @@ const trainingFolders = {
             "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
             {
               superset: [
-            "Elevación de Piernas Inclinado 2 x 12• 10• 10",
+            "Elevación de Piernas Inclinado 3 x 12• 10• 10",
             "Plancha Frontal 2 x 1min",
             ],
             restAfter: "1min 30seg"
