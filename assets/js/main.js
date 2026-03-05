@@ -3553,7 +3553,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
-            "Dominadas Agarre Prono 3 x 8• 8• 8",
+            "Flexiones BB Cerradas + Carpa 3 x 20• 16• 12",
             "Bíceps + Press Arnold con Mancuernas 3 x 12• 12• 12"
           ],
             restAfter: "1-2min"
@@ -3697,7 +3697,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
-            "Dominadas Agarre Prono 2 x 12• 12",
+            "Dominadas Agarre Prono 2 x 8• 8",
             "Flexiones BB 2 x 20• 20",
           ],
             restAfter: "1min"
@@ -3845,7 +3845,7 @@ const trainingFolders = {
         "Acondicionamiento & Calentamiento": [
           {
             superset: [
-            "Flexiones BB Cerradas 2 x 20• fallo",
+            "Flexiones BB Cerradas + Carpa 2 x 20• fallo",
             "Plancha Lateral 2 x 40seg a cada lado",
           ],
             restAfter: "1-2min"
@@ -3901,7 +3901,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
-            "Flexiones BB Cerradas + Carpa 2 x 20• 20",
+            "Flexiones BB Cerradas + Carpa 2 x 20• 16",
             "Plancha Frontal 2 x 1min• 1min",
           ],
             restAfter: "1-2min"
