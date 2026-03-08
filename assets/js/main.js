@@ -1330,7 +1330,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
             "Elevación de Piernas Vertical (Colgado) 3 x fallo• fallo• fallo rest=1-2min",
             "Polea al Pecho con Triángulo 4 x 14• 12• ↓12• ↓(10+6) rest=2min",
-            "Remo Unilateral Scon Mancuernas 4 x 12• 10• ↓10 rest=2min",
+            "Remo Unilateral con Mancuernas 4 x 12• 10• ↓10 rest=2min",
             "Remo con Barra 3 x 12• ↑10• 10 rest=2min",
             "Extensión de Tríceps con Polea con Barra 3 x 12• (12+8)• ↓(12+8)  rest=2min",                
             {
@@ -1449,7 +1449,7 @@ const trainingFolders = {
           ],
           "Entrenamiento de Fuerza": [
             "Polea al Pecho con Triángulo 4 x 14• 12• ↓12• ↓(10+6) rest=2min",
-            "Remo Unilateral Scon Mancuernas 4 x 12• 10• ↓10 rest=2min",
+            "Remo Unilateral con Mancuernas 4 x 12• 10• ↓10 rest=2min",
             "Remo con Barra 3 x 12• ↑10• 10 rest=2min",
             "Extensión de Tríceps con Polea con Barra 3 x 12• (12+8)• ↓(12+8)  rest=2min",                
             {
@@ -2479,6 +2479,167 @@ const trainingFolders = {
 },
   "5 MUSCULACIÓN + 1 HIIT + (1 LISS)": {
   routines: {
+//RUTINA SOFIA USTARROZ Nº 1 - 5 MUSCULACIÓN + 1 HIIT + (1 LISS) !
+        "sofiaustarroz1": {
+      name: "Sofi",
+         // PLAN DE ENTRENAMIENTO SEMANAL !     
+      plan: {  
+
+        "Día 1 - Piernas": {
+          "Acondicionamiento & Calentamiento": [
+        {              
+          superset: [
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
+            "Sentadillas + Estocadas con Bolsa (o Mancuernas) 3 x 16• 12• 12",
+            ],
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento de Fuerza": [
+            "Isquiotibiales Sentada 4 x 14• (12+8)• (10+8)• 10 rest=1-2min",
+            "Aductores Sentada 3 x fallo• fallo• fallo rest=1-2min",
+            "Sentadillas en Smith 5 x 14 (60% RM)• ↑12• ↑10• ↑8• ↓8 rest=2-4min",
+            "Hip Thrust en Smith 3 x 12• ↑10• ↑8 rest=2-3min",
+            "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
+            {
+              superset: [
+            "Crunch Declinado 3 x 16• 12• 12",
+            "Plancha Frontal 3 x 1min",
+            ],
+            restAfter: "1min 30seg"
+          },
+            ],
+          },
+
+      "Día 2 - Superior (Énfasis Pecho)":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Bíceps + Press Arnold con Mancuernas 2 x 16• 12",
+            "Vuelos Laterales con Mancuernas 2 x 12• 12 (liviano)"
+          ],
+            restAfter: "1min 30seg"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+            "Polea al Pecho Agarre Prono Cerrado 4 x ↑16• ↑12• 10• ↓10 rest=1-2min",
+            "Aperturas en Banca Inclinado con Mancuernas 4 x ↑16• ↓(12+8)• 12• 10 rest=2-3min",
+            "Press Inclinado con Mancuernas 4 x 12• 10• 10• 8 rest=2-3min",
+            "Fondos Sentada en Máquina 3 x fallo (entre 8 a 12 reps) rest=2-3min",
+          {
+            superset: [
+            "Vuelos Laterales con Mancuernas 3 x 12• ↓10• 10",
+            "Bíceps Martillo Alternado con Mancuernas 3 x 10• ↑8• 8"
+          ],
+            restAfter: "2-3min"
+          },
+          ],
+          },
+
+        "Día 3 - Superior (Énfasis Espalda + Brazos)":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Bíceps + Press Arnold con Mancuernas 2 x 12• 12", 
+            "Plancha Frontal 2 x 1min• 1min",
+          ],
+            restAfter: "1min"
+          },           
+          ],
+          "Entrenamiento de Fuerza": [
+            "Polea al Pecho con Triángulo 4 x 14• 12• ↓12• ↓(10+6) rest=2min",
+            "Remo Unilateral Sentada en Máquina 3 x 12• 10• ↓10 rest=2min",
+            "Vuelos Posteriores con Mancuernas 3 x 12• 10• 10 rest=1-2min",
+            "Polea al Pecho Prono Cerrado 3 x 12• 10• 10• 8 rest=1-2min",
+            "Extensión de Tríceps con Polea con Barra 3 x 12• (12+8)• ↓(12+8)  rest=2min",                
+            {
+              superset: [
+            "Press Francés Acostado 𝟰𝟱° con Mancuerna 3 x 12• ↓12• 10",
+            "Bíceps Predicador con Mancuerna 3 x 12• ↑10• 8 rest=1-2min",
+            ],
+            restAfter: "2min"
+          },
+          ],
+          },
+
+        "Día 4 - Piernas":  {
+          "Acondicionamiento & Calentamiento": [
+        {
+              superset: [
+            "Rotaciones con Bolsa (o disco) 2 x 12• 10 a cada lado",
+            "Burpees Completos 2 x 8• 6",
+            "Sentadillas + Estocadas con Bolsa (o mancuernas) 2 x 12• 12",
+            ],
+            restAfter: "1min"
+          },
+          "Plancha Frontal 1 x a lo que dés!"
+            ],
+          "Entrenamiento de Fuerza": [
+            "Crunch en Máquina 4 x 16• 12• 12• 10 rest=1-2min",
+            "Isquiotibiales Acostada 4 x 12• 12• 10• 10 rest=1-2min",
+          {
+              superset: [
+            "Prensa 5 x 14• ↑12• ↑10(RIR 2)• ↑10• ↑8",
+            "Gemelos en Prensa 5 x 10 a 14 reps al fallo",
+                      ],
+            restAfter: "2-4min"
+          },
+            "Sentadillas Sumo 4 x 12• 10• 10• 8 rest=2-3min",
+            "Sentadillas Búlgara con Mancuernas 4 x 12• ↑10• ↑8• 8 rest=2-3min",
+            "Extensión de Cuádriceps Sentada 4 x 12• ↓(10+8)• ↓(10+6)• 10 rest=1-2min",
+            ],
+          },
+
+        "Día 5 - Full Body":  {
+          "Acondicionamiento & Calentamiento": [
+         {
+            superset: [
+            "Bíceps + Press Arnold con Mancuernas 2 x 12 12",
+            "Plancha Frontal 2 x 1min• 1min",
+          ],
+            restAfter: "1-2min"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+          {
+            superset: [
+            "Arranque con Mancuerna + Press de Hombro Alternado 4 x 10• 10• ↑8• 8",
+            "Burpees Completos 4 x 10• 10• 8• 8"
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Press Martillo Acostada con Mancuernas 4 x 12• ↑10• ↑8• 8",
+            "Vuelos Posteriores con Mancuerna Sentada 4 x 12• 12• ↑10• 10"
+          ],
+            restAfter: "2-3min"           
+          },
+          {
+            superset: [
+            "Press Inclinado con Mancuernas 3 x 12• ↑10• 10",
+            "Biceps Martillo Alternado con Mancuernas 3 x 10• 10• 8"
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Remo Unilateral con Mancuerna 4 x 12• ↑10• 10• 8",
+            "Fondos Sentada en Máquina 4 x fallo (entre 8 a 12 reps)"
+          ],
+            restAfter: "2-3min"            
+          },
+          ],
+          "Entrenamiento HIIT": [
+            "Máquina de Remo"
+            ],
+          },
+      },
+    },
+
+
+
+
 //RUTINA CARLOS PRADO Nº 1 - 5 MUSCULACIÓN + 1 HIIT + (1 LISS) !
         "carlosprado1": {
       name: "Charly",
@@ -2553,7 +2714,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
             "Elevación de Piernas Vertical (Colgado) 3 x fallo• fallo• fallo rest=1-2min",
             "Polea al Pecho con Triángulo 4 x 14• 12• ↓12• ↓(10+6) rest=2min",
-            "Remo Unilateral Scon Mancuernas 4 x 12• 10• ↓10 rest=2min",
+            "Remo Unilateral con Mancuernas 4 x 12• 10• ↓10 rest=2min",
             "Remo con Barra 3 x 12• ↑10• 10 rest=2min",
             "Extensión de Tríceps con Polea con Barra 3 x 12• (12+8)• ↓(12+8)  rest=2min",                
             {
@@ -3015,7 +3176,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
             "Elevación de Piernas Vertical (Colgado) 3 x fallo• fallo• fallo rest=1-2min",
             "Polea al Pecho con Triángulo 4 x 14• 12• ↓12• ↓(10+6) rest=2min",
-            "Remo Unilateral Scon Mancuernas 4 x 12• 10• ↓10 rest=2min",
+            "Remo Unilateral con Mancuernas 4 x 12• 10• ↓10 rest=2min",
             "Remo con Barra 3 x 12• ↑10• 10 rest=2min",
             "Extensión de Tríceps con Polea con Barra 3 x 12• (12+8)• ↓(12+8)  rest=2min",                
             {
@@ -9225,6 +9386,7 @@ const userRoutineMapping = {
   carlosprado2: { folder: "5 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "carlosprado2" },
   carlosprado3: { folder: "5 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "carlosprado3" },
   josepirela1: { folder: "5 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "josepirela1" },
+  sofiaustarroz1: { folder: "5 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "sofiaustarroz1" },
   diegosantandrian1: { folder: "6 MUSCULACIÓN + 2 HIIT + (1 LISS)", routine: "diegosantandrian1" },
   santiagopanayotidis1: { folder: "6 MUSCULACIÓN + 2 HIIT + (1 LISS)", routine: "santiagopanayotidis1" },
   joserebolledo1: { folder: "6 MUSCULACIÓN + 2 HIIT + (1 LISS)", routine: "joserebolledo1" },
@@ -9252,7 +9414,6 @@ const userPasswords = {
   'tundra-vesuvio-balalaika-siberia-yogurt-vesuvio-yogurt-vesuvio': 'camilafrancoblonda',
   'amore-vesuvio-tundra-siberia-spaghetti-vesuvio-russia-vesuvio': 'tacianabavaud',
   'napolitana-dolcevita-russia-yogurt-vesuvio-quarzo-gondola-vesuvio-firenze': 'benjaminlauda1', //benlauda1
-  'espresso-urali-tiramisu-siberia-vesuvio-octavo-zarina-octavo-batata': 'sofiaustarroz',
   'gondola-vesuvio-russia-borschino-tiramisu': 'danielflores1', //danyf
   'gondola-vesuvio-russia-borschino-tiramisu-octavo': 'danielflores2', //danyf2
   'vesuvio-spaghetti-quarzo-yogurt-tundra-opera-dolcevita-limoncello-quarzo-firenze': 'azulcherubini2',
@@ -9311,6 +9472,7 @@ const userPasswords = {
   'piazza-vesuvio-gelato-siberia-piazza-octavo': 'javierjofremaldonado2', //javij2
   'piazza-vesuvio-gelato-siberia-laguna': 'javierjofremaldonado3', //javi3
   'piazza-vesuvio-borscht-siberia-firenze': 'josepirela1', //japi1
+  'espresso-urali-tiramisu-firenze': 'sofiaustarroz1', //sof1
 
 
 
@@ -9522,25 +9684,6 @@ const USER_HIIT_DAY_NOTES = {
     "Día 3 - Full": [
       { title: "HIIT en Bicicleta",
       body: `<p><strong>AVISAME SI FUNCIONA y te subo el ejercicio</strong></p>`
-    },
-    ],
-  },
-
-
-
-  "sofiaustarroz": {
-    "Día 1 - Pecho y Tríceps": [
-      { title: "HIIT en cinta (caminadora)",
-      body: `<p><strong>12 MINUTOS TOTALES.</strong></p>
-            <p><b>2 minutos:</b> trote suave para entrar en calor.</p>
-            <p>Luego, <b>intervalos (HIIT):</b></p> 
-            <ul class="list-disc pl-6">
-            <li>40 segundos a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
-            <li>1 minuto de trote suave (ej: ~8 km/h).</li>
-            </ul>
-            <p><b>Repetir 5 veces seguidas:</b> o sea <b>(40seg + 1min) x 5 sin descanso.</b></p>
-            <p><b>Recuperación:</b> 1 minuto caminando.</p>
-            <p>A mimir. 😴</p>`
     },
     ],
   },
@@ -10120,6 +10263,23 @@ const USER_HIIT_DAY_NOTES = {
     },
     ],
   },  
+
+
+ "sofiaustarroz1": {
+    "Día 5 - Full Body": [
+      { title: "HIIT en Máquina de Remo",
+      body: `<p><strong>9 a 15 MINUTOS TOTALES.</strong></p>
+            <p><b>2 minutos:</b> ritmo cómodo para calentar.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>Rema durante 1 minuto a la intensidad más alta que puedas.</li>
+            <li>Descansa durante 1 minuto.</li>
+            </ul>
+            <p><b>Repetir el entrenamiento tantas veces como te sea posible!:</b> has un mínimo de 3 ciclos de <b>(1min full + 1min de descanso).</b></p>
+            <p>A mimir. 😴</p>`
+  },
+  ],
+  },   
 
 
 
