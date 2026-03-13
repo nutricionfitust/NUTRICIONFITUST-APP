@@ -4339,9 +4339,8 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
-            "Flexiones BB Cerradas 2 x 20• 16",
+            "Flexiones BB Cerradas 2 x 20• 16 (comenzá normal y a medida que te canses, apoyá las rodillas)",
             "Bíceps + Press Arnold con Mancuernas 2 x 16• 12",
-            "Vuelos Laterales con Mancuernas 2 x 10• 10 (liviano)"
           ],
             restAfter: "1min 30seg"
           },
@@ -4369,7 +4368,7 @@ const trainingFolders = {
           {
             superset: [
             "Vuelos Posteriores con Mancuernas 3 x 16• 12• 12", 
-            "Flexiones BB Cerradas + Carpa 2 x 20• 16",
+            "Flexiones BB Cerradas + Carpa 2 x 20• 16 (comenzá normal y a medida que te canses, apoyá las rodillas)",
           ],
             restAfter: "1min"
           },           
@@ -4386,6 +4385,7 @@ const trainingFolders = {
             ],
             restAfter: "2min"
           },
+          "Crunch en Máquina 2 x 16• 16 rest=1-2min"
           ],
           },
 
@@ -4394,8 +4394,8 @@ const trainingFolders = {
         {
               superset: [
             "Rotaciones con Bolsa (o disco) 2 x 12• 10 a cada lado",
-            "Burpees Completos 2 x 10• 8",
-            "Sentadillas + Estocadas con Bolsa (o mancuernas) 2 x 12• 12",
+            "Burpees Completos 1 x 10",
+            "Sentadillas + Estocadas con Bolsa (o mancuernas) 1 x 18",
             ],
             restAfter: "1min"
           },
@@ -4405,12 +4405,12 @@ const trainingFolders = {
             "Isquiotibiales Acostado 3 x 16• 12• 10 rest=1-2min",
           {
               superset: [
-            "Prensa 5 x 20• ↑12• ↑10(RIR 2)• ↑10• ↑8",
+            "Prensa 5 x 16• ↑12• ↑10(RIR 2)• ↑10• ↑8",
             "Gemelos en Prensa 5 x 10 a 14 reps al fallo",
             ],
             restAfter: "2-4min"
           },
-            "Sentadillas Búlgara con Mancuernas 4 x 12• ↑10• ↑8• 8 rest=2-3min",
+            "Sentadillas Búlgara con Mancuernas 3 x 12• ↑10• ↑8 rest=2min",
             "Extensión de Cuádriceps Sentado 3 x (12+8)• (12+6)• ↓(10+8) rest=1-2min",
             ],
           "Entrenamiento HIIT": [
