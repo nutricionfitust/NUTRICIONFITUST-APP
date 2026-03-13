@@ -787,6 +787,104 @@ const trainingFolders = {
 
 
 
+
+//RUTINA NICOLAS BUFFARINI Nº 1 - 3 MUSCULACIÓN + 1 HIIT + (1 LISS) !  
+        "nicolasbuffarini1": {
+      name: "Nicolás",
+// PLAN DE ENTRENAMIENTO SEMANAL !    
+      plan: {
+        "Día 1 - Piernas": {
+          "Acondicionamiento & Calentamiento": [            
+            {
+              superset: [
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
+            "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 3 x 16• 12• 12",
+            ],
+            restAfter: "1min"
+          },
+           "Crunch en Máquina 3 x 16• 16• 12 rest=1min",
+            ],
+          "Entrenamiento de Fuerza": [
+            "Isquiotibiales Sentado 3 x 12• (12+8)• (10+8) rest=1-2min",
+            "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
+            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• ↓8 rest=2-4min",
+            "Hip Thrust en Smith 3 x 12• ↑10• ↑8• 8 rest=2-3min",
+            "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
+            "Plancha frontal 2 x 40seg a 1min rest=1min"
+            ],
+          },
+
+        "Día 2 - Pecho + Espalda":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Elevación de Piernas Acostado 2 x 16• 16",
+            "Flexiones BB Cerradas 2 x 20• 20 (comenzá normal y a medida que te canses, apoyá las rodillas)",
+          ],
+            restAfter: "1-2min"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+            "Vuelo Posterior Unilateral en Máquina Sentado 4 x 12• ↑12• ↑10• 10 rest=1-2min",
+            "Polea al Pecho con Triángulo 4 x 12• ↑10• ↓(12+8)• ↑12 rest=2-3min",
+            "Remo con Barra 4 x 12• ↑10• ↑8• 8 rest=2-3min",
+            "Press Militar con Mancuernas Sentado 4 x 12• ↑12• ↑10• 8 rest=2-3min",
+            "Press Banca Inclinado con Mancuernas 4 x 12• ↑12• ↑10• 8 rest=2-3min",
+            "Press banca 3 x 8• 8• 6 (a explotar🔥) rest=3-4min",
+            "Press de Pecho en Máquina 3 x 10• (10+6)• ↓(8+6) rest=2-3min",
+            ],
+          },
+
+          "Día 3 - Full Body":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Flexiones BB Cerradas + Carpa 2 x 20• 20 (comenzá normal y a medida que te canses, apoyá las rodillas)",
+            "Plancha Frontal 2 x 1min• 1min",
+          ],
+            restAfter: "1-2min"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+          {
+            superset: [
+            "Arranque con Mancuerna + Press de Hombro Alternado 4 x 10• 10• ↑8• 8",
+            "Burpees Completos 4 x 12• 10• 8• 8"
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Press Banca con Agarre Cerrado 4 x 12• ↑10• ↑8• 8",
+            "Vuelos Posteriores con Mancuerna Sentado 4 x 12• 12• ↑10• 10"
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Press Inclinado con Mancuernas 3 x 12• ↑10• 10",
+            "Biceps Martillo Alternado con Mancuernas 3 x 10• 10• 8"
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Remo Unilateral con Mancuerna 4 x 12• ↑10• 10• 8",
+            "Fondos para Triceps 4 x fallo• fallo• fallo• fallo"
+          ],
+            restAfter: "2-3min"            
+          },
+          ],
+          "Entrenamiento HIIT": [
+            "Correr en Cinta (caminadora)",
+          ],
+          },
+      },
+    },
+
+
+
+
     //RUTINA JAVIER JOFRE MALDONADO Nº 1 - 3 MUSCULACIÓN + 1 HIIT + (1 LISS) !  
         "javierjofremaldonado1": {
       name: "Javier",
@@ -9336,6 +9434,7 @@ const userRoutineMapping = {
   camilafrancoblonda:   { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "camilafrancoblonda" },
   tacianabavaud: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "tacianabavaud" },
   benjaminlauda1: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "benjaminlauda1" },
+  nicolasbuffarini1: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "nicolasbuffarini1" },
   javierjofremaldonado1: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "javierjofremaldonado1" },
   javierjofremaldonado2: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "javierjofremaldonado2" },
   javierjofremaldonado3: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "javierjofremaldonado3" },
@@ -9450,7 +9549,7 @@ const userPasswords = {
   'yogurt-quarzo-tundra-vesuvio-napolitana-limoncello-dolcevita-firenze':'lucascabrera1',
   'yogurt-quarzo-tundra-vesuvio-napolitana-limoncello-dolcevita-octavo':'lucascabrera2',
   'vesuvio-yogurt-vesuvio-russia-espresso-spaghetti': 'alansanchez',
-  'tundra-vesuvio-limoncello-vesuvio-gondola-dolcevita-urali-gelato-dolcevita-piazza-vesuvio': 'nicolasrivera',
+  'tundra-vesuvio-limoncello-vesuvio-gondola-dolcevita-urali-gelato-dolcevita-piazza-vesuvio': 'nicolasrivera', //caradeoveja
   'yogurt-siberia-espresso-vesuvio-yogurt-borschino': 'lisandroalyosha1',
   'balalaika-vesuvio-limoncello-siberia-urali-balalaika-siberia-firenze': 'mariomiranda1',
   'espresso-vesuvio-russia-amore-siberia-borscht-vesuvio-russia-vesuvio-firenze': 'santiagopanayotidis1', //santipana1
@@ -9473,6 +9572,7 @@ const userPasswords = {
   'piazza-vesuvio-gelato-siberia-laguna': 'javierjofremaldonado3', //javi3
   'piazza-vesuvio-borscht-siberia-firenze': 'josepirela1', //japi1
   'espresso-urali-tiramisu-firenze': 'sofiaustarroz1', //sof1
+  'russia-siberia-tundra-urali-napolitana-firenze': 'nicolasbuffarini1', //nicob1
 
 
 
@@ -10796,6 +10896,24 @@ const USER_HIIT_DAY_NOTES = {
     ],
   },  
 
+
+
+  "nicolasbuffarini1": {
+    "Día 3 - Full Body": [
+      { title: "HIIT en Cinta (caminadora)",
+      body: `<p><strong>12 MINUTOS TOTALES.</strong></p>
+            <p><b>2 minutos:</b> trote suave para entrar en calor.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>40 segundos a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
+            <li>1 minuto de trote suave (ej: ~8 km/h).</li>
+            </ul>
+            <p><b>Repetir 5 veces seguidas:</b> o sea <b>(40seg + 1min) x 5 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 1 minuto caminando.</p>
+            <p>A mimir. 😴</p>`
+    },
+    ],
+  },  
 
 
 
