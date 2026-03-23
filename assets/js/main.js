@@ -8564,7 +8564,7 @@ const trainingFolders = {
 
     //RUTINA VICTOR MANSILLA Nº 1 - 6 MUSCULACIÓN + 2 HIIT ! IDEM RUTINA IVAN GOIC 2
    "victormansilla1": {
-      name: "Fran",
+      name: "Victor",
       plan: {  
 
         "Día 1 - Piernas": {
@@ -11694,14 +11694,14 @@ const USER_HIIT_DAY_NOTES = {
        "victormansilla1": {
     "Día 2 - Pecho + Tríceps + Hombros": [
       { title: "HIIT en Cinta (caminadora)",
-      body: `<p><strong>14 MINUTOS TOTALES.</strong></p>
+      body: `<p><strong>12 MINUTOS TOTALES.</strong></p>
             <p><b>2 minutos:</b> trote suave para entrar en calor.</p>
             <p>Luego, <b>intervalos (HIIT):</b></p> 
             <ul class="list-disc pl-6">
             <li>40 segundos a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
             <li>1 minuto de trote suave (ej: ~8 km/h).</li>
             </ul>
-            <p><b>Repetir 6 veces seguidas:</b> o sea <b>(40seg + 1min) x 6 sin descanso.</b></p>
+            <p><b>Repetir 5 veces seguidas:</b> o sea <b>(40seg + 1min) x 5 sin descanso.</b></p>
             <p><b>Recuperación:</b> 1 minuto caminando.</p>
             <p>A mimir. 😴</p>`
     },
