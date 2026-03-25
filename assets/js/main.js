@@ -11408,7 +11408,7 @@ const USER_HIIT_DAY_NOTES = {
             <li>40 segundos a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
             <li>1 minuto de trote suave (ej: ~8 km/h).</li>
             </ul>
-            <p><b>Repetir 6 veces seguidas:</b> o sea <b>(40seg + 1min) x 6 sin descanso.</b></p>
+            <p><b>Repetir 5 veces seguidas:</b> o sea <b>(40seg + 1min) x 5 sin descanso.</b></p>
             <p><b>Recuperación:</b> 1 minuto caminando.</p>
             <p>A mimir. 😴</p>`   
     },
