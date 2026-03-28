@@ -6614,6 +6614,9 @@ const trainingFolders = {
 
         "Día 4 - Piernas":  {
           "Acondicionamiento & Calentamiento": [
+          "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 3 x 16• 12• 12 rest=1min",
+          ],
+          "Entrenamiento de Fuerza": [
             "Isquiotibiales Sentado 4 x 14• (12+10)• (10+6)• 8 rest=2min",
             "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
           {
