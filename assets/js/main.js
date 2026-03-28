@@ -6629,6 +6629,9 @@ const trainingFolders = {
             "Patadas en Máquina 4 x 12• 10• 10• 8 rest=2min",
             "Crunch en Máquina 3 x 16• 12• 12 rest=1-2min"
             ],
+          "Entrenamiento HIIT": [
+            "Máquina de Remo",
+          ],
           },
 
         "Día 5 - Full Body":  {
@@ -11742,6 +11745,19 @@ const USER_HIIT_DAY_NOTES = {
             <p>A mimir. 😴</p>`
     },
     ],
+        "Día 4 - Piernas": [
+      { title: "HIIT en Máquina de Remo",
+      body: `<p><strong>9 a 15 MINUTOS TOTALES.</strong></p>
+            <p><b>2 minutos:</b> ritmo cómodo para calentar.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>Rema durante 1 minuto a la intensidad más alta que puedas.</li>
+            <li>Descansa durante 1 minuto.</li>
+            </ul>
+            <p><b>Repetir el entrenamiento tantas veces como te sea posible!:</b> haz un mínimo de 3 ciclos de <b>(1min full + 1min de descanso).</b></p>
+            <p>A mimir. 😴</p>`
+  },
+  ],
   },   
 
 
