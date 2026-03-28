@@ -6532,6 +6532,140 @@ const trainingFolders = {
 
 
 
+    //RUTINA IVÁN Nº 5 - 5 MUSCULACIÓN + 2 HIIT !
+    "ivangoic5": {
+      name: "Iván",
+      plan: {  
+
+        "Día 1 - Piernas": {
+          "Acondicionamiento & Calentamiento": [
+          "Escalera Mecánica 5 minutos velocidad aprox 10 - 12",
+          ],
+          "Entrenamiento de Fuerza": [
+            "Cargadas con Barra 3 x 10• 8• 8 rest=2-3min",
+            "Peso Muerto Convencional 4 x 12• ↑10• ↑8• 8 rest=3-4min",
+            "Hip Thrust con Barra 4 x 10• 10• ↑8• 8 rest=3min",
+            "Estocadas con Mancuernas 3 x 12• ↑10• ↑8 rest=2min",
+            "Extensión de Cuádriceps Sentado 4 x 14• ↓(10+8)• ↓(10+8)• 10 rest=2-3min",
+            "Crunch en Máquina 3 x 16• 12• 12 rest=1-2min",
+            ],
+          },
+
+      "Día 2 - Pecho + Hombros":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Biceps + Press Arnold con Mancuernas 2 x 12• 12",
+            "Flexiones BB Cerradas + Carpa 2 x 20• 16",
+          ],
+            restAfter: "1-2min"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+            "Espalda con Polea 4 x 12• ↑10• 10• 8 rest=1-2min",
+            "Aperturas Sentado en Máquina 4 x 12• 12• 10• (12+8) rest=2-3min",
+            "Press Banca 4 x 12• ↑10• 10• ↑↑6 rest=3min",
+            "Press Banca con Agarre Cerrado 3 x ↓12• ↑10• ↑(8+↓6) rest=2-3min",
+            "Press Militar con Mancuernas Sentado 3 x 10• ↑10• 8 rest=2-3min",
+            "Press de Pecho en Máquina 4 x 12• ↑10• (10+6)• ↓(8+6) rest=2-3min",
+            "Crunch en Máquina 3 x 16• 12• 12 rest=1-2min",
+            ],
+          },
+
+        "Día 3 - Espalda + Brazos":  {
+        "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Flexiones BB Cerradas 2 x 20• fallo",
+            "Plancha Lateral 2 x 40seg a cada lado",
+          ],
+            restAfter: "1-2min"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+          {
+            superset: [
+            "Crunch Declinado 3 x 20• 16• 12",
+            "Plancha Frontal 3 x 1min"
+          ],
+            restAfter: "1min"            
+          },
+          "Polea con Triángulo 4 x 12• ↑10• ↓(12+8)• ↑12 rest=2-3min",
+          "Remo Unilateral Sentado en Máquina 4 x 12• ↑10• ↓10• 8 rest=2-3min",
+                    {
+            superset: [
+            "Vuelos Posteriores con Mancuernas 3 x 12• ↑10• 10 (son 3 series, está ok)",
+            "Biceps Martillo Alternado con Mancuernas 4 x 10• ↑10• ↑8• 8",
+          ],
+            restAfter: "2min"            
+          },
+          ],
+          },
+
+        "Día 4 - Piernas":  {
+          "Acondicionamiento & Calentamiento": [
+          "Escalera Mecánica 5 minutos velocidad aprox 10 - 12",
+          ],
+          "Entrenamiento de Fuerza": [
+            "Cargadas con Barra 3 x 10• 8• 8 rest=2min",
+            "Peso Muerto Convencional 4 x 12• ↑10• ↑8• 8 rest=3-4min",
+            "Hip Thrust con Barra 4 x 10• 10• ↑8• 8 rest=2-3min",
+            "Estocadas con Barra 4 x 12• ↑10• ↑8• 8 rest=2-3min",
+            "Extensión de Cuádriceps Sentado 4 x 14• ↓(10+8)• ↓(10+8)• 12 rest=1-2min",
+            ],
+          },
+
+        "Día 5 - Full Body":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Flexiones BB Cerradas + Carpa 2 x 20• 20",
+            "Plancha Frontal 2 x 1min• 1min",
+          ],
+            restAfter: "1-2min"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+          {
+            superset: [
+            "Arranque con Mancuerna + Press de Hombro Alternado 4 x 10• 10• ↑8• 8",
+            "Burpees Completos 4 x 12• 10• 8• 8"
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Press Banca con Agarre Cerrado 4 x 12• ↑10• ↑8• 8",
+            "Vuelos Posteriores con Mancuerna Sentado 4 x 12• 12• ↑10• 10"
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Press Inclinado con Mancuernas 3 x 12• ↑10• 10",
+            "Biceps Martillo Alternado con Mancuernas 3 x 10• 10• 8"
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Remo Unilateral con Mancuerna 4 x 12• ↑10• 10• 8",
+            "Fondos para Triceps 4 x fallo• fallo• fallo• fallo"
+          ],
+            restAfter: "2-3min"            
+          },
+          ],
+          "Entrenamiento HIIT": [
+            "Correr en Cinta (caminadora)",
+          ],
+          },
+      },
+    },
+
+
+
+
+
 //RUTINA MATÍAS Nº 1 - 5 MUSCULACIÓN + 2 HIIT !
     "matiascanalini1": {
       name: "Matías",
@@ -7326,7 +7460,7 @@ const trainingFolders = {
           ],
           "Entrenamiento de Fuerza": [
             "Espalda con Polea 4 x 12• ↑10• 10• 8 rest=1-2min",
-            "Apertturas Sentado en Máquina 4 x 12• 12• 10• (12+8) rest=2-3min",
+            "Aperturas Sentado en Máquina 4 x 12• 12• 10• (12+8) rest=2-3min",
             "Press Banca 4 x 12• ↑10• 10• ↑↑6 rest=3min",
             "Press Banca con Agarre Cerrado 3 x ↓12• ↑10• ↑(8+↓6) rest=2-3min",
             "Press Militar con Mancuernas Sentado 3 x 10• ↑10• 8 rest=2-3min",
@@ -9934,6 +10068,7 @@ const userRoutineMapping = {
   ivangoic2: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "ivangoic2" },
   ivangoic3: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "ivangoic3" },
   ivangoic4: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "ivangoic4" },
+  ivangoic5: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "ivangoic5" },
   matiascanalini1: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "matiascanalini1" },
   matiascanalini2: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "matiascanalini2" },
   matiascanalini3: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "matiascanalini3" },
@@ -10005,9 +10140,10 @@ const userPasswords = {
   'yogurt-quarzo-siberia-espresso-kremlin-laguna': 'luisgonzalez3',  
   'borscht-vesuvio-yogurt-urali-balalaika-vesuvio-tundra-vesuvio': 'palomacarrera1',
   'borscht-vesuvio-yogurt-urali-balalaika-vesuvio-tundra-vesuvio-octavo': 'palomacarrera2',
-  'siberia-gelato-vesuvio-russia-kremlin-octavo': 'ivangoic2',
-  'siberia-gelato-vesuvio-russia-kremlin-laguna': 'ivangoic3',
-  'siberia-gelato-vesuvio-russia-kremlin-hermitage': 'ivangoic4',
+  'siberia-gelato-vesuvio-russia-kremlin-octavo': 'ivangoic2', //ivang2
+  'siberia-gelato-vesuvio-russia-kremlin-laguna': 'ivangoic3', //ivang3
+  'siberia-gelato-vesuvio-russia-kremlin-hermitage': 'ivangoic4', //ivang4
+  'siberia-gelato-vesuvio-russia-kremlin-batata': 'ivangoic5', //ivang5
   'balalaika-vesuvio-amore-siberia-tundra-vesuvio-russia-vesuvio-firenze': 'matiascanalini1', //maticana1
   'balalaika-vesuvio-amore-siberia-vesuvio-espresso-tundra-vesuvio-russia-vesuvio-octavo': 'matiascanalini2', //matiascana2
   'balalaika-vesuvio-amore-amore-laguna': 'matiascanalini3', //matt3
