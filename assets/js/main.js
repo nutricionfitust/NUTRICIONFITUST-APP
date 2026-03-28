@@ -7285,24 +7285,19 @@ const trainingFolders = {
           },
           ],
           "Entrenamiento de Fuerza": [
+          "Crunch en Máquina 3 x 16• 12• 12 rest=1-2min",
           {
             superset: [
-            "Arranque con Mancuerna + Press de Hombro Alternado 4 x 10• 10• ↑8• 8",
-            "Burpees Completos 4 x 12• 10• 8• 8"
+            "Arranque con Mancuerna + Press de Hombro Alternado 3 x 10• 10• ↑8",
+            "Burpees Completos 3 x 12• 10• 8• 8",
+            "Plancha Frontal 3 x 1min",
           ],
             restAfter: "2-3min"            
           },
           {
             superset: [
-            "Press Banca con Agarre Cerrado 4 x 12• ↑10• ↑8• 8",
-            "Vuelos Posteriores con Mancuerna Sentado 4 x 12• 12• ↑10• 10"
-          ],
-            restAfter: "2-3min"            
-          },
-          {
-            superset: [
-            "Press Inclinado con Mancuernas 3 x 12• ↑10• 10",
-            "Biceps Martillo Alternado con Mancuernas 3 x 10• 10• 8"
+            "Press Inclinado con Mancuernas 4 x 12• ↑10• 10• ↑8",
+            "Biceps Martillo Alternado con Mancuernas 4 x 10• 10• ↑8• 8"
           ],
             restAfter: "2-3min"            
           },
@@ -7333,9 +7328,10 @@ const trainingFolders = {
             "Espalda con Polea 4 x 12• ↑10• 10• 8 rest=1-2min",
             "Apertturas Sentado en Máquina 4 x 12• 12• 10• (12+8) rest=2-3min",
             "Press Banca 4 x 12• ↑10• 10• ↑↑6 rest=3min",
-            "Press Banca Agarre Cerrado 3 x ↓12• ↑10• ↑(8+↓6) rest=2-3min",
+            "Press Banca con Agarre Cerrado 3 x ↓12• ↑10• ↑(8+↓6) rest=2-3min",
             "Press Militar con Mancuernas Sentado 3 x 10• ↑10• 8 rest=2-3min",
             "Press de Pecho en Máquina 4 x 12• ↑10• (10+6)• ↓(8+6) rest=2-3min",
+            "Crunch en Máquina 3 x 16• 12• 12 rest=1-2min",
             ],
           },
       },
