@@ -14265,6 +14265,33 @@ modal.addEventListener("click", (e) => {
 
 // ===== CAROUSEL =====
 const carousel = document.getElementById("carouselImages");
+
+// Detectar sistema
+const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+// Imágenes
+const iosImages = [
+  "images/instrucciones ios/instruccion1.png",
+  "images/instrucciones ios/instruccion2.png",
+  "images/instrucciones ios/instruccion3.png"
+];
+
+const androidImages = [
+  "images/android-step-1.png",
+  "images/android-step-2.png"
+];
+
+// Elegir set
+const imagesToLoad = isIOS ? iosImages : androidImages;
+
+// Cargar dinámicamente
+imagesToLoad.forEach(src => {
+  const img = document.createElement("img");
+  img.src = src;
+  img.className = "w-full flex-shrink-0 object-contain";
+  carousel.appendChild(img);
+});
+
 const prevBtn = document.getElementById("prevSlide");
 const nextBtn = document.getElementById("nextSlide");
 
@@ -14308,3 +14335,6 @@ carousel.addEventListener("touchend", (e) => {
 
   updateCarousel();
 });
+
+document.getElementById("deviceTitle").textContent =
+  isIOS ? "Instalación en iPhone (iOS)" : "Instalación en Android";
