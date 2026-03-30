@@ -3,8 +3,8 @@ const assetsToCache = [
   "/index.html",
   "/styles.css",
   "/main.js",
-  "/icons/icon-192.png",
-  "/icons/icon-512.png"
+  "/images/NFU_LOGO_cua_192.png",
+  "/images/NFU_LOGO_cua_512.png"
 ];
 
 self.addEventListener("install", event => {
