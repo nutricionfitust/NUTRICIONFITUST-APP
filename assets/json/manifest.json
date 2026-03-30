@@ -1,5 +1,5 @@
 {
-  "name": "Nutrición Fit Ustarroz Trainning App",
+  "name": "NFU Trainning App",
   "short_name": "NFU Trainning App",
   "description": "Plan Entrenamiento 100% personalizado",
   "start_url": "/index.html",
@@ -8,14 +8,14 @@
   "theme_color": "#4169E1",
   "icons": [
     {
-      "src": "/images/NFU NUEVO LOGO (cuadrada).jpg",
+      "src": "/images/NFU_LOGO_cua_192.png",
       "sizes": "192x192",
-      "type": "image/jpg"
+      "type": "image/png"
     },
     {
-      "src": "/images/NFU NUEVO LOGO (cuadrada).jpg",
+      "src": "/images/NFU_LOGO_cua_512.png",
       "sizes": "512x512",
-      "type": "image/jpg"
+      "type": "image/png"
     }
   ]
 }
