@@ -14236,3 +14236,28 @@ document.addEventListener('keydown', function(e) {
   }
 });
 
+//Service Worker para PWA (opcional, mejora cache y permite instalación como app)
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/sw.js")
+    .then(reg => console.log("Service Worker registrado"))
+    .catch(err => console.log("Error al registrar SW:", err));
+}
+
+let deferredPrompt;
+
+window.addEventListener("beforeinstallprompt", (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  const installBtn = document.getElementById("install-btn");
+  installBtn.style.display = "block";
+
+  installBtn.addEventListener("click", () => {
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then(choice => {
+      if (choice.outcome === "accepted") {
+        console.log("App instalada");
+      }
+      deferredPrompt = null;
+    });
+  });
+});
