@@ -14273,12 +14273,12 @@ const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 const iosImages = [
   "images/instrucciones ios/instruccion1.png",
   "images/instrucciones ios/instruccion2.png",
-  "images/instrucciones ios/instruccion3.png"
+  "images/instrucciones ios/instruccion3.png",
 ];
 
 const androidImages = [
-  "images/android-step-1.png",
-  "images/android-step-2.png"
+  "images/instrucciones android/instruccionan1.jpg",
+  "images/instrucciones android/instruccionan2.jpg",
 ];
 
 // Elegir set
