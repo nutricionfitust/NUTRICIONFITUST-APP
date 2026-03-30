@@ -14242,3 +14242,69 @@ if ("serviceWorker" in navigator) {
     .then(reg => console.log("Service Worker registrado"))
     .catch(err => console.log("Error al registrar SW:", err));
 }
+
+// ===== MODAL INSTALACIÓN APP =====
+const openBtn = document.getElementById("openInstallModal");
+const modal = document.getElementById("installModal");
+const closeBtn = document.getElementById("closeInstallModal");
+
+openBtn.addEventListener("click", () => {
+  modal.classList.remove("hidden");
+});
+
+closeBtn.addEventListener("click", () => {
+  modal.classList.add("hidden");
+});
+
+// Cerrar clickeando fuera
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.classList.add("hidden");
+  }
+});
+
+// ===== CAROUSEL =====
+const carousel = document.getElementById("carouselImages");
+const prevBtn = document.getElementById("prevSlide");
+const nextBtn = document.getElementById("nextSlide");
+
+let index = 0;
+
+function updateCarousel() {
+  carousel.style.transform = `translateX(-${index * 100}%)`;
+}
+
+nextBtn.addEventListener("click", () => {
+  if (index < carousel.children.length - 1) {
+    index++;
+    updateCarousel();
+  }
+});
+
+prevBtn.addEventListener("click", () => {
+  if (index > 0) {
+    index--;
+    updateCarousel();
+  }
+});
+
+let startX = 0;
+
+carousel.addEventListener("touchstart", (e) => {
+  startX = e.touches[0].clientX;
+});
+
+carousel.addEventListener("touchend", (e) => {
+  let endX = e.changedTouches[0].clientX;
+  let diff = startX - endX;
+
+  if (diff > 50 && index < carousel.children.length - 1) {
+    index++;
+  }
+
+  if (diff < -50 && index > 0) {
+    index--;
+  }
+
+  updateCarousel();
+});
