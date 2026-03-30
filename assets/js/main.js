@@ -14265,32 +14265,6 @@ modal.addEventListener("click", (e) => {
 
 // ===== CAROUSEL =====
 const carousel = document.getElementById("carouselImages");
-
-// Detectar sistema
-const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
-
-// Imágenes
-const iosImages = [
-  "images/instrucciones-ios/instruccion1.jpg",
-  "images/instrucciones-ios/instruccion2.jpg",
-  "images/instrucciones-ios/instruccion3.jpg",
-];
-
-const androidImages = [
-  "images/instrucciones-android/instruccionan1.jpg",
-];
-
-// Elegir set
-const imagesToLoad = isIOS ? iosImages : androidImages;
-
-// Cargar dinámicamente
-imagesToLoad.forEach(src => {
-  const img = document.createElement("img");
-  img.src = src;
-  img.className = "w-full flex-shrink-0 object-contain";
-  carousel.appendChild(img);
-});
-
 const prevBtn = document.getElementById("prevSlide");
 const nextBtn = document.getElementById("nextSlide");
 
