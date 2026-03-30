@@ -34,17 +34,6 @@
 <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Icono para iOS -->
-<link rel="apple-touch-icon" href="/images/NFU_LOGO_cua_192.png">
-<link rel="apple-touch-icon" sizes="512x512" href="/images/NFU_LOGO_cua_512.png">
-
-<!-- Nombre de la app que aparecerá en la pantalla de inicio -->
-<meta name="apple-mobile-web-app-title" content="NFU Trainning App">
-
-<!-- Abrir como web app -->
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-
  <!-- ESTILOS -->
   <link rel="stylesheet" href="assets/css/styles.css?v=20250908-2"/>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -105,10 +94,6 @@
     BASE DE EJERCICIOS
   </button>
 
-
-  <!-- BOTÓN INSTALAR APP -->
-  <button id="install-btn" style="display:none;">Instalar App</button>
-
   <!-- REDES SOCIALES -->
     <div class="flex justify-center gap-8">
       <a href="https://www.instagram.com/nutricionfitust/" target="_blank" rel="noopener noreferrer"
@@ -119,6 +104,36 @@
          class="flex flex-col items-center group">
         <i class="bi bi-tiktok text-black-600 text-4xl group-hover:text-blue-800 transition-colors"></i>
         <span class="text-xs text-white mt-1 group-hover:text-blue-200 transition-colors">TikTok</span>
+      
+        <!-- BOTÓN INSTALAR APP -->
+           <a href= "install-btn" class="flex flex-col items-center group">
+        <i class="bi bi-phone text-green-600 text-4xl group-hover:text-green-800 transition-colors"></i>
+        <span class="text-xs text-white mt-1 group-hover:text-blue-200 transition-colors">Instalar App</span>
+      </a>        
+
+        <!-- MODAL INSTRUCCIONES INSTALACIÓN -->
+<div id="installModal" class="fixed inset-0 z-50 hidden bg-black/80 flex justify-center items-center">
+  <div class="relative w-full max-w-4xl h-[90vh] bg-white rounded-2xl overflow-hidden flex flex-col">
+    <!-- Header modal -->
+    <div class="flex justify-between items-center p-4 border-b">
+      <h3 class="text-2xl font-bold text-blue-800">Cómo Instalar la App</h3>
+      <button id="closeInstallModal" class="text-gray-500 hover:text-gray-700 text-3xl font-bold">×</button>
+    </div>
+
+    <!-- Carrusel de imágenes -->
+    <div class="relative flex-1 overflow-hidden">
+      <div id="carouselImages" class="flex transition-transform duration-300">
+        <img src="images/ios-install.png" class="w-full flex-shrink-0 object-contain" alt="Instrucciones iOS">
+        <img src="images/android-install.png" class="w-full flex-shrink-0 object-contain" alt="Instrucciones Android">
+      </div>
+
+      <!-- Flechas -->
+      <button id="prevSlide" class="absolute left-2 top-1/2 -translate-y-1/2 text-white text-4xl font-bold bg-black/40 rounded-full w-10 h-10 flex items-center justify-center hover:bg-black/60">‹</button>
+      <button id="nextSlide" class="absolute right-2 top-1/2 -translate-y-1/2 text-white text-4xl font-bold bg-black/40 rounded-full w-10 h-10 flex items-center justify-center hover:bg-black/60">›</button>
+    </div>
+  </div>
+</div>
+
 <!-- SITIO WEB! PRÓXIMAMENTE -->
         <a href="NUTRICIONFITUST-ESTARA-DISPONILBE-PROXIMAMENTE!" target="_blank" rel="noopener noreferrer"
          class="flex flex-col items-center group">
