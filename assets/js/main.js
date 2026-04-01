@@ -14311,3 +14311,36 @@ carousel.addEventListener("touchend", (e) => {
 
 document.getElementById("deviceTitle").textContent =
   isIOS ? "Instalación en iPhone (iOS)" : "Instalación en Android";
+
+
+
+  
+  let isDragging = false;
+let startXMouse = 0;
+
+carousel.addEventListener("mousedown", (e) => {
+  isDragging = true;
+  startXMouse = e.clientX;
+});
+
+carousel.addEventListener("mouseup", (e) => {
+  if (!isDragging) return;
+
+  let endX = e.clientX;
+  let diff = startXMouse - endX;
+
+  if (diff > 50 && index < carousel.children.length - 1) {
+    index++;
+  }
+
+  if (diff < -50 && index > 0) {
+    index--;
+  }
+
+  updateCarousel();
+  isDragging = false;
+});
+
+carousel.addEventListener("mouseleave", () => {
+  isDragging = false;
+});
