@@ -280,7 +280,7 @@ window.exerciseDatabase = exerciseDatabase;
 =========================== */
 // Pasahitza de administrador (acceso a todas las carpetas y base)
 const ADMIN_PASSWORD_HASH =
-  "russia-quarzo-amore-limoncello-siberia-tundra-siberia-urali-russia-tiramisu-siberia-amore-quarzo-espresso-amore-hermitage-octavo-samovar-zarina-firenze-batata";
+  "russia-tiramisu-quarzo-hermitage-octavo-samovar-zarina-firenze-batata";
 
 /* ===========================
    CARPETAS / PLANES
