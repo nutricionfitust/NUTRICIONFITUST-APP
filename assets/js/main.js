@@ -10226,7 +10226,7 @@ const userPasswords = {
   'vesuvio-kremlin-quarzo-espresso-amore-siberia-russia-vesuvio-octavo-zarina-octavo-batata': 'agustina',
   'tiramisu-limoncello-vesuvio-russia-napolitana-vesuvio-limoncello-firenze-hermitage': 'francobarbero1', //franbar14
   'tundra-vesuvio-balalaika-siberia-yogurt-vesuvio-yogurt-vesuvio': 'camilafrancoblonda', //camilala
-  'tundra-vesuvio-balalaika-siberia-yogurt-vesuvio-firenze': 'camilaabendaño', //camila
+  'tundra-vesuvio-balalaika-firenze': 'camilaabendaño', //cam1
   'amore-vesuvio-tundra-siberia-spaghetti-vesuvio-russia-vesuvio': 'tacianabavaud',
   'napolitana-dolcevita-russia-yogurt-vesuvio-quarzo-gondola-vesuvio-firenze': 'benjaminlauda1', //benlauda1
   'gondola-vesuvio-russia-borschino-tiramisu': 'danielflores1', //danyf
