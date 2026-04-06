@@ -395,7 +395,7 @@ const trainingFolders = {
 "publicidadpiernas": {
         name: "👉🏻 esta es tu rutina de PIERNAS y GLÚTEOS 💪🏻🔥",
         plan: {
-          "Día Piernas + 🍑":  {
+          "Día Piernas + Glúteos 🍑":  {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
@@ -408,7 +408,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
             "Isquiotibiales Sentada 4 x 14• (12+6)• (10+6)• 10 rest=1-2min",
             "Aductores Sentada 3 x fallo• fallo• fallo rest=1-2min",
-            "Sentadillas en Smith 4 x 12• ↑10• 10• 8 rest=3min",
+            "Sentadillas en Smith 4 x 12• ↑10• 10• 8 rest=3-4min",
             "Hip Thrust en Smith 4 x 12• 10• ↑8• ↓10 rest=3min",
             "Patadas Atrás en Máquina 4 x 10• 10• 8• 8 rest=2min",        
           ],
