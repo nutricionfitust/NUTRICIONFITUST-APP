@@ -391,6 +391,89 @@ const trainingFolders = {
 
 
 
+// RUTINA PUBLICIDAD PIERNAS Nº 1 - 1 MUSCULACIÓN !
+"publicidadpiernas": {
+        name: "👉🏻 esta es tu rutina de PIERNAS y GLÚTEOS 💪🏻🔥",
+        plan: {
+          "Día Piernas + 🍑":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Movilidad",
+            "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 14• 12",
+          ],
+            restAfter: "1min"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+            "Isquiotibiales Sentada 4 x 14• (12+6)• (10+6)• 10 rest=1-2min",
+            "Aductores Sentada 3 x fallo• fallo• fallo rest=1-2min",
+            "Sentadillas en Smith 4 x 12• ↑10• 10• 8 rest=3min",
+            "Hip Thrust en Smith 4 x 12• 10• ↑8• ↓10 rest=3min",
+            "Patadas Atrás en Máquina 4 x 10• 10• 8• 8 rest=2min",        
+          ],
+          },
+      },
+// INFORMACIÓN RUTINA PUBLICIDAD BRAZOS PARA QUIENES ENTREN!
+      infoSections: [
+          {
+          title: "Hidratación y Recuperación",
+          html: `
+          <ul class="list-disc pl-6">
+          <li><b>Agua: 35 a 40 ml por kilo de peso corporal, más si entrenás fuerte e intenso, o consumís creatina.</b></li>
+          </ul>
+          `
+          },
+          {
+          title: "Entrenamiento 100% personalizado",
+          html: `
+          <p>Si querés un <b>plan de entrenamiento hecho a tu medida para maximizar tus ganancias</b>, enviame un 
+            <a href="https://wa.me/5491138803401?text=Hola%20Fran%2C%20quiero%20mi%20plan%20de%20entrenamiento!" target="_blank" class="text-green-600 font-semibold">
+            👉🏻 mensaje directo
+          </a>.
+          </p>
+            `
+          },
+          {
+          title: "Alimentación diaria",
+          html: `
+          <p>Mantené una ingesta adecuada y distribuida en el día.</p>
+          <p>Si querés un <b>plan nutricional para maximizar tus ganancias</b>, enviame un 
+            <a href="https://wa.me/5491138803401?text=Hola%20Fran%2C%20quiero%20mi%20plan%20nutricional!" target="_blank" class="text-green-600 font-semibold">
+            👉🏻 mensaje directo
+          </a>.
+          </p>
+            `
+          },
+          {
+          title: "Composición Corporal, Somatotipo y mucho más",
+          html: `
+          <p>
+          Con una <b>evaluación antropométrica ISAK</b> podés conocer tu <b>composición corporal real en el momento actual:</b> 
+          estimación de <b>% de tejido muscular</b>, <b>% de tejido adiposo</b>, <b>distribución de grasa</b> (dónde se acumula),
+          y tu <b>somatotipo</b> (perfil morfológico).
+          </p>
+          <p>
+          También se evalúa tu <b>estructura ósea</b> (diámetros y proporciones) para interpretar tu “marco” corporal y cómo se
+          relaciona con tu desarrollo muscular. Con estos datos se pueden calcular índices como el <b>IMO</b> (índice músculo óseo), que ayudan a estimar
+          tu <b>potencial de ganancia muscular natural</b> según la relación entre tu base estructural (hueso) y tu masa muscular.
+          </p>
+          <br><br>
+          <p>
+          Sirve para <b>entender cómo está distribuido tu tejido corporal</b> y así poder tomar mejores decisiones en tu entrenamiento, 
+          tu alimentación y tu proceso en general.
+          </p>
+          <p>
+          Si te ubicas en <b>CABA, Argentina 🇦🇷</b>, y querés una <b>evaluación completa y un informe claro</b>, enviame un
+          <a href="https://wa.link/ys1b21" target="_blank" class="text-green-600 font-semibold">
+            👉🏻 mensaje directo
+          </a>.
+          </p>
+            ` 
+          },
+          ],
+    },
+
 
 
 
@@ -10141,6 +10224,7 @@ const trainingFolders = {
 =========================== */
 const userRoutineMapping = {
   publicidadbrazos: { folder: "1 MUSCULACIÓN", routine: "publicidadbrazos" },
+  publicidadpiernas: { folder: "1 MUSCULACIÓN", routine: "publicidadpiernas" },
   agustina: { folder: "2 MUSCULACIÓN + (2 LISS)", routine: "agustina" },
   camilafrancoblonda:   { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "camilafrancoblonda" },
   camilaabendaño: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "camilaabendaño" },
@@ -10222,7 +10306,8 @@ const userRoutineMapping = {
 
 const userPasswords = {
   // CLAVES ÚINCAS DE USUARIOS
-  'napolitana-limoncello-vesuvio-spaghetti-urali-espresso': 'publicidadbrazos',
+  'napolitana-limoncello-vesuvio-spaghetti-urali-espresso': 'publicidadbrazos', //brazos
+  'borscht-siberia-dolcevita-limoncello-russia-vesuvio-espresso': 'publicidadpiernas', //piernas
   'vesuvio-kremlin-quarzo-espresso-amore-siberia-russia-vesuvio-octavo-zarina-octavo-batata': 'agustina',
   'tiramisu-limoncello-vesuvio-russia-napolitana-vesuvio-limoncello-firenze-hermitage': 'francobarbero1', //franbar14
   'tundra-vesuvio-balalaika-siberia-yogurt-vesuvio-yogurt-vesuvio': 'camilafrancoblonda', //camilala
