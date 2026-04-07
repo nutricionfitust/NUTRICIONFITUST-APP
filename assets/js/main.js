@@ -7659,25 +7659,25 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [            
             {
               superset: [
-            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 10 a cada lado",
+            "Rotaciones con Bolsa (o disco) 2 x 10• 10 a cada lado",
             "Burpees Completos 2 x 10• 10",
             ],
             restAfter: "1min"
           },
-          "Elevación de Piernas Inclinado 3 x 20• 12• 12 rest=1min"
+          "Elevación de Piernas Inclinado 3 x 16• 12• 12 rest=1min"
             ],
           "Entrenamiento de Fuerza": [
             "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
             "Sentadillas Sumo con Barra 4 x 16• ↑12• ↑10• ↑8 rest=2-4min",
             {
               superset: [
-            "Estocadas en Prensa 4 x 12• ↑10• 8• 8",
-            "Gemelos en Prensa 4 x 10 a 16 reps al fallo"
+            "Estocadas en Prensa 3 x 12• ↑8• 8 (cada pierna)",
+            "Gemelos en Prensa 3 x 10 a 16 reps al fallo"
             ],
             restAfter: "2-3min"
           },
             "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
-            "Hiperextensiones para Glúteos (con Peso) 3 x 16• 12• 12 rest=1-2min",
+            "Hiperextensiones para Glúteos (con Peso) 3 x 12• 12• 10 rest=1-2min",
             "Crunch en Máquina 3 x 16• 12• 12 rest=1-2min",
             ],
           },
@@ -7686,20 +7686,20 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
-            "Dominadas Agarre Prono 2 x 12• 12",
-            "Flexiones BB Cerradas + Carpa 2 x 20• 20",
+            "Flexiones BB Cerradas + Carpa 2 x 20• 16",
+            "Plancha Lateral 2 x 40seg a cada lado",
           ],
             restAfter: "1-2min"
           },
           ],
           "Entrenamiento de Fuerza": [
-            "Vuelo Posterior Unilateral en Máquina Sentado 4 x 12• ↑12• ↑10• 10 rest=1-2min",
             "Polea al Pecho con Triángulo 4 x 12• ↑10• ↓(12+↓8)• ↑12 rest=2-3min",
+            "Vuelo Posterior Unilateral en Máquina Sentado 4 x 12• ↑12• ↑10• 10 rest=1-2min",
             "Remo con Barra 4 x 12• ↑10• ↑8• 8 rest=2-3min",
             "Press Militar con Mancuernas Sentado 4 x 12• ↑12• ↑10• 8 rest=2-3min",
             "Press Banca Inclinado con Mancuernas 4 x 12• ↑12• ↑10• 8 rest=2-3min",
             "Press banca 3 x 10• 8• 8 (a explotar🔥) rest=3-4min",
-            "Press de Pecho en Máquina 3 x 10• (10+↓6)• ↓(8+↓6) rest=2-3min",
+            "Press de Pecho en Máquina 2 x (10+↓16²⁰%)• ↓(10+↓16²⁰%) rest=2-3min",
             ],
           },
 
