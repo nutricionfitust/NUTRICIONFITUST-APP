@@ -1681,7 +1681,7 @@ const trainingFolders = {
             "Polea al Pecho Agarre Prono Cerrado 4 x ↑14• 12• (10+↓6)• ↓10 rest=1-2min",
             "Aperturas en Banca Inclinado con Mancuernas 4 x ↑16• ↓(12+↓8)• 12• 10 rest=2-3min",
             "Press Banca Inclinado en Smith 4 x 12• 10• 10• 8 rest=2-3min",
-            "Fondos para Pecho 2 x fallo• fallo• rest=2-3min",
+            "Fondos para Pecho 2 x fallo• fallo rest=2-3min",
           {
             superset: [
             "Vuelos Laterales con Mancuernas 3 x 12• 10• ↓10",
@@ -1919,7 +1919,7 @@ const trainingFolders = {
             "Polea al Pecho Agarre Prono Cerrado 2 x 14• ↑(12+↓8) rest=1-2min",
             "Aperturas en Banca Inclinado con Mancuernas 4 x ↑16• ↓(12+↓8)• 12• 10 rest=2-3min",
             "Press Banca Inclinado 4 x 12• 10• 10• 8 rest=2-3min",
-            "Fondos para Pecho 2 x fallo• fallo• rest=2-3min",
+            "Fondos para Pecho 2 x fallo• fallo rest=2-3min",
           {
             superset: [
             "Vuelos Laterales con Mancuernas 3 x 12• 10• ↓10",
