@@ -1913,9 +1913,9 @@ const trainingFolders = {
           ],
             restAfter: "1min 30seg"
           },
-          "Elevación de Piernas Inclinado 3 x 16• 12• 12 rest=1-2min",
           ],
           "Entrenamiento de Fuerza": [
+            "Elevación de Piernas Inclinado 3 x 16• 12• 12 rest=1-2min",
             "Polea al Pecho Agarre Prono Cerrado 2 x 14• ↑(12+↓8) rest=1-2min",
             "Aperturas en Banca Inclinado con Mancuernas 4 x ↑16• ↓(12+↓8)• 12• 10 rest=2-3min",
             "Press Banca Inclinado 4 x 12• 10• 10• 8 rest=2-3min",
@@ -1937,8 +1937,8 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
-            "Dominadas Agarre Prono a los Hombros 2 x 10• 8", 
-            "Flexiones BB Cerradas + Carpa 2 x 20• 16",
+            "Flexiones BB Cerradas + Carpa 2 x 18• 16",
+            "Plancha Lateral 2 x 30seg cada lado",
           ],
             restAfter: "1min"
           },           
