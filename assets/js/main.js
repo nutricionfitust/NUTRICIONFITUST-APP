@@ -1254,6 +1254,42 @@ const trainingFolders = {
             "Correr en Cinta (caminadora)",
           ],
           },
+
+      "Día Opcional - Hombros + Brazos":  {
+     "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Flexiones BB Cerradas 2 x 18• 16",
+            "Bíceps + Press Arnold con Mancuernas 2 x 14• 12",
+          ],
+            restAfter: "1-2min"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+          {
+            superset: [
+            "Press Militar con Mancuernas Sentado 4 x 12• 10• 8• 8",
+            "Vuelos Laterales con Mancuernas 4 x 12• 10• (10+↓8)• 8"
+          ],
+            restAfter: "2-3min"            
+          },
+          "Vuelos Posteriores con Mancuernas 3 x 12• 10• 8 rest=1-2min",
+          {
+            superset: [
+            "Bíceps Martillo Alternado con Mancuernas 3 x 12• 10• 8• 8",
+            "Tríceps con Barra Agarre Inverso 3 x 12• (12+↓6)• (10+↓6)",
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Bíceps Predicador con Mancuernas 3 x 10• 8• 8",
+            "Press Francés Sentado con Apoyo 𝟰𝟱° 3 x 12• 12• 10",    
+          ],
+            restAfter: "2-3min"            
+          },
+          ],
+          },
       },
     },
 
