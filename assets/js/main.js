@@ -1259,8 +1259,8 @@ const trainingFolders = {
      "Acondicionamiento & Calentamiento": [
           {
             superset: [
-            "Flexiones BB Cerradas 2 x 18• 16",
-            "Bíceps + Press Arnold con Mancuernas 2 x 14• 12",
+            "Flexiones BB Cerradas + Carpa 2 x 20• 20 (comenzá normal y a medida que te canses, apoyá las rodillas)",
+            "Plancha Lateral 2 x 40seg a cada lado",
           ],
             restAfter: "1-2min"
           },
