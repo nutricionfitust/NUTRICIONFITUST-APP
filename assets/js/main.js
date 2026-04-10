@@ -5946,16 +5946,10 @@ const trainingFolders = {
           ],
           "Entrenamiento de Fuerza": [
           "Espalda con Polea 3 x 16• ↑10• ↑10 rest=1-2min",
-          "Máquina de Remo Sentado en Máquina 4 x 12• 10• 10• 8 rest=2min",
+          "Remo Unilateral Sentado en Máquina 4 x 12• 10• 10• 8 rest=2min",
           "Polea al Pecho con Triángulo 3 x 12• 10• ↓(8+↓6) rest=2-3min",
           "Encogimientos con Mancuernas 3 x 12• 10• 8 rest=2min",
-                    {
-            superset: [
-            "Arranque con Mancuerna + Press de Hombro Alternado 3 x 10• 10• 8 rest=2min",
-            "Burpees Completos 3 x 10• 10• 8 rest=2min"
-          ],
-            restAfter: "1-2min"
-          },
+          "Arranque con Mancuerna + Press de Hombro Alternado 3 x 10• 10• 8 rest=2min",
           ],
           },
 
