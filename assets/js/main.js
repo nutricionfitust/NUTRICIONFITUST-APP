@@ -5376,12 +5376,11 @@ const trainingFolders = {
           },
 
         "Día 5 - Brazos + Hombros":  {
-          "Acondicionamiento & Calentamiento": [
+        "Acondicionamiento & Calentamiento": [
           {
             superset: [
-            "Flexiones BB Cerradas 2 x 20• 20",
-            "Plancha Frontal 2 x 1min• 1min",
-            "Bíceps + Press Arnold con Mancuernas 2 x 14• 14",
+            "Flexiones BB Cerradas 2 x 20• 16",
+            "Bíceps + Press Arnold con Mancuernas 2 x 14• 12",
           ],
             restAfter: "1-2min"
           },
@@ -5389,22 +5388,23 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
           {
             superset: [
-            "Bíceps Martillo Alternado con Mancuernas 4 x 12• ↑10• ↑8• 8",
-            "Extensión de Tríceps con Barra x 16• ↑12• 12• ↑10"
+            "Press Militar con Mancuernas Sentado 4 x 12• 10• 8• 8",
+            "Vuelos Laterales con Mancuernas 4 x 12• 10• (10+↓8)• 8"
+          ],
+            restAfter: "2-3min"            
+          },
+          "Vuelo Posterior Unilateral en Máquina Sentado 3 x 12• 10• 8 rest=1-2min",
+          {
+            superset: [
+            "Bíceps Martillo Alternado con Mancuernas 4 x 12• 10• 8• 8",
+            "Extensión de Tríceps con Barra 4 x 12• (12+↓6)• (10+↓6)• (8+↓6)",
           ],
             restAfter: "2-3min"            
           },
           {
             superset: [
-            "Bíceps Predicador con Mancuernas 4 x 12• ↑8• 8• ↓10",
-            "Press Francés con Mancuerna 4 x 12• 12• 10• 10"
-          ],
-            restAfter: "2-3min"            
-          },
-          {
-            superset: [
-            "Vuelos Posteriores con Mancuernas 4 x ↑12• 12• ↓10• 8",
-            "Vuelos Laterales con Mancuernas 4 x ↑12• ↓10• 10• ↓8"
+            "Bíceps Predicador con Mancuernas 3 x 10• 8• 8",
+            "Press Francés Sentado con Apoyo 𝟰𝟱° 3 x 12• 12• 10",    
           ],
             restAfter: "2-3min"            
           },
@@ -5948,8 +5948,13 @@ const trainingFolders = {
           "Espalda con Polea 3 x 16• ↑10• ↑10 rest=1-2min",
           "Remo Unilateral Sentado en Máquina 4 x 12• 10• 10• 8 rest=2min",
           "Polea al Pecho con Triángulo 3 x 12• 10• ↓(8+↓6) rest=2-3min",
-          "Encogimientos con Mancuernas 3 x 12• 10• 8 rest=2min",
-          "Arranque con Mancuerna + Press de Hombro Alternado 3 x 10• 10• 8 rest=2min",
+         {
+              superset: [
+            "Remo con Barra 3 x 10• 10• 8",
+            "Encogimientos con Barra 3 x 8 a 12 reps al fallo",
+            ],
+            restAfter: "1min"
+          },
           ],
           },
 
@@ -11442,7 +11447,7 @@ const USER_HIIT_DAY_NOTES = {
       body: `<p><strong>13 MINUTOS TOTALES.</strong></p>
             <p>Inclinar la Cinta unos 9 grados.</p>
             <p><b>4 minutos:</b> caminar.</p>
-            <p>Inclinar la Cinta unos 3 grados (bajamos 6 grados).</p>
+            <p>Inclinar la Cinta unos 3 grados (bajamos a 6 grados).</p>
             <p>Luego, <b>intervalos (HIIT):</b></p> 
             <ul class="list-disc pl-6">
             <li>30 segundos a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
@@ -12119,10 +12124,10 @@ const USER_HIIT_DAY_NOTES = {
       body: `<p><strong>13 MINUTOS TOTALES.</strong></p>
             <p>Inclinar la Cinta unos 9 grados.</p>
             <p><b>4 minutos:</b> caminar.</p>
-            <p>Inclinar la Cinta unos 3 grados (bajamos 6 grados).</p>
+            <p>Inclinar la Cinta unos 6 grados (bajamos a 3 grados).</p>
             <p>Luego, <b>intervalos (HIIT):</b></p> 
             <ul class="list-disc pl-6">
-            <li>30 segundos a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
+            <li>30 segundos a ~ 3/4 de tu velocidad máxima (ej: ~15 km/h).</li>
             <li>1 minuto de trote suave (ej: ~8 km/h).</li>
             </ul>
             <p><b>Repetir 6 veces seguidas:</b> o sea <b>(30seg + 1min) x 6 sin descanso.</b></p>
@@ -12139,7 +12144,7 @@ const USER_HIIT_DAY_NOTES = {
             <p><b>2 minutos:</b> trote suave para entrar en calor.</p>
             <p>Luego, <b>intervalos (HIIT):</b></p> 
             <ul class="list-disc pl-6">
-            <li>350 metros a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
+            <li>350 metros a ~ 3/4 de tu velocidad máxima (ej: ~15~17 km/h).</li>
             <li>150 metros tranqui (slow). Los primeros 100 m caminando (5.5 km/h), y trote suave (8 km/h) los últimos 50 m.</li>
             </ul>
             <p><b>Repetir 4 veces seguidas:</b> o sea <b>(300 m fast + 150 m slow) x 4 sin descanso.</b></p>
@@ -12228,7 +12233,7 @@ const USER_HIIT_DAY_NOTES = {
       body: `<p><strong>13 MINUTOS TOTALES.</strong></p>
             <p>Inclinar la Cinta unos 9 grados.</p>
             <p><b>4 minutos:</b> caminar.</p>
-            <p>Inclinar la Cinta unos 3 grados (bajamos 6 grados).</p>
+            <p>Inclinar la Cinta unos 3 grados (bajamos a 6 grados).</p>
             <p>Luego, <b>intervalos (HIIT):</b></p> 
             <ul class="list-disc pl-6">
             <li>30 segundos a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
@@ -12387,7 +12392,7 @@ const USER_HIIT_DAY_NOTES = {
       body: `<p><strong>13 MINUTOS TOTALES.</strong></p>
             <p>Inclinar la Cinta unos 9 grados.</p>
             <p><b>4 minutos:</b> caminar.</p>
-            <p>Inclinar la Cinta unos 3 grados (bajamos 6 grados).</p>
+            <p>Inclinar la Cinta unos 3 grados (bajamos a 6 grados).</p>
             <p>Luego, <b>intervalos (HIIT):</b></p> 
             <ul class="list-disc pl-6">
             <li>30 segundos a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
@@ -12488,7 +12493,7 @@ const USER_HIIT_DAY_NOTES = {
       body: `<p><strong>15 MINUTOS TOTALES.</strong></p>
             <p>Inclinar la Cinta unos 9 grados.</p>
             <p><b>4 minutos:</b> caminar.</p>
-            <p>Inclinar la Cinta unos 3 grados (bajamos 6 grados).</p>
+            <p>Inclinar la Cinta unos 3 grados (bajamos a 6 grados).</p>
             <p>Luego, <b>intervalos (HIIT):</b></p> 
             <ul class="list-disc pl-6">
             <li>40 segundos a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
@@ -12510,7 +12515,7 @@ const USER_HIIT_DAY_NOTES = {
       body: `<p><strong>13 MINUTOS TOTALES.</strong></p>
             <p>Inclinar la Cinta unos 9 grados.</p>
             <p><b>4 minutos:</b> caminar.</p>
-            <p>Inclinar la Cinta unos 3 grados (bajamos 6 grados).</p>
+            <p>Inclinar la Cinta unos 3 grados (bajamos a 6 grados).</p>
             <p>Luego, <b>intervalos (HIIT):</b></p> 
             <ul class="list-disc pl-6">
             <li>30 segundos a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
@@ -12582,7 +12587,7 @@ const USER_HIIT_DAY_NOTES = {
       body: `<p><strong>13 MINUTOS TOTALES.</strong></p>
             <p>Inclinar la Cinta unos 9 grados.</p>
             <p><b>4 minutos:</b> caminar.</p>
-            <p>Inclinar la Cinta unos 3 grados (bajamos 6 grados).</p>
+            <p>Inclinar la Cinta unos 3 grados (bajamos a 6 grados).</p>
             <p>Luego, <b>intervalos (HIIT):</b></p> 
             <ul class="list-disc pl-6">
             <li>30 segundos a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
@@ -12762,7 +12767,7 @@ const USER_HIIT_DAY_NOTES = {
       body: `<p><strong>13 MINUTOS TOTALES.</strong></p>
             <p>Inclinar la Cinta unos 9 grados.</p>
             <p><b>4 minutos:</b> caminar.</p>
-            <p>Inclinar la Cinta unos 3 grados (bajamos 6 grados).</p>
+            <p>Inclinar la Cinta unos 3 grados (bajamos a 6 grados).</p>
             <p>Luego, <b>intervalos (HIIT):</b></p> 
             <ul class="list-disc pl-6">
             <li>30 segundos a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
@@ -13037,7 +13042,7 @@ const USER_HIIT_DAY_NOTES = {
       body: `<p><strong>13 MINUTOS TOTALES.</strong></p>
             <p>Inclinar la Cinta unos 9 grados.</p>
             <p><b>4 minutos:</b> caminar.</p>
-            <p>Inclinar la Cinta unos 3 grados (bajamos 6 grados).</p>
+            <p>Inclinar la Cinta unos 3 grados (bajamos a 6 grados).</p>
             <p>Luego, <b>intervalos (HIIT):</b></p> 
             <ul class="list-disc pl-6">
             <li>30 segundos a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
@@ -13211,7 +13216,7 @@ const USER_HIIT_DAY_NOTES = {
       body: `<p><strong>13 MINUTOS TOTALES.</strong></p>
             <p>Inclinar la Cinta unos 9 grados.</p>
             <p><b>4 minutos:</b> caminar.</p>
-            <p>Inclinar la Cinta unos 3 grados (bajamos 6 grados).</p>
+            <p>Inclinar la Cinta unos 3 grados (bajamos a 6 grados).</p>
             <p>Luego, <b>intervalos (HIIT):</b></p> 
             <ul class="list-disc pl-6">
             <li>30 segundos a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
@@ -13282,7 +13287,7 @@ const USER_HIIT_DAY_NOTES = {
       body: `<p><strong>13 MINUTOS TOTALES.</strong></p>
             <p>Inclinar la Cinta unos 9 grados.</p>
             <p><b>4 minutos:</b> caminar.</p>
-            <p>Inclinar la Cinta unos 3 grados (bajamos 6 grados).</p>
+            <p>Inclinar la Cinta unos 3 grados (bajamos a 6 grados).</p>
             <p>Luego, <b>intervalos (HIIT):</b></p> 
             <ul class="list-disc pl-6">
             <li>30 segundos a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
@@ -13321,7 +13326,7 @@ const USER_HIIT_DAY_NOTES = {
       body: `<p><strong>13 MINUTOS TOTALES.</strong></p>
             <p>Inclinar la Cinta unos 9 grados.</p>
             <p><b>4 minutos:</b> caminar.</p>
-            <p>Inclinar la Cinta unos 3 grados (bajamos 6 grados).</p>
+            <p>Inclinar la Cinta unos 3 grados (bajamos a 6 grados).</p>
             <p>Luego, <b>intervalos (HIIT):</b></p> 
             <ul class="list-disc pl-6">
             <li>30 segundos a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
