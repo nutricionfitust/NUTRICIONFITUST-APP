@@ -5388,8 +5388,8 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
           {
             superset: [
-            "Press Militar con Mancuernas Sentado 4 x 12• 10• 8• 8",
-            "Vuelos Laterales con Mancuernas 4 x 12• 10• (10+↓8)• 8"
+            "Vuelos Laterales con Mancuernas 4 x 12• 10• (10+↓8)• 8",
+            "Press Militar con Mancuernas Sentado 3 x 12• 10• 10",
           ],
             restAfter: "2-3min"            
           },
