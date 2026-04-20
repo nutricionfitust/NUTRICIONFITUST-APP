@@ -774,6 +774,104 @@ const trainingFolders = {
 
 
 
+
+//RUTINA DIEGO YARYOUR Nº 1 - 3 MUSCULACIÓN + 1 HIIT + (1 LISS) !  
+        "diegoyaryour1": {
+      name: "Diego",
+// PLAN DE ENTRENAMIENTO SEMANAL !    
+      plan: {  
+        "Día 1 - Inferior": {
+          "Acondicionamiento & Calentamiento": [
+        {
+            superset: [
+            "Rotaciones con Bolsa (o disco) 2 x 12• 10 a cada lado",
+            "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
+            ],
+            restAfter: "1min"
+          },
+          "Burpees Completos 1 x 10",
+          "Plancha Frontal 1 x a lo que dés!"
+            ],
+          "Entrenamiento de Fuerza": [
+            "Aductores Sentada 3 x fallo• fallo• fallo rest=1-2min",
+            "Sentadillas en Smith 5 x (1 aproximación)• 12• 10• 8• 8 rest=2-3min",
+            "Hip Thrust en Smith 4 x 12• 10• 10• 10 rest=2-3min",
+            "Isquiotibiales Sentada 4 x 12• (10+↓8)• (10+↓6)• 8 rest=1-2min",
+            "Hiperextensión para Glúteos (con Peso) 3 x fallo• fallo• fallo rest=1min",
+            "Crunch en Máquina 2 x 16• 16 rest=1min"
+            ],
+          },
+
+        "Día 2 - Superior":  {
+          "Acondicionamiento & Calentamiento": [
+            {
+            superset: [
+            "Rotaciones con Bolsa (o disco) 2 x 12• 10 a cada lado",
+            "Bíceps más Press Arnold con Mancuernas 2 x 16• 12",
+          ],
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento de Fuerza": [
+            "Polea al Pecho Prono Cerrado 4 x 16• 12• 10• 8 rest=1-2min",
+            "Polea al Pecho con Triángulo 3 x 10• 10• (8+↓6) rest=1-2min",
+            "Vuelos Posteriores con Mancuernas 3 x 12• 10• 10 rest=1-2min",
+            "Press de Pecho en Maquina 5 x 16• 12• 10• 10• 8 rest=2min",
+                        {
+            superset: [
+            "Bíceps Martillo Alternado con Mancuernas 3 x 12• 10• 8",
+            "Extensión de Tríceps con Polea con Barra  3 x (12+↓8)• (10+↓6)• 10",
+          ],
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento HIIT": [
+            "Correr en Cinta"
+            ],
+          },
+
+        "Día 3 - Full Body":  {
+          "Acondicionamiento & Calentamiento": [
+            {
+            superset: [
+            "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 14• 12",
+            "Burpees Completos 2 x 8• 8",
+          ],
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento de Fuerza": [
+            "Isquiotibiales Sentada 4 x 16• (12+↓8)• (12+↓8)• 8 rest=2min",
+            "Extensión de Cuadriceps Sentada 4 x 16• 12• 10• (10+↓6) rest=2min",
+            {
+            superset: [
+            "Prensa 4 x 16• 12• 10• 10",
+            "Gemelos en Prensa 4 x 10 a 14 reps al fallo",
+          ],
+            restAfter: "2-3min"
+          },
+          {
+            superset: [
+            "Vuelos Laterales con Mancuernas 4 x 12• 12• 10• 10",
+            "Peso Muerto Rumano con Mancuernas 3 x 12• 12• 12",
+            "Vuelos Posteriores con Mancuernas 3 x 12• 12• 12",
+          ],
+            restAfter: "2min"
+          },
+          {
+            superset: [
+            "Bíceps Martillo Alternado con Mancuernas 3 x 12• 10• 8",
+            "Extensión de Tríceps con Polea con Barra  3 x (12+↓8)• (10+↓6)• 10",
+          ],
+            restAfter: "1min"
+          },                 
+            ],
+          },
+      },
+    },
+
+
+
 //RUTINA TACIANA Nº 1 - 3 MUSCULACIÓN + 1 HIIT + (1 LISS) !  
         "tacianabavaud": {
       name: "Taci Zanahoria",
@@ -1981,7 +2079,7 @@ const trainingFolders = {
           ],
           "Entrenamiento de Fuerza": [
             "Polea al Pecho con Triángulo 4 x 14• 12• ↓12• ↓(10+↓6) rest=2min",
-            "Remo Unilateral con Mancuernas 4 x 12• 10• ↓10 rest=2min",
+            "Remo Unilateral con Mancuernas 3 x 12• 10• ↓10 rest=2min",
             "Remo con Barra 3 x 12• ↑10• 10 rest=2min",
             "Tríceps con Polea Agarre Inverso 3 x 12• (12+↓8)• ↓(12+↓6) rest=2min",                
             {
@@ -10901,6 +10999,8 @@ const userRoutineMapping = {
   agustina: { folder: "2 MUSCULACIÓN + (2 LISS)", routine: "agustina" },
   camilafrancoblonda:   { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "camilafrancoblonda" },
   camilaabendaño: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "camilaabendaño" },
+  diegoyaryour1: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "diegoyaryour1" },
+  diegoyaryour2: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "diegoyaryour2" },
   tacianabavaud: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "tacianabavaud" },
   benjaminlauda1: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "benjaminlauda1" },
   nicolasbuffarini1: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "nicolasbuffarini1" },
@@ -11060,6 +11160,7 @@ const userPasswords = {
   'espresso-urali-tiramisu-firenze': 'sofiaustarroz1', //sof1
   'russia-siberia-tundra-urali-napolitana-firenze': 'nicolasbuffarini1', //nicob1
   'gelato-siberia-tundra-amore-urali-limoncello-firenze': 'victormansilla1', //victor1
+  'gondola-siberia-dolcevita-kremlin-urali-borschino-firenze': 'diegoyaryour1', //diegoy1
 
 
 
