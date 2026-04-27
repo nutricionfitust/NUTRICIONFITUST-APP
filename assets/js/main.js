@@ -7589,7 +7589,7 @@ const trainingFolders = {
 
         "Día 4 - Piernas":  {
           "Acondicionamiento & Calentamiento": [
-          "Escalera Mecánica 5 minutos velocidad aprox 10 - 12",
+          "Cinta Inclinada 5 minutos velocidad aprox 6 km/h (a 9 - 12 grº)",
           ],
           "Entrenamiento de Fuerza": [
             "Cargadas con Barra 3 x 10• 8• 8 rest=2min",
