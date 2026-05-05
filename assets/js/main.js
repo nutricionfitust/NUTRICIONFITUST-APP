@@ -9230,7 +9230,7 @@ const trainingFolders = {
               ],
               restAfter: "2-3min"
             },
-            "Sentadillas con Barra (pausa 2seg abajo 🔥) 4 x 10• ↑8• ↑6• 6 rest=3-4min",
+            "Sentadillas con Barra (pausa dos seg abajo 🔥) 4 x 10• ↑8• ↑6• 6 rest=3-4min",
             "Extensión de Cuádriceps Sentado 4 x (14+↓8+↓6)• (12+↓8+↓6)• (10+↓8)• fallo rest=1-2min",
             "Plancha Frontal 3 x 1min rest=1min",
             ],
