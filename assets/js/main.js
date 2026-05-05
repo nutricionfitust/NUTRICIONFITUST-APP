@@ -9215,8 +9215,8 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
             {
               superset: [
-            "Rotaciones con Disco 2 x 10• 8 a cada lado",
-            "Sentadillas + Estocadas con Peso 2 x 12• 10",
+            "Rotaciones con Bolsa (o disco) 2 x 10• 8 a cada lado",
+            "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 10",
               ],
               restAfter: "1min"
             },
@@ -9225,7 +9225,7 @@ const trainingFolders = {
             "Isquiotibiales Acostado 3 x (12+↓8)• (10+↓8)• (10+↓6) rest=1-2min",
             {
               superset: [
-            "Hack Squat 4 x 16• ↑12• ↑10• ↑8",
+            "Sentadillas en Hack 4 x 16• ↑12• ↑10• ↑8",
             "Gemelos en Hack 4 x 12 al fallo",
               ],
               restAfter: "2-3min"
@@ -9235,7 +9235,7 @@ const trainingFolders = {
             "Plancha Frontal 3 x 1min rest=1min",
             ],
           "Entrenamiento HIIT": [
-            "Bicicleta Estática",
+            "Bicicleta",
             ],
           },
 
@@ -9250,7 +9250,7 @@ const trainingFolders = {
           },
           ],
           "Entrenamiento de Fuerza": [
-            "Press Militar con Barra 4 x 10• ↑8• ↑8• 6 rest=2-3min",
+            "Press Militar con Barra Sentado 4 x 10• ↑8• ↑8• 6 rest=2-3min",
             "Vuelos Laterales con Mancuernas 4 x 14• 12• (10+↓8)• (8+↓6) rest=1-2min",
             "Vuelos Posteriores con Mancuernas 3 x 12• 10• (10+↓8) rest=1-2min",
           {
@@ -9263,7 +9263,7 @@ const trainingFolders = {
           {
             superset: [
             "Bíceps Predicador con Mancuerna 3 x 10• 8• ↓(6+fallo)",
-            "Press Francés Acostado con Barra W 3 x 12• 10• (8+↓8)",
+            "Press Francés Acostado 𝟰𝟱° con Mancuerna 3 x 12• 10• (8+↓8)",
             ],
             restAfter: "2-3min"
           },
@@ -9283,10 +9283,10 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
             "Remo con Barra (pausa 1seg en contracción) 4 x 12• ↑10• ↑8• 8 rest=2-3min",
             "Polea al Pecho Agarre Prono Cerrado 4 x 14• 12• ↓(10+↓8)• ↓(10+↓6) rest=2min",
-            "Remo en Máquina Sentado 4 x 12• ↑10• (10+↓8)• (8+↓6) rest=2min",
+            "Remo Sentado en Máquina (Dorsal Ancho) 4 x 12• ↑10• (10+↓8)• (8+↓6) rest=2min",
             "Polea con Triángulo 3 x 12• ↓10• ↓(8+↓6) rest=2min",
             "Encogimientos con Mancuernas 4 x 12• 10• 10• 8 rest=1-2min",
-            "Dominadas 3 x fallo• fallo• fallo rest=2min",
+            "Dominadas Agarre Prono 3 x fallo• fallo• fallo rest=2min",
             ],
           },
 
@@ -9299,7 +9299,7 @@ const trainingFolders = {
               ],
               restAfter: "1min"
           },
-          "Sentadillas + Estocadas con Peso 1 x 14",
+          "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 1 x 14",
             ],
           "Entrenamiento de Fuerza": [
             "Isquiotibiales Nórdicos 4 x 14A• (12+↓10A)• (10+↓8A)• (8+↓8A) rest=2min",
@@ -9328,7 +9328,7 @@ const trainingFolders = {
           ],
           "Entrenamiento de Fuerza": [
             "Polea al Pecho Agarre Prono Cerrado (tope de carga 🔥) 3 x 10• 8• ↓(6+fallo) rest=2min",
-            "Aperturas en Máquina 4 x 16• ↓(12+↓8)• ↓(10+↓8)• (8+↓6+↓fallo) rest=2-3min",
+            "Aperturas Sentado en Máquina 4 x 16• ↓(12+↓8)• ↓(10+↓8)• (8+↓6+↓fallo) rest=2-3min",
             "Press Banca Inclinado con Mancuernas 4 x 12• ↑10• ↑8• 6 rest=2-3min",
             "Press de Pecho en Máquina 3 x (12+↓8+↓fallo)• (10+↓8)• fallo rest=2-3min",
           {
