@@ -7631,8 +7631,8 @@ const trainingFolders = {
             "Sentadillas Sumo con Barra 4 x 16• ↑12• ↑10• ↑8 rest=2-4min",
             {
               superset: [
-            "Estocadas en Press de Pierna 4 x 12• ↑10• 8• 8",
-            "Gemelos en Press de Piernas 4 x 10 a 16 reps al fallo"
+            "Estocadas en Prensa 4 x 12• ↑10• 8• 8",
+            "Gemelos en Prensa 4 x 10 a 16 reps al fallo"
             ],
             restAfter: "2-3min"
           },
@@ -7661,8 +7661,8 @@ const trainingFolders = {
             "Press de Pecho en Máquina 4 x 12• ↑10• (10+↓6)• ↓(8+↓6) rest=2-3min",
             ],
           "Entrenamiento HIIT": [
-          "Máquina de Remo"
-          ],
+            "Elíptica",
+            ],
           },
 
         "Día 3 - Brazos + Hombros + Abs":  {
@@ -11603,96 +11603,6 @@ const userPasswords = {
   'gondola-siberia-dolcevita-kremlin-urali-borschino-firenze': 'diegoyaryour1', //diegoy1
   'vesuvio-yogurt-dolcevita-piazza-borscht-firenze': 'alejandropascual1', //alejp1
   'gelato-vesuvio-yogurt-dolcevita-russia-tundra-firenze': 'valentinacarrizo1', //valenc1
-};
-
-/* ===========================
-   PASAHITSAK POR USUARIO
-=========================== */
-// Mapea pasahitzak únicas a la clave de usuario definida en `userRoutineMapping`.
-// Edita estos valores para asignar pasahitzak reales por persona.
-//       Para máxima seguridad, usa un BACKEND. Esto es un control básico.
-
-const userPasswords = {
-  // CLAVES ÚINCAS DE USUARIOS
-  'napolitana-limoncello-vesuvio-spaghetti-urali-espresso': 'publicidadbrazos', //brazos
-  'borscht-siberia-dolcevita-limoncello-russia-vesuvio-espresso': 'publicidadpiernas', //piernas
-  'vesuvio-kremlin-quarzo-espresso-amore-siberia-russia-vesuvio-octavo-zarina-octavo-batata': 'agustina',
-  'tiramisu-limoncello-vesuvio-russia-napolitana-vesuvio-limoncello-firenze-hermitage': 'francobarbero1', //franbar14
-  'tundra-vesuvio-balalaika-siberia-yogurt-vesuvio-yogurt-vesuvio': 'camilafrancoblonda', //camilala
-  'tundra-vesuvio-balalaika-firenze': 'camilaabendaño', //cam1
-  'amore-vesuvio-tundra-siberia-spaghetti-vesuvio-russia-vesuvio': 'tacianabavaud',
-  'napolitana-dolcevita-russia-yogurt-vesuvio-quarzo-gondola-vesuvio-firenze': 'benjaminlauda1', //benlauda1
-  'gondola-vesuvio-russia-borschino-tiramisu': 'danielflores1', //danyf
-  'gondola-vesuvio-russia-borschino-tiramisu-octavo': 'danielflores2', //danyf2
-  'vesuvio-spaghetti-quarzo-yogurt-tundra-opera-dolcevita-limoncello-quarzo-firenze': 'azulcherubini2',
-  'piazza-quarzo-yogurt-siberia-balalaika-vesuvio-kremlin': 'julianmagallanes1', 
-  'piazza-quarzo-yogurt-siberia-balalaika-vesuvio-kremlin-octavo': 'julianmagallanes2', 
-  'siberia-kremlin-russia-vesuvio-espresso-tundra-vesuvio': 'ignacioscagliotti1',
-  'limoncello-urali-tundra-urali-limoncello-amore-dolcevita-spaghetti':'rodrigotejadacortez1', //rocortez
-  'limoncello-urali-tundra-urali-limoncello-amore-dolcevita-spaghetti-octavo': 'rodrigotejadacortez2', //rocortez2
-  'vesuvio-spaghetti-spaghetti-octavo': 'azulcherubini3',
-  'gondola-vesuvio-balalaika-siberia-borscht-urali-limoncello-octavo': 'damianportillo2', //damipor2
-  'gondola-vesuvio-balalaika-siberia-borscht-urali-limoncello-laguna': 'damianportillo3', //damipor3
-  'gondola-vesuvio-balalaika-siberia-borscht-hermitage': 'damianportillo4', //damip4
-  'piazza-opera-urali-vesuvio-russia-firenze': 'jhoancastaño1', //jhoan1
-  'piazza-tundra-vesuvio-espresso-amore-vesuvio-octavo': 'jhoancastaño2', //jcasta2
-  'piazza-opera-urali-vesuvio-russia-tundra-vesuvio-laguna': 'jhoancastaño3', //jhoanca3
-  'gondola-siberia-dolcevita-kremlin-urali-espresso-vesuvio-russia':'diegosantandrian1',
-  'napolitana-limoncello-quarzo-espresso-dolcevita-limoncello-dolcevita-limoncello': 'brunoserer1',
-  'islandia-vesuvio-tundra-opera-dolcevita-urali-borschino': 'kacheoyhamburu3',
-  'islandia-dolcevita-gelato-siberia-russia-balalaika': 'kevinmoreno1',
-  'siberia-espresso-vesuvio-balalaika-laguna': 'isaacmolinares3', //isam3
-  'siberia-espresso-vesuvio-vesuvio-tundra-balalaika-hermitage': 'isaacmolinares4', //isaacm4
-  'vesuvio-limoncello-amore-quarzo-limoncello-urali-espresso-octavo': 'arturoservin2', //arturos2
-  'vesuvio-limoncello-amore-quarzo-limoncello-urali-espresso-laguna': 'arturoservin3', //arturos3
-  'limoncello-dolcevita-siberia-russia-laguna': 'rein3',  
-  'tundra-vesuvio-balalaika-siberia-gondola-octavo': 'camiloduranm2',
-  'yogurt-quarzo-siberia-espresso-kremlin-octavo': 'luisgonzalez2', //luisg2
-  'yogurt-quarzo-siberia-espresso-kremlin-laguna': 'luisgonzalez3',  //luisg3
-  'yogurt-kremlin-kremlin-hermitage': 'luisgonzalez4',  //lgg4
-  'borscht-vesuvio-yogurt-urali-balalaika-vesuvio-tundra-vesuvio': 'palomacarrera1',
-  'borscht-vesuvio-yogurt-urali-balalaika-vesuvio-tundra-vesuvio-octavo': 'palomacarrera2',
-  'siberia-gelato-vesuvio-russia-kremlin-octavo': 'ivangoic2', //ivang2
-  'siberia-gelato-vesuvio-russia-kremlin-laguna': 'ivangoic3', //ivang3
-  'siberia-gelato-vesuvio-russia-kremlin-hermitage': 'ivangoic4', //ivang4
-  'siberia-gelato-vesuvio-russia-kremlin-batata': 'ivangoic5', //ivang5
-  'balalaika-vesuvio-amore-siberia-tundra-vesuvio-russia-vesuvio-firenze': 'matiascanalini1', //maticana1
-  'balalaika-vesuvio-amore-siberia-vesuvio-espresso-tundra-vesuvio-russia-vesuvio-octavo': 'matiascanalini2', //matiascana2
-  'balalaika-vesuvio-amore-amore-laguna': 'matiascanalini3', //matt3
-  'yogurt-quarzo-tundra-vesuvio-napolitana-limoncello-dolcevita-firenze':'lucascabrera1', //lucabre1
-  'yogurt-quarzo-tundra-vesuvio-napolitana-limoncello-dolcevita-octavo':'lucascabrera2', //lucabre2
-  'yogurt-quarzo-tundra-vesuvio-laguna':'lucascabrera3', //luca3
-  'vesuvio-yogurt-vesuvio-russia-espresso-spaghetti': 'alansanchez',
-  'tundra-vesuvio-limoncello-vesuvio-gondola-dolcevita-urali-gelato-dolcevita-piazza-vesuvio': 'nicolasrivera', //caradeoveja
-  'yogurt-siberia-espresso-vesuvio-yogurt-borschino': 'lisandroalyosha1',
-  'balalaika-vesuvio-limoncello-siberia-urali-balalaika-siberia-firenze': 'mariomiranda1',
-  'espresso-vesuvio-russia-amore-siberia-borscht-vesuvio-russia-vesuvio-firenze': 'santiagopanayotidis1', //santipana1
-  'limoncello-dolcevita-napolitana-urali-firenze': 'joserebolledo1', //rebo1
-  'tiramisu-limoncello-vesuvio-russia-balalaika-vesuvio-limoncello-firenze': 'franciscomarin1', //franmar1
-  'espresso-vesuvio-russia-amore-siberia-borscht-vesuvio-russia-octavo': 'santiagopanayotidis2', //santipan2
-  'borscht-vesuvio-russia-vesuvio-borschino-urali-amore-siberia-laguna': 'santiagopanayotidis3', //panayoti3
-  'espresso-vesuvio-russia-amore-siberia-tundra-vesuvio-napolitana-limoncello-dolcevita-firenze': 'santiagocabrera1', //santicabre1
-  'espresso-vesuvio-russia-amore-siberia-vesuvio-kremlin-urali-tundra-vesuvio-octavo': 'santiagocabrera2', //santiagoca2
-  'yogurt-quarzo-tundra-vesuvio-espresso-balalaika-firenze': 'lucasgomezrios1', //lucasm1
-  'yogurt-quarzo-tundra-balalaika-octavo': 'lucasgomezrios2', //lucm2
-  'yogurt-quarzo-tundra-vesuvio-espresso-kremlin-limoncello-laguna': 'lucasgomezrios3', //lucasgr3
-  'yogurt-quarzo-tundra-vesuvio-espresso-balalaika-hermitage': 'lucasgomezrios4', //lucasm4
-  'siberia-gelato-vesuvio-russia-amore-napoli': 'ivantrujillo1', //ivant7
-  'BAJA-siberia-gelato-vesuvio-russia-amore-limoncello-octavo': 'ivantrujillo2', //ivantr2
-  'siberia-gelato-vesuvio-russia-amore-limoncello-laguna': 'ivantrujillo3', //ivantr3
-  'BAJA-balalaika-vesuvio-amore-amore-siberia-vesuvio-firenze-hermitage': 'mattiamorabito1', //mattia14
-  'tundra-vesuvio-limoncello-yogurt-urali-espresso-firenze': 'carlosprado1', //carlos1
-  'tundra-borscht-limoncello-vesuvio-octavo': 'carlosprado2', //cpra2
-  'tundra-vesuvio-limoncello-borscht-vesuvio-laguna': 'carlosprado3', //carpa3
-  'piazza-vesuvio-gelato-siberia-firenze': 'javierjofremaldonado1', //javi1
-  'piazza-vesuvio-gelato-siberia-piazza-octavo': 'javierjofremaldonado2', //javij2
-  'piazza-vesuvio-gelato-siberia-laguna': 'javierjofremaldonado3', //javi3
-  'piazza-vesuvio-borscht-siberia-firenze': 'josepirela1', //japi1
-  'espresso-urali-tiramisu-firenze': 'sofiaustarroz1', //sof1
-  'russia-siberia-tundra-urali-napolitana-firenze': 'nicolasbuffarini1', //nicob1
-  'gelato-siberia-tundra-amore-urali-limoncello-firenze': 'victormansilla1', //victor1
-  'gondola-siberia-dolcevita-kremlin-urali-borschino-firenze': 'diegoyaryour1', //diegoy1
-  'vesuvio-yogurt-dolcevita-piazza-borscht-firenze': 'alejandropascual1', //alejp1
 
 
 
