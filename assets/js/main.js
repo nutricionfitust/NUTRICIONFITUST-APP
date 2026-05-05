@@ -11602,7 +11602,7 @@ const userPasswords = {
   'gelato-siberia-tundra-amore-urali-limoncello-firenze': 'victormansilla1', //victor1
   'gondola-siberia-dolcevita-kremlin-urali-borschino-firenze': 'diegoyaryour1', //diegoy1
   'vesuvio-yogurt-dolcevita-piazza-borscht-firenze': 'alejandropascual1', //alejp1
-  'gelato-vesuvio-yogurt-dolcevita-amore-tundra-firenze': 'valentinacarrizo1', //valenc1
+  'gelato-vesuvio-yogurt-dolcevita-russia-tundra-firenze': 'valentinacarrizo1', //valenc1
 };
 
 /* ===========================
