@@ -2689,35 +2689,33 @@ const trainingFolders = {
             superset: [
             "Arranque con Mancuerna + Press de Hombro Alternado 3 x 10• 10• 8",
             "Burpees Completos 3 x 8• 8• 6",
-            "SI PODÉS HACÉ UNA 4TA SERIE!",
           ],
             restAfter: "2-3min"            
           },           
+         "SI PODÉS HACÉ UNA 4ta SERIE de Arranques y Burpees!",
         ],
       },
 
-        "Día 4 - Piernas":  {
+        "Día 4 - Cardiovascular":  {
           "Acondicionamiento & Calentamiento": [
         {
               superset: [
             "Rotaciones con Bolsa (o disco) 2 x 12• 10 a cada lado",
-            "Burpees Completos 2 x 10• 10",
+            "Burpees Completos 2 x 8• 8",
             "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
             ],
             restAfter: "1min"
           },
           "Plancha Frontal 1 x a lo que dés!"
             ],
-          "Entrenamiento de Fuerza": [
-          {
-              superset: [
-            "Sentadillas en Hack 5 x 16• ↑12• ↑10(RIR 2)• ↑10• ↑8",
-            "Gemelos en Hack 5 x 10 a 16 reps al fallo",
+          "Entrenamiento HIIT (opción 1)": [
+                "Máquina de Remo"
             ],
-            restAfter: "2-4min"
-          },
-            "Sentadillas Búlgara con Mancuernas 4 x 12• ↑10• ↑8• 8 rest=2-3min",
-            "Extensión de Cuádriceps Sentada 4 x 14• ↓(10+↓8)• ↓(10+↓8)• (10+↓8+↓6) rest=1-2min",
+            "Entrenamiento HIIT (opción 2)": [
+                "Correr en Cinta"
+            ],
+            "Entrenamiento HIIT (opción 3)": [
+                "Correr en Cinta"
             ],
           },
       },
@@ -11836,6 +11834,67 @@ const USER_HIIT_DAY_NOTES = {
             <p><b>Recuperación:</b> 1 minuto caminando.</p>
             <p>A mimir. 😴</p>`
     },
+    ],
+  },
+
+
+      "valentinacarrizo1": {
+    "Día 2 - Superior": [
+      { title: "HIIT en Cinta Inclinada (caminadora)",
+      body: `<p><strong>10 MINUTOS TOTALES.</strong></p>
+            <p>Inclinar la Cinta unos 6 grados.</p>
+            <p><b>2 minutos:</b> trote suave para entrar en calor.</p>
+            <p>Desinclinar la Cinta a 0 (cero) grados.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>30 segundos a ~ 3/4 de tu velocidad máxima (ej: ~14 km/h).</li>
+            <li>1 minuto de trote suave (ej: ~7 km/h).</li>
+            </ul>
+            <p><b>Repetir 5 veces seguidas:</b> o sea <b>(30seg + 1min) x 5 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 1 minuto caminando.</p>
+            <p>A mimir. 😴</p>`
+    },
+    ],
+    "Día 4 - Cardiovascular": [
+      { title: "HIIT en Bicicleta",
+      body: `<p><strong>17 a 20 MINUTOS TOTALES.</strong></p>
+            <p><b>3-5 minuto:</b> calentamiento.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>30-40 segundos a máxima intensidad (alta resistencia/velocidad).</li>
+            <li>50-60 segundos de pedaleo suave (recuperación actica).</li>
+            </ul>
+            <p><b>Repetir 8-10 veces seguidas:</b> o sea <b>(30-40seg + 50-60seg) x 8-10 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 2 minutos de pedaleo suave para enfriar.</p>
+            <p>A mimir. 😴</p>`
+                },
+              ],
+    "Día 4 - Cardiovascular": [
+      { title: "HIIT en Máquina de Remo",
+      body: `<p><strong>9 a 15 MINUTOS TOTALES.</strong></p>
+            <p><b>2 minutos:</b> ritmo cómodo para calentar.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>Rema durante 1 minuto a la intensidad más alta que puedas.</li>
+            <li>Descansa durante 1 minuto.</li>
+            </ul>
+            <p><b>Repetir el entrenamiento tantas veces como te sea posible!:</b> haz un mínimo de 3 ciclos de <b>(1min full + 1min de descanso).</b></p>
+            <p>A mimir. 😴</p>`
+                },
+              ],
+    "Día 4 - Cardiovascular": [
+      { title: "HIIT en Bicicleta",
+      body: `<p><strong>17 a 20 MINUTOS TOTALES.</strong></p>
+            <p><b>3-5 minuto:</b> calentamiento.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>30-40 segundos a máxima intensidad (alta resistencia/velocidad).</li>
+            <li>50-60 segundos de pedaleo suave (recuperación actica).</li>
+            </ul>
+            <p><b>Repetir 8-10 veces seguidas:</b> o sea <b>(30-40seg + 50-60seg) x 8-10 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 2 minutos de pedaleo suave para enfriar.</p>
+            <p>A mimir. 😴</p>`
+                },
     ],
   },
 
