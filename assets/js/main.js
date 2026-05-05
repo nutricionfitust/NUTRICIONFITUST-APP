@@ -7631,8 +7631,8 @@ const trainingFolders = {
             "Sentadillas Sumo con Barra 4 x 16• ↑12• ↑10• ↑8 rest=2-4min",
             {
               superset: [
-            "Estocadas en Prensa 4 x 12• ↑10• 8• 8",
-            "Gemelos en Prensa 4 x 10 a 16 reps al fallo"
+            "Estocadas en Press de Pierna 4 x 12• ↑10• 8• 8",
+            "Gemelos en Press de Piernas 4 x 10 a 16 reps al fallo"
             ],
             restAfter: "2-3min"
           },
@@ -7661,8 +7661,8 @@ const trainingFolders = {
             "Press de Pecho en Máquina 4 x 12• ↑10• (10+↓6)• ↓(8+↓6) rest=2-3min",
             ],
           "Entrenamiento HIIT": [
-            "Elíptica",
-            ],
+          "Máquina de Remo"
+          ],
           },
 
         "Día 3 - Brazos + Hombros + Abs":  {
@@ -13311,18 +13311,16 @@ const USER_HIIT_DAY_NOTES = {
 
      "luisgonzalez4": {
     "Día 2 - Pecho + Espalda": [
-      { title: "HIIT en Elíptica",
-      body: `<p><strong>12 MINUTOS TOTALES.</strong></p>
-            <p>Comienzo con <b>2 minutos</b> a resistencia suave-moderada para entrar en calor el cuerpo.</p>
+      { title: "HIIT en Máquina de Remo",
+      body: `<p><strong>9 a 15 MINUTOS TOTALES.</strong></p>
+            <p><b>2 minutos:</b> ritmo cómodo para calentar.</p>
             <p>Luego, <b>intervalos (HIIT):</b></p> 
             <ul class="list-disc pl-6">
-            <li><b>30 segundos:</b> resistencia <b>suave.</b></li>
-            <li><b>30 segundos:</b> resistencia <b>fuerte</b> (máxima posible) <b>con ayuda de brazos.</b></li>
-            <li><b>30 segundos:</b> resistencia <b>fuerte</b> (máxima posible) <b>sin ayuda de brazos.</b></li>
+            <li>Rema durante 1 minuto a la intensidad más alta que puedas.</li>
+            <li>Descansa durante 1 minuto.</li>
             </ul>
-            <p><b>Repetir 4 veces seguidas:</b> o sea <b>(30 seg suaves + 30 seg fuertes c/b + 30 seg fuertes s/b) x 4 sin descanso.</b></p>
-            <p><b>Recuperación:</b> 1 minuto suave.</p>
-            <p>A mimir. 😴</p>`   
+            <p><b>Repetir el entrenamiento tantas veces como te sea posible!:</b> haz un mínimo de 3 ciclos de <b>(1min full + 1min de descanso).</b></p>
+            <p>A mimir. 😴</p>`
     },
     ],
     "Día 5 - Full Body": [
