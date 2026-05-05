@@ -2708,14 +2708,10 @@ const trainingFolders = {
           },
           "Plancha Frontal 1 x a lo que dés!"
             ],
-          "Entrenamiento HIIT (opción 1)": [
-                "Bicicleta"
-            ],
-            "Entrenamiento HIIT (opción 2)": [
-                "Máquina de Remo"
-            ],
-            "Entrenamiento HIIT (opción 3)": [
-                "Correr en Cinta"
+          "Entrenamiento HIIT (3 opciones)": [
+                "Bicicleta",
+                "Máquina de Remo",
+                "Correr en Cinta",
             ],
           },
       },
@@ -11868,8 +11864,6 @@ const USER_HIIT_DAY_NOTES = {
             <p><b>Recuperación:</b> 2 minutos de pedaleo suave para enfriar.</p>
             <p>A mimir. 😴</p>`
                 },
-              ],
-    "Día 4 - Cardiovascular": [
       { title: "HIIT en Máquina de Remo",
       body: `<p><strong>15 MINUTOS TOTALES.</strong></p>
             <p><b>2 minutos:</b> ritmo cómodo para calentar.</p>
@@ -11881,10 +11875,8 @@ const USER_HIIT_DAY_NOTES = {
             <p><b>Repetir el entrenamiento tantas veces como te sea posible!:</b> haz un mínimo de 6 ciclos de <b>(1min full + 1min de descanso).</b></p>
             <p>A mimir. 😴</p>`
                 },
-              ],
-    "Día 4 - Cardiovascular": [
       { title: "HIIT en Cinta (caminadora)",
-      body: `<p><strong>13 MINUTOS TOTALES.</strong></p>
+      body: `<p><strong>25 a 30 MINUTOS TOTALES.</strong></p>
             <p>Para <b>entrar en calor:</b></p> 
             <p><b>1 minuto:</b> caminata rápida (5~6 km/h).</p>
             <p><b>2 minutos:</b> trote suave (7~8 km/h).</p>
@@ -11894,25 +11886,9 @@ const USER_HIIT_DAY_NOTES = {
             <li>1 minuto de trote suave (ej: ~7 km/h).</li>
             </ul>
             <p><b>Repetir 5 veces seguidas:</b> o sea <b>(40seg + 1min) x 5 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 2 minutos caminando.</p>
+            <p><b>Repetir 4 veces seguidas:</b> o sea <b>(40seg + 1min) x 4 sin descanso.</b></p>
             <p><b>Recuperación:</b> 1 minuto caminando.</p>
-            <p>A mimir. 😴</p>`
-    },
-              { title: "Opción 2: HIIT Afuera (o Parque)",
-      body: `<p><strong>20 a 30 MINUTOS TOTALES.</strong></p>
-            <p>Para <b>entrar en calor:</b></p> 
-            <p><b>5 minutos:</b> trote suave (7~8 km/h).</p>
-            <p>Luego, <b>intervalos (HIIT):</b></p> 
-            <ul class="list-disc pl-6">
-            <li>100 metros a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
-            <li>50 metros tranqui (slow). Los primeros 30 m caminando (5.5 km/h), y trote suave (8 km/h) los últimos 20 m.</li>
-            </ul>
-            <p><b>Repetir 6 veces seguidas:</b> o sea <b>(100 m fast + 50 m slow) x 6 sin descanso.</b></p>
-            <p><b>Recuperación:</b> 2 minuto caminando.</p>
-            <p><b>Segundo intervalo:</b></p> 
-            <ul class="list-disc pl-6">
-            <li>Mismos intervalos (100 m fast + 50 m slow)<b> x 4 veces sin descanso.</b></li>
-            </ul>
-            <p><b>Recuperación:</b> 2 minuto caminando.</p>
             <p>A mimir. 😴</p>`
     },
     ],
