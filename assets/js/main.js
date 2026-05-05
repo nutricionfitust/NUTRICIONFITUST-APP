@@ -9206,9 +9206,149 @@ const trainingFolders = {
     },
 
 
+    //RUTINA LUCAS CABRERA Nº 4 - 5 MUSCULACIÓN + 2 HIIT - MAYOR INTENSIDAD
+    "lucascabrera4": {
+      name: "Lucas",
+      plan: {
+
+        "Día 1 - Piernas": {
+          "Acondicionamiento & Calentamiento": [
+            {
+              superset: [
+            "Rotaciones con Disco 2 x 10• 8 a cada lado",
+            "Sentadillas + Estocadas con Peso 2 x 12• 10",
+              ],
+              restAfter: "1min"
+            },
+            ],
+          "Entrenamiento de Fuerza": [
+            "Isquiotibiales Acostado 3 x (12+↓8)• (10+↓8)• (10+↓6) rest=1-2min",
+            {
+              superset: [
+            "Hack Squat 4 x 16• ↑12• ↑10• ↑8",
+            "Gemelos en Hack 4 x 12 al fallo",
+              ],
+              restAfter: "2-3min"
+            },
+            "Sentadillas con Barra (pausa 2seg abajo 🔥) 4 x 10• ↑8• ↑6• 6 rest=3-4min",
+            "Extensión de Cuádriceps Sentado 4 x (14+↓8+↓6)• (12+↓8+↓6)• (10+↓8)• fallo rest=1-2min",
+            "Plancha Frontal 3 x 1min rest=1min",
+            ],
+          "Entrenamiento HIIT": [
+            "Bicicleta Estática",
+            ],
+          },
+
+        "Día 2 - Hombros + Brazos": {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Flexiones BB Cerradas 2 x 16• 12",
+            "Bíceps + Press Arnold con Mancuernas 2 x 14• 12",
+            ],
+            restAfter: "1-2min"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+            "Press Militar con Barra 4 x 10• ↑8• ↑8• 6 rest=2-3min",
+            "Vuelos Laterales con Mancuernas 4 x 14• 12• (10+↓8)• (8+↓6) rest=1-2min",
+            "Vuelos Posteriores con Mancuernas 3 x 12• 10• (10+↓8) rest=1-2min",
+          {
+            superset: [
+            "Bíceps con Barra W 4 x 12• 10• 8• ↓10",
+            "Tríceps con Barra W Agarre Inverso 4 x 12• 10• (8+↓6)• (8+↓6)",
+            ],
+            restAfter: "2-3min"
+          },
+          {
+            superset: [
+            "Bíceps Predicador con Mancuerna 3 x 10• 8• ↓(6+fallo)",
+            "Press Francés Acostado con Barra W 3 x 12• 10• (8+↓8)",
+            ],
+            restAfter: "2-3min"
+          },
+          ],
+          },
+
+        "Día 3 - Superior (Énfasis Espalda)": {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Dominadas Agarre Prono 3 x máx• máx• máx",
+            "Vuelos Posteriores con Mancuernas 2 x 16• 14 (liviano)",
+            ],
+            restAfter: "1-2min"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+            "Remo con Barra (pausa 1seg en contracción) 4 x 12• ↑10• ↑8• 8 rest=2-3min",
+            "Polea al Pecho Agarre Prono Cerrado 4 x 14• 12• ↓(10+↓8)• ↓(10+↓6) rest=2min",
+            "Remo en Máquina Sentado 4 x 12• ↑10• (10+↓8)• (8+↓6) rest=2min",
+            "Polea con Triángulo 3 x 12• ↓10• ↓(8+↓6) rest=2min",
+            "Encogimientos con Mancuernas 4 x 12• 10• 10• 8 rest=1-2min",
+            "Dominadas 3 x fallo• fallo• fallo rest=2min",
+            ],
+          },
+
+        "Día 4 - Piernas": {
+          "Acondicionamiento & Calentamiento": [
+        {
+              superset: [
+            "Burpees Completos 2 x 10• 10",
+            "Plancha Frontal 2 x 1min",
+              ],
+              restAfter: "1min"
+          },
+          "Sentadillas + Estocadas con Peso 1 x 14",
+            ],
+          "Entrenamiento de Fuerza": [
+            "Isquiotibiales Nórdicos 4 x 14A• (12+↓10A)• (10+↓8A)• (8+↓8A) rest=2min",
+            "Peso Muerto Convencional 4 x 12• ↑10• ↑8• 6 rest=3-4min",
+            "Hip Thrust con Barra 4 x 12• ↑10• ↑8• 8 rest=2-3min",
+          {
+              superset: [
+            "Sentadillas Búlgara con Mancuernas 3 x 12• ↑10• 8",
+            "Isquiotibiales Sentado 3 x (12+↓8)• (10+↓8)• fallo",
+              ],
+              restAfter: "2-3min"
+          },
+            "Crunch con Polea 3 x 16• 12• 12 rest=1-2min",
+            ],
+          },
+
+        "Día 5 - Superior (Énfasis Pecho)": {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Dominadas Agarre Prono 2 x 8• 6",
+            "Flexiones BB Cerradas + Carpa 2 x 16• 14",
+            ],
+            restAfter: "1min 30seg"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+            "Polea al Pecho Agarre Prono Cerrado (tope de carga 🔥) 3 x 10• 8• ↓(6+fallo) rest=2min",
+            "Aperturas en Máquina 4 x 16• ↓(12+↓8)• ↓(10+↓8)• (8+↓6+↓fallo) rest=2-3min",
+            "Press Banca Inclinado con Mancuernas 4 x 12• ↑10• ↑8• 6 rest=2-3min",
+            "Press de Pecho en Máquina 3 x (12+↓8+↓fallo)• (10+↓8)• fallo rest=2-3min",
+          {
+            superset: [
+            "Vuelos Laterales con Mancuernas 3 x 12• 10• ↓10",
+            "Fondos para Pecho 3 x fallo• fallo• fallo",
+            ],
+            restAfter: "2-3min"
+          },
+          ],
+          "Entrenamiento HIIT": [
+          "Correr en Cinta (caminadora)",
+          ],
+          },
+      },
+    },
 
 
-//RUTINA ISAAC Nº 3 - 5 MUSCULACIÓN + 2 HIIT !    
+
+    //RUTINA ISAAC Nº 3 - 5 MUSCULACIÓN + 2 HIIT !
     "isaacmolinares3": {
       name: "Teniente Isaac",
       plan: {  
@@ -11486,6 +11626,7 @@ const userRoutineMapping = {
   lucascabrera1: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "lucascabrera1" },
   lucascabrera2: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "lucascabrera2" },
   lucascabrera3: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "lucascabrera3" },
+  lucascabrera4: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "lucascabrera4" },
   santiagocabrera1: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "santiagocabrera1" },
   santiagocabrera2: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "santiagocabrera2" },
   lucasgomezrios1: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "lucasgomezrios1" },
@@ -11565,6 +11706,7 @@ const userPasswords = {
   'yogurt-quarzo-tundra-vesuvio-napolitana-limoncello-dolcevita-firenze':'lucascabrera1', //lucabre1
   'yogurt-quarzo-tundra-vesuvio-napolitana-limoncello-dolcevita-octavo':'lucascabrera2', //lucabre2
   'yogurt-quarzo-tundra-vesuvio-laguna':'lucascabrera3', //luca3
+  'yogurt-quarzo-tundra-vesuvio-napolitana-limoncello-dolcevita-hermitage':'lucascabrera4', //lucabre4
   'vesuvio-yogurt-vesuvio-russia-espresso-spaghetti': 'alansanchez',
   'tundra-vesuvio-limoncello-vesuvio-gondola-dolcevita-urali-gelato-dolcevita-piazza-vesuvio': 'nicolasrivera', //caradeoveja
   'yogurt-siberia-espresso-vesuvio-yogurt-borschino': 'lisandroalyosha1',
@@ -13832,7 +13974,44 @@ const USER_HIIT_DAY_NOTES = {
             <p>A mimir. 😴</p>`
     },
     ],
-  },   
+  },
+
+
+
+  "lucascabrera4": {
+    "Día 1 - Piernas": [
+      { title: "HIIT en Bicicleta Estática",
+      body: `<p><strong>15 a 20 MINUTOS TOTALES.</strong></p>
+            <p><b>3-5 minutos:</b> calentamiento a ritmo suave.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p>
+            <ul class="list-disc pl-6">
+            <li>30-40 segundos a máxima intensidad (alta resistencia y velocidad).</li>
+            <li>50-60 segundos de pedaleo suave (recuperación activa).</li>
+            </ul>
+            <p><b>Repetir 8-10 veces seguidas:</b> o sea <b>(30-40seg + 50-60seg) x 8-10 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 2 minutos de pedaleo suave para enfriar.</p>
+            <p>A mimir. 😴</p>`
+    },
+    ],
+    "Día 5 - Superior (Énfasis Pecho)": [
+     { title: "HIIT en Cinta (caminadora)",
+      body: `<p><strong>15 a 20 MINUTOS TOTALES.</strong></p>
+            <p><b>¡Intentá superar tu velocidad de semanas anteriores!</b></p>
+            <p>Inclinar la Cinta unos 9 grados.</p>
+            <p><b>500 metros:</b> caminar a 4-5 km/h.</p>
+            <p>Desinclinar la Cinta a 0 grados (llano).</p>
+            <p><b>500 metros:</b> trote suave para entrar en calor (8 km/h).</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p>
+            <ul class="list-disc pl-6">
+            <li>1 minuto a ~ 3/4 (fast) de tu velocidad máxima (ej: ~16-17 km/h).</li>
+            <li>1 minuto tranqui (slow) a 5 km/h.</li>
+            </ul>
+            <p><b>Repetir 6 veces seguidas:</b> o sea <b>(1 minuto fast + 1 minuto slow) x 6 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 1 minuto caminando.</p>
+            <p>A mimir. 😴</p>`
+    },
+    ],
+  },
 
 
 
