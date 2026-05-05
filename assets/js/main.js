@@ -2604,6 +2604,127 @@ const trainingFolders = {
 
 
 
+    //RUTINA VALENTINA CARRIZO Nº 1 - 4 MUSCULACIÓN + 1 HIIT + (1 LISS) !
+        "valentinacarrizo1": {
+      name: "Valen",
+         // PLAN DE ENTRENAMIENTO SEMANAL !      
+      plan: {  
+
+        "Día 1 - Piernas": {
+          "Acondicionamiento & Calentamiento": [            
+            {
+              superset: [
+            "Rotaciones con Bolsa (o disco) 2 x 10• 10 a cada lado",
+            "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 16• 12",
+            ],
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento de Fuerza": [
+            "Isquiotibiales Sentada 4 x ↑14• (12+↓8)• 10• 8 rest=1-2min",
+            "Aductores Sentada 3 x fallo• fallo• fallo rest=1-2min",
+            "Hip Thrust en Smith 4 x 12• ↑10• 10• ↑8 rest=2-3min",
+            "Sentadillas Sumo en Smith 3 x 12• ↑10• 8 rest=2-4min",
+            "Hiperextensión para Glúteos (con Peso) 3 x 12• 10• 10 rest=2min",
+            "Crunch en Máquina 3 x 16• 12• 12 (si te queda energía!) rest=1-2min"
+            ],
+          },
+
+      "Día 2 - Superior":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Flexiones BB Cerradas 2 x 10• 10 (las que puedas normal, luego apoyá las rodillas)",
+            "Bíceps + Press Arnold con Mancuernas 2 x 12• 12",
+          ],
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento de Fuerza": [
+            "Polea al Pecho Prono Cerrado 4 x 16• 12• 10• 8 rest=1-2min",
+            "Polea al Pecho con Triángulo 3 x 10• 10• (8+↓6) rest=1-2min",
+            "Vuelos Laterales con Mancuernas 3 x 12• 10• 10 rest=1-2min",
+            "Press de Pecho en Maquina 4 x 14• 12• 10• 10 rest=2min",
+                        {
+            superset: [
+            "Bíceps Martillo Alternado con Mancuernas 3 x 12• 10• 8",
+            "Extensión de Tríceps con Polea con Barra  3 x (12+↓8)• (10+↓6)• 10",
+          ],
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento HIIT": [
+            "Correr en Cinta"
+            ],
+          },
+
+        "Día 3 - Full Body":  {
+          "Acondicionamiento & Calentamiento": [
+            {
+            superset: [
+            "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 14• 12",
+            "Burpees Completos 2 x 8• 8",
+          ],
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento de Fuerza": [
+            "Isquiotibiales Sentada 3 x 16• (12+↓8)• (12+↓8) rest=1-2min",
+            "Extensión de Cuadriceps Sentada 3 x 16• 12• (10+↓6) rest=1-2min",
+            {
+            superset: [
+            "Prensa 4 x 16• 12• 10• 10",
+            "Gemelos en Prensa 4 x 10 a 14 reps al fallo",
+          ],
+            restAfter: "2-3min"
+          },
+                    {
+            superset: [
+            "Peso Muerto Rumano con Mancuernas 3 x 14• 12• 12",
+            "Vuelos Posteriores con Mancuernas 3 x 12• 12• 10",
+          ],
+            restAfter: "2min"
+          },
+                    {
+            superset: [
+            "Arranque con Mancuerna + Press de Hombro Alternado 3 x 10• 10• 8",
+            "Burpees Completos 3 x 8• 8• 6",
+            "SI PODÉS HACÉ UNA 4TA SERIE!",
+          ],
+            restAfter: "2-3min"            
+          },           
+        ],
+      },
+
+        "Día 4 - Piernas":  {
+          "Acondicionamiento & Calentamiento": [
+        {
+              superset: [
+            "Rotaciones con Bolsa (o disco) 2 x 12• 10 a cada lado",
+            "Burpees Completos 2 x 10• 10",
+            "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
+            ],
+            restAfter: "1min"
+          },
+          "Plancha Frontal 1 x a lo que dés!"
+            ],
+          "Entrenamiento de Fuerza": [
+          {
+              superset: [
+            "Sentadillas en Hack 5 x 16• ↑12• ↑10(RIR 2)• ↑10• ↑8",
+            "Gemelos en Hack 5 x 10 a 16 reps al fallo",
+            ],
+            restAfter: "2-4min"
+          },
+            "Sentadillas Búlgara con Mancuernas 4 x 12• ↑10• ↑8• 8 rest=2-3min",
+            "Extensión de Cuádriceps Sentada 4 x 14• ↓(10+↓8)• ↓(10+↓8)• (10+↓8+↓6) rest=1-2min",
+            ],
+          },
+      },
+    },
+
+
+
 //RUTINA JULIAN Nº 1 - 4 MUSCULACIÓN + 1 HIIT + (1 LISS) !
     "julianmagallanes1": {
       name: "Juli",
@@ -11324,6 +11445,7 @@ const userRoutineMapping = {
   javierjofremaldonado3: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "javierjofremaldonado3" },
   sofiaustarroz:    { folder: "4 MUSCULACIÓN (1 FB HIIT) + (1 LISS)", routine: "sofiaustarroz" },
   azulcherubini3: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "azulcherubini3" },
+  valentinacarrizo1: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "valentinacarrizo1" },
   julianmagallanes1: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "julianmagallanes1" },
   julianmagallanes2: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "julianmagallanes2" },
   francobarbero1 : { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "francobarbero1" },
@@ -11390,6 +11512,97 @@ const userRoutineMapping = {
   ivantrujillo2: { folder: "7 MUSCULACIÓN + 2 HIIT", routine: "ivantrujillo2" },
   ivantrujillo3: { folder: "7 MUSCULACIÓN + 2 HIIT", routine: "ivantrujillo3" },
     alejandropascual1: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "alejandropascual1" },
+};
+
+/* ===========================
+   PASAHITSAK POR USUARIO
+=========================== */
+// Mapea pasahitzak únicas a la clave de usuario definida en `userRoutineMapping`.
+// Edita estos valores para asignar pasahitzak reales por persona.
+//       Para máxima seguridad, usa un BACKEND. Esto es un control básico.
+
+const userPasswords = {
+  // CLAVES ÚINCAS DE USUARIOS
+  'napolitana-limoncello-vesuvio-spaghetti-urali-espresso': 'publicidadbrazos', //brazos
+  'borscht-siberia-dolcevita-limoncello-russia-vesuvio-espresso': 'publicidadpiernas', //piernas
+  'vesuvio-kremlin-quarzo-espresso-amore-siberia-russia-vesuvio-octavo-zarina-octavo-batata': 'agustina',
+  'tiramisu-limoncello-vesuvio-russia-napolitana-vesuvio-limoncello-firenze-hermitage': 'francobarbero1', //franbar14
+  'tundra-vesuvio-balalaika-siberia-yogurt-vesuvio-yogurt-vesuvio': 'camilafrancoblonda', //camilala
+  'tundra-vesuvio-balalaika-firenze': 'camilaabendaño', //cam1
+  'amore-vesuvio-tundra-siberia-spaghetti-vesuvio-russia-vesuvio': 'tacianabavaud',
+  'napolitana-dolcevita-russia-yogurt-vesuvio-quarzo-gondola-vesuvio-firenze': 'benjaminlauda1', //benlauda1
+  'gondola-vesuvio-russia-borschino-tiramisu': 'danielflores1', //danyf
+  'gondola-vesuvio-russia-borschino-tiramisu-octavo': 'danielflores2', //danyf2
+  'vesuvio-spaghetti-quarzo-yogurt-tundra-opera-dolcevita-limoncello-quarzo-firenze': 'azulcherubini2',
+  'piazza-quarzo-yogurt-siberia-balalaika-vesuvio-kremlin': 'julianmagallanes1', 
+  'piazza-quarzo-yogurt-siberia-balalaika-vesuvio-kremlin-octavo': 'julianmagallanes2', 
+  'siberia-kremlin-russia-vesuvio-espresso-tundra-vesuvio': 'ignacioscagliotti1',
+  'limoncello-urali-tundra-urali-limoncello-amore-dolcevita-spaghetti':'rodrigotejadacortez1', //rocortez
+  'limoncello-urali-tundra-urali-limoncello-amore-dolcevita-spaghetti-octavo': 'rodrigotejadacortez2', //rocortez2
+  'vesuvio-spaghetti-spaghetti-octavo': 'azulcherubini3',
+  'gondola-vesuvio-balalaika-siberia-borscht-urali-limoncello-octavo': 'damianportillo2', //damipor2
+  'gondola-vesuvio-balalaika-siberia-borscht-urali-limoncello-laguna': 'damianportillo3', //damipor3
+  'gondola-vesuvio-balalaika-siberia-borscht-hermitage': 'damianportillo4', //damip4
+  'piazza-opera-urali-vesuvio-russia-firenze': 'jhoancastaño1', //jhoan1
+  'piazza-tundra-vesuvio-espresso-amore-vesuvio-octavo': 'jhoancastaño2', //jcasta2
+  'piazza-opera-urali-vesuvio-russia-tundra-vesuvio-laguna': 'jhoancastaño3', //jhoanca3
+  'gondola-siberia-dolcevita-kremlin-urali-espresso-vesuvio-russia':'diegosantandrian1',
+  'napolitana-limoncello-quarzo-espresso-dolcevita-limoncello-dolcevita-limoncello': 'brunoserer1',
+  'islandia-vesuvio-tundra-opera-dolcevita-urali-borschino': 'kacheoyhamburu3',
+  'islandia-dolcevita-gelato-siberia-russia-balalaika': 'kevinmoreno1',
+  'siberia-espresso-vesuvio-balalaika-laguna': 'isaacmolinares3', //isam3
+  'siberia-espresso-vesuvio-vesuvio-tundra-balalaika-hermitage': 'isaacmolinares4', //isaacm4
+  'vesuvio-limoncello-amore-quarzo-limoncello-urali-espresso-octavo': 'arturoservin2', //arturos2
+  'vesuvio-limoncello-amore-quarzo-limoncello-urali-espresso-laguna': 'arturoservin3', //arturos3
+  'limoncello-dolcevita-siberia-russia-laguna': 'rein3',  
+  'tundra-vesuvio-balalaika-siberia-gondola-octavo': 'camiloduranm2',
+  'yogurt-quarzo-siberia-espresso-kremlin-octavo': 'luisgonzalez2', //luisg2
+  'yogurt-quarzo-siberia-espresso-kremlin-laguna': 'luisgonzalez3',  //luisg3
+  'yogurt-kremlin-kremlin-hermitage': 'luisgonzalez4',  //lgg4
+  'borscht-vesuvio-yogurt-urali-balalaika-vesuvio-tundra-vesuvio': 'palomacarrera1',
+  'borscht-vesuvio-yogurt-urali-balalaika-vesuvio-tundra-vesuvio-octavo': 'palomacarrera2',
+  'siberia-gelato-vesuvio-russia-kremlin-octavo': 'ivangoic2', //ivang2
+  'siberia-gelato-vesuvio-russia-kremlin-laguna': 'ivangoic3', //ivang3
+  'siberia-gelato-vesuvio-russia-kremlin-hermitage': 'ivangoic4', //ivang4
+  'siberia-gelato-vesuvio-russia-kremlin-batata': 'ivangoic5', //ivang5
+  'balalaika-vesuvio-amore-siberia-tundra-vesuvio-russia-vesuvio-firenze': 'matiascanalini1', //maticana1
+  'balalaika-vesuvio-amore-siberia-vesuvio-espresso-tundra-vesuvio-russia-vesuvio-octavo': 'matiascanalini2', //matiascana2
+  'balalaika-vesuvio-amore-amore-laguna': 'matiascanalini3', //matt3
+  'yogurt-quarzo-tundra-vesuvio-napolitana-limoncello-dolcevita-firenze':'lucascabrera1', //lucabre1
+  'yogurt-quarzo-tundra-vesuvio-napolitana-limoncello-dolcevita-octavo':'lucascabrera2', //lucabre2
+  'yogurt-quarzo-tundra-vesuvio-laguna':'lucascabrera3', //luca3
+  'vesuvio-yogurt-vesuvio-russia-espresso-spaghetti': 'alansanchez',
+  'tundra-vesuvio-limoncello-vesuvio-gondola-dolcevita-urali-gelato-dolcevita-piazza-vesuvio': 'nicolasrivera', //caradeoveja
+  'yogurt-siberia-espresso-vesuvio-yogurt-borschino': 'lisandroalyosha1',
+  'balalaika-vesuvio-limoncello-siberia-urali-balalaika-siberia-firenze': 'mariomiranda1',
+  'espresso-vesuvio-russia-amore-siberia-borscht-vesuvio-russia-vesuvio-firenze': 'santiagopanayotidis1', //santipana1
+  'limoncello-dolcevita-napolitana-urali-firenze': 'joserebolledo1', //rebo1
+  'tiramisu-limoncello-vesuvio-russia-balalaika-vesuvio-limoncello-firenze': 'franciscomarin1', //franmar1
+  'espresso-vesuvio-russia-amore-siberia-borscht-vesuvio-russia-octavo': 'santiagopanayotidis2', //santipan2
+  'borscht-vesuvio-russia-vesuvio-borschino-urali-amore-siberia-laguna': 'santiagopanayotidis3', //panayoti3
+  'espresso-vesuvio-russia-amore-siberia-tundra-vesuvio-napolitana-limoncello-dolcevita-firenze': 'santiagocabrera1', //santicabre1
+  'espresso-vesuvio-russia-amore-siberia-vesuvio-kremlin-urali-tundra-vesuvio-octavo': 'santiagocabrera2', //santiagoca2
+  'yogurt-quarzo-tundra-vesuvio-espresso-balalaika-firenze': 'lucasgomezrios1', //lucasm1
+  'yogurt-quarzo-tundra-balalaika-octavo': 'lucasgomezrios2', //lucm2
+  'yogurt-quarzo-tundra-vesuvio-espresso-kremlin-limoncello-laguna': 'lucasgomezrios3', //lucasgr3
+  'yogurt-quarzo-tundra-vesuvio-espresso-balalaika-hermitage': 'lucasgomezrios4', //lucasm4
+  'siberia-gelato-vesuvio-russia-amore-napoli': 'ivantrujillo1', //ivant7
+  'BAJA-siberia-gelato-vesuvio-russia-amore-limoncello-octavo': 'ivantrujillo2', //ivantr2
+  'siberia-gelato-vesuvio-russia-amore-limoncello-laguna': 'ivantrujillo3', //ivantr3
+  'BAJA-balalaika-vesuvio-amore-amore-siberia-vesuvio-firenze-hermitage': 'mattiamorabito1', //mattia14
+  'tundra-vesuvio-limoncello-yogurt-urali-espresso-firenze': 'carlosprado1', //carlos1
+  'tundra-borscht-limoncello-vesuvio-octavo': 'carlosprado2', //cpra2
+  'tundra-vesuvio-limoncello-borscht-vesuvio-laguna': 'carlosprado3', //carpa3
+  'piazza-vesuvio-gelato-siberia-firenze': 'javierjofremaldonado1', //javi1
+  'piazza-vesuvio-gelato-siberia-piazza-octavo': 'javierjofremaldonado2', //javij2
+  'piazza-vesuvio-gelato-siberia-laguna': 'javierjofremaldonado3', //javi3
+  'piazza-vesuvio-borscht-siberia-firenze': 'josepirela1', //japi1
+  'espresso-urali-tiramisu-firenze': 'sofiaustarroz1', //sof1
+  'russia-siberia-tundra-urali-napolitana-firenze': 'nicolasbuffarini1', //nicob1
+  'gelato-siberia-tundra-amore-urali-limoncello-firenze': 'victormansilla1', //victor1
+  'gondola-siberia-dolcevita-kremlin-urali-borschino-firenze': 'diegoyaryour1', //diegoy1
+  'vesuvio-yogurt-dolcevita-piazza-borscht-firenze': 'alejandropascual1', //alejp1
+  'gelato-vesuvio-yogurt-dolcevita-amore-tundra-firenze': 'valentinacarrizo1', //valenc1
 };
 
 /* ===========================
