@@ -2160,7 +2160,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
-            "Dominadas Agarre Prono a los Hombros (mantené 2seg arriba) 2 x 8• 6",
+            "Dominadas Agarre Prono a los Hombros (mantené dos seg arriba) 2 x 8• 6",
            "Flexiones BB Amplias 2 x 20• 16",
           ],
             restAfter: "1min"
@@ -2176,7 +2176,7 @@ const trainingFolders = {
           ],
             restAfter: "1-2min"
           },
-            "Aperturas Sentado en Máquina 4 x 12• 10• 10• (10+↓8_ rest=2min",
+            "Aperturas Sentado en Máquina 4 x 12• 10• 10• (10+↓8) rest=2min",
             "Biceps Predicador con Mancuerna 3 x 10• 10 rest=2min",
             "Press de Pecho en Máquina 4 x 10• 10• 8• 8 rest=2-3min",
           ],
@@ -2185,12 +2185,12 @@ const trainingFolders = {
             ],
           },
 
-        "Día 3 - Superior (Pull + Brazos)":  {
+        "Día 3 - Superior (Pull + Triceps)":  {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
             "Flexiones BB Cerradas + Carpa 2 x 18• 16",
-            "Biceps + Press Arnold con Mancuernas 2 x 10• 18 (peso intermedio-pesado)",
+            "Biceps + Press Arnold con Mancuernas 2 x 10• 8 (peso intermedio-pesado)",
           ],
             restAfter: "1min"
           },           
