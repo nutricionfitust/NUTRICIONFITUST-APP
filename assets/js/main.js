@@ -9617,7 +9617,7 @@ const trainingFolders = {
             ],
           },
 
-      "Día 2 - Superior (Push + Biceps)":  {
+      "Día 2 - Superior (Push + Bíceps)":  {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
@@ -9646,7 +9646,7 @@ const trainingFolders = {
             ],
           },
 
-        "Día 3 - Superior (Pull + Triceps)":  {
+        "Día 3 - Superior (Pull + Tríceps)":  {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
@@ -9677,7 +9677,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
         {
               superset: [
-            "Rotaciones con Bolsa (o disco) 3 x 12• 10• 10 a cada lado",
+            "Rotaciones con Bolsa (o disco) 2 x 12• 10 a cada lado",
             "Burpees Completos 2 x 10• 8",
             ],
             restAfter: "1min"
@@ -9695,26 +9695,37 @@ const trainingFolders = {
             ],
           },
 
-        "Día 5 - Uper":  {
+        "Día 5 - Upper":  {
         "Acondicionamiento & Calentamiento": [
           {
             superset: [
             "Flexiones BB Cerradas + Carpa 2 x 20• 16",
-            "Dominadas Agarre Prono a los Hombros 2 x 12• 10",
+            "Dominadas Agarre Prono a los Hombros 2 x 8• 6",
           ],
             restAfter: "1-2min"
           },
+          "Plancha Lateral 2 x 1min a cada lado rest=1min",
           ],
           "Entrenamiento de Fuerza": [
-          "Plancha Lateral 2 x 1min a cada lado rest=1min",
           "Arranque con Mancuerna + Press de Hombro Alternado 3 x 10• 10• ↑8 rest=2min",
           "Press Inclinado con Mancuernas 4 x 12• ↑10• 10• ↑8",
-            "Vuelos Laterales con Mancuernas 3 x 12• ↑10• ↑8 (son 3 series, está ok)",
-            "Remo Unilateral con Mancuerna 4 x 12• ↑10• 10• 8",
-            "Biceps Martillo Alternado con Mancuernas 4 x 10• 10• 8• 8",
-            "Peso Muerto Convencional 4 x 12• ↑10• ↓16• 16",
-            "Flexiones BB 4 x 2RM (casi fallo)",
+          "Vuelos Laterales con Mancuernas 3 x 12• ↑10• ↑8 (son 3 series, está ok)",
+          "Remo Unilateral con Mancuerna 4 x 12• ↑10• 10• 8",
+                    {
+            superset: [
+             "Biceps Alternado con Mancuernas 3 x 10• 10• 8",
+             "Press Francés Inclinado 𝟰𝟱° con Barra 3 x 12• 10• 10 (barra W)", 
           ],
+            restAfter: "1-2min"
+          },    
+              {
+            superset: [
+            "Bíceps con Barra W 2 x 10• 10",
+           "Flexiones BB Cerradas 2 x fallo",
+          ],
+            restAfter: "1-2min"
+          },    
+        ],
           },
       },
     },
@@ -11664,6 +11675,7 @@ const userRoutineMapping = {
   kevinmoreno1: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "kevinmoreno1" },
   isaacmolinares3: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "isaacmolinares3" },
   isaacmolinares4: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "isaacmolinares4" },
+  isaacmolinares5: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "isaacmolinares5" },
   arturoservin2: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "arturoservin2" },
   arturoservin3: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "arturoservin3" },
   palomacarrera1: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "palomacarrera1" },
@@ -11747,6 +11759,7 @@ const userPasswords = {
   'islandia-dolcevita-gelato-siberia-russia-balalaika': 'kevinmoreno1',
   'siberia-espresso-vesuvio-balalaika-laguna': 'isaacmolinares3', //isam3
   'siberia-espresso-vesuvio-vesuvio-tundra-balalaika-hermitage': 'isaacmolinares4', //isaacm4
+  'siberia-espresso-vesuvio-vesuvio-balalaika': 'isaacmolinares5', //isaam
   'vesuvio-limoncello-amore-quarzo-limoncello-urali-espresso-octavo': 'arturoservin2', //arturos2
   'vesuvio-limoncello-amore-quarzo-limoncello-urali-espresso-laguna': 'arturoservin3', //arturos3
   'limoncello-dolcevita-siberia-russia-laguna': 'rein3',  
@@ -14240,6 +14253,40 @@ const USER_HIIT_DAY_NOTES = {
     ],
   },
 
+
+
+  "isaacmolinares5": {
+    "Día 2 - Superior (Push + Bíceps)": [
+      { title: "HIIT en Cinta (caminadora)",
+        body: `<p><strong>14 MINUTOS TOTALES.</strong></p>
+        <p><b>2 minutos:</b> Inclinar 6 grados, caminar.</p>
+            <p><b>2 minutos:</b> 0 grados,trote suave.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>200 metros a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
+            <li>100 metros caminando (ej: ~5.5 km/h).</li>
+            </ul>
+            <p><b>Repetir 4 veces seguidas:</b> o sea <b>(200 m 3/4 + 100 m caminando) x 4 sin descanso.</b></p>
+            <p><b>Si llegás a 6 mejor.</b></p>
+            <p><b>Recuperación:</b> 1 minuto caminando.</p>
+            <p>A mimir. 😴</p>`
+    },
+    ],
+    "Día 3 - Superior (Pull + Tríceps)": [
+  { title: "HIIT en Máquina de Remo",
+      body: `<p><strong>9 a 15 MINUTOS TOTALES.</strong></p>
+            <p><b>2 minutos:</b> ritmo cómodo para calentar.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>Rema durante 1 minuto a la intensidad más alta que puedas.</li>
+            <li>Descansa durante 1 minuto.</li>
+            </ul>
+            <p><b>Repetir el entrenamiento tantas veces como te sea posible!:</b> haz un mínimo de 3 ciclos de <b>(1min full + 1min de descanso).</b></p>
+            <p>A mimir. 😴</p>`
+    },
+    ],
+  },
+  
 
 
   "rein3": {
