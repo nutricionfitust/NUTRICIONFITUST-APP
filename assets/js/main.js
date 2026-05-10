@@ -7615,9 +7615,6 @@ const trainingFolders = {
             "Aperturas Sentado en Máquina 4 x 12• 10• 10• (10+↓8) rest=2min",
             "Biceps Predicador con Mancuerna 3 x 10• 10 rest=2min",
             "Press de Pecho en Máquina 4 x 10• 10• 8• 8 rest=2-3min",
-          ],
-          "Entrenamiento HIIT": [
-            "Correr en Cinta"
             ],
           },
 
@@ -13763,22 +13760,7 @@ const USER_HIIT_DAY_NOTES = {
 
 
      "ivangoic6": {
-    "Día 3 - Espalda + Brazos": [
-      { title: "HIIT en cinta (caminadora)",
-      body: `<p><strong>10 MINUTOS SEG TOTALES.</strong></p>
-            <p><b>2 minutos:</b> trote suave para entrar en calor.</p>
-            <p>Inclinar la Cinta unos 6 grados.</p>
-            <p>Luego, <b>intervalos (HIIT):</b></p> 
-            <ul class="list-disc pl-6">
-            <li>30 segundos a ~ 5/8 de tu velocidad máxima (ej: ~14 km/h).</li>
-            <li>1 minuto caminando (ej: ~5 km/h). Inclinando más la máquina.</li>
-            </ul>
-            <p><b>Repetir 4 veces seguidas:</b> o sea <b>(30seg + 1min) x 4 sin descanso.</b></p>
-            <p><b>Recuperación:</b> 1 minuto caminando.</p>
-            <p>A mimir. 😴</p>`
-    },
-    ],
-        "Día 4 - Piernas": [
+        "Día 3 - Superior (Pull + Tríceps)": [
       { title: "HIIT en Máquina de Remo",
       body: `<p><strong>9 a 15 MINUTOS TOTALES.</strong></p>
             <p><b>2 minutos:</b> ritmo cómodo para calentar.</p>
