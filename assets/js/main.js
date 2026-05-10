@@ -7740,12 +7740,12 @@ const trainingFolders = {
              {
             superset: [
            "Arranque con Mancuerna + Press de Hombro Alternado 3 x 10• 10• ↑8",
-            "Plancha Frontal 3 x 1min",
+            "Plancha Frontal 3 x 40seg a 1min",
           ],
             restAfter: "30seg"
           },
           "Correr en Cinta 600 metros (11 a 14 km/h)",
-          "Caminata en Cinta de Enfriamiento 5 minutos a ritmo suave (6-7 km/h)",
+          "Caminata en Cinta de Enfriamiento 5 minutos a ritmo suave (5.5 - 6 km/h)",
           ],
           },
       },
