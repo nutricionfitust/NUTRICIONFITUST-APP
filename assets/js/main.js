@@ -7587,6 +7587,174 @@ const trainingFolders = {
 
 
 
+        //RUTINA IVÁN Nº 6 - 5 MUSCULACIÓN + 2 HIIT !
+    "ivangoic6": {
+      name: "Iván",
+      plan: {  
+
+          "Día 1 - Superior (Push + Bíceps)":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Dominadas Agarre Prono a los Hombros (mantené dos seg arriba) 2 x 8• 6",
+           "Flexiones BB Amplias 2 x 20• 16",
+          ],
+            restAfter: "1min"
+          },
+                      "Plancha Lateral 2 x 1min a cada lado rest=1min",
+          ],
+          "Entrenamiento de Fuerza": [
+            "Press Militar con Mancuernas Sentado 3 x 12• 10• 8 rest=2min",
+                      {
+            superset: [
+              "Vuelos Laterales con Mancuernas 3 x 12• 10• 10",
+              "Biceps Martillo Alternado con Mancuernas 3 x 10• 10• 8",
+          ],
+            restAfter: "1-2min"
+          },
+            "Aperturas Sentado en Máquina 4 x 12• 10• 10• (10+↓8) rest=2min",
+            "Biceps Predicador con Mancuerna 3 x 10• 10 rest=2min",
+            "Press de Pecho en Máquina 4 x 10• 10• 8• 8 rest=2-3min",
+          ],
+          "Entrenamiento HIIT": [
+            "Correr en Cinta"
+            ],
+          },
+
+      "Día 2 - Piernas":  {
+          "Acondicionamiento & Calentamiento": [
+            "Elíptica 8 min",
+            "Plancha Frontal 2 x 1min 30seg rest=1min",
+            ],
+          "Entrenamiento de Fuerza": [
+            "Hiperextensión para Glúteos (con Peso) 4 x 16• (12+↓8)• (10+↓8)• 10 rest=1-2min",
+            "Patadas Atrás en Máquina 3 x 12• 12• 10 rest=2min",
+            "Estocadas con Mancuernas 3 x 12• 12• 10 rest=1-2min",
+            "Peso Muerto Convencional 4 x 12• ↑10• ↑8• 8 rest=3-4min",
+            "Hip Thrust con Barra 3 x 12• ↑10• ↑8 rest=2-3min",
+            "Sentadillas con Barra 2 x 10• 10 rest=2-3min",
+            "Sentadillas con Barra + Salto 2 x 8• 8 rest=2-3min",
+            ],
+          },
+
+            "Día 3 - Superior (Pull + Tríceps)":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Flexiones BB Cerradas + Carpa 2 x 18• 16",
+            "Biceps + Press Arnold con Mancuernas 2 x 10• 8 (peso intermedio-pesado)",
+          ],
+            restAfter: "1min"
+          },           
+          ],
+          "Entrenamiento de Fuerza": [
+            "Polea al Pecho con Triángulo 4 x 12• 10• ↓12• ↓(10+↓6) rest=2min",
+            "Vuelo Posterior Unilateral Sentado en Máquina 4 x 10• 10• 8• 8 rest=1-2min",
+            "Remo Unilateral Sentado en Máquina 3 x 12• 10• 10 rest=2min",
+            {
+              superset: [
+           "Press Banca con Agarre Cerrado (Ancho de Hombros) 4 x 12• 10• 8• 8 ",   
+           "Encogimientos con Mancuernas 4 x 10• 10• 8• 8",           
+            ],
+            restAfter: "1-2min"
+          },
+          ],
+          "Entrenamiento HIIT": [
+            "Máquina de Remo"
+            ],
+          },
+
+        "Día 4 - Hombros + Brazos":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Flexiones BB Cerradas + Carpa 2 x 18• 16",
+            "Plancha Frontal 2 x 1min 30seg a 2min",
+          ],
+            restAfter: "1-2min"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+          {
+            superset: [
+            "Press Militar con Mancuernas Sentado 4 x 12• 10• 8• 8",
+            "Vuelos Laterales con Mancuernas 4 x 12• 10• (10+↓8)• 8"
+          ],
+            restAfter: "2-3min"            
+          },
+          "Vuelo Posterior Unilateral en Máquina Sentado 3 x 12• 10• 8 rest=1-2min",
+          {
+            superset: [
+            "Bíceps Martillo Alternado con Mancuernas 4 x 12• 10• 8• 8",
+            "Extensión de Tríceps con Barra 4 x 12• (12+↓6)• (10+↓6)• (8+↓6)",
+          ],
+            restAfter: "2-3min"            
+          },
+          {
+            superset: [
+            "Bíceps Predicador con Mancuernas 3 x 10• 8• 8",
+            "Press Francés Sentado con Apoyo 𝟰𝟱° 3 x 12• 12• 10",    
+          ],
+            restAfter: "2-3min"            
+          },
+          ],
+          },
+
+        "Día 5 - Híbrido":  {
+        "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Flexiones BB Cerradas + Carpa 2 x 20• 16",
+            "Dominadas Agarre Prono a los Hombros (mantené dos segundos arriba) 2 x 10• 8",
+          ],
+            restAfter: "1-2min"
+          },
+          ],
+          "Bloque 1": [
+          "Burpees + Dominadas 3 x 12• 10• 8 rest=1min (hacés una dominada, después un burpee, y así hasta completar las repeticiones)",
+          "Correr en Cinta 600 metros (11 a 14 km/h)",
+          ],
+             "Bloque 2": [
+              {
+            superset: [
+            "Patadas Atrás en Máquina 3 x 12• 12• 10",
+            "Flexiones BB 3 x 12• 12• 10",
+          ],
+            restAfter: "30seg"
+          },
+          "Correr en Cinta 600 metros (11 a 14 km/h)",
+               ],
+             "Bloque 3": [
+          "Remo Sentado en Máquina con Triángulo con Extensión 3 x 12• 10• 8 rest=1min",
+          "Correr en Cinta 600 metros (11 a 14 km/h)",
+               ],
+             "Bloque 4": [
+              "Estocadas con Mancuernas 3 x 12• 12• 10 rest=1min",
+              "Correr en Cinta 600 metros (11 a 14 km/h)",
+             ],
+              "Bloque 5": [
+                "Remo en Máquina 3 minutos a ritmo intenso (RPE 8-9)",
+                "Correr en Cinta 600 metros (11 a 14 km/h)",
+              ],
+              "Bloque 6": [
+             {
+            superset: [
+           "Arranque con Mancuerna + Press de Hombro Alternado 3 x 10• 10• ↑8",
+            "Plancha Frontal 3 x 1min",
+          ],
+            restAfter: "30seg"
+          },
+          "Correr en Cinta 600 metros (11 a 14 km/h)",
+          "Caminata en Cinta de Enfriamiento 5 minutos a ritmo suave (6-7 km/h)",
+          ],
+          },
+      },
+    },
+
+
+
+
+
     //RUTINA LUIS GONZALEZ Nº 4 - 5 MUSCULACIÓN + 2 HIIT ! las rutinas anteriores están en 5 MUSCULACIÓN + 1 HIIT + 1 LISS
     "luisgonzalez4": {
       name: "Luis González",
@@ -9709,7 +9877,7 @@ const trainingFolders = {
           "Entrenamiento de Fuerza": [
           "Arranque con Mancuerna + Press de Hombro Alternado 3 x 10• 10• ↑8 rest=2min",
           "Press Inclinado con Mancuernas 4 x 12• ↑10• 10• ↑8",
-          "Vuelos Laterales con Mancuernas 3 x 12• ↑10• ↑8 (son 3 series, está ok)",
+          "Vuelos Laterales con Mancuernas 3 x 12• ↑10• ↑8",
           "Remo Unilateral con Mancuerna 4 x 12• ↑10• 10• 8",
                     {
             superset: [
@@ -11690,6 +11858,7 @@ const userRoutineMapping = {
   ivangoic3: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "ivangoic3" },
   ivangoic4: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "ivangoic4" },
   ivangoic5: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "ivangoic5" },
+  ivangoic6: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "ivangoic6" },
   matiascanalini1: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "matiascanalini1" },
   matiascanalini2: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "matiascanalini2" },
   matiascanalini3: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "matiascanalini3" },
@@ -11773,6 +11942,7 @@ const userPasswords = {
   'siberia-gelato-vesuvio-russia-kremlin-laguna': 'ivangoic3', //ivang3
   'siberia-gelato-vesuvio-russia-kremlin-hermitage': 'ivangoic4', //ivang4
   'siberia-gelato-vesuvio-russia-kremlin-batata': 'ivangoic5', //ivang5
+  'siberia-gelato-kremlin-lagosta': 'ivangoic6', //ivg6
   'balalaika-vesuvio-amore-siberia-tundra-vesuvio-russia-vesuvio-firenze': 'matiascanalini1', //maticana1
   'balalaika-vesuvio-amore-siberia-vesuvio-espresso-tundra-vesuvio-russia-vesuvio-octavo': 'matiascanalini2', //matiascana2
   'balalaika-vesuvio-amore-amore-laguna': 'matiascanalini3', //matt3
@@ -13561,6 +13731,38 @@ const USER_HIIT_DAY_NOTES = {
 
 
    "ivangoic5": {
+    "Día 3 - Espalda + Brazos": [
+      { title: "HIIT en cinta (caminadora)",
+      body: `<p><strong>10 MINUTOS SEG TOTALES.</strong></p>
+            <p><b>2 minutos:</b> trote suave para entrar en calor.</p>
+            <p>Inclinar la Cinta unos 6 grados.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>30 segundos a ~ 5/8 de tu velocidad máxima (ej: ~14 km/h).</li>
+            <li>1 minuto caminando (ej: ~5 km/h). Inclinando más la máquina.</li>
+            </ul>
+            <p><b>Repetir 4 veces seguidas:</b> o sea <b>(30seg + 1min) x 4 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 1 minuto caminando.</p>
+            <p>A mimir. 😴</p>`
+    },
+    ],
+        "Día 4 - Piernas": [
+      { title: "HIIT en Máquina de Remo",
+      body: `<p><strong>9 a 15 MINUTOS TOTALES.</strong></p>
+            <p><b>2 minutos:</b> ritmo cómodo para calentar.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>Rema durante 1 minuto a la intensidad más alta que puedas.</li>
+            <li>Descansa durante 1 minuto.</li>
+            </ul>
+            <p><b>Repetir el entrenamiento tantas veces como te sea posible!:</b> haz un mínimo de 3 ciclos de <b>(1min full + 1min de descanso).</b></p>
+            <p>A mimir. 😴</p>`
+  },
+  ],
+  },   
+
+
+     "ivangoic6": {
     "Día 3 - Espalda + Brazos": [
       { title: "HIIT en cinta (caminadora)",
       body: `<p><strong>10 MINUTOS SEG TOTALES.</strong></p>
