@@ -9596,7 +9596,128 @@ const trainingFolders = {
 
 
 
+//RUTINA ISAAC Nº 5 - 5 MUSCULACIÓN + 2 HIIT !    
+    "isaacmolinares5": {
+      name: "Teniente Isaac",
+      plan: {
+// PLAN DE ENTRENAMIENTO SEMANAL !
 
+        "Día 1 - Piernas": {
+           "Acondicionamiento & Calentamiento": [            
+            "Elíptica 8 min",
+            "Plancha Frontal 2 x 1min 30seg rest=1min",
+            ],
+          "Entrenamiento de Fuerza": [
+            "Hiperextensión para Glúteos (con Peso) 4 x 16• (12+↓8)• (10+↓8)• 10 rest=1-2min",
+            "Patadas Atrás en Máquina 3 x 12• 12• 10 rest=2min",
+            "Estocadas con Mancuernas 3 x 12• 12• 10 rest=1-2min",
+            "Peso Muerto Convencional 4 x 12• ↑10• ↑8• 8 rest=3-4min",
+            "Hip Thrust con Barra 3 x 12• ↑10• ↑8 rest=2-3min",
+            "Sentadillas con Barra + Salto 3 x 12• 12• 10 rest=2-3min",
+            ],
+          },
+
+      "Día 2 - Superior (Push + Biceps)":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Dominadas Agarre Prono a los Hombros (mantené dos seg arriba) 2 x 8• 6",
+           "Flexiones BB Amplias 2 x 20• 16",
+          ],
+            restAfter: "1min"
+          },
+                      "Plancha Frontal 2 x 1min 30seg a 2min",
+          ],
+          "Entrenamiento de Fuerza": [
+            "Press Militar con Mancuernas Sentado 3 x 12• 10• 8 rest=2min",
+                      {
+            superset: [
+              "Vuelos Laterales con Mancuernas 3 x 12• 10• 10",
+              "Biceps Martillo Alternado con Mancuernas 3 x 10• 10• 8",
+          ],
+            restAfter: "1-2min"
+          },
+            "Aperturas Sentado en Máquina 4 x 12• 10• 10• (10+↓8) rest=2min",
+            "Biceps Predicador con Mancuerna 3 x 10• 10 rest=2min",
+            "Press de Pecho en Máquina 4 x 10• 10• 8• 8 rest=2-3min",
+          ],
+          "Entrenamiento HIIT": [
+            "Correr en Cinta"
+            ],
+          },
+
+        "Día 3 - Superior (Pull + Triceps)":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Flexiones BB Cerradas + Carpa 2 x 18• 16",
+            "Biceps + Press Arnold con Mancuernas 2 x 10• 8 (peso intermedio-pesado)",
+          ],
+            restAfter: "1min"
+          },           
+          ],
+          "Entrenamiento de Fuerza": [
+            "Polea al Pecho con Triángulo 4 x 12• 10• ↓12• ↓(10+↓6) rest=2min",
+            "Vuelo Posterior Unilateral Sentado en Máquina 4 x 10• 10• 8• 8 rest=1-2min",
+            "Remo Unilateral Sentado en Máquina 3 x 12• 10• 10 rest=2min",
+            {
+              superset: [
+           "Press Banca con Agarre Cerrado (Ancho de Hombros) 4 x 12• 10• 8• 8 ",   
+           "Encogimientos con Mancuernas 4 x 10• 10• 8• 8",           
+            ],
+            restAfter: "1-2min"
+          },
+          ],
+          "Entrenamiento HIIT": [
+            "Máquina de Remo"
+            ],
+          },
+
+        "Día 4 - Piernas":  {
+          "Acondicionamiento & Calentamiento": [
+        {
+              superset: [
+            "Rotaciones con Bolsa (o disco) 3 x 12• 10• 10 a cada lado",
+            "Burpees Completos 2 x 10• 8",
+            ],
+            restAfter: "1min"
+          },
+          "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 1 x 14",
+            ],
+          "Entrenamiento de Fuerza": [
+            "Crunch en Máquina 3 x 16• 12• 12 rest=1-2min",
+            "Isquiotibiales Sentado 4 x 12• 12• 10• 10 rest=1-2min",
+            "Sentadillas con Barra 2 x 10• 8 rest=2-3min",
+            "Sentadillas con Barra + Salto 2 x 8• 8 rest=2-3min",
+            "Peso Muerto Rumano con Mancuernas 4 x 14• 12• 10• 10 rest=2min",
+            "Extensión de Cuádriceps Sentado 4 x 12• 10• (10+↓6)• 10 rest=1-2min",
+            "Aductores Sentado 2 x fallo• fallo rest=1-2min",
+            ],
+          },
+
+        "Día 5 - Uper":  {
+        "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Flexiones BB Cerradas + Carpa 2 x 20• 16",
+            "Dominadas Agarre Prono a los Hombros 2 x 12• 10",
+          ],
+            restAfter: "1-2min"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+          "Plancha Lateral 2 x 1min a cada lado rest=1min",
+          "Arranque con Mancuerna + Press de Hombro Alternado 3 x 10• 10• ↑8 rest=2min",
+          "Press Inclinado con Mancuernas 4 x 12• ↑10• 10• ↑8",
+            "Vuelos Laterales con Mancuernas 3 x 12• ↑10• ↑8 (son 3 series, está ok)",
+            "Remo Unilateral con Mancuerna 4 x 12• ↑10• 10• 8",
+            "Biceps Martillo Alternado con Mancuernas 4 x 10• 10• 8• 8",
+            "Peso Muerto Convencional 4 x 12• ↑10• ↓16• 16",
+            "Flexiones BB 4 x 2RM (casi fallo)",
+          ],
+          },
+      },
+    },
 
 
 
