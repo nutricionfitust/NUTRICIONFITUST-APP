@@ -3051,6 +3051,124 @@ const trainingFolders = {
 
 
 
+
+//RUTINA JUAN IGNACIO CIOCCA Nº 1 - 4 MUSCULACIÓN + 1 HIIT + (1 LISS) ! IDEM RODRIGO TEJADA CORTEZ
+    "juanicio ciocca1": {
+      name: "Juan",
+         // PLAN DE ENTRENAMIENTO SEMANAL !      
+      plan: {  
+
+        "Día 1 - Piernas": {
+          "Acondicionamiento & Calentamiento": [            
+            {
+              superset: [
+            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
+            "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 3 x 16• 12• 12",
+            ],
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento de Fuerza": [
+            "Isquiotibiales Sentado 4 x 16• (12+↓8)• (10+↓8)• 10 rest=1-2min",
+            "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
+            "Sentadillas en Smith 5 x 16• ↑12• ↑10• ↑8• ↓8 rest=2-4min",
+            "Hip Thrust en Smith 3 x 12• ↑10• ↑8 rest=2-3min",
+            "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=2min",
+            {
+              superset: [
+            "Elevación de Piernas Acostado 3 x 1min",
+            "Plancha Frontal 3 x 1min",
+            ],
+            restAfter: "1min 30seg"
+          },
+            ],
+          },
+
+      "Día 2 - Superior (Énfasis Pecho)":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Flexiones BB Cerradas 2 x 10• 10",
+            "Bíceps + Press Arnold con Mancuernas 2 x 16• 12",
+            "Vuelos Laterales con Mancuernas 2 x 12• 12 (liviano)"
+          ],
+            restAfter: "1min 30seg"
+          },
+          ],
+          "Entrenamiento de Fuerza": [
+            "Polea al Pecho Agarre Prono Cerrado 4 x ↑16• 12• 10• ↓10 rest=1-2min",
+            "Aperturas Sentado en Máquina 4 x ↑16• ↓(12+↓8)• 12• 10 rest=2-3min",
+            "Press Banca Inclinado en Smith 4 x 12• 10• 10• 8 rest=2-3min",
+            "Press de Pecho en Máquina 3 x 12• ↓12• ↓(10+↓6) rest=2-3min",
+          {
+            superset: [
+            "Vuelos Laterales con Mancuernas 3 x 12• ↓10• 10",
+            "Bíceps Martillo Alternado con Mancuernas 3 x 10• ↑8• 8"
+          ],
+            restAfter: "2-3min"
+          },
+          ],
+          "Entrenamiento HIIT": [
+            "Correr en Cinta"
+            ],
+          },
+
+        "Día 3 - Superior (Énfasis Espalda + Brazos)":  {
+          "Acondicionamiento & Calentamiento": [
+          {
+            superset: [
+            "Vuelos Posteriores con Mancuernas 3 x 16• 12• 12", 
+            "Flexiones BB 2 x 10• 8",
+          ],
+            restAfter: "1min"
+          },           
+          ],
+          "Entrenamiento de Fuerza": [
+            "Polea al Pecho Agarre Prono Cerrado 4 x 14• 12• ↓12• ↓(10+↓6) rest=2min",
+            "Remo Unilateral Sentado en Máquina 3 x 12• 10• ↓10 rest=2min",
+            "Remo con Barra 3 x 12• ↑10• 10 rest=2min",
+            "Extensión de Tríceps con Polea con Barra 3 x 12• (12+↓8)• ↓(12+↓8)  rest=2min",                
+            {
+              superset: [
+            "Press Francés Acostado 𝟰𝟱° con Mancuerna 3 x 12• ↓12• 10",
+            "Bíceps Alternado con Mancuernas Sentado 3 x 12• ↑10• 8 rest=1-2min",
+            ],
+            restAfter: "2min"
+          },
+          ],
+          },
+
+        "Día 4 - Piernas":  {
+          "Acondicionamiento & Calentamiento": [
+        {
+              superset: [
+            "Rotaciones con Bolsa (o disco) 2 x 12• 10 a cada lado",
+            "Burpees Completos 2 x 10• 8",
+            "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
+            ],
+            restAfter: "1min"
+          },
+          "Plancha Frontal 1 x a lo que dés!"
+            ],
+          "Entrenamiento de Fuerza": [
+            "Isquiotibiales Sentado 3 x 16• 12• 10 rest=1-2min",
+          {
+              superset: [
+            "Prensa 5 x 20• ↑12• ↑10(RIR 2)• ↑10• ↑8",
+            "Gemelos en Prensa 5 x 10 a 14 reps al fallo",
+            ],
+            restAfter: "2-4min"
+          },
+            "Sentadillas Búlgara con Mancuernas 4 x 12• ↑10• ↑8• 8 rest=2-3min",
+            "Extensión de Cuádriceps Sentado 4 x 14• ↓(10+↓8)• ↓(10+↓8)• (10+↓8+↓6) rest=1-2min",
+            ],
+          },
+      },
+    },
+
+
+
+
 //RUTINA RODRIGO Nº 1 - 4 MUSCULACIÓN + 1 HIIT + (1 LISS) !
     "rodrigotejadacortez1": {
       name: "Rodrigo",
@@ -6973,6 +7091,8 @@ const trainingFolders = {
           },
       },
     },
+
+
 
 
     //RUTINA DAVID FUENTEALBA Nº 1 - 5 MUSCULACIÓN + 2 HIIT ! IDEM IVANGOIC2
@@ -12134,6 +12254,7 @@ const userRoutineMapping = {
   ignacioscagliotti1: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "ignacioscagliotti1" },
   rodrigotejadacortez1: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "rodrigotejadacortez1" },
   rodrigotejadacortez2: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "rodrigotejadacortez2" },
+  juanignaciociocca1: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "juanignaciociocca1" },
   danielflores1: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "danielflores1" },
   danielflores2: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "danielflores2" },
   lucasgomezrios2: { folder: "4 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "lucasgomezrios2" },
@@ -12255,6 +12376,7 @@ const userPasswords = {
   'siberia-gelato-kremlin-lagosta': 'ivangoic6', //ivg6
   'gondola-vesuvio-gelato-siberia-gondola-tiramisu': 'davidfuentealba1', //davidf
   'gondola-tiramisu-octavo': 'davidfuentealba2', //df2
+  'piazza-siberia-tundra-firenze':'juanignaciociocca1',//jic1
   'balalaika-vesuvio-amore-siberia-tundra-vesuvio-russia-vesuvio-firenze': 'matiascanalini1', //maticana1
   'balalaika-vesuvio-amore-siberia-vesuvio-espresso-tundra-vesuvio-russia-vesuvio-octavo': 'matiascanalini2', //matiascana2
   'balalaika-vesuvio-amore-amore-laguna': 'matiascanalini3', //matt3
@@ -13894,6 +14016,26 @@ const USER_HIIT_DAY_NOTES = {
     ],
   },  
 
+
+
+    "juanignaciociocca1": {
+    "Día 2 - Superior (Énfasis Pecho)": [
+      { title: "HIIT en Cinta (caminadora)",
+      body: `<p><strong>15 MINUTOS TOTALES.</strong></p>
+            <p><b>1 minuto:</b> caminar (5.5km/h).</p>
+            <p><b>2 minutos:</b> trote suave para entrar en calor (8km/h).</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>40 segundos a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
+            <li>1 minuto de trote suave (ej: ~8 km/h).</li>
+            </ul>
+            <p><b>Repetir 6 veces seguidas:</b> o sea <b>(40seg + 1min) x 6 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 1 minuto caminando.</p>
+            <p>A mimir. 😴</p>`
+    },
+    ],
+  },  
+  
 
 
   "davidfuentealba1": {
