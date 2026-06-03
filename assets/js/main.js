@@ -3053,7 +3053,7 @@ const trainingFolders = {
 
 
 //RUTINA JUAN IGNACIO CIOCCA Nº 1 - 4 MUSCULACIÓN + 1 HIIT + (1 LISS) ! IDEM RODRIGO TEJADA CORTEZ
-    "juaniciociocca1": {
+    "juanignaciociocca1": {
       name: "Juan",
          // PLAN DE ENTRENAMIENTO SEMANAL !      
       plan: {  
