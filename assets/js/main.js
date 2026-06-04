@@ -12529,8 +12529,8 @@ const userPasswords = {
   'russia-siberia-tundra-urali-napolitana-firenze': 'nicolasbuffarini1', //nicob1
   'gelato-siberia-tundra-amore-urali-limoncello-firenze': 'victormansilla1', //victor1
   'gondola-siberia-dolcevita-kremlin-urali-borschino-firenze': 'diegoyaryour1', //diegoy1
-  'gondola-espresso-octavo': 'diegoyaryour2', //dy2
-  'gondola-siberia-dolcevita-kremlin-urali-espresso-laguna': 'diegoyaryour3', //diegoy3
+  'gondola-borschino-octavo': 'diegoyaryour2', //dy2
+  'gondola-siberia-dolcevita-kremlin-urali-borschino-laguna': 'diegoyaryour3', //diegoy3
   'vesuvio-yogurt-dolcevita-piazza-borscht-firenze': 'alejandropascual1', //alejp1
   'gelato-vesuvio-yogurt-dolcevita-russia-tundra-firenze': 'valentinacarrizo1', //valenc1
 
