@@ -12873,7 +12873,7 @@ const USER_HIIT_DAY_NOTES = {
 
 
       "diegoyaryour2": {
-    "Día 2 - Piernas": [
+    "Día 2 - Inferior": [
       { title: "HIIT en Bicicleta",
       body: `<p><strong>15 a 20 MINUTOS TOTALES.</strong></p>
             <p><b>3-5 minuto:</b> calentamiento.</p>
