@@ -873,6 +873,121 @@ const trainingFolders = {
 
 
 
+    //RUTINA DIEGO YARYOUR Nº 2 - 3 MUSCULACIÓN + 1 HIIT + (1 LISS) !  
+        "diegoyaryour2": {
+      name: "Diego",
+// PLAN DE ENTRENAMIENTO SEMANAL !    
+      plan: {  
+        "Día 1 - Inferior": {
+          "Acondicionamiento & Calentamiento": [
+        {
+            superset: [
+            "Rotaciones con Bolsa (o disco) 2 x 12• 10 a cada lado",
+            "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 12• 12",
+            ],
+            restAfter: "1min"
+          },
+          "Burpees Completos 1 x 8",
+            ],
+          "Entrenamiento de Fuerza": [
+             {
+            superset: [
+            "Isquiotibiales Nórdicos 4 x 12A• (6+8A)• (6+8A)• 10A",
+            "Plancha Frontal 3 x 30-40 seg",
+                        ],
+            restAfter: "1-2min"
+          },
+            "Sentadillas con Barra 2 x 12• ↑10• rest=3min",
+            "Sentadillas con Barra + Salto 2 x 10• 8 rest=2-3min",
+            "Estocadas con Barra 3 x 10• 10• 8 c/pierna rest=1-2min",
+            "Peso Muerto Rumano con Mancuernas 3 x 12• 10• 10 rest=1-2min",
+            ],
+          "Entrenamiento HIIT": [
+            "Bicicleta"
+            ],
+          },
+
+        "Día 2 - Superior":  {
+          "Acondicionamiento & Calentamiento": [
+            {
+            superset: [
+            "Flexiones BB Cerradas + Carpa 2 x 10• 8",
+            "Bíceps más Press Arnold con Mancuernas 2 x 12• 12",
+            "Plancha Lateral 2 x 30 seg c/lado",
+          ],
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento de Fuerza": [
+          {
+            superset: [
+            "Encogimientos 3 x 12• 10• 8",
+            "Vuelos Posteriores con Mancuernas 3 x 12• 10• 10",
+          ],
+            restAfter: "1-2min"
+          },
+          "Remo Unilateral con Mancuerna 4 x 12• 10• 10• 8 rest=1-2min",
+          "Press de Pecho con Mancuernas 4 x 12• 10• 10• 8 rest=2-3min",
+          "Press Militar Sentado con Mancuernas 3 x 12• 10• 10 rest=2min",
+                        {
+            superset: [
+            "Bíceps Martillo Alternado con Mancuernas 3 x 10• 10• 8",
+            "Fondos en Apoyo 3 x 12• 12• 10",
+          ],
+            restAfter: "1min"
+          },
+          "Elevaciones de Piernas Acostado 3 x 10• 10• 8 rest=1min"
+            ],
+          },
+
+        "Día 3 - Full Body":  {
+          "Acondicionamiento & Calentamiento": [
+            {
+            superset: [
+            "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 2 x 14• 12",
+            "Skipping Rodillas Arriba 2 x 30 seg",
+            "Flexiones BB Cerradas + Carpa 2 x 10• 8",
+          ],
+            restAfter: "1min"
+          },
+            ],
+          "Entrenamiento de Fuerza": [
+            {
+            superset: [
+            "Biceps Alternado con Mancuernas 4 x 12• 10• 10• 8",
+            "Press Frances Sentado con Apoyo 𝟰𝟱° 4 x 12• 12• 10• 10",
+          ],
+            restAfter: "2min"
+          },
+                      {
+            superset: [
+          "Arranque con Mancuerna + Press de Hombro Alternado 4 x 10• 10• ↑8• 8",
+          "Burpees Completos 3 x 8• 6• 6",
+                   ],
+            restAfter: "2-3min"
+          },
+          {
+            superset: [
+            "Estocadas con Mancuernas 3 x 10• 10• 8",
+            "Peso Muerto Rumano con Mancuernas 4 x 12• 12• 12",
+          ],
+            restAfter: "2min"
+          },
+          {
+            superset: [
+           "Cargadas con Barra + Press de Hombro 3 x 10• 10• 8",
+           "Vuelos Laterales con Mancuernas 3 x 12• 12• 10",
+          ],
+            restAfter: "2min"
+          },
+            ],
+          },
+      },
+    },
+
+
+
+
 //RUTINA TACIANA Nº 1 - 3 MUSCULACIÓN + 1 HIIT + (1 LISS) !  
         "tacianabavaud": {
       name: "Taci Zanahoria",
@@ -12237,6 +12352,7 @@ const userRoutineMapping = {
   camilaabendaño: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "camilaabendaño" },
   diegoyaryour1: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "diegoyaryour1" },
   diegoyaryour2: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "diegoyaryour2" },
+  diegoyaryour3: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "diegoyaryour3" },
   tacianabavaud: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "tacianabavaud" },
   benjaminlauda1: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "benjaminlauda1" },
   nicolasbuffarini1: { folder: "3 MUSCULACIÓN + 1 HIIT + (1 LISS)", routine: "nicolasbuffarini1" },
@@ -12413,6 +12529,8 @@ const userPasswords = {
   'russia-siberia-tundra-urali-napolitana-firenze': 'nicolasbuffarini1', //nicob1
   'gelato-siberia-tundra-amore-urali-limoncello-firenze': 'victormansilla1', //victor1
   'gondola-siberia-dolcevita-kremlin-urali-borschino-firenze': 'diegoyaryour1', //diegoy1
+  'gondola-espresso-octavo': 'diegoyaryour2', //dy2
+  'gondola-siberia-dolcevita-kremlin-urali-espresso-laguna': 'diegoyaryour3', //diegoy3
   'vesuvio-yogurt-dolcevita-piazza-borscht-firenze': 'alejandropascual1', //alejp1
   'gelato-vesuvio-yogurt-dolcevita-russia-tundra-firenze': 'valentinacarrizo1', //valenc1
 
@@ -12746,6 +12864,25 @@ const USER_HIIT_DAY_NOTES = {
             <li>50-60 segundos de pedaleo suave (recuperación actica).</li>
             </ul>
             <p><b>Repetir 8-10 veces seguidas:</b> o sea <b>(30-40seg + 50-60seg) x 8-10 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 2 minutos de pedaleo suave para enfriar.</p>
+            <p>A mimir. 😴</p>`
+    },
+    ],
+  },
+
+
+
+      "diegoyaryour2": {
+    "Día 2 - Piernas": [
+      { title: "HIIT en Bicicleta",
+      body: `<p><strong>15 a 20 MINUTOS TOTALES.</strong></p>
+            <p><b>3-5 minuto:</b> calentamiento.</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>30-40 segundos a máxima intensidad (alta resistencia/velocidad).</li>
+            <li>50-60 segundos de pedaleo suave (recuperación actica).</li>
+            </ul>
+            <p><b>Repetir 6-8 veces seguidas:</b> o sea <b>(30-40seg + 50-60seg) x 6-8 sin descanso.</b></p>
             <p><b>Recuperación:</b> 2 minutos de pedaleo suave para enfriar.</p>
             <p>A mimir. 😴</p>`
     },
