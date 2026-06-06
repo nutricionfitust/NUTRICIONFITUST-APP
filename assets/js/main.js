@@ -12789,7 +12789,7 @@ const userPasswords = {
   'siberia-gelato-vesuvio-russia-kremlin-hermitage': 'ivangoic4', //ivang4
   'siberia-gelato-vesuvio-russia-kremlin-batata': 'ivangoic5', //ivang5
   'siberia-gelato-kremlin-lagosta': 'ivangoic6', //ivg6
-  'dolcevita-spaghetti-dolcevita-gelato-dolcevita-yogurt': 'arielvelasquez1', //arielvel
+  'vesuvio-limoncello-siberia-dolcevita-yogurt-gelato-dolcevita-yogurt': 'arielvelasquez1', //arielvel
   'vesuvio-limoncello-siberia-dolcevita-yogurt-gelato-dolcevita-yogurt-octavo': 'arielvelasquez2', //arielvel2
   'gondola-vesuvio-gelato-siberia-gondola-tiramisu': 'davidfuentealba1', //davidf
   'gondola-tiramisu-octavo': 'davidfuentealba2', //df2
