@@ -1549,7 +1549,7 @@ const trainingFolders = {
             "Vuelos Posteriores con Mancuernas 3 x 12• 10• 10 rest=1-2min",
             "Press de Pecho en Maquina 4 x 16• 12• 10• 10 rest=2min",
             "Bíceps Martillo Alternado con Mancuernas 3 x 12• 10• 8 rest=1-2min",
-            "Extensión de Tríceps con Polea con Barra  3 x (12+↓8)• (10+↓6)-10 rest=1min"
+            "Extensión de Tríceps con Polea con Barra  3 x (12+↓8)• (10+↓6• 10  rest=1min"
             ],
           "Entrenamiento HIIT": [
             "Correr en Cinta Inclinada"
@@ -1566,7 +1566,7 @@ const trainingFolders = {
           },
             ],
           "Entrenamiento de Fuerza": [
-            "Isquiotibiales Acostada 4 x 20• (12+↓8)• (12+↓8)-10 rest=2min",
+            "Isquiotibiales Acostada 4 x 20• (12+↓8)• (12+↓8)• 10  rest=2min",
             {
             superset: [
             "Prensa 4 x 16• 12• 10• 10",
@@ -1600,7 +1600,7 @@ const trainingFolders = {
           },
             ],
           "Entrenamiento de Fuerza": [
-            "Isquiotibiales Acostado 4 x 20• (12+↓10)• (12+↓8)-10 rest=1-2min",
+            "Isquiotibiales Acostado 4 x 20• (12+↓10)• (12+↓8)• 10  rest=1-2min",
             "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
           {
             superset: [
@@ -1633,7 +1633,7 @@ const trainingFolders = {
             {
             superset: [
             "Bíceps Martillo Alternado con Mancuernas 4 x 12• 10• 8• 8",
-            "Extensión de Tríceps con Polea con Barra  4 x (12+↓8)• (12+↓8)• (10+↓6)-10",
+            "Extensión de Tríceps con Polea con Barra  4 x (12+↓8)• (12+↓8)• (10+↓6• 10 ",
           ],
             restAfter: "1min"
           },
@@ -4149,7 +4149,7 @@ const trainingFolders = {
           },
             ],
           "Entrenamiento de Fuerza": [
-            "Isquiotibiales Sentado 4 x 20• (12+↓10)• (12+↓8)-10 rest=1-2min",
+            "Isquiotibiales Sentado 4 x 20• (12+↓10)• (12+↓8)• 10  rest=1-2min",
             "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
           {
             superset: [
@@ -4186,7 +4186,7 @@ const trainingFolders = {
           ],
             restAfter: "2-3min"
           },
-            "Extensión de Tríceps con Barra 3 x (16+↓12)• (12+↓8)-10 rest=1-2min"
+            "Extensión de Tríceps con Barra 3 x (16+↓12)• (12+↓8)• 10  rest=1-2min"
             ],
           "Entrenamiento HIIT": [
             "Correr en Cinta"
@@ -4605,7 +4605,7 @@ const trainingFolders = {
           },
             ],
           "Entrenamiento de Fuerza": [
-            "Isquiotibiales Sentado 4 x 20• (12+↓10)• (12+↓8)-10 rest=1-2min",
+            "Isquiotibiales Sentado 4 x 20• (12+↓10)• (12+↓8)• 10  rest=1-2min",
             "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
           {
             superset: [
@@ -4642,7 +4642,7 @@ const trainingFolders = {
           ],
             restAfter: "2-3min"
           },
-            "Extensión de Tríceps con Barra 3 x (16+↓12)• (12+↓8)-10 rest=1-2min"
+            "Extensión de Tríceps con Barra 3 x (16+↓12)• (12+↓8)• 10  rest=1-2min"
             ],
           },
 
@@ -6028,7 +6028,7 @@ const trainingFolders = {
           },
             ],
           "Entrenamiento de Fuerza": [
-            "Isquiotibiales Sentado 4 x 20• (12+↓10)• (12+↓8)-10 rest=1-2min",
+            "Isquiotibiales Sentado 4 x 20• (12+↓10)• (12+↓8)• 10  rest=1-2min",
             "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
           {
             superset: [
@@ -6061,11 +6061,11 @@ const trainingFolders = {
           {
             superset: [
             "Press Militar con Mancuernas Sentado 3 x 10• 10• 8",
-            "Vuelos Laterales con Mancuernas 3 x 12• 0-10"
+            "Vuelos Laterales con Mancuernas 3 x 12• 10• 10  "
           ],
             restAfter: "2-3min"
           },
-            "Extensión de Tríceps con Barra 3 x (16+↓12)• (12+↓8)-10 rest=1-2min"
+            "Extensión de Tríceps con Barra 3 x (16+↓12)• (12+↓8)• 10  rest=1-2min"
             ],
           "Entrenamiento HIIT": [
             "Correr en Cinta"
@@ -6817,7 +6817,7 @@ const trainingFolders = {
           ],
             restAfter: "2-3min"
           },
-            "Extensión de Tríceps con Barra 3 x (16+↓12)• (12+↓8)-10 rest=1-2min"
+            "Extensión de Tríceps con Barra 3 x (16+↓12)• (12+↓8)• 10  rest=1-2min"
             ],
           "Entrenamiento HIIT": [
             "Correr en Cinta"
@@ -7537,7 +7537,7 @@ const trainingFolders = {
           },
             ],
           "Entrenamiento de Fuerza": [
-            "Isquiotibiales Sentado 4 x 20• (12+↓10)• (12+↓8)-10 rest=1-2min",
+            "Isquiotibiales Sentado 4 x 20• (12+↓10)• (12+↓8)• 10  rest=1-2min",
             "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
           {
             superset: [
@@ -7556,7 +7556,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
-            "Flexiones BB Cerradas 2 x 20• 20",
+            "Flexiones BB Cerradas + Carpa 2 x 20• 16",
             "Bíceps + Press Arnold con Mancuernas 2 x 12• 12",
           ],
             restAfter: "1-2min"
@@ -7570,11 +7570,11 @@ const trainingFolders = {
           {
             superset: [
             "Press Militar con Mancuernas Sentado 3 x 10• 10• 8",
-            "Vuelos Laterales con Mancuernas 3 x 12• 0-10"
+            "Vuelos Laterales con Mancuernas 3 x 12• 10• 10  "
           ],
             restAfter: "2-3min"
           },
-            "Extensión de Tríceps con Barra 3 x (16+↓12)• (12+↓8)-10 rest=1-2min"
+            "Extensión de Tríceps con Barra 3 x (16+↓12)• (12+↓8)• 10 rest=1-2min"
             ],
           "Entrenamiento HIIT": [
             "Correr en Cinta"
@@ -7585,8 +7585,8 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
-            "Dominadas Agarre Prono 3 x 8• 8• 8",
-            "Bíceps + Press Arnold con Mancuernas 3 x 12• 12• 12"
+            "Dominadas Agarre Prono 3 x 7• 6• 6",
+            "Bíceps + Press Arnold con Mancuernas 3 x 12• 10• 10"
           ],
             restAfter: "1-2min"
           },           
@@ -7633,7 +7633,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
-            "Flexiones BB Cerradas 2 x 20• 20",
+            "Flexiones BB Cerradas + Carpa 2 x 20• 16",
             "Bíceps + Press Arnold con Mancuernas 2 x 14• 14",
           ],
             restAfter: "1-2min"
@@ -7730,7 +7730,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [
           {
             superset: [
-            "Dominadas Agarre Prono 2 x 12• 12",
+            "Dominadas Agarre Prono 2 x 8• 8",
             "Flexiones BB 2 x 20• 20",
           ],
             restAfter: "1min"
@@ -7837,7 +7837,7 @@ const trainingFolders = {
           },
             ],
           "Entrenamiento de Fuerza": [
-            "Isquiotibiales Sentado 4 x 20• (12+↓10)• (12+↓8)-10 rest=1-2min",
+            "Isquiotibiales Sentado 4 x 20• (12+↓10)• (12+↓8)• 10  rest=1-2min",
             "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
           {
             superset: [
@@ -7870,11 +7870,11 @@ const trainingFolders = {
           {
             superset: [
             "Press Militar con Mancuernas Sentado 3 x 10• 10• 8",
-            "Vuelos Laterales con Mancuernas 3 x 12• 0-10"
+            "Vuelos Laterales con Mancuernas 3 x 12• 1• 10 "
           ],
             restAfter: "2-3min"
           },
-            "Extensión de Tríceps con Barra 3 x (16+↓12)• (12+↓8)-10 rest=1-2min"
+            "Extensión de Tríceps con Barra 3 x (16+↓12)• (12+↓8)• 10  rest=1-2min"
             ],
           "Entrenamiento HIIT": [
             "Correr en Cinta"
@@ -8774,7 +8774,7 @@ const trainingFolders = {
           },
             ],
           "Entrenamiento de Fuerza": [
-            "Isquiotibiales Sentado 4 x 20• (12+↓10)• (12+↓8)-10 rest=1-2min",
+            "Isquiotibiales Sentado 4 x 20• (12+↓10)• (12+↓8)• 10  rest=1-2min",
             "Aductores Sentado 3 x fallo• fallo• fallo rest=1-2min",
           {
             superset: [
@@ -8807,11 +8807,11 @@ const trainingFolders = {
           {
             superset: [
             "Press Militar con Mancuernas Sentado 3 x 10• 10• 8",
-            "Vuelos Laterales con Mancuernas 3 x 12• 0-10"
+            "Vuelos Laterales con Mancuernas 3 x 12• 10• 10 "
           ],
             restAfter: "2-3min"
           },
-            "Extensión de Tríceps con Barra 3 x (16+↓12)• (12+↓8)-10 rest=1-2min"
+            "Extensión de Tríceps con Barra 3 x (16+↓12)• (12+↓8)• 10  rest=1-2min"
             ],
           "Entrenamiento HIIT": [
             "Correr en Cinta"
