@@ -12701,7 +12701,7 @@ const userRoutineMapping = {
   ivangoic4: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "ivangoic4" },
   ivangoic5: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "ivangoic5" },
   ivangoic6: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "ivangoic6" },
-  arielvelasquez1: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "arielvelasquez2" },
+  arielvelasquez1: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "arielvelasquez1" },
   arielvelasquez2: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "arielvelasquez2" },
   davidfuentealba1: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "davidfuentealba1" },
   davidfuentealba2: { folder: "5 MUSCULACIÓN + 2 HIIT", routine: "davidfuentealba2" },
