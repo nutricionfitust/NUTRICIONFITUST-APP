@@ -13944,7 +13944,7 @@ const USER_HIIT_DAY_NOTES = {
             <li>40 segundos caminando (ej: ~5.5 km/h).</li>
             </ul>
             <p><b>Repetir 3 veces seguidas:</b> o sea <b>(40seg + 40seg) x 3 sin descanso.</b></p>
-            <p><b>Recuperación:</b> 1 minuto caminando.</p>
+            <p><b>Recuperación:</b> 1 minuto y medio caminando.</p>
             <p><b>Repetir 2 veces más:</b> o sea <b>(40seg + 40seg) x 2 sin descanso.</b></p>
             <p><b>Recuperación:</b> 1 minuto caminando.</p>
             <p>A mimir. 😴</p>`
