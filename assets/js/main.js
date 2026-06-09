@@ -2363,8 +2363,7 @@ const trainingFolders = {
           "Acondicionamiento & Calentamiento": [            
             {
               superset: [
-            "Rotaciones con Bolsa (o disco) 3 x 10• 10• 8 a cada lado",
-            "Sentadillas + Estocadas con Peso (Bolsa o Mancuernas) 3 x 16• 12• 12",
+            "Bicicleta 5-7min",
             ],
             restAfter: "1min"
           },
