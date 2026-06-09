@@ -2450,9 +2450,9 @@ const trainingFolders = {
               {
               superset: [
             "Press Francés Sentado con Apoyo 𝟰𝟱° 3 x 12• 12• 10",
-            "Bíceps Predicador con Mancuerna 3 x 10• 8• 8 rest=1-2min",
+            "Bíceps Predicador con Mancuerna 3 x 10• 8• 8",
               ],
-            restAfter: "1min"
+            restAfter: "1-2min"
           },
                 {
               superset: [
@@ -13898,7 +13898,6 @@ const USER_HIIT_DAY_NOTES = {
 
 
 
-
     "lucasgomezrios3": {
     "Día 2 - Superior (Push + Biceps)": [
       { title: "HIIT en Cinta (caminadora)",
@@ -13930,6 +13929,29 @@ const USER_HIIT_DAY_NOTES = {
     },
     ],
   },
+
+
+    "lucasgomezrios4": {
+    "Día 2 - Superior (Énfasis Push)": [
+      { title: "HIIT en Cinta (caminadora)",
+        body: `<p><strong>14 MINUTOS TOTALES.</strong></p>
+        <p><b>3 minutos:</b> Trote suave (8 km/h).</p>
+            <p><b>2 minutos:</b> 6 grados, trote suave.</p>
+            <p><b>1 minuto:</b> 0 grados, caminata (5.5 km/h).</p>
+            <p>Luego, <b>intervalos (HIIT):</b></p> 
+            <ul class="list-disc pl-6">
+            <li>40 segundos a ~ 3/4 de tu velocidad máxima (ej: ~17 km/h).</li>
+            <li>40 segundos caminando (ej: ~5.5 km/h).</li>
+            </ul>
+            <p><b>Repetir 3 veces seguidas:</b> o sea <b>(40seg + 40seg) x 3 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 1 minuto caminando.</p>
+            <p><b>Repetir 2 veces más:</b> o sea <b>(40seg + 40seg) x 2 sin descanso.</b></p>
+            <p><b>Recuperación:</b> 1 minuto caminando.</p>
+            <p>A mimir. 😴</p>`
+    },
+    ],
+  },
+
 
 
 
