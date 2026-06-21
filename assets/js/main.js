@@ -15637,6 +15637,17 @@ function openUserTrainingAccess() {
   document.getElementById('userAccessModal').classList.add('show');
   document.getElementById('userPasswordInput').focus();
 }
+// La tarjeta "MI PLAN DE ENTRENAMIENTO" ya no deja entrar con la contraseña vieja: se migró todo
+// a la app nueva. Se mantiene un acceso oculto para el entrenador (con ?admin=1 en la URL) por si
+// alguna vez necesita volver a entrar al panel viejo; cualquier otra persona ve el aviso de mudanza.
+function handleTrainingAccessClick() {
+  const esAdmin = new URLSearchParams(window.location.search).get('admin') === '1';
+  if (esAdmin) { openUserTrainingAccess(); return; }
+  document.getElementById('migrationModal').classList.add('show');
+}
+function closeMigrationModal() {
+  document.getElementById('migrationModal').classList.remove('show');
+}
 function closeUserAccessModal() {
   document.getElementById('userAccessModal').classList.remove('show');
   document.getElementById('userPasswordInput').value = '';
